@@ -1,0 +1,40 @@
+{# A set of Nunjucks macros for use across the project #}
+
+{#
+  imageSingle - renders a singe image with caption below
+
+  usage:
+    {{ imageSingle('imagefilename.ext', 'image caption text') }}
+
+  Assumes images are located in a directory named 'images' relative to the site root
+
+#}
+{% macro imageSingle(imageRef, imageCaption) %}
+<div class="image-single">
+  <img src="/images/{{ imageRef }}"
+       alt="{{ imageCaption }}" loading="lazy">
+  <p>{{ imageCaption | captionLineBreaks | safe }}</p>
+</div>
+{% endmacro %}
+
+{#
+  imagePair - renders side-by-side images with captions below each image
+
+  usage:
+    {{ imagePair('firstimagefilename.ext', 'first caption', 'secondimagefilename.ext', 'second caption') }}
+
+  Assumes images are located in a directory named 'images' relative to the site root
+
+#}
+{%- macro imagePair(imageRef1, imageCaption1, imageRef2, imageCaption2) -%}
+<div class="image-pair">
+  <img src="/images/{{ imageRef1 }}"
+        class="image1"
+        alt="{{ imageCaption1 }}" loading="lazy">
+  <p class="caption1">{{ imageCaption1 | captionLineBreaks | safe }}</p>
+  <img src="/images/{{ imageRef2 }}"
+        class="image2"
+        alt="{{ imageCaption2 }}" loading="lazy">
+  <p class="caption2">{{ imageCaption2 | captionLineBreaks | safe }}</p>
+</div>
+{%- endmacro -%}

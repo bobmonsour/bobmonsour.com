@@ -1,0 +1,20 @@
+{
+  "name": "bobmonsour.com",
+  "version": "1.0.0",
+  "description": "This is a base set of files needed to start a project in Eleventy. Make a project directory and put these files in it.",
+  "main": ".eleventy.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch:eleventy": "npx @11ty/eleventy --serve",
+    "watch:sass": "npx sass sass:_site/css --watch",
+    "start": "npm run watch:eleventy & npm run watch:sass",
+    "build": "sass sass:_site/css && eleventy"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.0",
+    "sass": "^1.48.0"
+  }
+}
