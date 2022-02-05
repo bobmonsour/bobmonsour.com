@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+<div class="container">
 <div class="post">
   <h2 class="post__title">{{ title }}</h2>
   <p class="post__date">{{ page.date.toLocaleString('en-US', {
@@ -11,4 +12,5 @@ layout: default
   <div class="post__body">
     {{ content | safe }}
   </div>
+</div>
 </div>
