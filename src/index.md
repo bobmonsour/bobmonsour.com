@@ -1,6 +1,8 @@
 ---
 layout: default
 title: Bob Monsour's Personal Site
+description: The personal website of Bob Monsour, a retired tech developer and executive. Enjoying learning more HTML/CSS/JS and eleventy.
+keywords: retired, web development, eleventy, tennis
 permalink: /
 ---
 
