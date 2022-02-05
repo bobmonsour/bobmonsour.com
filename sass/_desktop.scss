@@ -92,6 +92,11 @@ header {
 .post {
   margin: 3rem 0;
 
+  &__title {
+    font-size: var(--post-title-size);
+    color: var(--brand-color);
+  }
+
   &__title a {
     font-size: var(--post-title-size);
     color: var(--brand-color);
@@ -105,13 +110,25 @@ header {
     border-radius: 50%;
   }
 
-  &__date {
+  &__date,
+  &__read-time {
     font-size: var(--post-date-size);
   }
 
-  &__excerpt {
+  &__read-time {
+    display: inline-block;
+    margin-left: 1.5em;
+  }
+
+  &__excerpt,
+  &__body {
     max-width: 65ch;
     font-size: var(--post-excerpt-size);
+    margin: 0.5em 0;
+
+    p {
+      margin: 0 0 1em 0;
+    }
   }
 }
 // Footer

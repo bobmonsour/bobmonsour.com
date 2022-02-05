@@ -1,0 +1,6 @@
+{
+  "layout": "post",
+  "permalink": "/posts/{{ page.fileSlug }}.html",
+  "tags": "post",
+  "__comment__": "The items above are added to the front matter of all of the posts in the src/posts directory; per 11ty rules."
+}

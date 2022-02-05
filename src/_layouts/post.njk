@@ -1,0 +1,14 @@
+---
+layout: default
+---
+<div class="post">
+  <h2 class="post__title">{{ title }}</h2>
+  <p class="post__date">{{ page.date.toLocaleString('en-US', {
+    month: 'long',
+    day: 'numeric',
+    year: 'numeric'
+  }) }}<span class="post__read-time">3 minute read</span></p>
+  <div class="post__body">
+    {{ content | safe }}
+  </div>
+</div>
