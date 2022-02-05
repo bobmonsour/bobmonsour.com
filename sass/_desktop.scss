@@ -1,0 +1,124 @@
+//DESKTOP STYLES
+
+// Typography
+
+p {
+  font-family: var(--body-copy-font);
+  font-size: var(--body-copy-size);
+}
+
+footer p {
+  font-size: var(--footer-copy-size);
+}
+
+// Overall structure
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  margin: 2em 0;
+}
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+// Branding & navigation
+
+.brand {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  padding: 0 1rem;
+  color: var(--brand-color);
+
+  &__image {
+    clip-path: circle(45%);
+  }
+
+  &__name-and-subtitle {
+    margin-left: 1.5rem;
+  }
+  &__name {
+    font-size: var(--brand-name-size);
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: auto;
+  }
+
+  &__subtitle {
+    font-family: var(--brand-subtitle-font);
+    font-size: var(--brand-subtitle-size);
+    margin-right: auto;
+  }
+
+  a {
+    color: var(--brand-color);
+  }
+
+  a:hover,
+  a:focus {
+    background-color: var(--nav-hover-color);
+    border-radius: 50%;
+  }
+
+  &__nav {
+    padding-left: 0;
+    margin: 0 auto;
+    // margin-left: auto;
+    // margin-right: 1.25em;
+  }
+
+  &__nav li a {
+    font-size: var(--nav-link-size);
+    text-decoration: none;
+    padding: 8px;
+    border-bottom: 2px solid var(--nav-underline-color);
+  }
+
+  &__nav li a:hover,
+  &__nav li a:focus {
+    background-color: var(--nav-hover-color);
+  }
+}
+
+// Post summary layout
+
+.post {
+  margin: 3rem 0;
+
+  &__title a {
+    font-size: var(--post-title-size);
+    color: var(--brand-color);
+    text-decoration: none;
+    margin: 5px 0;
+    border-bottom: 2px solid var(--nav-underline-color);
+  }
+
+  &__title a:hover {
+    background-color: var(--nav-hover-color);
+    border-radius: 50%;
+  }
+
+  &__date {
+    font-size: var(--post-date-size);
+  }
+
+  &__excerpt {
+    max-width: 65ch;
+    font-size: var(--post-excerpt-size);
+  }
+}
+// Footer
+
+footer {
+  background-color: var(--footer-background-color);
+  padding: 1em 0;
+  margin-top: 4em;
+  text-align: center;
+}

@@ -1,0 +1,13 @@
+// MOBILE STYLES
+
+@media (max-width: 500px) {
+  .brand {
+    &__name-and-subtitle {
+      margin-left: 0;
+    }
+
+    &__nav {
+      margin: 0 auto;
+    }
+  }
+}
