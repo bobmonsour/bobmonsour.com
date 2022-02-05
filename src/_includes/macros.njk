@@ -38,3 +38,49 @@
   <p class="caption2">{{ imageCaption2 | captionLineBreaks | safe }}</p>
 </div>
 {%- endmacro -%}
+
+{#
+  postExcerpt - renders the title (as link to post), date, and excerpt of a particular post
+
+  usage:
+    {{ postExcerpt(post) }}
+
+  where post is a post object from the context of the call to the macro
+#}
+{% macro postExcerpt(post) %}
+<div class="post">
+  <h2 class="post__title"><a href="{{ post.url }}">{{ post.data.title }}</a></h2>
+  <p class="post__date">{{ post.date.toLocaleString('en-US', {
+    month: 'long',
+    day: 'numeric',
+    year: 'numeric'
+  }) }}<span class="post__read-time">3 minute read</span></p>
+  <div class="post__excerpt">
+    {{ post.data.description }}
+  </div>
+</div>
+{% endmacro %}
+
+{#
+  postFull - renders the title, date, and the FULL body of a particular post
+
+  usage:
+    {{ postFull(post) }}
+
+  where post is a post object from the context of the call to the macro
+#}
+{% macro postFull(post) %}
+
+<div class="post">
+  <h2 class="post__title">{{ post.data.title }}</h2>
+  <p class="post__date">{{ post.date.toLocaleString('en-US', {
+    month: 'long',
+    day: 'numeric',
+    year: 'numeric'
+  }) }}<span class="post__read-time">3 minute read</span></p>
+  <div class="post__body">
+    {{ post.templateContent | safe }}
+  </div>
+</div>
+
+{% endmacro %}

@@ -26,7 +26,7 @@ header {
   margin: 0 auto;
 }
 
-// Branding & navigation
+// Branding & navigation; organization & links
 
 .brand {
   display: flex;
@@ -44,6 +44,7 @@ header {
   &__name-and-subtitle {
     margin-left: 1.5rem;
   }
+
   &__name {
     font-size: var(--brand-name-size);
     font-weight: bold;
@@ -59,35 +60,34 @@ header {
 
   a {
     color: var(--brand-color);
-  }
 
-  a:hover,
-  a:focus {
-    background-color: var(--nav-hover-color);
-    border-radius: 50%;
+    &:hover,
+    &:focus {
+      background-color: var(--nav-hover-color);
+      border-radius: 50%;
+    }
   }
 
   &__nav {
     padding-left: 0;
     margin: 0 auto;
-    // margin-left: auto;
-    // margin-right: 1.25em;
   }
 
-  &__nav li a {
+  &__nav a {
     font-size: var(--nav-link-size);
     text-decoration: none;
     padding: 8px;
     border-bottom: 2px solid var(--nav-underline-color);
   }
 
-  &__nav li a:hover,
-  &__nav li a:focus {
+  .current {
     background-color: var(--nav-hover-color);
+    border-top: 2px solid var(--nav-underline-color);
+    border-bottom: 2px solid var(--nav-underline-color);
   }
 }
 
-// Post summary layout
+// Post & excerpt layout
 
 .post {
   margin: 3rem 0;
@@ -97,17 +97,16 @@ header {
     color: var(--brand-color);
   }
 
-  &__title a {
-    font-size: var(--post-title-size);
+  a {
     color: var(--brand-color);
     text-decoration: none;
-    margin: 5px 0;
     border-bottom: 2px solid var(--nav-underline-color);
-  }
 
-  &__title a:hover {
-    background-color: var(--nav-hover-color);
-    border-radius: 50%;
+    &:hover,
+    &:focus {
+      background-color: var(--nav-hover-color);
+      border-radius: 50%;
+    }
   }
 
   &__date,
@@ -131,6 +130,7 @@ header {
     }
   }
 }
+
 // Footer
 
 footer {
