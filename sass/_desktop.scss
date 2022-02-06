@@ -152,19 +152,19 @@ footer {
     display: flex;
     margin-left: auto;
 
-    .icon {
-      width: 36px;
-      height: 36px;
-    }
-  }
+    .icon-link {
+      margin: 0 1em;
 
-  .icon {
-    align-self: center;
-    margin: 0 1em;
+      &:hover,
+      &:focus {
+        background-color: var(--social-icon-background-color);
+        cursor: pointer;
+      }
 
-    &:hover,
-    &:focus {
-      cursor: pointer;
+      .icon {
+        width: 36px;
+        height: 36px;
+      }
     }
   }
 }

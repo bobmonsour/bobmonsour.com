@@ -16,5 +16,8 @@
   "devDependencies": {
     "@11ty/eleventy": "^1.0.0",
     "sass": "^1.48.0"
+  },
+  "dependencies": {
+    "eleventy-plugin-reading-time": "0.0.1"
   }
 }

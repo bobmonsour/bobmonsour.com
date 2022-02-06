@@ -1,0 +1,24 @@
+---
+layout: default
+title: Bob Monsour's Personal Site
+description: The personal website of Bob Monsour, a retired tech developer and executive. Enjoying learning more HTML/CSS/JS and eleventy.
+keywords: retired, web development, eleventy, tennis
+permalink: /
+---
+
+<div class="container">
+  {% set latest_posts = collections.post | reverse %}
+  {%- for post in latest_posts.slice(0,1) -%}
+    <div class="post">
+      <h2 class="post__title"><a href="{{ post.url }}">{{ post.data.title }}</a></h2>
+      <p class="post__date">{{ post.date.toLocaleString('en-US', {
+        month: 'long',
+        day: 'numeric',
+        year: 'numeric'
+      }) }}<span class="post__read-time">{{ post | readingTime }} read</span></p>
+      <div class="post__body">
+        {{ post.templateContent | safe }}
+      </div>
+    </div>
+  {%- endfor -%}
+</div>

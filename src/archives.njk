@@ -1,0 +1,24 @@
+---
+layout: default
+title: Archives of Bob Monsour's Personal Site
+description: These are the archive posts of the personal website of Bob Monsour.
+keywords: retired, web development, eleventy, tennis, archives
+permalink: /archives/
+---
+
+<div class="container">
+  {% set latest_posts = collections.post | reverse %}
+  {%- for post in latest_posts -%}
+    <div class="post">
+      <h2 class="post__title"><a href="{{ post.url }}">{{ post.data.title }}</a></h2>
+      <p class="post__date">{{ post.date.toLocaleString('en-US', {
+        month: 'long',
+        day: 'numeric',
+        year: 'numeric'
+      }) }}<span class="post__read-time">{{ post | readingTime }} read</span></p>
+      <div class="post__excerpt">
+        {{ post.data.description }}
+      </div>
+    </div>
+  {%- endfor -%}
+</div>

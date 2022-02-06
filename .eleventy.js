@@ -1,3 +1,5 @@
+const readingTime = require("eleventy-plugin-reading-time");
+
 module.exports = function (eleventyConfig) {
   // Opt out of using BrowserSync; using Popypane in its place
   // eleventyConfig.setBrowserSyncConfig({
@@ -13,6 +15,9 @@ module.exports = function (eleventyConfig) {
 
   // Shortcode for the current year
   eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
+
+  // Add the reading time plugin
+  eleventyConfig.addPlugin(readingTime);
 
   eleventyConfig.addFilter("debugger", (...args) => {
     console.log(...args);
