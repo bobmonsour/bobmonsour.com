@@ -2,5 +2,6 @@
   "layout": "post",
   "permalink": "/posts/{{ page.fileSlug }}/",
   "tags": "post",
-  "__comment__": "The items above are added to the front matter of all of the posts in the src/posts directory; per 11ty rules."
+  "keywords": "retired, web development, eleventy, tennis",
+  "__comment__": "The items above are added to the front matter of all of the posts in the src/posts directory; per 11ty rules. They can be overridden in the individual post's front matter."
 }
