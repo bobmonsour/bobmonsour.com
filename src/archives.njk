@@ -15,7 +15,7 @@ permalink: /archives/
         month: 'long',
         day: 'numeric',
         year: 'numeric'
-      }) }}<span class="post__read-time">{{ post | readingTime }} read</span></p>
+      }) }}<span class="post__read-time">{{ post.templateContent | readingTime }}</span></p>
       <div class="post__excerpt">
         {{ post.data.description }}
       </div>

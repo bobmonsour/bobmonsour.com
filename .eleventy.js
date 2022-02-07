@@ -16,13 +16,11 @@ module.exports = function (eleventyConfig) {
   // Shortcode for the current year
   eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
 
-  // Add the reading time plugin
-  eleventyConfig.addPlugin(readingTime);
-
-  eleventyConfig.addFilter("debugger", (...args) => {
-    console.log(...args);
-    debugger;
-  });
+  // Add filter to generate reading time for a post
+  eleventyConfig.addFilter(
+    "readingTime",
+    require("./src/_filters/readingtime.js")
+  );
 
   return {
     markdownTemplateEngine: "njk",
