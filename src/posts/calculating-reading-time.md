@@ -1,10 +1,10 @@
 ---
 title: Calculating reading time for a post
 date: 2022-02-06
-description: Where does that '2 min read' come from?
+description: Where does that 'About 2 minutes to read' come from?
 ---
 
-Where does that '2 min read' come from?
+Where does that 'About 2 minutes to read' come from?
 
 Each of the posts on this site (there are only two so far, and this is the second one), display something like "1 min read." This indicates that it will take about one minute to read the post.
 
