@@ -10,7 +10,7 @@ permalink: /
   {% set latest_posts = collections.post | reverse %}
   {%- for post in latest_posts.slice(0,1) -%}
     <div class="post">
-      <h2 class="post__title">{{ post.data.title }}</a></h2>
+      <h1 class="post__title">{{ post.data.title }}</h1>
       <p class="post__date">{{ post.date.toLocaleString('en-US', {
         month: 'long',
         day: 'numeric',

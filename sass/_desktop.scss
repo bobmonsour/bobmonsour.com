@@ -2,6 +2,17 @@
 
 // Typography
 
+.brand__name-and-subtitle .brand__name {
+  font-family: "Caveat", cursive;
+  font-size: 5em;
+}
+
+h1 {
+  font-size: var(--post-title-size);
+  color: var(--brand-color);
+  text-align: center;
+}
+
 p {
   font-family: var(--body-copy-font);
   font-size: var(--body-copy-size);
