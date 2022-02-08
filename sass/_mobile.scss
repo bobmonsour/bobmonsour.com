@@ -7,7 +7,12 @@
     }
 
     &__nav {
-      margin: 0 auto;
+      margin: 1em 0 auto 0;
+    }
+
+    &__nav a {
+      font-size: var(--nav-link-size-mobile);
+      padding: 4px;
     }
   }
 
