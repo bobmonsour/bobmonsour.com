@@ -33,10 +33,10 @@ module.exports = function (text) {
   // calculate the reading time
   var readingTime = Math.round(count / speed);
   if (readingTime === 0) {
-    return "less than 1 min read";
+    return "Less than 1 minute to read";
   } else if (readingTime === 1) {
-    return "1 min read";
+    return " About 1 minute to read";
   } else {
-    return readingTime + " min read";
+    return "About " + readingTime + " minutes to read";
   }
 };
