@@ -1,28 +1,30 @@
 :root {
-  // Colors
+  // Brand
 
-  --brand-color: #6c584c;
-  --nav-link-color: #6c584c;
-  --nav-underline-color: #a98467;
-  --nav-hover-color: #dde5b6;
-  --footer-background-color: #f0ead2;
-  --social-icon-background-color: #a98467;
+  --brand-name-font: "Caveat", cursive;
+  --brand-color: var(--green-9);
+  --brand-subtitle-font: var(--font-sans);
 
-  // Fonts
+  // Navigation
 
-  --brand-subtitle-font: sans-serif;
-  --body-copy-font: serif;
+  --nav-link-color: var(--brand-color);
+  --nav-link-font: var(--font-sans);
+  --nav-link-size: var(--font-size-fluid-2);
+  --nav-underline-color: var(--orange-9);
+  --nav-hover-color: var(--orange-3);
 
-  // Fonts sizes
+  // Footer
 
-  --brand-name-size: 2.5rem;
-  --brand-subtitle-size: 1.25rem;
-  --nav-link-size: 1.75rem;
-  --nav-link-size-mobile: 1.2rem;
+  --footer-background-color: var(--orange-3);
+  --footer-copy-font: var(--font-sans);
+  --footer-copy-size: var(--font-size-fluid-1);
+  --social-icon-background-color: var(--green-6);
 
-  --post-title-size: 2.5rem;
-  --post-date-size: 1.25rem;
-  --post-excerpt-size: 1.75rem;
-  --body-copy-size: 1.75rem;
-  --footer-copy-size: 1.5rem;
+  // Posts
+
+  --post-body-font: var(--font-serif);
+  --post-body-size: var(--font-size-fluid-1);
+  --post-title-size: var(--font-size-fluid-2);
+  --post-date-size: var(--font-size-fluid-1);
+  --post-excerpt-size: var(--font-size-fluid-1);
 }

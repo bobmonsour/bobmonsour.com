@@ -1,7 +1,8 @@
 ---
 title: Is this thing on?
 date: 2022-02-05
-description: Welcome to the first post of my new site!
+description: Welcome to the first post of my new site! I'll be writing about my experience in building this site as well as a few others I've built using eleventy.
+keywords: blog, website, retired, 11ty, eleventy
 ---
 
 Welcome to the first post of my new site!

@@ -1,7 +1,10 @@
 // Base scss file
 // Includes all other scss files via @import
-// Imported files must have filenames that start with an underscore (excluded on the @import command)
+// Imported *local* files must have filenames that start with an underscore (excluded on the @import command)
+@import "https://unpkg.com/open-props";
 @import "reset";
 @import "variables";
 @import "desktop";
 @import "mobile";
+
+// TODO: Consider using NPM version of open-props; look at JIT Props to minimize props uses to only those props actually used; also look at size-content for use on blog post items

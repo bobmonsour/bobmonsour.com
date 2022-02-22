@@ -1,11 +1,7 @@
 const readingTime = require("eleventy-plugin-reading-time");
+const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 
 module.exports = function (eleventyConfig) {
-  // Opt out of using BrowserSync; using Popypane in its place
-  // eleventyConfig.setBrowserSyncConfig({
-  //   snippet: false
-  // });
-
   // Copy the src/image dir to the _site/images dir
   eleventyConfig.addPassthroughCopy("css");
   eleventyConfig.addPassthroughCopy("images");
@@ -19,8 +15,11 @@ module.exports = function (eleventyConfig) {
   // Add filter to generate reading time for a post
   eleventyConfig.addFilter(
     "readingTime",
-    require("./src/_filters/readingtime.js")
+    require("./src/_includes/_filters/readingtime.js")
   );
+
+  // Add plugin for syntax highlighting
+  eleventyConfig.addPlugin(syntaxHighlight);
 
   return {
     markdownTemplateEngine: "njk",

@@ -8,7 +8,8 @@ layout: default
     month: 'long',
     day: 'numeric',
     year: 'numeric'
-  }) }}<span class="post__read-time">{{ content | readingTime }}</span></p>
+  }) }}</p>
+  <p class="post__readingtime">{{ content | readingTime }}</p>
   <div class="post__body">
     {{ content | safe }}
   </div>

@@ -7,7 +7,6 @@ permalink: /moreposts/
 ---
 
 <div class="container">
-  <h1>More Posts</h1>
   {% set latest_posts = collections.post | reverse %}
   {%- for post in latest_posts -%}
     <div class="post">
@@ -16,10 +15,9 @@ permalink: /moreposts/
         month: 'long',
         day: 'numeric',
         year: 'numeric'
-      }) }}<span class="post__read-time">{{ post.templateContent | readingTime }}</span></p>
-      <div class="post__excerpt">
-        {{ post.data.description }}
-      </div>
+      }) }}</p>
+      <p class="post__readingtime">{{ post.templateContent | readingTime }}</p>
+      <p class="post__excerpt">{{ post.data.description }}</p>
     </div>
   {%- endfor -%}
 </div>

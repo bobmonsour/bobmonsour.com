@@ -1,27 +1,27 @@
 // MOBILE STYLES
 
-@media (max-width: 500px) {
+@media (max-width: 900px) {
   .brand {
-    &__name-and-subtitle {
-      margin-left: 0;
-    }
-
     &__nav {
-      margin: 1em 0 auto 0;
+      align-self: center;
+      margin: 1em auto 0 auto;
     }
 
     &__nav a {
-      font-size: var(--nav-link-size-mobile);
       padding: 4px;
     }
   }
 
-  .footflex__text {
+  footer.container {
+    max-width: 100vw;
+  }
+  .footer__text {
+    min-width: 80%;
     text-align: center;
+    margin: 0 auto;
   }
 
-  .footflex__social-icons {
-    display: flex;
+  .footer__social-icons {
     margin: 1em auto;
   }
 }

@@ -7,7 +7,7 @@
     "watch:eleventy": "eleventy --serve",
     "watch:sass": "sass sass:_site/css --watch",
     "start": "npm run watch:eleventy & npm run watch:sass",
-    "clean": "npx rimraf ./_site",
+    "clean": "rimraf ./_site",
     "build": "sass sass:_site/css && eleventy"
   },
   "keywords": [],
@@ -15,6 +15,7 @@
   "license": "ISC",
   "devDependencies": {
     "@11ty/eleventy": "^1.0.0",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^4.0.0",
     "sass": "^1.48.0"
   },
   "dependencies": {

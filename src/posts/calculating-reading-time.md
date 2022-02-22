@@ -1,12 +1,13 @@
 ---
 title: Calculating reading time for a post
 date: 2022-02-06
-description: Where does that 'About 2 minutes to read' come from?
+description: Where does that 'About 3 minutes to read' come from? Each of the posts on this site (there are only two so far, and this is the second one), display something like "About 1 minute to read."
+keywords: reading time, eleventy, filters
 ---
 
-Where does that _'About 2 minutes to read'_ come from?
+Where does that _'About 3 minutes to read'_ come from?
 
-Each of the posts on this site (there are only two so far, and this is the second one), display something like "1 min read." This indicates that it will take about one minute to read the post.
+Each of the posts on this site (there are only two so far, and this is the second one), display something like "About 1 minute to read." This indicates that it will take about one minute to read the post.
 
 I had seen that on other sites, inlcuding Medium, and I always thought it was kinda neat.
 
@@ -20,10 +21,24 @@ However, when I looked at the code, I didn't really understand it all. I know th
 
 So even though the plugin worked, I really wanted to try to make a simpler (in my mind) version of it. One that I could document and share...simply for the sake of learning and sharing (which, if you read my [Is this thing on?](https://www.bobmonsour.com/posts/is-this-thing-on/) post, you'd see that that's one of the purposes of this site.
 
-So, now, I present to you my reading time calculator. Below is a [GitHub gist](https://gist.github.com/bobmonsour/53ea41c50bec94be394a9314858dad1d) of the code that anyone is free to use. I set it up as a filter (rather than a plugin).
+So, now, I present to you my reading time calculator. The code is shown below and it can also be found at this [GitHub gist](https://gist.github.com/bobmonsour/53ea41c50bec94be394a9314858dad1d).
 
-<script src="https://gist.github.com/bobmonsour/53ea41c50bec94be394a9314858dad1d.js"></script>
+```js
+{% include "_filters/readingtime.js" %}
+```
+
+I set it up as an eleventy filter by adding this to my .eleventy.js file:
+
+```js
+// Add filter to generate reading time for a post
+eleventyConfig.addFilter(
+  "readingTime",
+  require("./src/_includes/_filters/readingtime.js")
+);
+```
+
+The reason that I place the readingtime.js filter file under my \_includes directory is so that I can include the exact code in the very blog post that you're reading now. That way, if the code changes, so does this post.
 
 I'm not sure if this is worth taking any further as it suits my purposes of being simple, lightweight, and understandable (to me, at least).
 
-UPDATE: I have since found a second one, listed among the [community-contributed plugins](https://www.11ty.dev/docs/plugins/) on the eleventy docs site. [This one](https://github.com/JKC-Codes/eleventy-plugin-time-to-read) has a lot more features than I need and I found to be even more complex (not always a bad thing, but it does far more than I need).
+UPDATE: I have since found a second implementation. It's listed among the [community-contributed plugins](https://www.11ty.dev/docs/plugins/) on the eleventy docs site. [This one](https://github.com/JKC-Codes/eleventy-plugin-time-to-read) has a lot more features than I need and I found it to be more complex (not always a bad thing, but it does far more than I need).

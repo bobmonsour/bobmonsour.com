@@ -2,21 +2,13 @@
 
 // Typography
 
-.brand__name-and-subtitle .brand__name {
-  font-family: "Caveat", cursive;
-  font-size: 5em;
-  line-height: 1;
-}
-
 h1 {
-  font-size: var(--post-title-size);
   color: var(--brand-color);
-  text-align: center;
 }
 
 p {
-  font-family: var(--body-copy-font);
-  font-size: var(--body-copy-size);
+  font-family: var(--post-body-font);
+  font-size: var(--post-body--size);
 }
 
 footer p {
@@ -31,7 +23,7 @@ main {
 }
 
 header {
-  margin: 2em 0;
+  margin: 0.5em 0;
 }
 .container {
   max-width: 90%;
@@ -58,7 +50,8 @@ header {
   }
 
   &__name {
-    font-size: var(--brand-name-size);
+    font-family: var(--brand-name-font);
+    font-size: var(--font-size-fluid-3);
     font-weight: bold;
     text-decoration: none;
     margin-right: auto;
@@ -66,12 +59,13 @@ header {
 
   &__subtitle {
     font-family: var(--brand-subtitle-font);
-    font-size: var(--brand-subtitle-size);
+    font-size: var(--font-size-fluid-1);
     margin-right: auto;
   }
 
   a {
     color: var(--brand-color);
+    text-decoration: none;
 
     &:hover,
     &:focus {
@@ -81,12 +75,15 @@ header {
   }
 
   &__nav {
+    display: flex;
+    gap: 1em;
     padding-left: 0;
     margin: 0 auto;
   }
 
   &__nav a {
-    font-size: var(--nav-link-size);
+    font-family: var(--nav-link-font);
+    font-size: var(--font-size-fluid-1);
     text-decoration: none;
     padding: 8px;
     border-bottom: 2px solid var(--nav-underline-color);
@@ -102,7 +99,7 @@ header {
 // Post & excerpt layout
 
 .post {
-  margin: 3rem 0;
+  margin: 2rem 0;
 
   &__title {
     font-size: var(--post-title-size);
@@ -122,19 +119,14 @@ header {
   }
 
   &__date,
-  &__read-time {
+  &__readingtime {
     font-size: var(--post-date-size);
-  }
-
-  &__read-time {
-    display: inline-block;
-    margin-left: 1.5em;
   }
 
   &__excerpt,
   &__body {
     max-width: 65ch;
-    font-size: var(--post-excerpt-size);
+    font-size: var(--post-body-size);
     margin: 0.5em 0;
 
     p {
@@ -146,37 +138,37 @@ header {
 // Footer
 
 footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   background-color: var(--footer-background-color);
   padding: 2em 0;
   margin-top: 4em;
 }
 
-.footflex {
+.footer__text {
+  font-family: var(--footer-copy-font);
+  margin-left: 1em;
+  margin-right: auto;
+}
+
+.footer__social-icons {
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+  margin-left: auto;
+  margin-right: 1em;
 
-  &__text {
-    margin-right: auto;
-  }
+  .icon-link {
+    margin: 0 1em;
 
-  &__social-icons {
-    display: flex;
-    margin-left: auto;
+    &:hover,
+    &:focus {
+      background-color: var(--social-icon-background-color);
+      cursor: pointer;
+    }
 
-    .icon-link {
-      margin: 0 1em;
-
-      &:hover,
-      &:focus {
-        background-color: var(--social-icon-background-color);
-        cursor: pointer;
-      }
-
-      .icon {
-        width: 36px;
-        height: 36px;
-      }
+    .icon {
+      width: 36px;
+      height: 36px;
     }
   }
 }
