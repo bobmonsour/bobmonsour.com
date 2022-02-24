@@ -65,6 +65,8 @@ ul {
   --brand-name-font: "Caveat", cursive;
   --brand-color: var(--green-9);
   --brand-subtitle-font: var(--font-sans);
+  --brand-link-hover-color: var(--nav-hover-color);
+  --brand-link-radius: var(--radius-blob-5);
   --nav-link-color: var(--brand-color);
   --nav-link-font: var(--font-sans);
   --nav-link-size: var(--font-size-fluid-2);
@@ -79,6 +81,8 @@ ul {
   --post-title-size: var(--font-size-fluid-2);
   --post-date-size: var(--font-size-fluid-1);
   --post-excerpt-size: var(--font-size-fluid-1);
+  --post-link-hover-color: var(--nav-hover-color);
+  --post-link-radius: var(--radius-blob-5);
 }
 
 h1 {
@@ -100,7 +104,8 @@ main {
 }
 
 header {
-  margin: 0.5em 0;
+  background: var(--gradient-9);
+  margin: 0;
 }
 
 .container {
@@ -136,12 +141,14 @@ header {
   margin-right: auto;
 }
 .brand a {
+  display: inline-block;
   color: var(--brand-color);
   text-decoration: none;
 }
 .brand a:hover, .brand a:focus {
-  background-color: var(--nav-hover-color);
-  border-radius: 50%;
+  background-color: var(--brand-link-hover-color);
+  border-radius: var(--brand-link-radius);
+  animation: var(--animation-pulse);
 }
 .brand__nav {
   display: flex;
@@ -170,13 +177,15 @@ header {
   color: var(--brand-color);
 }
 .post a {
+  display: inline-block;
   color: var(--brand-color);
   text-decoration: none;
   border-bottom: 2px solid var(--nav-underline-color);
 }
 .post a:hover, .post a:focus {
-  background-color: var(--nav-hover-color);
-  border-radius: 50%;
+  background-color: var(--post-link-hover-color);
+  border-radius: var(--post-link-radius);
+  animation: var(--animation-pulse);
 }
 .post__date, .post__readingtime {
   font-size: var(--post-date-size);

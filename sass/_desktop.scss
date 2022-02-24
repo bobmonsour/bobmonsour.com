@@ -23,7 +23,8 @@ main {
 }
 
 header {
-  margin: 0.5em 0;
+  background: var(--gradient-9);
+  margin: 0;
 }
 .container {
   max-width: 90%;
@@ -64,13 +65,15 @@ header {
   }
 
   a {
+    display: inline-block;
     color: var(--brand-color);
     text-decoration: none;
 
     &:hover,
     &:focus {
-      background-color: var(--nav-hover-color);
-      border-radius: 50%;
+      background-color: var(--brand-link-hover-color);
+      border-radius: var(--brand-link-radius);
+      animation: var(--animation-pulse);
     }
   }
 
@@ -107,14 +110,16 @@ header {
   }
 
   a {
+    display: inline-block;
     color: var(--brand-color);
     text-decoration: none;
     border-bottom: 2px solid var(--nav-underline-color);
 
     &:hover,
     &:focus {
-      background-color: var(--nav-hover-color);
-      border-radius: 50%;
+      background-color: var(--post-link-hover-color);
+      border-radius: var(--post-link-radius);
+      animation: var(--animation-pulse);
     }
   }
 

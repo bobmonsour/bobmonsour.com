@@ -54,6 +54,7 @@ Combining this thinking along with the use of Open Props, I revised the list to 
   --brand-name-font: "Caveat", cursive;
   --brand-color: var(--green-9);
   --brand-subtitle-font: var(--font-sans);
+  --brand-link-radius: var(--radius-blob-5);
 
   // Navigation
 
@@ -77,6 +78,8 @@ Combining this thinking along with the use of Open Props, I revised the list to 
   --post-title-size: var(--font-size-fluid-2);
   --post-date-size: var(--font-size-fluid-1);
   --post-excerpt-size: var(--font-size-fluid-1);
+  --post-link-hover-color: var(--nav-hover-color);
+  --post-link-radius: var(--radius-blob-5);
 }
 ```
 
