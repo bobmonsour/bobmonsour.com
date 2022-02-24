@@ -1,7 +1,8 @@
 // Base scss file
 // Includes all other scss files via @import
 // Imported *local* files must have filenames that start with an underscore (excluded on the @import command)
-@import "https://unpkg.com/open-props";
+// @import "https://unpkg.com/open-props/open-props.min.css";
+// @import "open-props/style";
 @import "reset";
 @import "variables";
 @import "desktop";

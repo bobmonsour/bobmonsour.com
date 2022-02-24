@@ -1,0 +1,249 @@
+/*
+  Based on Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+
+  Modified slightly to use an alternative way to set box-sizing, per:
+    https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+
+  Also, removed the isolation property on root.
+*/
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+ul {
+  list-style: none;
+}
+
+:root {
+  --brand-name-font: "Caveat", cursive;
+  --brand-color: var(--green-9);
+  --brand-subtitle-font: var(--font-sans);
+  --nav-link-color: var(--brand-color);
+  --nav-link-font: var(--font-sans);
+  --nav-link-size: var(--font-size-fluid-2);
+  --nav-underline-color: var(--orange-9);
+  --nav-hover-color: var(--orange-3);
+  --footer-background-color: var(--orange-3);
+  --footer-copy-font: var(--font-sans);
+  --footer-copy-size: var(--font-size-fluid-1);
+  --social-icon-background-color: var(--green-6);
+  --post-body-font: var(--font-serif);
+  --post-body-size: var(--font-size-fluid-1);
+  --post-title-size: var(--font-size-fluid-2);
+  --post-date-size: var(--font-size-fluid-1);
+  --post-excerpt-size: var(--font-size-fluid-1);
+}
+
+h1 {
+  color: var(--brand-color);
+}
+
+p {
+  font-family: var(--post-body-font);
+  font-size: var(--post-body--size);
+}
+
+footer p {
+  font-size: var(--footer-copy-size);
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  margin: 0.5em 0;
+}
+
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.brand {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  padding: 0 1rem;
+  color: var(--brand-color);
+}
+.brand__image {
+  clip-path: circle(45%);
+}
+.brand__name-and-subtitle {
+  margin-left: 1.5rem;
+}
+.brand__name {
+  font-family: var(--brand-name-font);
+  font-size: var(--font-size-fluid-3);
+  font-weight: bold;
+  text-decoration: none;
+  margin-right: auto;
+}
+.brand__subtitle {
+  font-family: var(--brand-subtitle-font);
+  font-size: var(--font-size-fluid-1);
+  margin-right: auto;
+}
+.brand a {
+  color: var(--brand-color);
+  text-decoration: none;
+}
+.brand a:hover, .brand a:focus {
+  background-color: var(--nav-hover-color);
+  border-radius: 50%;
+}
+.brand__nav {
+  display: flex;
+  gap: 1em;
+  padding-left: 0;
+  margin: 0 auto;
+}
+.brand__nav a {
+  font-family: var(--nav-link-font);
+  font-size: var(--font-size-fluid-1);
+  text-decoration: none;
+  padding: 8px;
+  border-bottom: 2px solid var(--nav-underline-color);
+}
+.brand .current {
+  background-color: var(--nav-hover-color);
+  border-top: 2px solid var(--nav-underline-color);
+  border-bottom: 2px solid var(--nav-underline-color);
+}
+
+.post {
+  margin: 2rem 0;
+}
+.post__title {
+  font-size: var(--post-title-size);
+  color: var(--brand-color);
+}
+.post a {
+  color: var(--brand-color);
+  text-decoration: none;
+  border-bottom: 2px solid var(--nav-underline-color);
+}
+.post a:hover, .post a:focus {
+  background-color: var(--nav-hover-color);
+  border-radius: 50%;
+}
+.post__date, .post__readingtime {
+  font-size: var(--post-date-size);
+}
+.post__excerpt, .post__body {
+  max-width: 65ch;
+  font-size: var(--post-body-size);
+  margin: 0.5em 0;
+}
+.post__excerpt p, .post__body p {
+  margin: 0 0 1em 0;
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: var(--footer-background-color);
+  padding: 2em 0;
+  margin-top: 4em;
+}
+
+.footer__text {
+  font-family: var(--footer-copy-font);
+  margin-left: 1em;
+  margin-right: auto;
+}
+
+.footer__social-icons {
+  display: flex;
+  margin-left: auto;
+  margin-right: 1em;
+}
+.footer__social-icons .icon-link {
+  margin: 0 1em;
+}
+.footer__social-icons .icon-link:hover, .footer__social-icons .icon-link:focus {
+  background-color: var(--social-icon-background-color);
+  cursor: pointer;
+}
+.footer__social-icons .icon-link .icon {
+  width: 36px;
+  height: 36px;
+}
+
+@media (max-width: 900px) {
+  .brand__nav {
+    align-self: center;
+    margin: 1em auto 0 auto;
+  }
+  .brand__nav a {
+    padding: 4px;
+  }
+
+  footer.container {
+    max-width: 100vw;
+  }
+
+  .footer__text {
+    min-width: 80%;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .footer__social-icons {
+    margin: 1em auto;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

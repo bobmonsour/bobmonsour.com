@@ -1,12 +1,8 @@
-const readingTime = require("eleventy-plugin-reading-time");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 
 module.exports = function (eleventyConfig) {
-  // Copy the src/image dir to the _site/images dir
-  eleventyConfig.addPassthroughCopy("css");
+  eleventyConfig.addPassthroughCopy("src/css");
   eleventyConfig.addPassthroughCopy("images");
-  eleventyConfig.addPassthroughCopy("assets");
-  eleventyConfig.addPassthroughCopy("js");
   eleventyConfig.addPassthroughCopy("robots.txt");
 
   // Shortcode for the current year
