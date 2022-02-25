@@ -7,4 +7,4 @@
 @import "desktop";
 @import "mobile";
 
-// TODO: Consider using NPM version of open-props; look at JIT Props to minimize props uses to only those props actually used; also look at size-content for use on blog post items
+// TODO: MUST import open-props.min.css (as above) when developing locally; MUST remove this import line when deploying to netlify as the build process will automatically include Open Props via npm module which also makes use of postcss-jit-props. Need a way to automate this difference without requiring manual intervention.

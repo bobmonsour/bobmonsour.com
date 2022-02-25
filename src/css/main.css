@@ -62,20 +62,22 @@ ul {
 }
 
 :root {
+  --ukraine-flag-blue: #005bbb;
+  --ukraine-flag-yellow: #ffd500;
   --brand-name-font: "Caveat", cursive;
-  --brand-color: var(--green-9);
+  --brand-color: var(--ukraine-flag-blue);
   --brand-subtitle-font: var(--font-sans);
   --brand-link-hover-color: var(--nav-hover-color);
   --brand-link-radius: var(--radius-blob-5);
   --nav-link-color: var(--brand-color);
   --nav-link-font: var(--font-sans);
   --nav-link-size: var(--font-size-fluid-2);
-  --nav-underline-color: var(--orange-9);
-  --nav-hover-color: var(--orange-3);
-  --footer-background-color: var(--orange-3);
+  --nav-underline-color: var(--ukraine-flag-yellow);
+  --nav-hover-color: var(--ukraine-flag-yellow);
+  --footer-background-color: var(--ukraine-flag-yellow);
   --footer-copy-font: var(--font-sans);
   --footer-copy-size: var(--font-size-fluid-1);
-  --social-icon-background-color: var(--green-6);
+  --social-icon-background-color: var(--ukraine-flag-blue);
   --post-body-font: var(--font-serif);
   --post-body-size: var(--font-size-fluid-1);
   --post-title-size: var(--font-size-fluid-2);
