@@ -7,7 +7,7 @@ permalink: /moreposts/
 ---
 
 <div class="container">
-  {% set latest_posts = collections.post | reverse %}
+  {% set latest_posts = collections.posts | reverse %}
   {%- for post in latest_posts -%}
     <div class="post">
       <h2 class="post__title"><a href="{{ post.url }}">{{ post.data.title }}</a></h2>

@@ -7,7 +7,7 @@ permalink: /
 ---
 
 <div class="container">
-  {% set latest_posts = collections.post | reverse %}
+  {% set latest_posts = collections.posts | reverse %}
   {%- for post in latest_posts.slice(0,1) -%}
     {%- include "post-innards.njk" -%}
   {%- endfor -%}
