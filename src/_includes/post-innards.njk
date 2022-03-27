@@ -1,0 +1,15 @@
+{#
+  Essential post elements
+   Included on home page and individual post pages
+#}
+<div class="post">
+  <h1 class="post__title">{{ post.data.title }}</h1>
+  <p class="post__date">{{ post.date.toLocaleString('en-US', {
+    month: 'long',
+    day: 'numeric',
+    year: 'numeric'
+  }) }}&nbsp;&nbsp;&bull;&nbsp;&nbsp;{{ post.templateContent | readingTime }}</p>
+  <div class="post__body">
+    {{ post.templateContent | safe }}
+  </div>
+</div>

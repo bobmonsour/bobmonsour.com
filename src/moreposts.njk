@@ -15,8 +15,7 @@ permalink: /moreposts/
         month: 'long',
         day: 'numeric',
         year: 'numeric'
-      }) }}</p>
-      <p class="post__readingtime">{{ post.templateContent | readingTime }}</p>
+      }) }}&nbsp;&nbsp;&bull;&nbsp;&nbsp;{{ post.templateContent | readingTime }}</p>
       <p class="post__excerpt">{{ post.data.description }}</p>
     </div>
   {%- endfor -%}

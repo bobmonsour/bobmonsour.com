@@ -1,5 +1,7 @@
 module.exports = {
-  env: "development",
+  env: "production",
+  dev_url: "http://localhost:8080",
+  prod_url: "https://bobmonsour.com",
   title: "Bob Monsour | Home",
   url: "http://www.bobmonsour.com",
   mainNavLinks: [

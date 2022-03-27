@@ -5,9 +5,12 @@
       <p class="brand__subtitle">Retired, former tech and business guy</p>
     </div>
     <ul class="brand__nav">
-    {% for link in site.mainNavLinks %}
-      <li class="{{ link.class }}"><a href="{{ link.url }}"{% if page.url == link.url %} aria-current="page" class="current"{% endif %}>{{ link.text }}</a></li>
-    {% endfor %}
+      {% for link in site.mainNavLinks %}
+        <li {% if link.class %} class="{{ link.class }}" {% endif %}>
+          <a href="{% if site.env == "production" %}{{ site.prod_url}}{{ link.url }}{% else %}{{site.dev_url}}{{ link.url }}{% endif %}"
+            {% if page.url == link.url %} aria-current="page" class="nav__link current" {% else %}class="nav__link" {% endif %}>{{ link.text }}</a>
+        </li>
+      {% endfor %}
     </ul>
   </nav>
 </header>

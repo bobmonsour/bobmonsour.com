@@ -9,17 +9,6 @@ permalink: /
 <div class="container">
   {% set latest_posts = collections.post | reverse %}
   {%- for post in latest_posts.slice(0,1) -%}
-    <div class="post">
-      <h1 class="post__title">{{ post.data.title }}</h1>
-      <p class="post__date">{{ post.date.toLocaleString('en-US', {
-        month: 'long',
-        day: 'numeric',
-        year: 'numeric'
-      }) }}</p>
-      <p class="post__readingtime">{{ post.templateContent | readingTime }}</p>
-      <div class="post__body">
-        {{ post.templateContent | safe }}
-      </div>
-    </div>
+    {%- include "post-innards.njk" -%}
   {%- endfor -%}
 </div>

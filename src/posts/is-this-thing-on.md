@@ -5,9 +5,11 @@ description: Welcome to the first post of my new site! I'll be writing about my 
 keywords: blog, website, retired, 11ty, eleventy
 ---
 
+{% image "src/img/is-this-thing-on.jpg", "a boy screaming into a microphone", "(min-width: 1000px) 1200px, 100vw" %}
+
 Welcome to the first post of my new site!
 
-I've built the site with something called [eleventy, or as some say, 11ty](https://www.11ty.dev/). It's a static site generator that I'm still learning how to use.
+I've built the site with something called [11ty, or as some say, eleventy](https://www.11ty.dev/). It's a static site generator that I'm still learning how to use.
 
 I'll be writing about my experience in building this site as well as a few others I've built using eleventy.
 
