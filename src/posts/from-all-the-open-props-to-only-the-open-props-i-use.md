@@ -7,6 +7,9 @@ keywords: postcss-jit-props, smaller css, adam argyle
 
 {% image "src/img/only-the-open-props-i-use.jpg", "essential love drawn in color on a chalkboard", "(min-width: 1000px) 1200px, 100vw" %}
 
+<p class="caption">Photo by <a href="https://unsplash.com/@sharonmccutcheon?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Sharon McCutcheon</a> on <a href="https://unsplash.com/s/photos/essential?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  </p>
+
 As I wrote in [my last post](/posts/dipping-my-toes-in-the-open-props-water), I started using Open Props to define the colors, fonts, and font sizes for this site. I also used Open Props to define the radius and animation you see when you hover over the site's links.
 
 There are a lot of available props and my site's use of them only scratches the surface, using less than 20 of them as of this writing.

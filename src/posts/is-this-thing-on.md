@@ -7,6 +7,8 @@ keywords: blog, website, retired, 11ty, eleventy
 
 {% image "src/img/is-this-thing-on.jpg", "a boy screaming into a microphone", "(min-width: 1000px) 1200px, 100vw" %}
 
+<p class="caption">Photo by <a href="https://unsplash.com/@jasonrosewell?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jason Rosewell</a> on <a href="https://unsplash.com/s/photos/microphone?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
+
 Welcome to the first post of my new site!
 
 I've built the site with something called [11ty, or as some say, eleventy](https://www.11ty.dev/). It's a static site generator that I'm still learning how to use.

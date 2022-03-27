@@ -7,6 +7,8 @@ keywords: reading time, eleventy, filters
 
 {% image "src/img/calculating-reading-time-for-a-post.jpg", "a boy reading at sunset", "(min-width: 1000px) 1200px, 100vw" %}
 
+<p class="caption">Photo by <a href="https://unsplash.com/@aaronburden?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Aaron Burden</a> on <a href="https://unsplash.com/s/photos/boy-reading-sunset?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
+
 Where does that _'About 3 minutes to read'_ come from?
 
 Each of the posts on this site (there are only two so far, and this is the second one), display something like "About 1 minute to read." This indicates that it will take about one minute to read the post.
