@@ -5,6 +5,8 @@ description: I saw the recent launch of Open Props by Adam Argyle and then watch
 keywords: open props, css variables, css architecture, adam argyle
 ---
 
+{% image "src/img/dipping-my-toe-in-the-open-props-water.jpg", "a foot near the water at the beach", "(min-width: 1000px) 1200px, 100vw" %}
+
 [Open Props](https://open-props.style/)? What's that, you say? In the words of [Adam Argyle](https://twitter.com/argyleink), they're _Supercharged CSS variables_. I've got to assume that you know what CSS variables are as this post would be way too long for me to describe them and what they're capable of. So, if they're _variables_, why does he call them _props_? It's can be a little confusing, but according to the [spec](https://www.w3.org/TR/2021/CRD-css-variables-1-20211111/), they _are_ variables, but custom _properties_ are used to define them; also, the value of the property is referenced with the `var()` function. Many [others](https://css-tricks.com/a-complete-guide-to-custom-properties/) way [smarter than me](https://treciaks.hashnode.dev/css-variables) have [covered that ground](https://css-tricks.com/using-custom-property-stacks-to-tame-the-cascade/).
 
 Before I get into my initial attempt at using Open Props, [this intro video](https://www.youtube.com/watch?v=szPNMKZazzQ) by Kevin Powell did a great job of jumpstarting my understanding. Prior to that, Kevin had done a [Twitch stream](https://www.twitch.tv/videos/1277849387) with Adam and they played around with Open Props; a longer video, but also incredibly helpful.
