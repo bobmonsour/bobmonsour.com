@@ -28,7 +28,7 @@ So even though the plugin worked, I really wanted to try to make a simpler (in m
 So, now, I present to you my reading time calculator. The code is shown below and it can also be found at this [GitHub gist](https://gist.github.com/bobmonsour/53ea41c50bec94be394a9314858dad1d).
 
 ```js
-{% include "_filters/readingtime.js" %}
+{% include "filters/readingtime.js" %}
 ```
 
 I set it up as an eleventy filter by adding this to my .eleventy.js file:
@@ -37,7 +37,7 @@ I set it up as an eleventy filter by adding this to my .eleventy.js file:
 // Add filter to generate reading time for a post
 eleventyConfig.addFilter(
   "readingTime",
-  require("./src/_includes/_filters/readingtime.js")
+  require("./src/_includes/filters/readingtime.js")
 );
 ```
 

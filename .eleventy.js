@@ -43,7 +43,7 @@ module.exports = function (eleventyConfig) {
   // Add self-authored filter to generate reading time for a post
   eleventyConfig.addFilter(
     "readingTime",
-    require("./src/_includes/_filters/readingtime.js")
+    require("./src/_includes/filters/readingtime.js")
   );
 
   // Add plugins for syntax highlighting and RSS feed generation
