@@ -10,8 +10,8 @@ permalink: /
   {% set latest_posts = collections.posts | reverse %}
   {%- for post in latest_posts.slice(0,1) -%}
   <div class="post">
-    <h1 class="post__title">{{ post.data.title }}</h1>
-    <p class="post__date">{{ post.date | formatPostDate }}&nbsp;&nbsp;&bull;&nbsp;&nbsp;{{ post.templateContent | readingTime }}</p>
+    <h1 class="post__title centered">{{ post.data.title }}</h1>
+    <p class="post__date centered">{{ post.date | formatPostDate }}&nbsp;&nbsp;&bull;&nbsp;&nbsp;{{ post.templateContent | readingTime }}</p>
     <div class="post__body">
       {{ post.templateContent | safe }}
     </div>

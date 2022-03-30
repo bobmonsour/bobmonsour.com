@@ -30,6 +30,7 @@ main {
 
 header {
   background: var(--gradient-9);
+  padding-bottom: 10px;
   margin: 0;
 }
 .container {
@@ -109,12 +110,12 @@ header {
 // Post & excerpt layout
 
 .post {
-  margin: 2rem 0;
+  margin: 1rem 0;
 
   &__title {
     font-size: var(--post-title-size);
     color: var(--brand-color);
-    line-height: 1.2;
+    line-height: 1.1;
     padding-bottom: 5px;
   }
 
@@ -150,10 +151,14 @@ header {
   }
 }
 
+.centered {
+  text-align: center;
+}
+
 .caption {
   text-align: center;
   font-style: italic;
-  font-size: 1rem;
+  font-size: var(--image-caption-font-size);
 }
 
 // Footer
