@@ -46,6 +46,12 @@ module.exports = function (eleventyConfig) {
     require("./src/_includes/filters/readingtime.js")
   );
 
+  // Add filter to generate post date for various contexts
+  eleventyConfig.addFilter(
+    "formatPostDate",
+    require("./src/_includes/filters/formatpostdate.js")
+  );
+
   // Add plugins for syntax highlighting and RSS feed generation
   eleventyConfig.addPlugin(syntaxHighlight);
   eleventyConfig.addPlugin(pluginRss);

@@ -4,11 +4,7 @@ layout: default
 <div class="container">
   <div class="post">
     <h1 class="post__title">{{ title }}</h1>
-    <p class="post__date">{{ page.date.toLocaleString('en-US', {
-    month: 'long',
-    day: 'numeric',
-    year: 'numeric'
-    }) }}&nbsp;&nbsp;&bull;&nbsp;&nbsp;{{ content | readingTime }}</p>
+    <p class="post__date">{{ page.date | formatPostDate }}&nbsp;&nbsp;&bull;&nbsp;&nbsp;{{ content | readingTime }}</p>
     <div class="post__body">
       {{ content | safe }}
     </div>

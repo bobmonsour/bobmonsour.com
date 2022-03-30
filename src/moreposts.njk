@@ -11,11 +11,7 @@ permalink: /moreposts/
   {%- for post in latest_posts -%}
     <div class="post">
       <h2 class="post__title"><a href="{{ post.url }}">{{ post.data.title }}</a></h2>
-      <p class="post__date">{{ post.date.toLocaleString('en-US', {
-        month: 'long',
-        day: 'numeric',
-        year: 'numeric'
-      }) }}&nbsp;&nbsp;&bull;&nbsp;&nbsp;{{ post.templateContent | readingTime }}</p>
+      <p class="post__date">{{ post.date | formatPostDate }}&nbsp;&nbsp;&bull;&nbsp;&nbsp;{{ post.templateContent | readingTime }}</p>
       <p class="post__excerpt">{{ post.data.description }}</p>
     </div>
   {%- endfor -%}
