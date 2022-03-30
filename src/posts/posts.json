@@ -3,5 +3,6 @@
   "permalink": "/posts/{{ page.fileSlug }}/",
   "tags": "posts",
   "keywords": "retired, web development, eleventy, tennis",
+  "image": "https://bobmonsour.com/img/{{ page.fileSlug }}-1400w.jpg",
   "__comment__": "The items above are added to the front matter of all of the posts in the src/posts directory; per 11ty rules. They can be overridden in the individual post's front matter."
 }
