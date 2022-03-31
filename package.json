@@ -1,7 +1,7 @@
 {
   "name": "bobmonsour.com",
   "version": "1.0.0",
-  "description": "This is an 11ty project that represents the personal website of Bob Monsour.",
+  "description": "This is the personal website of Bob Monsour (built with 11ty).",
   "main": ".eleventy.js",
   "scripts": {
     "watch:sass": "sass --watch src/sass/main-dev.scss:_site/css/main.css",
