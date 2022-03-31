@@ -3,7 +3,7 @@ title: Is this thing on?
 date: 2022-02-05
 description: Welcome to the first post of my new site! I'll be writing about my experience in building this site as well as a few others I've built using eleventy.
 keywords: blog, website, retired, 11ty, eleventy
-image: "https://www.bobmonsour.com/img/is-this-thing-on-1400w.jpeg"
+image: "is-this-thing-on-1400w.jpeg"
 ---
 
 {% image "src/img/is-this-thing-on.jpg", "a boy screaming into a microphone", "(min-width: 1000px) 1200px, 100vw" %}

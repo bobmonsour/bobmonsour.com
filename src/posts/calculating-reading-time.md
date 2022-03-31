@@ -3,7 +3,7 @@ title: Calculating reading time for a post
 date: 2022-02-06
 description: Where does that 'About 3 minutes to read' come from? Each of the posts on this site (there are only two so far, and this is the second one), display something like "About 1 minute to read."
 keywords: reading time, eleventy, filters
-image: "https://www.bobmonsour.com/img/calculating-reading-time-for-a-post-1400w.jpeg"
+image: "calculating-reading-time-for-a-post.jpeg"
 ---
 
 {% image "src/img/calculating-reading-time-for-a-post.jpg", "a boy reading at sunset", "(min-width: 1000px) 1200px, 100vw" %}
