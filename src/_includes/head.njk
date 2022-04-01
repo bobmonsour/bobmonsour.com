@@ -9,8 +9,10 @@
   <meta property="og:title" content="{{ title }}">
   <meta property="og:type" content="website" />
   <meta property="og:description" content="{{ description }}">
-  <meta property="og:image" content="https://bobmonsour.netlify.app/img/{{ image }}">
-  <meta property="og:url" content="https://bobmonsour.netlify.app">
+  <meta property="og:image" content="{% if site.env == "prod" %}{{ site.prod_url}}/{{ image }}{% else %}{{site.dev_url}}/{{ image }}{% endif %}">
+  {# <meta property="og:image" content="https://bobmonsour.com/img/{{ image }}"> #}
+  <meta property="og:url" content="{% if site.env == "prod" %}{{ site.prod_url}}{% else %}{{site.dev_url}}{% endif %}">
+  {# <meta property="og:url" content="https://bobmonsour.com"> #}
   <meta name="twitter:card" content="summary_large_image">
 
   <link rel="stylesheet" href="/css/main.css">

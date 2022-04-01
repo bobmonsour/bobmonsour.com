@@ -1,5 +1,5 @@
 module.exports = {
-  env: "prod",
+  env: process.env.ELEVENTY_ENV,
   dev_url: "http://localhost:8080",
   prod_url: "https://bobmonsour.com",
   title: "Bob Monsour | Home",

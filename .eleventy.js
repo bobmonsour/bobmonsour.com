@@ -27,9 +27,19 @@ async function imageShortcode(src, alt, sizes) {
 
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
+const directoryOutputPlugin = require("@11ty/eleventy-plugin-directory-output");
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode);
+
+  // See directory output during build process
+  eleventyConfig.setQuietMode(true);
+  eleventyConfig.addPlugin(directoryOutputPlugin, {
+    columns: {
+      filesize: true, // Use `false` to disable
+      benchmark: true, // Use `false` to disable
+    },
+  });
 
   // Set up watch targets and passthroughs
   eleventyConfig.addWatchTarget("./src/sass/");
