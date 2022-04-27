@@ -23,11 +23,11 @@ There have been numerous times in our adult lives when I've found myself doing s
 <div class="multipic">
   <div class="pic-with-caption">
     {% image "src/img/brooklyn-circa-1960.jpg", "Circa 1960, Bill and I standing outside of our apartment building in Brooklyn.", "(min-width: 1000px) 1200px, 100vw" %}
-    <p class="caption">Brooklyn, circa 1960</p>
+    <p class="caption">Bill and I outside of our apartment building in Brooklyn, circa 1960</p>
   </div>
   <div class="pic-with-caption">
-    {% image "src/img/bill-and-kims-wedding.jpg", "Photos on the pier before Bill & Kim's wedding.", "(min-width: 1000px) 1200px, 100vw" %}
-    <p class="caption">Atlantic City for Bill & Kim's wedding, November 17, 2017</p>
+    {% image "src/img/bill-and-kims-wedding.jpg", "Bill & Kim's wedding, Atlantic City, NJ, November 17, 2017", "(min-width: 1000px) 1200px, 100vw" %}
+    <p class="caption">Bill & Kim's wedding, Atlantic City, NJ, November 17, 2017</p>
   </div>
 </div>
 
@@ -53,7 +53,7 @@ Strange, huh?
 
 <div class="multipic top-align">
   <div class="pic-with-caption">
-    {% image "src/img/me-bill-mom-my-wedding.jpg", "My wedding, Pasadena, CA, August 7, 1993.", "(min-width: 1000px) 1200px, 100vw" %}
+    {% image "src/img/me-bill-mom-my-wedding.jpg", "My wedding, Pasadena, CA, August 7, 1993", "(min-width: 1000px) 1200px, 100vw" %}
     <p class="caption">My wedding, Pasadena, CA, August 7, 1993</p>
   </div>
   <div class="pic-with-caption">
