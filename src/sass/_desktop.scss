@@ -171,7 +171,7 @@ header {
   font-size: var(--image-caption-font-size);
 }
 
-.pic-pair {
+.multipic {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-end;
@@ -180,16 +180,12 @@ header {
 .top-align {
   align-items: flex-start;
 }
-.pic1of2 {
-  flex-basis: 45%;
-  margin: 0 auto;
-}
-.pic2of2 {
-  flex-basis: 45%;
+.pic-with-caption {
+  flex: 1;
   margin: 0 auto;
 }
 
-.image-narrow {
+.pic-narrow {
   max-width: 50%;
   margin: 0 auto;
 }

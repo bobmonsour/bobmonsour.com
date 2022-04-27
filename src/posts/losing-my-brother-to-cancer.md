@@ -20,12 +20,12 @@ It was only in late June that it hit me, suddenly and hard, that we were coming 
 
 There have been numerous times in our adult lives when I've found myself doing something, and literally feeling as if I were Bill. Whether it was something I said, or even a facial expression that I've made. I would have an innate sense of being a deep reflection of him in those moments. To me, it's always been a sign of our closeness, and I can't help but smile when it happens. During the weeks we shared before he passed, whenever I would answer his home phone, the caller would invariably think that I was him, we sounded that much alike. In the months that followed his death, these moments seemed to stop occurring. Then, a couple of months ago, they returned and it's the closest thing to being with him again.
 
-<div class="pic-pair">
-  <div class="pic1of2">
+<div class="multipic">
+  <div class="pic-with-caption">
     {% image "src/img/brooklyn-circa-1960.jpg", "Circa 1960, Bill and I standing outside of our apartment building in Brooklyn.", "(min-width: 1000px) 1200px, 100vw" %}
     <p class="caption">Brooklyn, circa 1960</p>
   </div>
-  <div class="pic2of2">
+  <div class="pic-with-caption">
     {% image "src/img/bill-and-kims-wedding.jpg", "Photos on the pier before Bill & Kim's wedding.", "(min-width: 1000px) 1200px, 100vw" %}
     <p class="caption">Atlantic City for Bill & Kim's wedding, November 17, 2017</p>
   </div>
@@ -51,12 +51,12 @@ I don't think I’d consider putting these in a "workout" playlist. Here's how t
 
 Strange, huh?
 
-<div class="pic-pair top-align">
-  <div class="pic1of2">
+<div class="multipic top-align">
+  <div class="pic-with-caption">
     {% image "src/img/me-bill-mom-my-wedding.jpg", "My wedding, Pasadena, CA, August 7, 1993.", "(min-width: 1000px) 1200px, 100vw" %}
     <p class="caption">My wedding, Pasadena, CA, August 7, 1993</p>
   </div>
-  <div class="pic2of2">
+  <div class="pic-with-caption">
     {% image "src/img/me-bill-mom-thurlow-ave.jpg", "With Mom at our Thurlow Avenue home, Margate, NJ, God only knows when, because I sure don't", "(min-width: 1000px) 1200px, 100vw" %}
     <p class="caption">With Mom at our Thurlow Avenue home, Margate, NJ, God only knows when, because I sure don't</p>
   </div>
@@ -76,7 +76,7 @@ I re-read [Bill's obituary](https://www.legacy.com/us/obituaries/courierpostonli
 
 Our last conversation was on the day before he died. He called me from the hospital. I was 3,000 miles away, having just returned home following his first chemo treatment. He clearly felt that the end was near. I asked "Bill, what can I do?" He replied, simply "Love me." I told him "I love you, Bill, and I always will."
 
-<div class="image-narrow">
+<div class="pic-narrow">
   {% image "src/img/waving-bill.jpg", "Bill, waving goodbye...", "(min-width: 1000px) 1200px, 100vw" %}
   <p class="caption">Goodbye, Bill!</p>
 </div>

@@ -12,18 +12,12 @@
     }
   }
 
-  .pic1of2 {
-    flex-basis: 95%;
-    margin: 0 auto;
-  }
-  .pic2of2 {
-    flex-basis: 95%;
-    margin: 0 auto;
+  .pic-with-caption {
+    flex-basis: 98%;
   }
 
-  .image-narrow {
+  .pic-narrow {
     max-width: 95%;
-    margin: 0 auto;
   }
 
   footer.container {
