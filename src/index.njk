@@ -3,16 +3,20 @@ layout: default
 title: Bob Monsour's personal website
 description: The personal website of Bob Monsour. Enjoying learning and deploying websites with 11ty and Netlify.
 keywords: retired, web development, eleventy, tennis
-image: only-the-open-props-i-use-1400w.jpeg
+image: losing-my-brother-to-cancer-1400w.jpeg
 permalink: /
 ---
 
 <div class="container">
-  {% set latest_posts = collections.posts | reverse %}
-  {%- for post in latest_posts.slice(0,1) -%}
+  {% set latest_posts = collections.posts | reverse %} {%- for post in
+  latest_posts.slice(0,1) -%}
   <div class="post">
     <h1 class="post__title centered">{{ post.data.title }}</h1>
-    <p class="post__date centered">{{ post.date | formatPostDate }}&nbsp;&nbsp;&bull;&nbsp;&nbsp;{{ post.templateContent | readingTime }}</p>
+    <p class="post__date centered">
+      {{ post.date | formatPostDate }}&nbsp;&nbsp;&bull;&nbsp;&nbsp;{{
+        post.templateContent | readingTime
+      }}
+    </p>
     <div class="post__body">
       {{ post.templateContent | safe }}
     </div>
