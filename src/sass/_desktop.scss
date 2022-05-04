@@ -161,6 +161,13 @@ header {
   text-align: center;
 }
 
+.smaller {
+  font-size: var(--font-size-fluid-1);
+}
+
+.black {
+  color: black;
+}
 .spaced-404 {
   margin: 1rem 0;
 }

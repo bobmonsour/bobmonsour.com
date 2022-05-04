@@ -23,3 +23,32 @@ permalink: /
   </div>
   {%- endfor -%}
 </div>
+
+<div class="container">
+  <br />
+  <br />
+  <br />
+  <h2 class="post__title smaller centered">
+    Some other recent posts from the blog
+  </h2>
+
+  {% set latest_posts = collections.posts | reverse %} {%- for post in
+  latest_posts.slice(1,4) -%}
+  <div class="post">
+    <h2 class="post__title smaller">
+      <a href="{{ post.url }}">{{ post.data.title }}</a>
+    </h2>
+    <p class="post__date">
+      {{ post.date | formatPostDate }}&nbsp;&nbsp;&bull;&nbsp;&nbsp;{{
+        post.templateContent | readingTime
+      }}
+    </p>
+    <p class="post__excerpt">{{ post.data.description }}</p>
+  </div>
+  {%- endfor -%}
+  <div class="post">
+    <h2 class="post__title smaller centered">
+      <a href="/moreposts/">A list of all my posts...</a>
+    </h2>
+  </div>
+</div>
