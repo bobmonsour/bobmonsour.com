@@ -28,9 +28,7 @@ permalink: /
   <br />
   <br />
   <br />
-  <h2 class="post__title smaller centered">
-    Some other recent posts from the blog
-  </h2>
+  <h2 class="post__title smaller centered">Recent posts from the blog</h2>
 
   {% set latest_posts = collections.posts | reverse %} {%- for post in
   latest_posts.slice(1,4) -%}
