@@ -155,6 +155,21 @@ header {
       margin: 0 0 1em 0;
     }
   }
+
+  &__card {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__image {
+    flex-basis: 40%;
+    padding: 1rem;
+  }
+
+  &__portion {
+    flex-basis: 60%;
+    padding: 1rem;
+  }
 }
 
 .centered {
@@ -162,7 +177,7 @@ header {
 }
 
 .smaller {
-  font-size: var(--font-size-fluid-1);
+  font-size: var(--font-size-fluid-2);
 }
 
 .black {

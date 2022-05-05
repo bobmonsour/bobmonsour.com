@@ -3,10 +3,11 @@ title: Losing my brother to cancer
 date: 2022-04-26
 description: Feelings of pain, fond memories, and odd coincidences keep me connected to the brother I lost to cancer.
 keywords: sibling loss, cancer, one-year reflection
-image: "losing-my-brother-to-cancer-1400w.jpeg"
+imagesrc: "losing-my-brother-to-cancer.jpg"
+imagealt: "The day we spread my brother's ashes in the Atlantic Ocean"
 ---
 
-{% image "src/img/losing-my-brother-to-cancer.jpg", "The day we spread my brother's ashes in the Atlantic Ocean", "(min-width: 1000px) 1200px, 100vw" %}
+{% image "src/img/" + imagesrc, imagealt, "(min-width: 1000px) 1200px, 100vw" %}
 
 <p class="caption">With family and friends on the day we spread Bill's ashes into the Atlantic Ocean, Longport, NJ, September 8, 2019 (I'm 4th from the right)</p>
 

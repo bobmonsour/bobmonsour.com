@@ -3,10 +3,11 @@ title: From all the Open Props to only the Open Props I use
 date: 2022-03-08
 description: Now that I have Open Props working in my 11ty setup, I wanted to get postcss-jit-props working to reduce the size of my CSS file in production.
 keywords: postcss-jit-props, smaller css, adam argyle
-image: "only-the-open-props-i-use-1400w.jpeg"
+imagesrc: "only-the-open-props-i-use.jpg"
+imagealt: "essential love drawn in color on a chalkboard"
 ---
 
-{% image "src/img/only-the-open-props-i-use.jpg", "essential love drawn in color on a chalkboard", "(min-width: 1000px) 1200px, 100vw" %}
+{% image "src/img/" + imagesrc, imagealt, "(min-width: 1000px) 1200px, 100vw" %}
 
 <p class="caption">Photo by <a href="https://unsplash.com/@sharonmccutcheon?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Sharon McCutcheon</a> on <a href="https://unsplash.com/s/photos/essential?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
   </p>

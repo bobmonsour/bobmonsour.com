@@ -9,19 +9,8 @@
   <meta property="og:title" content="{{ title }}" />
   <meta property="og:type" content="website" />
   <meta property="og:description" content="{{ description }}" />
-  <meta property="og:image" content="{% if site.env == "prod" %}{{
-    site.prod_url
-  }}/img/{{
-    image
-  }}{% else %}{{
-    site.dev_url
-  }}/img/{{
-    image
-  }}{% endif %}"> <meta property="og:url" content="{% if site.env == "prod" %}{{
-    site.prod_url
-  }}{% else %}{{
-    site.dev_url
-  }}{% endif %}">
+  <meta property="og:image" content="/img/{{ imagesrc }}" />
+  <meta property="og:url" content="{{ page.url }}" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="generator" content="{{ eleventy.generator }}" />
   <link rel="stylesheet" href="/css/main.css" />

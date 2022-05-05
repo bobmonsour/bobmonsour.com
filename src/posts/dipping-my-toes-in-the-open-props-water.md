@@ -3,10 +3,11 @@ title: Dipping my toe in the Open Props water
 date: 2022-02-22
 description: I saw the recent launch of Open Props by Adam Argyle and then watched an intro video by Kevin Powell. I was intrigued, so I dipped my toe in the water.
 keywords: open props, css variables, css architecture, adam argyle
-image: "dipping-my-toe-in-the-open-props-water-1400w.jpeg"
+imagesrc: "dipping-my-toe-in-the-open-props-water.jpg"
+imagealt: "a foot near the water at the beach"
 ---
 
-{% image "src/img/dipping-my-toe-in-the-open-props-water.jpg", "a foot near the water at the beach", "(min-width: 1000px) 1200px, 100vw" %}
+{% image "src/img/" + imagesrc, imagealt, "(min-width: 1000px) 1200px, 100vw" %}
 
 <p class="caption">Photo by <a href="https://unsplash.com/@carlynsuggs?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">carlyn suggs</a> on <a href="https://unsplash.com/s/photos/toe-in-water?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
 
