@@ -7,7 +7,7 @@ imagesrc: "is-this-thing-on.jpg"
 imagealt: "a boy screaming into a microphone"
 ---
 
-{% image "src/img/" + imagesrc, imagealt, "(min-width: 1000px) 1200px, 100vw" %}
+{% image "src/img/" + imagesrc, imagealt, "(min-width: 1000px) 100vw, 100vw" %}
 
 <p class="caption">Photo by <a href="https://unsplash.com/@jasonrosewell?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jason Rosewell</a> on <a href="https://unsplash.com/s/photos/microphone?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
 
