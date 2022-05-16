@@ -43,6 +43,14 @@ eleventyConfig.addFilter(
 );
 ```
 
+Example usage if you're looping over a set of blog posts:
+
+{% raw %}
+      {{ content | readingTime }}
+{% endraw %}
+
+I would have liked to have used similar syntax highlighting for the above line, but I couldn't figure out how to do that. While I am using the 11ty syntax highlighting plugin for the other code elements, I think that I am using both nunjucks and markdown as template engines for markdown files, nunjucks gets there first and processes the elements and generates a reading time result.
+
 The reason that I place the readingtime.js filter file under my \_includes directory is so that I can include the exact code in the very blog post that you're reading now. That way, if the code changes, so does this post.
 
 I'm not sure if this is worth taking any further as it suits my purposes of being simple, lightweight, and understandable (to me, at least).
