@@ -2,7 +2,6 @@
 // Includes all other scss files via @import
 // Imported *local* files must have filenames that start with an underscore (excluded on the @import command)
 @use "variables";
-@use "fonts";
 @use "reset";
 @use "desktop";
 @use "mobile";
