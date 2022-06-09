@@ -7,7 +7,7 @@ imagesrc: "dipping-my-toe-in-the-open-props-water.jpg"
 imagealt: "a foot near the water at the beach"
 ---
 
-{% image "src/img/" + imagesrc, imagealt, "(min-width: 1000px) 100vw, 100vw" %}
+{% image "src/img/" + imagesrc, imagealt, "100vw", "eager" %}
 
 <p class="caption">Photo by <a href="https://unsplash.com/@carlynsuggs?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">carlyn suggs</a> on <a href="https://unsplash.com/s/photos/toe-in-water?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
 

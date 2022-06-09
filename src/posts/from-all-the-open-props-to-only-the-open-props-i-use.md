@@ -7,7 +7,7 @@ imagesrc: "only-the-open-props-i-use.jpg"
 imagealt: "essential love drawn in color on a chalkboard"
 ---
 
-{% image "src/img/" + imagesrc, imagealt, "(min-width: 1000px) 100vw, 100vw" %}
+{% image "src/img/" + imagesrc, imagealt, "100vw", "eager" %}
 
 <p class="caption">Photo by <a href="https://unsplash.com/@sharonmccutcheon?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Sharon McCutcheon</a> on <a href="https://unsplash.com/s/photos/essential?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
   </p>
