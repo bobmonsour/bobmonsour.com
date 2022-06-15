@@ -51,7 +51,6 @@ module.exports = function (eleventyConfig) {
 
   // Set up watch targets and passthroughs
   eleventyConfig.addWatchTarget("./src/sass/");
-  eleventyConfig.addPassthroughCopy("src/fonts");
   eleventyConfig.addPassthroughCopy("src/img");
   eleventyConfig.addPassthroughCopy("src/js");
   eleventyConfig.addPassthroughCopy("robots.txt");
