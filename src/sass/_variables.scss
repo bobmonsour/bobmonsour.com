@@ -13,6 +13,17 @@
   --step-5: clamp(3.27rem, calc(2.88rem + 1.94vw), 4.58rem);
   --step-6: clamp(3.92rem, calc(3.39rem + 2.67vw), 5.72rem);
 
+/*
+  Type Scale from https://www.fluid-type-scale.com/, smallest to largest
+*/
+  --font-size-sm: clamp(0.8rem, 0.17vw + 0.76rem, 0.89rem);
+  --font-size-base: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
+  --font-size-md: clamp(1.25rem, 0.61vw + 1.1rem, 1.58rem);
+  --font-size-lg: clamp(1.56rem, 1vw + 1.31rem, 2.11rem);
+  --font-size-xl: clamp(1.95rem, 1.56vw + 1.56rem, 2.81rem);
+  --font-size-xxl: clamp(2.44rem, 2.38vw + 1.85rem, 3.75rem);
+  --font-size-xxxl: clamp(3.05rem, 3.54vw + 2.17rem, 5rem);
+
   // Ukraine Flag Colors
   --ukraine-flag-blue: #005bbb;
   --ukraine-flag-yellow: #ffd500;
@@ -28,7 +39,7 @@
   // Navigation Styles
   --nav-link-color: var(--brand-color);
   --nav-link-font: var(--font-sans);
-  --nav-link-size: var(--font-size-fluid-2);
+  --nav-link-size: var(--font-size-lg);
   --nav-underline-color: var(--ukraine-flag-yellow);
   // --nav-underline-color: var(--orange-9);
   --nav-hover-color: var(--ukraine-flag-yellow);
@@ -39,17 +50,17 @@
   --footer-background-color: var(--ukraine-flag-yellow);
   // --footer-background-color: var(--orange-3);
   --footer-copy-font: var(--font-sans);
-  --footer-copy-size: var(--step-0);
+  --footer-copy-size: var(--font-size-md);
   --social-icon-background-color: var(--ukraine-flag-blue);
   // --social-icon-background-color: var(--green-6);
 
   // Post Styles
   --post-body-font: var(--font-serif);
-  --post-body-size: var(--step-0);
-  --post-title-size: var(--step-5);
-  --post-date-size: var(--step--1);
-  --post-excerpt-size: var(--step-0);
+  --post-body-size: var(--font-size-md);
+  --post-title-size: var(--font-size-xl);
+  --post-date-size: var(--font-size-md);
+  --post-excerpt-size: var(--font-size-md);
   --post-link-hover-color: var(--nav-hover-color);
   --post-link-radius: var(--radius-blob-5);
-  --image-caption-font-size: var(--step--1);
+  --image-caption-font-size: var(--font-size-md);
 }

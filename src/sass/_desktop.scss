@@ -142,7 +142,6 @@ header {
   &__date,
   &__readingtime {
     font-size: var(--post-date-size);
-    font-style: italic;
   }
 
   &__excerpt,
@@ -154,6 +153,10 @@ header {
     p {
       margin: 0 0 1em 0;
     }
+  }
+
+  &__excerpt {
+    font-size: var(--post-excerpt-size);
   }
 
   &__card {
@@ -190,7 +193,6 @@ header {
 
 .caption {
   text-align: center;
-  font-style: italic;
   font-size: var(--image-caption-font-size);
 }
 
