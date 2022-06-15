@@ -1,17 +1,4 @@
 :root {
-  /* Type Scale from utopia.fyi, ordered from small to large size fonts
-   https://utopia.fyi/type/calculator?c=320,21,1.2,1400,24,1.25,6,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l
-*/
-
-  --step--2: clamp(0.96rem, calc(0.9rem + 0.07vw), 0.91rem);
-  --step--1: clamp(1.2rem, calc(1.06rem + 0.16vw), 1.09rem);
-  --step-0: clamp(1.31rem, calc(1.26rem + 0.28vw), 1.5rem);
-  --step-1: clamp(1.58rem, calc(1.49rem + 0.44vw), 1.88rem);
-  --step-2: clamp(1.89rem, calc(1.76rem + 0.67vw), 2.34rem);
-  --step-3: clamp(2.27rem, calc(2.07rem + 0.98vw), 2.93rem);
-  --step-4: clamp(2.72rem, calc(2.44rem + 1.39vw), 3.66rem);
-  --step-5: clamp(3.27rem, calc(2.88rem + 1.94vw), 4.58rem);
-  --step-6: clamp(3.92rem, calc(3.39rem + 2.67vw), 5.72rem);
 
 /*
   Type Scale from https://www.fluid-type-scale.com/, smallest to largest
