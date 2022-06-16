@@ -125,6 +125,12 @@ header {
     padding-bottom: 5px;
   }
 
+  &__list-title {
+    font-size: var(--post-title-size);
+    color: black;
+    margin: 3rem 0 1.5rem 0;
+  }
+
   a {
     display: inline-block;
     color: var(--brand-color);
@@ -167,21 +173,13 @@ header {
 
   &__image {
     flex-basis: 40%;
-    padding: 1rem;
+    padding-right: 1rem;
   }
 
   &__portion {
     flex-basis: 60%;
-    padding: 1rem;
+    padding-left: 1rem;
   }
-}
-
-.centered {
-  text-align: center;
-}
-
-.smaller {
-  font-size: var(--font-size-fluid-2);
 }
 
 .black {
