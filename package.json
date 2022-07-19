@@ -8,7 +8,7 @@
     "watch:eleventy": "eleventy --serve",
     "build:sass": "sass --no-source-map src/sass/main-prod.scss:_site/css/main.css",
     "build:eleventy": "eleventy",
-    "postbuild": "postcss _site/css/main.css -o _site/css/main.css",
+    "postbuild": "postcss _site/css/main.css -r --no-map",
     "start": "cross-env ELEVENTY_ENV=dev npm-run-all --parallel watch:*",
     "build": "cross-env ELEVENTY_ENV=prod npm-run-all build:sass build:eleventy",
     "clean": "rimraf ./_site"
@@ -31,5 +31,10 @@
     "postcss-jit-props": "^1.0.7",
     "rimraf": "^3.0.2",
     "sass": "^1.53.0"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.7",
+    "cssnano": "^5.1.12",
+    "postcss-logical": "^5.0.4"
   }
 }
