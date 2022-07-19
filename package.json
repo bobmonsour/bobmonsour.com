@@ -4,9 +4,9 @@
   "description": "It's a work in progress. It's built with [eleventy](https://www.11ty.dev/)...something I'm still getting a handle on.",
   "main": ".eleventy.js",
   "scripts": {
-    "watch:sass": "sass --watch src/sass/main-dev.scss:_site/css/main.css",
+    "watch:sass": "sass --watch src/sass/main.scss:_site/css/main.css",
     "watch:eleventy": "eleventy --serve",
-    "build:sass": "sass --no-source-map src/sass/main-prod.scss:_site/css/main.css",
+    "build:sass": "sass --no-source-map src/sass/main.scss:_site/css/main.css",
     "build:eleventy": "eleventy",
     "postbuild": "postcss _site/css/main.css -r --no-map",
     "start": "cross-env ELEVENTY_ENV=dev npm-run-all --parallel watch:*",
