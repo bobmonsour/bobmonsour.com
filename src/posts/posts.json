@@ -1,5 +1,5 @@
 {
-  "layout": "post",
+  "layout": "post.njk",
   "permalink": "/posts/{{ page.fileSlug }}/",
   "tags": "posts",
   "keywords": "retired, web development, eleventy, tennis",
