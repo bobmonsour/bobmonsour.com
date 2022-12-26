@@ -1,7 +1,7 @@
 ---
 title: Is this thing on?
 date: 2022-02-05
-description: Welcome to the first post of my new site! I'll be writing about my experience in building this site as well as a few others I've built using eleventy.
+description: Welcome to the first post of my new site!
 keywords: blog, website, retired, 11ty, eleventy
 imagesrc: "is-this-thing-on.jpg"
 imagealt: "a boy screaming into a microphone"

@@ -21,7 +21,6 @@ It was only in late June that it hit me, suddenly and hard, that we were coming 
 
 There have been numerous times in our adult lives when I've found myself doing something, and literally feeling as if I were Bill. Whether it was something I said, or even a facial expression that I've made. I would have an innate sense of being a deep reflection of him in those moments. To me, it's always been a sign of our closeness, and I can't help but smile when it happens. During the weeks we shared before he passed, whenever I would answer his home phone, the caller would invariably think that I was him, we sounded that much alike. In the months that followed his death, these moments seemed to stop occurring. Then, a couple of months ago, they returned and it's the closest thing to being with him again.
 
-<div class="multipic">
   <div class="pic-with-caption">
     {% image "src/img/brooklyn-circa-1960.jpg", "Circa 1960, Bill and I standing outside of our apartment building in Brooklyn.", "100vw" %}
     <p class="caption">Bill and I outside of our apartment building in Brooklyn, circa 1960</p>
@@ -30,7 +29,6 @@ There have been numerous times in our adult lives when I've found myself doing s
     {% image "src/img/bill-and-kims-wedding.jpg", "Bill & Kim's wedding, Atlantic City, NJ, November 17, 2017", "100vw" %}
     <p class="caption">Bill & Kim's wedding, Atlantic City, NJ, November 17, 2017</p>
   </div>
-</div>
 
 I've been consumed with thoughts of Bill and feeling anxious about writing this to mark the first anniversary of his passing. I don't know if you’ve experienced this, but whenever I've bought a new car (which isn't very often), right after buying it I start to see it everywhere. Something similar has been happening recently as this anniversary approached. I’ll share two examples.
 
@@ -52,7 +50,6 @@ I don't think I’d consider putting these in a "workout" playlist. Here's how t
 
 Strange, huh?
 
-<div class="multipic top-align">
   <div class="pic-with-caption">
     {% image "src/img/me-bill-mom-my-wedding.jpg", "My wedding, Pasadena, CA, August 7, 1993", "100vw" %}
     <p class="caption">My wedding, Pasadena, CA, August 7, 1993</p>
@@ -61,7 +58,6 @@ Strange, huh?
     {% image "src/img/me-bill-mom-thurlow-ave.jpg", "With Mom at our Thurlow Avenue home, Margate, NJ, God only knows when, because I sure don't", "100vw" %}
     <p class="caption">With Mom at our Thurlow Avenue home, Margate, NJ, God only knows when, because I sure don't</p>
   </div>
-</div>
 
 Here's another example of these recent "coincidences." I'm currently reading the Alexander Hamilton biography by Ron Chernow. The eulogy by one of Hamilton's friends, Fisher Ames, includes the following statement:
 
@@ -77,11 +73,11 @@ I re-read [Bill's obituary](https://www.legacy.com/us/obituaries/courierpostonli
 
 Our last conversation was on the day before he died. He called me from the hospital. I was 3,000 miles away, having just returned home following his first chemo treatment. He clearly felt that the end was near. I asked "Bill, what can I do?" He replied, simply "Love me." I told him "I love you, Bill, and I always will."
 
-<div class="pic-narrow">
+<div class="pic-with-caption">
   {% image "src/img/waving-bill.jpg", "Bill, waving goodbye...", "100vw" %}
   <p class="caption">Goodbye, Bill!</p>
 </div>
 
-_I want to thank several authors who inspired me to bring forth these thoughts as they have shared a similar loss. Their writings include [Coping With the Sudden Death of My Brother](https://medium.com/myth-vs-craft/losing-a-sibling-coping-with-the-loss-of-my-brother-65a6e4a863d0), [The Sibling Loss Gang](https://medium.com/@megszee/https-medium-com-megszee-the-sibling-loss-gang-198653465e95), [After losing a sibling, searching for the sinkhole](https://medium.com/@slymank2/after-losing-a-sibling-searching-for-the-sinkhole-a7fab1ea2943), [Learning to live without you](https://medium.com/@oliviawilson_70511/learning-to-live-without-you-bfe961169da), and [Death, I have life on my mind](https://medium.com/@vikasgupta/death-i-have-life-on-my-mind-8c6d0a23b4d7)._
+I want to thank several authors who inspired me to bring forth these thoughts as they have shared a similar loss. Their writings include [Coping With the Sudden Death of My Brother](https://medium.com/myth-vs-craft/losing-a-sibling-coping-with-the-loss-of-my-brother-65a6e4a863d0), [The Sibling Loss Gang](https://medium.com/@megszee/https-medium-com-megszee-the-sibling-loss-gang-198653465e95), [After losing a sibling, searching for the sinkhole](https://medium.com/@slymank2/after-losing-a-sibling-searching-for-the-sinkhole-a7fab1ea2943), [Learning to live without you](https://medium.com/@oliviawilson_70511/learning-to-live-without-you-bfe961169da), and [Death, I have life on my mind](https://medium.com/@vikasgupta/death-i-have-life-on-my-mind-8c6d0a23b4d7).
 
-_And a final shout out to one of Bill's long time friends, [Richard DiDio](https://medium.com/@RichardADiDio); we've always called him Skip. Shortly after Bill's passing, I told Skip that I wanted to write a piece about Bill. He encouraged me and even gave me a book about writing, Anne Lamott's excellent book, Bird by Bird. Thank you, Skip._
+And a final shout out to one of Bill's long time friends, [Richard DiDio](https://medium.com/@RichardADiDio); we've always called him Skip. Shortly after Bill's passing, I told Skip that I wanted to write a piece about Bill. He encouraged me and even gave me a book about writing, Anne Lamott's excellent book, Bird by Bird. Thank you, Skip.

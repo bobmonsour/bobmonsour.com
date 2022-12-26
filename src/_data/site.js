@@ -5,6 +5,7 @@ module.exports = {
   title: "Bob Monsour | Home",
   url: "http://www.bobmonsour.com",
   mainNavLinks: [
-    { url: "/moreposts/", text: "More Posts", class: "nav__item" },
+    { url: "/archives/", text: "Archives", class: "nav__item" },
+    { url: "/about/", text: "About", class: "nav__item" },
   ],
 };

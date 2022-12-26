@@ -1,7 +1,7 @@
 ---
 title: Calculating reading time for a post
 date: 2022-02-06
-description: Where does that 'About 4 minutes to read' come from? Each of the posts on this site (there are only two so far, and this is the second one), display something like "About 1 minute to read."
+description: Where does that 'About 4 minutes to read' come from?"
 keywords: reading time, eleventy, filters
 imagesrc: "calculating-reading-time-for-a-post.jpg"
 imagealt: "a boy reading at sunset"
@@ -46,7 +46,7 @@ eleventyConfig.addFilter(
 Example usage if you're looping over a set of blog posts:
 
 {% raw %}
-      {{ content | readingTime }}
+{{ content | readingTime }}
 {% endraw %}
 
 I would have liked to have used similar syntax highlighting for the above line, but I couldn't figure out how to do that. While I am using the 11ty syntax highlighting plugin for the other code elements, I am using both nunjucks and markdown as template engines for markdown files. Nunjucks processes first and generates a reading time result. As a result, I dropped back and used the nunjucks raw tag instead.

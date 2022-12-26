@@ -1,215 +1,45 @@
 //DESKTOP STYLES
 
-// Typography
-
-h1 {
-  color: var(--brand-color);
-}
-
+// default paragraph
 p {
-  font-family: var(--post-body-font);
-  font-size: var(--post-body--size);
+  max-width: 65ch;
+  margin: 1em auto;
 }
 
-footer p {
-  font-size: var(--footer-copy-size);
+// default link treatment
+a {
+  color: var(--brand-color);
+  text-decoration: none;
+  border-bottom: 2px dashed var(--dark-accent-color);
+
+  &:hover,
+  &:focus {
+    background-color: var(--light-accent-color);
+    border-radius: var(--brand-link-radius);
+  }
 }
 
 blockquote {
-  border-left: 5px solid var(--brand-color);
+  border-left: 5px solid var(--dark-accent-color);
   font-style: italic;
   padding-left: 2rem;
 }
 
-// Overall structure
-//
-// body
-//  - main
-//     - header
-//        - container
-//     - footer
-
 main {
   max-width: 1200px;
   margin: 0 auto;
+  // text defaults
+  font-family: var(--brand-font);
+  font-size: var(--font-size-md);
+  color: black;
 }
 
 header {
-  background: var(--gradient-9);
-  padding-bottom: 10px;
-  margin: 0;
+  margin: 1em 0;
 }
+
 .container {
-  max-width: 95%;
-  margin: 0 auto;
-}
-
-// Branding & navigation; organization & links
-
-.brand {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  text-align: center;
-  padding: 0 1rem;
-  color: var(--brand-color);
-
-  &__image {
-    clip-path: circle(45%);
-  }
-
-  &__name-and-subtitle {
-    margin-left: 1.5rem;
-  }
-
-  &__name {
-    font-family: var(--brand-name-font);
-    font-size: var(--font-size-fluid-3);
-    font-weight: bold;
-    text-decoration: none;
-    margin-right: auto;
-  }
-
-  &__subtitle {
-    font-family: var(--brand-subtitle-font);
-    font-size: var(--font-size-fluid-1);
-    margin-right: auto;
-  }
-
-  a {
-    display: inline-block;
-    color: var(--brand-color);
-    text-decoration: none;
-
-    &:hover,
-    &:focus {
-      background-color: var(--brand-link-hover-color);
-      border-radius: var(--brand-link-radius);
-      // animation: var(--animation-pulse);
-    }
-  }
-
-  &__nav {
-    display: flex;
-    gap: 1em;
-    padding-left: 0;
-    margin: 0 auto;
-    list-style: none;
-  }
-
-  &__nav a {
-    font-family: var(--nav-link-font);
-    font-size: var(--font-size-fluid-1);
-    text-decoration: none;
-    padding: 8px;
-    border-bottom: 2px solid var(--nav-underline-color);
-  }
-
-  .current {
-    background-color: var(--nav-hover-color);
-    border-top: 2px solid var(--nav-underline-color);
-    border-bottom: 2px solid var(--nav-underline-color);
-  }
-}
-
-// Post & excerpt layout
-
-.post {
-  margin: 1rem 0;
-
-  &__title {
-    font-size: var(--post-title-size);
-    color: var(--brand-color);
-    line-height: 1.1;
-    padding-bottom: 5px;
-  }
-
-  &__list-title {
-    font-size: var(--post-title-size);
-    color: black;
-    margin: 3rem 0 1.5rem 0;
-  }
-
-  a {
-    display: inline-block;
-    color: var(--brand-color);
-    text-decoration: none;
-    border-bottom: 2px solid var(--nav-underline-color);
-
-    &:hover,
-    &:focus {
-      background-color: var(--post-link-hover-color);
-      border-radius: var(--post-link-radius);
-      // animation: var(--animation-pulse);
-    }
-  }
-
-  &__date,
-  &__readingtime {
-    font-size: var(--post-date-size);
-  }
-
-  &__excerpt,
-  &__body {
-    // max-width: 65ch;
-    font-size: var(--post-body-size);
-    margin: 0.5em auto;
-
-    p {
-      margin: 0 0 1em 0;
-    }
-  }
-
-  &__excerpt {
-    font-size: var(--post-excerpt-size);
-  }
-
-  &__card {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-  }
-
-  &__image {
-    flex-basis: 40%;
-    padding-right: 1rem;
-  }
-
-  &__portion {
-    flex-basis: 60%;
-    padding-left: 1rem;
-  }
-}
-
-.black {
-  color: black;
-}
-.spaced-404 {
-  margin: 1rem 0;
-}
-
-.caption {
-  text-align: center;
-  font-size: var(--image-caption-font-size);
-}
-
-.multipic {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-end;
-  gap: 5%;
-}
-.top-align {
-  align-items: flex-start;
-}
-.pic-with-caption {
-  flex: 1;
-  margin: 0 auto;
-}
-
-.pic-narrow {
-  max-width: 50%;
+  max-width: 94%;
   margin: 0 auto;
 }
 
@@ -217,33 +47,28 @@ header {
 
 footer {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
-  background-color: var(--footer-background-color);
-  padding: 2em 0;
-}
-
-footer.container {
-  margin-top: 2em;
+  background-color: var(--light-accent-color);
+  margin-top: 1em;
+  padding: 0.25em 0;
 }
 
 .footer__text {
-  font-family: var(--footer-copy-font);
   margin-left: 1em;
   margin-right: auto;
 }
 
 .footer__social-icons {
   display: flex;
+  gap: 1em;
   margin-left: auto;
   margin-right: 1em;
 
   .icon-link {
-    margin: 0 1em;
-
+    border: none;
     &:hover,
     &:focus {
-      background-color: var(--social-icon-background-color);
+      background-color: var(--dark-accent-color);
       cursor: pointer;
     }
 
@@ -252,4 +77,75 @@ footer.container {
       height: 36px;
     }
   }
+}
+
+// Branding & navigation; organization & links
+
+.brand {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__image {
+    width: 6vw;
+    clip-path: circle(45%);
+  }
+
+  &__image-link {
+    border: none;
+  }
+
+  &__nav {
+    display: flex;
+    gap: 1em;
+    text-align: center;
+    list-style: none;
+    padding: 0;
+  }
+
+  &__nav a {
+    border-bottom: 2px dashed var(--dark-accent-color);
+  }
+
+  .current {
+    background-color: var(--light-accent-color);
+    border-bottom: 2px dashed var(--dark-accent-color);
+  }
+}
+
+// Post & excerpt layout
+
+.post {
+  &__title {
+    font-size: var(--post-title-size);
+    line-height: 1.1;
+  }
+  &__date {
+    font-size: var(--post-date-size);
+    margin: 0;
+  }
+  &__body {
+    margin: 0.5em auto;
+    ul {
+      padding-left: 5em;
+    }
+  }
+  &__card {
+    margin-top: 1em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    align-items: center;
+  }
+}
+
+p.caption {
+  text-align: center;
+  font-size: var(--caption-size);
+  margin: 0.25em auto 1em auto;
+}
+
+.pic-with-caption {
+  max-width: 50%;
+  margin: 0 auto;
 }

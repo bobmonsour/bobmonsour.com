@@ -1,9 +1,7 @@
 <header>
-  <nav class="brand">
-    <div class="brand__name-and-subtitle">
-      <a href="/" class="brand__name">Bob Monsour</a>
-      <p class="brand__subtitle">Retired, former tech and business guy</p>
-    </div>
+  <nav class="brand container">
+    <a href="/" class="brand__name">Bob Monsour</a>
+    <a href="/" class="brand__image-link"><img class="brand__image" atl="Bob's face" src="/img/bob-small.jpg"></a>
     <ul class="brand__nav">
       {% for link in site.mainNavLinks %}
         <li {% if link.class %} class="{{ link.class }}" {% endif %}>
