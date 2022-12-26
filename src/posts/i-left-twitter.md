@@ -21,4 +21,4 @@ It ended with the suspension of several prominent journalists.
 
 While I will miss following a wide variety of people, including local friends, a great list of historians, and several journalists, I will not miss the noise and the direction that Musk is taking the site.
 
-All that said, I've moved over to Mastadon and for anyone interested, you can find me there at @bobmonsour@indieweb.social. Mastadon is growing on me and it definitel feels quite a bit friendlier.
+All that said, I've moved over to Mastadon and for anyone interested, you can find me there at [@bobmonsour@indieweb.social](https://indieweb.social/@bobmonsour). Mastadon is growing on me and it definitel feels quite a bit friendlier.
