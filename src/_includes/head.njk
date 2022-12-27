@@ -6,6 +6,16 @@
   <meta name="description" content="{{ description }}" />
   <meta name="keywords" content="{{ keywords }}" />
 
+  {# favicon settings #}
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
+  {# social media settings #}
   <meta property="og:title" content="{{ title }}" />
   <meta property="og:type" content="website" />
   <meta property="og:description" content="{{ description }}" />
@@ -14,6 +24,9 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="generator" content="{{ eleventy.generator }}" />
 
+  {# load sass compiled stylesheet #}
   <link href="/css/main.css" rel="stylesheet">
+
+  {# load Google font #}
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet">
 </head>

@@ -3,7 +3,6 @@ const pluginRss = require("@11ty/eleventy-plugin-rss");
 const directoryOutputPlugin = require("@11ty/eleventy-plugin-directory-output");
 
 module.exports = function (eleventyConfig) {
-
   // Set directory output during build process
   eleventyConfig.setQuietMode(true);
   eleventyConfig.addPlugin(directoryOutputPlugin, {
@@ -15,14 +14,20 @@ module.exports = function (eleventyConfig) {
 
   // Set up watch targets and passthroughs
   eleventyConfig.addWatchTarget("./src/sass/");
+
+  eleventyConfig.setServerPassthroughCopyBehavior("copy");
   eleventyConfig.addPassthroughCopy("src/img");
-  eleventyConfig.addPassthroughCopy("src/js");
-  eleventyConfig.addPassthroughCopy("robots.txt");
+  eleventyConfig.addPassthroughCopy("src/robots.txt");
+  // Copy files in favicon dir to `_site/`
+  eleventyConfig.addPassthroughCopy({ favicon: "/" });
 
   // Add shortcodes and filters
 
   // shortcode: Eleventy image
-  eleventyConfig.addNunjucksAsyncShortcode("image", require("./src/_includes/shortcodes/image.js"));
+  eleventyConfig.addNunjucksAsyncShortcode(
+    "image",
+    require("./src/_includes/shortcodes/image.js")
+  );
 
   // shortcode: current year
   eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
