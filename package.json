@@ -5,7 +5,7 @@
   "main": ".eleventy.js",
   "scripts": {
     "watch:sass": "sass --watch src/sass/main.scss:_site/css/main.css",
-    "watch:eleventy": "eleventy --serve",
+    "watch:eleventy": "npx @11ty/eleventy --serve",
     "build:sass": "sass --no-source-map src/sass/main.scss:_site/css/main.css",
     "build:eleventy": "eleventy",
     "postbuild": "postcss _site/css/main.css -r --no-map",
@@ -17,7 +17,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@11ty/eleventy": "^2.0.0-canary.18",
+    "@11ty/eleventy": "^2.0.0-canary.23",
     "@11ty/eleventy-img": "^2.0.1",
     "@11ty/eleventy-plugin-directory-output": "^1.0.1",
     "@11ty/eleventy-plugin-rss": "^1.2.0",

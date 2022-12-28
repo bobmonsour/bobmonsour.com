@@ -48,6 +48,15 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(syntaxHighlight);
   eleventyConfig.addPlugin(pluginRss);
 
+  // Set eleventy dev-server options
+  eleventyConfig.setServerOptions({
+    // Show local network IP addresses for device testing
+    // showAllHosts: false,
+
+    // Show the server version number on the command line
+    showVersion: true,
+  });
+
   return {
     markdownTemplateEngine: "njk",
     dataTemplateEngine: "njk",
