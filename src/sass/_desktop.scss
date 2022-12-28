@@ -125,10 +125,11 @@ footer {
 .post {
   &__title {
     font-size: var(--post-title-size);
-    line-height: 1.5;
+    line-height: 1.1;
   }
   &__date {
     font-size: var(--post-date-size);
+    line-height: 1.1;
     padding-top: 5px;
     margin: 0;
   }
