@@ -13,6 +13,8 @@ imagealt: "picture of my knee prior to replacement surgery"
 
 _NOTE: This piece was [originally posted on Medium](https://medium.com/@bobmonsour/the-winding-road-toward-knee-replacement-surgery-b3e03f0bfcd7), on August 31st, 2020. I underwent total knee replacement surgery on November 5, 2020, smack in the middle of the pandemic. The good news is that the replacement went very well and now, 3 years later, I'm very glad I did it._
 
+---
+
 I turned 65 this month. My mind doesn’t think so, but my body knows it and it’s been trying to tell me. It’s a knee thing. It hurts and it’s been hurting for the last few years. The pain has made it less than pleasant to walk a single block. It’s keeping me off the tennis court. And I’d like some relief. Do I need a knee replacement or is there another way?
 
 I’ve been playing tennis, on and off since I was 19. I picked it up during college in Florida. It was the early ’70s and there was a major explosion of the sport and south Florida was a hot spot. I played a little handball in college too. It was great for my tennis; you really had to be able to react quickly, move fast, and stay low. And I ran a little bit during my post-college days, doing the occasional 10K and a single half-marathon. That half-marathon was long enough for me.
