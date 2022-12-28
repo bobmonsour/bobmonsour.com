@@ -1,6 +1,7 @@
 //DESKTOP STYLES
 
 h2 {
+  font-size: var(--font-size-lg);
   line-height: 1;
   padding-bottom: 0.5em;
 }
@@ -124,7 +125,7 @@ footer {
 .post {
   &__title {
     font-size: var(--post-title-size);
-    line-height: 1.1;
+    line-height: 1.5;
   }
   &__date {
     font-size: var(--post-date-size);
