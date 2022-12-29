@@ -1,6 +1,10 @@
-// MOBILE STYLES
+// mobile styles that differ from those in desktop.scss
 
 @media (max-width: 700px) {
+  blockquote {
+    padding: 0 2rem;
+  }
+
   .brand__name {
     font-size: var(--font-size-sm);
   }
@@ -11,21 +15,10 @@
     font-size: var(--font-size-sm);
   }
 
-  .pic-with-caption {
-    max-width: 90%;
-  }
-
-  blockquote {
-    padding: 0 2rem;
-  }
-
-  // Post & excerpt layout
+  // post elements
   .post {
     &__title {
       padding: 5px 0;
-    }
-    &__date {
-      font-size: var(--post-date-size);
     }
     &__body {
       ul {
@@ -35,5 +28,8 @@
     &__card {
       display: block;
     }
+  }
+  .image-holder {
+    max-width: 90%;
   }
 }

@@ -19,7 +19,7 @@ I turned 65 this month. My mind doesn’t think so, but my body knows it and it�
 
 I’ve been playing tennis, on and off since I was 19. I picked it up during college in Florida. It was the early ’70s and there was a major explosion of the sport and south Florida was a hot spot. I played a little handball in college too. It was great for my tennis; you really had to be able to react quickly, move fast, and stay low. And I ran a little bit during my post-college days, doing the occasional 10K and a single half-marathon. That half-marathon was long enough for me.
 
-Up until I hit 60, when others would start to complain about their knees, I would brag that I hadn’t had any trouble with my knees. My game relied on my movement...not that I did a lot of winning. I’m not an offensive player, more of a defensive — get the ball back at any cost — player, trying to frustrate my opponents. I loved just getting to the ball and hitting it, trying to be a smooth as possible.
+Up until I hit 60, when others would start to complain about their knees, I would brag that I hadn’t had any trouble with my knees. My game relied on my movement...not that I did a lot of winning. I’m not an offensive player, more of a defensive — get the ball back at any cost — player, trying to frustrate my opponents. I loved just getting to the ball and hitting it, trying to be as smooth as possible.
 
 Well, a few years ago, one of those knees that I’d been bragging about decided to serve notice that its pain-free state was ending.
 
@@ -29,7 +29,7 @@ Earlier this year, things came to a head where I was unable to walk very far wit
 
 ## Is there a doctor in the house?
 
-<div class="pic-with-caption">
+<div class="image-holder">
   {% image "src/img/doctor-in-the-house.jpg", "eight doctors, all masked, looking over a patient as seen from the patient's perspective", "100vw" %}
   <p class="caption"><a href="https://unsplash.com/photos/701-FJcjLAQ">Photo</a> by <a href="https://unsplash.com/@nci">National Cancer Institute</a></p>
 </div>
@@ -60,7 +60,7 @@ That visit with InjectoDoc was in July. I told him that I’d like to try the vi
 
 ## Is this the doctor I should be seeing?
 
-<div class="pic-with-caption">
+<div class="image-holder">
   {% image "src/img/which-one-would-you-like.jpg", "a man showing the inside of his trench coat with various things to buy", "100vw" %}
   <p class="caption">InjectoDoc</p>
 </div>
@@ -87,7 +87,7 @@ From the articles I’ve read, when it comes to pain reduction and knee function
 
 So I made an appointment to see him and scheduled it before my date with InjectoDoc. He’s a surgeon and knee replacements are one of his specialties. Of course, he said that I needed a knee replacement. His story to me went something like this.
 
-<div class="pic-with-caption">
+<div class="image-holder">
   {% image "src/img/funny-roof-leak.jpg", "man sitting in his kitchen, reading a newspaper, as water comes down from the ceiling", "100vw" %}
   <p class="caption">Your roof is leaking</p>
 </div>
@@ -98,7 +98,7 @@ I asked him about the various injections, noting that cortisone and PRP did noth
 
 I noted that I was concerned about being in the hospital during COVID-time and that I’d feel better doing a replacement after the start of the new year. He understood, but noted that I’d be going home the same day. I said that I’d consider what he’d said and would let them know. They provided some home exercises to do in preparation.
 
-<div class="pic-with-caption">
+<div class="image-holder">
   {% image "src/img/right-knee-xray.jpg", "x-ray of knees, showing arthritis in the right knee", "100vw" %}
   <p class="caption">That’s my right knee…on the left.</p>
 </div>
@@ -155,7 +155,7 @@ Ah, but visco-stuff, the guidelines can’t recommend its use, “unless a clear
 
 ## To inject or not to inject?
 
-<div class="pic-with-caption">
+<div class="image-holder">
   {% image "src/img/injectodoc.jpg", "a diabolocial man holding a syringe", "100vw" %}
     <p class="caption"><a href="https://unsplash.com/photos/l-8rhhUpuyM">Photo</a> by <a href="https://unsplash.com/@dimhou">Dimitri Houtteman</a></p>
 

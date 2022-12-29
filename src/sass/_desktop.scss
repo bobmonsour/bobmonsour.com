@@ -1,21 +1,70 @@
-//DESKTOP STYLES
+// default page layout:
+//
+//  - body
+//    - main
+//      - header
+//        [page content]
+//      - footer
+//
+// default styles for the following HTML elements:
+//
+//  header, main, footer
+//  h2, p, a, hr, blockquote
+//
 
+header {
+  margin: 1em 0;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  // text defaults
+  font-family: var(--brand-font);
+  font-size: var(--font-size-md);
+  color: black;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: var(--light-accent-color);
+  padding: 0.5em 0;
+  margin-top: 1em;
+}
+
+footer .text {
+  margin: 0;
+}
+
+.icon-link {
+  border: none;
+  &:hover,
+  &:focus {
+    cursor: pointer;
+  }
+
+  .icon {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+// default <h2> style
 h2 {
   font-size: var(--font-size-lg);
   line-height: 1.2;
   padding-bottom: 0.5em;
 }
 
-// default paragraph
+// default <p> style
 p {
   max-width: 65ch;
   margin: 1em auto;
 }
 
-hr {
-  border-top: 1px solid var(--dark-accent-color);
-}
-// default link treatment
+// default <a> style
 a {
   color: var(--brand-color);
   text-decoration: none;
@@ -28,68 +77,25 @@ a {
   }
 }
 
+// default <hr> style
+hr {
+  border-top: 1px solid var(--dark-accent-color);
+}
+
+// default <blockquote> style
 blockquote {
   border-left: 5px solid var(--dark-accent-color);
   font-style: italic;
   padding: 0 6rem;
 }
 
-main {
-  max-width: 1200px;
-  margin: 0 auto;
-  // text defaults
-  font-family: var(--brand-font);
-  font-size: var(--font-size-md);
-  color: black;
-}
-
-header {
-  margin: 1em 0;
-}
-
+// content of each page uses the .container class within the <main>
 .container {
   max-width: 94%;
   margin: 0 auto;
 }
 
-// Footer
-
-footer {
-  display: flex;
-  align-items: center;
-  background-color: var(--light-accent-color);
-  margin-top: 1em;
-  padding: 0.25em 0;
-}
-
-.footer__text {
-  margin-left: 1em;
-  margin-right: auto;
-}
-
-.footer__social-icons {
-  display: flex;
-  gap: 1em;
-  margin-left: auto;
-  margin-right: 1em;
-
-  .icon-link {
-    border: none;
-    &:hover,
-    &:focus {
-      background-color: var(--dark-accent-color);
-      cursor: pointer;
-    }
-
-    .icon {
-      width: 36px;
-      height: 36px;
-    }
-  }
-}
-
-// Branding & navigation; organization & links
-
+// brand & navigation styles
 .brand {
   display: flex;
   justify-content: space-between;
@@ -117,14 +123,14 @@ footer {
     border-bottom: 2px dashed var(--dark-accent-color);
   }
 
+  // highlight the nav element of the current page
   .current {
     background-color: var(--light-accent-color);
     border-bottom: 2px dashed var(--dark-accent-color);
   }
 }
 
-// Post & excerpt layout
-
+// post element styles
 .post {
   &__title {
     font-size: var(--post-title-size);
@@ -151,13 +157,13 @@ footer {
   }
 }
 
-p.caption {
+// image with caption styles
+.image-holder {
+  max-width: 70%;
+  margin: 0 auto;
+}
+.image-holder .caption {
   text-align: center;
   font-size: var(--caption-size);
-  margin: 0.25em auto 1em auto;
-}
-
-.pic-with-caption {
-  max-width: 50%;
-  margin: 0 auto;
+  margin-top: 0.25em;
 }
