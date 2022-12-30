@@ -87,6 +87,7 @@ blockquote {
   border-left: 5px solid var(--dark-accent-color);
   font-style: italic;
   padding: 0 6rem;
+  margin: 2em 0;
 }
 
 // content of each page uses the .container class within the <main>
@@ -142,12 +143,14 @@ blockquote {
     padding-top: 5px;
     margin: 0;
   }
-  &__body {
+  &__body img,
+  &__body p {
     margin: 0.5em auto;
-    ul {
-      padding-left: 5em;
-    }
   }
+  &__body ul {
+    padding-left: 5em;
+  }
+
   &__card {
     margin-top: 1em;
     display: grid;
@@ -162,7 +165,8 @@ blockquote {
   max-width: 70%;
   margin: 0 auto;
 }
-.image-holder .caption {
+.image-holder .caption,
+p.caption {
   text-align: center;
   font-size: var(--caption-size);
   margin-top: 0.25em;

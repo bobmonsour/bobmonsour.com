@@ -35,8 +35,8 @@ module.exports = function (text) {
   if (readingTime === 0) {
     return "Less than 1 minute to read";
   } else if (readingTime === 1) {
-    return " About 1 minute to read";
+    return "1 minute to read";
   } else {
-    return "About " + readingTime + " minutes to read";
+    return readingTime + " minutes to read";
   }
 };

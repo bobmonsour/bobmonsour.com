@@ -1,7 +1,7 @@
 ---
 title: Calculating reading time for a post
 date: 2022-02-06
-description: Where does that 'About 4 minutes to read' come from?"
+description: Where does that '4 minutes to read' come from?"
 keywords: reading time, eleventy, filters
 imagesrc: "calculating-reading-time-for-a-post.jpg"
 imagealt: "a boy reading at sunset"
@@ -11,7 +11,7 @@ imagealt: "a boy reading at sunset"
 
 <p class="caption">Photo by <a href="https://unsplash.com/@aaronburden?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Aaron Burden</a> on <a href="https://unsplash.com/s/photos/boy-reading-sunset?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
 
-Where does that _'About 4 minutes to read'_ come from?
+Where does that _'4 minutes to read'_ come from?
 
 Each of the posts on this site (there are only two so far, and this is the second one), display something like "About 1 minute to read." This indicates that it will take about one minute to read the post.
 
