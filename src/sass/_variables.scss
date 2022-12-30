@@ -1,7 +1,5 @@
 :root {
-  /*
-  Type Scale from https://www.fluid-type-scale.com/, smallest to largest
-*/
+  //  Type Scale from https://www.fluid-type-scale.com/, smallest to largest
   --font-size-sm: clamp(0.8rem, 0.17vw + 0.76rem, 0.89rem);
   --font-size-base: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
   --font-size-md: clamp(1.25rem, 0.61vw + 1.1rem, 1.58rem);

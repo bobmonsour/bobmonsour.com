@@ -5,6 +5,7 @@
 //      - header
 //        [page content]
 //      - footer
+
 //
 // default styles for the following HTML elements:
 //
@@ -19,7 +20,6 @@ header {
 main {
   max-width: 1200px;
   margin: 0 auto;
-  // text defaults
   font-family: var(--brand-font);
   font-size: var(--font-size-md);
   color: black;
@@ -90,7 +90,7 @@ blockquote {
   margin: 2em 0;
 }
 
-// content of each page uses the .container class within the <main>
+// .container holds all the within the <main>
 .container {
   max-width: 94%;
   margin: 0 auto;
