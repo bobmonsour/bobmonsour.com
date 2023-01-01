@@ -1,28 +1,25 @@
 // default page layout:
 //
 //  - body
+//    - header
 //    - main
-//      - header
 //        [page content]
-//      - footer
+//    - footer
 
 //
 // default styles for the following HTML elements:
 //
-//  header, main, footer
-//  h2, p, a, hr, blockquote
+//  body, page header, main content, page footer
+//  h2, p, a, hr, blockquote, ul, ol
 //
 
-header {
-  margin: 1em 0;
-}
-
-main {
-  max-width: 1200px;
+body {
+  width: min(var(--page-width-max), 100vw - 0.5em);
   margin: 0 auto;
   font-family: var(--brand-font);
   font-size: var(--font-size-md);
   color: black;
+  line-height: 1.3;
 }
 
 footer {
@@ -30,8 +27,8 @@ footer {
   align-items: center;
   justify-content: space-around;
   background-color: var(--light-accent-color);
-  padding: 0.5em 0;
-  margin-top: 1em;
+  padding-block: 0.5em;
+  margin-block-start: 1em;
 }
 
 footer .text {
@@ -55,13 +52,13 @@ footer .text {
 h2 {
   font-size: var(--font-size-lg);
   line-height: 1.2;
-  padding-bottom: 0.5em;
+  padding-block-end: 0.5em;
 }
 
 // default <p> style
 p {
   max-width: 65ch;
-  margin: 1em auto;
+  margin: 0 auto 1.5em auto;
 }
 
 // default <a> style
@@ -79,21 +76,22 @@ a {
 
 // default <hr> style
 hr {
-  border-top: 1px solid var(--dark-accent-color);
+  border-block-start: 1px solid var(--dark-accent-color);
 }
 
 // default <blockquote> style
 blockquote {
-  border-left: 5px solid var(--dark-accent-color);
+  border-inline-start: min(10px, 2vw) solid var(--dark-accent-color);
   font-style: italic;
-  padding: 0 6rem;
-  margin: 2em 0;
+  padding: 0 min(4em, 4vw);
+  margin: 1em 0;
 }
 
-// .container holds all the within the <main>
+// .container holds all the content within the <main>
 .container {
-  max-width: 94%;
-  margin: 0 auto;
+  max-width: 98%;
+  margin-block-start: 1em;
+  margin-inline: auto;
 }
 
 // brand & navigation styles
@@ -103,12 +101,8 @@ blockquote {
   align-items: center;
 
   &__image {
-    width: 6vw;
+    width: min(100px, 10vw);
     clip-path: circle(45%);
-  }
-
-  &__image-link {
-    border: none;
   }
 
   &__nav {
@@ -139,24 +133,34 @@ blockquote {
   }
   &__date {
     font-size: var(--post-date-size);
-    line-height: 1.1;
-    padding-top: 5px;
-    margin: 0;
+    // line-height: 1.2;
+    margin: 0 0 1em 0;
   }
-  &__body img,
+  &__excerpt {
+    margin-block-end: 0;
+  }
   &__body p {
+    margin-block-end: 1.25em;
+  }
+  &__content {
+    max-width: 65ch;
     margin: 0.5em auto;
   }
-  &__body ul {
-    padding-left: 5em;
+  &__content ul {
+    list-style-type: disc;
   }
 
   &__card {
-    margin-top: 1em;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1em;
+    margin-block-start: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     align-items: center;
+    gap: 1em;
+  }
+  &__portion,
+  &__image {
+    flex-basis: min(500px, 100vw - 0.25em);
   }
 }
 
@@ -169,5 +173,5 @@ blockquote {
 p.caption {
   text-align: center;
   font-size: var(--caption-size);
-  margin-top: 0.25em;
+  margin-block-start: 0.5em;
 }

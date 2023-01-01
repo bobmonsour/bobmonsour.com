@@ -7,9 +7,12 @@ imagesrc: "losing-my-brother-to-cancer.jpg"
 imagealt: "The day we spread my brother's ashes in the Atlantic Ocean"
 ---
 
-{% image "src/img/" + imagesrc, imagealt, "100vw", "eager" %}
+<div class="post__hero">
+  {% image "src/img/" + imagesrc, imagealt, "100vw", "eager" %}
+  <p class="caption">With family and friends on the day we spread Bill's ashes into the Atlantic Ocean, Longport, NJ, September 8, 2019 (I'm 4th from the right)</p>
+</div>
 
-<p class="caption">With family and friends on the day we spread Bill's ashes into the Atlantic Ocean, Longport, NJ, September 8, 2019 (I'm 4th from the right)</p>
+<div class="post__content">
 
 _NOTE: This piece was [originally posted on Medium](https://medium.com/p/6cf46529f207), on August 1st, 2020, one year following Bill's death. I am re-posting it here now that I've built this blog. I've been thinking about him a lot lately...and missing him terribly._
 
@@ -83,3 +86,5 @@ Our last conversation was on the day before he died. He called me from the hospi
 I want to thank several authors who inspired me to bring forth these thoughts as they have shared a similar loss. Their writings include [Coping With the Sudden Death of My Brother](https://medium.com/myth-vs-craft/losing-a-sibling-coping-with-the-loss-of-my-brother-65a6e4a863d0), [The Sibling Loss Gang](https://medium.com/@megszee/https-medium-com-megszee-the-sibling-loss-gang-198653465e95), [After losing a sibling, searching for the sinkhole](https://medium.com/@slymank2/after-losing-a-sibling-searching-for-the-sinkhole-a7fab1ea2943), [Learning to live without you](https://medium.com/@oliviawilson_70511/learning-to-live-without-you-bfe961169da), and [Death, I have life on my mind](https://medium.com/@vikasgupta/death-i-have-life-on-my-mind-8c6d0a23b4d7).
 
 And a final shout out to one of Bill's long time friends, [Richard DiDio](https://medium.com/@RichardADiDio); we've always called him Skip. Shortly after Bill's passing, I told Skip that I wanted to write a piece about Bill. He encouraged me and even gave me a book about writing, Anne Lamott's excellent book, Bird by Bird. Thank you, Skip.
+
+</div>
