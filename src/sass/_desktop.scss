@@ -184,3 +184,9 @@ p.caption {
   font-size: var(--caption-size);
   margin-block-start: 0.5em;
 }
+
+// table of contents (for posts that have them)
+.toc ol {
+  max-width: 65ch;
+  margin: 0 auto 1.5em auto;
+}
