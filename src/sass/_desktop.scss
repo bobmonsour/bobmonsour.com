@@ -114,9 +114,7 @@ hr {
 
 // default <blockquote>
 blockquote {
-  // border-left: thick solid var(--dark-accent-color);
   border-inline-start: thick solid var(--dark-accent-color);
-  // border-inline-start: min(10px, 2vw) solid var(--dark-accent-color);
   font-style: italic;
   padding: 0 min(4em, 4vw);
   margin: 1em 0;
