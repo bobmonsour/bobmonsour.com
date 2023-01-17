@@ -15,7 +15,7 @@ module.exports = function (eleventyConfig) {
   // Set up watch targets and passthroughs
   eleventyConfig.addWatchTarget("./src/sass/");
 
-  eleventyConfig.setServerPassthroughCopyBehavior("copy");
+  // eleventyConfig.setServerPassthroughCopyBehavior("copy");
   eleventyConfig.addPassthroughCopy("src/img");
   eleventyConfig.addPassthroughCopy("src/robots.txt");
   // Copy files in favicon dir to `_site/`
