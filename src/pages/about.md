@@ -3,7 +3,7 @@ layout: default.njk
 title: About Bob Monsour
 description: A few notes about Bob Monsour.
 keywords: retired, web development, eleventy, tennis, about
-permalink: /about/
+permalink: /pages/about/
 ---
 
 <div class="container">

@@ -1,15 +1,13 @@
 ---
 layout: default.njk
-title: Bob Monsour's personal website
-description: The personal website of Bob Monsour. Enjoying learning and deploying websites with 11ty and Netlify.
-keywords: retired, web development, eleventy, tennis
-image: losing-my-brother-to-cancer-1400w.jpeg
-permalink: /
+title: Archives of Bob Monsour's Personal Site
+description: These are the archives of the personal website of Bob Monsour.
+keywords: retired, web development, eleventy, tennis, archives
+permalink: /pages/archives/
 ---
 
 <div class="container">
-  {% set latest_posts = collections.posts | reverse %}
-  {%- for post in latest_posts.slice(0, 1) -%}
+  {%- for post in collections.posts | reverse -%}
   <div class="post__card">
     <div class="post post__portion">
       <h2 class="post__title">
@@ -27,5 +25,6 @@ permalink: /
       {% image "src/img/" + post.data.imagesrc, post.data.imagealt, "100vw" %}</a>
     </div>
   </div>
+  <hr>
   {%- endfor -%}
 </div>

@@ -5,7 +5,7 @@ module.exports = {
   title: "Bob Monsour | Home",
   url: "https://www.bobmonsour.com",
   mainNavLinks: [
-    { url: "/archives/", text: "Archives", class: "nav__item" },
-    { url: "/about/", text: "About", class: "nav__item" },
+    { url: "/pages/archives/", text: "Archives", class: "nav__item" },
+    { url: "/pages/about/", text: "About", class: "nav__item" },
   ],
 };
