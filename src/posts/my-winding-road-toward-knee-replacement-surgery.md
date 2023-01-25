@@ -7,7 +7,7 @@ imagesrc: "my-knee.jpg"
 imagealt: "picture of my knee prior to replacement surgery"
 ---
 
-{% image "src/img/" + imagesrc, imagealt, "100vw", "eager" %}
+{% image imageDir + imagesrc, imagealt, "100vw", "eager" %}
 
 <p class="caption">My right knee…they say it needs to be replaced.</p>
 
@@ -47,7 +47,7 @@ Earlier this year, things came to a head where I was unable to walk very far wit
 ## Is there a doctor in the house?
 
 <div class="image-holder">
-  {% image "src/img/doctor-in-the-house.jpg", "eight doctors, all masked, looking over a patient as seen from the patient's perspective", "100vw" %}
+  {% image imageDir + "doctor-in-the-house.jpg", "eight doctors, all masked, looking over a patient as seen from the patient's perspective", "100vw" %}
   <p class="caption"><a href="https://unsplash.com/photos/701-FJcjLAQ">Photo</a> by <a href="https://unsplash.com/@nci">National Cancer Institute</a></p>
 </div>
 
@@ -80,7 +80,7 @@ That visit with InjectoDoc was in July. I told him that I’d like to try the vi
 ## Is this the doctor I should be seeing?
 
 <div class="image-holder">
-  {% image "src/img/which-one-would-you-like.jpg", "a man showing the inside of his trench coat with various things to buy", "100vw" %}
+  {% image imageDir + "which-one-would-you-like.jpg", "a man showing the inside of his trench coat with various things to buy", "100vw" %}
   <p class="caption">InjectoDoc</p>
 </div>
 
@@ -109,7 +109,7 @@ From the articles I’ve read, when it comes to pain reduction and knee function
 So I made an appointment to see him and scheduled it before my date with InjectoDoc. He’s a surgeon and knee replacements are one of his specialties. Of course, he said that I needed a knee replacement. His story to me went something like this.
 
 <div class="image-holder">
-  {% image "src/img/funny-roof-leak.jpg", "man sitting in his kitchen, reading a newspaper, as water comes down from the ceiling", "100vw" %}
+  {% image imageDir + "funny-roof-leak.jpg", "man sitting in his kitchen, reading a newspaper, as water comes down from the ceiling", "100vw" %}
   <p class="caption">Your roof is leaking</p>
 </div>
 
@@ -120,7 +120,7 @@ I asked him about the various injections, noting that cortisone and PRP did noth
 I noted that I was concerned about being in the hospital during COVID-time and that I’d feel better doing a replacement after the start of the new year. He understood, but noted that I’d be going home the same day. I said that I’d consider what he’d said and would let them know. They provided some home exercises to do in preparation.
 
 <div class="image-holder">
-  {% image "src/img/right-knee-xray.jpg", "x-ray of knees, showing arthritis in the right knee", "100vw" %}
+  {% image imageDir + "right-knee-xray.jpg", "x-ray of knees, showing arthritis in the right knee", "100vw" %}
   <p class="caption">That’s my right knee…on the left.</p>
 </div>
 
@@ -181,7 +181,7 @@ Ah, but visco-stuff, the guidelines can’t recommend its use, “unless a clear
 ## To inject or not to inject?
 
 <div class="image-holder">
-  {% image "src/img/injectodoc.jpg", "a diabolocial man holding a syringe", "100vw" %}
+  {% image imageDir + "injectodoc.jpg", "a diabolocial man holding a syringe", "100vw" %}
     <p class="caption"><a href="https://unsplash.com/photos/l-8rhhUpuyM">Photo</a> by <a href="https://unsplash.com/@dimhou">Dimitri Houtteman</a></p>
 
 </div>

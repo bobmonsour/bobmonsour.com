@@ -7,7 +7,7 @@ imagesrc: "calculating-reading-time-for-a-post.jpg"
 imagealt: "a boy reading at sunset"
 ---
 
-{% image "src/img/" + imagesrc, imagealt, "100vw", "eager" %}
+{% image imageDir + imagesrc, imagealt, "100vw", "eager" %}
 
 <p class="caption">Photo by <a href="https://unsplash.com/@aaronburden?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Aaron Burden</a> on <a href="https://unsplash.com/s/photos/boy-reading-sunset?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
 

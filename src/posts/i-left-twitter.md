@@ -7,7 +7,7 @@ imagesrc: "dumpster-fire.jpg"
 imagealt: "firefighter walking away from a dumpster fire"
 ---
 
-{% image "src/img/" + imagesrc, imagealt, "100vw", "eager" %}
+{% image imageDir + imagesrc, imagealt, "100vw", "eager" %}
 
 <p class="caption">Photo by <a href="https://unsplash.com/@arnykoor?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Arny Mogensen</a> on <a href="https://unsplash.com/photos/rRgO49i8w2s?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
 
