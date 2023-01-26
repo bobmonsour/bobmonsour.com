@@ -5,7 +5,7 @@
   "main": ".eleventy.js",
   "scripts": {
     "watch:sass": "sass --watch src/sass/main.scss:_site/css/main.css",
-    "watch:eleventy": "DEBUG=Eleventy* npx @11ty/eleventy --serve",
+    "watch:eleventy": "npx @11ty/eleventy --serve",
     "build:sass": "sass --no-source-map src/sass/main.scss:_site/css/main.css",
     "build:eleventy": "eleventy",
     "postbuild": "postcss _site/css/main.css -r --no-map",
