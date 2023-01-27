@@ -9,7 +9,7 @@
 //
 // default styles for the following elements:
 //
-//  body, brand (inside <header>, footer, h2, p, a, hr, blockquote
+//  body, brand, main layout,header, footer, h2, p, a, hr, blockquote
 //
 
 body {
@@ -52,6 +52,14 @@ body {
   }
 }
 // end brand
+
+// main layout
+.main-layout {
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
 
 footer {
   display: flex;

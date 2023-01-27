@@ -2,10 +2,12 @@
 <html lang="en">
   {% include 'partials/head.njk' %}
 <body>
-  {% include 'partials/header.njk' %}
-  <main>
-    {{ content | safe }}
-  </main>
-  {% include 'partials/footer.njk' %}
+  <div class="main-layout">
+    {% include 'partials/header.njk' %}
+    <main>
+      {{ content | safe }}
+    </main>
+    {% include 'partials/footer.njk' %}
+  </div>
 </body>
 </html>
