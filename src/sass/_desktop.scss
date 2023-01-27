@@ -89,7 +89,8 @@ h2 {
 }
 
 // default <p>
-p {
+p,
+ol {
   max-width: 65ch;
   margin: 0 auto 1.5em auto;
 }
