@@ -6,8 +6,3 @@ package = "netlify-plugin-cache"
     "_site/assets/img/generated", # Eleventy Image Disk Cache
     ".cache" # Remote Asset Cache
   ]
-
-[[headers]]
-  for = "/*"
-  [headers.values]
-    Content-Security-Policy = "default-src 'self';"
