@@ -2,9 +2,9 @@
 <html lang="en">
   {% include 'partials/head.njk' %}
 <body>
-  <div class="main-layout">
+  <div class="outer-layout">
     {% include 'partials/header.njk' %}
-    <main>
+    <main class="inner-layout">
       {{ content | safe }}
     </main>
     {% include 'partials/footer.njk' %}
