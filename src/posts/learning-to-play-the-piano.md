@@ -11,6 +11,8 @@ imagealt: "a man playing a Steinway piano"
 
 <p class="caption">Photo by <a href="https://unsplash.com/es/@dolodol?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Dolo Iglesias</a> on <a href="https://unsplash.com/photos/FjElUqGfbAw?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
 
+## Table of Contents
+
 <div class="toc">
 
 1. [Introduction](#section1)

@@ -19,7 +19,7 @@ Some of the more interesting projects that I've worked on include the [Motorola 
 You can find me on these social links:
 
 <a rel="me" href="https://indieweb.social/@bobmonsour">Mastodon</a>
-[LinkedIn](https://www.linkedin.com/in/bobmonsour/)
-[GitHub](https://github.com/bobmonsour)
+<a rel="me" href="https://www.linkedin.com/in/bobmonsour/">LinkedIn</a>
+<a rel="me" href="https://github.com/bobmonsour">GitHub</a>
 
 </div>

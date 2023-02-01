@@ -15,6 +15,8 @@ imagealt: "picture of my knee prior to replacement surgery"
 
 ---
 
+## Table of Contents
+
 <div class="toc">
 
 1. [Introduction](#section1)
@@ -25,6 +27,8 @@ imagealt: "picture of my knee prior to replacement surgery"
 6. [To inject or not to inject?](#section6)
 
 </div>
+
+---
 
 <div id="section1"></div>
 
