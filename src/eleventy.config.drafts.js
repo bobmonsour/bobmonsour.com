@@ -49,7 +49,9 @@ module.exports = (eleventyConfig) => {
 
     // Only log once.
     if (!logged) {
-      console.log(`[11ty/eleventy-base-blog] ${text} drafts.`);
+      console.log(
+        `[Using drafts feature for posts, drafts: true in frontmatter to exclude a post from processing] ${text} drafts.`
+      );
     }
 
     logged = true;
