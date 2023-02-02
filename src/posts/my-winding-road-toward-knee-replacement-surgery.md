@@ -32,7 +32,7 @@ imagealt: "picture of my knee prior to replacement surgery"
 
 <div id="section1"></div>
 
-## Introduction
+## 1. Introduction
 
 I turned 65 this month. My mind doesn’t think so, but my body knows it and it’s been trying to tell me. It’s a knee thing. It hurts and it’s been hurting for the last few years. The pain has made it less than pleasant to walk a single block. It’s keeping me off the tennis court. And I’d like some relief. Do I need a knee replacement or is there another way?
 
@@ -48,7 +48,7 @@ Earlier this year, things came to a head where I was unable to walk very far wit
 
 <div id="section2"></div>
 
-## Is there a doctor in the house?
+## 2. Is there a doctor in the house?
 
 <div class="image-holder">
   {% image imageDir + "doctor-in-the-house.jpg", "eight doctors, all masked, looking over a patient as seen from the patient's perspective", "100vw" %}
@@ -81,7 +81,7 @@ That visit with InjectoDoc was in July. I told him that I’d like to try the vi
 
 <div id="section3"></div>
 
-## Is this the doctor I should be seeing?
+## 3. Is this the doctor I should be seeing?
 
 <div class="image-holder">
   {% image imageDir + "which-one-would-you-like.jpg", "a man showing the inside of his trench coat with various things to buy", "100vw" %}
@@ -96,7 +96,7 @@ The other worry I had was that the health system portal that shows test results 
 
 <div id="section4"></div>
 
-## What do the clinicians who do research say?
+## 4. What do the clinicians who do research say?
 
 Since we live only an hour north of San Francisco, I thought it might be best to look for an orthopedic surgeon at the [UCSF Department of Orthopedic Surgery](https://orthosurgery.ucsf.edu/), a teaching hospital. My cardiologist is a UCSF doc and he’s been great.
 
@@ -140,7 +140,7 @@ I copped some CBD cream at $35/oz. I tried it for a few days. It didn’t seem t
 
 <div id="section5"></div>
 
-## Have any of these injections been proven to work?
+## 5. Have any of these injections been proven to work?
 
 With all the noise coming out from all corners of the propaganda-sphere about therapeutics for COVID-19 and the lack of evidence for some of them, I started to wonder about all of these knee injections. So I started digging into the research and the recommendations from the professional organizations, like the American Academy of Orthopaedic Surgeons.
 
@@ -182,7 +182,7 @@ Ah, but visco-stuff, the guidelines can’t recommend its use, “unless a clear
 
 <div id="section6"></div>
 
-## To inject or not to inject?
+## 6. To inject or not to inject?
 
 <div class="image-holder">
   {% image imageDir + "injectodoc.jpg", "a diabolocial man holding a syringe", "100vw" %}

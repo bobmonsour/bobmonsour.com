@@ -42,10 +42,13 @@ module.exports = function (eleventyConfig) {
   //
   //  - syntax highlighting
   //  - RSS feed generation
+  //  - support for draft: true in template frontmatter
   //
   eleventyConfig.addPlugin(syntaxHighlight);
 
   eleventyConfig.addPlugin(pluginRss);
+
+  eleventyConfig.addPlugin(require("./src/eleventy.config.drafts.js"));
 
   return {
     markdownTemplateEngine: "njk",

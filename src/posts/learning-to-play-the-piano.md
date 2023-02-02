@@ -28,7 +28,7 @@ imagealt: "a man playing a Steinway piano"
 
 <div id="section1"></div>
 
-## Introduction
+## 1. Introduction
 
 Well, a new year has started and while I rarely write new year's resolutions, the combination of the new year and some other audio and mental murmurings got me interested in learning to play the piano. Here's a brief look at my journey thus far.
 
@@ -36,7 +36,7 @@ Well, a new year has started and while I rarely write new year's resolutions, th
 
 <div id="section2"></div>
 
-## Why now?
+## 2. Why now?
 
 I've never been a musician. My father and brother both played piano, clarinet, and saxophone. I took piano lessons when I was very young, but it didn't stick, while my brother played his whole life. So, I grew up listening to him practice and play. He was really good, though our mother got tired of the practice at times.
 
@@ -60,7 +60,7 @@ But now it's time to get started on this piano journey...for real.
 
 <div id="section3"></div>
 
-## How should I start this journey?
+## 3. How should I start this journey?
 
 When I decide to learn something new, I often turn to YouTube. I'm not sure if it came through the algorithmic feed of a particular search that I did, but I encountered Scott Houston's channel, called [Play Piano in a Flash](https://www.youtube.com/@pianoinaflash/videos).
 
@@ -74,7 +74,7 @@ Back to YouTube, I've since learned that there are quite a few great piano teach
 
 <div id="section4"></div>
 
-## Feeling overwhelmed
+## 4. Feeling overwhelmed
 
 Going back to my earlier reference to learning music as I've been learning to develop websites, the parallels of both having an overwhelming body of learning materials can leave one feeling, well, overwhelmed.
 
@@ -90,7 +90,7 @@ It appears that a similar thing is possible with learning to play the piano. Tha
 
 <div id="section5"></div>
 
-## Holding myself accountable
+## 5. Holding myself accountable
 
 Being on the right of center of the impatience spectrum when it comes to learning, I wanted to get going quickly. But it's one thing to want to get going quickly and something altogether different to playing well quickly.
 
@@ -106,7 +106,7 @@ I've limited how many people I've shared this journey with. Well, having written
 
 <div id="section6"></div>
 
-## So, how's it going?
+## 6. So, how's it going?
 
 I've since been working my way through the Piano in a Flash courses.
 
