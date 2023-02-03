@@ -1,11 +1,11 @@
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
+const eleventySass = require("@11tyrocks/eleventy-plugin-sass-lightningcss");
 
 module.exports = function (eleventyConfig) {
   //
   // Set up watch targets and passthroughs
   //
-  eleventyConfig.addWatchTarget("./src/sass/");
   eleventyConfig.addPassthroughCopy("src/assets");
   eleventyConfig.addPassthroughCopy("src/js");
   eleventyConfig.addPassthroughCopy("src/robots.txt");
@@ -43,12 +43,12 @@ module.exports = function (eleventyConfig) {
   //  - syntax highlighting
   //  - RSS feed generation
   //  - support for draft: true in template frontmatter
+  //  - have eleventy process sass and post-process with lightning
   //
   eleventyConfig.addPlugin(syntaxHighlight);
-
   eleventyConfig.addPlugin(pluginRss);
-
   eleventyConfig.addPlugin(require("./src/eleventy.config.drafts.js"));
+  eleventyConfig.addPlugin(eleventySass);
 
   return {
     markdownTemplateEngine: "njk",
