@@ -11,7 +11,7 @@ imagealt: "a man smoking a cigarette"
 
 <p class="caption">Photo by <a href="https://unsplash.com/@maiaalhab?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Maia Habegger</a> on <a href="https://unsplash.com/photos/xuBNR--BrGY?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
 
-> _NOTE: This piece was [originally posted on Medium](https://medium.com/@bobmonsour/this-never-happened-but-273a2f3415ad), on January 4th, 2022. The version below has some very minor edits._
+> _NOTE: I [originally posted this on Medium](https://medium.com/@bobmonsour/this-never-happened-but-273a2f3415ad), on January 4th, 2022. The version below has some very minor edits._
 
 ---
 
