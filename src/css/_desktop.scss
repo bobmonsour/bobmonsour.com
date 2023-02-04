@@ -199,3 +199,18 @@ p.caption {
   max-width: 65ch;
   margin: 0 auto 1.5em auto;
 }
+
+// unordered lists within a post
+.simple-list > ul {
+  max-width: 65ch;
+  margin: 0 auto 1.5em auto;
+}
+
+// audio clips
+audio {
+  display: block;
+  max-width: 65ch;
+  margin: 0 auto 1.5em auto;
+  background-color: var(--light-accent-color);
+  border: 1px solid var(--dark-accent-color);
+}
