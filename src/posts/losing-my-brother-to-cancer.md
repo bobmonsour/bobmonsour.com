@@ -14,7 +14,7 @@ imagealt: "The day we spread my brother's ashes in the Atlantic Ocean"
 
 <div class="post__content">
 
-> _NOTE: I [originally posted on Medium](https://medium.com/p/6cf46529f207), on August 1st, 2020, one year following Bill's death. I am re-posting it here now that I've built this blog. I've been thinking about him a lot lately...and missing him terribly._
+> _NOTE: I [originally posted this on Medium](https://medium.com/p/6cf46529f207), on August 1st, 2020, one year following Bill's death. I am re-posting it here now that I've built this blog. I've been thinking about him a lot lately...and missing him terribly._
 
 ---
 
