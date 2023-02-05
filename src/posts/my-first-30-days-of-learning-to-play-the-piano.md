@@ -1,7 +1,7 @@
 ---
 title: My first 30 days of learning to play the piano
 date: 2023-02-04
-description: A brief dive into a my journey...with a few stats and a couple of (bad) audio clips.
+description: A brief dive into my journey...with a few stats and a couple of (bad) audio clips.
 keywords: 30 days of piano, learning piano
 imagesrc: "first-30-days-of-piano.jpg"
 imagealt: "a man playing a Steinway piano"

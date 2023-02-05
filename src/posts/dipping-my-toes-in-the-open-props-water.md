@@ -1,7 +1,7 @@
 ---
 title: Dipping my toe in the Open Props water
 date: 2022-02-22
-description: I saw the recent launch of Open Props by Adam Argyle and then watched an intro video by Kevin Powell. I was intrigued, so I dipped my toe in the water.
+description: I saw the recent launch of Open Props and watched an intro video. I was intrigued, so I dipped my toe in the water.
 keywords: open props, css variables, css architecture, adam argyle
 imagesrc: "dipping-my-toe-in-the-open-props-water.jpg"
 imagealt: "a foot near the water at the beach"

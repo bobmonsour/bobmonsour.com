@@ -1,7 +1,7 @@
 ---
-title: From all the Open Props to only the Open Props I use
+title: From all Open Props to only Open Props I use
 date: 2022-03-08
-description: Now that I have Open Props working in my 11ty setup, I wanted to get postcss-jit-props working to reduce the size of my CSS file in production.
+description: Got Open Props working on my site, but wanted to reduce the size of my CSS in production.
 keywords: postcss-jit-props, smaller css, adam argyle
 imagesrc: "only-the-open-props-i-use.jpg"
 imagealt: "essential love drawn in color on a chalkboard"
