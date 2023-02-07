@@ -143,8 +143,8 @@ Note: These were recorded this morning on my iPhone using the Voice Memo app. I 
 Happy Birthday (17 seconds):
 
 <audio controls>
-  <source src="/assets/audio/happy-birthday-at-30days-020323.mp3" type="audio/mpeg" />
-  <source src="/assets/audio/happy-birthday-at-30days-020323.ogg" type="audio/ogg" />
+  <source src="/assets/audio/happy-birthday-at-30days-020323.mp3" type="audio/mpeg">
+  <source src="/assets/audio/happy-birthday-at-30days-020323.ogg" type="audio/ogg">
   <p>
     Your browser does not support HTML audio, but you can still
     <a href="happy-birthday-at-30days-020323.mp3">download the music in mp3 format</a>.
@@ -154,8 +154,8 @@ Happy Birthday (17 seconds):
 Happy Together (53 seconds):
 
 <audio controls>
-  <source src="/assets/audio/happy-together-at-30days-020323.mp3" type="audio/mpeg" />
-  <source src="/assets/audio/happy-together-at-30days-020323.ogg" type="audio/ogg" />
+  <source src="/assets/audio/happy-together-at-30days-020323.mp3" type="audio/mpeg">
+  <source src="/assets/audio/happy-together-at-30days-020323.ogg" type="audio/ogg">
   <p>
     Your browser does not support HTML audio, but you can still
     <a href="audihappy-together-at-30days-020323ofile.mp3">download the music in mp3 format</a>.
