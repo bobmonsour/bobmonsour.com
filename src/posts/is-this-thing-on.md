@@ -4,7 +4,7 @@ date: 2022-02-05
 tags:
   - personal
   - dev
-  - eleventy
+  - 11ty
 description: Welcome to the first post of my new site!
 keywords: blog, website, retired, 11ty, eleventy
 imagesrc: "is-this-thing-on.jpg"

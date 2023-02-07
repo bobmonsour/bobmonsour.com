@@ -4,7 +4,7 @@ date: 2022-03-08
 tags:
   - dev
   - css
-  - eleventy
+  - 11ty
 description: Got Open Props working on my site, but wanted to reduce the size of my CSS in production.
 keywords: postcss-jit-props, smaller css, adam argyle
 imagesrc: "only-the-open-props-i-use.jpg"
