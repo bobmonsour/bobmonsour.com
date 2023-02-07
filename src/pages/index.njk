@@ -20,13 +20,13 @@ permalink: /index.html
         }}
       </p>
       <ul class="post__taglist">
-        <span>Tags:&nbsp;</span>
+        <li>Tags:&nbsp;</li>
         {%- set postTags %}{{ post.data.tags }}{% endset %}
         {%- for postTag in postTags | filterTagList %}
-          {%- set tagUrl %}/tags/{{ postTag | slugify }}/{% endset %}
-          <a href=" {{ tagUrl }}" class="post__tag"> {{ postTag }}</a>&nbsp;&nbsp;
+        {%- set tagUrl %}/tags/{{ postTag | slugify }}/{% endset %}
+        <li><a href=" {{ tagUrl }}" class="post__tag"> {{ postTag }}</a>&nbsp;&nbsp;</li>
         {%- endfor %}
-        <a href="/tags/">All Tags</a>
+        <li><a href="/tags/">All Tags</a></li>
       </ul>
       <p class="post__excerpt">{{ post.data.description }}</p>
     </div>
