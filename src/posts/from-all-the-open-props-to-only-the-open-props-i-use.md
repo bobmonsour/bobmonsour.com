@@ -1,6 +1,10 @@
 ---
 title: From all Open Props to only Open Props I use
 date: 2022-03-08
+tags:
+  - dev
+  - css
+  - eleventy
 description: Got Open Props working on my site, but wanted to reduce the size of my CSS in production.
 keywords: postcss-jit-props, smaller css, adam argyle
 imagesrc: "only-the-open-props-i-use.jpg"
@@ -9,8 +13,7 @@ imagealt: "essential love drawn in color on a chalkboard"
 
 {% image imageDir + imagesrc, imagealt, "100vw", "eager" %}
 
-<p class="caption">Photo by <a href="https://unsplash.com/@sharonmccutcheon?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Sharon McCutcheon</a> on <a href="https://unsplash.com/s/photos/essential?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-  </p>
+<p class="caption">Photo by <a href="https://unsplash.com/@sharonmccutcheon?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Sharon McCutcheon</a> on <a href="https://unsplash.com/s/photos/essential?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
 
 > Note: I am no longer using Open Props as I've decided to reduce the number of levels of abstraction that I use to maintain the CSS for this site. I still find it a fascinating tool, but for the size and scope of this project, I am finding it easier to maintain my own set of custom properties for the few things I need them for.
 
@@ -63,11 +66,6 @@ module.exports = {
 With that in place, here's what my 11ty package.json file looks like with the relevant build scripts to handle dev and production. Note that one is called main-dev.scss and the other is called main-prod.scss (oddly enough).
 
 ```js
-{
-  "name": "bobmonsour.com",
-  "version": "1.0.0",
-  "description": "This is a base set of files needed to start a project in Eleventy. Make a project directory and put these files in it.",
-  "main": ".eleventy.js",
   "scripts": {
     "watch:sass": "sass --no-source-map --watch src/sass/main-dev.scss:_site/css/main.css",
     "watch:eleventy": "eleventy --serve",
@@ -78,21 +76,6 @@ With that in place, here's what my 11ty package.json file looks like with the re
     "build": "npm-run-all build:sass build:eleventy",
     "clean": "rimraf ./_site"
   },
-  "keywords": [],
-  "author": "Bob Monsour",
-  "license": "ISC",
-  "devDependencies": {
-    "@11ty/eleventy": "^1.0.0",
-    "@11ty/eleventy-plugin-syntaxhighlight": "^4.0.0",
-    "npm-run-all": "^4.1.5",
-    "open-props": "^1.3.8",
-    "postcss": "^8.4.6",
-    "postcss-cli": "^9.1.0",
-    "postcss-jit-props": "^1.0.4",
-    "rimraf": "^3.0.2",
-    "sass": "^1.48.0"
-  }
-}
 ```
 
 This works great.

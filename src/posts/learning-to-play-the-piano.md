@@ -1,6 +1,9 @@
 ---
 title: Learning to play the piano
 date: 2023-01-23
+tags:
+  - piano
+  - personal
 description: It's time for a new learning experience. So this year, I decided to learn to play the piano.
 keywords: piano, learning, chords, new things, play time
 imagesrc: "learning-to-play-the-piano.jpg"

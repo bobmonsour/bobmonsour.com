@@ -1,14 +1,4 @@
----
-title: Bob Monsour's personal website
-description: The personal website of Bob Monsour. Enjoying learning and deploying websites with 11ty and Netlify.
-keywords: retired, web development, eleventy, tennis
-imagesrc: "bob.small.jpg"
-permalink: /index.html
----
-
-<div class="container">
-  {% set latest_posts = collections.posts | reverse %}
-  {%- for post in latest_posts.slice(0, 1) -%}
+{% for post in postslist | reverse %}
   <div class="post__card">
     <div class="post post__portion">
       <h2 class="post__title">
@@ -20,7 +10,7 @@ permalink: /index.html
         }}
       </p>
       <ul class="post__taglist">
-        <span>Tags:&nbsp;</span>
+      <span>Tags:&nbsp;</span>
         {%- set postTags %}{{ post.data.tags }}{% endset %}
         {%- for postTag in postTags | filterTagList %}
           {%- set tagUrl %}/tags/{{ postTag | slugify }}/{% endset %}
@@ -29,11 +19,12 @@ permalink: /index.html
         <a href="/tags/">All Tags</a>
       </ul>
       <p class="post__excerpt">{{ post.data.description }}</p>
+      {# <p>{{ post.data.tags }}</p> #}
     </div>
     <div class="post__image">
       <a href="{{ post.url }}">
       {% image "src/assets/img/" + post.data.imagesrc, post.data.imagealt, "100vw" %}</a>
     </div>
   </div>
-  {%- endfor -%}
-</div>
+  <hr>
+{% endfor %}

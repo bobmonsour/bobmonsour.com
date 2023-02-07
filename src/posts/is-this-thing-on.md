@@ -1,6 +1,10 @@
 ---
 title: Is this thing on?
 date: 2022-02-05
+tags:
+  - personal
+  - dev
+  - eleventy
 description: Welcome to the first post of my new site!
 keywords: blog, website, retired, 11ty, eleventy
 imagesrc: "is-this-thing-on.jpg"
@@ -13,7 +17,7 @@ imagealt: "a boy screaming into a microphone"
 
 Welcome to the first post of my new site!
 
-I've built the site with something called [11ty, or as some say, eleventy](https://www.11ty.dev/). It's a static site generator that I'm still learning how to use.
+I've built the site with something called [11ty, also known as eleventy](https://www.11ty.dev/). It's a static site generator that I'm still learning how to use.
 
 I'll be writing about my experience in building this site as well as a few others I've built using eleventy.
 

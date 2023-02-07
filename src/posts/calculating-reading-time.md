@@ -1,6 +1,8 @@
 ---
 title: Calculating reading time for a post
 date: 2022-02-06
+tags:
+  - dev
 description: Where does that '4 minutes to read' come from?
 keywords: reading time, eleventy, filters
 imagesrc: "calculating-reading-time-for-a-post.jpg"

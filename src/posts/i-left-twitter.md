@@ -1,6 +1,8 @@
 ---
 title: I left Twitter
 date: 2022-12-26
+tags:
+  - personal
 description: I left the dumpster fire that is Twitter a couple of weeks ago.
 keywords: twitter, dumpster, fire, noise
 imagesrc: "dumpster-fire.jpg"

@@ -1,6 +1,8 @@
 ---
 title: This never happened, but...
 date: 2022-04-02
+tags:
+  - personal
 description: The following recounts a very real dream/nightmare that I had in the early morning hours of Jan 4, 2022.
 keywords: nightmare, smoking, Princeton, fiction, writing
 imagesrc: "cig-smoker.jpg"
