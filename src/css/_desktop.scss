@@ -21,6 +21,22 @@ body {
   line-height: 1.3;
 }
 
+/* https://www.a11yproject.com/posts/how-to-hide-content/ */
+.visually-hidden {
+  position: absolute;
+  left: -9999px;
+  z-index: 999;
+  padding: 1em;
+  background-color: black;
+  color: black;
+  opacity: 0;
+}
+.visually-hidden:focus {
+  left: 30%;
+  transform: translateX(-50%);
+  opacity: 1;
+}
+
 // brand & navigation (inside <header>)
 .brand {
   display: flex;
@@ -176,7 +192,7 @@ blockquote {
     gap: 1em;
   }
 
-  &__portion,
+  &__metadata,
   &__image {
     flex-basis: min(500px, 100vw - 0.25em);
   }
