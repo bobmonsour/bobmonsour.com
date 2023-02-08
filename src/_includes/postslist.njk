@@ -24,5 +24,5 @@
       {% image "src/assets/img/" + post.data.imagesrc, post.data.imagealt, "100vw" %}</a>
     </div>
   </div>
-  <hr>
+  {%- if not loop.last %}<hr>{% endif %}
 {% endfor %}
