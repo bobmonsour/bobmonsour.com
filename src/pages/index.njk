@@ -21,8 +21,7 @@ permalink: /index.html
       </p>
       <ul class="post__taglist">
         <li>Tags:&nbsp;</li>
-        {%- set postTags %}{{ post.data.tags }}{% endset %}
-        {%- for postTag in postTags | filterTagList %}
+        {%- for postTag in post.data.tags | filterTagList %}
         {%- set tagUrl %}/tags/{{ postTag | slugify }}/{% endset %}
         <li><a href=" {{ tagUrl }}" class="post__tag"> {{ postTag }}</a>&nbsp;&nbsp;</li>
         {%- endfor %}

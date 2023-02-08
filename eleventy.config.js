@@ -1,6 +1,7 @@
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const eleventySass = require("@11tyrocks/eleventy-plugin-sass-lightningcss");
+const eleventyDrafts = require("./src/eleventy.config.drafts.js");
 
 module.exports = function (eleventyConfig) {
   //
@@ -27,6 +28,8 @@ module.exports = function (eleventyConfig) {
   //
   //  - generate reading time for a post
   //  - generate post date for various contexts
+  //  - return all the tags used in a collection
+  //  - filter the post tag list to exclude a few collections
   //
   eleventyConfig.addFilter(
     "readingTime",
@@ -38,7 +41,6 @@ module.exports = function (eleventyConfig) {
     require("./src/_includes/filters/formatpostdate.js")
   );
 
-  // Return all the tags used in a collection
   eleventyConfig.addFilter("getAllTags", (collection) => {
     let tagSet = new Set();
     for (let item of collection) {
@@ -48,28 +50,22 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addFilter("filterTagList", function filterTagList(tags) {
-    if (typeof tags === "string") {
-      return (tags.split(",") || []).filter(
-        (tag) => ["all", "nav", "post", "posts"].indexOf(tag) === -1
-      );
-    } else {
-      return (tags || []).filter(
-        (tag) => ["all", "nav", "post", "posts"].indexOf(tag) === -1
-      );
-    }
+    return (tags || []).filter(
+      (tag) => ["all", "nav", "post", "posts"].indexOf(tag) === -1
+    );
   });
 
   // Add plugins
   //
   //  - syntax highlighting
   //  - RSS feed generation
-  //  - support for draft: true in template frontmatter
   //  - have eleventy process sass and post-process with lightning
+  //  - support for 'draft: true' in template frontmatter
   //
   eleventyConfig.addPlugin(syntaxHighlight);
   eleventyConfig.addPlugin(pluginRss);
-  eleventyConfig.addPlugin(require("./src/eleventy.config.drafts.js"));
   eleventyConfig.addPlugin(eleventySass);
+  eleventyConfig.addPlugin(eleventyDrafts);
 
   return {
     markdownTemplateEngine: "njk",

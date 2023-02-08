@@ -49,9 +49,7 @@ module.exports = (eleventyConfig) => {
 
     // Only log once.
     if (!logged) {
-      console.log(
-        `[Using drafts feature for posts, drafts: true in frontmatter to exclude a post from processing] ${text} drafts.`
-      );
+      console.log(`[Put drafts: true to exclude drafts] ${text} drafts.`);
     }
 
     logged = true;
