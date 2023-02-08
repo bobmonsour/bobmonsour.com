@@ -46,7 +46,7 @@ body {
   }
 
   // highlight the nav element of the current page
-  .current {
+  .nav__link[aria-current="page"] {
     background-color: var(--light-accent-color);
     border-bottom: 2px dotted var(--dark-accent-color);
   }

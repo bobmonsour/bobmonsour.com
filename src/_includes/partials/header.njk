@@ -4,9 +4,9 @@
     <img class="brand__image" alt="picture of Bob" src="/assets/img/bob-small.jpg">
     <ul class="brand__nav">
       {% for link in site.mainNavLinks %}
-        <li {% if link.class %} class="{{ link.class }}" {% endif %}>
+        <li>
           <a href="{% if site.env == "prod" %}{{ site.prod_url}}{{ link.url }}{% else %}{{site.dev_url}}{{ link.url }}{% endif %}"
-            {% if page.url == link.url %} aria-current="page" class="nav__link current" {% else %}class="nav__link" {% endif %}>{{ link.text }}</a>
+            {% if page.url == link.url %} aria-current="page" class="nav__link" {% else %}class="nav__link" {% endif %}>{{ link.text }}</a>
         </li>
       {% endfor %}
     </ul>
