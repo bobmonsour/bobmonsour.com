@@ -6,12 +6,12 @@ layout: default.njk
     <h1 class="post__title">{{ title }}</h1>
     <p class="post__date">{{ page.date | formatPostDate }}&nbsp;&bull;&nbsp;{{ content | readingTime }}</p>
     <ul class="post__taglist">
-      <span>Tags: &nbsp;</span>
+      <li>Tags:&nbsp;</li>
       {%- for tag in tags | filterTagList %}
-        {%- set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
-        <a href=" {{ tagUrl }}" class="post__tag"> {{ tag }}</a>&nbsp;&nbsp;
+      {%- set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
+      <li><a href=" {{ tagUrl }}" class="post__tag"> {{ tag }}</a>&nbsp;&nbsp;</li>
       {%- endfor %}
-      <a href="/tags/">All Tags</a>
+      <li><a href="/tags/">All Tags</a></li>
     </ul>
     <div class="post__body">
       {{ content | safe }}
