@@ -5,7 +5,7 @@ const eleventyDrafts = require("./src/eleventy.config.drafts.js");
 
 module.exports = function (eleventyConfig) {
   //
-  // Set up watch targets and passthroughs
+  // Set up file and directory passthroughs
   //
   eleventyConfig.addPassthroughCopy("src/assets");
   eleventyConfig.addPassthroughCopy("src/js");
@@ -27,7 +27,7 @@ module.exports = function (eleventyConfig) {
   // Add filters
   //
   //  - generate reading time for a post
-  //  - generate post date for various contexts
+  //  - format the post date
   //  - return all the tags used in a collection
   //  - filter the post tag list to exclude a few collections
   //
@@ -38,7 +38,13 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addFilter(
     "formatPostDate",
-    require("./src/_includes/filters/formatpostdate.js")
+    function formatPostDate(dateString) {
+      return dateString.toLocaleString("en-US", {
+        month: "short",
+        day: "numeric",
+        year: "numeric",
+      });
+    }
   );
 
   eleventyConfig.addFilter("getAllTags", (collection) => {
