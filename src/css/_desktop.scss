@@ -1,3 +1,9 @@
+@font-face {
+  font-family: "cutive_monoregular";
+  src: url("/assets/fonts/cutivemono-regular-webfont.woff2") format("woff2"),
+    url("/assets/fonts/cutivemono-regular-webfont.woff") format("woff");
+}
+
 // default page layout:
 //
 //  - body
@@ -22,18 +28,19 @@ body {
 }
 
 /* https://www.a11yproject.com/posts/how-to-hide-content/ */
-.visually-hidden {
+#visually-hidden {
+  background: var(--light-accent-color);
+  color: var(--dark-accent-color);
+  font-weight: bold;
+  padding: 0.5rem 1.5rem;
+  border: none;
+  border-radius: 0 0 0.25rem 0.25rem;
   position: absolute;
-  left: -9999px;
-  z-index: 999;
-  padding: 1em;
-  background-color: black;
-  color: black;
-  opacity: 0;
+  transform: translateY(-120%);
+  transition: transform 325ms ease-in;
 }
-.visually-hidden:focus {
-  left: 30%;
-  transform: translateX(-50%);
+#visually-hidden:focus {
+  transform: translateY(0);
   opacity: 1;
 }
 

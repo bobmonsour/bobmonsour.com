@@ -2,11 +2,11 @@
 <html lang="en">
   {% include 'partials/head.njk' %}
 <body>
-	<a href="#skip" class="visually-hidden">Skip to main content</a>
+	<a href="#main-content" id="visually-hidden">Skip to main content</a>
 
   <div class="outer-layout">
     {% include 'partials/header.njk' %}
-    <main  id="skip">
+    <main id="main-content">
       {{ content | safe }}
     </main>
     {% include 'partials/footer.njk' %}
