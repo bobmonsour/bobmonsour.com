@@ -2,6 +2,7 @@ const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const eleventySass = require("@11tyrocks/eleventy-plugin-sass-lightningcss");
 const eleventyDrafts = require("./src/eleventy.config.drafts.js");
+const { DateTime } = require("luxon");
 
 module.exports = function (eleventyConfig) {
   //
@@ -36,19 +37,11 @@ module.exports = function (eleventyConfig) {
     require("./src/_includes/filters/readingtime.js")
   );
 
-  eleventyConfig.addFilter(
-    "formatPostDate",
-    function formatPostDate(dateString) {
-      const date = dateString.toUTCString("en-US");
-      let formattedPostDate =
-        date.substring(8, 11) +
-        " " +
-        date.substring(5, 7) +
-        ", " +
-        date.substring(12, 16);
-      return formattedPostDate;
-    }
-  );
+  eleventyConfig.addFilter("formatPostDate", function formatPostDate(date) {
+    return DateTime.fromJSDate(date, { zone: "utc" }).toLocaleString(
+      DateTime.DATE_MED
+    );
+  });
 
   eleventyConfig.addFilter("getAllTags", (collection) => {
     let tagSet = new Set();
