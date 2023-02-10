@@ -1,8 +1,3 @@
-const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
-const pluginRss = require("@11ty/eleventy-plugin-rss");
-const eleventySass = require("@11tyrocks/eleventy-plugin-sass-lightningcss");
-const eleventyDrafts = require("./src/eleventy.config.drafts.js");
-
 module.exports = function (eleventyConfig) {
   //
   // Set up file and directory passthroughs
@@ -64,9 +59,16 @@ module.exports = function (eleventyConfig) {
   //  - have eleventy process sass and post-process with lightning
   //  - support for 'draft: true' in template frontmatter
   //
+  const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
   eleventyConfig.addPlugin(syntaxHighlight);
+
+  const pluginRss = require("@11ty/eleventy-plugin-rss");
   eleventyConfig.addPlugin(pluginRss);
+
+  const eleventySass = require("@11tyrocks/eleventy-plugin-sass-lightningcss");
   eleventyConfig.addPlugin(eleventySass);
+
+  const eleventyDrafts = require("./src/eleventy.config.drafts.js");
   eleventyConfig.addPlugin(eleventyDrafts);
 
   return {
