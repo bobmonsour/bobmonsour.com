@@ -39,11 +39,14 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter(
     "formatPostDate",
     function formatPostDate(dateString) {
-      return dateString.toLocaleString("en-US", {
-        month: "short",
-        day: "numeric",
-        year: "numeric",
-      });
+      const date = dateString.toUTCString("en-US");
+      let formattedPostDate =
+        date.substring(8, 11) +
+        " " +
+        date.substring(5, 7) +
+        ", " +
+        date.substring(12, 16);
+      return formattedPostDate;
     }
   );
 
