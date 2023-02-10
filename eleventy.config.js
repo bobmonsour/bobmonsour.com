@@ -2,7 +2,6 @@ const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const eleventySass = require("@11tyrocks/eleventy-plugin-sass-lightningcss");
 const eleventyDrafts = require("./src/eleventy.config.drafts.js");
-const { DateTime } = require("luxon");
 
 module.exports = function (eleventyConfig) {
   //
@@ -38,6 +37,7 @@ module.exports = function (eleventyConfig) {
   );
 
   eleventyConfig.addFilter("formatPostDate", function formatPostDate(date) {
+    const { DateTime } = require("luxon");
     return DateTime.fromJSDate(date, { zone: "utc" }).toLocaleString(
       DateTime.DATE_MED
     );
