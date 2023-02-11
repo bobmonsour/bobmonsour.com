@@ -1,6 +1,7 @@
 // --- START, eleventy-img ---
 const Image = require("@11ty/eleventy-img");
-const path = require("path");
+// Related to custom filenames (see below)
+// const path = require("path");
 
 async function imageShortcode(src, alt, sizes = "100vw", loading = "lazy") {
   let metadata = await Image(src, {
