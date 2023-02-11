@@ -5,7 +5,7 @@
   "main": ".eleventy.js",
   "scripts": {
     "start": "cross-env ELEVENTY_ENV=dev npx @11ty/eleventy --serve",
-    "build": "cross-env ELEVENTY_ENV=prod eleventy",
+    "build": "cross-env ELEVENTY_ENV=prod npx @11ty/eleventy",
     "debug": "cross-env ELEVENTY_ENV=dev DEBUG=Eleventy* npx @11ty/eleventy --serve",
     "clean": "rimraf ./_site"
   },
