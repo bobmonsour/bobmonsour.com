@@ -72,14 +72,14 @@ module.exports = function (eleventyConfig) {
   const eleventyDrafts = require("./src/eleventy.config.drafts.js");
   eleventyConfig.addPlugin(eleventyDrafts);
 
-  const directoryOutputPlugin = require("@11ty/eleventy-plugin-directory-output");
-  eleventyConfig.setQuietMode(true);
-  eleventyConfig.addPlugin(directoryOutputPlugin, {
-    columns: {
-      filesize: false,
-      benchmark: false,
-    },
-  });
+  // const directoryOutputPlugin = require("@11ty/eleventy-plugin-directory-output");
+  // eleventyConfig.setQuietMode(true);
+  // eleventyConfig.addPlugin(directoryOutputPlugin, {
+  //   columns: {
+  //     filesize: false,
+  //     benchmark: false,
+  //   },
+  // });
 
   return {
     markdownTemplateEngine: "njk",
