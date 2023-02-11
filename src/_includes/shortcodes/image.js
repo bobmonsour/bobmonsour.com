@@ -8,6 +8,8 @@ async function imageShortcode(src, alt, sizes = "100vw", loading = "lazy") {
     formats: ["webp", "jpeg"],
     urlPath: "/assets/img/generated/",
     outputDir: "./_site/assets/img/generated/",
+    // Disable custom filenames as it prevents caching of generated images
+    //  - add it back later if that changes
     // filenameFormat: function (id, src, width, format) {
     //   const extension = path.extname(src);
     //   const name = path.basename(src, extension);

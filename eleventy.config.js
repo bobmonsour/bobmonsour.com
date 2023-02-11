@@ -58,6 +58,7 @@ module.exports = function (eleventyConfig) {
   //  - RSS feed generation
   //  - have eleventy process sass and post-process with lightning
   //  - support for 'draft: true' in template frontmatter
+  //  - directory output to show at build time
   //
   const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
   eleventyConfig.addPlugin(syntaxHighlight);
@@ -70,6 +71,15 @@ module.exports = function (eleventyConfig) {
 
   const eleventyDrafts = require("./src/eleventy.config.drafts.js");
   eleventyConfig.addPlugin(eleventyDrafts);
+
+  const directoryOutputPlugin = require("@11ty/eleventy-plugin-directory-output");
+  eleventyConfig.setQuietMode(true);
+  eleventyConfig.addPlugin(directoryOutputPlugin, {
+    columns: {
+      filesize: false,
+      benchmark: false,
+    },
+  });
 
   return {
     markdownTemplateEngine: "njk",
