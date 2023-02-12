@@ -2,10 +2,13 @@ module.exports = function (eleventyConfig) {
   //
   // Set up file and directory passthroughs
   //
-  eleventyConfig.addPassthroughCopy("src/assets");
-  eleventyConfig.addPassthroughCopy("src/js");
-  eleventyConfig.addPassthroughCopy("src/robots.txt");
-  eleventyConfig.addPassthroughCopy({ favicon: "/" });
+  [
+    "src/assets/fonts/",
+    "src/assets/img/",
+    "src/assets/audio/",
+    "src/robots.txt",
+  ].forEach((path) => eleventyConfig.addPassthroughCopy(path));
+  eleventyConfig.addPassthroughCopy({ "src/assets/favicon/*": "/" });
 
   // Add shortcodes
   //
