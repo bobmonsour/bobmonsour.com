@@ -206,12 +206,24 @@ blockquote {
   }
 
   &__taglist {
+    display: inline-flex;
+    align-items: center;
     list-style: none;
     margin: 0 0 0.5em 0;
     padding-inline-start: 0;
-    display: inline-flex;
-    align-items: center;
     font-size: var(--post-tag-size);
+  }
+
+  &__nextprev {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0 0 0.5em 0;
+    padding-inline-start: 0;
+
+    li:first-child {
+      margin-block: 1em;
+    }
   }
 }
 // end post elements
