@@ -169,7 +169,6 @@ blockquote {
   }
 
   &__date {
-    // border: 1px solid red;
     font-size: var(--post-date-size);
     margin: 0;
   }
@@ -215,8 +214,6 @@ blockquote {
   }
 
   &__nextprev {
-    display: flex;
-    flex-wrap: wrap;
     list-style: none;
     margin: 0 0 0.5em 0;
     padding-inline-start: 0;
