@@ -8,6 +8,10 @@ permalink: /index.html
 
 <div class="container">
   {% set latest_posts = collections.posts | reverse %}
-  {% set postslist = latest_posts.slice(0,1) %}
+  {% set postslist = latest_posts.slice(0,3) %}
   {% include "postslist.njk" %}
+</div>
+
+<div class="container">
+  <a href="/pages/archives/" title="link to more blog posts">More posts in the Archives...</a>
 </div>
