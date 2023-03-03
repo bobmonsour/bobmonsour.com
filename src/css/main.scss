@@ -1,6 +1,6 @@
 // Base scss file
-// Includes all other scss files via @import
-// Imported *local* files must have filenames that start with an underscore (excluded on the @import command)
+// Includes all other scss files via @use
+// Imported *local* files must have filenames that start with an underscore (excluded on the @use command)
 @use "variables";
 @use "reset";
 @use "prismokaidia";
