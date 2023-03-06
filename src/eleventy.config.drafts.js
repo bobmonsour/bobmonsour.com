@@ -49,7 +49,7 @@ module.exports = (eleventyConfig) => {
 
     // Only log once.
     if (!logged) {
-      console.log(`[Use drafts: true to exclude drafts] ${text} drafts.`);
+      console.log(`[Use draft: true to exclude drafts] ${text} drafts.`);
     }
 
     logged = true;

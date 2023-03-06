@@ -16,6 +16,6 @@ permalink: /tags/{{ tag | slugify }}/
 <h1>Tagged “{{ tag }}”</h1>
 
 <div class="container">
-  {% set postslist = collections[ tag ] %}
+  {% set postslist = collections[ tag ] | reverse %}
   {% include "postslist.njk" %}
 </div>
