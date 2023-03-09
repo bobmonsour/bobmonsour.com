@@ -12,8 +12,6 @@ imagealt: "a foot near the water at the beach"
 
 {% image imageDir + imagesrc, imagealt, "100vw", "eager" %}
 
-<!-- {% image "src/assets/img/" + imagesrc, imagealt, "100vw", "eager" %} -->
-
 <p class="caption">Photo by <a href="https://unsplash.com/@carlynsuggs?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">carlyn suggs</a> on <a href="https://unsplash.com/s/photos/toe-in-water?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
 
 > Note: I am no longer using Open Props as I've decided to reduce the number of levels of abstraction that I use to maintain the CSS for this site. I still find it a fascinating tool, but for the size and scope of this project, I am finding it easier to maintain my own set of custom properties for the few things I need them for.
@@ -56,7 +54,7 @@ Before I started using Open Props, I organized my variables like this:
 }
 ```
 
-As you can see, they are organized more my function, i.e., colors, fonts, and font sizes. As this list grew in size (not that it's terribly large), I started to consider other ways to organize them, perhaps more driven by where they are used in the structure of the site.
+As you can see, they are organized more by function, i.e., colors, fonts, and font sizes. As this list grew in size (not that it's terribly large), I started to consider other ways to organize them, perhaps more driven by where they are used in the structure of the site.
 
 Combining this thinking along with the use of Open Props, I revised the list to look more like this:
 

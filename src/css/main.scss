@@ -3,5 +3,5 @@
 // Imported *local* files must have filenames that start with an underscore (excluded on the @use command)
 @use "variables";
 @use "reset";
-@use "prismokaidia";
+@use "../../node_modules/prismjs/themes/prism-okaidia.min.css";
 @use "desktop";
