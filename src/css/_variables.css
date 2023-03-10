@@ -1,8 +1,8 @@
 :root {
-  // Page structure
+  /* Page structure */
   --page-width-max: 1200px;
 
-  //  Type scale from https://www.fluid-type-scale.com/, smallest to largest
+  /* Type scale from https://www.fluid-type-scale.com/, smallest to largest */
   --font-size-sm: clamp(0.8rem, 0.17vw + 0.76rem, 0.89rem);
   --font-size-base: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
   --font-size-md: clamp(1.25rem, 0.61vw + 1.1rem, 1.58rem);
@@ -13,17 +13,16 @@
 
   --radius-blob: 49% 51% 48% 52% / 57% 44% 56% 43%;
 
-  // Accent Colors
+  /* Accent Colors */
   --dark-accent-color: #005bbb;
   --light-accent-color: #ffd500;
 
-  // Brand Styles
-  // --brand-font: "Cutive Mono", monospace;
+  /* Brand Styles */
   --brand-font: "cutive_monoregular", monospace;
   --brand-color: black;
   --brand-link-radius: var(--radius-blob);
 
-  // Post Styles
+  /* Post Styles */
   --post-body-size: var(--font-size-md);
   --post-title-size: var(--font-size-lg);
   --post-date-size: var(--font-size-base);

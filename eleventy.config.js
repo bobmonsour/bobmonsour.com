@@ -7,8 +7,8 @@ module.exports = function (eleventyConfig) {
     "src/assets/img/",
     "src/assets/audio/",
     "src/robots.txt",
+    { "src/assets/favicon/*": "/" },
   ].forEach((path) => eleventyConfig.addPassthroughCopy(path));
-  eleventyConfig.addPassthroughCopy({ "src/assets/favicon/*": "/" });
 
   // Add shortcodes
   //

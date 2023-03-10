@@ -79,7 +79,7 @@ select {
   }
 }
 
-// Added by me to handle fluid images
+/* Added by me to handle fluid images */
 
 img {
   max-width: 100%;
