@@ -5,7 +5,7 @@
     <ul class="brand__nav">
       {% for link in site.mainNavLinks %}
         <li>
-          <a href="{% if site.env == "prod" %}{{ site.prod_url}}{{ link.url }}{% else %}{{site.dev_url}}{{ link.url }}{% endif %}"
+          <a href="{% if site.env == "production" %}{{ site.production_url}}{{ link.url }}{% else %}{{ link.url }}{% endif %}"
             {% if page.url == link.url %} aria-current="page" class="nav__link" {% else %}class="nav__link" {% endif %}>{{ link.text }}</a>
         </li>
       {% endfor %}

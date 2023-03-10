@@ -17,7 +17,7 @@ module.exports = function (eleventyConfig) {
   //
   eleventyConfig.addNunjucksAsyncShortcode(
     "image",
-    require("./src/_includes/shortcodes/image.js")
+    require("./src/eleventy.config.image.js")
   );
 
   eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
