@@ -66,13 +66,11 @@ body {
 
   &__nav a {
     padding: 0 5px;
-    border-bottom: 2px dotted var(--dark-accent-color);
   }
 
   // highlight the nav element of the current page
   .nav__link[aria-current="page"] {
     background-color: var(--light-accent-color);
-    border-bottom: 2px dotted var(--dark-accent-color);
   }
 }
 // end brand
@@ -131,7 +129,7 @@ ol {
 a {
   color: var(--brand-color);
   text-decoration: none;
-  border-bottom: 2px dashed var(--dark-accent-color);
+  border-bottom: 1px solid var(--dark-accent-color);
 
   &:hover,
   &:focus {
@@ -142,7 +140,7 @@ a {
 
 // default <hr>
 hr {
-  border-block-start: 1px solid var(--dark-accent-color);
+  border-block-start: 2px solid var(--dark-accent-color);
 }
 
 // default <blockquote>

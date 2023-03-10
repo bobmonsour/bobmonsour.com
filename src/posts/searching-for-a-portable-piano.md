@@ -11,7 +11,7 @@ imagealt: "A Roland portable digital piano"
 draft: "true"
 ---
 
-{% image imageDir + imagesrc, imagealt, '100vw', 'eager' %}
+{% image imageDir + imagesrc, imagealt, "100vw", "eager" %}
 
 <p class="caption">Photo by <a href="https://unsplash.com/@tracminhvu?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Trac Vu</a> on <a href="https://unsplash.com/photos/fhSduyGDlnw?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
 
