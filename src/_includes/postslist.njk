@@ -21,7 +21,12 @@
     </div>
     <div class="post__image">
       <a href="{{ post.url }}">
-      {% image "src/assets/img/" + post.data.imagesrc, post.data.imagealt, "(min-width: 1120px) 500px, (min-width: 600px) calc(43.4vw + 23px), (min-width: 560px) calc(-1130vw + 6828px), calc(89.17vw + 19px)" %}</a>
+        {%- if loop.first %}
+          {% set loading = "eager" %}
+        {%- else %}
+          {% set loading = "lazy" %}
+        {%- endif %}
+      {% image "src/assets/img/" + post.data.imagesrc, post.data.imagealt, "(min-width: 1120px) 500px, (min-width: 600px) calc(43.4vw + 23px), (min-width: 560px) calc(-1130vw + 6828px), calc(89.17vw + 19px)", loading %}</a>
     </div>
   </div>
   {%- if not loop.last %}<hr>{% endif %}
