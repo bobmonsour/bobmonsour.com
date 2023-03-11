@@ -63,3 +63,8 @@ audio {
   background-color: var(--light-accent-color);
   border: 1px solid var(--dark-accent-color);
 }
+
+/* default img; preserve aspect ratio */
+img[width][height] {
+  height: auto;
+}

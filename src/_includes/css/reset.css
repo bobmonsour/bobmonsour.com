@@ -78,16 +78,3 @@ select {
     scroll-behavior: auto !important;
   }
 }
-
-/* Added by me to handle fluid images */
-
-img {
-  max-width: 100%;
-  display: block;
-}
-img[width] {
-  width: auto; /* Defer to max-width */
-}
-img[width][height] {
-  height: auto; /* Preserve aspect ratio */
-}
