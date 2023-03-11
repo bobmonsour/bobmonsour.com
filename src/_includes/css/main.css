@@ -90,6 +90,7 @@ footer .text {
 .post__content ul {
   list-style-type: disc;
 }
+/* used in list of posts */
 .post__card {
   margin-block-start: 1em;
   display: flex;
@@ -100,7 +101,9 @@ footer .text {
 }
 .post__metadata,
 .post__image {
-  flex-basis: min(500px, 100vw - 0.25em);
+  flex-basis: 48%;
+  flex-grow: 1;
+  /* flex-basis: min(500px, 100vw - 0.25em); */
 }
 .post__taglist {
   display: inline-flex;
