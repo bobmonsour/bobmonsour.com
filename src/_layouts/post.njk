@@ -1,35 +1,22 @@
 ---
 layout: default.njk
 ---
+{% from "macros.njk" import tagList, dateAndReadingtime %}
+
 <div class="container">
   <div class="post">
     <h1 class="post__title">{{ title }}</h1>
-    <p class="post__date">{{ page.date | formatPostDate }}&nbsp;&bull;&nbsp;{{ content | readingTime }}</p>
-    <ul class="post__taglist">
-      <li>Tags:&nbsp;</li>
-      {%- for tag in tags | filterTagList %}
-      {%- set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
-      <li><a href=" {{ tagUrl }}" class="post__tag"> {{ tag }}</a>&nbsp;&nbsp;</li>
-      {%- endfor %}
-      <li><a href="/tags/">All Tags</a></li>
-    </ul>
+    {{ dateAndReadingtime(page.date, content) }}
     <div class="post__body">
       {{ content | safe }}
     </div>
   </div>
+  <hr>
+  {{ tagList(tags) }}
   {%- if collections.posts %}
     {%- set previousPost = collections.posts | getPreviousCollectionItem %}
     {%- set nextPost = collections.posts | getNextCollectionItem %}
     {%- if nextPost or previousPost %}
-      <hr>
-    <ul class="post__taglist">
-      <li>Tags:&nbsp;</li>
-      {%- for tag in tags | filterTagList %}
-      {%- set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
-      <li><a href=" {{ tagUrl }}" class="post__tag"> {{ tag }}</a>&nbsp;&nbsp;</li>
-      {%- endfor %}
-      <li><a href="/tags/">All Tags</a></li>
-    </ul>
       <ul class="post__nextprev">
         {%- if previousPost %}<li>Previous: <a href="{{ previousPost.url }}">{{ previousPost.data.title }}</a></li>{% endif %}
         {%- if nextPost %}<li>Next: <a href="{{ nextPost.url }}">{{ nextPost.data.title }}</a></li>{% endif %}

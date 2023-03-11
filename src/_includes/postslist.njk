@@ -1,22 +1,13 @@
+{% from "macros.njk" import tagList, dateAndReadingtime %}
+
 {% for post in postslist %}
   <div class="post__card">
     <div class="post__metadata">
       <h2 class="post__title">
         <a href="{{ post.url }}">{{ post.data.title }}</a>
       </h2>
-      <p class="post__date">
-        {{ post.date | formatPostDate }}&nbsp;&bull;&nbsp;{{
-          post.templateContent | readingTime
-        }}
-      </p>
-      <ul class="post__taglist">
-        <li>Tags:&nbsp;</li>
-        {%- for postTag in post.data.tags | filterTagList %}
-        {%- set tagUrl %}/tags/{{ postTag | slugify }}/{% endset %}
-        <li><a href=" {{ tagUrl }}" class="post__tag"> {{ postTag }}</a>&nbsp;&nbsp;</li>
-        {%- endfor %}
-        <li><a href="/tags/">All Tags</a></li>
-      </ul>
+      {{ dateAndReadingtime(post.date, post.templateContent) }}
+      {{ tagList(post.data.tags) }}
       <p class="post__excerpt">{{ post.data.description }}</p>
     </div>
     <div class="post__image">
