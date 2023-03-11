@@ -26,6 +26,16 @@
   <meta property="og:url" content="{{ page.url }}">
   <meta name="generator" content="{{ eleventy.generator }}">
 
-  {# load sass compiled stylesheet #}
-  <link href="/css/main.css" rel="stylesheet">
+  {# capture the CSS content as a Nunjucks variable #}
+  {% set css %}
+    {% include "css/variables.css" %}
+    {% include "css/reset.css" %}
+    {% include "css/sitedefaults.css" %}
+    {% include "css/prism-okaidia.css" %}
+    {% include "css/main.css" %}
+  {% endset %}
+  {# feed it through our cssmin filter to minify #}
+  <style>
+    {{ css | cssmin | safe }}
+  </style>
 </head>

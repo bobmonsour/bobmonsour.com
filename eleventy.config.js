@@ -3,11 +3,11 @@ module.exports = function (eleventyConfig) {
   // Set up file and directory passthroughs
   //
   [
+    "src/assets/audio/",
+    { "src/assets/favicon/*": "/" },
     "src/assets/fonts/",
     "src/assets/img/",
-    "src/assets/audio/",
     "src/robots.txt",
-    { "src/assets/favicon/*": "/" },
   ].forEach((path) => eleventyConfig.addPassthroughCopy(path));
 
   // Add shortcodes
@@ -28,6 +28,7 @@ module.exports = function (eleventyConfig) {
   //  - format the post date
   //  - return all the tags used in a collection
   //  - filter the post tag list to exclude a few collections
+  //  - minify css for inline use
   //
   eleventyConfig.addFilter(
     "readingTime",
@@ -55,6 +56,11 @@ module.exports = function (eleventyConfig) {
     );
   });
 
+  const CleanCSS = require("clean-css");
+  eleventyConfig.addFilter("cssmin", function (code) {
+    return new CleanCSS({}).minify(code).styles;
+  });
+
   // Add plugins
   //
   //  - syntax highlighting
@@ -68,9 +74,6 @@ module.exports = function (eleventyConfig) {
 
   const pluginRss = require("@11ty/eleventy-plugin-rss");
   eleventyConfig.addPlugin(pluginRss);
-
-  const eleventySass = require("@11tyrocks/eleventy-plugin-sass-lightningcss");
-  eleventyConfig.addPlugin(eleventySass);
 
   const eleventyDrafts = require("./src/eleventy.config.drafts.js");
   eleventyConfig.addPlugin(eleventyDrafts);
