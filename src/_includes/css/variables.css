@@ -1,3 +1,11 @@
+/* site wide font */
+@font-face {
+  font-family: "cutive_monoregular";
+  src: url("/assets/fonts/cutivemono-regular-webfont.woff2") format("woff2"),
+    url("/assets/fonts/cutivemono-regular-webfont.woff") format("woff");
+  font-display: swap;
+}
+
 :root {
   /* Page structure */
   --page-width-max: 1200px;
