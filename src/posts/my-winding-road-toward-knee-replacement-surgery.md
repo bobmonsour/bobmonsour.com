@@ -115,7 +115,7 @@ From the articles I’ve read, when it comes to pain reduction and knee function
 So I made an appointment to see him and scheduled it before my date with InjectoDoc. He’s a surgeon and knee replacements are one of his specialties. Of course, he said that I needed a knee replacement. His story to me went something like this.
 
 <div class="image-holder">
-  {% image imageDir + "funny-roof-leak.jpg", "man sitting in his kitchen, reading a newspaper, as water comes down from the ceiling", "100vw" %}
+  {% image imageDir + "roof-leak.jpg", "man sitting in his kitchen, reading a newspaper, as water comes down from the ceiling", "100vw" %}
   <p class="caption">Your roof is leaking</p>
 </div>
 

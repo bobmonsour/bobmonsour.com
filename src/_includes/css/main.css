@@ -23,10 +23,19 @@ h2 {
   padding-block-end: 0.5em;
 }
 
+/* default <h3> */
+h3 {
+  font-size: var(--font-size-lg);
+  line-height: 1.2;
+  font-style: italic;
+  padding-inline-start: 0;
+  padding-block-end: 0.5em;
+}
+
 /* default <p> */
 p,
 ol {
-  max-width: 65ch;
+  max-width: var(--main-element-max);
   margin: 0 auto 1.5em auto;
 }
 
@@ -58,15 +67,22 @@ blockquote {
 /* default audio */
 audio {
   display: block;
-  max-width: 65ch;
+  max-width: var(--main-element-max);
   margin: 0 auto 1.5em auto;
   background-color: var(--light-accent-color);
   border: 1px solid var(--dark-accent-color);
 }
 
-/* default img; preserve aspect ratio */
+/* default img to handle fluid images */
+img {
+  max-width: 100%;
+  display: block;
+}
+img[width] {
+  width: auto; /* Defer to max-width */
+}
 img[width][height] {
-  height: auto;
+  height: auto; /* Preserve aspect ratio */
 }
 
 /* brand & navigation (inside <header>) */
@@ -154,7 +170,7 @@ footer .text {
   margin-block-end: 1.25em;
 }
 .post__content {
-  max-width: 65ch;
+  max-width: var(--main-element-max);
   margin: 0.5em auto;
 }
 .post__content ul {
@@ -191,9 +207,8 @@ footer .text {
 }
 /* end post elements */
 
-/* image with caption */
 .image-holder {
-  max-width: 70%;
+  max-width: 100%;
   margin: 0 auto;
 }
 .image-holder .caption,
@@ -205,13 +220,13 @@ p.caption {
 
 /* table of contents (for posts that have them) */
 .toc ol {
-  max-width: 65ch;
+  max-width: var(--main-element-max);
   margin: 0 auto 1.5em auto;
 }
 
 /* unordered lists within a post */
 .simple-list > ul {
-  max-width: 65ch;
+  max-width: var(--main-element-max);
   margin: 0 auto 1.5em auto;
 }
 

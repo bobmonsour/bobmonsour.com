@@ -28,4 +28,5 @@
   --post-date-size: var(--font-size-base);
   --post-tag-size: var(--font-size-base);
   --caption-size: var(--font-size-base);
+  --main-element-max: 65ch;
 }
