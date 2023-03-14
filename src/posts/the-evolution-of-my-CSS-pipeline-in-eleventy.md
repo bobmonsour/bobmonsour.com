@@ -9,7 +9,6 @@ description: Handling CSS in eleventy has been an evolutionary experience.
 keywords: css, web development, eleventy, 11ty
 imagesrc: "the-evolution-of-my-CSS-pipeline-in-eleventy.jpg"
 imagealt: "a screen with a few lines of CSS"
-draft: "true"
 ---
 
 {% image imageDir + imagesrc, imagealt, '100vw', 'eager' %}
