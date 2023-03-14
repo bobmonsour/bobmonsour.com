@@ -357,7 +357,7 @@ It doesn't get much simpler than that. Same as before, but only relying on clean
 
 If you've read this far, thank you! As you can see, I've learned a lot from a lot of great people. And while we can all get easily distracted by new ways to do things, it's important to have some perspective. I am trying my best to strive for simplicity, maintainability, and performance. This site is my test bed. One thing I am asking myself now is whether or not it makes sense to retrofit some of these learnings into those other projects. I'll have to think about that.
 
-Lastly, it's quite likely that I got some things wrong here. If you find something harmful or misleading, please feel free to let me know. I'd hate to be leading anyone down the wrong path. You can find me in the social links in the footer.
+And I'd like to send a bit shoutout to the moderators and helpers in the eleventy Discord community. Just today, they helped me get over my last challenge in getting this post to display correctly. For anyone interested, here's [a link to the Discord discussion we had](https://discord.com/channels/741017160297611315/1085269982096654456). If you ever have an eleventy question, that's the place to go.
 
 <div id="section8"></div>
 
