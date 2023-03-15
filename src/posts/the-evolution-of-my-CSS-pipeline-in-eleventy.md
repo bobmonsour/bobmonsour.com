@@ -288,13 +288,15 @@ I've been using Sass for a while now. When I first started out, I used it only f
 
 Then I learned about nesting and began to use it and I liked how it simplified both writing and reading my Sass files. I know that nesting is in the works for CSS itself, but that is not what I considered. I looked at my site and how little CSS I was using and thought, how much time would it take me to flatten my CSS to eliminate the nesting? It took about 20 minutes. It would have been faster, but I was trying to be careful.
 
+> \_UPDATE: No sooner had I posted this, this morning I opened my email to find the latest CSS Layout News newsletter from Rachel Andrews. She linked to [a post by Adam Argyle](https://developer.chrome.com/articles/css-nesting/?ref=css-layout-news) that covers the nesting features currently available and those coming in the Chrome browser.
+
 ### Do I really need auto-prefixing?
 
 There are two parts to this. First auto-prefixing adds vendor prefixes for those browsers who have put recent features behind a prefix until they're cooked. In this piece from May, 2021, Rob O'Leary asks [Is Vendor Prefixing Dead?](https://css-tricks.com/is-vendor-prefixing-dead/). It's an amazing look at how the need for this has diminished over time.
 
 Second, I've been watching the major browser vendors up their game, seemingly in unison. They all seem to be getting new CSS standard features implemented, but in an interoperable way. Things are changing rapidly on this front. Here's a piece on [Interop 2023](https://web.dev/interop-2023/) that discusses what I think is a relatively recent phenomenon (meaning in recent years). There are so many people behind the scenes making this happen, but I want to give shoutouts to two in particular. Rachel Andrew at Google, the content lead for [web.dev](https://web.dev/) and [developer.chrome.com](https://developer.chrome.com/). She's also got an awesome newsletter called [csslayout news](https://csslayout.news/). And then there is Jen Simmons, now with Apple as an Apple Evangelist for Web Developer Experiences. About 4 years ago, she produced a YouTube channel called [Layout Land](https://www.youtube.com/@LayoutLand/featured) which is where I learned a lot about grid and flexbox. I believe that the experience and credibility that brought them to these roles have had a huge impact on how far and fast CSS has come.
 
-Yes, that was bit of a digression...but it's these observations lead me to the belief that, for my site and my audience, I do NOT need auto-prefixing. Your mileage may vary.
+Yes, that was bit of a digression...but it's these observations lead me to the belief that, for my site and my audience (all 3 of you), I do NOT need auto-prefixing. Your mileage may vary.
 
 ### Are there simple ways to minify my CSS file in a more eleventy-ish way?
 
