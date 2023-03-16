@@ -8,7 +8,8 @@ description: A friend and I are each looking to buy what one would call an 88-ke
 keywords: piano, portable, digital piano
 imagesrc: "searching-for-a-portable-piano.jpg"
 imagealt: "A Roland portable digital piano"
-draft: "true"
+draft: true
+eleventyExcludeFromCollections: true
 ---
 
 {% image imageDir + imagesrc, imagealt, "100vw", "eager" %}
