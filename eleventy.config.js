@@ -5,7 +5,6 @@ module.exports = function (eleventyConfig) {
   [
     "src/assets/audio/",
     { "src/assets/favicon/*": "/" },
-    "src/assets/fonts/",
     "src/assets/img/",
     "src/robots.txt",
   ].forEach((path) => eleventyConfig.addPassthroughCopy(path));
@@ -77,9 +76,6 @@ module.exports = function (eleventyConfig) {
 
   const eleventyDrafts = require("./src/eleventy.config.drafts.js");
   eleventyConfig.addPlugin(eleventyDrafts);
-
-  const bundlerPlugin = require("@11ty/eleventy-plugin-bundle");
-  eleventyConfig.addPlugin(bundlerPlugin);
 
   return {
     markdownTemplateEngine: "njk",
