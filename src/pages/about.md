@@ -22,4 +22,6 @@ You can find me on these social links:
 <a rel="me" href="https://www.linkedin.com/in/bobmonsour/">LinkedIn</a>
 <a rel="me" href="https://github.com/bobmonsour">GitHub</a>
 
+This site us using the Classical Humanist fonts, a set of system fonts that look similar across browsers and operating systems. This obviates the need to load a font from an external source. See [Modern Font Stacks](https://modernfontstacks.com/) to learn more and see the various font styles.
+
 </div>

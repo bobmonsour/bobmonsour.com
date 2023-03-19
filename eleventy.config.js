@@ -78,6 +78,9 @@ module.exports = function (eleventyConfig) {
   const eleventyDrafts = require("./src/eleventy.config.drafts.js");
   eleventyConfig.addPlugin(eleventyDrafts);
 
+  const bundlerPlugin = require("@11ty/eleventy-plugin-bundle");
+  eleventyConfig.addPlugin(bundlerPlugin);
+
   return {
     markdownTemplateEngine: "njk",
     dataTemplateEngine: "njk",
