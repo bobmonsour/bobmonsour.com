@@ -14,8 +14,6 @@ image:
 
 > _NOTE: I [originally posted this on Medium](https://medium.com/@bobmonsour/this-never-happened-but-273a2f3415ad), on January 4th, 2022. The version below has some very minor edits._
 
----
-
 The following recounts a very real dream/nightmare that I had in the early morning hours of Jan 4, 2022.
 
 There's a game I play with myself whenever I get up to pee at night, I guess what time it is, I look at my phone and I see how close I came. This night, I guessed 2 am; it was 2:09 am...but I digress.

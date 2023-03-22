@@ -12,7 +12,7 @@ image:
   creditLink: "https://unsplash.com/@aaronburden"
 ---
 
-Where does that _'4 minutes to read'_ come from?
+Where does that _'3 minutes to read'_ come from?
 
 Each of the posts on this site (there are only two so far, and this is the second one), display something like "About 1 minute to read." This indicates that it will take about one minute to read the post.
 

@@ -13,8 +13,6 @@ image:
 
 > _NOTE: This piece was [originally posted on Medium](https://medium.com/@bobmonsour/the-winding-road-toward-knee-replacement-surgery-b3e03f0bfcd7), on August 31st, 2020. I underwent total knee replacement surgery on November 5, 2020, smack in the middle of the pandemic. The good news is that the replacement went very well and now, 3 years later, I'm very glad I did it._
 
----
-
 ## Table of Contents
 
 <div class="toc">
@@ -43,8 +41,6 @@ Up until I hit 60, when others would start to complain about their knees, I woul
 Well, a few years ago, one of those knees that I’d been bragging about decided to serve notice that its pain-free state was ending.
 
 Earlier this year, things came to a head where I was unable to walk very far without each step announcing itself with a cringe. But let me back up a few steps and review the early signs and my attempts with various interventions.
-
----
 
 <div id="section2"></div>
 
@@ -77,8 +73,6 @@ If I’m going to try another injection, how best to decide on which of these to
 
 That visit with InjectoDoc was in July. I told him that I’d like to try the visco-stuff. He said that if I have private insurance, they would not likely cover it. So I scheduled it for late August; by then I will have arrived to the wonderful world of Medicare, which does cover it. The particular brand of visco-stuff that I’d be getting is called [Synvisc-One](https://www.synviscone.com/).
 
----
-
 <div id="section3"></div>
 
 ## 3. Is this the doctor I should be seeing?
@@ -91,8 +85,6 @@ That visit with InjectoDoc was in July. I told him that I’d like to try the vi
 I was starting to become concerned that InjectoDoc might not be the right guy for my long term knee care. I was relying on the fact that he was conveniently located. That, and a yoga instructor suggested him to my wife to help diagnose her hip (I kid you not).
 
 The other worry I had was that the health system portal that shows test results had no written radiology reports from the x-rays or the MRI that had been done. I wanted to know more.
-
----
 
 <div id="section4"></div>
 
@@ -136,8 +128,6 @@ Shit! I’ve gone from **moderate** to **severe** on the right knee. Silver lini
 
 I copped some CBD cream at $35/oz. I tried it for a few days. It didn’t seem to do much other than provide my wife and me with something to crack jokes about.
 
----
-
 <div id="section5"></div>
 
 ## 5. Have any of these injections been proven to work?
@@ -177,8 +167,6 @@ In the case of the strong recommendation, where they “cannot recommend using,�
 The cortisone had no effect on my knee pain, the PRP had no effect on my knee pain, yet my “patient preference,” seeking relief, had a “substantial influencing role” in their use. And the practitioner that I had chosen “felt little constraint.”
 
 Ah, but visco-stuff, the guidelines can’t recommend its use, “unless a clear and compelling rationale for an alternative approach is present…” whatever that means.
-
----
 
 <div id="section6"></div>
 

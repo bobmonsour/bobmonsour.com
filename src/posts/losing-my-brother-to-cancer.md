@@ -14,8 +14,6 @@ image:
 
 > _NOTE: I [originally posted this on Medium](https://medium.com/p/6cf46529f207), on August 1st, 2020, one year following Bill's death. I am re-posting it here now that I've built this blog. I've been thinking about him a lot lately...and missing him terribly._
 
----
-
 It was one year ago today that I lost my brother Bill to pancreatic cancer, a most horrid disease. He was 66 years old, 2 years older than me, and my only sibling. We had lost our dad in 1992, and our mom in 1996. Dad was 67 when he passed and mom was 69. Their deaths had a big impact on both of us. But the loss of my brother has been far more painful to me.
 
 I have contemplated writing about this loss for the entirety of the past year. At first, I wanted to document the experience that covered the last 6 weeks of his life, 5 of which I was blessed to share with him. The months went by, we moved into a new house, distractions ensued, but it was always on my mind, as were vivid memories, both fond and difficult, of our last weeks together.
