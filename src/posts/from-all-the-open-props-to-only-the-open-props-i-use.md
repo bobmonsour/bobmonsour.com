@@ -7,13 +7,12 @@ tags:
   - 11ty
 description: Got Open Props working on my site, but wanted to reduce the size of my CSS in production.
 keywords: postcss-jit-props, smaller css, adam argyle
-imagesrc: "only-the-open-props-i-use.jpg"
-imagealt: "essential love drawn in color on a chalkboard"
+image:
+  source: "only-the-open-props-i-use.jpg"
+  alt: "essential love drawn in color on a chalkboard"
+  creditPerson: "Sharon McCutcheon"
+  creditLink: "https://unsplash.com/@sharonmccutcheon"
 ---
-
-{% image imageDir + imagesrc, imagealt, "100vw", "eager" %}
-
-<p class="caption">Photo by <a href="https://unsplash.com/@sharonmccutcheon?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Sharon McCutcheon</a> on <a href="https://unsplash.com/s/photos/essential?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
 
 > Note: I am no longer using Open Props as I've decided to reduce the number of levels of abstraction that I use to maintain the CSS for this site. I still find it a fascinating tool, but for the size and scope of this project, I am finding it easier to maintain my own set of custom properties for the few things I need them for.
 

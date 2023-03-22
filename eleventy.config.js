@@ -28,6 +28,7 @@ module.exports = function (eleventyConfig) {
   //  - return all the tags used in a collection
   //  - filter the post tag list to exclude a few collections
   //  - minify css for inline use
+  //  - node inspection utility for debugging
   //
   eleventyConfig.addFilter(
     "readingTime",
@@ -58,6 +59,11 @@ module.exports = function (eleventyConfig) {
   const CleanCSS = require("clean-css");
   eleventyConfig.addFilter("cssmin", function (code) {
     return new CleanCSS({}).minify(code).styles;
+  });
+
+  const inspect = require("node:util").inspect;
+  eleventyConfig.addFilter("inspect", function (obj = {}) {
+    return inspect(obj, { sorted: true });
   });
 
   // Add plugins

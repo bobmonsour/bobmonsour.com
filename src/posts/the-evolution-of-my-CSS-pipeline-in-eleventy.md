@@ -7,13 +7,12 @@ tags:
   - dev
 description: Handling CSS in eleventy has been an evolutionary experience.
 keywords: css, web development, eleventy, 11ty
-imagesrc: "the-evolution-of-my-CSS-pipeline-in-eleventy.jpg"
-imagealt: "a screen with a few lines of CSS"
+image:
+  source: "the-evolution-of-my-css-pipeline-in-eleventy.jpg"
+  alt: "a screen with a few lines of CSS"
+  creditPerson: "Pankaj Patel"
+  creditLink: "https://unsplash.com/@pankajpatel"
 ---
-
-{% image imageDir + imagesrc, imagealt, '100vw', 'eager' %}
-
-<p class='caption'>Photo by <a href="https://unsplash.com/@pankajpatel?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Pankaj Patel</a> on <a href="https://unsplash.com/s/photos/css?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
 
 ## Table of Contents
 

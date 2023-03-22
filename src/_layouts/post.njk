@@ -1,26 +1,36 @@
 ---
 layout: default.njk
 ---
-{% from "macros.njk" import tagList, dateAndReadingtime %}
+{% from "macros.njk" import tagList %}
 
 <div class="container">
   <div class="post">
-    <h1 class="post__title">{{ title }}</h1>
-    {{ dateAndReadingtime(page.date, content) }}
-    <div class="post__body">
+    <h1 class="post-title">{{ title }}</h1>
+    <p class="post-date">{{ date | formatPostDate }}</p>
+    <p class="post-readingtime">{{ content | readingTime }}</p>
+    {{ tagList(tags) }}
+    {% set imageSource %}{{ imageDir + image.source }}{% endset %}
+    {% image imageSource, image.alt, "100vw", "eager" %}
+    {% if image.creditPerson %}
+      <p class="caption">Photo by <a href="{{ image.creditLink }}">{{ image.creditPerson }}</a></p>
+    {% endif %}
+    {% if image.caption %}
+      <p class="caption">{{ image.caption }}</p>
+    {% endif %}
+    <div class="post-body">
       {{ content | safe }}
     </div>
-  </div>
-  <hr>
-  {{ tagList(tags) }}
-  {%- if collections.posts %}
-    {%- set previousPost = collections.posts | getPreviousCollectionItem %}
-    {%- set nextPost = collections.posts | getNextCollectionItem %}
-    {%- if nextPost or previousPost %}
-      <ul class="post__nextprev">
-        {%- if previousPost %}<li>Previous: <a href="{{ previousPost.url }}">{{ previousPost.data.title }}</a></li>{% endif %}
-        {%- if nextPost %}<li>Next: <a href="{{ nextPost.url }}">{{ nextPost.data.title }}</a></li>{% endif %}
-      </ul>
+    <hr>
+    {{ tagList(tags) }}
+    {%- if collections.posts %}
+      {%- set previousPost = collections.posts | getPreviousCollectionItem %}
+      {%- set nextPost = collections.posts | getNextCollectionItem %}
+      {%- if nextPost or previousPost %}
+        <ul class="post-nextprev">
+          {%- if previousPost %}<li>Previous: <a href="{{ previousPost.url }}">{{ previousPost.data.title }}</a></li>{% endif %}
+          {%- if nextPost %}<li>Next: <a href="{{ nextPost.url }}">{{ nextPost.data.title }}</a></li>{% endif %}
+        </ul>
+      {%- endif %}
     {%- endif %}
-  {%- endif %}
+  </div>
 </div>

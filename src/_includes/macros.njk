@@ -1,20 +1,11 @@
 {# display list of tags for posts #}
 {% macro tagList(tags) %}
-  <ul class="post__taglist">
+  <ul class="post-taglist">
     <li>Tags:&nbsp;</li>
     {%- for tag in tags | filterTagList %}
     {%- set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
-    <li><a href=" {{ tagUrl }}" class="post__tag"> {{ tag }}</a>&nbsp;&nbsp;</li>
+    <li><a href=" {{ tagUrl }}" class="post-tag"> {{ tag }}</a>&nbsp;&nbsp;</li>
     {%- endfor %}
     <li><a href="/tags/">All Tags</a></li>
   </ul>
 {% endmacro %}}
-
-{# display post date and reading time #}
-{% macro dateAndReadingtime(date, postcontent) %}
-  <p class="post__date">
-    {{ date | formatPostDate }}&nbsp;&bull;&nbsp;{{
-      postcontent | readingTime
-    }}
-  </p>
-{% endmacro %}

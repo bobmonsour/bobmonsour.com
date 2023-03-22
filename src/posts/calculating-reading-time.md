@@ -3,15 +3,14 @@ title: Calculating reading time for a post
 date: 2022-02-06
 tags:
   - dev
-description: Where does that '4 minutes to read' come from?
+description: Where does that '3 minutes to read' come from?
 keywords: reading time, eleventy, filters
-imagesrc: "calculating-reading-time-for-a-post.jpg"
-imagealt: "a boy reading at sunset"
+image:
+  source: "calculating-reading-time-for-a-post.jpg"
+  alt: "a boy reading at sunset"
+  creditPerson: "Aaron Burden"
+  creditLink: "https://unsplash.com/@aaronburden"
 ---
-
-{% image imageDir + imagesrc, imagealt, "100vw", "eager" %}
-
-<p class="caption">Photo by <a href="https://unsplash.com/@aaronburden?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Aaron Burden</a> on <a href="https://unsplash.com/s/photos/boy-reading-sunset?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
 
 Where does that _'4 minutes to read'_ come from?
 

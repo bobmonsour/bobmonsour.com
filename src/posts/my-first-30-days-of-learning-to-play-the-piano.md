@@ -6,13 +6,11 @@ tags:
   - personal
 description: A brief dive into my journey...with a few stats and a couple of (bad) audio clips.
 keywords: 30 days of piano, learning piano
-imagesrc: "first-30-days-of-piano.jpg"
-imagealt: "a man playing a Steinway piano"
+image:
+  source: "first-30-days-of-piano.jpg"
+  alt: "a man playing a Steinway piano"
+  caption: "Photo by me -- some sheet music and learning materials"
 ---
-
-{% image imageDir + imagesrc, imagealt, "100vw", "eager" %}
-
-<p class="caption">Photo by me -- some sheet music and learning materials</p>
 
 ## Table of Contents
 
@@ -171,3 +169,5 @@ Happy Together (53 seconds):
 I'll start by saying that I'm enjoying this a lot. I feel like I've got an initial learning strategy and I can feel progress. As long as I continue to enjoy it, learn new things, and play songs that I want to play, I think I can keep this up.
 
 I don't plan on writing every 30 days, yet I do hope to come back here and write about my progress; I just don't know how often that will be. If I had to guess, it will be when I think I'm playing something pretty well (could be a while).
+
+</div>

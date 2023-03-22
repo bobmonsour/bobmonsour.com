@@ -6,15 +6,16 @@ tags:
   - css
 description: I saw the recent launch of Open Props and watched an intro video. I was intrigued, so I dipped my toe in the water.
 keywords: open props, css variables, css architecture, adam argyle
-imagesrc: "dipping-my-toe-in-the-open-props-water.jpg"
-imagealt: "a foot near the water at the beach"
+image:
+  source: "dipping-my-toe-in-the-open-props-water.jpg"
+  alt: "a foot near the water at the beach"
+  creditPerson: "carlyn suggs"
+  creditLink: "https://unsplash.com/@carlynsuggs"
 ---
 
-{% image imageDir + imagesrc, imagealt, "100vw", "eager" %}
-
-<p class="caption">Photo by <a href="https://unsplash.com/@carlynsuggs?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">carlyn suggs</a> on <a href="https://unsplash.com/s/photos/toe-in-water?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
-
 > Note: I am no longer using Open Props as I've decided to reduce the number of levels of abstraction that I use to maintain the CSS for this site. I still find it a fascinating tool, but for the size and scope of this project, I am finding it easier to maintain my own set of custom properties for the few things I need them for.
+
+<div class="post">
 
 [Open Props](https://open-props.style/)? What's that, you say? In the words of [Adam Argyle](https://twitter.com/argyleink), they're _Supercharged CSS variables_. I've got to assume that you know what CSS variables are as this post would be way too long for me to describe them and what they're capable of. So, if they're _variables_, why does he call them _props_? It's can be a little confusing, but according to the [spec](https://www.w3.org/TR/2021/CRD-css-variables-1-20211111/), they _are_ variables, but custom _properties_ are used to define them; also, the value of the property is referenced with the `var()` function. Many [others](https://css-tricks.com/a-complete-guide-to-custom-properties/) way [smarter than me](https://treciaks.hashnode.dev/css-variables) have [covered that ground](https://css-tricks.com/using-custom-property-stacks-to-tame-the-cascade/).
 

@@ -25,8 +25,11 @@
 
   /* Post Styles */
   --post-body-size: var(--font-size-md);
-  --post-title-size: var(--font-size-lg);
-  --post-date-size: var(--font-size-base);
+  --post-title-full-size: var(--font-size-xl);
+  --post-title-card-size: var(--font-size-lg);
+  --post-info-full-size: var(--font-size-base);
+  --post-info-card-size: var(--font-size-base);
+  --post-excerpt-card-size: var(--font-size-md);
   --post-tag-size: var(--font-size-base);
   --caption-size: var(--font-size-base);
   --main-element-max: 65ch;

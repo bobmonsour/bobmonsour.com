@@ -6,15 +6,14 @@ tags:
   - personal
 description: A friend and I are each looking to buy what one would call an 88-key, portable digital piano. So I did some research.
 keywords: piano, portable, digital piano
-imagesrc: "searching-for-a-portable-piano.jpg"
-imagealt: "A Roland portable digital piano"
+image:
+  source: "searching-for-a-portable-piano.jpg"
+  alt: "A Roland portable digital piano"
+  creditPerson: "Trac Vu"
+  creditLink: "https://unsplash.com/@tracminhvu"
 draft: true
 eleventyExcludeFromCollections: true
 ---
-
-{% image imageDir + imagesrc, imagealt, "100vw", "eager" %}
-
-<p class="caption">Photo by <a href="https://unsplash.com/@tracminhvu?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Trac Vu</a> on <a href="https://unsplash.com/photos/fhSduyGDlnw?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
 
 ## Table of Contents
 

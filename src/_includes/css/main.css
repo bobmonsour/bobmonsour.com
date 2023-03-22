@@ -8,24 +8,19 @@ body {
   line-height: 1.3;
 }
 
-/* default <h2> */
-h2 {
-  font-size: var(--font-size-lg);
-  line-height: 1.2;
-  padding-block-end: 0.5em;
-}
-
-/* default <h3> */
+/* default <h2> and <h3> */
+h2,
 h3 {
   font-size: var(--font-size-lg);
   line-height: 1.2;
-  font-style: italic;
-  padding-inline-start: 0;
   padding-block-end: 0.5em;
 }
 
-/* default <p> */
-p,
+h3 {
+  font-style: italic;
+}
+
+/* default <ol> */
 ol {
   max-width: var(--main-element-max);
   margin: 0 auto 1.5em auto;
@@ -146,30 +141,36 @@ footer .text {
 /* end footer */
 
 /* post elements */
-.post__title {
-  font-size: var(--post-title-size);
+.post {
+  max-width: 65ch;
+  margin: 0 auto;
+}
+.post-title {
+  font-size: var(--post-title-full-size);
   line-height: 1.2;
+  text-align: center;
 }
-.post__date {
-  font-size: var(--post-date-size);
-  margin: 0;
+.post-date,
+.post-readingtime {
+  font-size: var(--post-info-full-size);
+  text-align: center;
+  font-style: italic;
+  margin-block: 0.25em;
 }
-.post__excerpt {
+.post-taglist {
+  display: inline-flex;
+  align-items: center;
+  list-style: none;
   margin-block: 0.5em;
-  line-height: 1.1;
+  padding-inline-start: 0;
+  font-size: var(--post-tag-size);
 }
-.post__body p {
+.post-body p {
   margin-block-end: 1.25em;
 }
-.post__content {
-  max-width: var(--main-element-max);
-  margin: 0.5em auto;
-}
-.post__content ul {
-  list-style-type: disc;
-}
+
 /* used in list of posts */
-.post__card {
+.post-card {
   margin-block-start: 1em;
   display: flex;
   flex-wrap: wrap;
@@ -177,30 +178,33 @@ footer .text {
   align-items: center;
   gap: 1em;
 }
-.post__metadata,
-.post__image {
+.post-metadata,
+.post-image {
   flex-basis: min(500px, 100vw - 0.25em);
 }
-.post__taglist {
-  display: inline-flex;
-  align-items: center;
+.post-card .post-title {
+  text-align: left;
+}
+.post-card .post-date {
+  text-align: left;
+}
+.post-card .post-excerpt {
+  font-size: var(--post-excerpt-card-size);
+  margin-block: 0.5em;
+  line-height: 1.25;
+}
+.post-nextprev {
   list-style: none;
   margin: 0 0 0.5em 0;
   padding-inline-start: 0;
-  font-size: var(--post-tag-size);
 }
-.post__nextprev {
-  list-style: none;
-  margin: 0 0 0.5em 0;
-  padding-inline-start: 0;
-}
-.post__nextprev li:first-child {
+.post-nextprev li:first-child {
   margin-block: 1em;
 }
 /* end post elements */
 
 .image-holder {
-  max-width: 100%;
+  max-width: var(--main-element-max);
   margin: 0 auto;
 }
 .image-holder .caption,

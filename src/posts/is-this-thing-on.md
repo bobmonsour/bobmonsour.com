@@ -7,13 +7,12 @@ tags:
   - 11ty
 description: Welcome to the first post of my new site!
 keywords: blog, website, retired, 11ty, eleventy
-imagesrc: "is-this-thing-on.jpg"
-imagealt: "a boy screaming into a microphone"
+image:
+  source: "is-this-thing-on.jpg"
+  alt: "a boy screaming into a microphone"
+  creditPerson: "Jason Rosewell"
+  creditLink: "https://unsplash.com/@jasonrosewell"
 ---
-
-{% image imageDir + imagesrc, imagealt, "100vw", "eager" %}
-
-<p class="caption">Photo by <a href="https://unsplash.com/@jasonrosewell?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jason Rosewell</a> on <a href="https://unsplash.com/s/photos/microphone?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
 
 Welcome to the first post of my new site!
 
