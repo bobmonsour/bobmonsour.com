@@ -128,6 +128,7 @@ Here's a look at the resulting scripts used to develop and build the site.
 It's a bit leaner as I simply combined two commands for each of start and build using &&. The result is the same, a single file in the output directory.
 
 <div id="section4"></div>
+
 ## 4. A toe in the water with Open Props and PostCSS
 
 Shortly after building [faustotasca.com](https://www.faustotasca.com/), I had a tennis lesson with Scott and he mentioned that his wife Cynthia, a speech and language therapist, might need a website for her business. I gave her a call and we outlined what might work.
