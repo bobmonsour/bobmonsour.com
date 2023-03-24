@@ -48,8 +48,7 @@ Earlier this year, things came to a head where I was unable to walk very far wit
 
 {% image imageDir + "doctor-in-the-house.jpg", "eight doctors, all masked, looking over a patient as seen from the patient's perspective", "100vw" %}
 
-  <p class="caption"><a href="https://unsplash.com/photos/701-FJcjLAQ">Photo</a> by <a href="https://unsplash.com/@nci">National Cancer Institute</a></p>
-</div>
+<p class="caption"><a href="https://unsplash.com/photos/701-FJcjLAQ">Photo</a> by <a href="https://unsplash.com/@nci">National Cancer Institute</a></p>
 
 Several years ago, when we lived in Bellevue, Washington, I decided to see a doctor to get a professional take on what was going on. X-rays revealed [osteoarthritis](https://www.mayoclinic.org/diseases-conditions/osteoarthritis/symptoms-causes/syc-20351925) of both knees, with the right knee winning the degeneration race. From the x-ray report:
 
