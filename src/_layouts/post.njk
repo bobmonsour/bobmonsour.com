@@ -10,7 +10,7 @@ layout: default.njk
     <p class="post-readingtime">{{ content | readingTime }}</p>
     {{ tagList(tags) }}
     {% set imageSource %}{{ imageDir + image.source }}{% endset %}
-    {% image imageSource, image.alt, "100vw", "eager" %}
+    {% image imageSource, image.alt, "(min-width: 1740px) 914px, (min-width: 900px) calc(9.76vw + 746px), calc(92.41vw + 17px)", "eager" %}
     {% if image.creditPerson %}
       <p class="caption">Photo by <a href="{{ image.creditLink }}">{{ image.creditPerson }}</a></p>
     {% endif %}
