@@ -7,7 +7,11 @@
   <div class="outer-layout">
     {% include 'partials/header.njk' %}
     <main id="main-content">
-      {{ content | safe }}
+      {% if pageclass %}
+        <div class="{{ pageclass }}">
+          {{ content | safe }}
+        </div>
+      {% endif %}
     </main>
     {% include 'partials/footer.njk' %}
   </div>

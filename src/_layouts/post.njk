@@ -17,9 +17,7 @@ layout: default.njk
     {% if image.caption %}
       <p class="caption">{{ image.caption }}</p>
     {% endif %}
-    <div class="post-body">
-      {{ content | safe }}
-    </div>
+    {{ content | safe }}
     <hr>
     {{ tagList(tags) }}
     {%- if collections.posts %}

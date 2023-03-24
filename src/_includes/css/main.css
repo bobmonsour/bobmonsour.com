@@ -40,7 +40,6 @@ a:focus {
 
 /* default <ol> & <li> */
 ol {
-  max-width: var(--main-element-max);
   margin: 0.5em auto 1.5em auto;
 }
 li {
@@ -149,10 +148,14 @@ footer .text {
 }
 /* end footer */
 
-/* post elements */
-.post {
-  max-width: 65ch;
+/* post elements and about style */
+.post,
+.about {
+  max-width: var(--main-element-max);
   margin: 0 auto;
+}
+.about {
+  margin-block-start: 2em;
 }
 .post-title {
   font-size: var(--post-title-full-size);

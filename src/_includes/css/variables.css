@@ -24,7 +24,6 @@
   --brand-link-radius: var(--radius-blob);
 
   /* Post Styles */
-  --post-body-size: var(--font-size-md);
   --post-title-full-size: var(--font-size-xl);
   --post-title-card-size: var(--font-size-lg);
   --post-info-full-size: var(--font-size-base);
