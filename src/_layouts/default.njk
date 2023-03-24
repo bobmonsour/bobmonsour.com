@@ -11,6 +11,8 @@
         <div class="{{ pageclass }}">
           {{ content | safe }}
         </div>
+      {% else %}
+        {{ content | safe }}
       {% endif %}
     </main>
     {% include 'partials/footer.njk' %}
