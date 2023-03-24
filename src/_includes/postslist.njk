@@ -22,7 +22,7 @@
           {% set loading = "lazy" %}
         {%- endif %}
       {% set imageSource %}{{ post.data.imageDir + post.data.image.source }}{% endset %}
-      {% image imageSource, post.data.image.alt, "100vw", loading %}</a>
+      {% image imageSource, post.data.image.alt, "(min-width: 540px) 500px, 95.45vw", loading %}</a>
     </div>
   </div>
   {%- if not loop.last %}<hr>{% endif %}
