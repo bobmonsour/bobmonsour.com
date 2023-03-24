@@ -96,14 +96,10 @@ img[width][height] {
   margin-inline: auto;
 }
 
-/* post elements and about style */
-.post,
-.about {
+/* post elements */
+.post {
   max-width: var(--main-element-max);
   margin: 0 auto;
-}
-.about {
-  margin-block-start: ;
 }
 .post-title {
   font-size: var(--post-title-full-size);
@@ -124,6 +120,18 @@ img[width][height] {
   margin-block: 0.5em;
   padding-inline-start: 0;
   font-size: var(--post-tag-size);
+}
+.post-nextprev {
+  list-style: none;
+  margin: 0 0 0.5em 0;
+  padding-inline-start: 0;
+}
+.post-nextprev li:first-child {
+  margin-block: 1em;
+}
+.caption {
+  text-align: center;
+  font-size: var(--caption-size);
 }
 
 /* used in list of posts */
@@ -150,35 +158,4 @@ img[width][height] {
   margin-block: 0.5em;
   line-height: 1.25;
 }
-.post-nextprev {
-  list-style: none;
-  margin: 0 0 0.5em 0;
-  padding-inline-start: 0;
-}
-.post-nextprev li:first-child {
-  margin-block: 1em;
-}
 /* end post elements */
-
-.caption {
-  text-align: center;
-  font-size: var(--caption-size);
-}
-
-/* https://www.a11yproject.com/posts/how-to-hide-content/ */
-/* used for skip-to-main-content link */
-#visually-hidden {
-  background: var(--light-accent-color);
-  color: var(--dark-accent-color);
-  font-weight: bold;
-  padding: 0.5rem 1.5rem;
-  border: none;
-  border-radius: 0 0 0.25rem 0.25rem;
-  position: absolute;
-  transform: translateY(-120%);
-  transition: transform 325ms ease-in;
-}
-#visually-hidden:focus {
-  transform: translateY(0);
-  opacity: 1;
-}

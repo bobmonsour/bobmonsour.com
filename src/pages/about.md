@@ -6,6 +6,8 @@ permalink: /pages/about/
 pageclass: about
 ---
 
+{%- css %}{% include "css/about.css" %}{% endcss %}
+
 Brooklyn-born, New Jersey raised, educated in Florida and Los Angeles. I'm now retired and living in Northern California.
 
 I've had the privilege of working in the technology industry from the late 70s through early 2000. I was fortunate to work on a lot of interesting projects, both on the technical side of things as well as the business side.

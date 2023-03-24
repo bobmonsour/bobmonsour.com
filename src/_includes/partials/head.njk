@@ -24,15 +24,19 @@
   <meta name="generator" content="{{ eleventy.generator }}">
 
   {# capture the CSS content as a Nunjucks variable #}
-  {%- css %}
+  {%- set css %}
     {% include "css/reset.css" %}
     {% include "css/variables.css" %}
     {% include "css/main.css" %}
-  {% endcss %}
+  {% endset %}
+
+  <style>
+  {{ css | cssmin | safe }}
+  </style>
 
   {%- if site.env === "development" %}
-  <link rel="stylesheet" href="{% getBundleFileUrl "css" %}">
+    <link rel="stylesheet" href="{% getBundleFileUrl "css" %}">
   {%- else %}
-  <style>{% getBundle "css" %}</style>
+    <style>{% getBundle "css" %}</style>
   {%- endif %}
 </head>
