@@ -73,6 +73,7 @@ module.exports = function (eleventyConfig) {
   //  - have eleventy process sass and post-process with lightning
   //  - support for 'draft: true' in template frontmatter
   //  - directory output to show at build time
+  //  - eleventy bundle plugin for CSS (and JS and more)
   //
   const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
   eleventyConfig.addPlugin(syntaxHighlight);
@@ -82,6 +83,9 @@ module.exports = function (eleventyConfig) {
 
   const eleventyDrafts = require("./src/eleventy.config.drafts.js");
   eleventyConfig.addPlugin(eleventyDrafts);
+
+  const pluginBundle = require("@11ty/eleventy-plugin-bundle");
+  eleventyConfig.addPlugin(pluginBundle);
 
   return {
     markdownTemplateEngine: "njk",

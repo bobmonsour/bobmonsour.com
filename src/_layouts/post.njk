@@ -1,6 +1,11 @@
 ---
 layout: default.njk
 ---
+{# only include syntax highlighter CSS on blog posts that have code #}
+{% if code %}
+{%- css %}{% include "css/prism-okaidia.css" %}{% endcss %}
+{% endif %}
+
 {% from "macros.njk" import tagList %}
 
 <div class="container">

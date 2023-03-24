@@ -1,0 +1,26 @@
+/* brand & navigation (inside <header>) */
+.brand {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.brand__image {
+  aspect-ratio: 1 / 1;
+  width: min(100px, 10vw);
+  clip-path: circle(45%);
+}
+.brand__nav {
+  display: flex;
+  gap: 1em;
+  text-align: center;
+  list-style: none;
+  padding: 0;
+}
+.brand__nav a {
+  padding: 0 5px;
+}
+/* highlight the nav element of the current page  */
+.nav__link[aria-current="page"] {
+  background-color: var(--light-accent-color);
+}
+/* end brand */

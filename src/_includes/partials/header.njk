@@ -1,3 +1,4 @@
+{%- css %}{% include "css/brand.css" %}{% endcss %}
 <header>
   <nav class="brand">
     <a href="/" class="brand__name" title="link to home page">Bob Monsour</a>
@@ -7,8 +8,6 @@
         <li>
           <a href="{{ link.url }}"
             {% if page.url == link.url %} aria-current="page" class="nav__link" {% else %}class="nav__link" {% endif %}>{{ link.text }}</a>
-          {# <a href="{% if site.env == "production" %}{{ site.production_url}}{{ link.url }}{% else %}{{ link.url }}{% endif %}"
-            {% if page.url == link.url %} aria-current="page" class="nav__link" {% else %}class="nav__link" {% endif %}>{{ link.text }}</a> #}
         </li>
       {% endfor %}
     </ul>

@@ -1,0 +1,25 @@
+/* page footer */
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: var(--light-accent-color);
+  padding-block: 0.5em;
+  margin-block-start: 1em;
+}
+footer .text {
+  margin: 0;
+}
+/* social media icons within footer */
+.social-link {
+  border: none;
+}
+.social-link:hover,
+.social-link:focus {
+  cursor: pointer;
+}
+.icon {
+  width: 48px;
+  height: 48px;
+}
+/* end footer */
