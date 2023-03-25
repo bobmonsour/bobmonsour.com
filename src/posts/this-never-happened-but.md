@@ -26,7 +26,7 @@ There's a PC on my desk with an old style CRT display.
 
 {% image imageDir + "ibm-pc.jpg", "IBM PC from the 1980s", "100vw" %}
 
-<p class="caption">Photo by <a href="https://unsplash.com/@bertsz?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">bert b</a> on <a href="https://unsplash.com/@bertsz?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
+Photo by [bert b](https://unsplash.com/@bertsz)
 
 A foam wrist rest sits in front of the keyboard.
 
@@ -38,7 +38,7 @@ It seems that I had left two lit cigarettes resting on the foam wrist rest while
 
 {% image imageDir + "burning-ciagarette.jpg", "a burning cigarette sitting on a ledge", "100vw" %}
 
-<p class="caption">Photo by <a href="https://unsplash.com/@johnmcclane?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Andres Siimon</a> on <a href="https://unsplash.com/photos/ryBnRg4c3L0?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
+Photo by [Andres Siimon](https://unsplash.com/@johnmcclane)
 
 When I returned to my desk, I found a small piece of cigarette ash on the floor from one of the two. The cigarette from which this ash came was nowhere to be found.
 

@@ -8,9 +8,8 @@ keywords: sibling loss, cancer, one-year reflection
 image:
   source: "losing-my-brother-to-cancer.jpg"
   alt: "The day we spread my brother's ashes in the Atlantic Ocean"
+  caption: With family and friends on the day we spread Bill's ashes into the Atlantic Ocean, Longport, NJ, September 8, 2019 (I'm 4th from the right)
 ---
-
-<p class="caption">With family and friends on the day we spread Bill's ashes into the Atlantic Ocean, Longport, NJ, September 8, 2019 (I'm 4th from the right)</p>
 
 > _NOTE: I [originally posted this on Medium](https://medium.com/p/6cf46529f207), on August 1st, 2020, one year following Bill's death. I am re-posting it here now that I've built this blog. I've been thinking about him a lot lately...and missing him terribly._
 
@@ -24,11 +23,11 @@ There have been numerous times in our adult lives when I've found myself doing s
 
 {% image imageDir + "brooklyn-circa-1960.jpg", "Circa 1960, Bill and I standing outside of our apartment building in Brooklyn.", "100vw" %}
 
-<p class="caption">Bill and I outside of our apartment building in Brooklyn, circa 1960</p>
+Bill and I outside of our apartment building in Brooklyn, circa 1960
 
 {% image imageDir + "bill-and-kims-wedding.jpg", "Bill & Kim's wedding, Atlantic City, NJ, November 17, 2017", "100vw" %}
 
-<p class="caption">Bill & Kim's wedding, Atlantic City, NJ, November 17, 2017</p>
+Bill & Kim's wedding, Atlantic City, NJ, November 17, 2017
 
 I've been consumed with thoughts of Bill and feeling anxious about writing this to mark the first anniversary of his passing. I don't know if you’ve experienced this, but whenever I've bought a new car (which isn't very often), right after buying it I start to see it everywhere. Something similar has been happening recently as this anniversary approached. I’ll share two examples.
 
@@ -52,11 +51,11 @@ Strange, huh?
 
 {% image imageDir + "me-bill-mom-my-wedding.jpg", "My wedding, Pasadena, CA, August 7, 1993", "100vw" %}
 
-<p class="caption">My wedding, Pasadena, CA, August 7, 1993</p>
+My wedding, Pasadena, CA, August 7, 1993
 
 {% image imageDir + "me-bill-mom-thurlow-ave.jpg", "With Mom at our Thurlow Avenue home, Margate, NJ, God only knows when, because I sure don't", "100vw" %}
 
-<p class="caption">With Mom at our Thurlow Avenue home, Margate, NJ, God only knows when, because I sure don't</p>
+With Mom at our Thurlow Avenue home, Margate, NJ, God only knows when, because I sure don't
 
 Here's another example of these recent "coincidences." I'm currently reading the Alexander Hamilton biography by Ron Chernow. The eulogy by one of Hamilton's friends, Fisher Ames, includes the following statement:
 
@@ -74,7 +73,7 @@ Our last conversation was on the day before he died. He called me from the hospi
 
 {% image imageDir + "waving-bill.jpg", "Bill, waving goodbye...", "100vw" %}
 
-<p class="caption">Goodbye, Bill!</p>
+Goodbye, Bill!
 
 I want to thank several authors who inspired me to bring forth these thoughts as they have shared a similar loss. Their writings include [Coping With the Sudden Death of My Brother](https://medium.com/myth-vs-craft/losing-a-sibling-coping-with-the-loss-of-my-brother-65a6e4a863d0), [The Sibling Loss Gang](https://medium.com/@megszee/https-medium-com-megszee-the-sibling-loss-gang-198653465e95), [After losing a sibling, searching for the sinkhole](https://medium.com/@slymank2/after-losing-a-sibling-searching-for-the-sinkhole-a7fab1ea2943), [Learning to live without you](https://medium.com/@oliviawilson_70511/learning-to-live-without-you-bfe961169da), and [Death, I have life on my mind](https://medium.com/@vikasgupta/death-i-have-life-on-my-mind-8c6d0a23b4d7).
 
