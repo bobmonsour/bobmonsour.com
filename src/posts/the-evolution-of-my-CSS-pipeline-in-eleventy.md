@@ -81,7 +81,7 @@ There's nothing very complicated here. The Sass gets picked up from the sass dir
 
 The site lives on today. I built it for a good friend who is a tennis pro. If you're interested, you can check out [scottmurphytennis.net](https://www.scottmurphytennis.net/).
 
-> \_NOTE: The scripts above are generally correct. However, I do make use of the cross-env package to support the ELEVENTY_ENV environment variable in order to distinguish between development and production environments. But for easier reading, I have removed those references. The start and build commands that I actually use look like the following. This is true for all the subsequent versions of my scripts.
+> _NOTE: The scripts above are generally correct. However, I do make use of the cross-env package to support the ELEVENTY_ENV environment variable in order to distinguish between development and production environments. But for easier reading, I have removed those references. The start and build commands that I actually use look like the following. This is true for all the subsequent versions of my scripts._
 
 ```js
   "start": "cross-env ELEVENTY_ENV=dev npm-run-all --parallel watch:*",

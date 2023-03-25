@@ -19,19 +19,18 @@
   <meta property="og:title" content="{{ title }}">
   <meta property="og:type" content="website">
   <meta property="og:description" content="{{ description }}">
-  <meta property="og:image" content="/assets/img/{{ imagesrc }}">
+  <meta property="og:image" content="/assets/img/{{ image.source }}">
   <meta property="og:url" content="{{ page.url }}">
   <meta name="generator" content="{{ eleventy.generator }}">
 
-  {# capture the CSS content as a Nunjucks variable #}
-  {%- set css %}
-    {% include "css/reset.css" %}
-    {% include "css/variables.css" %}
-    {% include "css/main.css" %}
+  {# capture the CSS content used on all pages, inline & minified #}
+  {% set css %}
+  {% include "css/reset.css" %}
+  {% include "css/variables.css" %}
+  {% include "css/main.css" %}
   {% endset %}
-
   <style>
-  {{ css | cssmin | safe }}
+    {{ css | cssmin | safe }}
   </style>
 
   {%- if site.env === "development" %}

@@ -81,7 +81,7 @@ img[width][height] {
 }
 
 /* forces footer to bottom of page for short pages */
-.outer-layout {
+.page-grid {
   min-height: 100vh;
   min-height: 100dvh;
   display: grid;

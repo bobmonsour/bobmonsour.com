@@ -84,8 +84,26 @@ module.exports = function (eleventyConfig) {
   const eleventyDrafts = require("./src/eleventy.config.drafts.js");
   eleventyConfig.addPlugin(eleventyDrafts);
 
-  const pluginBundle = require("@11ty/eleventy-plugin-bundle");
-  eleventyConfig.addPlugin(pluginBundle);
+  const bundlerPlugin = require("@11ty/eleventy-plugin-bundle");
+  const postcss = require("postcss");
+  const postcssMinify = require("postcss-minify");
+  eleventyConfig.addPlugin(bundlerPlugin, {
+    transforms: [
+      async function (content) {
+        // this.type returns the bundle name.
+        if (this.type === "css") {
+          // Same as Eleventy transforms, this.page is available here.
+          let result = await postcss([postcssMinify]).process(content, {
+            from: this.page.inputPath,
+            to: null,
+          });
+          return result.css;
+        }
+
+        return content;
+      },
+    ],
+  });
 
   return {
     markdownTemplateEngine: "njk",
