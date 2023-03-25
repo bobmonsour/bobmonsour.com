@@ -18,8 +18,7 @@
   --light-accent-color: #ffd500;
 
   /* Brand Styles */
-  --brand-font: Optima, Candara, 'Noto Sans', source-sans-pro, sans-serif;
-    source-sans-pro, sans-serif;
+  --brand-font: Optima, Candara, "Noto Sans", source-sans-pro, sans-serif;
   --brand-color: black;
   --brand-link-radius: var(--radius-blob);
 

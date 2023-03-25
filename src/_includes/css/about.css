@@ -1,8 +1,0 @@
-/* about page styling */
-.about {
-  max-width: var(--main-element-max);
-  margin: 0 auto;
-}
-.about {
-  margin-block-start: 1em;
-}

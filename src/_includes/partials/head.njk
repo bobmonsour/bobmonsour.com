@@ -23,19 +23,15 @@
   <meta property="og:url" content="{{ page.url }}">
   <meta name="generator" content="{{ eleventy.generator }}">
 
-  {# capture the CSS content used on all pages, inline & minified #}
-  {% set css %}
-  {% include "css/reset.css" %}
-  {% include "css/variables.css" %}
-  {% include "css/main.css" %}
-  {% endset %}
-  <style>
-    {{ css | cssmin | safe }}
-  </style>
+  {# bundle the CSS content used on all pages #}
+  {%- css %}
+    {% include "css/variables.css" %}
+    {% include "css/reset.css" %}
+    {% include "css/main.css" %}
+  {% endcss %}
 
-  {%- if site.env === "development" %}
-    <link rel="stylesheet" href="{% getBundleFileUrl "css" %}">
-  {%- else %}
-    <style>{% getBundle "css" %}</style>
-  {%- endif %}
+  <link rel="stylesheet" href="{% getBundleFileUrl "css" %}">
+  {% if code %}
+  <link rel="stylesheet" href="{% getBundleFileUrl "css", "codepage" %}">
+  {% endif %}
 </head>

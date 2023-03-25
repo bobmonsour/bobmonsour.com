@@ -2,7 +2,7 @@
 body {
   width: min(var(--page-width-max), 100vw - 0.5em);
   margin: 0 auto;
-  font-family: var(--brand-font), monospace;
+  font-family: var(--brand-font);
   font-size: var(--font-size-md);
   color: black;
   line-height: 1.3;
@@ -94,6 +94,59 @@ img[width][height] {
   max-width: 98vw;
   margin-block-start: 1em;
   margin-inline: auto;
+}
+
+/* brand & navigation (inside <header>) */
+.brand {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.brand__image {
+  aspect-ratio: 1 / 1;
+  width: min(100px, 10vw);
+  clip-path: circle(45%);
+}
+.brand__nav {
+  display: flex;
+  gap: 1em;
+  text-align: center;
+  list-style: none;
+  padding: 0;
+}
+.brand__nav a {
+  padding: 0 5px;
+}
+/* highlight the nav element of the current page  */
+.nav__link[aria-current="page"] {
+  background-color: var(--light-accent-color);
+}
+/* https://www.a11yproject.com/posts/how-to-hide-content/ */
+/* used for skip-to-main-content link */
+#visually-hidden {
+  background: var(--light-accent-color);
+  color: var(--dark-accent-color);
+  font-weight: bold;
+  padding: 0.5rem 1.5rem;
+  border: none;
+  border-radius: 0 0 0.25rem 0.25rem;
+  position: absolute;
+  transform: translateY(-120%);
+  transition: transform 325ms ease-in;
+}
+#visually-hidden:focus {
+  transform: translateY(0);
+  opacity: 1;
+}
+/* end brand */
+
+/* about page styling */
+.about {
+  max-width: var(--main-element-max);
+  margin: 0 auto;
+}
+.about {
+  margin-block-start: 1em;
 }
 
 /* post elements */
