@@ -13,7 +13,7 @@ h2,
 h3 {
   font-size: var(--font-size-lg);
   line-height: 1.2;
-  margin-block-end: 0.25em;
+  margin-block: 1em 0.5em;
 }
 
 h3 {

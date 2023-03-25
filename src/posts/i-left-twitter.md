@@ -9,7 +9,7 @@ image:
   source: "dumpster-fire.jpg"
   alt: "firefighter walking away from a dumpster fire"
   creditPerson: "Arny Mogensen"
-  creditLink: "https://unsplash.com/photos/rRgO49i8w2s"
+  creditLink: "https://unsplash.com/@arnykoor"
 ---
 
 I left the dumpster fire that is Twitter a couple of weeks ago.
