@@ -23,7 +23,7 @@
   <meta property="og:url" content="{{ page.url }}">
   <meta name="generator" content="{{ eleventy.generator }}">
 
-  {# bundle the CSS content used on all pages #}
+  {# bundle the CSS content used on all pages and get the link to the bundle #}
   {%- css %}
     {% include "css/reset.css" %}
     {% include "css/variables.css" %}
@@ -31,7 +31,9 @@
   {% endcss %}
 
   <link rel="stylesheet" href="{% getBundleFileUrl "css" %}">
+
+  {# if there's syntax highlighted code on the page, add the required stylesheet #}
   {% if codepage %}
-  <link rel="stylesheet" href="{% getBundleFileUrl "css", "codepage" %}">
+    <link rel="stylesheet" href="{% getBundleFileUrl "css", "codepage" %}">
   {% endif %}
 </head>
