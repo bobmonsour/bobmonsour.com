@@ -4,7 +4,7 @@ description: A few notes about Bob Monsour.
 keywords: retired, web development, eleventy, tennis, about
 image:
   source: "bob.small.jpg"
-  alt: "a round image of Bob's face"
+  alt: "a picture of Bob's face"
 permalink: /pages/about/
 pageclass: about
 ---
