@@ -8,7 +8,7 @@ tags:
 description: Evolution is a continuous phenomenon.
 keywords: CSS, web development, Eleventy, 11ty
 image:
-  source: "the-evolution-of-my-css-pipeline-in-Eleventy-part-2.jpg"
+  source: "the-evolution-of-my-css-pipeline-in-eleventy-part-2.jpg"
   alt: "a screen containing a jumble of minified CSS"
   caption: A jumble of this site's minified CSS
 codepage: true
