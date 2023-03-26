@@ -24,6 +24,7 @@ h3 {
 /* default <p> */
 p {
   margin-block: 0.5em 1.25em;
+  line-height: 1.5;
 }
 
 /* default <a> */
@@ -55,7 +56,7 @@ hr {
 blockquote {
   border-inline-start: thick solid var(--dark-accent-color);
   font-style: italic;
-  padding: 0 min(4em, 4vw);
+  padding: 0 min(1em, 4vw);
   margin: 1em 0;
 }
 
@@ -213,3 +214,29 @@ picture + p {
   line-height: 1.25;
 }
 /* end post elements */
+
+/* page footer */
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: var(--light-accent-color);
+  padding-block: 0.5em;
+  margin-block-start: 1em;
+}
+footer .text {
+  margin: 0;
+}
+/* social media icons within footer */
+.social-link {
+  border: none;
+}
+.social-link:hover,
+.social-link:focus {
+  cursor: pointer;
+}
+.icon {
+  width: 48px;
+  height: 48px;
+}
+/* end footer */

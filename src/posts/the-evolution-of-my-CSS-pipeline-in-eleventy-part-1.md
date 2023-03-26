@@ -1,26 +1,28 @@
 ---
-title: The evolution of my CSS pipeline in eleventy
+title: The evolution of my CSS pipeline in Eleventy (part 1)
 date: 2023-03-14
 tags:
-  - css
+  - CSS
   - 11ty
   - dev
-description: Handling CSS in eleventy has been an evolutionary experience.
-keywords: css, web development, eleventy, 11ty
+description: Handling CSS in Eleventy has been an evolutionary experience.
+keywords: CSS, web development, Eleventy, 11ty
 image:
-  source: "the-evolution-of-my-css-pipeline-in-eleventy.jpg"
+  source: "the-evolution-of-my-css-pipeline-in-eleventy-part-1.jpg"
   alt: "a screen with a few lines of CSS"
   creditPerson: "Pankaj Patel"
   creditLink: "https://unsplash.com/@pankajpatel"
 codepage: true
 ---
 
+> _While initially a single post about my evolving use of CSS, there is now a second part which you can [find here](/posts/the-evolution-of-my-CSS-pipeline-in-eleventy-part-2). But you should really read this one first._
+
 ## Table of Contents
 
 <div class='toc'>
 
 1. [Introduction](#section1)
-2. [My first site with eleventy](#section2)
+2. [My first site with Eleventy](#section2)
 3. [A slightly leaner set of scripts](#section3)
 4. [A toe in the water with Open Props and PostCSS](#section4)
 5. [Time for a new site of my own](#section5)
@@ -37,13 +39,13 @@ codepage: true
 
 There are many ways for web developers to work with CSS. Practices can vary widely, with everything from structure, framework usage, naming conventions, minifying the result, auto-prefixing, and more. Some considerations that go into these choices include whether the project is a solo effort or that of a team, the size and complexity of the project, site performance goals, and momentum based on the prior experience of the person or team.
 
-I'm writing this piece to show how I've evolved my use of CSS in the context of [eleventy](https://www.11ty.dev/), the static site generator.
+I'm writing this piece to show how I've evolved my use of CSS in the context of [Eleventy](https://www.11ty.dev/), the static site generator.
 
 <div id="section2"></div>
 
-## 2. My first site with eleventy
+## 2. My first site with Eleventy
 
-The first site that I made use of eleventy was a Jekyll site that I ported to eleventy. It used a theme that was Sass-based. I was somewhat familiar with Sass, but this port required me to dive a little deeper. The site was built using the Liquid template language and as part of the port, I migrated to Nunjucks.
+The first site that I made use of Eleventy was a Jekyll site that I ported to Eleventy. It used a theme that was Sass-based. I was somewhat familiar with Sass, but this port required me to dive a little deeper. The site was built using the Liquid template language and as part of the port, I migrated to Nunjucks.
 
 The Sass theme had a lot of things that I didn't need, so I did some surgery to remove some of the bloat. Here's what my sass directory looks like for this project.
 
@@ -94,7 +96,7 @@ The site lives on today. I built it for a good friend who is a tennis pro. If yo
 
 My wife's grandfather, Fausto Tasca, was a painter from Italy. He has done some really beautiful work. My wife had built a site dedicated to his work. The site was built with an ancient piece of technology from Apple called iWeb. Interestingly, it seems that Apple still has a [web page for it](https://www.apple.com/welcomescreen/ilife/iweb-3/).It was a drag-and-drop website application that, in its time, was a static site generator. You would upload the output files to an inexpensive hosting service via FTP.
 
-Over the years, my wife would ask to change some text and I would download the HTML file for a particular page, change the text and upload it. And that was that...until she asked for some more structural things. I convinced her to let me build a new site with eleventy, this cool new toy that I was having fun learning about. I also had to do some catching up on CSS and these new things called grid and flexbox, among other things.
+Over the years, my wife would ask to change some text and I would download the HTML file for a particular page, change the text and upload it. And that was that...until she asked for some more structural things. I convinced her to let me build a new site with Eleventy, this cool new toy that I was having fun learning about. I also had to do some catching up on CSS and these new things called grid and flexbox, among other things.
 
 So, off I went and I built a new site dedicated to the art of [Fausto Tasca](https://www.faustotasca.com/).
 
@@ -156,7 +158,7 @@ This is what the Sass directory looks like for the project.
 
 Pay no attention to the fact that there are two main.css files. This was me contorting myself for unnecessary reasons and is something I will be cleaning up in the future. And I'm still using media querries to support responsiveness on mobile devices.
 
-So now, my scripts looked like the following, with the postbuild command being executed after eleventy and post-processing my CSS to bring in only the necessary Open Props.
+So now, my scripts looked like the following, with the postbuild command being executed after Eleventy and post-processing my CSS to bring in only the necessary Open Props.
 
 ```js
 "scripts": {
@@ -188,7 +190,7 @@ The project still operates this way and you can [check it out here](https://www.
 
 ## 5. Time for a new site of my own
 
-By this time, I felt like I was learning a lot about eleventy, Sass, and CSS. It was time to build a personal site. While I started out using Open Props, I recently decided to eliminate it. This site is incredibly simple and I have learned enough about custom properties to construct my own set of CSS vars, borrowing ideas and snippets from the Open Props project.
+By this time, I felt like I was learning a lot about Eleventy, Sass, and CSS. It was time to build a personal site. While I started out using Open Props, I recently decided to eliminate it. This site is incredibly simple and I have learned enough about custom properties to construct my own set of CSS vars, borrowing ideas and snippets from the Open Props project.
 
 While the site does not currently reflect what I'm about to describe, here's a look at how it started. My goal was to incorporate Sass along with something that would also minify the CSS and add auto-prefixing capability.
 
@@ -220,7 +222,7 @@ module.exports = {
 
 You'll notice that the scripts are identical to those used on the earlier project, but the use of plugins for PostCSS expanded to bring in the extra functionality of minifying and auto-prefixing.
 
-This was working well for me until I found myself intrigued by a new approach that Stephanie Eckles came up with. It uses [Lightning CSS](https://lightningcss.dev/) as a post-processor in place of PostCSS. And, more importantly, the method she devised makes use of eleventy's custom template language capability to handle Sass as another template language. This sounded oh so cool. So, off I went. Stephanie wrote a plugin called [eleventy-plugin-sass-lightningcss](https://github.com/5t3ph/eleventy-plugin-sass-lightningcss) that made the whole thing very simple. She wrote [a post about it](https://11ty.rocks/posts/process-css-with-lightningcss/) on [11ty.rocks](https://11ty.rocks/) (which I highly recommend). Stephanie is a gem of the eleventy community.
+This was working well for me until I found myself intrigued by a new approach that Stephanie Eckles came up with. It uses [Lightning CSS](https://lightningcss.dev/) as a post-processor in place of PostCSS. And, more importantly, the method she devised makes use of Eleventy's custom template language capability to handle Sass as another template language. This sounded oh so cool. So, off I went. Stephanie wrote a plugin called [eleventy-plugin-sass-lightningcss](https://github.com/5t3ph/eleventy-plugin-sass-lightningcss) that made the whole thing very simple. She wrote [a post about it](https://11ty.rocks/posts/process-css-with-lightningcss/) on [11ty.rocks](https://11ty.rocks/) (which I highly recommend). Stephanie is a gem of the Eleventy community.
 
 What I liked about it was that my scripts were reduced to the following:
 
@@ -238,7 +240,7 @@ After implementing this approach, I took a look at the site in Google Search Con
 
 As it turns out, this approach resulted in the css files being added to collections.all, which is the basis for creating the sitemap.
 
-I raised this issue on the plugin repo as well as the eleventy repo. Stephanie quickly identified a graceful workaround. And that is to add a css.json file that includes the following:
+I raised this issue on the plugin repo as well as the Eleventy repo. Stephanie quickly identified a graceful workaround. And that is to add a css.json file that includes the following:
 
 ```json
 {
@@ -254,7 +256,7 @@ This prevents the processed files from being included in collections.all, and th
 
 One of the considerations that I referred to in the introduction was performance goals. Recently, I've been spending time examining how my site performs along several dimensions. One of the tools that I've been using is Lighthouse. I have been paying particular attention to image sizes, the number of 3rd party requests, and more.
 
-As I've been watching eleventy develop over recent months, I've tried to make use of features that improve the site along these dimensions. The [eleventy-img](https://www.11ty.dev/docs/plugins/image/) plugin is an amazing tool that has helped me optimize image sizes.
+As I've been watching Eleventy develop over recent months, I've tried to make use of features that improve the site along these dimensions. The [eleventy-img](https://www.11ty.dev/docs/plugins/image/) plugin is an amazing tool that has helped me optimize image sizes.
 
 More recently, I took a look at the [eleventy-plugin-bundle](https://github.com/11ty/eleventy-plugin-bundle). I was inspired by how you could sprinkle CSS and JS around the pages of a site and then gather them for use.
 
@@ -266,7 +268,7 @@ And then, just then, I stepped back from my site and asked myself the following 
 
 2. Do I really need auto-prefixing?
 
-3. Are there simple ways to minify my CSS file in a more eleventy-ish way?
+3. Are there simple ways to minify my CSS file in a more Eleventy-ish way?
 
 4. Wouldn't it be nice to inline my CSS and eliminate another file fetch by the browser?
 
@@ -288,9 +290,9 @@ Second, I've been watching the major browser vendors up their game, seemingly in
 
 Yes, that was bit of a digression...but it's these observations lead me to the belief that, for my site and my audience (all 3 of you), I do NOT need auto-prefixing. Your mileage may vary.
 
-### Are there simple ways to minify my CSS file in a more eleventy-ish way?
+### Are there simple ways to minify my CSS file in a more Eleventy-ish way?
 
-Yes. In fact, [Quick Tip #001](https://www.11ty.dev/docs/quicktips/inline-css/) in the eleventy docs show exactly how to do just that by installing the [clean-css package](https://www.npmjs.com/package/clean-css) and then creating a simple filter in eleventy. It looks like this in my eleventy.config.js.
+Yes. In fact, [Quick Tip #001](https://www.11ty.dev/docs/quicktips/inline-css/) in the Eleventy docs show exactly how to do just that by installing the [clean-css package](https://www.npmjs.com/package/clean-css) and then creating a simple filter in Eleventy. It looks like this in my eleventy.config.js.
 
 ```js
 const CleanCSS = require("clean-css");
@@ -313,7 +315,7 @@ First, let me show you what my CSS setup looks like for this site.
   variables.css
 ```
 
-Note that none of these files contain any Sass. And the css folder is inside my eleventy \_include directory. So, all I have to do is concatenate them in the order I want and drop them into the \<head\> of my site layout and run the result through the cssmin filter...like this.
+Note that none of these files contain any Sass. And the css folder is inside my Eleventy \_include directory. So, all I have to do is concatenate them in the order I want and drop them into the \<head\> of my site layout and run the result through the cssmin filter...like this.
 
 ```jinja2 {% raw %}
 {% set css %}
@@ -339,7 +341,7 @@ And finally, here's what my scripts look like using this technique.
 
 ```
 
-It doesn't get much simpler than that. Same as before, but only relying on clean-css for minifying in a more eleventy-ish way via filter.
+It doesn't get much simpler than that. Same as before, but only relying on clean-css for minifying in a more Eleventy-ish way via filter.
 
 <div id="section7"></div>
 
@@ -347,7 +349,9 @@ It doesn't get much simpler than that. Same as before, but only relying on clean
 
 If you've read this far, thank you! As you can see, I've learned a lot from a lot of great people. And while we can all get easily distracted by new ways to do things, it's important to have some perspective. I am trying my best to strive for simplicity, maintainability, and performance. This site is my test bed. One thing I am asking myself now is whether or not it makes sense to retrofit some of these learnings into those other projects. I'll have to think about that.
 
-And I'd like to send a bit shoutout to the moderators and helpers in the eleventy Discord community. Just today, they helped me get over my last challenge in getting this post to display correctly. For anyone interested, here's [a link to the Discord discussion we had](https://discord.com/channels/741017160297611315/1085269982096654456). If you ever have an eleventy question, that's the place to go.
+And I'd like to send a bit shoutout to the moderators and helpers in the Eleventy Discord community. Just today, they helped me get over my last challenge in getting this post to display correctly. For anyone interested, here's [a link to the Discord discussion we had](https://discord.com/channels/741017160297611315/1085269982096654456). If you ever have an Eleventy question, that's the place to go.
+
+> _It seems that I'm not really done with this. And the site is no longer based on this last approach. If you'd like to continue watching my CSS strategy evolve, here's [the next step in the evolution](/posts/the-evolution-of-my-CSS-pipeline-in-eleventy-part-2)._
 
 <div id="section8"></div>
 
