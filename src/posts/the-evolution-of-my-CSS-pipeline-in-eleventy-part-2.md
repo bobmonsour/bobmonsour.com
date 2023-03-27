@@ -14,7 +14,7 @@ image:
 pageHasCode: true
 ---
 
-> _Hopefully, you've read [part 1](/posts/the-evolution-of-my-CSS-pipeline-in-Eleventy-part-2). If not, I'll wait here ._
+> _Hopefully, you've read [part 1](/posts/the-evolution-of-my-CSS-pipeline-in-Eleventy-part-1). If not, I'll wait here ._
 
 ## Table of Contents
 
