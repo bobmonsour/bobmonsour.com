@@ -11,7 +11,7 @@ image:
   source: "the-evolution-of-my-css-pipeline-in-eleventy-part-2.jpg"
   alt: "a screen containing a jumble of minified CSS"
   caption: A jumble of this site's minified CSS
-codepage: true
+pageHasCode: true
 ---
 
 > _Hopefully, you've read [part 1](/posts/the-evolution-of-my-CSS-pipeline-in-Eleventy-part-2). If not, I'll wait here ._
@@ -188,26 +188,28 @@ Note that I have also lost the ability to minify the CSS (we'll get to that late
 
 ## 5. Selectively including a CSS bundle
 
-There's a capability to create named buckets of CSS with the bundle plugin. So I decided to add a piece of frontmatter to the posts that require syntax highlighting. I called it codepage.
+There's a capability to create named buckets of CSS with the bundle plugin. So I decided to add a piece of frontmatter to the posts that require syntax highlighting. I called it pageHasCode.
 
 ```js
 ---
-codepage: true
+pageHasCode: true
 ---
 ```
 
 Then in my post layout file, I added the following:
 
 ```jinja2 {% raw %}
-{% if codepage %}
-  {%- css "codepage" %}
+{% if pageHasCode %}
+  {%- css "pageHasCode" %}
   {% include "css/prism-okaidia.css" %}
   {% endcss %}
 {% endif %}
 {% endraw %}
 ```
 
-Finally, I now had a way to generate two separate CSS files, one that would be used for all the pages of the site and a second that would be linked only if the codepage frontmatter were true for that page. So now my \<head\> looks like this.
+An alternative way to do this would be to insert that css code block that has the include inside just below the frontmatter in each page that has code in it.
+
+Finally, I now had a way to generate two separate CSS files, one that would be used for all the pages of the site and a second that would be linked only if the pageHasCode frontmatter were true for that page. So now my \<head\> looks like this.
 
 ```jinja2 {% raw %}
 {% css %}
@@ -217,8 +219,8 @@ Finally, I now had a way to generate two separate CSS files, one that would be u
 {% endcss %}
 <link rel="stylesheet" href="{% getBundleFileUrl "css" %}">
 
-{% if codepage %}
-<link rel="stylesheet" href="{% getBundleFileUrl "css", "codepage" %}">
+{% if pageHasCode %}
+<link rel="stylesheet" href="{% getBundleFileUrl "css", "pageHasCode" %}">
 {% endif %}
 {% endraw %}
 ```
@@ -266,8 +268,8 @@ Note that as I am writing this, I have not done this and will now attempt it. If
 {% endcss %}
 <link rel="stylesheet" href="{% getBundleFileUrl "css" %}">
 
-{% if codepage %}
-<link rel="stylesheet" href="{% getBundleFileUrl "css", "codepage" %}">
+{% if pageHasCode %}
+<link rel="stylesheet" href="{% getBundleFileUrl "css", "pageHasCode" %}">
 {% endif %}
 {% endraw %}
 ```
