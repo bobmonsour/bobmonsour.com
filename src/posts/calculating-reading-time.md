@@ -10,7 +10,7 @@ image:
   alt: "a boy reading at sunset"
   creditPerson: "Aaron Burden"
   creditLink: "https://unsplash.com/@aaronburden"
-codepage: true
+pageHasCode: true
 ---
 
 Where does that _'3 minutes to read'_ come from?

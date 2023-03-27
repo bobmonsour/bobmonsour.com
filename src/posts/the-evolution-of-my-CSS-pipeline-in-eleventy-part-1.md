@@ -12,7 +12,7 @@ image:
   alt: "a screen with a few lines of CSS"
   creditPerson: "Pankaj Patel"
   creditLink: "https://unsplash.com/@pankajpatel"
-codepage: true
+pageHasCode: true
 ---
 
 > _While initially a single post about my evolving use of CSS, there is now a second part which you can [find here](/posts/the-evolution-of-my-CSS-pipeline-in-eleventy-part-2). But you should really read this one first._

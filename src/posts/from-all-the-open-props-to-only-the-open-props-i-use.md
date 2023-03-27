@@ -12,7 +12,7 @@ image:
   alt: "essential love drawn in color on a chalkboard"
   creditPerson: "Sharon McCutcheon"
   creditLink: "https://unsplash.com/@sharonmccutcheon"
-codepage: true
+pageHasCode: true
 ---
 
 > Note: I am no longer using Open Props as I've decided to reduce the number of levels of abstraction that I use to maintain the CSS for this site. I still find it a fascinating tool, but for the size and scope of this project, I am finding it easier to maintain my own set of custom properties for the few things I need them for.
