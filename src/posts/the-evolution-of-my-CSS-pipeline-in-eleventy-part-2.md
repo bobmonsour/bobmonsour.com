@@ -369,9 +369,10 @@ As of now, I think I've learned enough to be dangerous when it comes to developi
 A few key takeaways from these 2 posts for me are:
 
 1. This site no longer has a need for Sass
-2. With the eleventy-plugin-bundle, it's easier to develop per-page CSS
+2. The eleventy-plugin-bundle makes it easier to develop per-page CSS
 3. There's a time for inlining and a time for external style sheets
 4. I still have a lot to learn about how best to approach handling critical CSS
+5. There are many ways to approach CSS processing with Eleventy, choose wisely
 
 And now we're really done. Until next time...
 
