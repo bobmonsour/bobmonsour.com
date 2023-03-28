@@ -2,11 +2,12 @@
 layout: default.njk
 permalink: /tags/
 ---
+<div class="alltags-list">
 <h2>All Tags</h2>
-
-<ul>
-{% for tag in collections.all | getAllTags | filterTagList %}
-	{% set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
-	<li><a href="{{ tagUrl }}" class="post-tag">{{ tag }}</a></li>
-{% endfor %}
-</ul>
+  <ul>
+    {% for tag in collections.all | getAllTags | filterTagList %}
+      {% set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
+      <li><a href="{{ tagUrl }}" class="post-tag">{{ tag }}</a></li>
+    {% endfor %}
+  </ul>
+</div>

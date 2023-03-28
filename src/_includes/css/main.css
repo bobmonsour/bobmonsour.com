@@ -143,6 +143,13 @@ img[width][height] {
 .about {
   margin-block-start: 1em;
 }
+/* list of All Tags */
+.alltags-list * {
+  list-style: none;
+  text-align: center;
+  margin: 1em auto;
+  padding-inline: 0;
+}
 
 /* post elements */
 .post {
