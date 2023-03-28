@@ -247,12 +247,11 @@ Those elements are all included in header.njk and if I look at my default layout
   {% include 'partials/head.njk' %}
 <body>
   <a href="#main-content" id="visually-hidden">Skip to main content</a>
-  <div class="page-grid">
-    {% include 'partials/header.njk' %}
+  {% include 'partials/header.njk' %}
 {% endraw %}
 ```
 
-So, as a first cut, I imagine that I could take all of the header element CSS styles, along with the styling for #visually-hidden, and .page-grid, capture them in their own css bundle bucket called "critical" and inline them in the \<head\>.
+So, as a first cut, I imagine that I could take all of the header element CSS styles, along with the styling for #visually-hidden and capture them in their own css bundle bucket called "critical" and inline them in the \<head\>.
 
 Note that as I am writing this, I have not done this and will now attempt it. If I succeed, I expect that my \<head\> will look like the following:
 

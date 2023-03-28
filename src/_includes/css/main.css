@@ -1,5 +1,10 @@
 /* default body styles */
 body {
+  /* forces footer to bottom of page for short pages */
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
   width: min(var(--page-width-max), 100vw - 0.5em);
   margin: 0 auto;
   font-family: var(--brand-font);
@@ -84,14 +89,6 @@ img[width] {
 }
 img[width][height] {
   height: auto; /* Preserve aspect ratio */
-}
-
-/* forces footer to bottom of page for short pages */
-.page-grid {
-  min-height: 100vh;
-  min-height: 100dvh;
-  display: grid;
-  grid-template-rows: auto 1fr auto;
 }
 
 /* brand & navigation (inside <header>) */

@@ -66,6 +66,8 @@ module.exports = function (eleventyConfig) {
     return inspect(obj, { sorted: true });
   });
 
+  eleventyConfig.setQuietMode(true);
+
   // Add plugins
   //
   //  - syntax highlighting
