@@ -8,12 +8,8 @@ image:
 permalink: /index.html
 ---
 
-<div class="container">
-  {% set latest_posts = collections.posts | reverse %}
-  {% set postslist = latest_posts.slice(0,3) %}
-  {% include "postslist.njk" %}
-</div>
+{% set latest_posts = collections.posts | reverse %}
+{% set postslist = latest_posts.slice(0,3) %}
+{% include "postslist.njk" %}
 
-<div class="container">
-  <a href="/pages/archive/" title="link to more blog posts">More posts in the Archive...</a>
-</div>
+<h3><a href="/pages/archive/" title="link to more blog posts in the archive">More posts in the Archive...</a></h3>

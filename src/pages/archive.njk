@@ -8,7 +8,5 @@ image:
 permalink: /pages/archive/
 ---
 
-<div class="container">
-  {% set postslist = collections.posts | reverse %}
-  {% include "postslist.njk" %}
-</div>
+{% set postslist = collections.posts | reverse %}
+{% include "postslist.njk" %}

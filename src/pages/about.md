@@ -6,7 +6,7 @@ image:
   source: "bob.small.jpg"
   alt: "a picture of Bob's face"
 permalink: /pages/about/
-pageclass: about
+pageClass: about
 ---
 
 Brooklyn-born, New Jersey raised, educated in Florida and Los Angeles. I'm now retired and living in Northern California.

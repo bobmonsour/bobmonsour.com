@@ -6,8 +6,9 @@
   <div class="page-grid">
     {% include 'partials/header.njk' %}
     <main id="main-content">
-      {% if pageclass %}
-        <div class="{{ pageclass }}">
+      {# provide per-page styling via frontmatter #}
+      {% if pageClass %}
+        <div class="{{ pageClass }}">
           {{ content | safe }}
         </div>
       {% else %}
