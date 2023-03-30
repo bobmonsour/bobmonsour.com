@@ -282,6 +282,8 @@ Ok, I'm back after looking at this closer. It's a rabbit hole. I ran into more q
 
 These 2 questions alone caused me to back away from this and leave the structure as outlined in [section 5](#section5). After all, I do want to finish this blog post.
 
+> _UPDATE (3-29-23): I Just came across [this excellent piece covering critical CSS](https://csswizardry.com/2022/09/critical-css-not-so-fast/) and how challenging it can be to implement correctly and to maintain it once it's implemented. If you're considering implementing it, I highly recommend reading this article._
+
 But one more thing...what about minifying? We lost that when we moved to external files.
 
 <div id="section7"></div>
