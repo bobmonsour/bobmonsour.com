@@ -198,8 +198,8 @@ picture + p {
   align-items: center;
   gap: 1em;
 }
-.post-metadata,
-.post-image {
+.post-card .post-metadata,
+.post-card .post-image {
   flex-basis: min(500px, 100vw - 0.25em);
 }
 .post-card .post-title {
