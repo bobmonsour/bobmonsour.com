@@ -16,6 +16,10 @@ pageHasCode: "false"
 
 This is the first of an occasional roundup of Eleventy releases, related blog posts, and resources.
 
+Why, you ask?
+
+I felt that there was so much happening in the world of Eleventy as I watch the Discord Server, Mastodon, and my RSS reader, it seemed appropriate to step back and put together a curated version of what I'm seeing in the hopes that others might find this useful.
+
 Who knows, perhaps this belongs in an Eleventy newsletter of some sort. If you think so, feel free to drop me a line at bob dot monsour at gmail.
 
 ## Recent releases
