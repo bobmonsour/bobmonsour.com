@@ -10,7 +10,6 @@ image:
   source: "11ty-bundler-1.jpg"
   alt: "an AI-generated image of the number eleven"
   caption: "An AI-generated image of the number eleven"
-draft: "true"
 pageHasCode: "false"
 ---
 
