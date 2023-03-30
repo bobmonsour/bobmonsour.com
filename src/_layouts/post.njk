@@ -13,7 +13,7 @@ layout: default.njk
   <p class="post-date">{{ date | formatPostDate }}</p>
   <p class="post-readingtime">{{ content | readingTime }}</p>
   {{ tagList(tags) }}
-    {% set imageSource %}{{ imageDir + image.source }}{% endset %}
+  {% set imageSource %}{{ imageDir + image.source }}{% endset %}
   {% image imageSource, image.alt, "100vw", "eager" %}
   {% if image.creditPerson and image.creditLink%}
     <p>Photo by <a href="{{ image.creditLink }}">{{ image.creditPerson }}</a></p>
