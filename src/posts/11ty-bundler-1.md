@@ -80,6 +80,7 @@ Who knows, perhaps this belongs in an Eleventy newsletter of some sort. If you t
 - [Jerome Stephan](https://jeromestephan.de/sites/Home/)
 - [Molly White](https://www.mollywhite.net/)
 - [Delete Twitter](https://deletetwitter.com/)
+- [Václav Eliáš](https://www.vaclavelias.com/)
 - [Naz Hamid](https://nazhamid.com/)
 - [Vadim Makeev](https://pepelsbey.dev/)
 - [Gabrielle Wee](https://gabriellew.ee/)
