@@ -47,9 +47,10 @@ eleventyConfig.addFilter(
 
 Example usage if you're looping over a set of blog posts:
 
-{% raw %}
+```jinja2 {% raw %}
 {{ content | readingTime }}
 {% endraw %}
+```
 
 I would have liked to have used similar syntax highlighting for the above line, but I couldn't figure out how to do that. While I am using the 11ty syntax highlighting plugin for the other code elements, I am using both nunjucks and markdown as template engines for markdown files. Nunjucks processes first and generates a reading time result. As a result, I dropped back and used the nunjucks raw tag instead.
 

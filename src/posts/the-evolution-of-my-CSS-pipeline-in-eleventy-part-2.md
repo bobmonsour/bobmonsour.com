@@ -83,6 +83,8 @@ Another way to improve performance of a site is to quickly load the CSS that sup
 
 Lastly on this topic, there's an npm package, [critical](https://github.com/addyosmani/critical), that "extracts & inlines critical-path (above-the-fold) CSS from HTML." It would be nice to see someone from the Eleventy community write a plugin to integrate this functionality into the build process. Having said that, I've also found a [Critical CSS gernerator](https://www.corewebvitals.io/tools/critical-css-generator) that will do the job through a web interface. The only challenge I see with this is knowing what then to exclude from one's CSS files for later loading.
 
+> _UPDATE (4-1/23): As it turns out, someone *did* write an Eleventy plugin called [eleventy-critical-css](https://github.com/gregives/eleventy-critical-css) that uses Addy Osmani's critical npm package. It hasn't been updated since Oct 8, 2021 and I have not tried it._
+
 <div id="section3"></div>
 
 ## 3. Enter the eleventy-plugin-bundle
@@ -327,7 +329,7 @@ The end result is that each of the two files that are generated from the CSS bun
 
 One of the things that turned up in my research on critical CSS was loading external font files and their impact on layout shift when loading a page.
 
-Up unitl two weeks ago or so, I was using a font that I had gotten from [Google Fonts](https://fonts.google.com/). They have an expansive and tempting set of fonts to choose from. As part of their setup, they show you exactly what to include in your \<head\> to fetch the fonts.
+Up until two weeks ago or so, I was using a font that I had gotten from [Google Fonts](https://fonts.google.com/). They have an expansive and tempting set of fonts to choose from. As part of their setup, they show you exactly what to include in your \<head\> to fetch the fonts.
 
 Rather than using their setup, I had decided to download the font files directly and include them as assets in my source files. As a result, I simply referenced those local font files in my @font-face declaration in my main CSS file.
 

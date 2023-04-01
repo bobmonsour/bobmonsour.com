@@ -3,7 +3,7 @@ title: The 11ty Bundler
 date: 2023-03-28
 tags:
   - 11ty
-  - 11ty bundler
+  - 11ty Bundler
 description: A bundle of Eleventy releases, blog posts, and resources.
 keywords: eleventy, newsletter, roundup, news
 image:
