@@ -2,7 +2,7 @@
 title: Calculating reading time for a post
 date: 2022-02-06
 tags:
-  - dev
+  - 11ty
 description: Where does that '3 minutes to read' come from?
 keywords: reading time, eleventy, filters
 image:

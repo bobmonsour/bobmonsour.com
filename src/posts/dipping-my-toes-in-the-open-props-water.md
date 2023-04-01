@@ -3,7 +3,6 @@ title: Dipping my toe in the Open Props water
 date: 2022-02-22
 tags:
   - CSS
-  - dev
 description: I saw the recent launch of Open Props and watched an intro video. I was intrigued, so I dipped my toe in the water.
 keywords: open props, CSS variables, CSS architecture, adam argyle
 image:

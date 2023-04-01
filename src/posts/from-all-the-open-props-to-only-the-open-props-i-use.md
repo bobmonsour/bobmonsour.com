@@ -3,7 +3,6 @@ title: From all Open Props to only Open Props I use
 date: 2022-03-08
 tags:
   - CSS
-  - dev
   - 11ty
 description: Got Open Props working on my site, but wanted to reduce the size of my CSS in production.
 keywords: postcss-jit-props, smaller CSS, adam argyle

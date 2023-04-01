@@ -4,7 +4,6 @@ date: 2023-03-26
 tags:
   - CSS
   - 11ty
-  - dev
 description: Evolution is a continuous phenomenon.
 keywords: CSS, web development, Eleventy, 11ty
 image:

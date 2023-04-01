@@ -4,7 +4,6 @@ date: 2023-03-14
 tags:
   - CSS
   - 11ty
-  - dev
 description: Handling CSS in Eleventy has been an evolutionary experience.
 keywords: CSS, web development, Eleventy, 11ty
 image:
