@@ -83,7 +83,7 @@ Another way to improve performance of a site is to quickly load the CSS that sup
 
 Lastly on this topic, there's an npm package, [critical](https://github.com/addyosmani/critical), that "extracts & inlines critical-path (above-the-fold) CSS from HTML." It would be nice to see someone from the Eleventy community write a plugin to integrate this functionality into the build process. Having said that, I've also found a [Critical CSS gernerator](https://www.corewebvitals.io/tools/critical-css-generator) that will do the job through a web interface. The only challenge I see with this is knowing what then to exclude from one's CSS files for later loading.
 
-> _UPDATE (4-1/23): As it turns out, someone *did* write an Eleventy plugin called [eleventy-critical-css](https://github.com/gregives/eleventy-critical-css) that uses Addy Osmani's critical npm package. It hasn't been updated since Oct 8, 2021 and I have not tried it._
+> _UPDATE (4-1-23): As it turns out, someone *did* write an Eleventy plugin called [eleventy-critical-css](https://github.com/gregives/eleventy-critical-css) that uses Addy Osmani's critical npm package. It hasn't been updated since Oct 8, 2021 and I have not tried it._
 
 <div id="section3"></div>
 
