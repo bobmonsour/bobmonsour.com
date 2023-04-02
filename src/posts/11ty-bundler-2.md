@@ -80,7 +80,7 @@ _This is issue #2 of an occasional roundup of Eleventy releases, related blog po
 - [The 11ty Discord Server](https://www.11ty.dev/blog/discord/)
 - [Github discussion on the Eleventy repo](https://github.com/11ty/eleventy/discussions)
 - [YouTube channel](https://www.youtube.com/@EleventyVideo)
-- [Eleventy Leaderboards](https://www.11ty.dev/speedlify/), [Add yours to the list](https://github.com/11ty/11ty-community/issues/new/choose)
+- [Eleventy Leaderboards](https://www.11ty.dev/speedlify/), [Add your site to the list](https://github.com/11ty/11ty-community/issues/new/choose)
 - [Eleventy Hub](https://11tyhub.dev/)
 
 ## Getting help using Eleventy

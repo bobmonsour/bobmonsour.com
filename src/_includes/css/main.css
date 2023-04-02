@@ -202,6 +202,7 @@ picture + p {
   flex-basis: min(500px, 100vw - 0.25em);
 }
 .post-card .post-title {
+  font-size: var(--post-title-card-size);
   margin-block-start: 0;
   text-align: left;
 }
