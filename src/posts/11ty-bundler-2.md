@@ -64,6 +64,14 @@ _This is issue #2 of an occasional roundup of Eleventy releases, related blog po
 
 [How I built my own excerpt for Markdown content in Eleventy](https://nicolas-hoizey.com/articles/2023/03/31/how-i-built-my-own-excerpt-for-markdown-content-in-eleventy/) by Nicolas Hoizey, Mar 31, 2023
 
+## Some nice art and photography sites using Eleventy
+
+[Photography](https://www.schmidtynotes.com/images/) by Michael Schmidt
+
+[Nicolas Hoizey Photography](https://nicolas-hoizey.photo/) by Nicolas Hoizey
+
+[Emily Leatherman](https://emilyleatherman.com/) by Emily Leatherman
+
 ## Eleventy resources
 
 - [11ty docs](https://www.11ty.dev/docs/)
