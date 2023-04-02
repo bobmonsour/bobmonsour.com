@@ -1,5 +1,5 @@
 ---
-title: The 11ty Bundler
+title: The 11ty Bundler - Issue 1
 date: 2023-03-28
 tags:
   - 11ty
@@ -11,6 +11,7 @@ image:
   alt: "an AI-generated image of the number eleven"
   caption: "An AI-generated image of the number eleven"
 pageHasCode: "false"
+pageID: bundler
 ---
 
 This is the first of an occasional roundup of Eleventy releases, related blog posts, and resources.
@@ -30,7 +31,7 @@ Who knows, perhaps this belongs in an Eleventy newsletter of some sort. If you t
 
 ## Blog posts: from Discord, Mastodon, and around the web
 
-### A lot of people seem to be experimenting with WebC.
+A lot of people seem to be experimenting with WebC.
 
 - [A WebC component for the PDF Embed library](https://www.raymondcamden.com/2023/03/01/supporting-pdf-embeds-in-an-eleventy-webc-component)
 - [Using JavaScript in a WebC Component](https://www.raymondcamden.com/2023/02/03/using-javascript-in-a-webc-component)
@@ -43,7 +44,7 @@ Who knows, perhaps this belongs in an Eleventy newsletter of some sort. If you t
 
 - [Easy date and time formatting with Luxon](https://11ty.webc.fun/recipes/easy-date-and-time-formatting/)
 
-### Elsewhere, there are all these interesting pieces.
+## Elsewhere, there are all these interesting pieces.
 
 - [Why I use Eleventy](https://ryanccn.dev/posts/why-eleventy/)
 
@@ -90,11 +91,11 @@ Who knows, perhaps this belongs in an Eleventy newsletter of some sort. If you t
 - [Web Components Today](https://webcomponents.today/)
 - [Anil Dash](https://anildash.com//)
 
-### [Here's a very long list of sites built with Eleventy.](https://www.11ty.dev/speedlify/)
+## [Here's a very long list of sites built with Eleventy.](https://www.11ty.dev/speedlify/)
 
-### [Add yours to the list.](https://github.com/11ty/11ty-community/issues/new/choose)
+## [Add yours to the list.](https://github.com/11ty/11ty-community/issues/new/choose)
 
-### Here's a list of general resources for Eleventy
+## Here's a list of general resources for Eleventy
 
 - [11ty docs](https://www.11ty.dev/docs/)
 - [11ty Rocks!](https://11ty.rocks/)
@@ -104,7 +105,7 @@ Who knows, perhaps this belongs in an Eleventy newsletter of some sort. If you t
 - [YouTube channel](https://www.youtube.com/@EleventyVideo)
 - [Eleventy Hub](https://11tyhub.dev/)
 
-### A note on getting help or support
+## A note on getting help or support
 
 I can say that, without a doubt, if you have any questions or run into problems with Eleventy, the community on the [Discord Server](<(https://www.11ty.dev/blog/discord/)>) is amazing. In the forum-help channel, you can get any question answered, regardless of how simple or complex.
 

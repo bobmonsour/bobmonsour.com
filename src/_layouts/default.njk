@@ -6,8 +6,8 @@
   {% include 'partials/header.njk' %}
   <main id="main-content">
     {# provide per-page styling via frontmatter #}
-    {% if pageClass %}
-      <div class="{{ pageClass }}">
+    {% if pageID %}
+      <div id="{{ pageID }}">
         {{ content | safe }}
       </div>
     {% else %}

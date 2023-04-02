@@ -136,13 +136,11 @@ img[width][height] {
 /* end brand */
 
 /* about page, page-specific styling */
-.about {
+#about {
   max-width: var(--main-element-max);
-  margin: 0 auto;
+  margin: 1em auto 0 auto;
 }
-.about {
-  margin-block-start: 1em;
-}
+
 /* list of All Tags */
 .alltags-list * {
   list-style: none;
@@ -159,6 +157,7 @@ img[width][height] {
 .post-title {
   font-size: var(--post-title-full-size);
   line-height: 1.2;
+  margin-block-start: 0.5em;
 }
 .post-date,
 .post-readingtime {
@@ -241,3 +240,17 @@ footer .text {
   height: 48px;
 }
 /* end footer */
+
+/* styles specific to The Bundler posts */
+#bundler {
+  font-family: ui-rounded, "Hiragino Maru Gothic ProN", Quicksand, Comfortaa,
+    Manjari, "Arial Rounded MT Bold", Calibri, source-sans-pro, sans-serif;
+}
+#bundler h2 {
+  font-size: var(--font-size-md);
+  font-style: italic;
+}
+#bundler p,
+#bundler li {
+  font-size: var(--font-size-base);
+}
