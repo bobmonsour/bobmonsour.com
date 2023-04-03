@@ -245,7 +245,7 @@ footer .text {
 /* styles specific to The Bundle posts */
 #bundle {
   font-family: ui-rounded, "Hiragino Maru Gothic ProN", Quicksand, Comfortaa,
-    Manjari, "Arial Rounded MT Bold", Calibri, source-sans-pro, sans-serif;
+    Manjari, Calibri, source-sans-pro, sans-serif;
 }
 #bundle h2 {
   font-size: var(--font-size-md);
