@@ -1,6 +1,6 @@
 ---
 title: The 11ty Bundler - Issue 2
-date: 2023-04-04
+date: 2023-04-03
 tags:
   - 11ty
   - 11ty Bundler
@@ -12,7 +12,6 @@ image:
   caption: "An AI-generated image of the number eleven"
 pageHasCode: "false"
 pageID: bundler
-draft: true
 ---
 
 _This is issue #2 of The 11ty Bundler, an occasional bundling of Eleventy releases, blog posts, sites, and resources. See [11ty Bundler](/tags/11ty-bundler/) for back issues._
