@@ -23,3 +23,11 @@ package = "netlify-plugin-cache"
 
 [build.environment]
   NODE_VERSION = "lts/*"
+
+[[redirects]]
+  from = "https://www.bobmonsour.com/posts/11ty-bundler-1/"
+  to = "https://www.bobmonsour.com/posts/11ty-bundle-1/"
+  status = 301
+  from = "https://www.bobmonsour.com/posts/11ty-bundler-2/"
+  to = "https://www.bobmonsour.com/posts/11ty-bundle-2/"
+  status = 301
