@@ -4,7 +4,7 @@ date: 2023-03-28
 tags:
   - 11ty
   - 11ty Bundler
-description: A bundle of Eleventy releases, blog posts, and resources.
+description: Issue 1 of The 11ty Bundler, an occasional bundling of Eleventy releases, blog posts, sites, and resources.
 keywords: eleventy, newsletter, roundup, news
 image:
   source: "11ty-bundler-1.jpg"

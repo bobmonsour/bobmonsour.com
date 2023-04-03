@@ -4,7 +4,7 @@ date: 2023-04-04
 tags:
   - 11ty
   - 11ty Bundler
-description: A bundle of Eleventy releases, blog posts, and resources.
+description: Issue 2 of The 11ty Bundler, an occasional bundling of Eleventy releases, blog posts, sites, and resources.
 keywords: eleventy, newsletter, roundup, news
 image:
   source: "11ty-bundler-2.jpg"
@@ -105,4 +105,4 @@ _Getting help_
 
 ---
 
-_Grab the [RSS feed for this blog](https://www.bobmonsour.com/feed.xml) and stuff it in your RSS reader (though you'll also get some non-Bundler content). I'll work on generating a Bundler-specific feed._
+_There are 2 RSS feeds, one [for the blog](https://www.bobmonsour.com/feed.xml), and one specifically [for The 11ty Bundler posts](https://www.bobmonsour.com/bundlerfeed.xml). Choose wisely._
