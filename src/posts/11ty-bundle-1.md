@@ -1,17 +1,17 @@
 ---
-title: The 11ty Bundler - Issue 1
+title: The 11ty Bundle - Issue 1
 date: 2023-03-28
 tags:
   - 11ty
-  - 11ty Bundler
-description: Issue 1 of The 11ty Bundler, an occasional bundling of Eleventy releases, blog posts, sites, and resources.
+  - 11ty Bundle
+description: Issue 1 of The 11ty Bundle, an occasional bundle of Eleventy releases, blog posts, sites, and resources.
 keywords: eleventy, newsletter, roundup, news
 image:
-  source: "11ty-bundler-1.jpg"
+  source: "11ty-bundle-1.jpg"
   alt: "an AI-generated image of the number eleven"
   caption: "An AI-generated image of the number eleven"
 pageHasCode: "false"
-pageID: bundler
+pageID: bundle
 ---
 
 This is the first of an occasional roundup of Eleventy releases, related blog posts, and resources.

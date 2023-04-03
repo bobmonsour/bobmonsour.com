@@ -242,16 +242,16 @@ footer .text {
 }
 /* end footer */
 
-/* styles specific to The Bundler posts */
-#bundler {
+/* styles specific to The Bundle posts */
+#bundle {
   font-family: ui-rounded, "Hiragino Maru Gothic ProN", Quicksand, Comfortaa,
     Manjari, "Arial Rounded MT Bold", Calibri, source-sans-pro, sans-serif;
 }
-#bundler h2 {
+#bundle h2 {
   font-size: var(--font-size-md);
   font-style: italic;
 }
-#bundler p,
-#bundler li {
+#bundle p,
+#bundle li {
   font-size: var(--font-size-base);
 }

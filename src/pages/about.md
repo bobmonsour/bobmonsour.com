@@ -21,4 +21,4 @@ You can find me on the social links in the footer. And that's an RSS feed on the
 
 Most of the pages on the site are using the Classical Humanist fonts from [Modern Font Stacks](https://modernfontstacks.com/), a set of system fonts that look similar across browsers and operating systems. This eliminates the need to load a font from an external source.
 
-The 11ty Bundler posts are using the Rounded Sans fonts, also from [Modern Font Stacks](https://modernfontstacks.com/).
+The 11ty Bundle posts are using the Rounded Sans fonts, also from [Modern Font Stacks](https://modernfontstacks.com/).

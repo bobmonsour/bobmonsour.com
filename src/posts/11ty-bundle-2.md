@@ -1,29 +1,29 @@
 ---
-title: The 11ty Bundler - Issue 2
+title: The 11ty Bundle - Issue 2
 date: 2023-04-03
 tags:
   - 11ty
-  - 11ty Bundler
-description: Issue 2 of The 11ty Bundler, an occasional bundling of Eleventy releases, blog posts, sites, and resources.
+  - 11ty Bundle
+description: Issue 2 of The 11ty Bundle, an occasional bundle of Eleventy releases, blog posts, sites, and resources.
 keywords: eleventy, newsletter, roundup, news
 image:
-  source: "11ty-bundler-2.jpg"
+  source: "11ty-bundle-2.jpg"
   alt: "an AI-generated image of the number eleven"
   caption: "An AI-generated image of the number eleven"
 pageHasCode: "false"
-pageID: bundler
+pageID: bundle
 ---
 
-_This is issue #2 of The 11ty Bundler, an occasional bundling of Eleventy releases, blog posts, sites, and resources. See [11ty Bundler](/tags/11ty-bundler/) for back issues._
+_This is issue #2 of The 11ty Bundle, an occasional bundling of Eleventy releases, blog posts, sites, and resources. See [11ty Bundle](/tags/11ty-bundle/) for back issues._
 
-> _There are now 2 RSS feeds on this site, one [for the blog](https://www.bobmonsour.com/feed.xml), and one specifically [for The 11ty Bundler posts](https://www.bobmonsour.com/bundlerfeed.xml). Choose wisely._
+> _There are now 2 RSS feeds on this site, one for [all blog posts](https://www.bobmonsour.com/feed.xml), and one specifically for [The 11ty Bundle posts](https://www.bobmonsour.com/bundlefeed.xml). Choose wisely._
 
 ## Recent releases
 
 - [Eleventy Image v3.10](https://github.com/11ty/eleventy-img/releases/tag/v3.1.0), this release includes eleventy-image as a WebC component, [see docs](https://www.11ty.dev/docs/plugins/image/#webc), upgrades to [sharp v0.32](https://sharp.pixelplumbing.com/changelog#v032---flow).
 
 - [Eleventy WebC v0.10.0](https://github.com/11ty/eleventy-plugin-webc/releases/tag/v0.10.0)
-  - While I included 0.10.1 in last week's Bundler, this v0.10.0 release was really the larger one, with several new features, see the [release notes](https://github.com/11ty/eleventy-plugin-webc/releases/tag/v0.10.0).
+  - While I included 0.10.1 in last week's Bundle, this v0.10.0 release was really the larger one, with several new features, see the [release notes](https://github.com/11ty/eleventy-plugin-webc/releases/tag/v0.10.0).
   - But wait, this just in...[here's v0.11.0: Child Components accessing Global Data](https://github.com/11ty/webc/releases/tag/v0.11.0)
   - Followed quickly by [v0.11.1: Quick fix for data access on slotted content](https://github.com/11ty/webc/releases/tag/v0.11.1)
 
@@ -106,4 +106,4 @@ _Getting help_
 
 ---
 
-_There are 2 RSS feeds, one [for the blog](https://www.bobmonsour.com/feed.xml), and one specifically [for The 11ty Bundler posts](https://www.bobmonsour.com/bundlerfeed.xml). Choose wisely._
+_There are 2 RSS feeds, one for [all blog posts](https://www.bobmonsour.com/feed.xml), and one specifically for [The 11ty Bundle posts](https://www.bobmonsour.com/bundlefeed.xml). Choose wisely._

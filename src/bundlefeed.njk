@@ -1,6 +1,6 @@
 ---
 # site comes from _data/site.js
-permalink: /bundlerfeed.xml
+permalink: /bundlefeed.xml
 eleventyExcludeFromCollections: true
 ---
 <?xml version="1.0" encoding="utf-8"?>
@@ -13,8 +13,8 @@ eleventyExcludeFromCollections: true
     <name>{{ site.author.name }}</name>
     <email>{{ site.author.email }}</email>
   </author>
-  {% set bundlerTag = "11ty Bundler" %}
-  {% set postlist = collections[ bundlerTag ] %}
+  {% set bundleTag = "11ty Bundle" %}
+  {% set postlist = collections[ bundleTag ] %}
   {%- for post in postlist | reverse %}
   {%- set absolutePostUrl = post.url | absoluteUrl(site.url) %}
   <entry>
