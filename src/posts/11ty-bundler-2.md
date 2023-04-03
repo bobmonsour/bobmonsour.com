@@ -15,24 +15,32 @@ pageID: bundler
 draft: true
 ---
 
-_This is issue #2 of an occasional roundup of Eleventy releases, related blog posts, and resources. See [11ty Bundler](/tags/11ty-bundler/) for back issues._
+_This is issue #2 of The 11ty Bundler, an occasional bundling of Eleventy releases, blog posts, sites, and resources. See [11ty Bundler](/tags/11ty-bundler/) for back issues._
 
 ## Recent releases
 
 - [Eleventy Image v3.10](https://github.com/11ty/eleventy-img/releases/tag/v3.1.0), this release includes eleventy-image as a WebC component, [see docs](https://www.11ty.dev/docs/plugins/image/#webc), upgrades to [sharp v0.32](https://sharp.pixelplumbing.com/changelog#v032---flow).
 
 - [Eleventy WebC v0.10.0](https://github.com/11ty/eleventy-plugin-webc/releases/tag/v0.10.0)
-  - While I included 0.10.1 in last week's Bundler, this v0.10.0 release was really the larger one, with several new features, see the release notes in the link.
-  - But wait, [here's v0.11.0: Child Components accessing Global Data](https://github.com/11ty/webc/releases/tag/v0.11.0)
+  - While I included 0.10.1 in last week's Bundler, this v0.10.0 release was really the larger one, with several new features, see the [release notes](https://github.com/11ty/eleventy-plugin-webc/releases/tag/v0.10.0).
+  - But wait, this just in...[here's v0.11.0: Child Components accessing Global Data](https://github.com/11ty/webc/releases/tag/v0.11.0)
   - Followed quickly by [v0.11.1: Quick fix for data access on slotted content](https://github.com/11ty/webc/releases/tag/v0.11.1)
 
 ## Blog posts: from Discord, Mastodon, and around the web
+
+_Ordered by date of publication_
+
+[Bringing your Notion database to life with Eleventy](https://samdking.co.uk/blog/bringing-your-notion-database-to-life-with-eleventy/) by Sam D King, Aug 25, 2022
+
+[From Notion to Eleventy](https://iamschulz.com/from-notion-to-eleventy/) by Daniel Schulz, Nov 10, 2022
 
 [Relational data in Eleventy](https://danburzo.ro/eleventy-relational-data/) by Dan Burzo, Nov 26, 2022
 
 [A Beginner's Guide to Eleventy - part one](https://jakubiwanowski.dev/garden/programming/eleventy-guide-part-one/) by Jakub Iwanowski, Jan 9, 2023
 
 [A Beginner's Guide to Eleventy - part two](https://jakubiwanowski.dev/garden/programming/eleventy-guide-part-two/) by Jakub Iwanowski, Jan 20, 2023
+
+[Using the Airtable API with Eleventy Collections](https://willdarwin.com/writing/airtable/) by Will, Jan 25, 2023
 
 [Internationalization with Eleventy 2.0 and Netlify](https://www.lenesaile.com/en/blog/internationalization-with-eleventy-20-and-netlify/) by Lene Saile, Feb 21, 2023
 
@@ -49,6 +57,8 @@ _This is issue #2 of an occasional roundup of Eleventy releases, related blog po
 [A few thoughts on the Eleventy website](https://www.uncenter.org/posts/thoughts-on-eleventy/) by uncenter, Mar 16, 2023
 
 [Scheduled Eleventy builds on Vercel with cron-triggered GitHub actions](https://coryd.dev/posts/2023/scheduled-eleventy-builds-cron-github-actions/) by Cory Dransfeldt, Mar 19, 2023
+
+[What’s New in Eleventy 2: A Great SSG Just Got Better](https://www.sitepoint.com/eleventy-2/) by Craig Buckler, Mar 20, 2023
 
 [Syncing Letterboxd Data to Markdown Files](https://www.markllobrera.com/posts/letterboxd-to-markdown/) by Mark Llobrera, Mar 22, 2023
 
@@ -74,21 +84,25 @@ _This is issue #2 of an occasional roundup of Eleventy releases, related blog po
 
 ## Eleventy resources
 
+_Official_
+
 - [11ty docs](https://www.11ty.dev/docs/)
-- [11ty Rocks!](https://11ty.rocks/)
-- [The Eleventy Meetup](https://11tymeetup.dev/)
-- [The 11ty Discord Server](https://www.11ty.dev/blog/discord/)
-- [Github discussion on the Eleventy repo](https://github.com/11ty/eleventy/discussions)
+- [eleventy, the repo on Github](https://github.com/11ty/eleventy/)
 - [YouTube channel](https://www.youtube.com/@EleventyVideo)
-- [Eleventy Leaderboards](https://www.11ty.dev/speedlify/), [Add your site to the list](https://github.com/11ty/11ty-community/issues/new/choose)
-- [Eleventy Hub](https://11tyhub.dev/)
+- [Eleventy Leaderboards](https://www.11ty.dev/speedlify/), [add your site to the list](https://github.com/11ty/11ty-community/issues/new/choose)
 
-## Getting help using Eleventy
+_Community_
 
-[Discord Server](https://www.11ty.dev/blog/discord/) - Get your questions answered. A great community.
+- [The Eleventy Meetup](https://11tymeetup.dev/) by Sia Karamalegos & Stephanie Eckles
+- [11ty Rocks!](https://11ty.rocks/) by Stephanie Eckles
+- [11ty Recipes](https://11ty.recipes/) by Mike Aparicio
+- [Eleventy Hub](https://11tyhub.dev/) by Mortendk
 
-[Discussions section of the Github repo](https://github.com/11ty/eleventy/discussions) - More solid discussion and assistance.
+_Getting help_
+
+- [The 11ty Discord Server](https://www.11ty.dev/blog/discord/) - Get your questions answered. A great community.
+- [Discussions section of the Github repo](https://github.com/11ty/eleventy/discussions) - More solid discussion and assistance.
 
 ---
 
-_Grab the [RSS feed for this blog](https://www.bobmonsour.com/feed.xml) and stuff it in your RSS reader (though you'll also get some non-Bundler content)._
+_Grab the [RSS feed for this blog](https://www.bobmonsour.com/feed.xml) and stuff it in your RSS reader (though you'll also get some non-Bundler content). I'll work on generating a Bundler-specific feed._
