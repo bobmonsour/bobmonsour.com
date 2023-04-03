@@ -17,6 +17,8 @@ draft: true
 
 _This is issue #2 of The 11ty Bundler, an occasional bundling of Eleventy releases, blog posts, sites, and resources. See [11ty Bundler](/tags/11ty-bundler/) for back issues._
 
+> _There are now 2 RSS feeds on this site, one [for the blog](https://www.bobmonsour.com/feed.xml), and one specifically [for The 11ty Bundler posts](https://www.bobmonsour.com/bundlerfeed.xml). Choose wisely._
+
 ## Recent releases
 
 - [Eleventy Image v3.10](https://github.com/11ty/eleventy-img/releases/tag/v3.1.0), this release includes eleventy-image as a WebC component, [see docs](https://www.11ty.dev/docs/plugins/image/#webc), upgrades to [sharp v0.32](https://sharp.pixelplumbing.com/changelog#v032---flow).
