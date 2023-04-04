@@ -11,7 +11,7 @@ module.exports = {
     url: "https://bobmonsour.com/",
   },
   mainNavLinks: [
-    { url: "/pages/archive/", text: "Archive" },
-    { url: "/pages/about/", text: "About" },
+    { url: "/archive/", text: "Archive" },
+    { url: "/about/", text: "About" },
   ],
 };
