@@ -67,7 +67,7 @@ _Ordered by date of publication_
 
 [Spellchecking with Eleventy](https://www.uncenter.org/posts/spellchecking-with-eleventy/) by uncenter, Mar 23, 2023
 
-[The evolution of my CSS pipeline in Eleventy (part 1)](http://bobmonsour.com/posts/the-evolution-of-my-CSS-pipeline-in-eleventy-part-1/) by Bob Monsour, Mar 26, 2023
+[The evolution of my CSS pipeline in Eleventy (part 2)](http://bobmonsour.com/posts/the-evolution-of-my-CSS-pipeline-in-eleventy-part-2/) by Bob Monsour, Mar 26, 2023
 
 [Blogging with Eleventy](https://logicalcobwebs.com/blog/blogging-with-eleventy/) by Bill Horsman, Mar 27, 2023
 
