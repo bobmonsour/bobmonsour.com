@@ -5,7 +5,7 @@ keywords: retired, web development, eleventy, tennis, about
 image:
   source: "bob.small.jpg"
   alt: "a picture of Bob's face"
-permalink: /pages/about/
+permalink: /about/
 pageID: about
 ---
 
