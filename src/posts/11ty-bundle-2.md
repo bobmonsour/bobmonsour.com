@@ -53,7 +53,7 @@ _Ordered by date of publication_
 
 [The need for speed; why Eleventy leaves bundlers behind](https://thenewstack.io/the-need-for-speed-why-eleventy-leaves-bundlers-behind/) by Loraine Lawson, Mar 10, 2023
 
-[The evolution of my CSS pipeline in Eleventy (part 1)](http://localhost:8081/posts/the-evolution-of-my-CSS-pipeline-in-eleventy-part-1/) by Bob Monsour, Mar 14, 2023
+[The evolution of my CSS pipeline in Eleventy (part 1)](http://bobmonsour.com/posts/the-evolution-of-my-CSS-pipeline-in-eleventy-part-1/) by Bob Monsour, Mar 14, 2023
 
 [A few thoughts on the Eleventy website](https://www.uncenter.org/posts/thoughts-on-eleventy/) by uncenter, Mar 16, 2023
 
@@ -67,7 +67,7 @@ _Ordered by date of publication_
 
 [Spellchecking with Eleventy](https://www.uncenter.org/posts/spellchecking-with-eleventy/) by uncenter, Mar 23, 2023
 
-[The evolution of my CSS pipeline in Eleventy (part 1)](http://localhost:8081/posts/the-evolution-of-my-CSS-pipeline-in-eleventy-part-1/) by Bob Monsour, Mar 26, 2023
+[The evolution of my CSS pipeline in Eleventy (part 1)](http://bobmonsour.com/posts/the-evolution-of-my-CSS-pipeline-in-eleventy-part-1/) by Bob Monsour, Mar 26, 2023
 
 [Blogging with Eleventy](https://logicalcobwebs.com/blog/blogging-with-eleventy/) by Bill Horsman, Mar 27, 2023
 
