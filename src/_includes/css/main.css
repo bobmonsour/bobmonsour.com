@@ -5,8 +5,8 @@ body {
   min-height: 100dvh;
   display: grid;
   grid-template-rows: auto 1fr auto;
-  width: min(var(--page-width-max), 100vw - 0.5em);
-  margin: 0 auto;
+  width: min(var(--page-width-max), 100vw - 1em);
+  margin-inline: auto;
   font-family: var(--brand-font);
   font-size: var(--font-size-md);
   color: black;
