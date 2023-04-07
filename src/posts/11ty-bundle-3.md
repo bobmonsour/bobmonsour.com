@@ -27,7 +27,7 @@ _Newest listed first_
 
 {% endfor %}
 
-## Blog posts: from Discord, Mastodon, Twitter, and around the web
+## Blog posts and other resources from around the web
 
 _Newest listed first_
 
