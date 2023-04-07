@@ -6,3 +6,4 @@ scratch/
 11news/
 11news.md
 .env
+.cache

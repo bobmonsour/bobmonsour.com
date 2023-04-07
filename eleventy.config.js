@@ -58,7 +58,8 @@ module.exports = function (eleventyConfig) {
   });
 
   // Extract releases, blog posts, and site items for the current issue
-  // of The 11ty Bundler from Airtable data; releases and blog posts are sorted by date
+  // of The 11ty Bundler from Airtable data; releases and blog posts
+  // are sorted by date, newest first.
   eleventyConfig.addFilter(
     "getBundleItems",
     function getBundleItems(bundleitems, bundleIssue, itemType) {
@@ -67,7 +68,7 @@ module.exports = function (eleventyConfig) {
           (item) => bundleIssue == item["Issue"] && itemType == item["Type"]
         )
         .sort((a, b) => {
-          return a.Date < b.Date ? -1 : 1;
+          return a.Date > b.Date ? -1 : 1;
         });
     }
   );

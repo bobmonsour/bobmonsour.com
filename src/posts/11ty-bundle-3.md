@@ -10,7 +10,6 @@ image:
   source: "11ty-bundle-3.jpg"
   alt: "an AI-generated image of the number eleven"
   caption: "An AI-generated image of the number eleven"
-pageHasCode: "false"
 pageID: bundle
 bundleIssue: 3
 draft: true
@@ -20,7 +19,9 @@ draft: true
 
 ## Recent releases
 
-{% for item in bundleitems | getBundleItems(bundleIssue, "release") %}
+_Newest listed first_
+
+{% for item in airtableitems | getBundleItems(bundleIssue, "release") %}
 
 - [{{ item.Title }}]({{ item.Link }}), {{ item.Date }}
 
@@ -28,9 +29,9 @@ draft: true
 
 ## Blog posts: from Discord, Mastodon, Twitter, and around the web
 
-_Ordered by date of publication_
+_Newest listed first_
 
-{% for item in bundleitems | getBundleItems(bundleIssue, "blog post") %}
+{% for item in airtableitems | getBundleItems(bundleIssue, "blog post") %}
 
 - [{{ item.Title }}]({{ item.Link }}) by [{{ item.Author }}]({{ item.AuthorLink }}), {{ item.Date }}
 
@@ -38,7 +39,7 @@ _Ordered by date of publication_
 
 ## Built with Eleventy
 
-{% for item in bundleitems | getBundleItems(bundleIssue, "site") %}
+{% for item in airtableitems | getBundleItems(bundleIssue, "site") %}
 
 - [{{ item.Title }}]({{ item.Link }}), {{ item.Date }} by [{{ item.Author }}]({{ item.AuthorLink }})
 
