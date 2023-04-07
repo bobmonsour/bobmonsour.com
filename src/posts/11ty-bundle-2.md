@@ -12,11 +12,10 @@ image:
   caption: "An AI-generated image of the number eleven"
 pageHasCode: "false"
 pageID: bundle
+bundleIssue: 2
 ---
 
-_This is issue #2 of The 11ty Bundle, an occasional bundle of Eleventy releases, blog posts, sites, and resources. See [11ty Bundle](/tags/11ty-bundle/) for back issues._
-
-> _There are now 2 RSS feeds on this site, one for [all blog posts](https://www.bobmonsour.com/feed.xml), and one specifically for ['The 11ty Bundle' posts](https://www.bobmonsour.com/bundlefeed.xml). Choose wisely._
+{% include 'partials/bundlehead.md' %}
 
 ## Recent releases
 
@@ -83,27 +82,4 @@ _Ordered by date of publication_
 
 [Emily Leatherman](https://emilyleatherman.com/) by Emily Leatherman
 
-## Eleventy resources
-
-_Official_
-
-- [11ty docs](https://www.11ty.dev/docs/)
-- [eleventy, the repo on Github](https://github.com/11ty/eleventy/)
-- [YouTube channel](https://www.youtube.com/@EleventyVideo)
-- [Eleventy Leaderboards](https://www.11ty.dev/speedlify/), [add your site to the list](https://github.com/11ty/11ty-community/issues/new/choose)
-
-_Community_
-
-- [The Eleventy Meetup](https://11tymeetup.dev/) by Sia Karamalegos & Stephanie Eckles
-- [11ty Rocks!](https://11ty.rocks/) by Stephanie Eckles
-- [11ty Recipes](https://11ty.recipes/) by Mike Aparicio
-- [Eleventy Hub](https://11tyhub.dev/) by Mortendk
-
-_Getting help_
-
-- [The 11ty Discord Server](https://www.11ty.dev/blog/discord/) - Get your questions answered. A great community.
-- [Discussions section of the Github repo](https://github.com/11ty/eleventy/discussions) - More solid discussion and assistance.
-
----
-
-_There are 2 RSS feeds, one for [all blog posts](https://www.bobmonsour.com/feed.xml), and one specifically for [The 11ty Bundle posts](https://www.bobmonsour.com/bundlefeed.xml). Choose wisely._
+{% include 'partials/bundlefoot.md' %}

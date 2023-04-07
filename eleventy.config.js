@@ -29,6 +29,7 @@ module.exports = function (eleventyConfig) {
   //  - filter the post tag list to exclude a few collections
   //  - minify css for inline use
   //  - node inspection utility for debugging
+  //  - extract items from the Airtable data that forms the basis of the 11ty Bundle
   //
   eleventyConfig.addFilter(
     "readingTime",
@@ -56,10 +57,20 @@ module.exports = function (eleventyConfig) {
     );
   });
 
-  const CleanCSS = require("clean-css");
-  eleventyConfig.addFilter("cssmin", function (code) {
-    return new CleanCSS({}).minify(code).styles;
-  });
+  // Extract releases, blog posts, and site items for the current issue
+  // of The 11ty Bundler from Airtable data; releases and blog posts are sorted by date
+  eleventyConfig.addFilter(
+    "getBundleItems",
+    function getBundleItems(bundleitems, bundleIssue, itemType) {
+      return bundleitems
+        .filter(
+          (item) => bundleIssue == item["Issue"] && itemType == item["Type"]
+        )
+        .sort((a, b) => {
+          return a.Date < b.Date ? -1 : 1;
+        });
+    }
+  );
 
   const inspect = require("node:util").inspect;
   eleventyConfig.addFilter("inspect", function (obj = {}) {

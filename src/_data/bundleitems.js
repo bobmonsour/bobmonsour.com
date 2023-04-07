@@ -15,14 +15,8 @@ module.exports = async () => {
       customId: record._rawJson.id,
       ...record._rawJson.fields,
     }));
-    let newTableData = airtableData.sort((a, b) => {
-      console.log(a.Type.charAt(0), b.Type.charAt(0));
-      return a.Type.charAt(0) - b.Type.charAt(0);
-    });
-    for (let i = 0; i < newTableData.length; i++) {
-      console.log(newTableData[i]);
-    }
-    return newTableData;
+    // console.log("bundleitems called");
+    return airtableData;
   } catch (err) {
     throw new Error(err);
   }
