@@ -10,6 +10,7 @@ image:
   alt: "a man smoking a cigarette"
   creditPerson: "Maia Habegger"
   creditLink: "https://unsplash.com/@maiaalhab"
+showImage: true
 ---
 
 > _NOTE: I [originally posted this on Medium](https://medium.com/@bobmonsour/this-never-happened-but-273a2f3415ad), on January 4th, 2022. The version below has some very minor edits._

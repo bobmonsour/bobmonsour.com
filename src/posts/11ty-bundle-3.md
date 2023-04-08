@@ -13,6 +13,7 @@ image:
 pageID: bundle
 bundleIssue: 3
 draft: true
+imagePresent: false
 ---
 
 {% include 'partials/bundlehead.md' %}

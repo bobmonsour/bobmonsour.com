@@ -10,6 +10,7 @@ image:
   source: "first-30-days-of-piano.jpg"
   alt: "a man playing a Steinway piano"
   caption: "Photo by me -- some sheet music and learning materials"
+showImage: true
 ---
 
 ## Table of Contents

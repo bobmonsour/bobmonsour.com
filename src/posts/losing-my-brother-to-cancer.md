@@ -9,6 +9,7 @@ image:
   source: "losing-my-brother-to-cancer.jpg"
   alt: "The day we spread my brother's ashes in the Atlantic Ocean"
   caption: With family and friends on the day we spread Bill's ashes into the Atlantic Ocean, Longport, NJ, September 8, 2019 (I'm 4th from the right)
+showImage: true
 ---
 
 > _NOTE: I [originally posted this on Medium](https://medium.com/p/6cf46529f207), on August 1st, 2020, one year following Bill's death. I am re-posting it here now that I've built this blog. I've been thinking about him a lot lately...and missing him terribly._
