@@ -19,3 +19,13 @@ package = "netlify-plugin-cache"
   from = "https://www.bobmonsour.com/posts/11ty-bundler-2/"
   to = "https://www.bobmonsour.com/posts/11ty-bundle-2/"
   status = 301
+
+[[redirects]]
+  from = "https://www.bobmonsour.com/posts/the-evolution-of-my-CSS-pipeline-in-eleventy/"
+  to = "https://www.bobmonsour.com/posts/the-evolution-of-my-CSS-pipeline-in-eleventy-part-1/"
+  status = 301
+
+[[redirects]]
+  from = "https://www.bobmonsour.com/pages/archive/"
+  to = "https://www.bobmonsour.com/archive/"
+  status = 301
