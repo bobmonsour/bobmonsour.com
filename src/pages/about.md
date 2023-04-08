@@ -3,8 +3,8 @@ title: About Bob Monsour
 description: A few notes about Bob Monsour.
 keywords: retired, web development, eleventy, tennis, about
 image:
-  source: "bob.small.jpg"
-  alt: "a picture of Bob's face"
+  source: "young-bob.jpg"
+  alt: "a picture of Bob's face as a boy"
 permalink: /about/
 pageID: about
 ---
