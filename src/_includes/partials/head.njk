@@ -19,8 +19,8 @@
   <meta property="og:title" content="{{ title }}">
   <meta property="og:type" content="website">
   <meta property="og:description" content="{{ description }}">
-  <meta property="og:image" content="/assets/img/{{ image.source }}">
-  <meta property="og:url" content="{{ page.url }}">
+  <meta property="og:image" content="{{ site.url }}/assets/img/{{ image.source }}">
+  <meta property="og:url" content="{{ site.url }}/{{ page.url }}">
   <meta name="generator" content="{{ eleventy.generator }}">
 
   {# bundle the CSS content used on all pages and get the link to the bundle #}
