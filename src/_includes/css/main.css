@@ -5,7 +5,7 @@ body {
   min-height: 100dvh;
   display: grid;
   grid-template-rows: auto 1fr auto;
-  width: min(var(--page-width-max), 100vw - 1em);
+  max-width: min(var(--page-width-max), 100vw - 1em);
   margin-inline: auto;
   font-family: var(--brand-font);
   font-size: var(--font-size-md);
@@ -200,7 +200,7 @@ picture + p {
 }
 .post-card .post-metadata,
 .post-card .post-image {
-  flex-basis: min(500px, 100vw - 0.25em);
+  flex-basis: min(500px, 100% - 0.25em);
 }
 .post-card .post-title {
   font-size: var(--post-title-card-size);

@@ -54,7 +54,7 @@ By using an external style sheet, there is that fetching overhead, but today's b
 
 The last approach in the previous post showed how I set up my style files in the site's head, which is the same on all pages of the site.
 
-```jinja2 {% raw %}
+```jinja2{% raw %}
 {% set css %}
   {% include "css/reset.css" %}
   {% include "css/variables.css" %}
@@ -275,7 +275,7 @@ Note that as I am writing this, I have not done this and will now attempt it. If
 {% endraw %}
 ```
 
-So, the critital CSS will be inlined, and one or two style sheets will be loaded, depending on the page.
+So, the critical CSS will be inlined, and one or two style sheets will be loaded, depending on the page.
 
 Ok, I'm back after looking at this closer. It's a rabbit hole. I ran into more questions than answers. For example:
 
@@ -312,7 +312,6 @@ EleventyConfig.addPlugin(bundlerPlugin, {
         });
         return result.css;
       }
-
       return content;
     },
   ],
