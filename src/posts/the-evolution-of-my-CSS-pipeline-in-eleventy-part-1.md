@@ -32,7 +32,7 @@ pageHasCode: true
 
 ---
 
-<section id="section1"></section>
+<section id="section1">
 
 ## 1. Introduction
 
@@ -40,7 +40,9 @@ There are many ways for web developers to work with CSS. Practices can vary wide
 
 I'm writing this piece to show how I've evolved my use of CSS in the context of [Eleventy](https://www.11ty.dev/), the static site generator.
 
-<section id="section2"></section>
+</section>
+
+<section id="section2">
 
 ## 2. My first site with Eleventy
 
@@ -89,7 +91,9 @@ The site lives on today. I built it for a good friend who is a tennis pro. If yo
   "build": "cross-env ELEVENTY_ENV=prod npm-run-all build:sass build:eleventy",
 ```
 
-<section id="section3"></section>
+</section>
+
+<section id="section3">
 
 ## 3. A slightly leaner set of scripts
 
@@ -129,7 +133,9 @@ Here's a look at the resulting scripts used to develop and build the site.
 
 It's a bit leaner as I simply combined two commands for each of start and build using &&. The result is the same, a single file in the output directory.
 
-<section id="section4"></section>
+</section>
+
+<section id="section4">
 
 ## 4. A toe in the water with Open Props and PostCSS
 
@@ -185,7 +191,9 @@ module.exports = {
 
 The project still operates this way and you can [check it out here](https://www.cbascaraspeechtherapy.com/).
 
-<section id="section5"></section>
+</section>
+
+<section id="section5">
 
 ## 5. Time for a new site of my own
 
@@ -249,7 +257,9 @@ I raised this issue on the plugin repo as well as the Eleventy repo. Stephanie q
 
 This prevents the processed files from being included in collections.all, and thus excluded from the sitemap. Problem solved...yet it feels slightly icky.
 
-<section id="section6"></section>
+</section>
+
+<section id="section6">
 
 ## 6. You didn't think I was done, did You?
 
@@ -342,7 +352,9 @@ And finally, here's what my scripts look like using this technique.
 
 It doesn't get much simpler than that. Same as before, but only relying on clean-css for minifying in a more Eleventy-ish way via filter.
 
-<section id="section7"></section>
+</section>
+
+<section id="section7">
 
 ## 7. Conclusion
 
@@ -352,7 +364,9 @@ And I'd like to send a bit shoutout to the moderators and helpers in the Elevent
 
 > _It seems that I'm not really done with this. And the site is no longer based on this last approach. If you'd like to continue watching my CSS strategy evolve, here's [the next step in the evolution](/posts/the-evolution-of-my-CSS-pipeline-in-eleventy-part-2)._
 
-<section id="section8"></section>
+</section>
+
+<section id="section8">
 
 ## 8. Links to the sites and repos for the sites discussed
 
@@ -365,3 +379,5 @@ Here are links to the sites and Github repos for all of these sites. Needless to
 [cbascaraspeechtherapy.com](https://www.cbascaraspeechtherapy.com/), [repo](https://github.com/bobmonsour/cbascara)
 
 [bobmonsour.com](https://www.bobmonsour.com/), [repo](https://github.com/bobmonsour/bobmonsour.com)
+
+</section>
