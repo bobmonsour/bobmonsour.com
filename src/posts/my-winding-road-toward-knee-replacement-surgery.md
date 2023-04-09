@@ -29,7 +29,7 @@ showImage: true
 
 ---
 
-<div id="section1"></div>
+<section id="section1"></section>
 
 ## 1. Introduction
 
@@ -43,7 +43,7 @@ Well, a few years ago, one of those knees that I’d been bragging about decided
 
 Earlier this year, things came to a head where I was unable to walk very far without each step announcing itself with a cringe. But let me back up a few steps and review the early signs and my attempts with various interventions.
 
-<div id="section2"></div>
+<section id="section2"></section>
 
 ## 2. Is there a doctor in the house?
 
@@ -73,7 +73,7 @@ If I’m going to try another injection, how best to decide on which of these to
 
 That visit with InjectoDoc was in July. I told him that I’d like to try the visco-stuff. He said that if I have private insurance, they would not likely cover it. So I scheduled it for late August; by then I will have arrived to the wonderful world of Medicare, which does cover it. The particular brand of visco-stuff that I’d be getting is called [Synvisc-One](https://www.synviscone.com/).
 
-<div id="section3"></div>
+<section id="section3"></section>
 
 ## 3. Is this the doctor I should be seeing?
 
@@ -85,7 +85,7 @@ I was starting to become concerned that InjectoDoc might not be the right guy fo
 
 The other worry I had was that the health system portal that shows test results had no written radiology reports from the x-rays or the MRI that had been done. I wanted to know more.
 
-<div id="section4"></div>
+<section id="section4"></section>
 
 ## 4. What do the clinicians who do research say?
 
@@ -125,7 +125,7 @@ Shit! I’ve gone from **moderate** to **severe** on the right knee. Silver lini
 
 I copped some CBD cream at $35/oz. I tried it for a few days. It didn’t seem to do much other than provide my wife and me with something to crack jokes about.
 
-<div id="section5"></div>
+<section id="section5"></section>
 
 ## 5. Have any of these injections been proven to work?
 
@@ -165,7 +165,7 @@ The cortisone had no effect on my knee pain, the PRP had no effect on my knee pa
 
 Ah, but visco-stuff, the guidelines can’t recommend its use, “unless a clear and compelling rationale for an alternative approach is present…” whatever that means.
 
-<div id="section6"></div>
+<section id="section6"></section>
 
 ## 6. To inject or not to inject?
 

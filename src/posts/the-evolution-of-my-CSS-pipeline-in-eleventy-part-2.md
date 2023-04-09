@@ -33,7 +33,7 @@ pageHasCode: true
 
 ---
 
-<div id="section1"></div>
+<section id="section1"></section>
 
 ## 1. Introduction
 
@@ -41,7 +41,7 @@ After further reflecting on the approach that I took at the end of the last post
 
 I also wanted to learn more about Zach's [eleventy-plugin-bundle](https://github.com/11ty/eleventy-plugin-bundle) and how I might use it to improve the way I handle CSS across the site. Note that there are many other methods and tools available for structuring CSS; for example, tools and learning resources like [Tailwind](https://tailwindcss.com/), [Bootstrap](https://getbootstrap.com/), [Every Layout](https://every-layout.dev/), and others. For this site, I am writing much of the CSS myself.
 
-<div id="section2"></div>
+<section id="section2"></section>
 
 ## 2. To inline or not to inline
 
@@ -84,7 +84,7 @@ Lastly on this topic, there's an npm package, [critical](https://github.com/addy
 
 > _UPDATE (4-1-23): As it turns out, someone *did* write an Eleventy plugin called [eleventy-critical-css](https://github.com/gregives/eleventy-critical-css) that uses Addy Osmani's critical npm package. It hasn't been updated since Oct 8, 2021 and I have not tried it._
 
-<div id="section3"></div>
+<section id="section3"></section>
 
 ## 3. Enter the eleventy-plugin-bundle
 
@@ -157,7 +157,7 @@ Nice try...
 
 Since I was just dipping my toe in the water with the plugin, I had yet to address the inlining vs external CSS issue. As a result, it seemed to make more sense to shift toward an external CSS approach.
 
-<div id="section4"></div>
+<section id="section4"></section>
 
 ## 4. Moving away from inlining toward external CSS
 
@@ -185,7 +185,7 @@ What I really want is to selectively include the prism-okaidia.css only on the p
 
 Note that I have also lost the ability to minify the CSS (we'll get to that later).
 
-<div id="section5"></div>
+<section id="section5"></section>
 
 ## 5. Selectively including a CSS bundle
 
@@ -230,7 +230,7 @@ What's nice about this is that there are only ever two distinct CSS files, one t
 
 Now it was time to consider critical CSS.
 
-<div id="section6"></div>
+<section id="section6"></section>
 
 ## 6. A simple attempt at identifying critical CSS
 
@@ -287,7 +287,7 @@ These 2 questions alone caused me to back away from this and leave the structure
 
 But one more thing...what about minifying? We lost that when we moved to external files.
 
-<div id="section7"></div>
+<section id="section7"></section>
 
 ## 7. What about minifying?
 
@@ -322,7 +322,7 @@ Note that I had already added the bundlerPlugin to achieve the earlier feats, bu
 
 The end result is that each of the two files that are generated from the CSS bundles are minified. If you do a view source on the page that you're now viewing, you can see the links to the two files. Click on those to reveal the minified CSS.
 
-<div id="section8"></div>
+<section id="section8"></section>
 
 ## 8. Reducing browser file fetches...and the role of fonts
 
@@ -362,7 +362,7 @@ And with that, I eliminate any fetching of font files by the browser. And while 
 
 If you ask me, this is yet another win for web performance.
 
-<div id="section9"></div>
+<section id="section9"></section>
 
 ## 9. Conclusion
 
@@ -378,7 +378,7 @@ A few key takeaways from these 2 posts for me are:
 
 And now we're really done. Until next time...
 
-<div id="section10"></div>
+<section id="section10"></section>
 
 ## 10. Related resources
 
