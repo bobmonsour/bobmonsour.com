@@ -51,13 +51,9 @@ What I also decided to do was track my practice days, noting the amount of morni
 
 Here are a few stats of how things went over these 30 days:
 
-<div class="simple-list">
-
 - Days of practice (out of 30): 27
 - Total minutes of practice: 960
 - Average minutes of practice per day: 36
-
-</div>
 
 <div id="section3"></div>
 

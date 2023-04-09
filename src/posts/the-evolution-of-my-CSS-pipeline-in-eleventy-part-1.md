@@ -28,6 +28,7 @@ pageHasCode: true
 6. [You didn't think I was done, did you?](#section6)
 7. [Conclusion](#section7)
 8. [Links to the repos for the sites discussed](#section8)
+
 </div>
 
 ---
@@ -129,7 +130,7 @@ Here's a look at the resulting scripts used to develop and build the site.
 
 It's a bit leaner as I simply combined two commands for each of start and build using &&. The result is the same, a single file in the output directory.
 
-</div><div id="section4"></div>
+<div id="section4"></div>
 
 ## 4. A toe in the water with Open Props and PostCSS
 
@@ -365,5 +366,3 @@ Here are links to the sites and Github repos for all of these sites. Needless to
 [cbascaraspeechtherapy.com](https://www.cbascaraspeechtherapy.com/), [repo](https://github.com/bobmonsour/cbascara)
 
 [bobmonsour.com](https://www.bobmonsour.com/), [repo](https://github.com/bobmonsour/bobmonsour.com)
-
-</div>
