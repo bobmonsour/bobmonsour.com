@@ -92,6 +92,12 @@ img[width][height] {
   height: auto; /* Preserve aspect ratio */
 }
 
+/* main content constrained by viewport */
+main {
+  max-width: min(var(--page-width-max), 100vw - 1em);
+  margin: 0 auto;
+}
+
 /* brand & navigation (inside <header>) */
 .brand {
   display: flex;
