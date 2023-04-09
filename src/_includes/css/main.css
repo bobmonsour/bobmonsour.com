@@ -24,6 +24,7 @@ h3 {
   font-size: var(--font-size-lg);
   line-height: 1.2;
   margin-block: 1em 0.5em;
+  text-align: left;
 }
 
 h3 {

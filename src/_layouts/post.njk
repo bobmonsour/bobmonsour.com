@@ -14,15 +14,15 @@ layout: default.njk
   <p class="post-readingtime">{{ content | readingTime }}</p>
   {{ tagList(tags) }}
   {% if showImage %}
-  {% set imageSource %}{{ imageDir + image.source }}{% endset %}
-  {% image imageSource, image.alt, "100vw", "eager" %}
-  {% if image.creditPerson and image.creditLink%}
+    {% set imageSource %}{{ imageDir + image.source }}{% endset %}
+    {% image imageSource, image.alt, "100vw", "eager" %}
+  {% endif %}
+  {% if showImage and image.creditPerson and image.creditLink%}
     <p>Photo by <a href="{{ image.creditLink }}">{{ image.creditPerson }}</a></p>
-  {% elif image.caption %}
+  {% endif %}
+  {% if showImage and image.caption %}
     <p>{{ image.caption }}</p>
   {% endif %}
-  {% endif %}
-
   {{ content | safe }}
   <hr>
   {{ tagList(tags) }}

@@ -25,6 +25,6 @@
       {% set imageSource %}{{ post.data.imageDir + post.data.image.source }}{% endset %}
       {% image imageSource, post.data.image.alt, "(min-width: 540px) 500px, 95.45vw", loading %}</a>
     </div>
-  </div>
+  </section>
   {%- if not loop.last %}<hr>{% endif %}
 {% endfor %}
