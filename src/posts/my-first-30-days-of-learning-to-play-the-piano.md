@@ -31,7 +31,7 @@ showImage: true
 
 ---
 
-<section id="section1"></section>
+<div id="section1"></div>
 
 ## 1. Introduction
 
@@ -43,7 +43,7 @@ I started into the course as planned and then began to watch numerous YouTube vi
 
 As you'll read, I decided to track my progress, develop some learning strategies, and find a path that is enjoyable.
 
-<section id="section2"></section>
+<div id="section2"></div>
 
 ## 2. Practice stats
 
@@ -59,7 +59,7 @@ Here are a few stats of how things went over these 30 days:
 
 </div>
 
-<section id="section3"></section>
+<div id="section3"></div>
 
 ## 3. Re-learning to focus
 
@@ -67,7 +67,7 @@ One of the reasons that I left Twitter was to redirect some of that time to lear
 
 Needless to say, that is easier said than done. It has taken a few weeks, but I've developed some ideas and strategies that are helping me to improve my focus. A byproduct of these strategies is that I can feel my progress and that is a wonderful motivator.
 
-<section id="section4"></section>
+<div id="section4"></div>
 
 ## 4. The early bumps of learning
 
@@ -81,7 +81,7 @@ After not making much progress other than on the melody, I decided to look into 
 
 I continued to watch the course videos and follow along with the related practice. Then I hit the part of the course where the instructor said that by this point, I should have Happy Birthday memorized, meaning without reading the music. Oh, shit!
 
-<section id="section5"></section>
+<div id="section5"></div>
 
 ## 5. Memorizing Happy Birthday
 
@@ -95,7 +95,7 @@ Getting back to focus, I had to force myself to be content to play something slo
 
 I think I've got a respectable version of Happy Birthday under my belt (more on that below), but I continue to practice it at every session.
 
-<section id="section6"></section>
+<div id="section6"></div>
 
 ## 6. Learning and practicing scales
 
@@ -105,7 +105,7 @@ I've found some nice PDF cheat sheets with the fingering for each of the 12 majo
 
 And my practice strategy, as of now, is to add one scale to my practice sessions each week. I'm currently practicing C major, G major, and D major. Each scale gets one minute of practice with each hand (total of 6 minutes for these 3). Next week, I'll add A, following around the [circle of fifths](https://en.wikipedia.org/wiki/Circle_of_fifths); for the uninitiated, the circle of fifths is a way of organizing pitches as a sequence of fifths (with each scale starting 5 notes from the start of the previous scale).
 
-<section id="section7"></section>
+<div id="section7"></div>
 
 ## 7. Following the course songs vs. what I want to play
 
@@ -117,7 +117,7 @@ As I was gaining confidence with my memorization of Happy Birthday, I wanted to 
 
 I fiddled around with Happy Together and Yesterday and decided to tackle Happy Together. For those too young to remember, it's a [song by the Turtles from 1967](https://www.youtube.com/watch?v=mRCe5L1imxg).
 
-<section id="section8"></section>
+<div id="section8"></div>
 
 ## 8. How do I sound? Not great.
 
@@ -147,7 +147,7 @@ Happy Together (53 seconds):
   </p>
 </audio>
 
-<section id="section9"></section>
+<div id="section9"></div>
 
 ## 8. What's next?
 

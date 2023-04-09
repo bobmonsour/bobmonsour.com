@@ -29,13 +29,13 @@ showImage: true
 
 ---
 
-<section id="section1"></section>
+<div id="section1"></div>
 
 ## 1. Introduction
 
 Well, a new year has started and while I rarely write new year's resolutions, the combination of the new year and some other audio and mental murmurings got me interested in learning to play the piano. Here's a brief look at my journey thus far.
 
-<section id="section2"></section>
+<div id="section2"></div>
 
 ## 2. Why now?
 
@@ -57,7 +57,7 @@ It's similar to the desire I had to create this website...I wanted to use my own
 
 But now it's time to get started on this piano journey...for real.
 
-<section id="section3"></section>
+<div id="section3"></div>
 
 ## 3. How should I start this journey?
 
@@ -69,7 +69,7 @@ Each course consists of 8 classes and each class contains multiple lessons. The 
 
 Back to YouTube, I've since learned that there are quite a few great piano teachers with their own YouTube channels. Here are a couple of the teachers that I've enjoyed watching and learning from: [Corey Lennox](https://www.youtube.com/@CoreyLennox/about), [Julian Bradley](https://www.youtube.com/@jazztutorial/about), [Piano from Scratch](https://www.youtube.com/@PianoFromScratch/about), and [Jonny May](https://www.youtube.com/@PianoWithJonny/about).
 
-<section id="section4"></section>
+<div id="section4"></div>
 
 ## 4. Feeling overwhelmed
 
@@ -83,7 +83,7 @@ Escape from tutorial hell requires that you actually sit town, turn off the vide
 
 It appears that a similar thing is possible with learning to play the piano. That said, there is only one piano, so the tool is prescribed. Yet, with YouTube, there are more than enough tutorials and lessons and examples of piano playing and, if you're not careful, you too can end up in the piano version of "tutorial hell." The real similarity here is that you have to sit down and put head-to-hand-to-keyboard in order to express the notes and to listen and adjust as you learn.
 
-<section id="section5"></section>
+<div id="section5"></div>
 
 ## 5. Holding myself accountable
 
@@ -97,7 +97,7 @@ First, I am logging my practice sessions. I've got a spreadsheet with a row for 
 
 I've limited how many people I've shared this journey with. Well, having written this sentence here, I obviously am sharing it with all of you. Up until posting this, I had only told my wife and a total stranger. And now that I'm actually playing songs and feeling progress, it felt like a good time to write about it as yet another means for holding myself accountable. In fact, I'll be seeing this post (or at least its title) almost every time I work on the website.
 
-<section id="section6"></section>
+<div id="section6"></div>
 
 ## 6. So, how's it going?
 
