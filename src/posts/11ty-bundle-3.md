@@ -18,9 +18,11 @@ imagePresent: false
 
 {% include 'partials/bundlehead.md' %}
 
+> _In future issues, I plan to have the blog posts organized by topic. And I'm thinking of having a page that includes all posts from prior issues, also tagged by topic to make it easier to find useful content. And maybe, just maybe, I'll move all of this to a dedicated site (yes, I've already purchased a domain)._
+
 ## Recent releases
 
-_Newest listed first_
+_Newest listed first, click the links to see release notes_
 
 {% for item in airtableitems | getBundleItems(bundleIssue, "release") %}
 
