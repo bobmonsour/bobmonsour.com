@@ -13,7 +13,6 @@ image:
 pageID: bundle
 bundleIssue: 3
 draft: true
-imagePresent: false
 ---
 
 {% include 'partials/bundlehead.md' %}
@@ -22,7 +21,7 @@ imagePresent: false
 
 ## Recent releases
 
-_Newest listed first, click the links to see release notes_
+_Newest listed first, click the links to see the release notes_
 
 {% for item in airtableitems | getBundleItems(bundleIssue, "release") %}
 
