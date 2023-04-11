@@ -12,7 +12,7 @@ image:
   <ul>
     {% for tag in collections.all | getAllTags | filterTagList %}
       {% set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
-      <li><a href="{{ tagUrl }}" class="post-tag">{{ tag }}</a></li>
+      <li><a href="{{ tagUrl }}">{{ tag }}</a></li>
     {% endfor %}
   </ul>
 </div>

@@ -148,8 +148,9 @@ main {
   margin: 1em auto 0 auto;
 }
 
-/* list of All Tags */
-.alltags-list * {
+/* list of All Tags and All Categories */
+.alltags-list *,
+.allcategories-list * {
   list-style: none;
   text-align: center;
   margin: 1em auto;
