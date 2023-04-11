@@ -17,7 +17,7 @@ draft: true
 
 {% include 'partials/bundlehead.md' %}
 
-> _In future issues, I plan to have the blog posts organized by topic. And I'm thinking of having a page that includes all posts from prior issues, also tagged by topic to make it easier to find useful content. And maybe, just maybe, I'll move all of this to a dedicated site (yes, I've already purchased a domain)._
+> _Since there are so manu different topics covered the blog posts, I may start creating bundles that are focused on a particular topic; either that, or organize the list of posts by topic. And maybe, just maybe, I'll move all of this to a dedicated site (yes, I've already purchased a domain)._
 
 ## Recent releases
 
