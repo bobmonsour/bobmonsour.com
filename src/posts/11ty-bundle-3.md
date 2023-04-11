@@ -16,7 +16,7 @@ bundleIssue: 3
 
 {% include 'partials/bundlehead.md' %}
 
-> _Since there are so manu different topics covered the blog posts, I may start creating bundles that are focused on a particular topic; either that, or organize the list of posts by topic. And maybe, just maybe, I'll move all of this to a dedicated site (yes, I've already purchased a domain)._
+> _Since there are so many different topics covered the blog posts, I may start creating bundles that are focused on a particular topic; either that, or organize the list of posts by topic. And maybe, just maybe, I'll move all of this to a dedicated site (yes, I've already purchased a domain)._
 
 ## Recent releases
 
