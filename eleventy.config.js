@@ -57,15 +57,93 @@ module.exports = function (eleventyConfig) {
     );
   });
 
-  // Extract releases, blog posts, and site items for the current issue
-  // of The 11ty Bundler from Airtable data; releases and blog posts
-  // are sorted by date, newest first.
+  // Extract releases, blog posts, and site items from Airtable data.
+  // Data is returned in descending date order.
+  // Data is extracted by Issue and Type
+  // The accepted values for Issue are:
+  //  0 - items from all issues
+  //  issue number - for from a specific issue
+  // The accepted values for Type are:
+  //   "Release", "Blog post", and "Site"
   eleventyConfig.addFilter(
     "getBundleItems",
     function getBundleItems(bundleitems, bundleIssue, itemType) {
       return bundleitems
         .filter(
-          (item) => bundleIssue == item["Issue"] && itemType == item["Type"]
+          (item) =>
+            (bundleIssue == item["Issue"] && itemType == item["Type"]) ||
+            (bundleIssue === 0 && itemType == item["Type"])
+        )
+        .sort((a, b) => {
+          return a.Date > b.Date ? -1 : 1;
+        });
+    }
+  );
+
+  // getDescription - given a url, this Eleventy filter extracts the meta
+  // description from within the <head> element of a web page using the cheerio
+  // library.
+  //
+  // The full html content of the page is fetched using the eleventy-fetch plugin.
+  // If you have a lot of links from which you want to extract descriptions, the
+  // initial build time will be slow. However, the plugin will cache the content
+  // for a duration of your choosing (in this case, it's set to *, which will
+  // never fetch new data after the first success).
+  //
+  // The description is extracted from the <meta> element with the name attribute
+  // of "description".
+  //
+  // If no description is found, the filter returns an empty string. In the event
+  // of an error, the filter logs an error to the console and returns the string
+  // "(no description available)"
+  //
+  // Note that I have a .cache folder in my project root and added .cache to my
+  // .gitignore file. See https://www.11ty.dev/docs/plugins/fetch/#installation
+  //
+  const EleventyFetch = require("@11ty/eleventy-fetch");
+  const cheerio = require("cheerio");
+  eleventyConfig.addFilter(
+    "getDescription",
+    async function getDescription(link) {
+      try {
+        let htmlcontent = await EleventyFetch(link, {
+          duration: "*",
+          type: "buffer",
+        });
+        const $ = cheerio.load(htmlcontent);
+        // console.log(
+        //   "description: " + $("meta[name=description]").attr("content")
+        // );
+        return $("meta[name=description]").attr("content");
+      } catch (e) {
+        console.log(
+          "Error fetching description for " + link + ": " + e.message
+        );
+        return "(no description available)";
+      }
+    }
+  );
+
+  // Extract a list of the unique categories used in all of the issues
+  // of The 11ty Bundle from Airtable data. Items are sorted alphabetically.
+  eleventyConfig.addFilter("getBundleCategories", (collection) => {
+    let categorySet = new Set();
+    for (let item of collection) {
+      (item.Categories || []).forEach((category) => categorySet.add(category));
+    }
+    return Array.from(categorySet).sort((a, b) => {
+      return a > b ? 1 : -1;
+    });
+  });
+
+  // Get all 11ty Bundle (Airtable) blog posts for a specific category
+  eleventyConfig.addFilter(
+    "postsInCategory",
+    function postsInCategory(bundleitems, category) {
+      return bundleitems
+        .filter(
+          (item) =>
+            item.Type == "blog post" && item.Categories.includes(category)
         )
         .sort((a, b) => {
           return a.Date > b.Date ? -1 : 1;

@@ -1,5 +1,5 @@
 ---
-title: Finding an exercise regimen that sticks
+title: DRAFT - Finding an exercise regimen that sticks
 date: 2023-04-12
 tags:
   - personal
@@ -11,6 +11,7 @@ image:
   caption: "My home gym setup: a yoga mat, some kettlebells, and a balance cushion"
 draft: true
 showImage: true
+eleventyExcludeFromCollections: true
 ---
 
 ## Table of Contents
