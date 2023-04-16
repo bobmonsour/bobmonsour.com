@@ -23,6 +23,7 @@
     "@11ty/eleventy-plugin-rss": "^1.2.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^4.1.0",
     "airtable": "^0.11.6",
+    "check-html-links": "^0.2.4",
     "cross-env": "^7.0.3",
     "dotenv": "^16.0.3",
     "eleventy-plugin-html-validate": "^0.0.5",

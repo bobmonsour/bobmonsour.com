@@ -128,7 +128,7 @@ Happy Birthday (17 seconds):
   <source src="/assets/audio/happy-birthday-at-30days-020323.ogg" type="audio/ogg">
   <p>
     Your browser does not support HTML audio, but you can still
-    <a href="happy-birthday-at-30days-020323.mp3">download the music in mp3 format</a>.
+    <a href="/assets/audio/happy-birthday-at-30days-020323.mp3">download the music in mp3 format</a>.
   </p>
 </audio>
 
@@ -139,7 +139,7 @@ Happy Together (53 seconds):
   <source src="/assets/audio/happy-together-at-30days-020323.ogg" type="audio/ogg">
   <p>
     Your browser does not support HTML audio, but you can still
-    <a href="audihappy-together-at-30days-020323ofile.mp3">download the music in mp3 format</a>.
+    <a href="/assets/audio/happy-together-at-30days-020323.mp3">download the music in mp3 format</a>.
   </p>
 </audio>
 

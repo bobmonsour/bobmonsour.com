@@ -24,7 +24,7 @@ What I have also since learned is how to add other plugins (for example, cssnano
 
 [START OF ORIGINAL POST]
 
-As I wrote in [my last post](/posts/dipping-my-toes-in-the-open-props-water), I started using Open Props to define the colors, fonts, and font sizes for this site. I also used Open Props to define the radius and animation you see when you hover over the site's links.
+As I wrote in [my last post](/posts/dipping-my-toes-in-the-open-props-water/), I started using Open Props to define the colors, fonts, and font sizes for this site. I also used Open Props to define the radius and animation you see when you hover over the site's links.
 
 There are a lot of available props and my site's use of them only scratches the surface, using less than 20 of them as of this writing.
 

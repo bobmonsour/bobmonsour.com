@@ -14,7 +14,7 @@ image:
 pageHasCode: true
 ---
 
-> _While initially a single post about my evolving use of CSS, there is now a second part which you can [find here](/posts/the-evolution-of-my-CSS-pipeline-in-eleventy-part-2). But you should really read this one first._
+> _While initially a single post about my evolving use of CSS, there is now a second part which you can [find here](/posts/the-evolution-of-my-CSS-pipeline-in-eleventy-part-2/). But you should really read this one first._
 
 ## Table of Contents
 
@@ -351,7 +351,7 @@ If you've read this far, thank you! As you can see, I've learned a lot from a lo
 
 And I'd like to send a bit shoutout to the moderators and helpers in the Eleventy Discord community. Just today, they helped me get over my last challenge in getting this post to display correctly. For anyone interested, here's [a link to the Discord discussion we had](https://discord.com/channels/741017160297611315/1085269982096654456). If you ever have an Eleventy question, that's the place to go.
 
-> _It seems that I'm not really done with this. And the site is no longer based on this last approach. If you'd like to continue watching my CSS strategy evolve, here's [the next step in the evolution](/posts/the-evolution-of-my-CSS-pipeline-in-eleventy-part-2)._
+> _It seems that I'm not really done with this. And the site is no longer based on this last approach. If you'd like to continue watching my CSS strategy evolve, here's [the next step in the evolution](/posts/the-evolution-of-my-CSS-pipeline-in-eleventy-part-2/)._
 
 <div id="section8"></div>
 
