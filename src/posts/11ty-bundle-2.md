@@ -16,6 +16,8 @@ bundleIssue: 2
 
 {% include 'partials/bundlehead.md' %}
 
+> _UPDATED: 2023-04-18 - I have added descriptions to each of the blog post entries. These are extracted from the blog post page itself as provided by the post's author._
+
 > _UPDATED: 2023-04-07 - Releases and Blog posts are now sorted in reverse chronological order. I've also added links to the sites of the home (or about) pages of the blog writers. I've updated this and subsequent posts to use Airtable as a data source to ease the process of preparing new issues. This will also make it easier to support user-supplied content down the road._
 
 ## Recent releases
@@ -34,9 +36,8 @@ _Newest listed first_
 
 {% for item in airtableitems | getBundleItems(bundleIssue, "blog post") %}
 
-- [{{ item.Title }}]({{ item.Link }}) by [{{ item.Author }}]({{ item.AuthorLink }}), {{ item.Date }}
-
-{% endfor %}
+- [{{ item.Title }}]({{ item.Link }}) by [{{ item.Author }}]({{ item.AuthorLink }}){% if item.Date %}, {{ item.Date }}{% endif %} - {{ item.Link | getDescription }}
+  {% endfor %}
 
 ## Some nice art and photography sites using Eleventy
 
