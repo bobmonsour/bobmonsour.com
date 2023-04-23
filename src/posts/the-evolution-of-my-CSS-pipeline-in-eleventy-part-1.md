@@ -156,7 +156,7 @@ This is what the Sass directory looks like for the project.
   main-prod.scss
 ```
 
-Pay no attention to the fact that there are two main.css files. This was me contorting myself for unnecessary reasons and is something I will be cleaning up in the future. And I'm still using media querries to support responsiveness on mobile devices.
+Pay no attention to the fact that there are two main.css files. This was me contorting myself for unnecessary reasons and is something I will be cleaning up in the future. And I'm still using media queries to support responsiveness on mobile devices.
 
 So now, my scripts looked like the following, with the postbuild command being executed after Eleventy and post-processing my CSS to bring in only the necessary Open Props.
 
@@ -349,7 +349,7 @@ It doesn't get much simpler than that. Same as before, but only relying on clean
 
 If you've read this far, thank you! As you can see, I've learned a lot from a lot of great people. And while we can all get easily distracted by new ways to do things, it's important to have some perspective. I am trying my best to strive for simplicity, maintainability, and performance. This site is my test bed. One thing I am asking myself now is whether or not it makes sense to retrofit some of these learnings into those other projects. I'll have to think about that.
 
-And I'd like to send a bit shoutout to the moderators and helpers in the Eleventy Discord community. Just today, they helped me get over my last challenge in getting this post to display correctly. For anyone interested, here's [a link to the Discord discussion we had](https://discord.com/channels/741017160297611315/1085269982096654456). If you ever have an Eleventy question, that's the place to go.
+And I'd like to send a bit shoutout to the moderators and helpers in the Eleventy Discord community. Just today, they helped me get over my last challenge in getting this post to display correctly. For anyone interested, here's a link to the discussion we had in the 11ty Discord ([click here](https://www.11ty.dev/blog/discord/) to join first before clicking [this discussion link](https://discord.com/channels/741017160297611315/1085269982096654456)). If you ever have an Eleventy question, that's the place to go.
 
 > _It seems that I'm not really done with this. And the site is no longer based on this last approach. If you'd like to continue watching my CSS strategy evolve, here's [the next step in the evolution](/posts/the-evolution-of-my-CSS-pipeline-in-eleventy-part-2/)._
 
