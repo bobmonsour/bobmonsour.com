@@ -14,6 +14,8 @@ pageID: bundle
 bundleIssue: 4
 ---
 
+> **2023-05-01 - THE 11ty BUNDLES ARE NOW AT [11tybundle.dev](https://11tybundle.dev/). CHECK IT OUT!**
+
 {% include 'partials/bundlehead.md' %}
 
 > _Sneak peek: The next issue will be a SPECIAL issue focused on posts that discuss migration from another static site generator or platform to Eleventy._

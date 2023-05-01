@@ -14,6 +14,8 @@ pageID: bundle
 bundleIssue: 1
 ---
 
+> **2023-05-01 - THE 11ty BUNDLES ARE NOW AT [11tybundle.dev](https://11tybundle.dev/). CHECK IT OUT!**
+
 This is the first of an occasional roundup of Eleventy releases, related blog posts, and resources.
 
 Why, you ask?

@@ -14,6 +14,8 @@ pageID: bundle
 bundleIssue: 3
 ---
 
+> **2023-05-01 - THE 11ty BUNDLES ARE NOW AT [11tybundle.dev](https://11tybundle.dev/). CHECK IT OUT!**
+
 {% include 'partials/bundlehead.md' %}
 
 > _UPDATED: 2023-04-18 - I have added descriptions to each of the blog post entries. These are extracted from the blog post page itself as provided by the post's author._
