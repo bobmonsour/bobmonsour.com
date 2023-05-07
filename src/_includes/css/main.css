@@ -264,3 +264,7 @@ footer .text {
 #bundle li {
   font-size: var(--font-size-base);
 }
+
+#bundlenothere {
+  opacity: 0.1;
+}

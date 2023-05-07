@@ -14,7 +14,9 @@ pageID: bundle
 bundleIssue: 1
 ---
 
-> **2023-05-01 - THE 11ty BUNDLES ARE NOW AT [11tybundle.dev](https://11tybundle.dev/). CHECK IT OUT!**
+{% include 'partials/bundlenothere.md' %}
+
+<div id="bundlenothere">
 
 This is the first of an occasional roundup of Eleventy releases, related blog posts, and resources.
 
@@ -85,3 +87,5 @@ _Newest listed first_
 I can say that, without a doubt, if you have any questions or run into problems with Eleventy, the community on the [Discord Server](<(https://www.11ty.dev/blog/discord/)>) is amazing. In the forum-help channel, you can get any question answered, regardless of how simple or complex.
 
 Keep on bundlin...
+
+</div>

@@ -14,7 +14,9 @@ pageID: bundle
 bundleIssue: 2
 ---
 
-> **2023-05-01 - THE 11ty BUNDLES ARE NOW AT [11tybundle.dev](https://11tybundle.dev/). CHECK IT OUT!**
+{% include 'partials/bundlenothere.md' %}
+
+<div id="bundlenothere">
 
 {% include 'partials/bundlehead.md' %}
 
@@ -50,3 +52,5 @@ _Newest listed first_
 {% endfor %}
 
 {% include 'partials/bundlefoot.md' %}
+
+</div>
