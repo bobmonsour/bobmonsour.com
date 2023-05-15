@@ -29,3 +29,23 @@ package = "netlify-plugin-cache"
   from = "https://www.bobmonsour.com/pages/archive/"
   to = "https://www.bobmonsour.com/archive/"
   status = 301
+
+[[redirects]]
+  from = "https://www.bobmonsour.com/posts/11ty-bundle-4/"
+  to = "https://www.bobmonsour.com/posts/11ty-bundle-1-4//"
+  status = 301
+
+[[redirects]]
+  from = "https://www.bobmonsour.com/posts/11ty-bundle-3/"
+  to = "https://www.bobmonsour.com/posts/11ty-bundle-1-4//"
+  status = 301
+
+[[redirects]]
+  from = "https://www.bobmonsour.com/posts/11ty-bundle-3/"
+  to = "https://www.bobmonsour.com/posts/11ty-bundle-1-4//"
+  status = 301
+
+[[redirects]]
+  from = "https://www.bobmonsour.com/posts/11ty-bundle-1/"
+  to = "https://www.bobmonsour.com/posts/11ty-bundle-1-4//"
+  status = 301

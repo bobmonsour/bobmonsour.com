@@ -4,7 +4,7 @@ date: 2023-04-18
 tags:
   - 11ty
   - 11ty Bundle
-description: An occasional bundle of Eleventy releases, blog posts, sites, and resources.
+description: These have been moved to 11tybundle.dev.
 keywords: eleventy, newsletter, roundup, news
 image:
   source: "11ty-bundle-4.jpg"
@@ -12,6 +12,7 @@ image:
   caption: "An AI-generated image of the number eleven"
 pageID: bundle
 bundleIssue: 4
+eleventyExcludeFromCollections: true
 ---
 
 {% include 'partials/bundlenothere.md' %}

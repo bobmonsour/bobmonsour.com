@@ -12,6 +12,7 @@ image:
   caption: "An AI-generated image of the number eleven"
 pageID: bundle
 bundleIssue: 3
+eleventyExcludeFromCollections: true
 ---
 
 {% include 'partials/bundlenothere.md' %}
