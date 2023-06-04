@@ -10,7 +10,7 @@ image:
   alt: "child playing with abbacus"
   creditPerson: "luis arias"
   creditLink: "https://unsplash.com/@luism_arias"
-draft: true
+draft: false
 pageHasCode: false
 showImage: false
 ---
