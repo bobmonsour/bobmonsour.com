@@ -15,6 +15,8 @@ pageHasCode: false
 showImage: false
 ---
 
+> UPDATE 2023-06-22: I wrote about how I addressed the question posed here in [Issue 9 of the 11ty Bundle](https://11tybundle.dev/blog/11ty-bundle-9/).
+
 You may (or may not) know that I am the developer of the site [11tybundle.dev](https://11tybundle.dev/).
 
 The primary content on the site is a curated list of links to blog posts about the static site generator Eleventy. The posts are organized by category and by author. The links take the visitor directly to the site hosting the blog post.
