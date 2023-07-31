@@ -1,6 +1,6 @@
 ---
 title: Finding an exercise regimen that sticks
-date: 2023-04-12
+date: 2023-06-23
 tags:
   - personal
 description: At 67 years old, it was high time to find an exercise regimen that I could stick with...for a while.
