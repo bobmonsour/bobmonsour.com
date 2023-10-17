@@ -37,7 +37,9 @@
   {% if pageHasCode %}
     <link rel="stylesheet" href="{% getBundleFileUrl "css", "pageHasCode" %}">
   {% endif %}
-  <!-- Fathom - beautiful, simple website analytics -->
-  <script src="https://cdn.usefathom.com/script.js" data-site="MJGSVNXM" defer></script>
+  <!-- Fathom - beautiful, simple website analytics - do not include when site is in development mode-->
+  {% if site.env != "development" %}
+    <script src="https://cdn.usefathom.com/script.js" data-site="MJGSVNXM" defer></script>
+  {% endif %}
   <!-- / Fathom -->
 </head>
