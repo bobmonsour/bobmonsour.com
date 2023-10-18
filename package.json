@@ -28,7 +28,6 @@
     "cheerio": "^1.0.0-rc.12",
     "cross-env": "^7.0.3",
     "dotenv": "^16.0.3",
-    "eleventy-plugin-html-validate": "^0.0.5",
     "lodash": "^4.17.21",
     "netlify-plugin-cache": "^1.0.3",
     "path": "^0.12.7",
