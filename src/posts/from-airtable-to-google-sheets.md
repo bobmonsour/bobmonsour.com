@@ -10,6 +10,7 @@ image:
   alt: "The top portion of the Google Apps script to export a Google Sheet to json."
   caption: "A Google Apps script to export a sheet to json."
 showImage: true
+pageHasCode: true
 ---
 
 ## Table of Contents
@@ -23,6 +24,7 @@ showImage: true
 5. [A Workflow Tweak](#section5)
 6. [A Couple of Other Wins with this Approach](#section6)
 7. [Conclusion](#section7)
+8. [The Code](#section8)
 
 </div>
 
@@ -48,7 +50,7 @@ I had no doubt that there had to be a way to extract json data from a Google She
 
 I found [this post](https://thenewstack.io/how-to-convert-google-spreadsheet-to-json-formatted-text/) that appeared to be the answer to my prayers. It was from May 2022, so it seemed recent enough to be usable.
 
-It showed me how to make a Google Apps script and it even supplied a GitHub gist with the code. I hate to admit it, but I didn't understand all the code and how it worked, but at first glance, it looked plausible.
+It showed me how to make a Google Apps script and it even supplied a [GitHub gist](https://gist.githubusercontent.com/pamelafox/1878143/raw/6c23f71231ce1fa09be2d515f317ffe70e4b19aa/exportjson.js) with the code. I hate to admit it, but I didn't understand all the code and how it worked, but at first glance, it looked plausible.
 
 Before I even tried to get the data out of the Google Sheet, I made a Google Form to capture new data that it could add to the sheet. This was similar to the setup I had with Airtable. It was even better because with the Google form, all of the categories are listed on the form, so it's harder for me to miss selecting a category. In the Airtable form, there was a popup that I had to scroll through to select categories.
 
@@ -159,3 +161,97 @@ The second side effect is that it would be easier for me to open up the site to 
 I'm fine with the tradeoffs that I made here and I learned a lot.
 
 If you've gotten this far, thank you. I hope you've enjoyed this ramble. I'm still amazed at how well ChatGPT worked for me. I think it's very handy for small things like this.
+
+<section id='section8'></section>
+
+## 8. The Code
+
+Here's the code to the Google Apps script that does the work of exporting a Google Sheet to json. I've added comments to explain what's going on.
+
+```js
+// Used to export the data for the 11tybundle.dev site from a Google Sheet
+// The export feature is available as an extension to the Google Sheet.
+// The output is placed into a pop-up window at the end of execution.
+// A time-stamped file of the json is also placed in a file on my Google Drive.
+//
+function onOpen() {
+  var ui = SpreadsheetApp.getUi();
+  ui.createMenu("Export JSON").addItem("Export to JSON", "showJSON").addToUi();
+}
+
+function showJSON() {
+  var sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
+  var data = sheet.getDataRange().getValues();
+  var headers = data[0];
+
+  var jsonData = [];
+  for (var i = 1; i < data.length; i++) {
+    var row = data[i];
+    var obj = {};
+    for (var j = 0; j < headers.length; j++) {
+      if (row[j]) {
+        var key = headers[j];
+        var value = row[j].toString();
+        if (key === "Categories") {
+          value = value.split(",").map((item) => item.trim());
+        }
+        obj[key] = value;
+      }
+    }
+    jsonData.push(obj);
+  }
+
+  var jsonString = JSON.stringify(jsonData, null, 2);
+  displayPopup(jsonString);
+
+  // Save JSON to Google Drive
+  saveToDrive(jsonString);
+}
+
+function displayPopup(jsonString) {
+  var htmlOutput = HtmlService.createHtmlOutput("<pre>" + jsonString + "</pre>")
+    .setWidth(800)
+    .setHeight(600);
+  SpreadsheetApp.getUi().showModalDialog(htmlOutput, "Exported JSON");
+}
+
+function saveToDrive(data) {
+  var mainFolderName = "11ty";
+  var subFolderName = "allrecords history";
+
+  var mainFolders = DriveApp.getFoldersByName(mainFolderName);
+  var mainFolder;
+
+  if (mainFolders.hasNext()) {
+    mainFolder = mainFolders.next();
+  } else {
+    // If the main folder not found, create it
+    mainFolder = DriveApp.createFolder(mainFolderName);
+  }
+
+  // Check if the subfolder exists within the main folder
+  var subFolders = mainFolder.getFoldersByName(subFolderName);
+  var subFolder;
+
+  if (subFolders.hasNext()) {
+    subFolder = subFolders.next();
+  } else {
+    // If subfolder not found, create it inside the main folder
+    subFolder = mainFolder.createFolder(subFolderName);
+  }
+
+  // Construct filename with current date and time
+  var date = new Date();
+  var filename = Utilities.formatString(
+    "allrecords-%02d%02d%02d%02d%02d.json",
+    date.getMonth() + 1,
+    date.getDate(),
+    date.getFullYear() % 100,
+    date.getHours(),
+    date.getMinutes()
+  );
+
+  // Create the file in the specific subfolder
+  subFolder.createFile(filename, data, MimeType.PLAIN_TEXT);
+}
+```
