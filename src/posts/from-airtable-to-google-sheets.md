@@ -3,6 +3,7 @@ title: From Airtable to Google Sheets with Some AI
 date: 2023-10-17
 tags:
   - personal
+  - 11ty
 description: From paid to free, I've moved the 11tybundle.dev data from Airtable to Google Sheets.
 keywords: Airtable, Apps Script, json, 11tybundle.dev
 image:
@@ -29,6 +30,8 @@ pageHasCode: true
 </div>
 
 ---
+
+_[UPDATE: 10-30-2023]: I've abandoned this technique as it was, as they say, a fools errand. I have converted from this method to using the Google Sheets API to get the data at build time. Details can be found in [this recent post](/posts/scratch-that-use-google-sheets-api/)._
 
 <section id='section1'></section>
 
