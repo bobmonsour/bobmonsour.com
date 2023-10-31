@@ -268,3 +268,6 @@ footer .text {
 #bundlenothere {
   opacity: 0.1;
 }
+.strikethrough {
+  text-decoration: line-through;
+}

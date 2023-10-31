@@ -52,7 +52,7 @@ Example usage if you're looping over a set of blog posts:
 {% endraw %}
 ```
 
-I would have liked to have used similar syntax highlighting for the above line, but I couldn't figure out how to do that. While I am using the 11ty syntax highlighting plugin for the other code elements, I am using both nunjucks and markdown as template engines for markdown files. Nunjucks processes first and generates a reading time result. As a result, I dropped back and used the nunjucks raw tag instead.
+<p class="strikethrough">I would have liked to have used similar syntax highlighting for the above line, but I couldn't figure out how to do that. While I am using the 11ty syntax highlighting plugin for the other code elements, I am using both nunjucks and markdown as template engines for markdown files. Nunjucks processes first and generates a reading time result. As a result, I dropped back and used the nunjucks raw tag instead.</p>
 
 The reason that I place the readingtime.js filter file under my \_includes directory is so that I can include the exact code in the very blog post that you're reading now. That way, if the code changes, so does this post.
 
