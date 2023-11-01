@@ -1,5 +1,5 @@
 ---
-title: Pagination in a Javacsript template with Eleventy
+title: Pagination in a Javascript template with Eleventy
 date: 2023-10-31
 tags:
   - personal
