@@ -113,4 +113,19 @@ permalink: /firehose/
 {% endraw %}
 ```
 
+[UPDATE] I forgot to add how simple the CSS for the details element is for this setup.
+
+```css
+/* Firehose details and summary styles */
+details {
+  width: min(var(--main-element-max), 100vw - 1em);
+}
+summary {
+  padding: 1rem 0;
+  font-size: var(--font-size-lg);
+  font-weight: bold;
+  cursor: pointer;
+}
+```
+
 If you've got questions about any of this, please feel free to reach out to me on [Mastodon](https://indieweb.social/@bobmonsour).
