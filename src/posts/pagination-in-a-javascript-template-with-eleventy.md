@@ -9,7 +9,7 @@ keywords: Javascript template, eleventy, 11tybundle.dev
 image:
   source: "pagination-in-a-javacsript-template-with-eleventy.jpg"
   alt: "A notebook of pages"
-showImage: false
+showImage: true
 pageHasCode: true
 ---
 
