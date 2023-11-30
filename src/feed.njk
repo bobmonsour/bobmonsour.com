@@ -11,6 +11,7 @@ eleventyExcludeFromCollections: true
   <id>{{ site.url }}/</id>
   <author>
     <name>{{ site.author.name }}</name>
+    <url>{{ site.author.url }}</url>
     <email>{{ site.author.email }}</email>
   </author>
   {%- for post in collections.posts | reverse %}
