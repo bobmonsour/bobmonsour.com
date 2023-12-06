@@ -11,6 +11,7 @@ image:
   alt: "a screen with a few lines of CSS"
   creditPerson: "Pankaj Patel"
   creditLink: "https://unsplash.com/@pankajpatel"
+showImage: true
 pageHasCode: true
 ---
 

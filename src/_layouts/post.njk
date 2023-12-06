@@ -8,7 +8,7 @@ layout: default.njk
 
 {% from "macros.njk" import tagList %}
 
-<article class="post">
+<article class="post" data-pagefind-body>
   <h1 class="post-title">{{ title }}</h1>
   <p class="post-date">{{ date | formatPostDate }}</p>
   <p class="post-readingtime">{{ content | readingTime }}</p>
@@ -25,15 +25,17 @@ layout: default.njk
   {% endif %}
   {{ content | safe }}
   <hr>
-  {{ tagList(tags) }}
-  {%- if collections.posts %}
-    {%- set previousPost = collections.posts | getPreviousCollectionItem %}
-    {%- set nextPost = collections.posts | getNextCollectionItem %}
-    {%- if nextPost or previousPost %}
-      <ul class="post-nextprev">
-        {%- if previousPost %}<li>Previous: <a href="{{ previousPost.url }}">{{ previousPost.data.title }}</a></li>{% endif %}
-        {%- if nextPost %}<li>Next: <a href="{{ nextPost.url }}">{{ nextPost.data.title }}</a></li>{% endif %}
-      </ul>
+  <div data-pagefind-ignore>
+    {{ tagList(tags) }}
+    {%- if collections.posts %}
+      {%- set previousPost = collections.posts | getPreviousCollectionItem %}
+      {%- set nextPost = collections.posts | getNextCollectionItem %}
+      {%- if nextPost or previousPost %}
+        <ul class="post-nextprev">
+          {%- if previousPost %}<li>Previous: <a href="{{ previousPost.url }}">{{ previousPost.data.title }}</a></li>{% endif %}
+          {%- if nextPost %}<li>Next: <a href="{{ nextPost.url }}">{{ nextPost.data.title }}</a></li>{% endif %}
+        </ul>
+      {%- endif %}
     {%- endif %}
-  {%- endif %}
+  </div>
 </article>

@@ -10,6 +10,7 @@ image:
   source: "the-evolution-of-my-css-pipeline-in-eleventy-part-2.jpg"
   alt: "a screen containing a jumble of minified CSS"
   caption: A jumble of this site's minified CSS
+showImage: true
 pageHasCode: true
 ---
 

@@ -5,6 +5,16 @@
 	<a href="#main-content" id="visually-hidden">Skip to main content</a>
   {% include 'partials/header.njk' %}
   <main id="main-content">
+    {# Let's put the pagefind search stuff here for now #}
+    <link href="/pagefind/pagefind-ui.css" rel="stylesheet">
+    <script src="/pagefind/pagefind-ui.js"></script>
+    <div id="search"></div>
+    <script>
+        window.addEventListener('DOMContentLoaded', (event) => {
+            new PagefindUI({ element: "#search", showSubResults: true });
+        });
+    </script>
+    
     {# provide per-page styling via frontmatter #}
     {% if pageID %}
       <div id="{{ pageID }}">

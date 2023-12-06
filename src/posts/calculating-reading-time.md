@@ -10,6 +10,7 @@ image:
   alt: "a boy reading at sunset"
   creditPerson: "Aaron Burden"
   creditLink: "https://unsplash.com/@aaronburden"
+showImage: true
 pageHasCode: true
 ---
 

@@ -12,7 +12,6 @@ image:
   creditLink: "https://unsplash.com/@luism_arias"
 draft: false
 pageHasCode: false
-showImage: false
 ---
 
 > UPDATE 2023-06-22: I wrote about how I addressed the question posed here in [Issue 9 of the 11ty Bundle](https://11tybundle.dev/blog/11ty-bundle-9/).
