@@ -6,6 +6,7 @@
   "scripts": {
     "start": "cross-env ELEVENTY_ENV=development npx @11ty/eleventy --serve",
     "build": "cross-env ELEVENTY_ENV=production npx @11ty/eleventy",
+    "postbuild": "npm -y pagefind --site _site",
     "debug": "cross-env ELEVENTY_ENV=dev DEBUG=Eleventy* npx @11ty/eleventy --serve",
     "clean": "rimraf ./_site",
     "rs": "npm run clean && npm run start"
@@ -31,6 +32,7 @@
     "dotenv": "^16.0.3",
     "lodash": "^4.17.21",
     "netlify-plugin-cache": "^1.0.3",
+    "pagefind": "^1.0.4",
     "path": "^0.12.7",
     "postcss": "^8.4.21",
     "postcss-minify": "^1.1.0",
