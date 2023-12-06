@@ -6,7 +6,7 @@
   "scripts": {
     "start": "cross-env ELEVENTY_ENV=development npx @11ty/eleventy --serve",
     "build": "cross-env ELEVENTY_ENV=production npx @11ty/eleventy",
-    "postbuild": "npm -y pagefind --site _site",
+    "postbuild": "npx -y pagefind --site _site",
     "debug": "cross-env ELEVENTY_ENV=dev DEBUG=Eleventy* npx @11ty/eleventy --serve",
     "clean": "rimraf ./_site",
     "rs": "npm run clean && npm run start"
