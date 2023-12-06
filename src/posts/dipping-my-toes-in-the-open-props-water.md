@@ -10,7 +10,6 @@ image:
   alt: "a foot near the water at the beach"
   creditPerson: "carlyn suggs"
   creditLink: "https://unsplash.com/@carlynsuggs"
-showImage: true
 pageHasCode: true
 ---
 

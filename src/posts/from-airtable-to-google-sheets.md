@@ -2,7 +2,6 @@
 title: From Airtable to Google Sheets with Some AI
 date: 2023-10-17
 tags:
-  - personal
   - 11ty
 description: From paid to free, I've moved the 11tybundle.dev data from Airtable to Google Sheets.
 keywords: Airtable, Apps Script, json, 11tybundle.dev
