@@ -6,6 +6,7 @@ module.exports = function (eleventyConfig) {
     "src/assets/audio/",
     { "src/assets/favicon/*": "/" },
     "src/assets/img/",
+    "src/assets/js/",
     "src/robots.txt",
   ].forEach((path) => eleventyConfig.addPassthroughCopy(path));
 
