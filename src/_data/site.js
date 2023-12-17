@@ -9,6 +9,7 @@ module.exports = {
     name: "Bob Monsour",
     email: "bob.monsour@gmail.com",
   },
+  snow: "true",
   mainNavLinks: [
     { url: "/archive/", text: "Archive" },
     { url: "/about/", text: "About" },
