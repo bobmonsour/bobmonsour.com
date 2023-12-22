@@ -96,29 +96,21 @@ img[width][height] {
 
 /* main content constrained by viewport */
 main {
+  place-content: start;
   max-width: min(var(--page-width-max), 100vw - 1em);
-  margin-inline: auto;
 }
 
-/* brand & navigation (inside <header>) */
-.brand {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.brand-image {
-  aspect-ratio: 1 / 1;
-  width: min(100px, 10vw);
-  clip-path: circle(45%);
-}
+/* navigation */
 .brand-nav {
   display: flex;
-  gap: 1em;
-  text-align: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
   list-style: none;
   padding: 0;
+  text-align: center;
 }
 .brand-nav a {
+  margin: 0;
   padding: 0 5px;
 }
 /* highlight the nav element of the current page  */

@@ -2,23 +2,14 @@
 <html lang="en">
   {% include 'partials/head.njk' %}
 <body>
-  {% if site.snow == "true" %}
+  {% if snow == "true" %}
     <is-land on:media="(prefers-reduced-motion: no-preference)">
       <snow-fall style="--snow-fall-color: lightgray"></snow-fall">
     </is-land>
   {% endif %}
 	<a href="#main-content" id="visually-hidden">Skip to main content</a>
   {% include 'partials/header.njk' %}
-  <main id="main-content">
-    {# Let's put the pagefind search stuff here for now #}
-    <script src="/pagefind/pagefind-ui.js"></script>
-    <div id="search"></div>
-    <script>
-        window.addEventListener('DOMContentLoaded', (event) => {
-            new PagefindUI({ element: "#search", showSubResults: true });
-        });
-    </script>
-    
+  <main id="main-content">    
     {# provide per-page styling via frontmatter #}
     {% if pageID %}
       <div id="{{ pageID }}">

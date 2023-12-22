@@ -1,5 +1,5 @@
 ---
-title: Archives of Bob Monsour's Personal Site
+title: Archive
 description: These are the archives of the personal website of Bob Monsour.
 keywords: retired, web development, eleventy, tennis, archives
 image:
@@ -7,6 +7,6 @@ image:
   alt: "a picture of Bob's face as a boy"
 permalink: /archive/
 ---
-
+# {{ title }}
 {% set postlist = collections.posts | reverse %}
 {% include "postlist.njk" %}

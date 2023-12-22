@@ -132,6 +132,7 @@ module.exports = function (eleventyConfig) {
 
   // Add plugins
   //
+  //  - post graph
   //  - syntax highlighting
   //  - RSS feed generation
   //  - have eleventy process sass and post-process with lightning
@@ -139,6 +140,14 @@ module.exports = function (eleventyConfig) {
   //  - directory output to show at build time
   //  - eleventy bundle plugin for CSS (and JS and more)
   //
+  const postGraph = require('@rknightuk/eleventy-plugin-post-graph');
+  eleventyConfig.addPlugin(postGraph, {
+    sort: 'desc',
+    boxColor: 'darkgrey',
+    highlightColor: 'red',
+    textColor: '#fff',
+    });
+
   const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
   eleventyConfig.addPlugin(syntaxHighlight);
 
