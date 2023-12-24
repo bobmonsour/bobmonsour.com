@@ -39,6 +39,7 @@ I'm seeing so many create their own list of default apps with Rob Knight's encou
 - <strong>contacts:</strong> Apple Contacts
 - <strong>personal finance:</strong> Google Sheets
 - <strong>maps:</strong> Google Maps
+- <strong>static site generator:</strong> [Eleventy](https://www.11ty.dev/)
 
 In case it's not apparent, [like Cory Dransfeldt](https://coryd.dev/posts/2023/leaning-into-google-services/), for the most part, I'm pretty much all in on Google.
 
