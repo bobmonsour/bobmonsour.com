@@ -7,6 +7,40 @@
   <meta name="keywords" content="{{ keywords }}">
   <link rel="canonical" href="{{ site.url }}{{ page.url }}">
 
+  {# Improve RSS feed visibility #}
+  <link rel="alternate" type="application/rss+xml" title="Bob Monsour" href="https://www.bobmonsour.com/feed.xml" />
+
+  {# 
+    Load CSS
+    - pagefind
+    - site bundle
+    - conditional syntax highlighting
+  #}
+  <link href="/pagefind/pagefind-ui.css" rel="stylesheet">
+  {%- css %}
+    {% include "css/reset.css" %}
+    {% include "css/variables.css" %}
+    {% include "css/main.css" %}
+  {% endcss %}
+  <link rel="stylesheet" href="{% getBundleFileUrl "css" %}">
+  {% if pageHasCode %}
+    <link rel="preload" href="{% getBundleFileUrl "css", "pageHasCode" %}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+      <link href="{% getBundleFileUrl "css", "pageHasCode" %}" rel="stylesheet">
+    </noscript>
+  {% endif %}
+
+  {# Fathom Analytics #}
+  {% if site.env != "development" %}
+    <script src="https://cdn.usefathom.com/script.js" data-site="MJGSVNXM" defer></script>
+  {% endif %}
+
+  {# conditionally add snow fall component based on front matter #}
+  {% if snow == "true" %}
+    <script type="module" src="/assets/js/snow-fall.js"></script>
+    <script type="module" src="/assets/js/is-land.js"></script>
+  {% endif %}
+
   {# favicon settings #}
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -24,35 +58,6 @@
   <meta property="og:url" content="{{ site.url }}{{ page.url }}">
   <meta name="generator" content="{{ eleventy.generator }}">
 
-  {# Improve RSS feed visibility #}
-  <link rel="alternate" type="application/rss+xml" title="Bob Monsour" href="https://www.bobmonsour.com/feed.xml" />
-
-  <link href="/pagefind/pagefind-ui.css" rel="stylesheet">
-
-  {# bundle the CSS content used on all pages and get the link to the bundle #}
-  {%- css %}
-    {% include "css/reset.css" %}
-    {% include "css/variables.css" %}
-    {% include "css/main.css" %}
-  {% endcss %}
-
-  <link rel="stylesheet" href="{% getBundleFileUrl "css" %}">
-
-  {# if there's syntax highlighted code on the page, add the required stylesheet #}
-  {% if pageHasCode %}
-    <link rel="preload" href="{% getBundleFileUrl "css", "pageHasCode" %}" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript>
-      <link href="{% getBundleFileUrl "css", "pageHasCode" %}" rel="stylesheet">
-    </noscript>
-  {% endif %}
-  <!-- Fathom - beautiful, simple website analytics - do not include when site is in development mode-->
-  {% if site.env != "development" %}
-    <script src="https://cdn.usefathom.com/script.js" data-site="MJGSVNXM" defer></script>
-  {% endif %}
-  <!-- / Fathom -->
-  {# Add snow fall component if site.snow == "true" #}
-  {% if snow == "true" %}
-    <script type="module" src="/assets/js/snow-fall.js"></script>
-    <script type="module" src="/assets/js/is-land.js"></script>
-  {% endif %}
+  {# diagnostic for head tag loading order #}
+  {# <link rel="stylesheet" href="https://csswizardry.com/ct/ct.css" class="ct" /> #}
 </head>
