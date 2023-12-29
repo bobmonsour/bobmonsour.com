@@ -65,14 +65,6 @@ hr {
   border-block-start: 2px solid var(--dark-accent-color);
 }
 
-/* default <blockquote> */
-.post > blockquote {
-  grid-column: feature;
-  border-inline-start: thick solid var(--dark-accent-color);
-  font-style: italic;
-  padding: 0 min(1em, 4vw);
-}
-
 /* default audio */
 audio {
   display: block;
@@ -94,9 +86,9 @@ img[width][height] {
   height: auto; /* Preserve aspect ratio */
 }
 
-/* main content constrained by viewport */
+/* main content constrained by max body width */
 .content {
-  --gap: clamp(1rem, 6vw, 3rem);
+  --gap: clamp(0.25rem, 3vw, 1rem);
   --full: minmax(var(--gap), 1fr);
   --content: min(65ch, 100% - var(--gap) * 2);
   --popout: minmax(0, 2rem);
@@ -114,19 +106,23 @@ img[width][height] {
     var(--full) [full-end];
 }
 
-.content > * {
+.content > *,
+.post > * {
   grid-column: content;
 }
 
-.popout {
+.popout,
+.post > .popout {
   grid-column: popout;
 }
 
-.feature {
+.feature,
+.post > .feature {
   grid-column: feature;
 }
 
-.full {
+.full,
+.post > .full {
   grid-column: full;
 }
 
@@ -174,24 +170,13 @@ img[width][height] {
   padding-inline: 0;
 }
 
-/* post elements */
+/* full display of a post; not the card style used in home and archive */
 .post {
   grid-column: full;
   display: grid;
   grid-template-columns: inherit;
 }
-.post > * {
-  grid-column: content;
-}
-.post > .popout {
-  grid-column: popout;
-}
-.post > .feature {
-  grid-column: feature;
-}
-.post > .full {
-  grid-column: full;
-}
+
 .post-title {
   font-size: var(--post-title-full-size);
   line-height: 1.2;
@@ -202,15 +187,23 @@ img[width][height] {
   font-size: var(--post-info-full-size);
   text-align: center;
   font-style: italic;
-  margin-block: 0.25em;
+  margin-block: 0.25em 0;
 }
 .post-taglist {
-  display: inline-flex;
   align-items: center;
-  list-style: none;
-  margin-block: 0.5em;
-  padding-inline-start: 0;
+  display: flex;
   font-size: var(--post-tag-size);
+  justify-content: center;
+  list-style: none;
+  margin: 0.25em 0;
+  padding: 0;
+}
+.post > blockquote {
+  grid-column: feature;
+  border-inline-start: thin solid var(--dark-accent-color);
+  font-style: italic;
+  font-size: var(--font-size-lg);
+  padding: 0 min(1em, 4vw);
 }
 .post-nextprev {
   list-style: none;
@@ -226,42 +219,31 @@ img[width][height] {
 }
 /* first paragraph after an image is always a caption */
 picture + p {
-  grid-column: full;
+  grid-column: content;
   text-align: center;
   font-size: var(--caption-size);
 }
-
+/* display code as feature width */
 .post > pre {
   grid-column: feature;
 }
+/* end full post elements */
 
-/* used in list of posts */
+/* list of posts metadata on home and archive pages */
+/* as seen in postlist.njk */
 .post-card {
-  margin-block-start: 1em;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1em;
-}
-.post-card .post-metadata,
-.post-card .post-image {
-  flex-basis: min(500px, 100% - 0.25em);
+  align-items: center;
+  margin-block-start: 1em;
 }
 .post-card .post-title {
   font-size: var(--post-title-card-size);
-  margin-block-start: 0;
-  text-align: left;
+  text-wrap: balance;
+  text-align: center;
 }
-.post-card .post-date {
-  text-align: left;
-}
-.post-card .post-excerpt {
-  font-size: var(--post-excerpt-card-size);
-  margin-block: 0.5em;
-  line-height: 1.25;
-}
-/* end post elements */
+/* end post card elements */
 
 /* page footer */
 footer {

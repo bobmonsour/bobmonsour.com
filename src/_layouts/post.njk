@@ -9,7 +9,7 @@ layout: default.njk
 {% from "macros.njk" import tagList %}
 
 <article class="post" data-pagefind-body>
-  <h1 class="post-title full">{{ title }}</h1>
+  <h1 class="post-title">{{ title }}</h1>
   <p class="post-date">{{ date | formatPostDate }}</p>
   <p class="post-readingtime">{{ content | readingTime }}</p>
   {{ tagList(tags) }}
@@ -26,7 +26,6 @@ layout: default.njk
   {{ content | safe }}
   <hr>
   <div data-pagefind-ignore>
-    {{ tagList(tags) }}
     {%- if collections.posts %}
       {%- set previousPost = collections.posts | getPreviousCollectionItem %}
       {%- set nextPost = collections.posts | getNextCollectionItem %}

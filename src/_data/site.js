@@ -11,7 +11,7 @@ module.exports = {
   },
   snow: "true",
   mainNavLinks: [
-    { url: "/", text: "Home" },
+    { url: "/", text: "BM" },
     { url: "/archive/", text: "Archive" },
     { url: "/search/", text: "Search" },
     { url: "/stats/", text: "Stats" },
