@@ -62,7 +62,7 @@ li {
 
 /* default <hr> */
 hr {
-  border-block-start: 2px solid var(--dark-accent-color);
+  border-block-start: 1px dotted var(--dark-accent-color);
 }
 
 /* default audio */
