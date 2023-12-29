@@ -2,7 +2,6 @@
 title: Scratch that...use the Google Sheets API
 date: 2023-10-30
 tags:
-  - personal
   - 11ty
 description: Just generating a json file from Google Sheets was not good enough. I had to use the API.
 keywords: Google Sheets, API, 11tybundle.dev

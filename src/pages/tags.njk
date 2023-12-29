@@ -18,7 +18,7 @@ image:
   alt: "a picture of Bob's face as a boy"
 ---
 
-<h2>Tagged “{{ tag }}”</h2>
+<h1>Tagged “{{ tag }}”</h1>
 
 {% set postlist = collections[ tag ] | reverse %}
 {% include "postlist.njk" %}

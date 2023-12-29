@@ -7,18 +7,14 @@
       <snow-fall style="--snow-fall-color: lightgray"></snow-fall">
     </is-land>
   {% endif %}
+
 	<a href="#main-content" id="visually-hidden">Skip to main content</a>
+
   {% include 'partials/header.njk' %}
-  <main id="main-content">    
-    {# provide per-page styling via frontmatter #}
-    {% if pageID %}
-      <div id="{{ pageID }}">
-        {{ content | safe }}
-      </div>
-    {% else %}
-      {{ content | safe }}
-    {% endif %}
+  <main id="main-content" class="content">
+    {{ content | safe }}
   </main>
   {% include 'partials/footer.njk' %}
+
 </body>
 </html>

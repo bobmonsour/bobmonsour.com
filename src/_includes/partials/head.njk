@@ -10,32 +10,33 @@
   {# Improve RSS feed visibility #}
   <link rel="alternate" type="application/rss+xml" title="Bob Monsour" href="https://www.bobmonsour.com/feed.xml" />
 
-  {# 
-    Load CSS
-    - pagefind
-    - site bundle
-    - conditional syntax highlighting
-  #}
-  <link href="/pagefind/pagefind-ui.css" rel="stylesheet">
+  {# conditionally load the syntax highlighting styles per front matter 'pageHasCode' #}
+  {% if pageHasCode %}
+    <link rel="stylesheet" href="{% getBundleFileUrl 'css', 'pageHasCode' %}" media="print" onload="this.media='all'">
+  	<noscript>
+	  	<link rel="stylesheet" href="{% getBundleFileUrl 'css', 'pageHasCode' %}">
+	  </noscript>
+  {% endif %}
+
+  {# conditionally load any page-specific styles per front matter 'stylelink' #}
+  {% if stylelink %}
+    <link href="{{stylelink}}" rel="stylesheet">
+  {% endif %}
+
+  {# load the critical CSS #}
   {%- css %}
     {% include "css/reset.css" %}
     {% include "css/variables.css" %}
     {% include "css/main.css" %}
   {% endcss %}
   <link rel="stylesheet" href="{% getBundleFileUrl "css" %}">
-  {% if pageHasCode %}
-    <link rel="preload" href="{% getBundleFileUrl "css", "pageHasCode" %}" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript>
-      <link href="{% getBundleFileUrl "css", "pageHasCode" %}" rel="stylesheet">
-    </noscript>
-  {% endif %}
 
   {# Fathom Analytics #}
   {% if site.env != "development" %}
     <script src="https://cdn.usefathom.com/script.js" data-site="MJGSVNXM" defer></script>
   {% endif %}
 
-  {# conditionally add snow fall component based on front matter #}
+  {# conditionally add snow fall component per front matter 'snow' #}
   {% if snow == "true" %}
     <script type="module" src="/assets/js/snow-fall.js"></script>
     <script type="module" src="/assets/js/is-land.js"></script>

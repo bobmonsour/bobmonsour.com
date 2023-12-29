@@ -8,8 +8,8 @@ image:
   source: "young-bob.jpg"
   alt: "a picture of Bob's face as a boy"
 ---
+<h1>{{ title }}</h1>
 <div class="alltags-list">
-<h2>{{ title }}</h2>
   <ul>
     {% for tag in collections.all | getAllTags | filterTagList %}
       {% set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}

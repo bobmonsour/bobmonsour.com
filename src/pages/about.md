@@ -6,9 +6,10 @@ image:
   source: "young-bob.jpg"
   alt: "a picture of Bob's face as a boy"
 permalink: /about/
-pageID: about
 ---
+
 # {{ title }}
+
 Brooklyn-born, New Jersey-raised, educated in Florida and Los Angeles. I'm now retired and living in Northern California.
 
 I've had the privilege of working in the technology industry from the late 70s through early 2000. I was fortunate to work on a lot of interesting projects, both on the technical side of things as well as the business side.
@@ -22,8 +23,6 @@ Most recently (meaning early 2023), I've fallen head over heels with the static 
 As of now, I'm envisioning creating a dedicated site for this set of resources. _UPDATE:_ [vision realized](https://11tybundle.dev/). Ultimately, I'd like to make it possible for members of the Eleventy community to submit their own resources for inclusion in the bundle. I'm not sure how I'll do that yet, but I'm sure I'll figure it out. The community is very active and supportive. I try to pitch in and answer some of the simpler questions on the Eleventy Discord server.
 
 I'm very glad that I've found something technically interesting and useful to sink my teeth into. I'm also glad that I've found a community of people who are willing to share their knowledge and help others. I'm looking forward to seeing what the future holds.
-
----
 
 You can find me on the social links in the footer. And that's an RSS feed on the right.
 

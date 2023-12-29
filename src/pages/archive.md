@@ -7,6 +7,7 @@ image:
   alt: "a picture of Bob's face as a boy"
 permalink: /archive/
 ---
-# {{ title }}
-{% set postlist = collections.posts | reverse %}
+
+<h1>{{ title }}</h1>
+{%- set postlist = collections.posts | reverse -%}
 {% include "postlist.njk" %}

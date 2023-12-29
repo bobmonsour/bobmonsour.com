@@ -8,9 +8,9 @@ image:
 permalink: /index.html
 snow: "true"
 ---
-
 {% set latest_posts = collections.posts | reverse %}
 {% set postlist = latest_posts.slice(0,3) %}
+
 {% include "postlist.njk" %}
 
 <h3><a href="/archive/" title="link to more blog posts in the archive">More posts in the Archive...</a></h3>

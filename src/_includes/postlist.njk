@@ -1,6 +1,7 @@
 {% from "macros.njk" import tagList %}
 
-{% for post in postlist %}
+<div class="full">
+{%- for post in postlist -%}
   <section class="post-card">
     <div class="post-metadata">
       <h2 class="post-title">
@@ -17,14 +18,15 @@
     <div class="post-image">
       <a href="{{ post.url }}">
         {# if the post is 1st or 2nd diplayed, load thier images eagerly #}
-        {%- if loop.index === 1 or loop.index === 2 %}
+        {%- if loop.index === 1 or loop.index === 2 -%}
           {% set loading = "eager" %}
-        {%- else %}
+        {%- else -%}
           {% set loading = "lazy" %}
-        {%- endif %}
-      {% set imageSource %}{{ post.data.imageDir + post.data.image.source }}{% endset %}
+        {%- endif -%}
+      {%- set imageSource %}{{ post.data.imageDir + post.data.image.source }}{% endset -%}
       {% image imageSource, post.data.image.alt, "(min-width: 540px) 500px, 95.45vw", loading %}</a>
     </div>
   </section>
-  {%- if not loop.last %}<hr>{% endif %}
-{% endfor %}
+  {%- if not loop.last -%}<hr>{%- endif -%}
+{%- endfor -%}
+</div>

@@ -6,7 +6,7 @@ image:
   source: "young-bob.jpg"
   alt: "a picture of Bob's face as a boy"
 permalink: /search/
-pageID: search
+stylelink: /pagefind/pagefind-ui.css
 ---
 # {{ title }}
 {# Let's put the pagefind search stuff here for now #}

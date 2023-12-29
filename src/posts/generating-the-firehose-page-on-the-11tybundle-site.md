@@ -48,6 +48,8 @@ Here's a glimpse of what is returned by that global data file (you can see the [
 
 The data is returned as an object with a bunch of properties. Here's a list of the properties and what they contain. Aside from the counts, they are largely arrays of objects.
 
+<div class="feature">
+
 ```js
 return {
   bundleRecords,
@@ -64,6 +66,8 @@ return {
 };
 ```
 
+</div>
+
 As you might imagine, this makes it very simple to generate all of the pages of the site. The Firehose page is no exception. The firehose array of posts is available as bundledata.firehose.
 
 <section id='section2'></section>
@@ -76,6 +80,8 @@ Once I realized that the simplest way to do the year by year collapsing of the p
 
 Here's what the template looks like.
 
+<div class="feature">
+
 ```yaml{% raw %}
 ---
 eleventyComputed:
@@ -85,6 +91,9 @@ permalink: /firehose/
 ---
 {% endraw %}
 ```
+
+</div>
+<div class="feature">
 
 ```jinja2{% raw %}
 <h1>{{ title }}</h1>
@@ -117,7 +126,11 @@ permalink: /firehose/
 {% endraw %}
 ```
 
+</div>
+
 [UPDATE] I forgot to add how simple the CSS for the details element is for this setup.
+
+<div class="feature">
 
 ```css
 /* Firehose details and summary styles */
@@ -131,5 +144,7 @@ summary {
   cursor: pointer;
 }
 ```
+
+</div>
 
 If you've got questions about any of this, please feel free to reach out to me on [Mastodon](https://indieweb.social/@bobmonsour).

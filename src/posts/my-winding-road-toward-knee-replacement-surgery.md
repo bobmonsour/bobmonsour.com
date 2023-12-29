@@ -107,7 +107,7 @@ So I made an appointment to see him and scheduled it before my date with Injecto
 
 Your roof is leaking
 
-_“Your roof is leaking. You can wait, but your roof will still be leaking. At some point, you’ll need to fix it.”_
+> “Your roof is leaking. You can wait, but your roof will still be leaking. At some point, you’ll need to fix it.”
 
 I asked him about the various injections, noting that cortisone and PRP did nothing for my right knee. I asked about visco-stuff and fat. He said that they didn’t work. I asked about CBD cream. He said that he has no problem leveraging the placebo effect. I chuckled. He did say, seriously, that it could reduce some of the pain pathways, taking the edge off and providing a level of calm.
 

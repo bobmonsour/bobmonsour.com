@@ -10,7 +10,6 @@ image:
   alt: "an AI-generated image of the number eleven"
   caption: "An AI-generated image of the number eleven"
 showImage: true
-pageID: bundle
 bundleIssue: 4
 ---
 
