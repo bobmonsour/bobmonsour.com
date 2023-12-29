@@ -10,6 +10,7 @@
     "postbuild": "npx -y pagefind --site _site",
     "postdev": "npx -y pagefind --site _site --serve",
     "debug": "cross-env ELEVENTY_ENV=dev DEBUG=Eleventy* npx @11ty/eleventy --serve",
+    "links": "npx check-html-links _site",
     "clean": "rimraf ./_site",
     "rs": "npm run clean && npm run start && npm run postdev",
     "rsns": "npm run clean && npm run startns"

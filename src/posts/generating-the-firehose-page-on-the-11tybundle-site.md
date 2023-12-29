@@ -70,7 +70,7 @@ return {
 
 As you might imagine, this makes it very simple to generate all of the pages of the site. The Firehose page is no exception. The firehose array of posts is available as bundledata.firehose.
 
-<section id='section2'></section>
+<section id='section3'></section>
 
 ## 3. The Firehose template
 
