@@ -8,6 +8,7 @@ image:
 permalink: /index.html
 snow: "true"
 ---
+<h1>{{ title }}</h1>
 {% set latest_posts = collections.posts | reverse %}
 {% set postlist = latest_posts.slice(0,3) %}
 
