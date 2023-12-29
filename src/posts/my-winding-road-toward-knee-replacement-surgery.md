@@ -67,7 +67,7 @@ At a follow-up appointment, the left knee felt much better. The MRI showed some 
 
 > Viscosupplementation is a procedure in which a thick fluid called hyaluronate is injected into the knee joint. There are no cures for osteoarthritis, so viscosupplementation will not cure osteoarthritis of the knee. However, **it is thought** that hyaluronate will improve the lubricating properties of the synovial fluid, reduce the pain from osteoarthritis of the knee, improve mobility, and provide a higher and more comfortable level of activity.
 
-The second one is called [Lipogems](https://www.lipogems.com/en/), where they take some fat from one part of your body, they break it down and then re-inject it into the knee.
+The second one is called Lipogems, where they take some fat from one part of your body, they break it down and then re-inject it into the knee.
 
 If I’m going to try another injection, how best to decide on which of these to choose? Most of the orthopedic doctors that I’ve looked at online offer viscosupplementation, but few seem to offer Lipogems. The breadth of availability of the visco-stuff would be one factor in my choice. And since the description of the visco-stuff said **“it is thought that hyaluronate** (aka, visco-stuff)**…will improve…**,” I decided to go with the visco-stuff.
 

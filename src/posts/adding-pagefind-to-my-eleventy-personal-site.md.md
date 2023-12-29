@@ -23,7 +23,7 @@ pageHasCode: true
 4. [Integrating with the production build](#section4)
 5. [Refining what gets indexed](#section5)
 6. [Styling the search box](#section6)
-6. [Conclusion](#section6)
+7. [Conclusion](#section6)
 
 </div>
 
@@ -55,7 +55,7 @@ I remember in the olden days when you wanted to add search to a site, you could 
 
 But in these modern times, far better solutions exist, especially for static sites like this one, built with tools like [Eleventy](https://www.11ty.dev/).
 
-I'd read about third-party search things like [Algolia](https://www.algolia.com/). But they felt like a lot more than I wanted or needed. Then I read about [pagefind from CloudCannon](https://cloudcannon.com/blog/introducing-pagefind/). And then a few months ago, as part of the Eleventy Meetup, the author, [Liam Bigelow](@bglw@fosstodon.org), gave [a presentation](https://www.youtube.com/watch?v=_4WsZeXMOKQ) showing how easy it was to integate with Eleventy. I was psyched. And, more recently, the project reached it's 1.0 milestone. I had no more excuses.
+I'd read about third-party search things like [Algolia](https://www.algolia.com/). But they felt like a lot more than I wanted or needed. Then I read about [pagefind from CloudCannon](https://cloudcannon.com/blog/introducing-pagefind/). And then a few months ago, as part of the Eleventy Meetup, the author, [Liam Bigelow](https://fosstodon.org/@bglw), gave [a presentation](https://www.youtube.com/watch?v=_4WsZeXMOKQ) showing how easy it was to integate with Eleventy. I was psyched. And, more recently, the project reached it's 1.0 milestone. I had no more excuses.
 
 If you're interested, you can [learn more about pagefind](https://pagefind.app/).
 
@@ -68,17 +68,17 @@ Like most things I try, it usually turns out to be a lot simpler than I expected
 To get this working in development, I just followed the [quick start](https://pagefind.app/docs/). I dropped the following code into the main section of my default page layout:
 
 ```html
-<link href="/pagefind/pagefind-ui.css" rel="stylesheet">
+<link href="/pagefind/pagefind-ui.css" rel="stylesheet" />
 <script src="/pagefind/pagefind-ui.js"></script>
 <div id="search"></div>
 <script>
-    window.addEventListener('DOMContentLoaded', (event) => {
-        new PagefindUI({ element: "#search", showSubResults: true });
-    });
+  window.addEventListener("DOMContentLoaded", (event) => {
+    new PagefindUI({ element: "#search", showSubResults: true });
+  });
 </script>
 ```
 
-Then, I ran a development build of the site, stopped it, and ran the following command to index and serve the site (note that my eleventy output directory is set to _site):
+Then, I ran a development build of the site, stopped it, and ran the following command to index and serve the site (note that my eleventy output directory is set to \_site):
 
 ```bash
 npx -y pagefind --site _site --serve
@@ -92,7 +92,7 @@ From there, I open the browser to localhost:1414, and voila, a working search ba
 
 With me being on the less impatient end of the patience spectrum, I immediately committed this to my repo and pushed it to production. And voila, there was no search bar anywhere to be found. As they say, read the f--king documentation! Rookie mistake, I know.
 
-So I went back to the docs and came to understand that I needed add a postbuild script to my package.json so that the index would be built right after eleventy did its thing. 
+So I went back to the docs and came to understand that I needed add a postbuild script to my package.json so that the index would be built right after eleventy did its thing.
 
 So I added the following script:
 
