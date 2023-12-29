@@ -5,13 +5,14 @@
   "main": ".eleventy.js",
   "scripts": {
     "start": "cross-env ELEVENTY_ENV=development npx @11ty/eleventy",
+    "startns": "cross-env ELEVENTY_ENV=development npx @11ty/eleventy --serve",
     "build": "cross-env ELEVENTY_ENV=production npx @11ty/eleventy",
     "postbuild": "npx -y pagefind --site _site",
     "postdev": "npx -y pagefind --site _site --serve",
     "debug": "cross-env ELEVENTY_ENV=dev DEBUG=Eleventy* npx @11ty/eleventy --serve",
     "clean": "rimraf ./_site",
     "rs": "npm run clean && npm run start && npm run postdev",
-    "rsns": "npm run clean && npm run start"
+    "rsns": "npm run clean && npm run startns"
   },
   "keywords": [],
   "author": {
