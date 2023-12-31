@@ -9,7 +9,6 @@ image:
   source: "finding-an-exercise-regimen-that-sticks.jpg"
   alt: "My home gym setup, a yoga mat, some kettlebells, and a balance cushion"
   caption: "My home gym setup: a yoga mat, some kettlebells, and a balance cushion"
-showImage: true
 ---
 
 ## Table of Contents

@@ -9,7 +9,6 @@ image:
   source: "my-knee.jpg"
   alt: "picture of my knee, prior to replacement surgery"
   caption: "My right knee…they say it needs to be replaced."
-showImage: true
 ---
 
 > _NOTE: This piece was [originally posted on Medium](https://medium.com/@bobmonsour/the-winding-road-toward-knee-replacement-surgery-b3e03f0bfcd7), on August 31st, 2020. I underwent total knee replacement surgery on November 5, 2020, smack in the middle of the pandemic. The good news is that the replacement went very well and now, 3 years later, I'm very glad I did it._

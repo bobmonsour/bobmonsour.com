@@ -9,7 +9,6 @@ image:
   source: "from-airtable-to-google-sheets.jpg"
   alt: "The top portion of the Google Apps script to export a Google Sheet to json."
   caption: "A Google Apps script to export a sheet to json."
-showImage: true
 pageHasCode: true
 ---
 

@@ -10,7 +10,6 @@ image:
   alt: "WTF in an office setting"
   creditPerson: "Igor Omilaev"
   creditLink: "https://unsplash.com/@omilaev"
-showImage: true
 ---
 
 I'm seeing so many create their own list of default apps with Rob Knight's encouragement. Robb is the one who started [this thing](https://defaults.rknight.me/). For your consideratio, I hereby offer my defaults (in no particular order).

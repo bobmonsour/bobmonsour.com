@@ -11,7 +11,6 @@ image:
   alt: "a man playing a Steinway piano"
   creditPerson: "Dolo Iglesias"
   creditLink: "https://unsplash.com/es/@dolodol"
-showImage: true
 ---
 
 ## Table of Contents

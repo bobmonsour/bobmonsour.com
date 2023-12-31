@@ -9,7 +9,6 @@ image:
   source: "scratch-that-use-google-sheets-api.png"
   alt: "Google sheet icon on the left, json output on the right"
   caption: "From Google Sheet to JSON via the API"
-showImage: true
 pageHasCode: true
 ---
 

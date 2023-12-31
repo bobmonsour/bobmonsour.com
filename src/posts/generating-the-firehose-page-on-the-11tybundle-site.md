@@ -8,7 +8,6 @@ keywords: firehose template, eleventy, 11tybundle.dev
 image:
   source: "generating-the-firehose-page-on-the-11tybundle-site.jpg"
   alt: "A notebook of pages"
-showImage: true
 pageHasCode: true
 ---
 

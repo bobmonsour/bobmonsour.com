@@ -11,7 +11,6 @@ image:
   alt: "a boy screaming into a microphone"
   creditPerson: "Jason Rosewell"
   creditLink: "https://unsplash.com/@jasonrosewell"
-showImage: true
 ---
 
 Welcome to the first post of my new site!
