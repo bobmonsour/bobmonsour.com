@@ -9,8 +9,11 @@
 
   {# Improve RSS feed visibility #}
   <link rel="alternate" type="application/rss+xml" title="Bob Monsour" href="https://www.bobmonsour.com/feed.xml" />
-
-  {# conditionally load the syntax highlighting styles per front matter 'pageHasCode' #}
+  {#
+    conditionally load the syntax highlighting styles per
+    front matter 'pageHasCode' in blog posts. the post.njk
+    layout declares the appropriate prismjs styles
+  #}
   {% if pageHasCode %}
     <link rel="stylesheet" href="{% getBundleFileUrl 'css', 'pageHasCode' %}" media="print" onload="this.media='all'">
   	<noscript>
@@ -19,11 +22,12 @@
   {% endif %}
 
   {# conditionally load any page-specific styles per front matter 'stylelink' #}
+  {# useful for overriding pagefind styles #}
   {% if stylelink %}
     <link href="{{stylelink}}" rel="stylesheet">
   {% endif %}
 
-  {# load the critical CSS #}
+  {# bundle the CSS content used on all pages and get the link to the bundle #}
   {%- css %}
     {% include "css/reset.css" %}
     {% include "css/variables.css" %}

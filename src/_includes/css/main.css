@@ -1,17 +1,17 @@
 /* default body styles */
 body {
   /* forces footer to bottom of page for short pages */
-  min-height: 100vh;
-  min-height: 100dvh;
+  background-color: #fff1e5; /* color from ft.com background */
+  color: black;
   display: grid;
-  grid-template-rows: auto 1fr auto;
-  width: min(var(--page-width-max), 100vw - 1em);
-  margin-inline: auto;
   font-family: var(--brand-font);
   font-size: var(--font-size-md);
-  color: black;
+  grid-template-rows: auto 1fr auto;
   line-height: 1.3;
-  background-color: #fff1e5; /* color from ft.com background */
+  margin-inline: auto;
+  min-height: 100vh;
+  min-height: 100dvh;
+  width: min(var(--page-width-max), 100vw - 1em);
   /* background-color: #f8f5d7; color from semafor.com background */
 }
 
@@ -86,7 +86,7 @@ img[width][height] {
   height: auto; /* Preserve aspect ratio */
 }
 
-/* main content constrained by max body width */
+/* main content constrained by body width */
 .content {
   --gap: clamp(0.25rem, 3vw, 1rem);
   --full: minmax(var(--gap), 1fr);
@@ -186,9 +186,9 @@ img[width][height] {
 .post-date,
 .post-readingtime {
   font-size: var(--post-info-full-size);
-  text-align: center;
   font-style: italic;
   margin-block: 0.25em 0;
+  text-align: center;
 }
 .post-taglist {
   align-items: center;
