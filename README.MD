@@ -4,4 +4,4 @@ It's a work in progress. It's built with [eleventy](https://www.11ty.dev/)...som
 
 Lots left to do...but I decided to get this up and running in the open. Watch if you're interested.
 
-[![Ceasefire Now](https://badge.techforpalestine.org/ceasefire-now)](https://techforpalestine.org/learn-more)
+[![Ceasefire Now](https://badge.techforpalestine.org/default)](https://techforpalestine.org/learn-more)
