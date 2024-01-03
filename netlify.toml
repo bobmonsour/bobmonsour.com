@@ -57,3 +57,9 @@ package = "netlify-plugin-cache"
   to = "https://www.bobmonsour.com/posts/11ty-bundle-1-4/"
   status = 301
   force = true
+
+[[redirects]]
+  from = "https://www.bobmonsour.com/tags/11ty-bundle/"
+  to = "https://www.bobmonsour.com/posts/11ty-bundle-1-4/"
+  status = 301
+  force = true
