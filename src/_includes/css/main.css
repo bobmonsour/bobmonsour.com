@@ -11,7 +11,7 @@ body {
   margin-inline: auto;
   min-height: 100vh;
   min-height: 100dvh;
-  width: min(var(--page-width-max), 100vw - 1em);
+  width: min(var(--page-width-max), 100vw - 0.5em);
   /* background-color: #f8f5d7; color from semafor.com background */
 }
 
