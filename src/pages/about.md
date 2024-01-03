@@ -10,7 +10,11 @@ permalink: /about/
 
 # {{ title }}
 
-Brooklyn-born, New Jersey-raised, educated in Florida and Los Angeles. I'm now retired and living in Northern California.
+<div class="about-img">
+  <img src="/assets/img/about-bob.jpg" alt="Bob circa 2009">
+</div>
+
+Brooklyn-born, New Jersey-raised, educated in Florida and Los Angeles. I'm now retired and living in Northern California with my wonderful [wife and artist](https://www.tascafineart.com/), Sandra, and our Portuguese Water Dog, Soda. Our son is out on his own and lives in the LA area. When we're not traveling, I enjoy trying to stay fit as I age with a combination of tennis and [kettlebell workouts](/posts/finding-an-excercise-regimen-that-sticks/).
 
 I've had the privilege of working in the technology industry from the late 70s through early 2000. I was fortunate to work on a lot of interesting projects, both on the technical side of things as well as the business side.
 

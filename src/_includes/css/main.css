@@ -86,6 +86,12 @@ img[width][height] {
   height: auto; /* Preserve aspect ratio */
 }
 
+.about-img {
+  margin: 2rem auto;
+}
+.about-img img {
+  clip-path: circle(50%);
+}
 /* main content constrained by body width */
 .content {
   --gap: clamp(0.25rem, 3vw, 1rem);
