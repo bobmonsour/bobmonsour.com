@@ -8,12 +8,15 @@ image:
 permalink: /search/
 stylelink: /pagefind/pagefind-ui.css
 ---
+
 # {{ title }}
+
 {# Let's put the pagefind search stuff here for now #}
+
 <script src="/pagefind/pagefind-ui.js"></script>
 <div id="search"></div>
 <script>
     window.addEventListener('DOMContentLoaded', (event) => {
-        new PagefindUI({ element: "#search", showSubResults: true });
+        new PagefindUI({ element: "#search", showSubResults: true, showImages: false });
     });
 </script>
