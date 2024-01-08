@@ -17,6 +17,6 @@ stylelink: /pagefind/pagefind-ui.css
 <div id="search"></div>
 <script>
     window.addEventListener('DOMContentLoaded', (event) => {
-        new PagefindUI({ element: "#search", showSubResults: true, showImages: false });
+        new PagefindUI({ element: "#search", showImages: false, autofocus: true, sort: { date: "desc" } });
     });
 </script>
