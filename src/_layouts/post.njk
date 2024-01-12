@@ -25,6 +25,10 @@ layout: default.njk
   {% endif %}
   {{ content | safe }}
   <hr>
+  {% set mentions = webmentions.mentions | webmentionsByUrl(page.url) %}
+  {% if  mentions.mentionCount > 0 %}
+    {% include 'partials/webmentions.njk' %}
+  {% endif %}
   <div data-pagefind-ignore>
     {%- if collections.posts %}
       {%- set previousPost = collections.posts | getPreviousCollectionItem %}

@@ -1,3 +1,7 @@
+// environment variable handling
+require("dotenv").config();
+const sanitizeHTML = require("sanitize-html");
+
 module.exports = function (eleventyConfig) {
   //
   // Set up file and directory passthroughs
@@ -30,7 +34,8 @@ module.exports = function (eleventyConfig) {
   //  - filter the post tag list to exclude a few collections
   //  - minify css for inline use
   //  - node inspection utility for debugging
-  //  - extract items from the Airtable data that forms the basis of the 11ty Bundle
+  //  - webmentions for a particular post
+  //  - create a plain date from an ISO date (for webmentions)
   //
   eleventyConfig.addFilter(
     "readingTime",
@@ -58,75 +63,20 @@ module.exports = function (eleventyConfig) {
     );
   });
 
-  // Extract releases, blog posts, and site items for the current issue
-  // of The 11ty Bundler from Airtable data; releases and blog posts
-  // are sorted by date, newest first.
-  eleventyConfig.addFilter(
-    "getBundleItems",
-    function getBundleItems(bundleitems, bundleIssue, itemType) {
-      return bundleitems
-        .filter(
-          (item) => bundleIssue == item["Issue"] && itemType == item["Type"]
-        )
-        .sort((a, b) => {
-          return a.Date > b.Date ? -1 : 1;
-        });
-    }
-  );
-
-  // getDescription - given a url, this Eleventy filter extracts the meta
-  // description from within the <head> element of a web page using the cheerio
-  // library.
-  //
-  // The full html content of the page is fetched using the eleventy-fetch plugin.
-  // If you have a lot of links from which you want to extract descriptions, the
-  // initial build time will be slow. However, the plugin will cache the content
-  // for a duration of your choosing (in this case, it's set to *, which will
-  // never fetch new data after the first success).
-  //
-  // The description is extracted from the <meta> element with the name attribute
-  // of "description".
-  //
-  // If no description is found, the filter returns an empty string. In the event
-  // of an error, the filter logs an error to the console and returns the string
-  // "(no description available)"
-  //
-  // Note that I have a .cache folder in my project root and added .cache to my
-  // .gitignore file. See https://www.11ty.dev/docs/plugins/fetch/#installation
-  //
-  const EleventyFetch = require("@11ty/eleventy-fetch");
-  const cheerio = require("cheerio");
-  eleventyConfig.addFilter(
-    "getDescription",
-    async function getDescription(link) {
-      try {
-        let htmlcontent = await EleventyFetch(link, {
-          duration: "*",
-          type: "buffer",
-        });
-        const $ = cheerio.load(htmlcontent);
-        // console.log(
-        //   "description: " + $("meta[name=description]").attr("content")
-        // );
-        const description = $("meta[name=description]").attr("content");
-        if (link.includes("youtube.com") || description == undefined) {
-          return "YouTube video";
-        } else {
-          return description;
-        }
-      } catch (e) {
-        console.log(
-          "Error fetching description for " + link + ": " + e.message
-        );
-        return "";
-      }
-    }
-  );
-
   const inspect = require("node:util").inspect;
   eleventyConfig.addFilter("inspect", function (obj = {}) {
     return inspect(obj, { sorted: true });
   });
+
+  eleventyConfig.addFilter(
+    "webmentionsByUrl",
+    require("./src/_includes/filters/webmentionsbyurl.js")
+  );
+
+  eleventyConfig.addFilter(
+    "plainDate",
+    require("./src/_includes/filters/plaindate.js")
+  );
 
   eleventyConfig.setQuietMode(true);
 

@@ -1,0 +1,37 @@
+{#
+  Take the mentions variable set in post.njk and list
+  the various types of mentions. I am including the following
+  types of mentions: replies, likes, and reposts.
+#}
+<div class="webmentions">
+  {% if mentions.comments %}
+  <h3>Comments ({{ mentions.comments | length }})</h3>
+  <div class="comments">
+    {% for item in mentions.comments %}
+      <div class="comment">
+        <a href="{{ item.author.url }}" class="comment-author"><img src="{{ item.author.photo}}" class="mention-image" /></a>
+        <p class="comment-content">{{ item.content | safe }}</p>
+        <p class="comment-date">{{ item.published | plainDate }}</p>
+      </div>
+    {% endfor %}
+  </div>
+  {% endif %}
+
+  {% if mentions.likes %}
+  <h3>Likes ({{ mentions.likes | length }})</h3>
+  <div class="likes">
+    {% for item in mentions.likes %}
+      <a href="{{ item.author.url }}"><img src="{{ item.photo }}" class="mention-image" /></a>
+    {% endfor %}
+  </div>
+  {% endif %}
+
+  {% if mentions.reposts %}
+  <h3>Reposts ({{ mentions.reposts | length }})</h3>
+  <div class="reposts">
+    {% for item in mentions.reposts %}
+      <a href="{{ item.author.url }}"><img src="{{ item.photo }}" class="mention-image" /></a>
+    {% endfor %}
+  </div>
+  {% endif %}
+</div>

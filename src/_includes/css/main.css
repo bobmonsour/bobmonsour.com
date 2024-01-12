@@ -281,3 +281,58 @@ footer .text {
 .strikethrough {
   text-decoration: line-through;
 }
+
+/* webmention styles */
+.webmentions {
+  grid-column: popout;
+  margin-block: 2em;
+}
+.mention-image {
+  border: 3px solid var(--dark-accent-color);
+  border-radius: 50%;
+  height: 3em;
+  width: 3em;
+}
+.mention-image:hover,
+.mention-image:focus {
+  background-color: none;
+  opacity: 0.8;
+  outline: 20px solid var(--light-accent-color);
+}
+.comment {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "image content"
+    "image date";
+}
+.comment a:has(img) {
+  border: none;
+}
+.comment-author {
+  grid-area: image;
+  grid-row: 1 / span 2;
+  align-self: center;
+  justify-self: center;
+}
+.comment-content {
+  margin: 0;
+  padding: 0;
+}
+.comment-date {
+  font-size: var(--font-size-base);
+  font-style: italic;
+  line-height: 1;
+}
+.likes,
+.reposts {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 1rem;
+}
+.likes a:has(img),
+.reposts a:has(img) {
+  border: none;
+  margin: -5px;
+}
