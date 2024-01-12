@@ -3,7 +3,7 @@
   the various types of mentions. I am including the following
   types of mentions: replies, likes, and reposts.
 #}
-<div class="webmentions">
+<div class="webmentions" id="webmentions">
   {% if mentions.comments %}
   <h3>Comments ({{ mentions.comments | length }})</h3>
   <div class="comments">

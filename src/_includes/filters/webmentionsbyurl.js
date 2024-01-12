@@ -62,7 +62,7 @@ module.exports = function webmentionsByUrl(webmentions, url) {
     .filter((mention) => allowedTypes.likes.includes(mention["wm-property"]))
     .filter((like) => like.author)
     .map((like) => like.author);
-  console.log(JSON.stringify(likes, null, 2));
+  // console.log(JSON.stringify(likes, null, 2));
 
   const reposts = pageWebmentions
     .filter((mention) => allowedTypes.reposts.includes(mention["wm-property"]))
