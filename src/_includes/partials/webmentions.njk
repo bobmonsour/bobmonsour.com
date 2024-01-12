@@ -21,7 +21,7 @@
   <h3>Likes ({{ mentions.likes | length }})</h3>
   <div class="likes">
     {% for item in mentions.likes %}
-      <a href="{{ item.author.url }}"><img src="{{ item.photo }}" class="mention-image" /></a>
+      <a href="{{ item.url }}"><img src="{{ item.photo }}" class="mention-image" /></a>
     {% endfor %}
   </div>
   {% endif %}
@@ -30,7 +30,7 @@
   <h3>Reposts ({{ mentions.reposts | length }})</h3>
   <div class="reposts">
     {% for item in mentions.reposts %}
-      <a href="{{ item.author.url }}"><img src="{{ item.photo }}" class="mention-image" /></a>
+      <a href="{{ item.url }}"><img src="{{ item.photo }}" class="mention-image" /></a>
     {% endfor %}
   </div>
   {% endif %}
