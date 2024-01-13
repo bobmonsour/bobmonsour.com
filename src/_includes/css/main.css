@@ -295,7 +295,7 @@ footer .text {
 }
 .mention-image:hover,
 .mention-image:focus {
-  background-color: none;
+  background-color: transparent;
   opacity: 0.8;
   outline: 20px solid var(--light-accent-color);
 }
