@@ -75,7 +75,7 @@ module.exports = function webmentionsByUrl(webmentions, url) {
       const { author, published, content } = comment;
       return author && author.name && published && content;
     });
-  console.log(JSON.stringify(comments, null, 2));
+  // console.log(JSON.stringify(comments, null, 2));
 
   const mentionCount = likes.length + reposts.length + comments.length;
 
