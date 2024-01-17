@@ -112,7 +112,10 @@ img[width][height] {
     var(--full) [full-end];
 }
 
-.content > *,
+.content > * {
+  grid-column: full;
+}
+
 .post > * {
   grid-column: content;
 }
@@ -176,12 +179,8 @@ img[width][height] {
   padding-inline: 0;
 }
 
-/* full display of a post; not the card style used in home and archive */
-.post {
-  grid-column: full;
-  display: grid;
-  grid-template-columns: inherit;
-}
+/* list of posts metadata on home and archive pages */
+/* as seen in postlist.njk */
 
 .post-title {
   font-size: var(--post-title-full-size);
@@ -205,39 +204,6 @@ img[width][height] {
   margin: 0.25em 0;
   padding: 0;
 }
-.post > blockquote {
-  grid-column: feature;
-  border-inline-start: thin solid var(--dark-accent-color);
-  font-style: italic;
-  font-size: var(--font-size-lg);
-  padding: 0 min(1em, 4vw);
-}
-.post-nextprev {
-  list-style: none;
-  margin: 0 0 0.5em 0;
-  padding-inline-start: 0;
-}
-.post-nextprev li:first-child {
-  margin-block: 1em;
-}
-/* show pictures at full width */
-.post > picture {
-  grid-column: full;
-}
-/* first paragraph after an image is always a caption */
-picture + p {
-  grid-column: content;
-  text-align: center;
-  font-size: var(--caption-size);
-}
-/* display code as feature width */
-.post > pre {
-  grid-column: feature;
-}
-/* end full post elements */
-
-/* list of posts metadata on home and archive pages */
-/* as seen in postlist.njk */
 .post-card {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -281,58 +247,30 @@ footer .text {
 .strikethrough {
   text-decoration: line-through;
 }
-
-/* webmention styles */
-.webmentions {
-  grid-column: popout;
-  margin-block: 2em;
-}
-.mention-image {
-  border: 3px solid var(--dark-accent-color);
+/* Scroll to top button */
+.stt {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  width: 3rem;
+  height: 3rem;
   border-radius: 50%;
-  height: 3em;
-  width: 3em;
+  background: #93bfcf
+    url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 384 512'%3E%3Cpath fill='currentColor' d='M352 352c-8.188 0-16.38-3.125-22.62-9.375L192 205.3l-137.4 137.4c-12.5 12.5-32.75 12.5-45.25 0s-12.5-32.75 0-45.25l160-160c12.5-12.5 32.75-12.5 45.25 0l160 160c12.5 12.5 12.5 32.75 0 45.25C368.4 348.9 360.2 352 352 352z'%3E%3C/path%3E%3C/svg%3E")
+    center no-repeat;
+  box-shadow: 0 0.25rem 0.5rem 0 gray;
+  opacity: 0.5;
 }
-.mention-image:hover,
-.mention-image:focus {
-  background-color: transparent;
-  opacity: 0.8;
-  outline: 20px solid var(--light-accent-color);
+.stt:hover,
+.stt:focus {
+  opacity: 0.5;
+  background-color: var(--link-hover-bg-color);
+  border-radius: 50%;
 }
-.comment {
-  display: grid;
-  grid-template-columns: 1fr 4fr;
-  grid-template-rows: auto auto;
-  grid-template-areas:
-    "image content"
-    "image date";
+.stt:active {
+  opacity: 0.5;
 }
-.comment a:has(img) {
-  border: none;
-}
-.comment-author {
-  grid-area: image;
-  grid-row: 1 / span 2;
-  align-self: center;
-  justify-self: center;
-}
-.comment-content {
-  margin: 0;
-  padding: 0;
-}
-.comment-date {
-  font-size: var(--font-size-base);
-  font-style: italic;
-  line-height: 1;
-}
-.likes,
-.reposts {
-  display: flex;
-  flex-wrap: wrap;
-  row-gap: 1rem;
-}
-.likes a:has(img),
-.reposts a:has(img) {
-  border: none;
-  margin: -5px;
+
+.strikethrough {
+  text-decoration: line-through;
 }

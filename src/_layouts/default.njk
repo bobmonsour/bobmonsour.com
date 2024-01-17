@@ -3,17 +3,17 @@
   {% include 'partials/head.njk' %}
 <body>
 
-  {% if snow == "true" %}
-    <is-land on:media="(prefers-reduced-motion: no-preference)">
-      <snow-fall style="--snow-fall-color: lightgray"></snow-fall>
-    </is-land>
-  {% endif %}
 
 	<a href="#main-content" id="visually-hidden">Skip to main content</a>
 
   {% include 'partials/header.njk' %}
 
   <main id="main-content" class="content">
+    {% if snow == "true" %}
+      <is-land on:media="(prefers-reduced-motion: no-preference)">
+        <snow-fall style="--snow-fall-color: lightgray"></snow-fall>
+      </is-land>
+    {% endif %}
     {{ content | safe }}
   </main>
 

@@ -5,5 +5,6 @@
   "tags": "posts",
   "showImage": false,
   "keywords": "retired, web development, eleventy, tennis",
-  "snow": "false"
+  "snow": "false",
+  "pagestyle": "post"
 }

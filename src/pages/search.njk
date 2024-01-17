@@ -1,0 +1,24 @@
+---
+title: Search
+description: Search this site
+keywords: search
+image:
+  source: "young-bob.jpg"
+  alt: "a picture of Bob's face as a boy"
+permalink: /search/
+pagestyle: search
+---
+
+<h1>{{ title }}</h1>
+
+{# add the pagefind search stuff here #}
+
+<div class="popout">
+  <script src="/pagefind/pagefind-ui.js"></script>
+  <div id="search"></div>
+  <script>
+      window.addEventListener('DOMContentLoaded', (event) => {
+          new PagefindUI({ element: "#search", showImages: false, autofocus: true, sort: { date: "desc" } });
+      });
+  </script>
+</div>

@@ -25,10 +25,9 @@
 	  </noscript>
   {% endif %}
 
-  {# conditionally load any page-specific styles per front matter 'stylelink' #}
-  {# useful for overriding pagefind styles #}
-  {% if stylelink %}
-    <link href="{{stylelink}}" rel="stylesheet">
+  {# conditionally load the search page styles #}
+  {% if pagestyle == "search" %}
+   <link rel="stylesheet" href="/pagefind/pagefind-ui.css">
   {% endif %}
 
   {# bundle the CSS content used on all pages and get the link to the bundle #}
@@ -38,6 +37,12 @@
     {% include "css/main.css" %}
   {% endcss %}
   <link rel="stylesheet" href="{% getBundleFileUrl "css" %}">
+
+  {# conditionally load any page-specific styles per front matter 'pagestyle' #}
+  {# used for full post pages #}
+  {% if pagestyle == "post" %}
+    <link rel="stylesheet" href="{% getBundleFileUrl 'css', 'pageSpecific' %}" media="print" onload="this.media='all'">
+  {% endif %}
 
   {# Fathom Analytics #}
   {% if site.env != "development" %}
