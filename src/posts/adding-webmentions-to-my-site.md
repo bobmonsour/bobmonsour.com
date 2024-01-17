@@ -38,7 +38,7 @@ I had told myself that I wouldn't do this...but, seeing them on other people's s
 
 The post that got me hooked was by [Cory Dransfeldt](https://coryd.dev/). It was [this one](https://coryd.dev/posts/2023/i-removed-tailwind-from-my-site/) where I saw the comments I had made on Mastodon about one of his posts. And since I'm on Mastodon and the mentions were sourced from there, it felt like a worthwhile endeavor.
 
-I had recalled reading about them on various people's sites and it looked pretty complicated. In search of another way to get feedback, I had installed [gisqus](https://giscus.app/) on the [https://11tybundle.dev](11tybundle.dev) site. After several months, I had gotten a single comment and decided to scrap it.
+I had recalled reading about them on various people's sites and it looked pretty complicated. In search of another way to get feedback, I had installed [gisqus](https://giscus.app/) on the [https://11tybundle.dev](https://11tybundle.dev) site. After several months, I had gotten a single comment and decided to scrap it.
 
 I have to say that I was helped in this effort by the many bloggers who took this on and wrote about it. They're all right there in the [Webmentions category](https://11tybundle.dev/categories/webmentions/) on 11tybundle.dev. In other words, I stand on the shoulders of giants. They're listed individually in the [References](#section8) section at the end of this post.
 
