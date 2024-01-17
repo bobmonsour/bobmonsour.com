@@ -1,14 +1,10 @@
 ---
 layout: default.njk
-pagestyle: true
 ---
 {# only include syntax highlighter CSS on blog posts that have code #}
 {% if pageHasCode %}
   {%- css "pageHasCode" %}{% include "css/prism-okaidia.css" %}{% endcss %}
 {% endif %}
-
-{# add CSS for page-specific styles #}
-{% css "pageSpecific" %}{% include "css/post.css" %}{% endcss %}
 
 {% from "macros.njk" import tagList %}
 

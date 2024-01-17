@@ -1,4 +1,5 @@
 ---
+layout: plain.njk
 title: About
 description: A few notes about Bob Monsour.
 keywords: retired, web development, eleventy, tennis, about
@@ -6,19 +7,13 @@ image:
   source: "young-bob.jpg"
   alt: "a picture of Bob's face as a boy"
 permalink: /about/
-pagestyle: post
 ---
-
-{# add CSS for page-specific styles #}
-{% css "pageSpecific" %}{% include "css/post.css" %}{% endcss %}
 
 # {{ title }}
 
 <div class="about-img">
   <img src="/assets/img/about-bob.jpg" alt="Bob circa 2009">
 </div>
-
-<div class="post">
 
 Brooklyn-born, New Jersey-raised, educated in Florida and Los Angeles. I'm now retired and living in Northern California with my wonderful [wife and artist](https://www.tascafineart.com/), Sandra, and our Portuguese Water Dog, Soda. Our son is out on his own and lives in the LA area. When we're not traveling, I enjoy trying to stay fit as I age with a combination of tennis and [kettlebell workouts](/posts/finding-an-excercise-regimen-that-sticks/).
 
@@ -37,5 +32,3 @@ I'm very glad that I've found something technically interesting and useful to si
 You can find me on the social links in the footer. And that's an RSS feed on the right.
 
 Most of the pages on the site are using the Classical Humanist fonts from [Modern Font Stacks](https://modernfontstacks.com/), a set of system fonts that look similar across browsers and operating systems. This eliminates the need to load a font from an external source.
-
-</div>

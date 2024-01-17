@@ -38,12 +38,6 @@
   {% endcss %}
   <link rel="stylesheet" href="{% getBundleFileUrl "css" %}">
 
-  {# conditionally load any page-specific styles per front matter 'pagestyle' #}
-  {# used for full post pages #}
-  {% if pagestyle == "post" %}
-    <link rel="stylesheet" href="{% getBundleFileUrl 'css', 'pageSpecific' %}" media="print" onload="this.media='all'">
-  {% endif %}
-
   {# Fathom Analytics #}
   {% if site.env != "development" %}
     <script src="https://cdn.usefathom.com/script.js" data-site="MJGSVNXM" defer></script>
