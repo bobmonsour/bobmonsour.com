@@ -7,7 +7,7 @@
     <p class="post-date">{{ post.date | formatPostDate }}</p>
     <p class="post-readingtime">{{ post.content | readingTime }}</p>
     {% set tagsdata = post.data.tags %}
-    {% include 'partials/taglist.njk' %}
+    {% include 'taglist.njk' %}
   </div>
   <div class="post-image">
     <a href="{{ post.url }}">

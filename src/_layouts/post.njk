@@ -13,9 +13,9 @@ layout: default.njk
   <p class="post-date">{{ date | formatPostDate }}</p>
   <p class="post-readingtime">{{ content | readingTime }}</p>
   {% set tagsdata = tags %}
-  {% include 'partials/taglist.njk' %}
-  {% include 'partials/showimage.njk' %}
+  {% include 'taglist.njk' %}
+  {% include 'showimage.njk' %}
   {{ content | safe }}
-  {% include 'partials/webmentions.njk' %}
-  {% include 'partials/nextprevlinks.njk' %}
+  {% include 'webmentions.njk' %}
+  {% include 'nextprevlinks.njk' %}
 </article>

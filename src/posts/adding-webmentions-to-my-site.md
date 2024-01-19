@@ -213,7 +213,7 @@ So, to start, I added these few lines to the post template:
 ```jinja2{% raw %}
 {% set mentions = webmentions.mentions | webmentionsByUrl(page.url) %}
 {% if  mentions.mentionCount > 0 %}
-  {% include 'partials/webmentions.njk' %}
+  {% include 'webmentions.njk' %}
 {% endif %}{% endraw %}
 ```
 

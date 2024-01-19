@@ -248,10 +248,10 @@ Those elements are all included in header.njk and if I look at my default layout
 ```jinja2 {% raw %}
 <!DOCTYPE html>
 <html lang="en">
-  {% include 'partials/head.njk' %}
+  {% include 'head.njk' %}
 <body>
   <a href="#main-content" id="visually-hidden">Skip to main content</a>
-  {% include 'partials/header.njk' %}
+  {% include 'header.njk' %}
 {% endraw %}
 ```
 
