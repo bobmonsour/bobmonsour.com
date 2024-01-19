@@ -4,7 +4,7 @@ module.exports = {
   description:
     "The personal website of Bob Monsour. Enjoying learning and deploying websites with 11ty and Netlify.",
   url: "https://www.bobmonsour.com",
-  language: "en",
+  locale: "en",
   author: {
     name: "Bob Monsour",
     email: "bob.monsour@gmail.com",
