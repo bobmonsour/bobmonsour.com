@@ -3,42 +3,19 @@ layout: default.njk
 ---
 {# only include syntax highlighter CSS on blog posts that have code #}
 {% if pageHasCode %}
-  {%- css "pageHasCode" %}{% include "css/prism-okaidia.css" %}{% endcss %}
+  {%- css "pageHasCode" %}
+    {% include "css/prism-okaidia.css" %}
+  {% endcss %}
 {% endif %}
-
-{% from "macros.njk" import tagList %}
 
 <article class="post" data-pagefind-body>
   <h1 class="post-title">{{ title }}</h1>
   <p class="post-date">{{ date | formatPostDate }}</p>
   <p class="post-readingtime">{{ content | readingTime }}</p>
-  {{ tagList(tags) }}
-  {% if showImage %}
-    {% set imageSource %}{{ imageDir + image.source }}{% endset %}
-    {% image imageSource, image.alt, "100vw", "eager" %}
-  {% endif %}
-  {% if showImage and image.creditPerson and image.creditLink%}
-    <p>Photo by <a href="{{ image.creditLink }}">{{ image.creditPerson }}</a></p>
-  {% endif %}
-  {% if showImage and image.caption %}
-    <p>{{ image.caption }}</p>
-  {% endif %}
+  {% set tagsdata = tags %}
+  {% include 'partials/taglist.njk' %}
+  {% include 'partials/showimage.njk' %}
   {{ content | safe }}
-  <hr>
-  {% set mentions = webmentions.mentions | webmentionsByUrl(page.url) %}
-  {% if  mentions.mentionCount > 0 %}
-    {% include 'partials/webmentions.njk' %}
-  {% endif %}
-  <div data-pagefind-ignore>
-    {%- if collections.posts %}
-      {%- set previousPost = collections.posts | getPreviousCollectionItem %}
-      {%- set nextPost = collections.posts | getNextCollectionItem %}
-      {%- if nextPost or previousPost %}
-        <ul class="post-nextprev">
-          {%- if previousPost %}<li>Previous: <a href="{{ previousPost.url }}">{{ previousPost.data.title }}</a></li>{% endif %}
-          {%- if nextPost %}<li>Next: <a href="{{ nextPost.url }}">{{ nextPost.data.title }}</a></li>{% endif %}
-        </ul>
-      {%- endif %}
-    {%- endif %}
-  </div>
+  {% include 'partials/webmentions.njk' %}
+  {% include 'partials/nextprevlinks.njk' %}
 </article>

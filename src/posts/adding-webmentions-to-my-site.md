@@ -293,6 +293,6 @@ Needless to say, I'll be adding this post to those of the giants who made this a
 - [webmention.io](https://github.com/aaronpk/webmention.io)
 - [Bridgy](https://brid.gy/)
 
-AND...all togeher now...Enjoy!
+AND...all together now...Enjoy!
 
-[https://11tybundle.dev/categories/webmentions/](https://11tybundle.dev/categories/webmentions/)
+- [https://11tybundle.dev/categories/webmentions/](https://11tybundle.dev/categories/webmentions/)

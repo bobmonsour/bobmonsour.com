@@ -8,7 +8,6 @@ keywords: 11ty, eleventy, outbound links, link tracking, analytics, popularity
 image:
   source: "question-how-to-count-outbound-links.jpg"
   alt: "child playing with abbacus"
-draft: false
 pageHasCode: false
 ---
 

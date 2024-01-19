@@ -1,5 +1,3 @@
-{% from "macros.njk" import tagList %}
-
 {%- for post in postlist -%}
 <section class="post-card">
   <div class="post-metadata">
@@ -8,11 +6,12 @@
     </h2>
     <p class="post-date">{{ post.date | formatPostDate }}</p>
     <p class="post-readingtime">{{ post.content | readingTime }}</p>
-    {{ tagList(post.data.tags) }}
+    {% set tagsdata = post.data.tags %}
+    {% include 'partials/taglist.njk' %}
   </div>
   <div class="post-image">
     <a href="{{ post.url }}">
-      {# if the post is 1st or 2nd diplayed, load thier images eagerly #}
+      {# if the post is 1st or 2nd diplayed, load their images eagerly #}
       {%- if loop.index === 1 or loop.index === 2 -%}
         {% set loading = "eager" %}
       {%- else -%}
