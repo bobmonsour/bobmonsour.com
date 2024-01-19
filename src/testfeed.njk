@@ -6,9 +6,8 @@ eleventyExcludeFromCollections: true
 <feed xmlns="http://www.w3.org/2005/Atom" xml:base="{{ site.url }}">
   <title>{{ site.title }}</title>
   <link href="{{ permalink | absoluteUrl(site.url) }}" rel="self"/>
-  <link href="{{ site.url }}"/>
   <updated>{{ collections.posts | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
-  <id>{{ site.url }}/</id>
+  <id>"{{ site.url }}/"</id>
   <author>
     <name>{{ site.author.name }}</name>
     <email>{{ site.author.email }}</email>
@@ -20,7 +19,9 @@ eleventyExcludeFromCollections: true
     <link href="{{ absolutePostUrl }}"/>
     <updated>{{ post.date | dateToRfc3339 }}</updated>
     <id>{{ absolutePostUrl }}</id>
-    <content xml:lang="" type="html">{{ post.content | safe }}</content>
+    <content xml:lang="" type="html">
+      {{ post.content | safe }}
+    </content>
   </entry>
   {%- endfor %}
 </feed>
