@@ -25,9 +25,12 @@
 	  </noscript>
   {% endif %}
 
-  {# conditionally load the search page styles #}
+  {#
+    conditionally load the search page styles
+    variables.css overrides the default styles
+  #}
   {% if pagestyle == "search" %}
-   <link rel="stylesheet" href="/pagefind/pagefind-ui.css">
+    <link rel="stylesheet" href="/pagefind/pagefind-ui.css">
   {% endif %}
 
   {# bundle the CSS content used on all pages and get the link to the bundle #}

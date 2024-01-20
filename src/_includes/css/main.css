@@ -11,7 +11,7 @@ body {
   margin-inline: auto;
   min-height: 100vh;
   min-height: 100dvh;
-  width: min(var(--page-width-max), 100vw - 0.5em);
+  width: min(var(--page-width-max), 100vw);
   /* background-color: #f8f5d7; color from semafor.com background */
 }
 
@@ -206,15 +206,17 @@ img[width][height] {
 }
 .post-card {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1em;
-  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
+  justify-items: center;
   margin-block-start: 1em;
 }
 .post-card .post-title {
   font-size: var(--post-title-card-size);
   text-wrap: balance;
   text-align: center;
+}
+.post-image {
+  border: 1px solid red;
 }
 /* end post card elements */
 
