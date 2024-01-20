@@ -96,9 +96,9 @@ img[width][height] {
 .content {
   --gap: clamp(0.25rem, 3vw, 1rem);
   --full: minmax(var(--gap), 1fr);
-  --content: min(65ch, 100% - var(--gap) * 2);
-  --popout: minmax(0, 2rem);
   --feature: minmax(0, 5rem);
+  --popout: minmax(0, 2rem);
+  --content: min(65ch, 100% - var(--gap) * 2);
 
   display: grid;
   place-content: start center;
@@ -206,10 +206,11 @@ img[width][height] {
 }
 .post-card {
   display: grid;
-  grid-column: feature;
+  grid-column: full;
   grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
-  place-items: center;
   margin-block-start: 1em;
+  place-items: center;
+  /* gap: 1em; */
 }
 .post-card .post-title {
   font-size: var(--post-title-card-size);

@@ -9,11 +9,11 @@
   {% include 'header.njk' %}
 
   <main id="main-content" class="content">
-    {% if snow == "true" %}
+    {# {% if snow == "true" %}
       <is-land on:media="(prefers-reduced-motion: no-preference)">
         <snow-fall style="--snow-fall-color: lightgray"></snow-fall>
       </is-land>
-    {% endif %}
+    {% endif %} #}
     {{ content | safe }}
   </main>
 
