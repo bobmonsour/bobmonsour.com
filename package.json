@@ -4,14 +4,16 @@
   "description": "It's my personal site...and a work in progress. It's built with [eleventy](https://www.11ty.dev/)...something I'm enjoying learning and using.",
   "main": ".eleventy.js",
   "scripts": {
-    "start": "cross-env ELEVENTY_ENV=development npx @11ty/eleventy",
-    "startns": "cross-env ELEVENTY_ENV=development npx @11ty/eleventy --serve",
     "build": "cross-env ELEVENTY_ENV=production npx @11ty/eleventy",
-    "postbuild": "npx -y pagefind --site _site",
-    "postdev": "npx -y pagefind --site _site --serve",
+    "clean": "rimraf ./_site",
     "debug": "cross-env ELEVENTY_ENV=dev DEBUG=Eleventy* npx @11ty/eleventy --serve",
     "links": "npx check-html-links _site",
-    "clean": "rimraf ./_site",
+    "start": "cross-env ELEVENTY_ENV=development npx @11ty/eleventy",
+    "startns": "cross-env ELEVENTY_ENV=development npx @11ty/eleventy --serve",
+    "pagefind": "npx -y pagefind --site _site",
+    "mentions": "npx webmention _site/feed.xml --limit 1 --send",
+    "postbuild": "npm run pagefind && npm run mentions",
+    "postdev": "npx -y pagefind --site _site --serve",
     "rs": "npm run clean && npm run start && npm run postdev",
     "rsns": "npm run clean && npm run startns"
   },
@@ -46,6 +48,7 @@
   },
   "dependencies": {
     "@11ty/is-land": "^4.0.0",
+    "@remy/webmention": "^1.5.0",
     "@zachleat/snow-fall": "^1.0.2"
   }
 }
