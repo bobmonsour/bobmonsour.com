@@ -101,7 +101,7 @@ img[width][height] {
   --feature: minmax(0, 5rem);
 
   display: grid;
-  place-content: start;
+  place-content: center;
   grid-template-columns:
     [full-start] var(--full)
     [feature-start] var(--feature)
@@ -206,17 +206,15 @@ img[width][height] {
 }
 .post-card {
   display: grid;
+  grid-column: feature;
   grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
-  justify-items: center;
+  place-items: center;
   margin-block-start: 1em;
 }
 .post-card .post-title {
   font-size: var(--post-title-card-size);
   text-wrap: balance;
   text-align: center;
-}
-.post-image {
-  border: 1px solid red;
 }
 /* end post card elements */
 
