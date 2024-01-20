@@ -42,19 +42,16 @@ const getAllTags = (collection) => {
   for (let item of collection) {
     (item.data.tags || []).forEach((tag) => tagSet.add(tag));
   }
-  console.log(
-    "tagSet: ",
-    Array.from(tagSet)
-      .filter((tag) => tag !== "posts")
-      .sort()
-  );
+  // console.log(
+  //   "tagSet: ",
+  //   Array.from(tagSet)
+  //     .filter((tag) => tag !== "posts")
+  //     .sort()
+  // );
   return Array.from(tagSet)
     .filter((tag) => tag !== "posts")
     .sort();
 };
-//     .filter((tag) => ["posts"].indexOf(tag) === -1)
-//     .sort();
-// };
 
 // get the webmentions for a particular post by the post's url
 // Usage: {{ webmentionsByUrl(webmentions, url) }}
