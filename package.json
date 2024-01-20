@@ -11,7 +11,7 @@
     "start": "cross-env ELEVENTY_ENV=development npx @11ty/eleventy",
     "startns": "cross-env ELEVENTY_ENV=development npx @11ty/eleventy --serve",
     "pagefind": "npx -y pagefind --site _site",
-    "mentions": "npx webmention _site/feed.xml --limit 1 --send",
+    "mentions": "npx webmention _site/feed.xml --limit 0 --send",
     "postbuild": "npm run pagefind && npm run mentions",
     "postdev": "npx -y pagefind --site _site --serve",
     "rs": "npm run clean && npm run start && npm run postdev",
