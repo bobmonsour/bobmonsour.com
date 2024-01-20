@@ -101,7 +101,7 @@ img[width][height] {
   --feature: minmax(0, 5rem);
 
   display: grid;
-  place-content: center;
+  place-content: start center;
   grid-template-columns:
     [full-start] var(--full)
     [feature-start] var(--feature)
