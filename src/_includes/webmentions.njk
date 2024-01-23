@@ -15,8 +15,8 @@
       {% for item in mentions.comments %}
         <div class="comment">
           <a href="{{ item.author.url }}" class="comment-author"><img src="{{ item.author.photo}}" class="mention-image" alt="photo of the author of one of the webmentions for this page"></a>
-          <p class="comment-content">{{ item.content | safe }}</p>
           <p class="comment-date">{{ item.published | plainDate }}</p>
+          <p class="comment-content">{{ item.content | safe }}</p>
         </div>
       {% endfor %}
     </div>

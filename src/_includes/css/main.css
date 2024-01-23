@@ -1,22 +1,25 @@
-/* default body styles */
 body {
-  /* forces footer to bottom of page for short pages */
   background-color: #fff1e5; /* color from ft.com background */
   color: black;
   display: grid;
   font-family: var(--brand-font);
   font-size: var(--font-size-md);
+  /* forces footer to bottom of page for short pages */
   grid-template-rows: auto 1fr auto;
   line-height: 1.3;
   margin-inline: auto;
   min-height: 100vh;
   min-height: 100dvh;
   width: min(var(--page-width-max), 100vw);
-  /* background-color: #f8f5d7; color from semafor.com background */
 }
 
-h1 {
+/* general styles */
+:is(h1, h2) {
+  font-size: var(--font-size-xl);
+  line-height: 1.2;
+  margin-block-end: var(--space-xs);
   text-align: center;
+  text-wrap: balance;
 }
 
 h3 {
@@ -34,8 +37,7 @@ a {
   text-decoration: none;
   border-bottom: 1px solid var(--dark-accent-color);
 }
-a:hover,
-a:focus {
+a:is(:hover, :focus) {
   background-color: var(--light-accent-color);
   border-radius: var(--brand-link-radius);
 }
@@ -148,15 +150,8 @@ img[width][height] {
 
 /* list of posts metadata on home and archive pages */
 /* as seen in postlist.njk */
-
-.post-metadata :is(h1, h2) {
-  font-size: var(--post-title-size);
-  line-height: 1.2;
-  text-align: center;
-  text-wrap: balance;
-}
-
 .post-metadata :is(p, ul) {
+  font-size: var(--font-size-base);
   font-style: italic;
   margin-block-start: 0.25em;
   text-align: center;
@@ -177,20 +172,14 @@ img[width][height] {
 }
 /* end post card elements */
 
-/* full display of a post; not the card style used in home and archive */
+/*
+  full display of a post
+  (not the card style used in home and archive)
+*/
 .post {
   grid-column: full;
   display: grid;
   grid-template-columns: inherit;
-}
-
-.post :is(blockquote) {
-  border-inline-start: var(--space-xs) solid var(--dark-accent-color);
-  font-style: italic;
-  font-size: var(--font-size-lg);
-  grid-column: feature;
-  margin-block: var(--space-s);
-  padding: var(--space-s);
 }
 .post .toc {
   grid-column: content;
@@ -201,11 +190,23 @@ img[width][height] {
   background-color: lightgray;
   border-radius: 20px;
 }
-.post .toc :is(h2) {
+.post .toc h2 {
   margin-block-start: var(--space-2xs);
   text-align: center;
 }
-
+.post h2 {
+  font-size: var(--font-size-lg);
+  text-align: left;
+  text-wrap: wrap;
+}
+.post blockquote {
+  border-inline-start: var(--space-xs) solid var(--dark-accent-color);
+  font-style: italic;
+  font-size: var(--font-size-lg);
+  grid-column: feature;
+  margin-block: var(--space-s);
+  padding: var(--space-s);
+}
 .post-nextprev {
   list-style: none;
 }
@@ -216,16 +217,17 @@ img[width][height] {
 .post > picture {
   grid-column: popout;
 }
+/* display code as 'popout' width */
+.post > pre {
+  grid-column: popout;
+  margin-block: var(--space-l);
+}
+
 /* first paragraph after an image is always a caption */
 picture + p {
   grid-column: content;
   text-align: center;
   font-size: var(--caption-size);
-}
-/* display code as 'popout' width */
-.post > pre {
-  grid-column: popout;
-  margin-block: var(--space-l);
 }
 
 /* webmention styles */
@@ -239,8 +241,7 @@ picture + p {
   height: 3em;
   width: 3em;
 }
-.mention-image:hover,
-.mention-image:focus {
+.mention-image:is(:hover, :focus) {
   background-color: transparent;
   opacity: 0.8;
   outline: 20px solid var(--light-accent-color);
@@ -269,6 +270,7 @@ picture + p {
 .comment-date {
   font-size: var(--font-size-base);
   font-style: italic;
+  justify-self: left;
   line-height: 1;
 }
 .likes,
@@ -292,7 +294,5 @@ picture + p {
 /* About page specific styles */
 .about-img {
   margin: var(--space-m) auto;
-}
-.about-img img {
   clip-path: circle(50%);
 }

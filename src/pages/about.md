@@ -11,9 +11,7 @@ permalink: /about/
 
 # {{ title }}
 
-<div class="about-img">
-  <img src="/assets/img/about-bob.jpg" alt="Bob circa 2009">
-</div>
+<img src="/assets/img/about-bob.jpg" class="about-img" alt="Bob circa 2009">
 
 Brooklyn-born, New Jersey-raised, educated in Florida and Los Angeles. I'm now retired and living in Northern California with my wonderful [wife and artist](https://www.tascafineart.com/), Sandra, and our Portuguese Water Dog, Soda. Our son is out on his own and lives in the LA area. When we're not traveling, I enjoy trying to stay fit as I age with a combination of tennis and [kettlebell workouts](/posts/finding-an-excercise-regimen-that-sticks/).
 
