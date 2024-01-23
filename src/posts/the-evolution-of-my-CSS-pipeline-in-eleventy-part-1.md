@@ -14,13 +14,11 @@ image:
 pageHasCode: true
 ---
 
-> _While initially a single post about my evolving use of CSS, there is now a second part which you can [find here](/posts/the-evolution-of-my-CSS-pipeline-in-eleventy-part-2/). But you should really read this one first._
-
-> Also, this post as well as part 2 can be found on the [11ty Bundle](https://11tybundle.dev/) site, a community site for sharing [Eleventy](https://www.11ty.dev/) tips, tricks, and resources. If you're an Eleventy user, I encourage you to [check it out](https://11tybundle.dev/).
-
-## Table of Contents
+> While initially a single post about my evolving use of CSS, there is now a second part which you can [find here](/posts/the-evolution-of-my-CSS-pipeline-in-eleventy-part-2/). But you should really read this one first. Also, this post as well as part 2 can be found on the [11ty Bundle](https://11tybundle.dev/) site, a community site for sharing [Eleventy](https://www.11ty.dev/) tips, tricks, and resources. If you're an Eleventy user, I encourage you to [check it out](https://11tybundle.dev/).
 
 <div class='toc'>
+
+## Table of Contents
 
 1. [Introduction](#section1)
 2. [My first site with Eleventy](#section2)

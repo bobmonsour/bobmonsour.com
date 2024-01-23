@@ -13,9 +13,9 @@ image:
 
 <div class="alltags-list">
   <ul>
-    {% for tag in collections.all | getAllTags %}
-      {% set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
-      <li><a href="{{ tagUrl }}" class="post-tag">{{ tag }}</a></li>
-    {% endfor %}
+  {% for tag in collections.all | getAllTags %}
+    {% set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
+    <li><a href="{{ tagUrl }}" class="post-tag">{{ tag }}</a></li>
+  {% endfor %}
   </ul>
 </div>

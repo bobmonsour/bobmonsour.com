@@ -13,9 +13,9 @@ image:
   creditLink: "https://unsplash.com/es/@dolodol"
 ---
 
-## Table of Contents
-
 <div class="toc">
+
+## Table of Contents
 
 1. [Introduction](#section1)
 2. [Why now?](#section2)

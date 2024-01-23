@@ -13,9 +13,9 @@ image:
 pageHasCode: true
 ---
 
-## Table of Contents
-
 <div class='toc'>
+
+## Table of Contents
 
 1. [Introduction](#section1)
 2. [Pagefind from CloudCannon](#section2)

@@ -12,9 +12,9 @@ image:
 pageHasCode: true
 ---
 
-## Table of Contents
-
 <div class='toc'>
+
+## Table of Contents
 
 1. [Introduction](#section1)
 2. [Google Searching for Google Things](#section2)
@@ -29,7 +29,7 @@ pageHasCode: true
 
 ---
 
-_[UPDATE: 10-30-2023]: I've abandoned this technique as it was, as they say, a fools errand. I have converted from this method to using the Google Sheets API to get the data at build time. Details can be found in [this recent post](/posts/scratch-that-use-google-sheets-api/)._
+> _[UPDATE: 10-30-2023]: I've abandoned this technique as it was, as they say, a fools errand. I have converted from this method to using the Google Sheets API to get the data at build time. Details can be found in [this recent post](/posts/scratch-that-use-google-sheets-api/)._
 
 <section id='section1'></section>
 

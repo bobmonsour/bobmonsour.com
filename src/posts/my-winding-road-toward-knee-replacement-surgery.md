@@ -13,9 +13,9 @@ image:
 
 > _NOTE: This piece was [originally posted on Medium](https://medium.com/@bobmonsour/the-winding-road-toward-knee-replacement-surgery-b3e03f0bfcd7), on August 31st, 2020. I underwent total knee replacement surgery on November 5, 2020, smack in the middle of the pandemic. The good news is that the replacement went very well and now, 3 years later, I'm very glad I did it._
 
-## Table of Contents
-
 <div class="toc">
+
+## Table of Contents
 
 1. [Introduction](#section1)
 2. [Is there a doctor in the house?](#section2)
@@ -25,8 +25,6 @@ image:
 6. [To inject or not to inject?](#section6)
 
 </div>
-
----
 
 <div id="section1"></div>
 

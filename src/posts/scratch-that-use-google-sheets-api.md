@@ -12,9 +12,9 @@ image:
 pageHasCode: true
 ---
 
-## Table of Contents
-
 <div class='toc'>
+
+## Table of Contents
 
 1. [Introduction](#section1)
 2. [First, a rathole only a mother could love](#section2)

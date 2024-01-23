@@ -16,11 +16,7 @@ pageHasCode: true
 
 > Note: I am no longer using Open Props as I've decided to reduce the number of levels of abstraction that I use to maintain the CSS for this site. I still find it a fascinating tool, but for the size and scope of this project, I am finding it easier to maintain my own set of custom properties for the few things I need them for.
 
-[UPDATE: July 19, 2022]
-
-The original post (below) represents what I believed was true at the time...before I learned better. If you're new to this post, you might want read that first. The new learning is that I did not need to maintain separate main.scss files for production and development. In fact, including the @import statement in the production version of the main.scss file is totally fine as the postcss-jit-props plugin will still work as intended.
-
-What I have also since learned is how to add other plugins (for example, cssnano, autoprefixer, and postcss-logical) to the postcss.config.js file. The [Github repo for this site](https://github.com/bobmonsour/bobmonsour.com) reflects this new learning.
+> [UPDATE: July 19, 2022] The original post (below) represents what I believed was true at the time...before I learned better. If you're new to this post, you might want read that first. The new learning is that I did not need to maintain separate main.scss files for production and development. In fact, including the @import statement in the production version of the main.scss file is totally fine as the postcss-jit-props plugin will still work as intended. What I have also since learned is how to add other plugins (for example, cssnano, autoprefixer, and postcss-logical) to the postcss.config.js file. The [Github repo for this site](https://github.com/bobmonsour/bobmonsour.com) reflects this new learning.
 
 [START OF ORIGINAL POST]
 

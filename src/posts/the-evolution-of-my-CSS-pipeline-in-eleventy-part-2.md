@@ -13,13 +13,11 @@ image:
 pageHasCode: true
 ---
 
-> _Hopefully, you've read [part 1](/posts/the-evolution-of-my-CSS-pipeline-in-Eleventy-part-1/). If not, I'll wait here ._
-
-> Also, this post as well as part 1 can be found on the [11ty Bundle](https://11tybundle.dev/) site, a community site for sharing [Eleventy](https://www.11ty.dev/) tips, tricks, and resources. If you're an Eleventy user, I encourage you to [check it out](https://11tybundle.dev/).
-
-## Table of Contents
+> Hopefully, you've read [part 1](/posts/the-evolution-of-my-CSS-pipeline-in-Eleventy-part-1/). If not, I'll wait here... also, this post as well as part 1 can be found on the [11ty Bundle](https://11tybundle.dev/) site, a community site for sharing [Eleventy](https://www.11ty.dev/) tips, tricks, and resources. If you're an Eleventy user, I encourage you to [check it out](https://11tybundle.dev/).
 
 <div class='toc'>
+
+## Table of Contents
 
 1. [Introduction](#section1)
 2. [To inline or not to inline](#section2)

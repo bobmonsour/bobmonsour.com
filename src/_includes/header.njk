@@ -1,13 +1,13 @@
 <header>
-  <a href='#' class="stt" title="scroll to top"></a>
-  <nav class="brand">
-    <ul class="brand-nav">
+  <nav>
+    <ul>
       {% for link in site.mainNavLinks %}
         <li>
           <a href="{{ link.url }}"
-            {% if page.url == link.url %} aria-current="page" class="nav-link" {% else %}class="nav-link" {% endif %}>{{ link.text }}</a>
+            {% if page.url == link.url %} aria-current="page"{% endif %}>{{ link.text }}</a>
         </li>
       {% endfor %}
     </ul>
   </nav>
+  <a href='#' class="stt" title="scroll to top"></a>
 </header>

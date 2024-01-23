@@ -1,15 +1,15 @@
 {%- for post in postlist -%}
 <section class="post-card">
   <div class="post-metadata">
-    <h2 class="post-title">
+    <h2>
       <a href="{{ post.url }}">{{ post.data.title }}</a>
     </h2>
-    <p class="post-date">{{ post.date | formatPostDate }}</p>
-    <p class="post-readingtime">{{ post.content | readingTime }}</p>
+    <p>{{ post.date | formatPostDate }}</p>
+    <p>{{ post.content | readingTime }}</p>
     {% set tagsdata = post.data.tags %}
     {% include 'taglist.njk' %}
   </div>
-  <div class="post-image">
+  <div>
     <a href="{{ post.url }}">
       {# if the post is 1st or 2nd diplayed, load their images eagerly #}
       {%- if loop.index === 1 or loop.index === 2 -%}

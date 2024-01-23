@@ -15,18 +15,8 @@ body {
   /* background-color: #f8f5d7; color from semafor.com background */
 }
 
-/* default <h1> */
 h1 {
   text-align: center;
-}
-
-/* default <h2> and <h3> */
-h2,
-h3 {
-  font-size: var(--font-size-lg);
-  line-height: 1.2;
-  margin-block: 1em 0.5em;
-  text-align: left;
 }
 
 h3 {
@@ -36,7 +26,6 @@ h3 {
 
 /* default <p> */
 p {
-  margin-block: 0.5em 1.25em;
   line-height: 1.5;
 }
 
@@ -54,24 +43,21 @@ a:focus {
 
 /* default <ol> & <li> */
 ol {
-  margin: 0.5em auto 1.5em auto;
+  margin: 0.5em auto;
 }
 li {
   margin-block-end: 0.5em;
 }
 
-/* default <hr> */
-hr {
-  border-block-start: 1px dotted var(--dark-accent-color);
-}
-
 /* default audio */
 audio {
-  display: block;
-  max-width: var(--main-element-max);
-  margin: 0 auto 1.5em auto;
-  background-color: var(--light-accent-color);
+  margin-inline: auto;
   border: 1px solid var(--dark-accent-color);
+  border-radius: 20px;
+}
+
+hr {
+  border-top: 1px solid var(--dark-accent-color);
 }
 
 /* default img to handle fluid images */
@@ -86,12 +72,6 @@ img[width][height] {
   height: auto; /* Preserve aspect ratio */
 }
 
-.about-img {
-  margin: 2rem auto;
-}
-.about-img img {
-  clip-path: circle(50%);
-}
 /* main content constrained by body width */
 .content {
   --gap: clamp(0.25rem, 3vw, 1rem);
@@ -136,23 +116,6 @@ img[width][height] {
   grid-column: full;
 }
 
-/* navigation */
-.brand-nav {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  list-style: none;
-  padding: 0;
-  text-align: center;
-}
-.brand-nav a {
-  margin: 0;
-  padding: 0 5px;
-}
-/* highlight the nav element of the current page  */
-.nav-link[aria-current="page"] {
-  background-color: var(--light-accent-color);
-}
 /* https://www.a11yproject.com/posts/how-to-hide-content/ */
 /* used for skip-to-main-content link */
 #visually-hidden {
@@ -170,7 +133,6 @@ img[width][height] {
   transform: translateY(80px);
   opacity: 1;
 }
-/* end brand */
 
 /* list of All Tags */
 .alltags-list * {
@@ -180,42 +142,38 @@ img[width][height] {
   padding-inline: 0;
 }
 
+.flow > * + * {
+  margin-block-start: var(--flow-space);
+}
+
 /* list of posts metadata on home and archive pages */
 /* as seen in postlist.njk */
-.post-title {
-  font-size: var(--post-title-full-size);
+
+.post-metadata :is(h1, h2) {
+  font-size: var(--post-title-size);
   line-height: 1.2;
-  margin-block-start: 0.5em;
+  text-align: center;
   text-wrap: balance;
 }
-.post-date,
-.post-readingtime {
-  font-size: var(--post-info-full-size);
+
+.post-metadata :is(p, ul) {
   font-style: italic;
-  margin-block: 0.25em 0;
+  margin-block-start: 0.25em;
   text-align: center;
 }
 .post-taglist {
-  align-items: center;
   display: flex;
-  font-size: var(--post-tag-size);
   justify-content: center;
   list-style: none;
-  margin: 0.25em 0;
+  margin-block: 0.25em;
   padding: 0;
 }
 .post-card {
   display: grid;
   grid-column: full;
   grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
-  margin-block-start: 1em;
+  margin-block-start: var(--space-l);
   place-items: center;
-  /* gap: 1em; */
-}
-.post-card .post-title {
-  font-size: var(--post-title-card-size);
-  text-wrap: balance;
-  text-align: center;
 }
 /* end post card elements */
 
@@ -226,24 +184,32 @@ img[width][height] {
   grid-template-columns: inherit;
 }
 
-.post > blockquote {
-  grid-column: feature;
-  border-inline-start: 2vw solid var(--dark-accent-color);
+.post :is(blockquote) {
+  border-inline-start: var(--space-xs) solid var(--dark-accent-color);
   font-style: italic;
   font-size: var(--font-size-lg);
-  padding: 0 min(1em, 4vw);
+  grid-column: feature;
+  margin-block: var(--space-s);
+  padding: var(--space-s);
+}
+.post .toc {
+  grid-column: content;
+  margin: 0 auto;
+  width: fit-content;
+  margin-block-start: var(--space-s);
+  padding: var(--space-m);
+  background-color: lightgray;
+  border-radius: 20px;
 }
 .post-nextprev {
   list-style: none;
-  margin: 0 0 0.5em 0;
-  padding-inline-start: 0;
 }
 .post-nextprev li:first-child {
-  margin-block: 1em;
+  margin-block: var(--space-xs);
 }
-/* show pictures at feature width */
+/* show pictures at 'popout' width */
 .post > picture {
-  grid-column: feature;
+  grid-column: popout;
 }
 /* first paragraph after an image is always a caption */
 picture + p {
@@ -251,7 +217,7 @@ picture + p {
   text-align: center;
   font-size: var(--caption-size);
 }
-/* display code as feature width */
+/* display code as 'popout' width */
 .post > pre {
   grid-column: popout;
 }
@@ -259,7 +225,7 @@ picture + p {
 /* webmention styles */
 .webmentions {
   grid-column: popout;
-  margin-block: 2em;
+  margin-block: var(--space-l);
 }
 .mention-image {
   border: 3px solid var(--dark-accent-color);
@@ -292,7 +258,6 @@ picture + p {
 }
 .comment-content {
   margin: 0;
-  padding: 0;
 }
 .comment-date {
   font-size: var(--font-size-base);
@@ -303,7 +268,7 @@ picture + p {
 .reposts {
   display: flex;
   flex-wrap: wrap;
-  row-gap: 1rem;
+  row-gap: var(--space-s);
 }
 .likes a:has(img),
 .reposts a:has(img) {
@@ -312,59 +277,18 @@ picture + p {
 }
 /* end full post elements */
 
-/* page footer */
-footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  background-color: var(--light-accent-color);
-  padding-block: 0.5em;
-  margin-block-start: 1em;
+.strikethrough {
+  text-decoration: line-through;
 }
-footer .text {
-  margin: 0;
-}
-/* social media icons within footer */
-.social-link {
-  border: none;
-}
-.social-link:hover,
-.social-link:focus {
-  cursor: pointer;
-}
-.icon {
-  width: 48px;
-  height: 48px;
-}
-/* end footer */
 
 .strikethrough {
   text-decoration: line-through;
 }
-/* Scroll to top button */
-.stt {
-  position: fixed;
-  right: 1rem;
-  bottom: 1rem;
-  width: 3rem;
-  height: 3rem;
-  border-radius: 50%;
-  background: #93bfcf
-    url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 384 512'%3E%3Cpath fill='currentColor' d='M352 352c-8.188 0-16.38-3.125-22.62-9.375L192 205.3l-137.4 137.4c-12.5 12.5-32.75 12.5-45.25 0s-12.5-32.75 0-45.25l160-160c12.5-12.5 32.75-12.5 45.25 0l160 160c12.5 12.5 12.5 32.75 0 45.25C368.4 348.9 360.2 352 352 352z'%3E%3C/path%3E%3C/svg%3E")
-    center no-repeat;
-  box-shadow: 0 0.25rem 0.5rem 0 gray;
-  opacity: 0.5;
-}
-.stt:hover,
-.stt:focus {
-  opacity: 0.5;
-  background-color: var(--link-hover-bg-color);
-  border-radius: 50%;
-}
-.stt:active {
-  opacity: 0.5;
-}
 
-.strikethrough {
-  text-decoration: line-through;
+/* About page specific styles */
+.about-img {
+  margin: var(--space-m) auto;
+}
+.about-img img {
+  clip-path: circle(50%);
 }
