@@ -24,12 +24,10 @@ h3 {
   font-style: italic;
 }
 
-/* default <p> */
 p {
   line-height: 1.5;
 }
 
-/* default <a> */
 a {
   color: var(--brand-color);
   text-decoration: none;
@@ -41,15 +39,16 @@ a:focus {
   border-radius: var(--brand-link-radius);
 }
 
-/* default <ol> & <li> */
 ol {
-  margin: 0.5em auto;
+  margin: var(--space-m) auto;
 }
 li {
-  margin-block-end: 0.5em;
+  margin-block-end: var(--space-s);
+}
+li:last-of-type {
+  margin-block-end: 0;
 }
 
-/* default audio */
 audio {
   margin-inline: auto;
   border: 1px solid var(--dark-accent-color);
@@ -202,6 +201,7 @@ img[width][height] {
   border-radius: 20px;
 }
 .post .toc :is(h2) {
+  margin-block-start: var(--space-2xs);
   text-align: center;
 }
 
@@ -251,6 +251,7 @@ picture + p {
   grid-template-areas:
     "image content"
     "image date";
+  margin-block-end: var(--space-m);
 }
 .comment a:has(img) {
   border: none;

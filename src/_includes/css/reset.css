@@ -37,9 +37,14 @@ body {
   text-rendering: optimizeSpeed;
 }
 
-/* A elements that don't have a class get default styles */
+/* 'a' elements that don't have a class get default styles */
 a:not([class]) {
   text-decoration-skip-ink: auto;
+}
+
+/* 'a' elements without an 'alt' attribute get a red border */
+img:not([alt]) {
+  outline: 2px solid red;
 }
 
 /* Make images easier to work with */

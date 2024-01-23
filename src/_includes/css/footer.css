@@ -1,5 +1,8 @@
-/* page footer */
-footer {
+/*
+  page footer
+  allows separate styling of other <footer> elements
+*/
+body > footer {
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -7,7 +10,7 @@ footer {
   padding-block: 0.5em;
   margin-block-start: 1em;
 }
-footer .text {
+body > footer .text {
   margin: 0;
 }
 /* social media icons */
@@ -22,4 +25,4 @@ footer .text {
   width: 48px;
   height: 48px;
 }
-/* end footer */
+/* end page footer */
