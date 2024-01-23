@@ -147,7 +147,7 @@ I looked it over, held my breath, and replaced the previous script that I had be
 
 I entered data into each of the forms as test data. I reloaded the spreadsheet, and like magic, it had made available the two menu items I had asked for. I ran the one that copies the form responses from each of the four sheets to the main sheet...and voila, it did it. I then ran the one that deletes all of the response entries in each of the response sheets, and again, success!
 
-_[NOTE TO SELF:] Next time you do something like this, PLEASE make a copy of the main sheet beforehand. You never know what can happen._
+> [NOTE TO SELF:] Next time you do something like this, PLEASE make a copy of the main sheet beforehand. You never know what can happen.\_
 
 Needless to say, I was pleased. And now with this workflow, it's easier to enter new content, and on each site build, the sheet is accessed through an API.
 

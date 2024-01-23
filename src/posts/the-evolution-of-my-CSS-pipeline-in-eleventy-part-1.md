@@ -280,7 +280,7 @@ I've been using Sass for a while now. When I first started out, I used it only f
 
 Then I learned about nesting and began to use it and I liked how it simplified both writing and reading my Sass files. I know that nesting is in the works for CSS itself, but that is not what I considered. I looked at my site and how little CSS I was using and thought, how much time would it take me to flatten my CSS to eliminate the nesting? It took about 20 minutes. It would have been faster, but I was trying to be careful.
 
-> \_UPDATE: No sooner had I posted this, this morning I opened my email to find the latest CSS Layout News newsletter from Rachel Andrews. She linked to [a post by Adam Argyle](https://developer.chrome.com/articles/css-nesting/?ref=css-layout-news) that covers the nesting features currently available and those coming in the Chrome browser.
+> UPDATE: No sooner had I posted this, this morning I opened my email to find the latest CSS Layout News newsletter from Rachel Andrews. She linked to [a post by Adam Argyle](https://developer.chrome.com/articles/css-nesting/?ref=css-layout-news) that covers the nesting features currently available and those coming in the Chrome browser.
 
 ### Do I really need auto-prefixing?
 

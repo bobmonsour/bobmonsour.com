@@ -12,9 +12,9 @@ image:
   caption: "Photo by me -- some sheet music and learning materials"
 ---
 
-## Table of Contents
-
 <div class="toc">
+
+## Table of Contents
 
 1. [Introduction](#section1)
 2. [Practice stats](#section2)
