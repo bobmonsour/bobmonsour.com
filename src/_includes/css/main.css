@@ -274,6 +274,7 @@ picture + p {
 .reposts {
   display: flex;
   flex-wrap: wrap;
+  margin-block-end: var(--space-l);
   row-gap: var(--space-s);
 }
 .likes a:has(img),
