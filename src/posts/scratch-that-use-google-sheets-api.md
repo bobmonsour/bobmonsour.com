@@ -172,8 +172,8 @@ const { google } = require("googleapis");
 const sheets = google.sheets("v4");
 
 module.exports = async function () {
-  // Load client secrets from the downloaded service account key file.
-  // Items from the file were placed into a .env file.
+  /* Load client secrets from the downloaded service account key file.
+   Items from the file were placed into a .env file. */
   const key = {
     type: process.env.TYPE,
     project_id: process.env.PROJECT_ID,
@@ -199,8 +199,8 @@ module.exports = async function () {
 
   await jwtClient.authorize();
 
-  // Identify the specific spreadsheet
-  // The range is the sheet name within the spreadsheet
+  /* Identify the specific spreadsheet
+   The range is the sheet name within the spreadsheet */
   const spreadsheetId = key.spreadsheetId;
   const range = key.spreadsheetRange;
 
@@ -220,11 +220,11 @@ module.exports = async function () {
       let row = rows[i];
       let obj = {};
       for (let j = 0; j < headers.length; j++) {
-        // Exclude empty cells (some item types don't have all fields)
+        /* Exclude empty cells (some item types don't have all fields) */
         if (row[j]) {
           var itemKey = headers[j];
           var itemValue = row[j].toString();
-          // Convert string of comma-separated values to an array
+          /* Convert string of comma-separated values to an array */
           if (itemKey === "Categories") {
             itemValue = itemValue.split(",").map((item) => item.trim());
           }

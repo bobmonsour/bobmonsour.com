@@ -170,11 +170,10 @@ If you've gotten this far, thank you. I hope you've enjoyed this ramble. I'm sti
 Here's the code to the Google Apps script that does the work of exporting a Google Sheet to json. I've added comments to explain what's going on.
 
 ```js
-// Used to export the data for the 11tybundle.dev site from a Google Sheet
-// The export feature is available as an extension to the Google Sheet.
-// The output is placed into a pop-up window at the end of execution.
-// A time-stamped file of the json is also placed in a file on my Google Drive.
-//
+/* Used to export the data for the 11tybundle.dev site from a Google Sheet
+   The export feature is available as an extension to the Google Sheet.
+   The output is placed into a pop-up window at the end of execution.
+   A time-stamped file of the json is also placed in a file on my Google Drive. */
 function onOpen() {
   var ui = SpreadsheetApp.getUi();
   ui.createMenu("Export JSON").addItem("Export to JSON", "showJSON").addToUi();
@@ -205,7 +204,7 @@ function showJSON() {
   var jsonString = JSON.stringify(jsonData, null, 2);
   displayPopup(jsonString);
 
-  // Save JSON to Google Drive
+  /* Save JSON to Google Drive */
   saveToDrive(jsonString);
 }
 
@@ -226,22 +225,22 @@ function saveToDrive(data) {
   if (mainFolders.hasNext()) {
     mainFolder = mainFolders.next();
   } else {
-    // If the main folder not found, create it
+    /* If the main folder not found, create it */
     mainFolder = DriveApp.createFolder(mainFolderName);
   }
 
-  // Check if the subfolder exists within the main folder
+  /* Check if the subfolder exists within the main folder */
   var subFolders = mainFolder.getFoldersByName(subFolderName);
   var subFolder;
 
   if (subFolders.hasNext()) {
     subFolder = subFolders.next();
   } else {
-    // If subfolder not found, create it inside the main folder
+    /* If subfolder not found, create it inside the main folder */
     subFolder = mainFolder.createFolder(subFolderName);
   }
 
-  // Construct filename with current date and time
+  /* Construct filename with current date and time */
   var date = new Date();
   var filename = Utilities.formatString(
     "allrecords-%02d%02d%02d%02d%02d.json",
@@ -252,7 +251,7 @@ function saveToDrive(data) {
     date.getMinutes()
   );
 
-  // Create the file in the specific subfolder
+  /* Create the file in the specific subfolder */
   subFolder.createFile(filename, data, MimeType.PLAIN_TEXT);
 }
 ```

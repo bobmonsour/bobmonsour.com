@@ -2,12 +2,8 @@
 <html lang="en">
   {% include 'head.njk' %}
 <body>
-
-
 	<a href="#main-content" id="visually-hidden">Skip to main content</a>
-
   {% include 'header.njk' %}
-
   <main id="main-content" class="content">
     {# {% if snow == "true" %}
       <is-land on:media="(prefers-reduced-motion: no-preference)">
@@ -16,8 +12,6 @@
     {% endif %} #}
     {{ content | safe }}
   </main>
-
   {% include 'footer.njk' %}
-
 </body>
 </html>
