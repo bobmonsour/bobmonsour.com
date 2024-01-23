@@ -26,6 +26,7 @@ h3 {
 
 p {
   line-height: 1.5;
+  text-wrap: pretty;
 }
 
 a {
@@ -230,7 +231,7 @@ picture + p {
 /* webmention styles */
 .webmentions {
   grid-column: popout;
-  margin-block: var(--space-l);
+  margin-block-start: var(--space-l);
 }
 .mention-image {
   border: 3px solid var(--dark-accent-color);
@@ -283,10 +284,6 @@ picture + p {
   margin: -5px;
 }
 /* end full post elements */
-
-.strikethrough {
-  text-decoration: line-through;
-}
 
 .strikethrough {
   text-decoration: line-through;
