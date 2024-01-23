@@ -197,7 +197,7 @@ img[width][height] {
   margin: 0 auto;
   width: fit-content;
   margin-block-start: var(--space-s);
-  padding: var(--space-m);
+  padding: var(--space-3xs-l);
   background-color: lightgray;
   border-radius: 20px;
 }

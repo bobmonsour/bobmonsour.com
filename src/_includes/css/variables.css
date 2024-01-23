@@ -36,6 +36,7 @@
 
   /* Custom pairs */
   --space-s-l: clamp(1.125rem, 0.6467rem + 2.3913vw, 2.5rem);
+  --space-3xs-l: clamp(0.3125rem, -0.4484rem + 3.8043vw, 2.5rem);
 
   /* Use for link hover on most links */
   --radius-blob: 49% 51% 48% 52% / 57% 44% 56% 43%;
