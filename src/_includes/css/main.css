@@ -224,6 +224,7 @@ picture + p {
 /* display code as 'popout' width */
 .post > pre {
   grid-column: popout;
+  margin-block: var(--space-l);
 }
 
 /* webmention styles */
