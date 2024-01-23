@@ -201,6 +201,10 @@ img[width][height] {
   background-color: lightgray;
   border-radius: 20px;
 }
+.post .toc :is(h2) {
+  text-align: center;
+}
+
 .post-nextprev {
   list-style: none;
 }
