@@ -46,7 +46,7 @@ The biggest struggle I had, and this _might_ be an 11ty bug, was figuring out ho
 
 As of this writing, only the CMS category and the Getting Started categories have their posts included on the 11ty docs site, [here](https://www.11ty.dev/docs/cms/#from-the-community), and [here](https://www.11ty.dev/docs/get-started/), respectively. I've suggested to Zach that the remaining ones in the categories array seem like good candidates for inclusion.
 
-_[UPDATE: 11-1-2023]: All of the listed categories are now included in their respective "From the Community" sections of their respective docs pages on the 11ty docs site._
+> [UPDATE: 11-1-2023]: All of the listed categories are now included in their respective "From the Community" sections of their respective docs pages on the 11ty docs site.\_
 
 Here's the javascript template that does the work, and a [link to the file in the GitHub repo](https://github.com/bobmonsour/11tybundle.dev/blob/main/src/api/category-json-files.11ty.js).
 
