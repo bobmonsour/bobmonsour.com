@@ -68,7 +68,7 @@ Since we're using [Eleventy](https://www.11ty.dev/), we've got a boatload of opt
 
 I want to note here that I have opted to gather the mentions at build time. I've seen a handful of implementors that have fetched them client-side. As a proponent of minimizing how much javascript I use, I opted to do it at build time. If you're interested, [Max Böck describes it here](https://mxb.dev/blog/using-webmentions-on-static-sites/#h-client-side-rendering).
 
-That said, given the dynamic nature of mention activity, I have set up a GitHub action that rebuilds my site every 4 hours to capture the intervening mentions. I won't into how to do that here, but you can find some guidance [here](https://www.voorhoede.nl/en/blog/scheduling-netlify-deploys-with-github-actions/) and [here](https://localghost.dev/blog/how-to-schedule-posts-in-eleventy/).
+That said, given the dynamic nature of mention activity, I have set up a GitHub action that rebuilds my site every 4 hours to capture the intervening mentions. I won't into how to do that here, but you can find some guidance [by Thadee here](https://www.voorhoede.nl/en/blog/scheduling-netlify-deploys-with-github-actions/) and [by Sophie Koonin here](https://localghost.dev/blog/how-to-schedule-posts-in-eleventy/).
 
 The other thing that I will not be covering here is how to send webmentions from your site to another. A service called [webmention.app](https://webmention.app/) provides this as a service. I may cover this in a future post.
 
