@@ -2,7 +2,7 @@
   page header
   allows separate styling of other <nav> elements
 */
-body > header > nav ul {
+header > nav ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -10,12 +10,12 @@ body > header > nav ul {
   padding: 0;
   text-align: center;
 }
-body > header > nav ul a {
+header > nav ul a {
   margin: 0;
   padding: 0 5px;
 }
 /* highlight the nav element of the current page  */
-body > header > nav ul a[aria-current="page"] {
+header > nav ul a[aria-current="page"] {
   background-color: var(--light-accent-color);
 }
 
