@@ -5,17 +5,17 @@
   "main": ".eleventy.js",
   "scripts": {
     "build": "cross-env ELEVENTY_ENV=production npx @11ty/eleventy",
-    "clean": "rimraf ./_site",
+    "postbuild": "npm run pagefind && npm run mentions",
+    "mentions": "npx webmention _site/feed.xml --limit 1 --send",
     "debug": "cross-env ELEVENTY_ENV=dev DEBUG=Eleventy* npx @11ty/eleventy --serve",
-    "links": "npx check-html-links _site",
     "start": "cross-env ELEVENTY_ENV=development npx @11ty/eleventy",
+    "postdev": "npx -y pagefind --site _site --serve",
     "startns": "cross-env ELEVENTY_ENV=development npx @11ty/eleventy --serve",
     "pagefind": "npx -y pagefind --site _site",
-    "mentions": "npx webmention _site/feed.xml --limit 0 --send",
-    "postbuild": "npm run pagefind && npm run mentions",
-    "postdev": "npx -y pagefind --site _site --serve",
     "rs": "npm run clean && npm run start && npm run postdev",
-    "rsns": "npm run clean && npm run startns"
+    "rsns": "npm run clean && npm run startns",
+    "links": "npx check-html-links _site",
+    "clean": "rimraf ./_site"
   },
   "keywords": [],
   "author": {
