@@ -30,13 +30,7 @@ Here's what every page header of this site looks like after removing ALL of the 
   <nav>
     <ul>
       {% for link in site.mainNavLinks %}
-        <li>
-          <a href="{{ link.url }}"
-            {% if page.url == link.url %}
-              aria-current="page"
-            {% endif %}>{{ link.text }}
-          </a>
-        </li>
+      <li><a href="{{ link.url }}"{% if page.url == link.url %}aria-current="page"{% endif %}>{{ link.text }}</a></li>
       {% endfor %}
     </ul>
   </nav>
