@@ -2,7 +2,6 @@
   "layout": "post.njk",
   "permalink": "posts/{{ page.fileSlug }}/",
   "imageDir": "src/assets/img/",
-  "tags": "posts",
   "showImage": false,
   "keywords": "retired, web development, eleventy, tennis",
   "snow": "false"

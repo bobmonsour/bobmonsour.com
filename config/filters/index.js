@@ -36,21 +36,13 @@ const formatPostDate = (date) => {
   );
 };
 
-// get all of the post tags, excluding the tag "posts"
+// get all of the post tags
 const getAllTags = (collection) => {
   let tagSet = new Set();
   for (let item of collection) {
     (item.data.tags || []).forEach((tag) => tagSet.add(tag));
   }
-  // console.log(
-  //   "tagSet: ",
-  //   Array.from(tagSet)
-  //     .filter((tag) => tag !== "posts")
-  //     .sort()
-  // );
-  return Array.from(tagSet)
-    .filter((tag) => tag !== "posts")
-    .sort();
+  return Array.from(tagSet).sort();
 };
 
 // get the webmentions for a particular post by the post's url

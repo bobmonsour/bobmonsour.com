@@ -28,6 +28,11 @@ const postcss = require("postcss");
 const postcssMinify = require("postcss-minify");
 
 module.exports = function (eleventyConfig) {
+  // generate the "posts" collection
+  eleventyConfig.addCollection("posts", (collection) => {
+    return [...collection.getFilteredByGlob("./src/posts/*.md")].reverse();
+  });
+
   // add filters
   eleventyConfig.addFilter("readingTime", readingTime);
   eleventyConfig.addFilter("formatPostDate", formatPostDate);

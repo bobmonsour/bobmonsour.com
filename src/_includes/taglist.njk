@@ -4,10 +4,8 @@
 <ul class="post-taglist">
   <li>Tags:&nbsp;</li>
   {%- for tag in tagsdata -%}
-    {% if tag !== "posts" %}
-      {%- set tagUrl -%}/tags/{{ tag | slugify }}/{%- endset -%}
-      <li><a href="{{ tagUrl }}" class="post-tag">{{ tag }}</a>&nbsp;&nbsp;</li>
-    {% endif %}
+    {%- set tagUrl -%}/tags/{{ tag | slugify }}/{%- endset -%}
+    <li><a href="{{ tagUrl }}" class="post-tag">{{ tag }}</a>&nbsp;&nbsp;</li>
   {%- endfor -%}
   <li><a href="/tags/">All Tags</a></li>
 </ul>
