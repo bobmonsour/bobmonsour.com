@@ -42,10 +42,12 @@ I have a global data file called site.json that has, among other things, a list 
 
 As you can see, the only class on the entire header is one for the little "scroll to top" link that's sitting in the bottom right corner of your browser window.
 
+> UPDATE January 28, 2024: Thanks to @Aankhen (a prolific Discord helper) for some further simplifying recommendations for the CSS. His input is reflected in the CSS below.
+
 And that kind of simplicity lends itself to very simple CSS. Here's the CSS for the header:
 
 ```css
-header > nav ul {
+header ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -53,18 +55,18 @@ header > nav ul {
   padding: 0;
   text-align: center;
 }
-header > nav ul a {
+header a {
   margin: 0;
   padding: 0 5px;
 }
-header > nav ul a[aria-current="page"] {
+header a[aria-current="page"] {
   background-color: var(--light-accent-color);
 }
 ```
 
 You don't see :hover and :focus pseudo-classes in the CSS because the header uses the same values for those as the rest of the site and they are declared outside of this.
 
-I do realize that \<header> is something that can be used more than once on a site, but not on this site. If I were to use it elsewhere, perhaps within a \<section>, I may have to add a class to either the header or the section to be more specific.
+I do realize that \<header> is an element that can be used more than once on a site, but they aren't on this site. If I were to use it elsewhere, perhaps within a \<section>, I may have to add a class to raise the specificity.
 
 I've done a bit more of this throughout the site, but there's more work to do. Some of this will also translate over to my work on the [https://11tybundle.dev/](https://11tybundle.dev/) site.
 
