@@ -11,7 +11,7 @@ image:
   caption: My wife, Sandra and our dog Soda
 ---
 
-We've been spending the last few days in Carmel CA, a truly beautiful place. The beach is our favorite place. Our dog, Soda, can run off leash and play around with all the other dogs and we can get a nice refreshing walk into our day. On this day, the waves were particularly large and the sunset was amazing. I took a few photos and wanted to share them with you.
+We've been spending the last few days in Carmel CA, a truly beautiful place. The beach is our favorite place. Our dog, Soda, can run off leash and play around with all the other dogs and we can get a nice refreshing walk into our day. Yesterday, the sunset was amazing. I took a few photos and wanted to share them with you.
 
 {% image imageDir + "sunset1.jpg", "The sun setting over the Pacific Ocean", "100vw" %}
 {% image imageDir + "sunset2.jpg", "The sun setting over the Pacific Ocean", "100vw" %}
