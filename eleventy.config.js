@@ -30,7 +30,7 @@ const postcssMinify = require("postcss-minify");
 module.exports = function (eleventyConfig) {
   // generate the "posts" collection
   eleventyConfig.addCollection("posts", (collection) => {
-    return [...collection.getFilteredByGlob("./src/posts/*.md")].reverse();
+    return [...collection.getFilteredByGlob("./src/posts/*.md")];
   });
 
   // add filters
