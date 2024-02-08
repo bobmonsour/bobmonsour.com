@@ -48,7 +48,7 @@ As of this writing, only the CMS category and the Getting Started categories hav
 
 > [UPDATE: 11-1-2023]: All of the listed categories are now included in their respective "From the Community" sections of their respective docs pages on the 11ty docs site.\_
 
-Here's the javascript template that does the work, and a [link to the file in the GitHub repo](https://github.com/bobmonsour/11tybundle.dev/blob/main/src/api/category-json-files.11ty.js).
+Here's the javascript template that does the work, and a [link to the file in the GitHub repo](https://github.com/bobmonsour/11tybundle.dev/blob/main/src/api/category-json-files.11ty.cjs).
 
 ```js
 /* Create json files for the listed set of categories
@@ -90,7 +90,7 @@ class CategoryJsonFiles {
     function isCategory(item) {
       return item["Categories"].includes(data.pagination.items[0]);
     }
-    /* The source data comes from the bundledata.js file that
+    /* The source data comes from the bundledata.cjs file that
    returns the firehose, a json array of all the posts on
    the site */
     const sortedPosts = data.bundledata.firehose

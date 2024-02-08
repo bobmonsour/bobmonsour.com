@@ -178,7 +178,7 @@ Once again, I decided _what the heck_. Let me see if I can at attempt some inter
 
 InectoDoc said that it can take as long as 6 weeks for the visco-stuff to take full effect. That was 10 days ago…no pain relief as of yet.
 
-As I was drafting this piece, my wife called over from the kitchen and asks if I’d seen the article in that day’s NY Times. It was about growing knee cartilage in mice. I think she’s joking, but she’s not. It’s titled [Cartilage Is Grown in the Arthritic Joints of Mice](https://www.nytimes.com/2020/08/22/health/arthritis-cartilage.html). Here’s the lede:
+As I was drafting this piece, my wife called over from the kitchen and asks if I’d seen the article in that day’s NY Times. It was about growing knee cartilage in mice. I think she’s joking, but she’s not. It’s titled [Cartilage Is Grown in the Arthritic Joints of Mice](https://www.nytimes.com/2020/08/22/health/arthritis-cartilage.html?unlocked_article_code=1.T00.Qrwo.wJvljwMdJHaK&smid=url-share). Here’s the lede:
 
 > The painful knees and hips experienced by so many people with osteoarthritis result from a loss of cartilage, which serves as a sort of cushioning in the joints. It had long been thought that cartilage, once gone, cannot grow back.
 
