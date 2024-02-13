@@ -5,7 +5,7 @@
   "main": ".eleventy.js",
   "scripts": {
     "build": "cross-env ELEVENTY_ENV=production npx @11ty/eleventy",
-    "postbuild": "npm run pagefind && npm run mentions",
+    "postbuild": "npm run pagefind",
     "mentions": "npx webmention _site/feed.xml --limit 1 --send",
     "debug": "cross-env ELEVENTY_ENV=dev DEBUG=Eleventy* npx @11ty/eleventy --serve",
     "start": "cross-env ELEVENTY_ENV=development npx @11ty/eleventy",
@@ -48,7 +48,6 @@
   },
   "dependencies": {
     "@11ty/is-land": "^4.0.0",
-    "@remy/webmention": "^1.5.0",
     "@zachleat/snow-fall": "^1.0.2"
   }
 }
