@@ -57,7 +57,7 @@ The lists of blog posts that appear on the site show up on several different pag
 - the firehose page
 - the site's own blog posts
 
-Each post has the same set of basic ingredients (as [retrieved from a Google Sheet(/posts/scratch-that-use-google-sheets-api/)):
+Each post has the same set of basic ingredients (as [retrieved from a Google Sheet](/posts/scratch-that-use-google-sheets-api/)):
 
 - post title
 - link to the post
