@@ -23,7 +23,7 @@ pageHasCode: true
 5. [Picking away at build errors](#section5)
 6. [But something else broke](#section6)
 7. [It was time for an "Oh shit!" moment](#section7)
-8. [The new, and even better, workflow](#section7)
+8. [The new, and even better, workflow](#section8)
 9. [Conclusion](#section8)
 10. [The Code for the Google Sheets API Access](#section9)
 
