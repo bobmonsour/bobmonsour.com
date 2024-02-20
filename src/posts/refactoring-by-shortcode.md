@@ -191,7 +191,15 @@ eleventyConfig.addNunjucksAsyncShortcode(
 );
 ```
 
-This works and makes each of the pages that use the shortcode much smaller and reason-able.
+This works and makes each of the pages that use the shortcode much smaller and reason-able. For example, here is the loop that wraps the shortcode instance to generate all of the category pages.
+
+```jinja2 {% raw %}
+<div class="bundleposts" data-pagefind-body>
+  {% for item in bundledata.bundleRecords | postsInCategory(category[0], 0) %}
+    {% singlePost item, "category", category[0] %}
+  {% endfor %}
+</div>{% endraw %}
+```
 
 <section id='section6'></section>
 
