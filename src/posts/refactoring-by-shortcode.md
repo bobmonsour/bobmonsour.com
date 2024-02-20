@@ -201,6 +201,8 @@ This works and makes each of the pages that use the shortcode much smaller and r
 </div>{% endraw %}
 ```
 
+One unintended, but I consider positive side effect of this implementation is that the description is no longer truncated to 100 characters for each post item. There is the visual result of the post items no longer being all the same height, but I think that the added description when it exists provides more insight into the purpose of the post. I could certainly do the truncation in the shortcode, but when I saw the result without it, I thought it was better for readers.
+
 <section id='section6'></section>
 
 ## 6. Outstanding issues
