@@ -24,7 +24,7 @@ Every night or so, I would download the images from Dreamhost, culling out the n
 
 When the project was done, I used iMovie and poured all of the images into it. I still have the video of the dedication ceremony which had been posted on the school's website, but is no longer. I trimmed out the ceremony and the speeches (the last of which was mine). We had worked with a very talented video producer at the time. He captured some very nice video and stitched my time-lapse segment into the dedication video.
 
-About 30 minutes ago, while the idea for this blog post was still hot, I opened iMovie once again and trimmed out the ceremonial portions to reveal the time-lapse portion. I then exported it and uploaded it to YouTube. It's not public, it's simply unlisted. Note: the music was added by the video producer.
+About 30 minutes ago, while the idea for this blog post was still hot, I opened iMovie once again and trimmed out the ceremonial portions to reveal the time-lapse portion. I then exported it and uploaded it to YouTube. It's not public, it's simply unlisted. Note: the music was added by the video producer. It creates a pretty cool dramatic effect.
 
 And now, for your viewing pleasure, here's the time-lapse video of the construction of the gymnasium. It's 1 minute 14 seconds long.
 
