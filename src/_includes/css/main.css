@@ -295,3 +295,14 @@ picture + p {
   margin: var(--space-m) auto;
   clip-path: circle(50%);
 }
+/* responsive video */
+.iframe-wrapper {
+  margin-block: 1em;
+}
+iframe[src*="youtube"] {
+  aspect-ratio: 16 / 9;
+  height: auto;
+  margin-block: 1em;
+  max-width: 100%;
+  width: 100%;
+}
