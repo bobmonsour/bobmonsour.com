@@ -9,6 +9,7 @@ keywords: eleventy, 11ty, bundle, blog
 image:
   source: "the-11ty-bundle-continues.avif"
   alt: "an early sketch of the 11ty bundle website design"
+  caption: An early sketch of the 11ty Bundle website design
 ---
 
 The [11ty Bundle](https://11tybundle.dev/) website launched one year ago today. I'm still doing it. I'm still writing posts (check out [Issue 41, the latest](https://11tybundle.dev/blog/11ty-bundle-41/)), still adding features, still tweaking the design. I'm still enjoying it.
