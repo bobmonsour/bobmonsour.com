@@ -3,6 +3,7 @@ title: The 11ty Bundle continues - A year in review
 date: 2024-05-01
 tags:
   - 11ty
+showImage: true
 description: The 11ty Bundle website launched one year ago today. I'm still doing it.
 keywords: eleventy, 11ty, bundle, blog
 image:
