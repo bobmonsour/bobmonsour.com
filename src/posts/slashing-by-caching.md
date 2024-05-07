@@ -8,6 +8,7 @@ keywords: caching, build time, 11ty
 image:
   source: "slashing-by-caching.webp"
   alt: "the word cache on a printed circuit board"
+  caption: "the word cache on a printed circuit board"
 pageHasCode: true
 ---
 
