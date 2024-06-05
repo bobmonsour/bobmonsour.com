@@ -73,7 +73,7 @@ I think I've been traumatized by my early professional career of building embedd
 
 ## 3. It's good to seek advice from others
 
-After all this, I decided to reach out to a couple of people in the Eleventy community that I trust and have a lot more web development experience than I do. The suggestions were mixed, but one thing struck a chord. It came from [Chris Burnell](https://chrisburnell.com/), and it was a reference to some work that [Rob Knight](https://rknight.me/) had done to support [his blogging workflow](https://rknight.me/blog/my-blogging-workflow/) (which is a lot more involved than mine). He had built a CLI using the [commander](https://github.com/tj/commander.js#readme) and [inquirer](https://github.com/SBoudrias/Inquirer.js/blob/main/packages/inquirer/README.md) packages. This sounded like a reasonable path to investigate. Off I went to read the docs and watch some videos.
+After all this, I decided to reach out to a couple of people in the Eleventy community that I trust and have a lot more web development experience than I do. The suggestions were mixed, but one thing struck a chord. It came from [Chris Burnell](https://chrisburnell.com/), and it was a reference to some work that [Robb Knight](https://rknight.me/) had done to support [his blogging workflow](https://rknight.me/blog/my-blogging-workflow/) (which is a lot more involved than mine). He had built a CLI using the [commander](https://github.com/tj/commander.js#readme) and [inquirer](https://github.com/SBoudrias/Inquirer.js/blob/main/packages/inquirer/README.md) packages. This sounded like a reasonable path to investigate. Off I went to read the docs and watch some videos.
 
 <div id="section4"></div>
 
