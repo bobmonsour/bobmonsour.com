@@ -6,7 +6,7 @@ tags:
 description: I built a few node CLI scripts to support management of the 11ty Bundle site database.
 keywords: node CLI, eleventy, 11tybundle.dev
 image:
-  source: "node-cli-of-my-dreams.jpg"
+  source: "make-bundle-entries.jpg"
   alt: "A top-level view of a node CLI"
   caption: "Top-level view of one of my node CLI scripts"
 pageHasCode: true
@@ -97,7 +97,7 @@ Initially, I took a look at commander, and it seemed like a little more than wha
 
 This view of the CLI is from the top level of my "Make Bundle Entries" script.
 
-{% image "src/assets/img/node-cli-of-my-dreams.jpg", "A top-level view of a node CLI", "100vw" %}
+{% image "src/assets/img/make-bundle-entries.jpg", "A top-level view of a node CLI", "100vw" %}
 
 The opening presentation of the Make Bundle Entries script
 
@@ -182,7 +182,7 @@ So how does this help my CLI workflow? With Raycast, I can create something call
 
 Once I got the hang of this, I realized that I needed a way to find out how many of each type of entry were in the database for the next blog post. So I wrote a simple script to prompt me for an issue number and it spits out just what I need, like this:
 
-{% image "src/assets/img/item-counts.jpg", "Displaying the item counts for a given issue", "100vw" %}
+{% image "src/assets/img/get-issue-counts.jpg", "Displaying the item counts for a given issue", "100vw" %}
 
 Show me the item counts for a given issue
 
