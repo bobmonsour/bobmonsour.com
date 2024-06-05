@@ -107,7 +107,6 @@ The inquirer package generates it with very little code:
 
 ```js
 const entryType = await rawlist({
-  name: "entryType",
   message: "Type of entry:",
   choices: [
     { name: "post", value: "post" },
