@@ -35,6 +35,8 @@ pageHasCode: true
 
 _**TL;DR**: I built a few node CLI scripts to support the management of the 11ty Bundle database._
 
+> UPDATE: No sooner had I posted this to the 11ty Discord server than it was pointed out to me that I was using an older version of the [inquirer pacakge](https://www.npmjs.com/package/inquirer). Many thanks to [uncenter](https://uncenter.dev/) for pointing this out. According to the package author: _"Inquirer recently underwent a rewrite from the ground up to reduce the package size and improve performance. The previous version of the package is still maintained (though not actively developed), and offered hundreds of community contributed prompts that might not have been migrated to the latest API."_ I have made the migration to use the newer [@inquirer/prompts package](https://www.npmjs.com/package/@inquirer/prompts). They are both from the same author and I like the changes that have been made. I have updated the code snippets in this post as well as the [code on GitHub](https://github.com/bobmonsour/dbtools) to reflect the new package.
+
 <div id="section1"></div>
 
 ## 1. Introduction
@@ -104,26 +106,28 @@ The opening presentation of the Make Bundle Entries script
 The inquirer package generates it with very little code:
 
 ```js
-const { entryType } = await inquirer.prompt([
-  {
-    type: "list",
-    name: "entryType",
-    message: "Type of entry:",
-    choices: ["1) post", "2) site", "3) release", "4) starter"],
-  },
-]);
+const entryType = await rawlist({
+  name: "entryType",
+  message: "Type of entry:",
+  choices: [
+    { name: "post", value: "post" },
+    { name: "site", value: "site" },
+    { name: "site", value: "site" },
+    { name: "site", value: "site" },
+  ],
+});
 
 switch (entryType) {
-  case "1) post":
+  case "post":
     await enterPost();
     break;
-  case "2) site":
+  case "site":
     await enterSite();
     break;
-  case "3) release":
+  case "release":
     await enterRelease();
     break;
-  case "4) starter":
+  case "starter":
     await enterStarter();
     break;
   default:
