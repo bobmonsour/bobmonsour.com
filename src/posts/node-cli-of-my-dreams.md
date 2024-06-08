@@ -111,8 +111,8 @@ const entryType = await rawlist({
   choices: [
     { name: "post", value: "post" },
     { name: "site", value: "site" },
-    { name: "site", value: "site" },
-    { name: "site", value: "site" },
+    { name: "release", value: "release" },
+    { name: "starter", value: "starter" },
   ],
 });
 
