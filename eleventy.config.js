@@ -54,23 +54,26 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(syntaxHighlight);
   eleventyConfig.addPlugin(pluginRss);
 
+  // Bundles CSS, not-minified
+  eleventyConfig.addPlugin(bundlerPlugin);
+
   // bundle CSS with eleventy, use postcss to minify the bundles
-  eleventyConfig.addPlugin(bundlerPlugin, {
-    transforms: [
-      async function (content) {
-        // this.type returns the bundle name.
-        if (this.type === "css") {
-          // Same as Eleventy transforms, this.page is available here.
-          let result = await postcss([postcssMinify]).process(content, {
-            from: this.page.inputPath,
-            to: null,
-          });
-          return result.css;
-        }
-        return content;
-      },
-    ],
-  });
+  // eleventyConfig.addPlugin(bundlerPlugin, {
+  //   transforms: [
+  //     async function (content) {
+  //       // this.type returns the bundle name.
+  //       if (this.type === "css") {
+  //         // Same as Eleventy transforms, this.page is available here.
+  //         let result = await postcss([postcssMinify]).process(content, {
+  //           from: this.page.inputPath,
+  //           to: null,
+  //         });
+  //         return result.css;
+  //       }
+  //       return content;
+  //     },
+  //   ],
+  // });
 
   // turn off noisy eleventy output
   eleventyConfig.setQuietMode(true);
