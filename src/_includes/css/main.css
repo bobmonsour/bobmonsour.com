@@ -165,7 +165,7 @@ img[width][height] {
 .post-card {
   display: grid;
   grid-column: full;
-  grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   margin-block-start: var(--space-l);
   place-items: center;
 }
