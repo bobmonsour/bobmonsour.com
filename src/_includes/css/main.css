@@ -13,6 +13,10 @@ body {
   width: min(var(--page-width-max), 100vw);
 }
 
+@view-transition {
+  navigation: auto;
+}
+
 /* general styles */
 :is(h1, h2) {
   font-size: var(--font-size-xl);
