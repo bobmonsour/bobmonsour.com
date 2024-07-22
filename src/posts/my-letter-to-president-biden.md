@@ -12,6 +12,8 @@ image:
   creditLink: "https://unsplash.com/@markusspiske"
 ---
 
+> Update (July 22, 2024): I want to express my deep gratitude to President Biden for putting our country over his own personal considerations. His decision to not seek re-election is a testament to his character and his commitment to the country. I am grateful for his service and wish him the best. And I heartily endorse Vice President Harris for President in 2024.
+
 In the wake of President Biden's disastrous debate performance last week, I felt compelled to write him a letter via [Whitehouse.gov](https://www.whitehouse.gov/contact/share/). I've also written to our local Congressman, Jared Huffman, and our two California senators, Laphonza Butler, and Alex Padilla.
 
 Here is my letter to President Biden:
