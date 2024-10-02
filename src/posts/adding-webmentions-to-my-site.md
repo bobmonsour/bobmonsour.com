@@ -13,6 +13,8 @@ image:
 pageHasCode: true
 ---
 
+> [UPDATE Oct 1, 2024]: I have since removed webmentions from this site. It's a long story. That said, here is how I had done it back then.
+
 <div class='toc'>
 
 ## Table of Contents
@@ -83,16 +85,16 @@ So, in my \_data directory, I have a webmentions.js file that looks like this:
 const EleventyFetch = require("@11ty/eleventy-fetch");
 
 module.exports = async function () {
-  const WEBMENTIONS_BOBM = process.env.WEBMENTION_IO_TOKEN;
-  const url = `https://webmention.io/api/mentions.jf2?token=${WEBMENTIONS_BOBM}&per-page=1000`;
-  const res = EleventyFetch(url, {
-    duration: "1h",
-    type: "json",
-  });
-  const webmentions = await res;
-  return {
-    mentions: webmentions.children,
-  };
+	const WEBMENTIONS_BOBM = process.env.WEBMENTION_IO_TOKEN;
+	const url = `https://webmention.io/api/mentions.jf2?token=${WEBMENTIONS_BOBM}&per-page=1000`;
+	const res = EleventyFetch(url, {
+		duration: "1h",
+		type: "json",
+	});
+	const webmentions = await res;
+	return {
+		mentions: webmentions.children,
+	};
 };
 ```
 
@@ -100,24 +102,24 @@ This will generate an array of json webmention data, with each item looking some
 
 ```json
 {
-  "type": "entry",
-  "author": {
-    "type": "card",
-    "name": "Cassey Lottman",
-    "photo": "https://webmention.io/avatar/cdn.masto.host/bb76d061fb429fb82c1d0e99721957cdb951615d224d3ef4c9fe2148e4b373f2.jpg",
-    "url": "https://urbanists.social/@cassey"
-  },
-  "url": "https://urbanists.social/@cassey/111729029363397444",
-  "published": "2024-01-10T01:21:31+00:00",
-  "wm-received": "2024-01-10T01:36:46Z",
-  "wm-id": 1765519,
-  "wm-source": "https://brid.gy/comment/mastodon/@bobmonsour@indieweb.social/111728835329670247/111729029425672691",
-  "wm-target": "https://www.bobmonsour.com/posts/adding-pagefind-to-my-eleventy-personal-site.md/",
-  "wm-protocol": "webmention",
-  "content": "<a href=\"https://indieweb.social/@bobmonsour\">@bobmonsour</a> this is a reply to your post, hi from mastodon",
-  "in-reply-to": "https://www.bobmonsour.com/posts/adding-pagefind-to-my-eleventy-personal-site.md/",
-  "wm-property": "in-reply-to",
-  "wm-private": false
+	"type": "entry",
+	"author": {
+		"type": "card",
+		"name": "Cassey Lottman",
+		"photo": "https://webmention.io/avatar/cdn.masto.host/bb76d061fb429fb82c1d0e99721957cdb951615d224d3ef4c9fe2148e4b373f2.jpg",
+		"url": "https://urbanists.social/@cassey"
+	},
+	"url": "https://urbanists.social/@cassey/111729029363397444",
+	"published": "2024-01-10T01:21:31+00:00",
+	"wm-received": "2024-01-10T01:36:46Z",
+	"wm-id": 1765519,
+	"wm-source": "https://brid.gy/comment/mastodon/@bobmonsour@indieweb.social/111728835329670247/111729029425672691",
+	"wm-target": "https://www.bobmonsour.com/posts/adding-pagefind-to-my-eleventy-personal-site.md/",
+	"wm-protocol": "webmention",
+	"content": "<a href=\"https://indieweb.social/@bobmonsour\">@bobmonsour</a> this is a reply to your post, hi from mastodon",
+	"in-reply-to": "https://www.bobmonsour.com/posts/adding-pagefind-to-my-eleventy-personal-site.md/",
+	"wm-property": "in-reply-to",
+	"wm-private": false
 }
 ```
 
@@ -153,48 +155,48 @@ Here is what mine looks like:
 ```js
 const sanitizeHTML = require("sanitize-html");
 module.exports = function webmentionsByUrl(webmentions, url) {
-  const allowedTypes = {
-    likes: ["like-of"],
-    reposts: ["repost-of"],
-    comments: ["mention-of", "in-reply-to"],
-  };
+	const allowedTypes = {
+		likes: ["like-of"],
+		reposts: ["repost-of"],
+		comments: ["mention-of", "in-reply-to"],
+	};
 
-  const sanitize = (entry) => {
-    if (entry.content && entry.content.html) {
-      entry.content = sanitizeHTML(entry.content.html, {
-        allowedTags: ["b", "i", "em", "strong", "a"],
-      });
-    }
-    return entry;
-  };
+	const sanitize = (entry) => {
+		if (entry.content && entry.content.html) {
+			entry.content = sanitizeHTML(entry.content.html, {
+				allowedTags: ["b", "i", "em", "strong", "a"],
+			});
+		}
+		return entry;
+	};
 
-  const pageWebmentions = webmentions
-    .filter(
-      (mention) => mention["wm-target"] === "https://www.bobmonsour.com" + url
-    )
-    .sort((a, b) => new Date(b.published) - new Date(a.published))
-    .map(sanitize);
+	const pageWebmentions = webmentions
+		.filter(
+			(mention) => mention["wm-target"] === "https://www.bobmonsour.com" + url
+		)
+		.sort((a, b) => new Date(b.published) - new Date(a.published))
+		.map(sanitize);
 
-  const likes = pageWebmentions
-    .filter((mention) => allowedTypes.likes.includes(mention["wm-property"]))
-    .filter((like) => like.author)
-    .map((like) => like.author);
+	const likes = pageWebmentions
+		.filter((mention) => allowedTypes.likes.includes(mention["wm-property"]))
+		.filter((like) => like.author)
+		.map((like) => like.author);
 
-  const reposts = pageWebmentions
-    .filter((mention) => allowedTypes.reposts.includes(mention["wm-property"]))
-    .filter((repost) => repost.author)
-    .map((repost) => repost.author);
+	const reposts = pageWebmentions
+		.filter((mention) => allowedTypes.reposts.includes(mention["wm-property"]))
+		.filter((repost) => repost.author)
+		.map((repost) => repost.author);
 
-  const comments = pageWebmentions
-    .filter((mention) => allowedTypes.comments.includes(mention["wm-property"]))
-    .filter((comment) => {
-      const { author, published, content } = comment;
-      return author && author.name && published && content;
-    });
+	const comments = pageWebmentions
+		.filter((mention) => allowedTypes.comments.includes(mention["wm-property"]))
+		.filter((comment) => {
+			const { author, published, content } = comment;
+			return author && author.name && published && content;
+		});
 
-  const mentionCount = likes.length + reposts.length + comments.length;
-  const data = { likes, reposts, comments, mentionCount };
-  return data;
+	const mentionCount = likes.length + reposts.length + comments.length;
+	const data = { likes, reposts, comments, mentionCount };
+	return data;
 };
 ```
 
