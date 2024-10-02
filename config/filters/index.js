@@ -139,6 +139,5 @@ module.exports = {
 	readingTime,
 	formatPostDate,
 	getAllTags,
-	webmentionsByUrl,
 	plainDate,
 };
