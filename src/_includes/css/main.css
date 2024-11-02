@@ -63,7 +63,10 @@ audio {
 }
 
 hr {
-	border-top: 1px solid var(--dark-accent-color);
+	border: none; /* Remove the default border */
+	height: 2px; /* Set the height of the line */
+	background-color: var(--dark-accent-color); /* Set the background color */
+	margin: 1em 0; /* Add vertical spacing around the line */
 }
 
 /* default img to handle fluid images */
@@ -280,10 +283,12 @@ iframe[src*="youtube"] {
 
 .microblog {
 	font-size: var(--font-size-md);
+	padding-block: 2rem 0;
 	text-align: left;
-	padding-block: 2rem;
 }
 .microdate {
 	font-size: var(--font-size-base);
 	font-style: italic;
+	font-weight: bold;
+	line-height: 3;
 }

@@ -15,5 +15,6 @@ permalink: /microblog/
   <div class="microblog post">
     <p class="microdate">{{ post.date | formatPostDate }}</p>
     <p>{{ post.content | safe }}</p>
+		<hr>
   </div>
 {%- endfor -%}
