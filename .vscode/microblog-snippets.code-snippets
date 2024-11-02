@@ -1,0 +1,16 @@
+{
+	"microBlog Entry Snippet (mbe)": {
+		"prefix": "mbe",
+		"body": [
+			"---",
+			"title: ${1:Title}",
+			"date: ${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE}",
+			"description: ${2:Description}",
+			"tags: microblog",
+			"---",
+			"",
+			"$0"
+		],
+		"description": "Generate front matter for a markdown file to be used in the microBlog"
+	}
+}
