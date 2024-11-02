@@ -269,26 +269,55 @@ iframe[src*="youtube"] {
 	display: flex;
 	flex-wrap: wrap;
 	list-style: none;
-	margin-block-end: 0;
-	margin-inline: auto;
-	padding-inline: 0;
+	padding: 0;
+	margin: 0;
+	justify-content: center;
+	gap: 1em;
 }
+
 .social-icons li {
+	position: relative; /* Ensure the pseudo-element is positioned relative to the link */
 	margin-block: 0;
 	padding: 1.25rem;
 }
+
 .social-icons a {
 	border-bottom: 0;
 	display: inline-block;
 	padding: 0.5em;
-	text-decoration: none;
 	transition: transform 0.3s ease;
+	text-decoration: none;
 }
+
 .social-icons a:hover,
 .social-icons a:focus {
 	transform: scale(1.1);
 	outline: none;
 }
+
+.social-icons a::after {
+	content: attr(
+		data-hover-text
+	); /* Use the data-hover-text attribute for the content */
+	position: absolute;
+	top: 100%; /* Position below the link */
+	left: 50%;
+	transform: translateX(-50%);
+	white-space: nowrap;
+	background-color: rgba(0, 0, 0, 0.8);
+	color: white;
+	padding: 0.25em 0.5em;
+	border-radius: 0.25em;
+	opacity: 0;
+	pointer-events: none;
+	transition: opacity 0.3s ease;
+}
+
+.social-icons a:hover::after,
+.social-icons a:focus::after {
+	opacity: 1; /* Show the text when the link is hovered or focused */
+}
+
 .social-icons li a img {
 	height: 2.5rem;
 	width: 2.5rem;
