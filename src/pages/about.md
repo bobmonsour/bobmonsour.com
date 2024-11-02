@@ -31,6 +31,4 @@ As of now, I'm envisioning creating a dedicated site for this set of resources. 
 
 I'm very glad that I've found something technically interesting and useful to sink my teeth into. I'm also glad that I've found a community of people who are willing to share their knowledge and help others. I'm looking forward to seeing what the future holds.
 
-{% include 'socials.njk' %}
-
 Most of the pages on the site are using the Classical Humanist fonts from [Modern Font Stacks](https://modernfontstacks.com/), a set of system fonts that look similar across browsers and operating systems. This eliminates the need to load a font from an external source.

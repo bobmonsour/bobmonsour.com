@@ -302,6 +302,4 @@ iframe[src*="youtube"] {
 .microdate {
 	font-size: var(--font-size-base);
 	font-style: italic;
-	/* font-weight: bold; */
-	line-height: 3;
 }
