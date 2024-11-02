@@ -3,20 +3,21 @@
   allows separate styling of other <nav> elements
 */
 header ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  list-style: none;
-  padding: 0;
-  text-align: center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	list-style: none;
+	margin-block-end: 0;
+	padding: 0;
+	text-align: center;
 }
 header a {
-  margin: 0;
-  padding: 0 5px;
+	margin: 0;
+	padding: 0 5px;
 }
 /* highlight the nav element of the current page  */
 header a[aria-current="page"] {
-  background-color: var(--light-accent-color);
+	background-color: var(--link-hover-color);
 }
 
 /*
@@ -24,24 +25,24 @@ header a[aria-current="page"] {
   lives inside of the <header> markup
 */
 .stt {
-  position: fixed;
-  right: 1rem;
-  bottom: 1rem;
-  width: 3rem;
-  height: 3rem;
-  border-radius: 50%;
-  background: #93bfcf
-    url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 384 512'%3E%3Cpath fill='currentColor' d='M352 352c-8.188 0-16.38-3.125-22.62-9.375L192 205.3l-137.4 137.4c-12.5 12.5-32.75 12.5-45.25 0s-12.5-32.75 0-45.25l160-160c12.5-12.5 32.75-12.5 45.25 0l160 160c12.5 12.5 12.5 32.75 0 45.25C368.4 348.9 360.2 352 352 352z'%3E%3C/path%3E%3C/svg%3E")
-    center no-repeat;
-  box-shadow: 0 0.25rem 0.5rem 0 gray;
-  opacity: 0.5;
+	position: fixed;
+	right: 1rem;
+	bottom: 1rem;
+	width: 3rem;
+	height: 3rem;
+	border-radius: 50%;
+	background: #93bfcf
+		url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 384 512'%3E%3Cpath fill='currentColor' d='M352 352c-8.188 0-16.38-3.125-22.62-9.375L192 205.3l-137.4 137.4c-12.5 12.5-32.75 12.5-45.25 0s-12.5-32.75 0-45.25l160-160c12.5-12.5 32.75-12.5 45.25 0l160 160c12.5 12.5 12.5 32.75 0 45.25C368.4 348.9 360.2 352 352 352z'%3E%3C/path%3E%3C/svg%3E")
+		center no-repeat;
+	box-shadow: 0 0.25rem 0.5rem 0 gray;
+	opacity: 0.5;
 }
 .stt:hover,
 .stt:focus {
-  opacity: 0.5;
-  background-color: var(--link-hover-bg-color);
-  border-radius: 50%;
+	opacity: 0.5;
+	background-color: var(--link-hover-bg-color);
+	border-radius: 50%;
 }
 .stt:active {
-  opacity: 0.5;
+	opacity: 0.5;
 }

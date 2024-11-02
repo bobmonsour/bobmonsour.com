@@ -32,6 +32,11 @@ module.exports = function (eleventyConfig) {
 		return [...collection.getFilteredByGlob("./src/posts/*.md")];
 	});
 
+	// generate the "microblog" collection
+	eleventyConfig.addCollection("microblog", (collection) => {
+		return [...collection.getFilteredByGlob("./src/microblog/*.md")];
+	});
+
 	// add filters
 	eleventyConfig.addFilter("readingTime", readingTime);
 	eleventyConfig.addFilter("formatPostDate", formatPostDate);

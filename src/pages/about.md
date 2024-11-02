@@ -4,8 +4,8 @@ title: About
 description: A few notes about Bob Monsour.
 keywords: retired, web development, eleventy, tennis, about
 image:
-  source: "young-bob.jpg"
-  alt: "a picture of Bob's face as a boy"
+  source: "about-bob.jpg"
+  alt: "a picture of Bob from 2009"
 permalink: /about/
 ---
 
@@ -13,9 +13,13 @@ permalink: /about/
 
 <img src="/assets/img/about-bob.jpg" class="about-img" alt="Bob circa 2009">
 
-Brooklyn-born, New Jersey-raised, educated in Florida and Los Angeles. I'm now retired and living in Northern California with my wonderful [wife and artist](https://www.tascafineart.com/), Sandra, and our Portuguese Water Dog, Soda. Our son is out on his own and lives in the LA area. When we're not traveling, I enjoy trying to stay fit as I age with a combination of tennis and [kettlebell workouts](/posts/finding-an-excercise-regimen-that-sticks/).
+Hi! I'm Bob Monsour.
 
-I've had the privilege of working in the technology industry from the late 70s through early 2000. I was fortunate to work on a lot of interesting projects, both on the technical side of things as well as the business side.
+Brooklyn-born, New Jersey-raised, and educated in Florida and Los Angeles, I'm now retired and living in Northern California with my wonderful [wife and artist](https://www.tascafineart.com/), Sandra, and our Portuguese Water Dog, Soda. Our son is out on his own and lives in Los Angeles.
+
+<p>When we're not traveling, I enjoy trying to stay fit and being a part of the community of web developers who use the static site generator <a href="https://11ty.dev">Eleventy</a>. A big part of that is maintaining a <a href="https://11tybundle.dev">website</a> and <a href="https://buttondown.com/11tybundle">newsletter</a> called the <a href="https://11tybundle.dev">11ty Bundle</a>.</p>
+
+<p>I've had the privilege of working in the technology industry from the late 70s through early 2000. I was fortunate to work on a lot of interesting projects, both on the technical and the business side.</p>
 
 For a career view, it's probably best to look at my [LinkedIn profile](https://www.linkedin.com/in/bobmonsour/).
 
@@ -27,6 +31,6 @@ As of now, I'm envisioning creating a dedicated site for this set of resources. 
 
 I'm very glad that I've found something technically interesting and useful to sink my teeth into. I'm also glad that I've found a community of people who are willing to share their knowledge and help others. I'm looking forward to seeing what the future holds.
 
-You can find me on the social links in the footer. And that's an RSS feed on the right.
+{% include 'socials.njk' %}
 
 Most of the pages on the site are using the Classical Humanist fonts from [Modern Font Stacks](https://modernfontstacks.com/), a set of system fonts that look similar across browsers and operating systems. This eliminates the need to load a font from an external source.

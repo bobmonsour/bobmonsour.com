@@ -1,8 +1,8 @@
 {
-  "layout": "post.njk",
-  "permalink": "posts/{{ page.fileSlug }}/",
-  "imageDir": "src/assets/img/",
-  "showImage": true,
-  "keywords": "retired, web development, eleventy, tennis",
-  "snow": "false"
+	"layout": "post.njk",
+	"permalink": "posts/{{ page.fileSlug }}/",
+	"imageDir": "src/assets/img/",
+	"showImage": true,
+	"keywords": "retired, web development, blog, eleventy, tennis",
+	"snow": "false"
 }

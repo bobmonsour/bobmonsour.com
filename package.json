@@ -47,6 +47,7 @@
 	},
 	"dependencies": {
 		"@11ty/is-land": "^4.0.0",
-		"@zachleat/snow-fall": "^1.0.2"
+		"@zachleat/snow-fall": "^1.0.2",
+		"eleventy-plugin-xray": "^1.0.0-alpha.3"
 	}
 }

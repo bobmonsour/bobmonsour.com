@@ -3,26 +3,27 @@
   allows separate styling of other <footer> elements
 */
 body > footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  background-color: var(--light-accent-color);
-  padding-block: 0.5em;
-  margin-block-start: 1em;
+	display: flex;
+	align-items: center;
+	font-size: var(--font-size-base);
+	justify-content: space-around;
+	background-color: var(--light-accent-color);
+	padding-block: 0.5em;
+	margin-block-start: 1em;
 }
-body > footer .text {
-  margin: 0;
+body > footer text {
+	margin: 0;
 }
 /* social media icons */
 .social-link {
-  border: none;
+	border: none;
 }
 .social-link:hover,
 .social-link:focus {
-  cursor: pointer;
+	cursor: pointer;
 }
 .icon {
-  width: 48px;
-  height: 48px;
+	width: 48px;
+	height: 48px;
 }
 /* end page footer */

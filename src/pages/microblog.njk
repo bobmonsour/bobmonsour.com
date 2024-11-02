@@ -1,0 +1,19 @@
+---
+title: microBlog
+description: These are the archives of Bob Monsour's microblog.
+keywords: retired, web development, eleventy, tennis, microblog
+image:
+  source: "about-bob.jpg"
+  alt: "a picture of Bob from 2009"
+permalink: /microblog/
+---
+
+<h1>{{ title }} <span class="rsslink">(<a href="/microfeed.xml">microRSS</a>)</span></h1>
+
+{%- set microlist = collections.microblog | reverse -%}
+{%- for post in microlist -%}
+  <div class="microblog post">
+    <p class="microdate">{{ post.date | formatPostDate }}</p>
+    <p>{{ post.content | safe }}</p>
+  </div>
+{%- endfor -%}

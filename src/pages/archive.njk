@@ -1,14 +1,14 @@
 ---
-title: Archive
+title: Blog
 description: These are the archives of the personal website of Bob Monsour.
 keywords: retired, web development, eleventy, tennis, archives
 image:
-  source: "young-bob.jpg"
-  alt: "a picture of Bob's face as a boy"
+  source: "about-bob.jpg"
+  alt: "a picture of Bob from 2009"
 permalink: /archive/
 ---
 
-<h1>{{ title }}</h1>
+<h1>{{ title }} <span class="rsslink">(<a href="/feed.xml">RSS</a>)</span></h1>
 
 {%- set postlist = collections.posts | reverse -%}
 {% include "postlist.njk" %}
