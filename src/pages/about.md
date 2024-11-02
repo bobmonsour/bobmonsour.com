@@ -15,11 +15,11 @@ permalink: /about/
 
 Hi! I'm Bob Monsour.
 
-Brooklyn-born, New Jersey-raised, and educated in Florida and Los Angeles, I'm now retired and living in Northern California with my wonderful [wife and artist](https://www.tascafineart.com/), Sandra, and our Portuguese Water Dog, Soda. Our son is out on his own and lives in Los Angeles.
+<p>Brooklyn-born, New Jersey-raised, and educated in Florida and Los Angeles, I'm now retired and living in Northern California with my wonderful <a href="https://www.tascafineart.com/">wife and artist</a>, Sandra, and our Portuguese Water Dog, <a href="/soda/">Soda</a>. Our son is out on his own and lives in Los Angeles.</p>
 
-<p>When we're not traveling, I enjoy trying to stay fit and being a part of the community of web developers who use the static site generator <a href="https://11ty.dev">Eleventy</a>. A big part of that is maintaining a <a href="https://11tybundle.dev">website</a> and <a href="https://buttondown.com/11tybundle">newsletter</a> called the <a href="https://11tybundle.dev">11ty Bundle</a>.</p>
+<p>When we're not traveling, I enjoy reading and trying to stay fit. I'm also enjoying being a part of the community of web developers who make and use the static site generator <a href="https://11ty.dev">Eleventy</a>. A big part of that is maintaining a <a href="https://11tybundle.dev">website</a> and <a href="https://buttondown.com/11tybundle">newsletter</a> called the <a href="https://11tybundle.dev">11ty Bundle</a>.</p>
 
-<p>I've had the privilege of working in the technology industry from the late 70s through early 2000. I was fortunate to work on a lot of interesting projects, both on the technical and the business side.</p>
+I've had the privilege of working in the technology industry, beginning in the late 70s. I was fortunate to work on a lot of interesting projects with some really great people.
 
 For a career view, it's probably best to look at my [LinkedIn profile](https://www.linkedin.com/in/bobmonsour/).
 

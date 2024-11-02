@@ -42,7 +42,6 @@ a {
 }
 a:is(:hover, :focus) {
 	background-color: var(--link-hover-color);
-	/* background-color: var(--light-accent-color); */
 	border-radius: var(--brand-link-radius);
 }
 
@@ -275,6 +274,18 @@ iframe[src*="youtube"] {
 .social-icons li {
 	margin-block: 0;
 	padding: 1.25rem;
+}
+.social-icons a {
+	border-bottom: 0;
+	display: inline-block;
+	padding: 0.5em;
+	text-decoration: none;
+	transition: transform 0.3s ease;
+}
+.social-icons a:hover,
+.social-icons a:focus {
+	transform: scale(1.1);
+	outline: none;
 }
 .social-icons li a img {
 	height: 2.5rem;
