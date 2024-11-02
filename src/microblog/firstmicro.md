@@ -1,5 +1,5 @@
 ---
-title: The first microBlog post here
+title: The first microBlog post
 date: 2024-11-01
 description: I've set up a microBlog on the site and this is the first post in it.
 tags: microblog

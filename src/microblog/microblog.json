@@ -1,6 +1,6 @@
 {
 	"layout": "micropost.njk",
-	"permalink": "microblog/{{ page.fileSlug }}/",
+	"permalink": "microblog/{{ title | slugify }}/",
 	"keywords": "retired, web development, microblog, eleventy, tennis",
 	"snow": "false"
 }

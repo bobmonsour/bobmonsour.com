@@ -63,9 +63,11 @@ audio {
 
 hr {
 	border: none; /* Remove the default border */
-	height: 2px; /* Set the height of the line */
-	background-color: var(--dark-accent-color); /* Set the background color */
-	margin: 1em 0; /* Add vertical spacing around the line */
+	height: 1px; /* Set the height of the line */
+	background-color: black; /* Set the background color */
+	/* background-color: var(--dark-accent-color); Set the background color */
+	margin: 1em auto; /* Add vertical spacing around the line */
+	width: 80%;
 }
 
 /* default img to handle fluid images */
@@ -300,6 +302,6 @@ iframe[src*="youtube"] {
 .microdate {
 	font-size: var(--font-size-base);
 	font-style: italic;
-	font-weight: bold;
+	/* font-weight: bold; */
 	line-height: 3;
 }
