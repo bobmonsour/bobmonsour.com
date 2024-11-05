@@ -8,7 +8,7 @@ eleventyExcludeFromCollections: true
   <title>{{ site.title }}</title>
   <subtitle>{{ site.description }}</subtitle>
   <link href="{{ site.url }}{{ permalink }}" rel="self"/>
-  {% set postslist = collections.posts | reverse %}
+  {% set postslist = collections.postsandmicroblog | reverse %}
   <updated>{{ postslist | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
   <id>{{ site.url }}/</id>
   <author>

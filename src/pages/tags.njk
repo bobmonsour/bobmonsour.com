@@ -19,6 +19,6 @@ image:
 <h1>Tagged “{{ tag }}”</h1>
 
 {% set postlist = collections[ tag ] | reverse %}
-{% include "postlist.njk" %}
+{% include "postlist-tagged.njk" %}
 
 <h3><a href="/archive/" title="link to more blog posts in the archive">More posts in the Archive...</a></h3>

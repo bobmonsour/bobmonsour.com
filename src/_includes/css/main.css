@@ -67,7 +67,7 @@ hr {
 	background-color: black; /* Set the background color */
 	/* background-color: var(--dark-accent-color); Set the background color */
 	margin: 1em auto; /* Add vertical spacing around the line */
-	width: 80%;
+	width: 40%;
 }
 
 /* default img to handle fluid images */
@@ -328,7 +328,11 @@ iframe[src*="youtube"] {
 	padding-block: 2rem 0;
 	text-align: left;
 }
-.microdate {
-	font-size: var(--font-size-base);
+.blogdate {
+	font-size: var(--font-size-md);
+	font-style: italic;
+}
+.blogdescription {
+	font-size: var(--font-size-md);
 	font-style: italic;
 }
