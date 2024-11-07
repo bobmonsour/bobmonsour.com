@@ -5,4 +5,5 @@ layout: default.njk
   <h1>{{ title }}</h1>
 	<p class="microdate">{{ date | formatPostDate }}</p>
 	{{ content | safe }}
+	<p><a href="mailto:bob.monsour@gmail.com?subject=Comment:%3A%20{{ title | urlencode }}">Send a comment by email</a> (yes, that's a mailto link).</p>
 </article>
