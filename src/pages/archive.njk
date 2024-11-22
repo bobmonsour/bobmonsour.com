@@ -8,7 +8,7 @@ image:
 permalink: /archive/
 ---
 
-<h1>{{ title }} <span class="rsslink">(<a href="/feed.xml">RSS</a>, includes microBlog)</span></h1>
+<h1>{{ title }} <span class="parenthetical">(<a href="/feed.xml">RSS</a>, includes microBlog)</span></h1>
 
 {%- set postlist = collections.posts | reverse -%}
 {% include "postlist.njk" %}

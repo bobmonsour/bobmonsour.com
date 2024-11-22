@@ -8,7 +8,7 @@ image:
 permalink: /microblog/
 ---
 
-<h1>{{ title }} <span class="rsslink">(<a href="/microfeed.xml">microRSS</a>)</span></h1>
+<h1>{{ title }} <span class="parenthetical">(<a href="/microfeed.xml">microRSS</a>)</span></h1>
 
 {%- set microlist = collections.microblog | reverse -%}
 {%- for post in microlist -%}

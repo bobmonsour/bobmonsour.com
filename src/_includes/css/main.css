@@ -64,7 +64,7 @@ audio {
 hr {
 	border: none; /* Remove the default border */
 	height: 1px; /* Set the height of the line */
-	background-color: black; /* Set the background color */
+	/* background-color: black; Set the background color */
 	/* background-color: var(--dark-accent-color); Set the background color */
 	margin: 1em auto; /* Add vertical spacing around the line */
 	width: 40%;
@@ -171,6 +171,15 @@ img[width][height] {
 	margin-block: 0.25em;
 	padding: 0;
 }
+.tagged-taglist {
+	display: flex;
+	font-size: var(--font-size-base);
+	justify-content: left;
+	list-style: none;
+	margin-block: 0;
+	/* margin-block: 0.25em; */
+	padding: 0;
+}
 .post-card {
 	display: grid;
 	grid-column: full;
@@ -259,7 +268,7 @@ iframe[src*="youtube"] {
 	width: 100%;
 }
 
-.rsslink {
+.parenthetical {
 	font-size: var(--font-size-md);
 	font-weight: normal;
 	font-style: italic;
@@ -329,7 +338,7 @@ iframe[src*="youtube"] {
 	text-align: left;
 }
 .blogdate {
-	font-size: var(--font-size-md);
+	font-size: var(--font-size-base);
 	font-style: italic;
 }
 .blogdescription {
