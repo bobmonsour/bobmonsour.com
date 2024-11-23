@@ -1,6 +1,5 @@
 ---
 title: Is it really a new design?
-date: Created
 description: I've "redesigned" my personal site.
 tags: microblog
 ---

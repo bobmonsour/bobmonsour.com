@@ -1,6 +1,5 @@
 ---
 title: The first microBlog post
-date: Created
 description: I've set up a microBlog on the site and this is the first post in it.
 tags: microblog
 ---

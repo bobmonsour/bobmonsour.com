@@ -1,6 +1,5 @@
 ---
 title: We're in Italy at the moment
-date: Created
 description: Vacationing in Italy has its upsides, especially following the US election.
 tags: microblog
 ---

@@ -4,7 +4,6 @@
 		"body": [
 			"---",
 			"title: ${1:Title}",
-			"date: Created",
 			"description: ${2:Description}",
 			"tags: microblog",
 			"---",

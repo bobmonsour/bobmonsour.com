@@ -1,6 +1,5 @@
 ---
 title: My circle of friends on Bluesky
-date: Created
 description: There's a very cool service called Skircle that generates an image of your circle of friends on Bluesky. Here's mine.
 tags: microblog
 ---
