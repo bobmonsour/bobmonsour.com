@@ -1,6 +1,7 @@
 {
 	"layout": "micropost.njk",
 	"permalink": "microblog/{{ title | slugify }}/",
+	"date": "git Created",
 	"image": {
 		"source": "microblog-og-image.jpg"
 	},
