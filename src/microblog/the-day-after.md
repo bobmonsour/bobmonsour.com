@@ -1,6 +1,6 @@
 ---
 title: The day after...and we're in Italy
-date: git Created
+date: Created
 description: The day after the election. The results are in. The country is divided. The future is uncertain. And we're in Italy.
 tags: microblog
 ---

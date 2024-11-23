@@ -1,6 +1,6 @@
 ---
 title: I'm finally unvexed by microblog post dates
-date: git Created
+date: Created
 description: I recently had a problem on this here microblog. It has to do with dates. But it's all ok now.
 tags: microblog
 ---

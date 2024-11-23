@@ -4,7 +4,7 @@
 		"body": [
 			"---",
 			"title: ${1:Title}",
-			"date: git Created",
+			"date: Created",
 			"description: ${2:Description}",
 			"tags: microblog",
 			"---",

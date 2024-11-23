@@ -1,6 +1,6 @@
 ---
 title: What will I do next among the many things I want to do?
-date: git Created
+date: Created
 description: I've got a lot of things I want to do, but I can't do them all at once. What will I do next?
 tags: microblog
 ---

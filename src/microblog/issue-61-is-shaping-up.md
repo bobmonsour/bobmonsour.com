@@ -1,6 +1,6 @@
 ---
 title: Issue 61 is shaping up
-date: git Created
+date: Created
 description: We're still in Italy, but Issue 61 of the 11ty Bundle is shaping up to be a doozy.
 tags: microblog
 ---

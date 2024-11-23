@@ -1,6 +1,6 @@
 ---
 title: Anxiety officially reduced
-date: git Created
+date: Created
 description: After an eventful day, I'm feeling much better...for several reasons.
 tags: microblog
 ---
