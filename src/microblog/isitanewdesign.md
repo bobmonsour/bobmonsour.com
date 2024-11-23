@@ -1,6 +1,6 @@
 ---
 title: Is it really a new design?
-date: 2024-11-02
+date: git Created
 description: I've "redesigned" my personal site.
 tags: microblog
 ---

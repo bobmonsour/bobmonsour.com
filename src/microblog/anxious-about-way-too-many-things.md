@@ -1,6 +1,6 @@
 ---
 title: I'm currently anxious about way too many things
-date: 2024-11-04
+date: git Created
 description: On the eve of the election and international travel, I'm worried about a lot of stuff.
 tags: microblog
 ---

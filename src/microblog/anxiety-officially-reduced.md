@@ -1,6 +1,6 @@
 ---
 title: Anxiety officially reduced
-date: 2024-11-05
+date: git Created
 description: After an eventful day, I'm feeling much better...for several reasons.
 tags: microblog
 ---
