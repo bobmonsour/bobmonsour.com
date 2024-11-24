@@ -19,16 +19,15 @@
     - postlist.njk
 #}
 {% if showImage %}
-  {% set imageSource %}{{ imageDir + image.source }}{% endset %}
-  {% image imageSource, image.alt, "100vw", "eager" %}
+  <img src="/assets/img/{{ image.source }}" alt="{{ image.alt }}" sizes="100vw" loading="eager">
 {% endif %}
 
 {# if there's a person to credit and a link to them, show both #}
 {% if showImage and image.creditPerson and image.creditLink%}
-  <p>Photo by <a href="{{ image.creditLink }}">{{ image.creditPerson }}</a></p>
+  <p class="caption">Photo by <a href="{{ image.creditLink }}">{{ image.creditPerson }}</a></p>
 {% endif %}
 
 {# if there's an image and a caption, show the caption #}
 {% if showImage and image.caption %}
-  <p>{{ image.caption }}</p>
+  <p class="caption">{{ image.caption }}</p>
 {% endif %}

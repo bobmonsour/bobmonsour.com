@@ -24,9 +24,9 @@ I'm working in an office somewhere in a technical role.
 
 There's a PC on my desk with an old style CRT display.
 
-{% image imageDir + "ibm-pc.jpg", "IBM PC from the 1980s", "100vw" %}
+<img src="/assets/img/ibm-pc.jpg" alt="IBM PC from the 1980s" sizes="100vw">
 
-Photo by [bert b](https://unsplash.com/@bertsz)
+<p class="caption">Photo by <a href="https://unsplash.com/@bertsz">bert b</a></p>
 
 A foam wrist rest sits in front of the keyboard.
 
@@ -36,9 +36,9 @@ A well-known Princeton professor also worked there (wherever "there" is), or con
 
 It seems that I had left two lit cigarettes resting on the foam wrist rest while I had gone to the bathroom. Not one, but two!
 
-{% image imageDir + "burning-ciagarette.jpg", "a burning cigarette sitting on a ledge", "100vw" %}
+<img src="/assets/img/burning-ciagarette.jpg" alt="a burning cigarette sitting on a ledge" sizes="100vw">
 
-Photo by [Andres Siimon](https://unsplash.com/@johnmcclane)
+<p class="caption">Photo by <a href="https://unsplash.com/@johnmcclane">Andres Siimon</a></p>
 
 When I returned to my desk, I found a small piece of cigarette ash on the floor from one of the two. The cigarette from which this ash came was nowhere to be found.
 

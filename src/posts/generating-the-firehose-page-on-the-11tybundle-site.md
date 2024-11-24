@@ -8,6 +8,7 @@ keywords: firehose template, eleventy, 11tybundle.dev
 image:
   source: "generating-the-firehose-page-on-the-11tybundle-site.jpg"
   alt: "A notebook of pages"
+  caption: "Some Navy guys holding a firehose on an aircraft carrier"
 pageHasCode: true
 ---
 
@@ -31,7 +32,7 @@ I just added a feature to the [Firehose page](https://11tybundle.dev/firehose/) 
 
 [UPDATE]: I should've added an image to show what it looks like. Like this. Note that all of the years default to their "open" state, but I'm displaying 2023 and 2022 in their collapsed state.
 
-{% image "src/assets/img/details-summary-sample.jpg", "Showing 2 years of collapsed details element and part of one not collapsed", "100vw" %}
+<img src="src/assets/img/details-summary-sample.jpg" alt="Showing 2 years of collapsed details element and part of one not collapsed", sizes="100vw">
 
 <section id='section2'></section>
 
@@ -49,17 +50,17 @@ The data is returned as an object with a bunch of properties. Here's a list of t
 
 ```js
 return {
-  bundleRecords,
-  firehose,
-  postCount,
-  starters,
-  starterCount,
-  authors,
-  authorsByCount,
-  authorCount,
-  categories,
-  categoryCount,
-  gettingStartedCount,
+	bundleRecords,
+	firehose,
+	postCount,
+	starters,
+	starterCount,
+	authors,
+	authorsByCount,
+	authorCount,
+	categories,
+	categoryCount,
+	gettingStartedCount,
 };
 ```
 
@@ -120,13 +121,13 @@ permalink: /firehose/
 ```css
 /* Firehose details and summary styles */
 details {
-  width: min(var(--main-element-max), 100vw - 1em);
+	width: min(var(--main-element-max), 100vw - 1em);
 }
 summary {
-  padding: 1rem 0;
-  font-size: var(--font-size-lg);
-  font-weight: bold;
-  cursor: pointer;
+	padding: 1rem 0;
+	font-size: var(--font-size-lg);
+	font-weight: bold;
+	cursor: pointer;
 }
 ```
 

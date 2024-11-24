@@ -99,9 +99,9 @@ Initially, I took a look at commander, and it seemed like a little more than wha
 
 This view of the CLI is from the top level of my "Make Bundle Entries" script.
 
-{% image "src/assets/img/make-bundle-entries.jpg", "A top-level view of a node CLI", "100vw" %}
+<img src="/assets/img/make-bundle-entries.jpg" alt="A top-level view of a node CLI" sizes="100vw">
 
-The opening presentation of the Make Bundle Entries script
+<p class="caption">The opening presentation of the Make Bundle Entries script</p>
 
 The inquirer package generates it with very little code:
 
@@ -124,8 +124,8 @@ switch (entryType) {
     break;
   case "release":
     await enterRelease();
-    break;
-  case "starter":
+    break;<>
+  case "starter":<>
     await enterStarter();
     break;
   default:
@@ -164,9 +164,9 @@ Here's what that looks like for one of [Cory Dransfeldt's recent post](https://c
 
 I cannot tell you how much I love this workflow for creating entries.
 
-{% image "src/assets/img/coryds-post.jpg", "A sample of entering data for a blog post", "100vw" %}
+<img src="/assets/img/coryds-post.jpg" alt="A sample of entering data for a blog post" sizes="100vw">
 
-A terminal view of entering a post and the follow-up questions
+<p class="caption">A terminal view of entering a post and the follow-up questions</p>
 
 <div id="section10"></div>
 
@@ -184,15 +184,15 @@ So how does this help my CLI workflow? With Raycast, I can create something call
 
 Once I got the hang of this, I realized that I needed a way to find out how many of each type of entry were in the database for the next blog post. So I wrote a simple script to prompt me for an issue number and it spits out just what I need, like this:
 
-{% image "src/assets/img/get-issue-counts.jpg", "Displaying the item counts for a given issue", "100vw" %}
+<img src="/assets/img/get-issue-counts.jpg" alt="Displaying the item counts for a given issue" sizes="100vw">
 
-Show me the item counts for a given issue
+<p class="caption">Show me the item counts for a given issue</p>
 
 Another script lets me check a URL to see if it's already in the database. While it does that check when I make an entry, if I have a sense that I may have seen the post before, it makes no sense to enter several items and then find out that it's a duplicate. With this script, I can do a simple check before spending more time on it. It looks like this:
 
-{% image "src/assets/img/check-url.jpg", "Checking to see if a URL is already present in the file", "100vw" %}
+<img src="/assets/img/check-url.jpg" alt="Checking to see if a URL is already present in the file" sizes="100vw">
 
-Check for a URL in the database
+<p class="caption">Check for a URL in the database</p>
 
 <div id="section12"></div>
 

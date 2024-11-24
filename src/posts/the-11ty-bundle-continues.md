@@ -32,9 +32,9 @@ I took some strange turns, like trying to build my own analytics using Netlify f
 
 Here's a peek at the analytics for the site. I added Fathom in July 2023.
 
-{% image imageDir + "fathom-analytics.avif", "Fathom Analytics for the 11tybundle.dev site", "100vw" %}
+<img src="/assets/img/fathom-analytics.avif" alt="Fathom Analytics for the 11tybundle.dev site" size="100vw">
 
-Fathom Analytics for the 11tybundle.dev site
+<p class="caption">Fathom Analytics for the 11tybundle.dev site</p>
 
 I also toyed (for about 2 weeks) with using the Buy Me a Coffee service. I don't need the money and there were no coffee buyers.
 

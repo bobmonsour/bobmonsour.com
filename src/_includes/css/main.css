@@ -240,7 +240,7 @@ img[width][height] {
 }
 
 /* first paragraph after an image is always a caption */
-picture + p {
+picture + p.caption {
 	grid-column: content;
 	text-align: center;
 	font-size: var(--caption-size);

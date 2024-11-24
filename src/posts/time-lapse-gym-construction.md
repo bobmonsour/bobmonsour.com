@@ -8,7 +8,7 @@ keywords: video, time lapse, gym, construction, ftp
 image:
   source: "time-lapse-gym-construction.jpg"
   alt: "the insides of a construction site for a new gymnasium"
-  caption: "the insides of a construction site for a new gymnasium"
+  caption: "The insides of a construction site for a new gymnasium"
 ---
 
 Inspired by the mention of time-lapse films by [Sara Joy](https://sarajoy.dev/) in Manuel Moreale's [interview with her](https://manuelmoreale.com/pb-sara-joy) (part of his People & Blogs series), I thought I'd share a story about a time-lapse project that I was involved with back in 2005-06.

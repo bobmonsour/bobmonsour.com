@@ -13,17 +13,17 @@ image:
 
 We've been spending the last few days in Carmel CA, a truly beautiful place. The beach is our favorite place. Our dog, Soda, can run off leash and play around with all the other dogs and we can get a nice refreshing walk into our day. Yesterday, the sunset was amazing. I took a few photos and wanted to share them.
 
-{% image imageDir + "sunset1.jpg", "The sun setting over the Pacific Ocean", "100vw" %}
-{% image imageDir + "sunset2.jpg", "The sun setting over the Pacific Ocean", "100vw" %}
-{% image imageDir + "sunset3.jpg", "The sun setting over the Pacific Ocean", "100vw" %}
-{% image imageDir + "sunset4.jpg", "The sun setting over the Pacific Ocean", "100vw" %}
-{% image imageDir + "sunset5.jpg", "The sun setting over the Pacific Ocean", "100vw" %}
-{% image imageDir + "sunset6.jpg", "The sun setting over the Pacific Ocean", "100vw" %}
-{% image imageDir + "sunset7.jpg", "The sun setting over the Pacific Ocean", "100vw" %}
-{% image imageDir + "sunset8.jpg", "The sun setting over the Pacific Ocean", "100vw" %}
-{% image imageDir + "sunset9.jpg", "The sun setting over the Pacific Ocean", "100vw" %}
-{% image imageDir + "sunset10.jpg", "The sun setting over the Pacific Ocean", "100vw" %}
-{% image imageDir + "sunset11.jpg", "The sun setting over the Pacific Ocean", "100vw" %}
-{% image imageDir + "sunset12.jpg", "The sun setting over the Pacific Ocean", "100vw" %}
-{% image imageDir + "sunset13.jpg", "The sun setting over the Pacific Ocean", "100vw" %}
-{% image imageDir + "sunset14.jpg", "The sun setting over the Pacific Ocean", "100vw" %}
+<img src="/assets/img/sunset1.jpg" alt="The sun setting over the Pacific Ocean" sizes="100vw" loading="eager">
+<img src="/assets/img/sunset2.jpg" alt="The sun setting over the Pacific Ocean" sizes="100vw">
+<img src="/assets/img/sunset3.jpg" alt="The sun setting over the Pacific Ocean" sizes="100vw">
+<img src="/assets/img/sunset4.jpg" alt="The sun setting over the Pacific Ocean" sizes="100vw">
+<img src="/assets/img/sunset5.jpg" alt="The sun setting over the Pacific Ocean" sizes="100vw">
+<img src="/assets/img/sunset6.jpg" alt="The sun setting over the Pacific Ocean" sizes="100vw">
+<img src="/assets/img/sunset7.jpg" alt="The sun setting over the Pacific Ocean" sizes="100vw">
+<img src="/assets/img/sunset8.jpg" alt="The sun setting over the Pacific Ocean" sizes="100vw">
+<img src="/assets/img/sunset9.jpg" alt="The sun setting over the Pacific Ocean" sizes="100vw">
+<img src="/assets/img/sunset10.jpg" alt="The sun setting over the Pacific Ocean" sizes="100vw">
+<img src="/assets/img/sunset11.jpg" alt="The sun setting over the Pacific Ocean" sizes="100vw">
+<img src="/assets/img/sunset12.jpg" alt="The sun setting over the Pacific Ocean" sizes="100vw">
+<img src="/assets/img/sunset13.jpg" alt="The sun setting over the Pacific Ocean" sizes="100vw">
+<img src="/assets/img/sunset14.jpg" alt="The sun setting over the Pacific Ocean" sizes="100vw">

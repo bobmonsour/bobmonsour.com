@@ -2,7 +2,6 @@
 // Keep the `.eleventy.js` file clean and uncluttered.
 // Most adjustments must be made in:
 //  - `./config/filters/index.js`
-//  - `./config/shortcodes/index.js`
 
 // environment variable handling
 require("dotenv").config();
@@ -15,16 +14,11 @@ const {
 	plainDate,
 } = require("./config/filters/index.js");
 
-// module import shortcodes
-const { imageShortcode, year } = require("./config/shortcodes/index.js");
-
 // plugins
 const postGraph = require("@rknightuk/eleventy-plugin-post-graph");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
-const bundlerPlugin = require("@11ty/eleventy-plugin-bundle");
-const postcss = require("postcss");
-const postcssMinify = require("postcss-minify");
+const { eleventyImageTransformPlugin } = require("@11ty/eleventy-img");
 
 module.exports = function (eleventyConfig) {
 	// generate the "posts" collection
@@ -47,15 +41,14 @@ module.exports = function (eleventyConfig) {
 		];
 	});
 
+	// config the bundle for CSS
+	eleventyConfig.addBundle("css");
+
 	// add filters
 	eleventyConfig.addFilter("readingTime", readingTime);
 	eleventyConfig.addFilter("formatPostDate", formatPostDate);
 	eleventyConfig.addFilter("getAllTags", getAllTags);
 	eleventyConfig.addFilter("plainDate", plainDate);
-
-	// add shortcodes
-	eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode);
-	eleventyConfig.addShortcode("year", year);
 
 	// add plugins
 	eleventyConfig.addPlugin(postGraph, {
@@ -67,26 +60,17 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addPlugin(syntaxHighlight);
 	eleventyConfig.addPlugin(pluginRss);
 
-	// Bundles CSS, not-minified
-	eleventyConfig.addPlugin(bundlerPlugin);
-
-	// bundle CSS with eleventy, use postcss to minify the bundles
-	// eleventyConfig.addPlugin(bundlerPlugin, {
-	//   transforms: [
-	//     async function (content) {
-	//       // this.type returns the bundle name.
-	//       if (this.type === "css") {
-	//         // Same as Eleventy transforms, this.page is available here.
-	//         let result = await postcss([postcssMinify]).process(content, {
-	//           from: this.page.inputPath,
-	//           to: null,
-	//         });
-	//         return result.css;
-	//       }
-	//       return content;
-	//     },
-	//   ],
-	// });
+	// Add the new eleventy image transform plugin
+	eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
+		extensions: "html",
+		urlPath: "/assets/img/",
+		outputDir: "/assets/img/",
+		formats: ["webp", "jpeg"],
+		defaultAttributes: {
+			loading: "lazy",
+			decoding: "async",
+		},
+	});
 
 	// turn off noisy eleventy output
 	eleventyConfig.setQuietMode(true);

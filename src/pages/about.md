@@ -11,9 +11,9 @@ permalink: /about/
 
 # {{ title }}
 
-<img src="/assets/img/about-bob.jpg" class="about-img" alt="Bob circa 2009">
+<img src="/assets/img/about-bob.jpg" class="about-img" alt="Bob circa 2009" sizes="100px" loading="eager">
 
-Hi! I'm Bob Monsour.
+<p>Hi! I'm Bob Monsour.</p>
 
 <p>Brooklyn-born, New Jersey-raised, and educated in Florida and Los Angeles, I'm now retired and living in Northern California with my wonderful <a href="https://www.tascafineart.com/">wife and artist</a>, Sandra, and our Portuguese Water Dog, <a href="/soda/">Soda</a>. Our son is out on his own and lives in Los Angeles.</p>
 

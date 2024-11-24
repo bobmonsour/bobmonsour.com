@@ -8,7 +8,7 @@ keywords: caching, build time, 11ty
 image:
   source: "slashing-by-caching.webp"
   alt: "the word cache on a printed circuit board"
-  caption: "the word cache on a printed circuit board"
+  caption: "The word 'cache' on a printed circuit board"
 pageHasCode: true
 ---
 
@@ -30,30 +30,30 @@ Note that I have a filter called getDescription that takes the url for a post an
 
 ```js
 const getDescription = async (link) => {
-  // Check if the description is in the cache
-  if (descriptionCache[link]) {
-    return descriptionCache[link];
-  }
-  try {
-    let htmlcontent = await EleventyFetch(link, {
-      directory: ".cache",
-      duration: "*",
-      type: "buffer",
-    });
-    const $ = cheerio.load(htmlcontent);
-    const description = $("meta[name=description]").attr("content");
-    if (link.includes("youtube.com")) {
-      descriptionCache[link] = "YouTube video";
-    } else if (description == undefined) {
-      descriptionCache[link] = "";
-    } else {
-      descriptionCache[link] = description.trim();
-    }
-    return descriptionCache[link];
-  } catch (e) {
-    console.log("Error fetching description for " + link + " " + e.message);
-    return "";
-  }
+	// Check if the description is in the cache
+	if (descriptionCache[link]) {
+		return descriptionCache[link];
+	}
+	try {
+		let htmlcontent = await EleventyFetch(link, {
+			directory: ".cache",
+			duration: "*",
+			type: "buffer",
+		});
+		const $ = cheerio.load(htmlcontent);
+		const description = $("meta[name=description]").attr("content");
+		if (link.includes("youtube.com")) {
+			descriptionCache[link] = "YouTube video";
+		} else if (description == undefined) {
+			descriptionCache[link] = "";
+		} else {
+			descriptionCache[link] = description.trim();
+		}
+		return descriptionCache[link];
+	} catch (e) {
+		console.log("Error fetching description for " + link + " " + e.message);
+		return "";
+	}
 };
 ```
 
@@ -69,14 +69,14 @@ All I had to do was replace the slugify incarnation in my templates with my own 
 
 ```js
 function cachedSlugify(input) {
-  // Check if the slug is in the cache
-  if (slugCache[input]) {
-    return slugCache[input];
-  }
-  // If not, generate the slug and store it in the cache
-  const slug = slugify(input);
-  slugCache[input] = slug;
-  return slug;
+	// Check if the slug is in the cache
+	if (slugCache[input]) {
+		return slugCache[input];
+	}
+	// If not, generate the slug and store it in the cache
+	const slug = slugify(input);
+	slugCache[input] = slug;
+	return slug;
 }
 ```
 

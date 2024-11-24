@@ -44,9 +44,9 @@ Earlier this year, things came to a head where I was unable to walk very far wit
 
 ## 2. Is there a doctor in the house?
 
-{% image imageDir + "doctor-in-the-house.jpg", "eight doctors, all masked, looking over a patient as seen from the patient's perspective", "100vw" %}
+<img src="/assets/img/doctor-in-the-house.jpg" alt="eight doctors, all masked, looking over a patient as seen from the patient's perspective" sizes="100vw">
 
-Photo by [National Cancer Institute](https://unsplash.com/@nci)
+<p class="caption">Photo by <a href="https://unsplash.com/@nci">National Cancer Institute</a></p>
 
 Several years ago, when we lived in Bellevue, Washington, I decided to see a doctor to get a professional take on what was going on. X-rays revealed [osteoarthritis](https://www.mayoclinic.org/diseases-conditions/osteoarthritis/symptoms-causes/syc-20351925) of both knees, with the right knee winning the degeneration race. From the x-ray report:
 
@@ -74,9 +74,9 @@ That visit with InjectoDoc was in July. I told him that I’d like to try the vi
 
 ## 3. Is this the doctor I should be seeing?
 
-{% image imageDir + "which-one-would-you-like.jpg", "a man showing the inside of his trench coat with various things to buy", "100vw" %}
+<img src="/assets/img/which-one-would-you-like.jpg" alt="a man showing the inside of his trench coat with various things to buy" sizes="100vw">
 
-InjectoDoc
+<p class="caption">InjectoDoc (also, Joe Jackson)</p>
 
 I was starting to become concerned that InjectoDoc might not be the right guy for my long term knee care. I was relying on the fact that he was conveniently located. That, and a yoga instructor suggested him to my wife to help diagnose her hip (I kid you not).
 
@@ -100,9 +100,9 @@ From the articles I’ve read, when it comes to pain reduction and knee function
 
 So I made an appointment to see him and scheduled it before my date with InjectoDoc. He’s a surgeon and knee replacements are one of his specialties. Of course, he said that I needed a knee replacement. His story to me went something like this.
 
-{% image imageDir + "roof-leak.jpg", "man sitting in his kitchen, reading a newspaper, as water comes down from the ceiling", "100vw" %}
+<img src="/assets/img/roof-leak.jpg" alt="man sitting in his kitchen, reading a newspaper, as water comes down from the ceiling" sizes="100vw">
 
-Your roof is leaking
+<p class="caption">Your roof is leaking</p>
 
 > “Your roof is leaking. You can wait, but your roof will still be leaking. At some point, you’ll need to fix it.”
 
@@ -110,9 +110,9 @@ I asked him about the various injections, noting that cortisone and PRP did noth
 
 I noted that I was concerned about being in the hospital during COVID-time and that I’d feel better doing a replacement after the start of the new year. He understood, but noted that I’d be going home the same day. I said that I’d consider what he’d said and would let them know. They provided some home exercises to do in preparation.
 
-{% image imageDir + "right-knee-xray.jpg", "x-ray of knees, showing arthritis in the right knee", "100vw" %}
+<img src="/assets/img/right-knee-xray.jpg" alt="x-ray of knees, showing arthritis in the right knee" sizes="100vw">
 
-That’s my right knee…on the left.
+<p class="caption">That’s my right knee…on the left.</p>
 
 The next day, I was notified that the radiology report was available. Here’s a portion:
 
@@ -166,9 +166,9 @@ Ah, but visco-stuff, the guidelines can’t recommend its use, “unless a clear
 
 ## 6. To inject or not to inject?
 
-{% image imageDir + "injectodoc.jpg", "a diabolocial man holding a syringe", "100vw" %}
+<img src="/assets/img/injectodoc.jpg" alt="a diabolocial man holding a syringe" sizes="100vw">
 
-Photo [Dimitri Houtteman](https://unsplash.com/@dimhou)
+<p class="caption">Photo <a href="https://unsplash.com/@dimhou">Dimitri Houtteman</a></p>
 
 Now I was faced with whether or not to keep my appointment with InjectoDoc to get a visco-stuff injection. Perhaps it could buy me a bit more time before a knee replacement.
 
