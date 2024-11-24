@@ -65,8 +65,10 @@ module.exports = function (eleventyConfig) {
 		extensions: "html",
 		outputDir: "/assets/img/",
 		formats: ["webp", "jpeg"],
+		widths: [300, 600, 900, 1200],
 		defaultAttributes: {
 			loading: "lazy",
+			sizes: "100vw",
 			decoding: "async",
 		},
 	});
