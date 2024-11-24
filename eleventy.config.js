@@ -63,7 +63,6 @@ module.exports = function (eleventyConfig) {
 	// Add the new eleventy image transform plugin
 	eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
 		extensions: "html",
-		urlPath: "/assets/img/",
 		outputDir: "/assets/img/",
 		formats: ["webp", "jpeg"],
 		defaultAttributes: {
