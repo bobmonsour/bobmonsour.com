@@ -12,7 +12,7 @@ We then took a train to Naples for the scheduled tour of various cities and site
 
 Yesterday, we visited a few historic villas, including Villa San Marco. The image below was originally found at the villa, but is now houses in a regional museum. It's my favorite picture of the whole trip so far...something about the combination of colors and the composition of the image.
 
-<img src="/assets/img/villa-san-marco-fresco.jpg" alt="A small fresco from Villa San Marco near Naples">
+![A small fresco from Villa San Marco near Naples](/assets/img/villa-san-marco-fresco.jpg)
 
 We're off to see Oplontis. Here is a description of the site from a regional website:
 

@@ -9,9 +9,7 @@ permalink: /search/
 pagestyle: search
 ---
 
-<h1>{{ title }}</h1>
-
-{# add the pagefind search stuff here #}
+# {{ title }}
 
 <div class="popout">
   <script src="/pagefind/pagefind-ui.js"></script>

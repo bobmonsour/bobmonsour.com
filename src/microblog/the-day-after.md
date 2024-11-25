@@ -8,7 +8,7 @@ We flew from San Francisco to Rome yesterday. When we landed in Zurich on the fi
 
 Thankfully, after arriving in Rome and getting to our hotel, placing our bags down, and walking a single block, we found ourselves, quite intentionally, in Saint Peter's Square.
 
-<img src="/assets/img/saint-peters-square.jpg" alt="night time in Saint Peter's Square">
+![night time in Saint Peter's Square](/assets/img/saint-peters-square.jpg)
 
 And after a night of very deep sleep, I have awoken refreshed and I'm going to do my best to purge the US from my mind, at least for a time.
 

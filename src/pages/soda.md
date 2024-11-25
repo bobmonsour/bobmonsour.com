@@ -1,5 +1,5 @@
 ---
-layout: default.njk
+layout: plain.njk
 title: This is our Soda!
 description: This is Soda, our Portuguese Water Dog.
 keywords: dog, Soda
@@ -7,8 +7,6 @@ permalink: /soda.html
 eleventyExcludeFromCollections: true
 ---
 
-<h1>{{ title }}</h1>
-<br>
-<div class="post">
-<img src="/assets/img/soda.jpg", alt="Our dog, Soda" loading="eager">
-</div>
+# {{ title }}
+
+![Our dog, Soda](/assets/img/soda.jpg){loading="eager"}

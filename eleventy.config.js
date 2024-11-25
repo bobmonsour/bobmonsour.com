@@ -11,8 +11,7 @@ const markdownIt = require("markdown-it");
 const markdownItAttrs = require("markdown-it-attrs");
 const markdownItOptions = {
 	html: true,
-	breaks: true,
-	linkify: true,
+	breaks: false,
 };
 const markdownLib = markdownIt(markdownItOptions).use(markdownItAttrs);
 
