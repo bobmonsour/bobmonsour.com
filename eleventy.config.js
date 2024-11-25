@@ -6,6 +6,16 @@
 // environment variable handling
 require("dotenv").config();
 
+// set up markdown
+const markdownIt = require("markdown-it");
+const markdownItAttrs = require("markdown-it-attrs");
+const markdownItOptions = {
+	html: true,
+	breaks: true,
+	linkify: true,
+};
+const markdownLib = markdownIt(markdownItOptions).use(markdownItAttrs);
+
 // module import filters
 const {
 	readingTime,
@@ -43,6 +53,9 @@ module.exports = function (eleventyConfig) {
 
 	// config the bundle for CSS
 	eleventyConfig.addBundle("css");
+
+	// set markdown library
+	eleventyConfig.setLibrary("md", markdownLib);
 
 	// add filters
 	eleventyConfig.addFilter("readingTime", readingTime);

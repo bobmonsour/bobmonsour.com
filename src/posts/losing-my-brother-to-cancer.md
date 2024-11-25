@@ -24,11 +24,11 @@ There have been numerous times in our adult lives when I've found myself doing s
 
 <img src="/assets/img/brooklyn-circa-1960.jpg" alt="Circa 1960, Bill and I standing outside of our apartment building in Brooklyn." sizes="100vw">
 
-<p class="caption">Bill and I outside of our apartment building in Brooklyn, circa 1960</p>
+Bill and I outside of our apartment building in Brooklyn, circa 1960 {.caption}
 
 <img src="/assets/img/bill-and-kims-wedding.jpg" alt="Bill & Kim's wedding, Atlantic City, NJ, November 17, 2017" sizes="100vw">
 
-<p class="caption">Bill & Kim's wedding, Atlantic City, NJ, November 17, 2017</p>
+Bill & Kim's wedding, Atlantic City, NJ, November 17, 2017 {.caption}
 
 I've been consumed with thoughts of Bill and feeling anxious about writing this to mark the first anniversary of his passing. I don't know if you’ve experienced this, but whenever I've bought a new car (which isn't very often), right after buying it I start to see it everywhere. Something similar has been happening recently as this anniversary approached. I’ll share two examples.
 
@@ -52,11 +52,11 @@ Strange, huh?
 
 <img src="/assets/img/me-bill-mom-my-wedding.jpg" alt="My wedding, Pasadena, CA, August 7, 1993" sizes="100vw">
 
-<p class="caption">My wedding, Pasadena, CA, August 7, 1993</p>
+My wedding, Pasadena, CA, August 7, 1993 {.caption}
 
 <img src="/assets/img/me-bill-mom-thurlow-ave.jpg" alt="With Mom at our Thurlow Avenue home, Margate, NJ, God only knows when, because I sure don't" sizes="100vw">
 
-<p class="caption">With Mom at our Thurlow Avenue home, Margate, NJ, God only knows when, because I sure don't</p>
+With Mom at our Thurlow Avenue home, Margate, NJ, God only knows when, because I sure don't {.caption}
 
 Here's another example of these recent "coincidences." I'm currently reading the Alexander Hamilton biography by Ron Chernow. The eulogy by one of Hamilton's friends, Fisher Ames, includes the following statement:
 
@@ -74,7 +74,7 @@ Our last conversation was on the day before he died. He called me from the hospi
 
 <img src="/assets/img/waving-bill.jpg" alt="Bill, waving goodbye..." sizes="100vw">
 
-<p class="caption">Goodbye, Bill!</p>
+Goodbye, Bill! {.caption}
 
 I want to thank several authors who inspired me to bring forth these thoughts as they have shared a similar loss. Their writings include [Coping With the Sudden Death of My Brother](https://medium.com/myth-vs-craft/losing-a-sibling-coping-with-the-loss-of-my-brother-65a6e4a863d0), [The Sibling Loss Gang](https://medium.com/@megszee/https-medium-com-megszee-the-sibling-loss-gang-198653465e95), [After losing a sibling, searching for the sinkhole](https://medium.com/@slymank2/after-losing-a-sibling-searching-for-the-sinkhole-a7fab1ea2943), [Learning to live without you](https://medium.com/@oliviawilson_70511/learning-to-live-without-you-bfe961169da), and [Death, I have life on my mind](https://medium.com/@vikasgupta/death-i-have-life-on-my-mind-8c6d0a23b4d7).
 

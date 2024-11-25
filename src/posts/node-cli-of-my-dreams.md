@@ -99,9 +99,9 @@ Initially, I took a look at commander, and it seemed like a little more than wha
 
 This view of the CLI is from the top level of my "Make Bundle Entries" script.
 
-<img src="/assets/img/make-bundle-entries.jpg" alt="A top-level view of a node CLI" sizes="100vw">
+![A top-level view of a node CLI](/assets/img/make-bundle-entries.jpg)
 
-<p class="caption">The opening presentation of the Make Bundle Entries script</p>
+The opening presentation of the Make Bundle Entries script {.caption}
 
 The inquirer package generates it with very little code:
 
@@ -164,9 +164,9 @@ Here's what that looks like for one of [Cory Dransfeldt's recent post](https://c
 
 I cannot tell you how much I love this workflow for creating entries.
 
-<img src="/assets/img/coryds-post.jpg" alt="A sample of entering data for a blog post" sizes="100vw">
+![A sample of entering data for a blog post](/assets/img/coryds-post.jpg)
 
-<p class="caption">A terminal view of entering a post and the follow-up questions</p>
+A terminal view of entering a post and the follow-up questions {.caption}
 
 <div id="section10"></div>
 
@@ -184,15 +184,15 @@ So how does this help my CLI workflow? With Raycast, I can create something call
 
 Once I got the hang of this, I realized that I needed a way to find out how many of each type of entry were in the database for the next blog post. So I wrote a simple script to prompt me for an issue number and it spits out just what I need, like this:
 
-<img src="/assets/img/get-issue-counts.jpg" alt="Displaying the item counts for a given issue" sizes="100vw">
+![Displaying the item counts for a given issue](/assets/img/get-issue-counts.jpg)
 
-<p class="caption">Show me the item counts for a given issue</p>
+Show me the item counts for a given issue {.caption}
 
 Another script lets me check a URL to see if it's already in the database. While it does that check when I make an entry, if I have a sense that I may have seen the post before, it makes no sense to enter several items and then find out that it's a duplicate. With this script, I can do a simple check before spending more time on it. It looks like this:
 
-<img src="/assets/img/check-url.jpg" alt="Checking to see if a URL is already present in the file" sizes="100vw">
+![Checking to see if a URL is already present in the file](/assets/img/check-url.jpg)
 
-<p class="caption">Check for a URL in the database</p>
+Check for a URL in the database {.caption}
 
 <div id="section12"></div>
 

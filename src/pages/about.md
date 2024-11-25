@@ -11,13 +11,13 @@ permalink: /about/
 
 # {{ title }}
 
-<img src="/assets/img/about-bob.jpg" class="about-img" alt="Bob circa 2009" sizes="100px" loading="eager">
+<img src="/assets/img/about-bob.jpg" class="about-img" alt="Bob circa 2009" loading="eager" sizes="100px">
 
-<p>Hi! I'm Bob Monsour.</p>
+Hi! I'm Bob Monsour.
 
-<p>Brooklyn-born, New Jersey-raised, and educated in Florida and Los Angeles, I'm now retired and living in Northern California with my wonderful <a href="https://www.tascafineart.com/">wife and artist</a>, Sandra, and our Portuguese Water Dog, <a href="/soda/">Soda</a>. Our son is out on his own and lives in Los Angeles.</p>
+Brooklyn-born, New Jersey-raised, and educated in Florida and Los Angeles, I'm now retired and living in Northern California with my wonderful [wife and artist](https://www.tascafineart.com/), Sandra, and our Portuguese Water Dog, [Soda](/soda/). Our son is out on his own and lives in Los Angeles.
 
-<p>We travel occasionally and I enjoy reading and trying to stay fit. I'm also having fun being a part of the community of web developers who make and use the static site generator <a href="https://11ty.dev">Eleventy</a>. A big part of that is maintaining a <a href="https://11tybundle.dev">website</a> and <a href="https://buttondown.com/11tybundle">newsletter</a> called the <a href="https://11tybundle.dev">11ty Bundle</a>.</p>
+We travel occasionally and I enjoy reading and trying to stay fit. I'm also having fun being a part of the community of web developers who make and use the static site generator [Eleventy](https://11ty.dev). A big part of that is maintaining a [website](https://11tybundle.dev) and [newsletter](https://buttondown.com/11tybundle) called the [11ty Bundle](https://11tybundle.dev).
 
 I've had the privilege of working in the technology industry, beginning in the late 70s. I was fortunate to work on a lot of interesting projects with some really great people.
 
