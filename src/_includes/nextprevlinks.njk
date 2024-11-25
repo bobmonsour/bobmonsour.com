@@ -2,8 +2,8 @@
   Display next post and previous post links at the bottom of each post.
 #}
 <div data-pagefind-ignore>
-  {%- set previousPost = collections.posts | getPreviousCollectionItem %}
-  {%- set nextPost = collections.posts | getNextCollectionItem %}
+  {%- set previousPost = theseposts | getPreviousCollectionItem %}
+  {%- set nextPost = theseposts | getNextCollectionItem %}
   {%- if nextPost or previousPost %}
     <ul class="post-nextprev">
       {%- if previousPost %}<li>Previous post: <a href="{{ previousPost.url }}">{{ previousPost.data.title }}</a></li>{% endif %}

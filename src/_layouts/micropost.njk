@@ -6,4 +6,6 @@ layout: default.njk
 	<p class="blogdate">{{ page.date |formatPostDate }}</p>
 	{{ content | safe }}
 	<p><a href="mailto:bob.monsour@gmail.com?subject=Comment:%20{{ title | urlencode }}">Send a comment by email</a> (yes, that's a mailto link).</p>
+	{% set theseposts = collections.microblog %}
+	{% include 'nextprevlinks.njk' %}
 </article>
