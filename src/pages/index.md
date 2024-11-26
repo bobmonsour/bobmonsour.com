@@ -21,10 +21,9 @@ There's a little more about me on the [About](/about/) page. And you can find me
 		<ul>
 			{% set blogposts = collections.posts | reverse %}
 			{% set last3posts = blogposts.slice(0,3) %}
-			{% for post in last3posts %}
+			{%- for post in last3posts -%}
 				<li>
-					<a href="{{ post.url }}">{{ post.data.title }}</a> &middot;
-					<span class="blogdate">{{ post.date | formatPostDate }}</span>
+					<a href="{{ post.url }}">{{ post.data.title }}</a> &middot;<span class="blogdate">{{ post.date | formatPostDate }}</span>
 				</li>
 			{% endfor %}
 		</ul>
@@ -39,7 +38,7 @@ There's a little more about me on the [About](/about/) page. And you can find me
 					<a href="{{ post.url }}">{{ post.data.title }}</a> &middot;
 					<span class="blogdate">{{ post.date | formatPostDate }}</span>
 				</li>
-			{% endfor %}
+			{%- endfor -%}
 		</ul>
 	</div>
 </section>
