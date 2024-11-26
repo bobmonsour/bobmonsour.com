@@ -17,7 +17,7 @@
       {%- else -%}
         {% set loading = "lazy" %}
       {%- endif -%}
-    <img src="/assets/img/{{ post.data.image.source }}", alt="{{ post.data.image.alt }}", sizes="(min-width: 540px) 500px, 95.45vw", loading="{{ loading }}"></a>
+    <img src="/assets/img/{{ post.data.image.source }}" alt="{{ post.data.image.alt }}" sizes="(min-width: 540px) 500px, 95.45vw" loading="{{ loading }}"></a>
   </div>
 </section>
 {%- if not loop.last -%}<hr>{%- endif -%}
