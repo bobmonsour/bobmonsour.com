@@ -21,6 +21,7 @@ const {
 	formatPostDate,
 	getAllTags,
 	plainDate,
+	isCurrentPage,
 } = require("./config/filters/index.js");
 
 // plugins
@@ -61,6 +62,7 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addFilter("formatPostDate", formatPostDate);
 	eleventyConfig.addFilter("getAllTags", getAllTags);
 	eleventyConfig.addFilter("plainDate", plainDate);
+	eleventyConfig.addFilter("isCurrentPage", isCurrentPage);
 
 	// add plugins
 	eleventyConfig.addPlugin(postGraph, {

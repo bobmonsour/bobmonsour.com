@@ -53,9 +53,30 @@ const plainDate = (isoDate) => {
 	return formattedDate;
 };
 
+// Determine whether or not to highlight current page in the nav
+// if the link text appears within the page url, then do highlight
+let lcLinkText = "";
+const isCurrentPage = (linkText, pageUrl) => {
+	lcLinkText = linkText.toLowerCase();
+	console.log("lt: " + lcLinkText + " pu: " + pageUrl);
+	if (
+		lcLinkText == "blog" &&
+		(pageUrl.includes("archive") || pageUrl.includes("posts"))
+	) {
+		return 'aria-current="page"';
+	}
+	if (lcLinkText === "microblog" && pageUrl.includes(lcLinkText)) {
+		return 'aria-current="page"';
+	}
+	if (pageUrl.includes(lcLinkText)) {
+		return 'aria-current="page"';
+	}
+};
+
 module.exports = {
 	readingTime,
 	formatPostDate,
 	getAllTags,
 	plainDate,
+	isCurrentPage,
 };
