@@ -11,7 +11,7 @@ permalink: /about/
 
 # {{ title }}
 
-![Bob, circa 2009](/assets/img/about-bob.jpg){.about-img loading="eager" sizes="100px}
+![Bob, circa 2009](/assets/img/about-bob.jpg){.about-img loading="eager" sizes="100px"}
 
 {% include 'intro.md' %}
 
