@@ -5,7 +5,7 @@
 	"main": ".eleventy.js",
 	"scripts": {
 		"build": "cross-env ELEVENTY_ENV=production npx @11ty/eleventy",
-		"postbuild": "npm run pagefind",
+		"postbuild": "npm run pagefind --force-language unknown",
 		"debug": "cross-env ELEVENTY_ENV=dev DEBUG=Eleventy* npx @11ty/eleventy --serve",
 		"start": "cross-env ELEVENTY_ENV=development npx @11ty/eleventy",
 		"postdev": "npx -y pagefind --site _site --serve --force-language unknown",

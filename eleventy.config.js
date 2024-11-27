@@ -53,6 +53,7 @@ module.exports = function (eleventyConfig) {
 
 	// config the bundle for CSS
 	eleventyConfig.addBundle("css");
+	eleventyConfig.addBundle("pageHasCode");
 
 	// set markdown library
 	eleventyConfig.setLibrary("md", markdownLib);
