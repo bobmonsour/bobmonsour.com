@@ -58,7 +58,6 @@ const plainDate = (isoDate) => {
 let lcLinkText = "";
 const isCurrentPage = (linkText, pageUrl) => {
 	lcLinkText = linkText.toLowerCase();
-	console.log("lt: " + lcLinkText + " pu: " + pageUrl);
 	if (
 		lcLinkText == "blog" &&
 		(pageUrl.includes("archive") || pageUrl.includes("posts"))
