@@ -58,17 +58,26 @@ const plainDate = (isoDate) => {
 let lcLinkText = "";
 const isCurrentPage = (linkText, pageUrl) => {
 	lcLinkText = linkText.toLowerCase();
-	if (
-		lcLinkText == "blog" &&
-		(pageUrl.includes("archive") || pageUrl.includes("posts"))
-	) {
-		return 'aria-current="page"';
-	}
-	if (lcLinkText === "microblog" && pageUrl.includes(lcLinkText)) {
-		return 'aria-current="page"';
-	}
-	if (lcLinkText === "home" && pageUrl === "/") {
-		return 'aria-current="page"';
+	switch (lcLinkText) {
+		case "home":
+			if (pageUrl === "/") {
+				return 'aria-current="page"';
+			}
+			break;
+		case "blog":
+			if (pageUrl.includes("archive") || pageUrl.includes("posts")) {
+				return 'aria-current="page"';
+			}
+			break;
+		case "microblog":
+			if (pageUrl.includes("microblog")) {
+				return 'aria-current="page"';
+			}
+			break;
+		case "about":
+			if (pageUrl.includes("about")) {
+				return 'aria-current="page"';
+			}
 	}
 };
 

@@ -17,7 +17,7 @@ There's a little more about me on the [About](/about/) page. And you can find me
 
 <section>
 	<div>
-		<h3><a href="/archive/">The Blog</a></h3>
+		<h3>From the <a href="/archive/">Blog...</a></h3>
 		<ul>
 			{%- set blogposts = collections.posts | reverse -%}
 			{%- set last3posts = blogposts.slice(0,3) -%}
@@ -29,7 +29,7 @@ There's a little more about me on the [About](/about/) page. And you can find me
 		</ul>
 	</div>
 	<div>
-		<h3><a href="/microblog/">The microBlog</a></h3>
+		<h3>From the <a href="/microblog/">microBlog...</a></h3>
 		<ul>
 			{%- set microblogposts = collections.microblog | reverse -%}
 			{%- set last3microposts = microblogposts.slice(0,3) -%}
