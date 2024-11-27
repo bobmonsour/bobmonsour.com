@@ -67,7 +67,7 @@ const isCurrentPage = (linkText, pageUrl) => {
 	if (lcLinkText === "microblog" && pageUrl.includes(lcLinkText)) {
 		return 'aria-current="page"';
 	}
-	if (pageUrl.includes(lcLinkText)) {
+	if (lcLinkText === "home" && pageUrl === "/") {
 		return 'aria-current="page"';
 	}
 };
