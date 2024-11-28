@@ -1,4 +1,4 @@
-module.exports = {
+export default {
 	env: process.env.ELEVENTY_ENV,
 	title: "Bob Monsour",
 	description:

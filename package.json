@@ -3,6 +3,7 @@
 	"version": "1.0.0",
 	"description": "It's my personal site...and a work in progress. It's built with [eleventy](https://www.11ty.dev/)...something I'm enjoying learning and using.",
 	"main": ".eleventy.js",
+	"type": "module",
 	"scripts": {
 		"build": "cross-env ELEVENTY_ENV=production npx @11ty/eleventy",
 		"postbuild": "npm run pagefind",
@@ -46,7 +47,6 @@
 		"path": "^0.12.7",
 		"postcss": "^8.4.21",
 		"postcss-minify": "^1.1.0",
-		"rimraf": "^3.0.2",
-		"sanitize-html": "^2.11.0"
+		"rimraf": "^3.0.2"
 	}
 }

@@ -1,46 +1,44 @@
-//
-// Keep the `.eleventy.js` file clean and uncluttered.
-// Most adjustments must be made in:
-//  - `./config/filters/index.js`
-
 // environment variable handling
-require("dotenv").config();
+import "dotenv/config";
+
+// filters
+import filters from "./src/_config/filters/index.js";
+
+// plugins
+import postGraph from "@rknightuk/eleventy-plugin-post-graph";
+import syntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
+import pluginRss from "@11ty/eleventy-plugin-rss";
+import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 
 // set up markdown
-const markdownIt = require("markdown-it");
-const markdownItAttrs = require("markdown-it-attrs");
+import markdownIt from "markdown-it";
+import markdownItAttrs from "markdown-it-attrs";
 const markdownItOptions = {
 	html: true,
 	breaks: false,
 };
 const markdownLib = markdownIt(markdownItOptions).use(markdownItAttrs);
 
-// module import filters
-const {
-	readingTime,
-	formatPostDate,
-	getAllTags,
-	plainDate,
-	isCurrentPage,
-} = require("./config/filters/index.js");
+export default function (eleventyConfig) {
+	// Passthrough copy for static assets
+	[
+		"src/assets/audio/",
+		{ "src/assets/favicon/*": "/" },
+		"src/assets/img/",
+		"src/assets/js/",
+		"src/robots.txt",
+	].forEach((path) => eleventyConfig.addPassthroughCopy(path));
 
-// plugins
-const postGraph = require("@rknightuk/eleventy-plugin-post-graph");
-const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
-const pluginRss = require("@11ty/eleventy-plugin-rss");
-const { eleventyImageTransformPlugin } = require("@11ty/eleventy-img");
-
-module.exports = function (eleventyConfig) {
+	// Generate three collections
+	//	- posts, microblog posts, and a combined collection of those two
 	// generate the "posts" collection
 	eleventyConfig.addCollection("posts", (collection) => {
 		return [...collection.getFilteredByGlob("./src/posts/*.md")];
 	});
-
 	// generate the "microblog" collection
 	eleventyConfig.addCollection("microblog", (collection) => {
 		return [...collection.getFilteredByGlob("./src/microblog/*.md")];
 	});
-
 	// generate a combined "posts" and "microblog" collection
 	eleventyConfig.addCollection("postsandmicroblog", (collection) => {
 		return [
@@ -51,31 +49,10 @@ module.exports = function (eleventyConfig) {
 		];
 	});
 
-	// config the bundle for CSS
-	eleventyConfig.addBundle("css");
-	eleventyConfig.addBundle("pageHasCode");
+	// Add local filters
+	eleventyConfig.addPlugin(filters);
 
-	// set markdown library
-	eleventyConfig.setLibrary("md", markdownLib);
-
-	// add filters
-	eleventyConfig.addFilter("readingTime", readingTime);
-	eleventyConfig.addFilter("formatPostDate", formatPostDate);
-	eleventyConfig.addFilter("getAllTags", getAllTags);
-	eleventyConfig.addFilter("plainDate", plainDate);
-	eleventyConfig.addFilter("isCurrentPage", isCurrentPage);
-
-	// add plugins
-	eleventyConfig.addPlugin(postGraph, {
-		sort: "desc",
-		boxColor: "darkgrey",
-		highlightColor: "red",
-		textColor: "#fff",
-	});
-	eleventyConfig.addPlugin(syntaxHighlight);
-	eleventyConfig.addPlugin(pluginRss);
-
-	// Add the new eleventy image transform plugin
+	// Add & configure external plugins
 	eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
 		extensions: "html",
 		outputDir: "/assets/img/",
@@ -87,18 +64,23 @@ module.exports = function (eleventyConfig) {
 			decoding: "async",
 		},
 	});
+	eleventyConfig.addPlugin(pluginRss);
+	eleventyConfig.addPlugin(postGraph, {
+		sort: "desc",
+		boxColor: "darkgrey",
+		highlightColor: "red",
+		textColor: "#fff",
+	});
+	eleventyConfig.addPlugin(syntaxHighlight);
 
-	// turn off noisy eleventy output
+	// Config the bundle for CSS
+	eleventyConfig.addBundle("css");
+	// eleventyConfig.addBundle("pageHasCode");
+
+	// Set markdown library
+	eleventyConfig.setLibrary("md", markdownLib);
+
 	eleventyConfig.setQuietMode(true);
-
-	// file and directory passthroughs
-	[
-		"src/assets/audio/",
-		{ "src/assets/favicon/*": "/" },
-		"src/assets/img/",
-		"src/assets/js/",
-		"src/robots.txt",
-	].forEach((path) => eleventyConfig.addPassthroughCopy(path));
 
 	return {
 		markdownTemplateEngine: "njk",
@@ -111,4 +93,4 @@ module.exports = function (eleventyConfig) {
 			data: "_data",
 		},
 	};
-};
+}
