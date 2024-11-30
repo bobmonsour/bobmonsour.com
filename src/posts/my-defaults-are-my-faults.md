@@ -20,18 +20,19 @@ I'm seeing so many create their own list of default apps with Rob Knight's encou
 - <strong>password manager: </strong>1password
 - <strong>code editor: </strong>VS Code
 - <strong>window manager: </strong>magnet
-- <strong>os: </strong>macOS Sonoma
-- <strong>RSS reader: </strong>Feedly in Chrome (tab 4)
+- <strong>os: </strong>macOS ~~Sonoma~~ Sequoia
+- <strong>RSS reader: </strong>~~Feedly in Chrome~~ Inoreader (tab 4)
 - <strong>site analytics: </strong>Fathom in Chrome (tab 3)
-- <strong>all around utility: </strong>Alfred
+- <strong>all around utility: </strong>~~Alfred~~ Raycast
 - <strong>mastodon client: </strong>Ivory
+- <strong>bluesky client: </strong>Bluesky in Chrome (tab 5)
 - <strong>notes: </strong>Obsidian
 - <strong>todo: </strong>Obsidian
 - <strong>spreadsheet: </strong>Google Sheets
 - <strong>documents: </strong>Google Docs
 - <strong>music: </strong>YouTube Music
 - <strong>photo management: </strong>Google Photos
-- <strong>grocery shopping list: </strong>Alexa
+- <strong>grocery shopping list: </strong>~~Alexa~~ Obsidian
 - <strong>cloud storage: </strong>Dropbox
 - <strong>cloud backup: </strong>Backblaze
 - <strong>podcasts: </strong>Overcast
