@@ -3,7 +3,7 @@ title: Knee replacement 2.0, things have changed
 date: 2024-12-01
 tags:
   - personal
-description: I had my right knee replaced 4 years ago. In March 2025, I will have my left knee replaced. What has changed? With me and with the technology of knee replacements.
+description: I had my right knee replaced four years ago. In March 2025, I will have my left knee replaced. What has changed? With me and with the technology of knee replacements.
 keywords: total knee replacement, enter robots, from cemented to cementless
 image:
   source: "stryker-knee-implant.jpg"
@@ -34,7 +34,7 @@ November 5th of this year was the 4th anniversary of having a total knee replace
 
 Arthritis being what it is, it seemed only a matter of time when my left knee would start to break down need the same treatment. While I tried to put it off as long as reasonably possible, I've now got the surgery scheduled for March 2025.
 
-I recently met with the orthopedic surgeon who performed the first surgery, [Dr. Stefano Bini](https://orthosurgery.ucsf.edu/patient-care/faculty/stefano-bini). X-rays confirmed the severity of the arthritis. But I had a lot of questions about how things have changed in the last 4 years.
+I recently met with the orthopedic surgeon who performed the first surgery, [Dr. Stefano Bini](https://orthosurgery.ucsf.edu/patient-care/faculty/stefano-bini). X-rays confirmed the severity of the arthritis. But I had a lot of questions about how things have changed in the last four years.
 
 I'll walk you through how I got here and what has changed.
 
