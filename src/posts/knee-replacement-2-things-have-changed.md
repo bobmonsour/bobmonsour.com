@@ -42,7 +42,7 @@ I'll walk you through how I got here and what has changed.
 
 ## 2. Injections and exercise have bought me time
 
-Interestingly, the first twinge of pain that I got on left knee was shortly before I had my right knee replaced. I was going down a couple of steps in our house and felt a sharp pain. I thought, "Oh no, here we go again." A visit to a local orthopedic surgeon (known in my prior writing as "[InjectoDoc](posts/my-winding-road-toward-knee-replacement-surgery/#section3)") confirmed that I had arthritis in my left knee and offered a cortizone shot to relieve the pain. That worked great.
+Interestingly, the first twinge of pain that I got on left knee was shortly before I had my right knee replaced. I was going down a couple of steps in our house and felt a sharp pain. I thought, "Oh no, here we go again." A visit to a local orthopedic surgeon (known in my prior writing as "[InjectoDoc](/posts/my-winding-road-toward-knee-replacement-surgery/#section3)") confirmed that I had arthritis in my left knee and offered a cortizone shot to relieve the pain. That worked great.
 
 After I had my right knee replaced, I was back on the tennis court in 6 months and that felt great. I played for about a year when my left knee began to "complain". I went to the same doctor that gave me the cortizone shot and this time, I opted to get a shot of [hyaluronic acid](https://en.wikipedia.org/wiki/Hyaluronic_acid) along with the cortizone shot. He also prescribed a round of physical therapy. But by the time that I went to the first PT appointment, my knee was feeling great. I went to one session, learned some exercises, and did them at home.
 
@@ -76,7 +76,7 @@ Let's get into what has changed in the last four years in the realm of knee repl
 
 Among the more recent developments in total knee (and hip) replacement surgery is the use of robots. Note that the robot assists the surgeon, it does not perform any work itself.
 
-In my right knee replacement, the surgeon used an implant made by the [Stryker](https://www.stryker.com/us/en/index.html) company. They manufacture a robot they call [MAKO](https://www.stryker.com/us/en/index.html).
+In my right knee replacement, the surgeon used an implant made by the [Stryker](https://www.stryker.com/us/en/index.html) company. They manufacture a robot they call [MAKO](https://www.stryker.com/us/en/portfolios/orthopaedics/joint-replacement/mako-robotic-arm-assisted-surgery.html).
 
 [Recent research](https://link.springer.com/article/10.1007/s00264-024-06234-0) indicates that a robot-assisted knee replacement results in _"...better short-term clinical efficacy, achieved better alignment planning, and maintains good safety."_ [Additional research](https://boneandjoint.org.uk/Article/10.1302/0301-620X.106B5.BJJ-2023-1196.R1) indicated that there is a _"greater improvement in knee-specific pain but not in function."_
 
