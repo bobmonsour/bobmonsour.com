@@ -17,34 +17,21 @@ pageHasCode: true
 
 <div class='toc'>
 
-## Table of Contents
+# Table of Contents
 
-1. [Introduction](#section1)
-2. [To inline or not to inline](#section2)
-3. [Enter the eleventy-plugin-bundle](#section3)
-4. [Moving away from inlining toward external CSS](#section4)
-5. [Selectively including a CSS bundle](#section5)
-6. [A simple attempt at identifying critical CSS](#section6)
-7. [What about minifying?](#section7)
-8. [Reducing browser file fetches...and the role of fonts](#section8)
-9. [Conclusion](#section9)
-10. [Related resources](#section9)
+[[toc]]
 
 </div>
 
 ---
 
-<div id="section1"></div>
-
-## 1. Introduction
+## Introduction
 
 After further reflecting on the approach that I took at the end of the [last post](/posts/the-evolution-of-my-CSS-pipeline-in-Eleventy-part-1/), inlining all of the site's CSS between \<style\> tags in the head of each page, I started to wonder if that made sense. I did some research to find out the pros and cons.
 
 I also wanted to learn more about Zach's [eleventy-plugin-bundle](https://github.com/11ty/eleventy-plugin-bundle) and how I might use it to improve the way I handle CSS across the site. Note that there are many other methods and tools available for structuring CSS; for example, tools and learning resources like [Tailwind](https://tailwindcss.com/), [Bootstrap](https://getbootstrap.com/), [Every Layout](https://every-layout.dev/), and others. For this site, I am writing much of the CSS myself.
 
-<div id="section2"></div>
-
-## 2. To inline or not to inline
+## To inline or not to inline
 
 Like most approaches to web development there are tradeoffs.
 
@@ -85,9 +72,7 @@ Lastly on this topic, there's an npm package, [critical](https://github.com/addy
 
 > _UPDATE (4-1-23): As it turns out, someone **did** write an Eleventy plugin called [eleventy-critical-css](https://github.com/gregives/eleventy-critical-css) that uses Addy Osmani's critical npm package. It hasn't been updated since Oct 8, 2021 and I have not tried it._
 
-<div id="section3"></div>
-
-## 3. Enter the eleventy-plugin-bundle
+## Enter the eleventy-plugin-bundle
 
 Now that I've filled your head with the good, the bad, and the ugly of inlining CSS, I wanted to take a look at the eleventy-plugin-bundle, or as Zach puts it "Little bundles of code, little bundles of joy. Create minimal per-page or app-level bundles of CSS, JavaScript, or HTML to be included in your Eleventy project."
 
@@ -158,9 +143,7 @@ Nice try...
 
 Since I was just dipping my toe in the water with the plugin, I had yet to address the inlining vs external CSS issue. As a result, it seemed to make more sense to shift toward an external CSS approach.
 
-<div id="section4"></div>
-
-## 4. Moving away from inlining toward external CSS
+## Moving away from inlining toward external CSS
 
 The first step toward external CSS would involve eliminating the use of the Nunjucks variable and simply include the files in a CSS bundle and then use a link to the bundle file in typical link element as follows:
 
@@ -186,9 +169,7 @@ What I really want is to selectively include the prism-okaidia.css only on the p
 
 Note that I have also lost the ability to minify the CSS (we'll get to that later).
 
-<div id="section5"></div>
-
-## 5. Selectively including a CSS bundle
+## Selectively including a CSS bundle
 
 There's a capability to create named buckets of CSS with the bundle plugin. So I decided to add a piece of frontmatter to the posts that require syntax highlighting. I called it pageHasCode.
 
@@ -231,9 +212,7 @@ What's nice about this is that there are only ever two distinct CSS files, one t
 
 Now it was time to consider critical CSS.
 
-<div id="section6"></div>
-
-## 6. A simple attempt at identifying critical CSS
+## A simple attempt at identifying critical CSS
 
 As I considered the question of critical CSS, I was of 2 minds. First, as I'd mentioned earlier, for an incredibly simple multi-page site like this blog and the relatively small size of all of the CSS files in use, there is a very small performance difference among any of these approaches (one that I have not attempted to measure).
 
@@ -288,9 +267,7 @@ These 2 questions alone caused me to back away from this and leave the structure
 
 But one more thing...what about minifying? We lost that when we moved to external files.
 
-<div id="section7"></div>
-
-## 7. What about minifying?
+## What about minifying?
 
 Yet another capability of the eleventy-plugin-bundle is the ability to [modify the bundle output](https://github.com/11ty/eleventy-plugin-bundle#modify-the-bundle-output) by writing an async-friendly callback. As that is not something that I have in my toolset just yet, fortunately Zach provides an example (see that link just above). In his example, he makes use of PostCSS and its postcss-nested plugin. I figured there had to be a postcss-minify plugin, and sure enough, there is.
 
@@ -301,20 +278,20 @@ const bundlerPlugin = require("@11ty/eleventy-plugin-bundle");
 const postcss = require("postcss");
 const postcssMinify = require("postcss-minify");
 EleventyConfig.addPlugin(bundlerPlugin, {
-  transforms: [
-    async function (content) {
-      // this.type returns the bundle name.
-      if (this.type === "css") {
-        // Same as Eleventy transforms, this.page is available here.
-        let result = await postcss([postcssMinify]).process(content, {
-          from: this.page.inputPath,
-          to: null,
-        });
-        return result.css;
-      }
-      return content;
-    },
-  ],
+	transforms: [
+		async function (content) {
+			// this.type returns the bundle name.
+			if (this.type === "css") {
+				// Same as Eleventy transforms, this.page is available here.
+				let result = await postcss([postcssMinify]).process(content, {
+					from: this.page.inputPath,
+					to: null,
+				});
+				return result.css;
+			}
+			return content;
+		},
+	],
 });
 ```
 
@@ -322,9 +299,7 @@ Note that I had already added the bundlerPlugin to achieve the earlier feats, bu
 
 The end result is that each of the two files that are generated from the CSS bundles are minified. If you do a view source on the page that you're now viewing, you can see the links to the two files. Click on those to reveal the minified CSS.
 
-<div id="section8"></div>
-
-## 8. Reducing browser file fetches...and the role of fonts
+## Reducing browser file fetches...and the role of fonts
 
 One of the things that turned up in my research on critical CSS was loading external font files and their impact on layout shift when loading a page.
 
@@ -362,9 +337,7 @@ And with that, I eliminate any fetching of font files by the browser. And while 
 
 If you ask me, this is yet another win for web performance.
 
-<div id="section9"></div>
-
-## 9. Conclusion
+## Conclusion
 
 As of now, I think I've learned enough to be dangerous when it comes to developing a CSS organization strategy...for this site. For sites I may develop in the future, things are likely to change depending on the needs and size of the site.
 
@@ -378,9 +351,7 @@ A few key takeaways from these 2 posts for me are:
 
 And now we're really done. Until next time...
 
-<div id="section10"></div>
-
-## 10. Related resources
+## Related resources
 
 Here are links to some of the sites that formed a part of my research.
 

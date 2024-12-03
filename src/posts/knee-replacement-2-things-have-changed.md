@@ -13,22 +13,15 @@ image:
 
 <div class="toc">
 
-## Table of Contents
+# Table of Contents
 
-1. [Introduction](#section1)
-2. [Injections and exercise have bought me time](#section2)
-3. [I can only delay this for so long](#section3)
-4. [A robot has entered the chat](#section4)
-5. [My right knee implant was cemented](#section5)
-6. [I won't miss the tourniquet on my thigh](#section6)
-7. [How am I preparing?](#section7)
-8. [Conclusion](#section8)
+[[toc]]
 
 </div>
 
-<div id="section1"></div>
+---
 
-## 1. Introduction
+## Introduction
 
 November 5th of this year was the 4th anniversary of having a total knee replacement for my right knee. The surgery was a success and I originally [wrote about my journey to it back in August of 2020](/posts/my-winding-road-toward-knee-replacement-surgery/).
 
@@ -38,9 +31,7 @@ I recently met with the orthopedic surgeon who performed the first surgery, [Dr.
 
 I'll walk you through how I got here and what has changed.
 
-<div id="section2"></div>
-
-## 2. Injections and exercise have bought me time
+## Injections and exercise have bought me time
 
 Interestingly, the first twinge of pain that I got on left knee was shortly before I had my right knee replaced. I was going down a couple of steps in our house and felt a sharp pain. I thought, "Oh no, here we go again." A visit to a local orthopedic surgeon (known in my prior writing as "[InjectoDoc](/posts/my-winding-road-toward-knee-replacement-surgery/#section3)") confirmed that I had arthritis in my left knee and offered a cortizone shot to relieve the pain. That worked great.
 
@@ -54,9 +45,7 @@ During this period, I altered my workout routine. It had been [kettlebell focuse
 
 All of this bought me some time, but it seems that my time has run out. On the upside, our spin instructor recently pointed out that leg strength is highly correlated with longevity in men, though I bet it's also true for women. I went home and did some digging and it seems that there is indeed [research to support that claim](https://coloradopaincare.com/the-importance-of-leg-strength-to-overall-health/). So, I've got that going for me.
 
-<div id="section3"></div>
-
-## 3. I can only delay this for so long
+## I can only delay this for so long
 
 I was in denial, thinking that I could put off replacing the knee until late 2025. I could still walk for miles without pain. When I had my right knee replaced, I waited until I was limping on every step and could not walk a block without wanting to go back.
 
@@ -70,9 +59,7 @@ The important thing for me now is to continue my weight training and spin class 
 
 Let's get into what has changed in the last four years in the realm of knee replacement. And specifically, how my surgeon's approach has changed.
 
-<div id="section4"></div>
-
-## 4. A robot has entered the chat
+## A robot has entered the chat
 
 Among the more recent developments in total knee (and hip) replacement surgery is the use of robots. Note that the robot assists the surgeon, it does not perform any work itself.
 
@@ -94,9 +81,7 @@ These questions came from a set prepared by an orthopedic surgeon that I follow 
 
 So that's the one change since my first knee replacement. Let's look at a couple of other changes.
 
-<div id="section5"></div>
-
-## 5. My right knee implant was cemented
+## My right knee implant was cemented
 
 Knee implant tecnology has also advanced as have the methods of affixing the implant to the bones. In my right knee replacement, the surgeon used a cemented implant. This means that the implant was glued to the bones using a special cement. The cement they use hardens exceptionally quickly. As a result, the strength of the bond achieved is quite high. In fact, at the time of the implant, this is the strongest that it will ever be as future jarring or other movements can cause loosening of the implant.
 
@@ -112,9 +97,7 @@ There are pros and cons to each approach. The use of cementless has historically
 
 And when you go cementless, there's another change that typically happens in the procedure.
 
-<div id="section6"></div>
-
-## 6. I won't miss the tourniquet on my thigh
+## I won't miss the tourniquet on my thigh
 
 It turns out that using a cemented implant can sometimes dictate the use of a tourniquet on the thigh. I recall reading the operative report from my first surgery and it noting that the tourniquet was on my thigh for about an hour. I had wondered what the upper leg soreness was coming from.
 
@@ -124,15 +107,11 @@ The benefit of not using a tourniquet is that it reduces the time of the surgery
 
 Perhaps all this is too much information. But I had the itch to get it down on "paper" and share it. I hope that it's helpful to someone.
 
-<div id="section7"></div>
-
-## 7. How am I preparing?
+## How am I preparing?
 
 So, now I'm in the preparation phase. Today is December 1st. I have a little more than 3 months until the surgery. I will continue to maintain my exercise regimen in the hopes of having the strongest legs (and other body parts) that I can have prior to the surgery. Even if the recovery is not any easier or quicker than my first surgery, I will be able to more easily return to a solid fitness level after the surgery.
 
-<div id="section8"></div>
-
-## 8. Conclusion
+## Conclusion
 
 If you've gotten this far, thank you.
 

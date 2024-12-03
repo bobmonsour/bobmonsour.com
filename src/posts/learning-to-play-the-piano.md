@@ -15,28 +15,19 @@ image:
 
 <div class="toc">
 
-## Table of Contents
+# Table of Contents
 
-1. [Introduction](#section1)
-2. [Why now?](#section2)
-3. [How should I start this journey?](#section3)
-4. [Feeling overwhelmed](#section4)
-5. [Holding myself accountable](#section5)
-6. [So, how's it going?](#section6)
+[[toc]]
 
 </div>
 
 ---
 
-<div id="section1"></div>
-
-## 1. Introduction
+## Introduction
 
 Well, a new year has started and while I rarely write new year's resolutions, the combination of the new year and some other audio and mental murmurings got me interested in learning to play the piano. Here's a brief look at my journey thus far.
 
-<div id="section2"></div>
-
-## 2. Why now?
+## Why now?
 
 I've never been a musician. My father and brother both played piano, clarinet, and saxophone. I took piano lessons when I was very young, but it didn't stick, while my brother played his whole life. So, I grew up listening to him practice and play. He was really good, though our mother got tired of the practice at times.
 
@@ -56,9 +47,7 @@ It's similar to the desire I had to create this website...I wanted to use my own
 
 But now it's time to get started on this piano journey...for real.
 
-<div id="section3"></div>
-
-## 3. How should I start this journey?
+## How should I start this journey?
 
 When I decide to learn something new, I often turn to YouTube. I'm not sure if it came through the algorithmic feed of a particular search that I did, but I encountered Scott Houston's channel, called [Play Piano in a Flash](https://www.youtube.com/@pianoinaflash/videos).
 
@@ -68,9 +57,7 @@ Each course consists of 8 classes and each class contains multiple lessons. The 
 
 Back to YouTube, I've since learned that there are quite a few great piano teachers with their own YouTube channels. Here are a couple of the teachers that I've enjoyed watching and learning from: [Corey Lennox](https://www.youtube.com/@CoreyLennox/about), [Julian Bradley](https://www.youtube.com/@jazztutorial/about), [Piano from Scratch](https://www.youtube.com/@PianoFromScratch/about), and [Jonny May](https://www.youtube.com/@PianoWithJonny/about).
 
-<div id="section4"></div>
-
-## 4. Feeling overwhelmed
+## Feeling overwhelmed
 
 Going back to my earlier reference to learning music as I've been learning to develop websites, the parallels of both having an overwhelming body of learning materials can leave one feeling, well, overwhelmed.
 
@@ -82,9 +69,7 @@ Escape from tutorial hell requires that you actually sit town, turn off the vide
 
 It appears that a similar thing is possible with learning to play the piano. That said, there is only one piano, so the tool is prescribed. Yet, with YouTube, there are more than enough tutorials and lessons and examples of piano playing and, if you're not careful, you too can end up in the piano version of "tutorial hell." The real similarity here is that you have to sit down and put head-to-hand-to-keyboard in order to express the notes and to listen and adjust as you learn.
 
-<div id="section5"></div>
-
-## 5. Holding myself accountable
+## Holding myself accountable
 
 Being on the right of center of the impatience spectrum when it comes to learning, I wanted to get going quickly. But it's one thing to want to get going quickly and something altogether different to playing well quickly.
 
@@ -96,9 +81,7 @@ First, I am logging my practice sessions. I've got a spreadsheet with a row for 
 
 I've limited how many people I've shared this journey with. Well, having written this sentence here, I obviously am sharing it with all of you. Up until posting this, I had only told my wife and a total stranger. And now that I'm actually playing songs and feeling progress, it felt like a good time to write about it as yet another means for holding myself accountable. In fact, I'll be seeing this post (or at least its title) almost every time I work on the website.
 
-<div id="section6"></div>
-
-## 6. So, how's it going?
+## So, how's it going?
 
 I've since been working my way through the Piano in a Flash courses.
 

@@ -15,20 +15,13 @@ image:
 
 <div class="toc">
 
-## Table of Contents
+# Table of Contents
 
-1. [Introduction](#section1)
-2. [Is there a doctor in the house?](#section2)
-3. [Is this the doctor I should be seeing?](#section3)
-4. [What do the clinicians who do research say?](#section4)
-5. [Have any of these injections been proven to work?](#section5)
-6. [To inject or not to inject?](#section6)
+[[toc]]
 
 </div>
 
-<div id="section1"></div>
-
-## 1. Introduction
+## Introduction
 
 I turned 65 this month. My mind doesn’t think so, but my body knows it and it’s been trying to tell me. It’s a knee thing. It hurts and it’s been hurting for the last few years. The pain has made it less than pleasant to walk a single block. It’s keeping me off the tennis court. And I’d like some relief. Do I need a knee replacement or is there another way?
 
@@ -40,9 +33,7 @@ Well, a few years ago, one of those knees that I’d been bragging about decided
 
 Earlier this year, things came to a head where I was unable to walk very far without each step announcing itself with a cringe. But let me back up a few steps and review the early signs and my attempts with various interventions.
 
-<div id="section2"></div>
-
-## 2. Is there a doctor in the house?
+## Is there a doctor in the house?
 
 ![eight doctors, all masked, looking over a patient as seen from the patient's perspective](/assets/img/doctor-in-the-house.jpg)
 
@@ -70,9 +61,7 @@ If I’m going to try another injection, how best to decide on which of these to
 
 That visit with InjectoDoc was in July. I told him that I’d like to try the visco-stuff. He said that if I have private insurance, they would not likely cover it. So I scheduled it for late August; by then I will have arrived to the wonderful world of Medicare, which does cover it. The particular brand of visco-stuff that I’d be getting is called [Synvisc-One](https://www.synviscone.com/).
 
-<div id="section3"></div>
-
-## 3. Is this the doctor I should be seeing?
+## Is this the doctor I should be seeing?
 
 ![a man showing the inside of his trench coat with various things to buy](/assets/img/which-one-would-you-like.jpg)
 
@@ -82,9 +71,7 @@ I was starting to become concerned that InjectoDoc might not be the right guy fo
 
 The other worry I had was that the health system portal that shows test results had no written radiology reports from the x-rays or the MRI that had been done. I wanted to know more.
 
-<div id="section4"></div>
-
-## 4. What do the clinicians who do research say?
+## What do the clinicians who do research say?
 
 Since we live only an hour north of San Francisco, I thought it might be best to look for an orthopedic surgeon at the [UCSF Department of Orthopedic Surgery](https://orthosurgery.ucsf.edu/), a teaching hospital. My cardiologist is a UCSF doc and he’s been great.
 
@@ -122,9 +109,7 @@ Shit! I’ve gone from **moderate** to **severe** on the right knee. Silver lini
 
 I copped some CBD cream at $35/oz. I tried it for a few days. It didn’t seem to do much other than provide my wife and me with something to crack jokes about.
 
-<div id="section5"></div>
-
-## 5. Have any of these injections been proven to work?
+## Have any of these injections been proven to work?
 
 With all the noise coming out from all corners of the propaganda-sphere about therapeutics for COVID-19 and the lack of evidence for some of them, I started to wonder about all of these knee injections. So I started digging into the research and the recommendations from the professional organizations, like the American Academy of Orthopaedic Surgeons.
 
@@ -162,9 +147,7 @@ The cortisone had no effect on my knee pain, the PRP had no effect on my knee pa
 
 Ah, but visco-stuff, the guidelines can’t recommend its use, “unless a clear and compelling rationale for an alternative approach is present…” whatever that means.
 
-<div id="section6"></div>
-
-## 6. To inject or not to inject?
+## To inject or not to inject?
 
 <img src="/assets/img/injectodoc.jpg" alt="a diabolocial man holding a syringe" sizes="100vw">
 

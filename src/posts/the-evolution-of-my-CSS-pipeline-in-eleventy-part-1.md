@@ -16,34 +16,23 @@ pageHasCode: true
 
 > While initially a single post about my evolving use of CSS, there is now a second part which you can [find here](/posts/the-evolution-of-my-CSS-pipeline-in-eleventy-part-2/). But you should really read this one first. Also, this post as well as part 2 can be found on the [11ty Bundle](https://11tybundle.dev/) site, a community site for sharing [Eleventy](https://www.11ty.dev/) tips, tricks, and resources. If you're an Eleventy user, I encourage you to [check it out](https://11tybundle.dev/).
 
-<div class='toc'>
+<div class="toc">
 
-## Table of Contents
+# Table of Contents
 
-1. [Introduction](#section1)
-2. [My first site with Eleventy](#section2)
-3. [A slightly leaner set of scripts](#section3)
-4. [A toe in the water with Open Props and PostCSS](#section4)
-5. [Time for a new site of my own](#section5)
-6. [You didn't think I was done, did you?](#section6)
-7. [Conclusion](#section7)
-8. [Links to the repos for the sites discussed](#section8)
+[[toc]]
 
 </div>
 
 ---
 
-<div id="section1"></div>
-
-## 1. Introduction
+## Introduction
 
 There are many ways for web developers to work with CSS. Practices can vary widely, with everything from structure, framework usage, naming conventions, minifying the result, auto-prefixing, and more. Some considerations that go into these choices include whether the project is a solo effort or that of a team, the size and complexity of the project, site performance goals, and momentum based on the prior experience of the person or team.
 
 I'm writing this piece to show how I've evolved my use of CSS in the context of [Eleventy](https://www.11ty.dev/), the static site generator.
 
-<div id="section2"></div>
-
-## 2. My first site with Eleventy
+## My first site with Eleventy
 
 The first site that I made use of Eleventy was a Jekyll site that I ported to Eleventy. It used a theme that was Sass-based. I was somewhat familiar with Sass, but this port required me to dive a little deeper. The site was built using the Liquid template language and as part of the port, I migrated to Nunjucks.
 
@@ -90,9 +79,7 @@ The site lives on today. I built it for a good friend who is a tennis pro. If yo
   "build": "cross-env ELEVENTY_ENV=prod npm-run-all build:sass build:eleventy",
 ```
 
-<div id="section3"></div>
-
-## 3. A slightly leaner set of scripts
+## A slightly leaner set of scripts
 
 My wife's grandfather, Fausto Tasca, was a painter from Italy. He has done some really beautiful work. My wife had built a site dedicated to his work. The site was built with an ancient piece of technology from Apple called iWeb. Interestingly, it seems that Apple still has a [web page for it](https://www.apple.com/welcomescreen/ilife/iweb-3/).It was a drag-and-drop website application that, in its time, was a static site generator. You would upload the output files to an inexpensive hosting service via FTP.
 
@@ -130,9 +117,7 @@ Here's a look at the resulting scripts used to develop and build the site.
 
 It's a bit leaner as I simply combined two commands for each of start and build using &&. The result is the same, a single file in the output directory.
 
-<div id="section4"></div>
-
-## 4. A toe in the water with Open Props and PostCSS
+## A toe in the water with Open Props and PostCSS
 
 Shortly after building [faustotasca.com](https://www.faustotasca.com/), I had a tennis lesson with Scott and he mentioned that his wife Cynthia, a speech and language therapist, might need a website for her business. I gave her a call and we outlined what might work.
 
@@ -180,15 +165,13 @@ const postcssJitProps = require("postcss-jit-props");
 const OpenProps = require("open-props");
 
 module.exports = {
-  plugins: [postcssJitProps(OpenProps)],
+	plugins: [postcssJitProps(OpenProps)],
 };
 ```
 
 The project still operates this way and you can [check it out here](https://www.cbascaraspeechtherapy.com/).
 
-<div id="section5"></div>
-
-## 5. Time for a new site of my own
+## Time for a new site of my own
 
 By this time, I felt like I was learning a lot about Eleventy, Sass, and CSS. It was time to build a personal site. While I started out using Open Props, I recently decided to eliminate it. This site is incredibly simple and I have learned enough about custom properties to construct my own set of CSS vars, borrowing ideas and snippets from the Open Props project.
 
@@ -216,7 +199,7 @@ const cssnano = require("cssnano");
 const autoprefixer = require("autoprefixer");
 const postcssLogical = require("postcss-logical");
 module.exports = {
-  plugins: [postcssJitProps(OpenProps), postcssLogical, cssnano, autoprefixer],
+	plugins: [postcssJitProps(OpenProps), postcssLogical, cssnano, autoprefixer],
 };
 ```
 
@@ -244,15 +227,13 @@ I raised this issue on the plugin repo as well as the Eleventy repo. Stephanie q
 
 ```json
 {
-  "eleventyExcludeFromCollections": true
+	"eleventyExcludeFromCollections": true
 }
 ```
 
 This prevents the processed files from being included in collections.all, and thus excluded from the sitemap. Problem solved...yet it feels slightly icky.
 
-<div id="section6"></div>
-
-## 6. You didn't think I was done, did You?
+## You didn't think I was done, did You?
 
 One of the considerations that I referred to in the introduction was performance goals. Recently, I've been spending time examining how my site performs along several dimensions. One of the tools that I've been using is Lighthouse. I have been paying particular attention to image sizes, the number of 3rd party requests, and more.
 
@@ -272,7 +253,7 @@ And then, just then, I stepped back from my site and asked myself the following 
 
 4. Wouldn't it be nice to inline my CSS and eliminate another file fetch by the browser?
 
-### Do I really need Sass?
+## Do I really need Sass?
 
 Stephanie did a recent Twitch stream called [Can we ditch Sass?](https://www.twitch.tv/videos/1747696237?filter=archives&sort=time). I was intrigued. It largely played on what can be done with Lightning CSS.
 
@@ -282,7 +263,7 @@ Then I learned about nesting and began to use it and I liked how it simplified b
 
 > UPDATE: No sooner had I posted this, this morning I opened my email to find the latest CSS Layout News newsletter from Rachel Andrews. She linked to [a post by Adam Argyle](https://developer.chrome.com/articles/css-nesting/?ref=css-layout-news) that covers the nesting features currently available and those coming in the Chrome browser.
 
-### Do I really need auto-prefixing?
+## Do I really need auto-prefixing?
 
 There are two parts to this. First auto-prefixing adds vendor prefixes for those browsers who have put recent features behind a prefix until they're cooked. In this piece from May, 2021, Rob O'Leary asks [Is Vendor Prefixing Dead?](https://css-tricks.com/is-vendor-prefixing-dead/). It's an amazing look at how the need for this has diminished over time.
 
@@ -290,18 +271,18 @@ Second, I've been watching the major browser vendors up their game, seemingly in
 
 Yes, that was bit of a digression...but it's these observations lead me to the belief that, for my site and my audience (all 3 of you), I do NOT need auto-prefixing. Your mileage may vary.
 
-### Are there simple ways to minify my CSS file in a more Eleventy-ish way?
+## Are there simple ways to minify my CSS file in a more Eleventy-ish way?
 
 Yes. In fact, [Quick Tip #001](https://www.11ty.dev/docs/quicktips/inline-css/) in the Eleventy docs show exactly how to do just that by installing the [clean-css package](https://www.npmjs.com/package/clean-css) and then creating a simple filter in Eleventy. It looks like this in my eleventy.config.js.
 
 ```js
 const CleanCSS = require("clean-css");
 eleventyConfig.addFilter("cssmin", function (code) {
-  return new CleanCSS({}).minify(code).styles;
+	return new CleanCSS({}).minify(code).styles;
 });
 ```
 
-### Wouldn't it be nice to inline my CSS and eliminate another file fetch by the browser?
+## Wouldn't it be nice to inline my CSS and eliminate another file fetch by the browser?
 
 The answer here is YES too. And it's in that same [Quick Tip #001](https://www.11ty.dev/docs/quicktips/inline-css/#capture-and-minify).
 
@@ -343,9 +324,7 @@ And finally, here's what my scripts look like using this technique.
 
 It doesn't get much simpler than that. Same as before, but only relying on clean-css for minifying in a more Eleventy-ish way via filter.
 
-<div id="section7"></div>
-
-## 7. Conclusion
+## Conclusion
 
 If you've read this far, thank you! As you can see, I've learned a lot from a lot of great people. And while we can all get easily distracted by new ways to do things, it's important to have some perspective. I am trying my best to strive for simplicity, maintainability, and performance. This site is my test bed. One thing I am asking myself now is whether or not it makes sense to retrofit some of these learnings into those other projects. I'll have to think about that.
 
@@ -353,9 +332,7 @@ And I'd like to send a bit shoutout to the moderators and helpers in the Elevent
 
 > _It seems that I'm not really done with this. And the site is no longer based on this last approach. If you'd like to continue watching my CSS strategy evolve, here's [the next step in the evolution](/posts/the-evolution-of-my-CSS-pipeline-in-eleventy-part-2/)._
 
-<div id="section8"></div>
-
-## 8. Links to the sites and repos for the sites discussed
+## Links to the sites and repos for the sites discussed
 
 Here are links to the sites and Github repos for all of these sites. Needless to say, they all contain areas for improvement.
 

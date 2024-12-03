@@ -14,22 +14,15 @@ pageHasCode: true
 
 <div class='toc'>
 
-## Table of Contents
+# Table of Contents
 
-1. [Introduction](#section1)
-2. [Let's start by upgrading to 11ty v3?](#section2)
-3. [Now let's reorganize the eleventy configuration](#section3)
-4. [Things are now quite broken](#section4)
-5. [It was time to start ESM'ing](#section5)
-6. [There was one more thing](#section6)
+[[toc]]
 
 </div>
 
 _**TL;DR**: I proceeded to do 3 things...re-organize my eleventy configuration, upgrade to v3, and convert everything to ESM...all at the same time. And it turned out ok._
 
-<div id="section1"></div>
-
-## 1. Introduction
+## Introduction
 
 Call me crazy, stupid, or perhaps ambitious. But I had been wanting to clean up and re-organize the eleventy setup of the [11ty Bundle website](https://11tybundle.dev)...meaning everything about how the filters and shortcodes were organized and referenced and simplifying my configuration file.
 
@@ -41,9 +34,7 @@ So, why not attempt all three at the same time? I know, crazy, right? I had just
 
 Here's the story of some of my hurdles and discoveries. It all turned out ok.
 
-<div id="section2"></div>
-
-## 2. Let's start by upgrading to 11ty v3
+## Let's start by upgrading to 11ty v3
 
 For this, I referred to Zach's post titled ["Calling all courageous canary testers for Eleventy v3.0](https://www.11ty.dev/blog/canary-eleventy-v3/).
 
@@ -53,9 +44,7 @@ Ok, this looks simple...just...
 npm install @11ty/eleventy@canary --save-exact
 ```
 
-<div id="section3"></div>
-
-## 3. Now let's reorganize the eleventy configuration
+## Now let's reorganize the eleventy configuration
 
 My eleventy config file was officially a mess. It was too big and there were a couple of functions inside of it that should have been in their own files. One was a fairly large shortcode that I had cooked up to refactor the display of bundle items on the site. I had run into a strange problem when trying to use the slugify filter that is included with eleventy. When I first attempted to put this shortcode in its own file, I could not figure out how to access that filter from the external file. So, I just put the shortcode in the eleventy config file and left it there. This was technical debt that I was not fond of.
 
@@ -95,10 +84,10 @@ And here is what filters.js looks like. _Updated to reflect simplified filter im
 import { cachedSlugify } from "./filters/cachedslugify.js";
 import { isCurrentPage } from "./filters/iscurrentpage.js";
 import {
-  formatItemDate,
-  formatPostDate,
-  formatFirehoseDate,
-  formatNumber,
+	formatItemDate,
+	formatPostDate,
+	formatFirehoseDate,
+	formatNumber,
 } from "./filters/formatting.js";
 import { getBundleItems } from "./filters/getbundleitems.js";
 import { getDescription } from "./filters/getdescription.js";
@@ -109,21 +98,21 @@ import { postsInCategory } from "./filters/postsincategory.js";
 import { readingTime } from "./filters/readingtime.js";
 import { webmentionsByUrl } from "./filters/webmentionsbyurl.js";
 export default {
-  cachedSlugify,
-  isCurrentPage,
-  formatItemDate,
-  formatPostDate,
-  formatFirehoseDate,
-  formatNumber,
-  getBundleItems,
-  getDescription,
-  getRSSlink,
-  plainDate,
-  postCountByAuthor,
-  postsByAuthor,
-  postsInCategory,
-  readingTime,
-  webmentionsByUrl,
+	cachedSlugify,
+	isCurrentPage,
+	formatItemDate,
+	formatPostDate,
+	formatFirehoseDate,
+	formatNumber,
+	getBundleItems,
+	getDescription,
+	getRSSlink,
+	plainDate,
+	postCountByAuthor,
+	postsByAuthor,
+	postsInCategory,
+	readingTime,
+	webmentionsByUrl,
 };
 ```
 
@@ -133,21 +122,17 @@ I had another thing to adjust in my eleventy config file. I had been using the e
 
 ```js
 eleventyConfig.addBundle("css", {
-  toFileDirectory: "bundle",
+	toFileDirectory: "bundle",
 });
 ```
 
-<div id="section4"></div>
-
-## 4. Things are now quite broken
+## Things are now quite broken
 
 Attempting to build the site resulted in a bunch of errors, which I then proceeded to pick off on at a time. I had been unaware that eleventy does an eslint process over the javascript code that we use with eleventy (I think that's the case). Anyway, it surfaced a couple of functions where I was accessing a variable that had not been declared with a let, const (or, God forbid, var). I had to go back and add those declarations.
 
 The other thing I ran into was a bunch of spelling errors, the result of the haste that I had used to get all of the filter and shortcode declarations in place. I had several of those.
 
-<div id="section5"></div>
-
-## 5. It was time to start ESM'ing
+## It was time to start ESM'ing
 
 Things were still broken, but I figured that it was because I had done only some ESM conversions as I was reorganizing the filters.
 
@@ -177,9 +162,7 @@ eleventyConfig.addFilter("webmentionsByUrl", filters.webmentionsByUrl);
 
 There's a similar setup for the shortcodes.
 
-<div id="section6"></div>
-
-## 6. There was one more thing
+## There was one more thing
 
 One of the places where I had been using "require" to load a file was the JSON database containing all the data that drives the site's content. It was trivial to load it that way. But that's not an ESM thing. I had seen two different ways of making that work. One was from [this GitHub discussion](https://github.com/11ty/eleventy/discussions/3196#discussioncomment-9848028) that called for using node's fs module to read the file and then JSON.parse it. The other was to use the import statement with a file URL.
 

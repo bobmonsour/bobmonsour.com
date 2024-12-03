@@ -15,23 +15,15 @@ pageHasCode: true
 
 <div class='toc'>
 
-## Table of Contents
+# Table of Contents
 
-1. [Introduction](#section1)
-2. [Pagefind from CloudCannon](#section2)
-3. [Getting it working in development](#section3)
-4. [Integrating with the production build](#section4)
-5. [Refining what gets indexed](#section5)
-6. [Styling the search box](#section6)
-7. [Conclusion](#section6)
+[[toc]]
 
 </div>
 
 ---
 
-<section id='section1'></section>
-
-## 1. Introduction
+## Introduction
 
 The more blog posts that I write, I've begun to wonder about how best to organize the growing archive. Should the archive show a paginated list of posts? Should they be grouped by date where the posts can be viewed by year or month? The [11tyBundle.dev firehose](https://11tybundle.dev/firehose/) groups post by year, allow a viewer to collapse each year.
 
@@ -47,9 +39,7 @@ With that background, I decided to add full text search capability to this site.
 
 Well, this post is all about how I added search to this site.
 
-<section id='section2'></section>
-
-## 2. Pagefind from CloudCannon
+## Pagefind from CloudCannon
 
 I remember in the olden days when you wanted to add search to a site, you could use a Google widget to generate site-specific search results.
 
@@ -59,9 +49,7 @@ I'd read about third-party search things like [Algolia](https://www.algolia.com/
 
 If you're interested, you can [learn more about pagefind](https://pagefind.app/).
 
-<section id='section3'></section>
-
-## 3. Getting it working in development
+## Getting it working in development
 
 Like most things I try, it usually turns out to be a lot simpler than I expected.
 
@@ -72,9 +60,9 @@ To get this working in development, I just followed the [quick start](https://pa
 <script src="/pagefind/pagefind-ui.js"></script>
 <div id="search"></div>
 <script>
-  window.addEventListener("DOMContentLoaded", (event) => {
-    new PagefindUI({ element: "#search", showSubResults: true });
-  });
+	window.addEventListener("DOMContentLoaded", (event) => {
+		new PagefindUI({ element: "#search", showSubResults: true });
+	});
 </script>
 ```
 
@@ -86,9 +74,7 @@ npx -y pagefind --site _site --serve
 
 From there, I open the browser to localhost:1414, and voila, a working search bar appears at the top of every page of my site. And it generates actual search results (perhaps too many, but I'll come back to that). Insanely simple, right?
 
-<section id='section4'></section>
-
-## 4. Integrating with the production build
+## Integrating with the production build
 
 With me being on the less impatient end of the patience spectrum, I immediately committed this to my repo and pushed it to production. And voila, there was no search bar anywhere to be found. As they say, read the f--king documentation! Rookie mistake, I know.
 
@@ -102,9 +88,7 @@ So I added the following script:
 
 With that, I again pushed to production and this time it worked.
 
-<section id='section5'></section>
-
-## 5. Refining what gets indexed
+## Refining what gets indexed
 
 Ok, so now that it works, what's the problem. Well, the problem is that certain search terms, for example, those that show up in the post title, also show up in the next and/or previous links that appear at the bottom of each post. They add useless noise to the search results.
 
@@ -132,17 +116,13 @@ I had to add a div so that there would be an element to add the attribute to, an
 
 And with that, the index covers each page's content, no more, no less. There are a lot more [filtering options](https://pagefind.app/docs/filtering/) with pagefind but this was all I needed (at least for now).
 
-<section id='section6'></section>
-
-## 6. Styling the search box
+## Styling the search box
 
 Ok, it worked, but I didn't like the way it looked. Pagefind comes with a default CSS file to style the search bar and the results. It declares a bunch of CSS custom properties that can be overwritten. But I had to move the CSS file reference from the default layout and up to a place in my head declaration so that my overwrites of the properties would take effect after pagefind's CSS loaded.
 
 I just made a couple of color tweaks to make the search bar more visible, but I plan to make it look better, i.e., a little smaller and with colors that make more sense with the site. Until then, it is what it is. Give it a try.
 
-<section id='section7'></section>
-
-## 7. Conclusion
+## Conclusion
 
 As you can see, it is incredibly easy to add site search functionality to an Eleventy site (or any static site for that matter).
 

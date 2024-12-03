@@ -16,14 +16,7 @@ pageHasCode: true
 
 ## Table of Contents
 
-1. [Introduction](#section1)
-2. [Google Searching for Google Things](#section2)
-3. [Did it Work? Kinda...](#section3)
-4. [Enter ChatGPT (or Bard)](#section4)
-5. [A Workflow Tweak](#section5)
-6. [A Couple of Other Wins with this Approach](#section6)
-7. [Conclusion](#section7)
-8. [The Code](#section8)
+[[toc]]
 
 </div>
 
@@ -31,9 +24,7 @@ pageHasCode: true
 
 > _[UPDATE: 10-30-2023]: I've abandoned this technique as it was, as they say, a fools errand. I have converted from this method to using the Google Sheets API to get the data at build time. Details can be found in [this recent post](/posts/scratch-that-use-google-sheets-api/)._
 
-<section id='section1'></section>
-
-## 1. Introduction
+## Introduction
 
 I am the developer of the [11tybundle.dev](https://11tybundle.dev/) site. The site serves as a resource with the goal of helping the web development community make use of the static site generator known as [Eleventy, aka 11ty](https://www.11ty.dev/). The site contains blog posts, starter projects, and other resources. I'd fallen in love with Eleventy and you can find a lot of [reasons why](https://11tybundle.dev/categories/why-eleventy/) at the site.
 
@@ -43,9 +34,7 @@ I had been anticipating this, but it seemed to have snuck up on me. I was just u
 
 Buckle up, webbies! It's a bit of a long ramble.
 
-<section id='section2'></section>
-
-## 2. Google Searching for Google Things
+## Google Searching for Google Things
 
 I had no doubt that there had to be a way to extract json data from a Google Sheet. So I proceeded to Google for the answer.
 
@@ -55,9 +44,7 @@ It showed me how to make a Google Apps script and it even supplied a [GitHub gis
 
 Before I even tried to get the data out of the Google Sheet, I made a Google Form to capture new data that it could add to the sheet. This was similar to the setup I had with Airtable. It was even better because with the Google form, all of the categories are listed on the form, so it's harder for me to miss selecting a category. In the Airtable form, there was a popup that I had to scroll through to select categories.
 
-<section id='section3'></section>
-
-## 3. Did it Work? Kinda...
+## Did it Work? Kinda...
 
 So I dove in and got it to work...kinda. It created an extension that would show up as a menu item in my Google Sheet. All I had to do was select it and it would process the sheet and display the resulting json in a popup window. I could copy the text, put it in a json file and give it a go.
 
@@ -77,9 +64,7 @@ My worry then became one of new posts coming in and I'm halfway between Airtable
 
 Still flummoxed, I had an idea.
 
-<section id='section4'></section>
-
-## 4. Enter ChatGPT (or Bard)
+## Enter ChatGPT (or Bard)
 
 I was at my wits end. I had no idea what to do. I was about to give up and just pay for the Airtable Team plan. But I decided to give it one more shot. I decided to try to use ChatGPT to see if it could help me.
 
@@ -126,9 +111,7 @@ And it did it. So now I have a version history of the sheet saved in a folder on
 
 I think this is pretty amazing...and on top of that, since the code it generated is simpler, I can actually understand it.
 
-<section id='section5'></section>
-
-## 5. A Workflow Tweak
+## A Workflow Tweak
 
 As a result of this transition, my workflow will now require an extra step. When using Airtable, my workflow for adding content to the site looked like this:
 
@@ -147,25 +130,19 @@ With this setup, I can remove the nightly build as it doesn't add anything.
 
 So while it's a tad more cumbersome, it's not too bad.
 
-<section id='section6'></section>
-
-## 6. A Couple of Other Wins with this Approach
+## A Couple of Other Wins with this Approach
 
 One side effect of this new approach is that there are no more API accesses to retrieve the data at build time. And that means I don't have to worry about caching the data and it saves a little bit on build time both locally and on Netlify.
 
 The second side effect is that it would be easier for me to open up the site to user submissions by exposing the Google Form (or some variation of it) on the site. I'm not sure if I'll do this, but this setup makes that a more palatable option.
 
-<section id='section7'></section>
-
-## 7. Conclusion
+## Conclusion
 
 I'm fine with the tradeoffs that I made here and I learned a lot.
 
 If you've gotten this far, thank you. I hope you've enjoyed this ramble. I'm still amazed at how well ChatGPT worked for me. I think it's very handy for small things like this.
 
-<section id='section8'></section>
-
-## 8. The Code
+## The Code
 
 Here's the code to the Google Apps script that does the work of exporting a Google Sheet to json. I've added comments to explain what's going on.
 
@@ -175,83 +152,83 @@ Here's the code to the Google Apps script that does the work of exporting a Goog
    The output is placed into a pop-up window at the end of execution.
    A time-stamped file of the json is also placed in a file on my Google Drive. */
 function onOpen() {
-  var ui = SpreadsheetApp.getUi();
-  ui.createMenu("Export JSON").addItem("Export to JSON", "showJSON").addToUi();
+	var ui = SpreadsheetApp.getUi();
+	ui.createMenu("Export JSON").addItem("Export to JSON", "showJSON").addToUi();
 }
 
 function showJSON() {
-  var sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
-  var data = sheet.getDataRange().getValues();
-  var headers = data[0];
+	var sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
+	var data = sheet.getDataRange().getValues();
+	var headers = data[0];
 
-  var jsonData = [];
-  for (var i = 1; i < data.length; i++) {
-    var row = data[i];
-    var obj = {};
-    for (var j = 0; j < headers.length; j++) {
-      if (row[j]) {
-        var key = headers[j];
-        var value = row[j].toString();
-        if (key === "Categories") {
-          value = value.split(",").map((item) => item.trim());
-        }
-        obj[key] = value;
-      }
-    }
-    jsonData.push(obj);
-  }
+	var jsonData = [];
+	for (var i = 1; i < data.length; i++) {
+		var row = data[i];
+		var obj = {};
+		for (var j = 0; j < headers.length; j++) {
+			if (row[j]) {
+				var key = headers[j];
+				var value = row[j].toString();
+				if (key === "Categories") {
+					value = value.split(",").map((item) => item.trim());
+				}
+				obj[key] = value;
+			}
+		}
+		jsonData.push(obj);
+	}
 
-  var jsonString = JSON.stringify(jsonData, null, 2);
-  displayPopup(jsonString);
+	var jsonString = JSON.stringify(jsonData, null, 2);
+	displayPopup(jsonString);
 
-  /* Save JSON to Google Drive */
-  saveToDrive(jsonString);
+	/* Save JSON to Google Drive */
+	saveToDrive(jsonString);
 }
 
 function displayPopup(jsonString) {
-  var htmlOutput = HtmlService.createHtmlOutput("<pre>" + jsonString + "</pre>")
-    .setWidth(800)
-    .setHeight(600);
-  SpreadsheetApp.getUi().showModalDialog(htmlOutput, "Exported JSON");
+	var htmlOutput = HtmlService.createHtmlOutput("<pre>" + jsonString + "</pre>")
+		.setWidth(800)
+		.setHeight(600);
+	SpreadsheetApp.getUi().showModalDialog(htmlOutput, "Exported JSON");
 }
 
 function saveToDrive(data) {
-  var mainFolderName = "11ty";
-  var subFolderName = "allrecords history";
+	var mainFolderName = "11ty";
+	var subFolderName = "allrecords history";
 
-  var mainFolders = DriveApp.getFoldersByName(mainFolderName);
-  var mainFolder;
+	var mainFolders = DriveApp.getFoldersByName(mainFolderName);
+	var mainFolder;
 
-  if (mainFolders.hasNext()) {
-    mainFolder = mainFolders.next();
-  } else {
-    /* If the main folder not found, create it */
-    mainFolder = DriveApp.createFolder(mainFolderName);
-  }
+	if (mainFolders.hasNext()) {
+		mainFolder = mainFolders.next();
+	} else {
+		/* If the main folder not found, create it */
+		mainFolder = DriveApp.createFolder(mainFolderName);
+	}
 
-  /* Check if the subfolder exists within the main folder */
-  var subFolders = mainFolder.getFoldersByName(subFolderName);
-  var subFolder;
+	/* Check if the subfolder exists within the main folder */
+	var subFolders = mainFolder.getFoldersByName(subFolderName);
+	var subFolder;
 
-  if (subFolders.hasNext()) {
-    subFolder = subFolders.next();
-  } else {
-    /* If subfolder not found, create it inside the main folder */
-    subFolder = mainFolder.createFolder(subFolderName);
-  }
+	if (subFolders.hasNext()) {
+		subFolder = subFolders.next();
+	} else {
+		/* If subfolder not found, create it inside the main folder */
+		subFolder = mainFolder.createFolder(subFolderName);
+	}
 
-  /* Construct filename with current date and time */
-  var date = new Date();
-  var filename = Utilities.formatString(
-    "allrecords-%02d%02d%02d%02d%02d.json",
-    date.getMonth() + 1,
-    date.getDate(),
-    date.getFullYear() % 100,
-    date.getHours(),
-    date.getMinutes()
-  );
+	/* Construct filename with current date and time */
+	var date = new Date();
+	var filename = Utilities.formatString(
+		"allrecords-%02d%02d%02d%02d%02d.json",
+		date.getMonth() + 1,
+		date.getDate(),
+		date.getFullYear() % 100,
+		date.getHours(),
+		date.getMinutes()
+	);
 
-  /* Create the file in the specific subfolder */
-  subFolder.createFile(filename, data, MimeType.PLAIN_TEXT);
+	/* Create the file in the specific subfolder */
+	subFolder.createFile(filename, data, MimeType.PLAIN_TEXT);
 }
 ```

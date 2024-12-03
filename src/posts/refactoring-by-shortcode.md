@@ -14,23 +14,15 @@ pageHasCode: true
 
 <div class='toc'>
 
-## Table of Contents
+# Table of Contents
 
-1. [Introduction](#section1)
-2. [Displaying the posts](#section2)
-3. [But they're all a little different](#section3)
-4. [An interim step before short-coding](#section4)
-5. [Shortcode to the rescue](#section5)
-6. [Outstanding issues](#section6)
-7. [Conclusion](#section6)
+[[toc]]
 
 </div>
 
 ---
 
-<section id='section1'></section>
-
-## 1. Introduction
+## Introduction
 
 I've been tinkering with the [11tybundle](https://11tybundle.dev/) site here and there, doing things like:
 
@@ -45,9 +37,7 @@ But in the back of my mind, I had some technical debt that I had been ignoring. 
 - simplifying the site's CSS
 - removing the redundancies in how posts are displayed
 
-<section id='section2'></section>
-
-## 2. Displaying the posts
+## Displaying the posts
 
 I'm saving the simplification of the CSS for later. For this post, we'll tackle the dreaded redundancies.
 
@@ -71,9 +61,7 @@ I consider this set of elements to be properties of what I call a "bundleitem." 
 
 I'm only dealing with "blog posts" as bundleitems in this exercise.
 
-<section id='section3'></section>
-
-## 3. But they're all a little different
+## But they're all a little different
 
 Each of these had a similar structure for the html of the posts...but they varied in subtle ways.
 
@@ -102,9 +90,7 @@ Lastly, once I added pagefind search to the site, I needed to tune the weights o
 
 While this added complexity, it was certainly doable, but it caused me to consider ways to rethink the entire single post construct.
 
-<section id='section4'></section>
-
-## 4. An interim step before short-coding
+## An interim step before short-coding
 
 Before heading to shortcode-land, I decided to take an interim step. This involved using the nunjucks 'set' to set up a context such that I could then include a partial to generate the html for the bundleitem.
 
@@ -128,9 +114,7 @@ For a brief moment, I wondered if I should consider turning this into a "web com
 
 So, I decided instead to turn the html generation for a post item into a shortcode. I knew that it could include asynchronous calls...so off I went.
 
-<section id='section5'></section>
-
-## 5. Shortcode to the rescue
+## Shortcode to the rescue
 
 As this was my first ever shortcode, I read what I could in the docs and various blog posts. I was familiar with the [Eleventy Image plugin](https://www.11ty.dev/docs/plugins/image/) and its associated shortcode.
 
@@ -157,38 +141,38 @@ And here is the shortcode that does all the not-so-heavy lifting to generate the
 
 ```js
 eleventyConfig.addNunjucksAsyncShortcode(
-  "singlePost",
-  async function (post, type, idKey) {
-    const titleSlug = cachedSlugify(post.Title);
-    const description = await getDescription(post.Link);
-    const authorSlug = cachedSlugify(post.Author);
-    const date = formatItemDate(post.Date);
-    const id =
-      '"' + cachedSlugify(idKey) + "-" + titleSlug + "-" + post.Date + '"';
-    switch (type) {
-      case "category":
-        pageWeight = 10;
-        break;
-      case "author":
-        pageWeight = 5;
-        break;
-      case "firehose":
-      case "blog":
-        pageWeight = 0;
-    }
-    let categories = "";
-    post.Categories.forEach((category) => {
-      let slugifiedCategory = cachedSlugify(category);
-      categories += `<a href="/categories/${slugifiedCategory}/">${category}</a>`;
-    });
-    return `
+	"singlePost",
+	async function (post, type, idKey) {
+		const titleSlug = cachedSlugify(post.Title);
+		const description = await getDescription(post.Link);
+		const authorSlug = cachedSlugify(post.Author);
+		const date = formatItemDate(post.Date);
+		const id =
+			'"' + cachedSlugify(idKey) + "-" + titleSlug + "-" + post.Date + '"';
+		switch (type) {
+			case "category":
+				pageWeight = 10;
+				break;
+			case "author":
+				pageWeight = 5;
+				break;
+			case "firehose":
+			case "blog":
+				pageWeight = 0;
+		}
+		let categories = "";
+		post.Categories.forEach((category) => {
+			let slugifiedCategory = cachedSlugify(category);
+			categories += `<a href="/categories/${slugifiedCategory}/">${category}</a>`;
+		});
+		return `
 	<div class="bundleitem">
 		<h2 class="bundleitem-title" ID=${id} data-pagefind-weight="${pageWeight}"><a href="${post.Link}" data-link-type="external">${post.Title}</a></h2>
 		<p class="bundleitem-description">${description}</p>
 		<p class="bundleitem-dateline"><a href="/authors/${authorSlug}/">${post.Author}</a> &middot; ${date}</p>
 		<p class="bundleitem-categories">Categories: ${categories}</p>
 	</div>`;
-  }
+	}
 );
 ```
 
@@ -204,15 +188,11 @@ This works and makes each of the pages that use the shortcode much smaller and r
 
 One unintended, but I consider positive side effect of this implementation is that the description is no longer truncated to 100 characters for each post item. There is the visual result of the post items no longer being all the same height, but I think that the added description when it exists provides more insight into the purpose of the post. I could certainly do the truncation in the shortcode, but when I saw the result without it, I thought it was better for readers.
 
-<section id='section6'></section>
-
-## 6. Outstanding issues
+## Outstanding issues
 
 While this works well for my purposes, I have a small mess on my hands with respect to my eleventy config. If you noticed, I use a filter called cachedSlugify, which was featured in my post called [Slashing by caching](/posts/slashing-by-caching/). It relies on the slugify filter included with Eleventy. That filter lives directly inside of my eleventy config file and makes use of the getFilter function in Eleventy. I made an attempt to move it into my filters file where all of my other filters are located, but I couldn't get it to work. And since the shortcode relies on it, I took the path of least resistance and placed the shortcode directly in my Eleventy config too. I'll figure this out at some point, but for now I'm happy to get the shortcode working. Redundancies be gone!
 
-<section id='section7'></section>
-
-## 7. Conclusion
+## Conclusion
 
 As with most of my posts about this site or the [11tybundle.dev](https://11tybundle.dev/) site, I learn a ton. I grind sometimes for hours and days, but the learning is in the grinding.
 

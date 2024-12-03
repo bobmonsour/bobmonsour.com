@@ -13,21 +13,15 @@ image:
 
 <div class='toc'>
 
-## Table of Contents
+# Table of Contents
 
-1. [Introduction](#section1)
-2. [Enter the Kettlebell](#section2)
-3. [All the Basic Kettlebell Exercises](#section3)
-4. [My Current Regimen](#section4)
-5. [This is All Useless without Good Nutrition](#section5)
+[[toc]]
 
 </div>
 
 ---
 
-<section id='section1'></section>
-
-## 1. Introduction
+## Introduction
 
 As a 68-year-old man who has lived more years than his father and brother, I have come to believe that maintaining some sort of exercise regimen is one very important aspect of living a healthy life.
 
@@ -35,9 +29,7 @@ To that end, after a long enough time with doing what I'm doing, I think I can s
 
 So, what does it look like? Well, I'm glad you asked. Let's dive in.
 
-<section id='section2'></section>
-
-## 2. Enter the Kettlebell
+## Enter the Kettlebell
 
 While I won't go into all the kinds of exercise methods and programs that I've tried in the past, suffice it to say that I've tried P90X, AthleanX, and high-intensity interval training. I've also tried a few other things, but those are the ones that I've tried for the longest periods of time.
 
@@ -55,9 +47,7 @@ They only had a few and before too long, they were just a tad too light for the 
 
 So what exactly do I do with these things?
 
-<section id='section3'></section>
-
-## 3. All the Basic Kettlebell Exercises
+## All the Basic Kettlebell Exercises
 
 If you do a little homework about kettlebells, you'll see that there are a handful of basic moves that when combined, make up a pretty good full-body workout. I'm not going to go into all the details of each of these exercises, but I will give you a brief overview of each of them.
 
@@ -73,9 +63,7 @@ If you do a little homework about kettlebells, you'll see that there are a handf
 
 - **Turkish Getups** - This is a full-body exercise that start out lying on the ground and gradually coming to a full stand, all the while with a kettlebell in one hand. That said, I have yet to tackle these.
 
-<section id='section4'></section>
-
-## 4. My Current Regimen
+## My Current Regimen
 
 I've got a couple of ways that I've been approaching my use of kettlebells. First, one thing that is important to me is to get in enough of this kind of training in a relatively short time. The primary reason for this goal is avoid burnout. If I feel that I "have to" doing something for exercise that will take an hour or more, it's just too easy for me to make an excuse as to why I can't find the time on a particular day.
 
@@ -104,9 +92,7 @@ Oh, and I forgot the whole stretching and mobility thing. Every day (at least wh
 
 Lastly, I'm still trying to play tennis once a week as my knees will let me. The fitness work definitely helps me on the court. I recall something someone once told me: "When you're young, you play tennis to get in shape. When you're old, you get in shape to play tennis."
 
-<section id='section5'></section>
-
-## 5. This is All Useless without Good Nutrition
+## This is All Useless without Good Nutrition
 
 Sadly, heart disease runs in our family, on both my maternal and paternal side. I have been diagnosed with a certain level of heart disease in that there is evidence of plaque in my arteries. I take cholesterol management medication and that helps.
 

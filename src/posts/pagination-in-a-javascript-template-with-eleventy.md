@@ -14,18 +14,15 @@ pageHasCode: true
 
 <div class='toc'>
 
-## Table of Contents
+# Table of Contents
 
-1. [Introduction](#section1)
-2. [Pagination in a javascript template](#section2)
+[[toc]]
 
 </div>
 
 ---
 
-<section id='section1'></section>
-
-## 1. Introduction
+## Introduction
 
 In [Issue 20](https://11tybundle.dev/blog/11ty-bundle-20/) of the 11ty Bundle blog, I wrote about Zach asking me to generate an API for the [new CMS page in the Eleventy docs](https://www.11ty.dev/docs/cms/). What he wanted was a json file that included the basic post information for all the [posts in that category](https://11tybundle.dev/categories/cms/).
 
@@ -35,9 +32,7 @@ While I was delighted to receive the request, here was my response:
 
 Zach was kind enough to share [some code](https://github.com/11ty/11ty-website/blob/main/src/api/urls.11ty.js) of his that did a similar thing for the 11ty website...so I was off to the races.
 
-<section id='section2'></section>
-
-## 2. Pagination in a javascript template
+## Pagination in a javascript template
 
 Since Zach had only asked for a single category, my first cut at it was hard-coded. When I suggested a second category, I ended up duplicating the file and changing the category name. I knew that this was not the way to go.
 

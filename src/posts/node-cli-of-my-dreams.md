@@ -14,22 +14,9 @@ pageHasCode: true
 
 <div class='toc'>
 
-## Table of Contents
+# Table of Contents
 
-1. [Introduction](#section1)
-2. [It's just JSON, how hard could it be?](#section2)
-3. [It's good to seek advice from others](#section3)
-4. [Where to start? The file system](#section4)
-5. [So what should this script do?](#section5)
-6. [Inquirer, but not Commander](#section6)
-7. [One needs clean data to start with](#section7)
-8. [Updating the 11ty Bundle source](#section8)
-9. [Oh, so you want to edit what you've entered?](#section9)
-10. [But wait, it gets better](#section10)
-11. [A couple of other scripts to help](#section11)
-12. [Once more, err, I mean twice more, with feeling](#section12)
-13. [Time for Commander? Not so much](#section13)
-14. [Show me the code](#section14)
+[[toc]]
 
 </div>
 
@@ -37,9 +24,7 @@ _**TL;DR**: I built a few node CLI scripts to support the management of the 11ty
 
 > UPDATE: No sooner had I posted this to the 11ty Discord server than it was pointed out to me that I was using an older version of the [inquirer package](https://www.npmjs.com/package/inquirer). Many thanks to [uncenter](https://uncenter.dev/) for pointing this out. According to the package author: _"Inquirer recently underwent a rewrite from the ground up to reduce the package size and improve performance. The previous version of the package is still maintained (though not actively developed), and offered hundreds of community contributed prompts that might not have been migrated to the latest API."_ I have made the migration to use the newer [@inquirer/prompts package](https://www.npmjs.com/package/@inquirer/prompts). They are both from the same author and I like the changes that have been made. I have updated the code snippets in this post as well as the [code on GitHub](https://github.com/bobmonsour/dbtools) to reflect the new package.
 
-<div id="section1"></div>
-
-## 1. Introduction
+## Introduction
 
 As you may, or may not recall, the database for [11tybundle.dev](https://11tybundle.dev) site started out as an Airtable base, but then as I neared the maximum number of records allowed in their free tier, I moved it to a Google Sheet. It is a simple 2-dimensional structure, with each row representing one of several types of entries: posts, sites, releases, and starters.
 
@@ -49,9 +34,7 @@ Overall, the system worked ok, but there were some things that it didn't do and 
 
 On the back end of this, using the Google Sheets API, I was able to retrieve the contents of the main tab at build time and format the data into a nice JSON array of objects, each object representing one of the entries.
 
-<div id="section2"></div>
-
-## 2. It's just JSON, how hard could it be?
+## It's just JSON, how hard could it be?
 
 So, it occurred to me that since this was all in JSON, by the time I processed it with various filters to generate the data to drive the site, I thought _Why not just keep it in JSON and edit the entries directly?_
 
@@ -71,29 +54,21 @@ I have to say that I'm not a fan of frameworks that have so much stuff to wade t
 
 I think I've been traumatized by my early professional career of building embedded systems with very limited resources (and writing in assembly language). I prefer to write relatively small amounts of code where I can understand the whole thing. Frameworks ain't that. Maybe that's why I like Eleventy so much.
 
-<div id="section3"></div>
-
-## 3. It's good to seek advice from others
+## It's good to seek advice from others
 
 After all this, I decided to reach out to a couple of people in the Eleventy community that I trust and have a lot more web development experience than I do. The suggestions were mixed, but one thing struck a chord. It came from [Chris Burnell](https://chrisburnell.com/), and it was a reference to some work that [Robb Knight](https://rknight.me/) had done to support [his blogging workflow](https://rknight.me/blog/my-blogging-workflow/) (which is a lot more involved than mine). He had built a CLI using the [commander](https://github.com/tj/commander.js#readme) and [inquirer](https://github.com/SBoudrias/Inquirer.js/blob/main/packages/inquirer/README.md) packages. This sounded like a reasonable path to investigate. Off I went to read the docs and watch some videos.
 
-<div id="section4"></div>
-
-## 4. Where to start? The file system
+## Where to start? The file system
 
 I had never written any javascript to read from or write to the file system. I thought I should probably start there, because if I couldn't do that, the rest would be a waste of time. I have to say that I thrashed around for a while to get the basics working. I ultimately realized that I was not building some large, scalable system, but a single-purpose, sole-use script. I decided to access the file system using synchronous calls, only needing node's fs. Once I could read the file, add some stuff to it, and write it back out, I was ready to start building the real script.
 
-<div id="section5"></div>
-
-## 5. So what should this script do?
+## So what should this script do?
 
 Having nailed down basic file read and write, I thought it would be simplest to start by generating a JSON object for each type of entry. That would require me to make use of the inquirer package to request the data for each part of an entry. They vary a bit, but each has some common info, such as the issue number of the 11ty Bundle blog, a title, and a link. For sites and starters, that's all that was required. For posts, I needed more info (author, date, and categories) and for releases, I needed to add a date to the common info.
 
 After several days, I had the basics working, and that was really cool. It's hard to express how I felt to get the first entry successfully written to the file. I was even able to validate several of the fields: testing that the date is in the right format and is not later than today, and check to see if the URL is already in the database; and with inquirer, I can select categories from a pre-defined list as checkboxes. It's all pretty amazing, IMO (perhaps I'm too easily amazed).
 
-<div id="section6"></div>
-
-## 6. Inquirer, but not Commander
+## Inquirer, but not Commander
 
 Initially, I took a look at commander, and it seemed like a little more than what I needed. Having said that, now that I've built several different scripts using inquirer, I can imagine using commander for selecting which of the scripts to run by way of a command line option. But that's for another day...first things first.
 
@@ -138,23 +113,17 @@ With that, each of those _"enter"_ functions prompt for the data required for th
 
 Well, that got me started on a multi-day journey. I'm not that skilled in javascript, so I will admit that I used some AI along the way. I used it more as a tutor, asking it questions more than asking it for code. For example, I'm finding it a great alternative to going to MDN to look up how a particular array function works.
 
-<div id="section7"></div>
-
-## 7. One needs clean data to start with
+## One needs clean data to start with
 
 One of the things that I had the Google Apps script do is make a backup JSON file and store it in my Google Drive each time I copied the form data tabs to the main tab. I downloaded the latest one and realized that it needed some cleaning. As it turns out, there was some extraneous cruft at the end of some of the entries. Fortunately, said cruft was ignored by my build process. But, I wanted to clean it up...nothing a few find/replace operations couldn't handle.
 
 One of the things that I had forgotten about was that the categories field of the post entries were stored as a string of comma-separated values and not an array of strings. I had corrected for this in one of my build filters. It made sense to get rid of that filter and adjust the data accordingly. Again, not very difficult.
 
-<div id="section8"></div>
-
-## 8. Updating the 11ty Bundle source
+## Updating the 11ty Bundle source
 
 I managed to use use the Google Sheets API in a pretty contained way. I had a single file, called <code>fetchsheetdata.js</code> in my <code>\_data</code> directory. Once fetched, another data file slices, dices, and filters the JSON, generating the objects for most of the templates that drive the site. To incorporate the use of the JSON file directly, all I had to do was replace a call to the fetching function with a reference to the JSON file. In other words, the heart transplant was pretty straightforward and the patient survived.
 
-<div id="section9"></div>
-
-## 9. Oh, so you want to edit what you've entered?
+## Oh, so you want to edit what you've entered?
 
 Let's just say that the great feeling of getting something new working simply doesn't last long enough. I started using my new toy and realized that I would occasionally make a mistake, but I could not edit what I had just entered even though it was just displayed in front of me. I'd have to open the file in VS Code, scroll to the end and delete the last entry, run the script again, and re-enter all the data with the correct info. I had to add an edit feature.
 
@@ -168,9 +137,7 @@ I cannot tell you how much I love this workflow for creating entries.
 
 A terminal view of entering a post and the follow-up questions {.caption}
 
-<div id="section10"></div>
-
-## 10. But wait, it gets better
+## But wait, it gets better
 
 On top of this, another aspect of what makes this workflow so awesome is my recent migration from [Alfred](https://www.alfredapp.com/) to [Raycast](https://www.raycast.com/). Both of them work as a launcher, snippet generator, and all-around workflow supporter. Raycast is a Mac-only utility that does a lot of what Alfred does, and a lot more.
 
@@ -178,9 +145,7 @@ The first time I heard of Raycast was from [Robb Knight's blog](https://rknight.
 
 So how does this help my CLI workflow? With Raycast, I can create something called a Script Command that will open a terminal and run my node script, prompting me for an entry type. I can give it an alias and then bring up Raycast and start typing the alias...or, better yet, I can assign it a hotkey and no matter where I am on my Mac, that hotkey will launch my script in a terminal window and ask what kind of entry I want to add. That capability along with the clipboard history (which Alfred also has) makes this workflow so much more efficient. I can find a blog post, copy the URL, title, and author, hit the hotkey, paste those things in, add the few other tidbits and I'm done. Is that sweet or what?
 
-<div id="section11"></div>
-
-## 11. A couple of other scripts to help
+## A couple of other scripts to help
 
 Once I got the hang of this, I realized that I needed a way to find out how many of each type of entry were in the database for the next blog post. So I wrote a simple script to prompt me for an issue number and it spits out just what I need, like this:
 
@@ -194,9 +159,7 @@ Another script lets me check a URL to see if it's already in the database. While
 
 Check for a URL in the database {.caption}
 
-<div id="section12"></div>
-
-## 12. Once more, err, I mean twice more, with feeling
+## Once more, err, I mean twice more, with feeling
 
 Once I had the file updating with new entries, there was a single step remaining. I needed a way to push the repo to GitHub to trigger a new site build on Netlify.
 
@@ -204,17 +167,13 @@ Raycast to the rescue. I have a script command that does the miraculous push. So
 
 I'd almost forgotten another script that I wrote. It goes through the entire JSON file and verifies that all of the links are still accessible. Sometimes, sites are abandoned or URL structures are changed, and I need to find those and fix them, if possible. For those URLs that are no longer accessible, the script writes them out in an HTML file with anchor links so that I can manually re-test them. The method I'm using relies on the [axios package](https://www.npmjs.com/package/axios) and I'm not sure it gives sites enough time to respond. So some of the links it says are not accessible may be just fine. But, it's a start and I can improve the technique over time.
 
-<div id="section13"></div>
-
-## 13. Time for Commander? Not so much
+## Time for Commander? Not so much
 
 Now that I have these things running, I _might_ consider trying out commander to see if I can make a single script that will run any of the scripts I've written. But since it's only a handful and they're hotkey accessible, it's not a priority. I've got some other ideas for making the site better for the visitors. And with this under-the-hood developer experience work, it _might_ free up some time to make that happen.
 
 While this has been a very enjoyable, if at times frustrating journey, I have learned a lot and that is part of what keeps me going. That and the amazing Eleventy community. I'm so glad to be a part of it.
 
-<div id="section14"></div>
-
-## 14. Show me the code
+## Show me the code
 
 If you're really interested in seeing the code for these scripts, [they're on GitHub](https://github.com/bobmonsour/dbtools). Be warned, they're not very well documented. The [make-bundle-entries script](https://github.com/bobmonsour/dbtools/blob/main/make-bundle-entries.js) might look particularly hairy. I'm not a professional web developer and I'm sure there are things that could be done better. They work for me and that's what counts.
 

@@ -14,19 +14,15 @@ pageHasCode: true
 
 <div class='toc'>
 
-## Table of Contents
+# Table of Contents
 
-1. [Introduction](#section1)
-2. [Where does the data come from?](#section2)
-3. [The Firehose template](#section3)
+[[toc]]
 
 </div>
 
 ---
 
-<section id='section1'></section>
-
-## 1. Introduction
+## Introduction
 
 I just added a feature to the [Firehose page](https://11tybundle.dev/firehose/) of the [11tybundle.dev](https://11tybundle.dev/) site. You can now collapse the list of posts by year. I thought I'd share how the page is built. The collapsing feature has been on my list of things to do, but I was feeling a bit intimidated by it. It turned out to be a lot simpler than I expected. I'm glad I finally got around to it.
 
@@ -34,9 +30,7 @@ I just added a feature to the [Firehose page](https://11tybundle.dev/firehose/) 
 
 <img src="src/assets/img/details-summary-sample.jpg" alt="Showing 2 years of collapsed details element and part of one not collapsed", sizes="100vw">
 
-<section id='section2'></section>
-
-## 2. Where does the data come from?
+## Where does the data come from?
 
 First off, I think it's important to understand the format of the data that the Firehose template has available to it.
 
@@ -66,9 +60,7 @@ return {
 
 As you might imagine, this makes it very simple to generate all of the pages of the site. The Firehose page is no exception. The firehose array of posts is available as bundledata.firehose.
 
-<section id='section3'></section>
-
-## 3. The Firehose template
+## The Firehose template
 
 The Firehose template is written in nunjucks. You'll see that I am using eleventyComputed in the front matter so I can construct the title and page description using the post count from the global data file.
 

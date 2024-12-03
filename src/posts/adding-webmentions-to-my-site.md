@@ -17,24 +17,15 @@ pageHasCode: true
 
 <div class='toc'>
 
-## Table of Contents
+# Table of Contents
 
-1. [Introduction](#section1)
-2. [What are webmentions?](#section2)
-3. [How do I connect my website to the webmention plumbing?](#section3)
-4. [Getting the mentions from webmention.io](#section4)
-5. [Slicing and dicing the mentions](#section5)
-6. [Displaying them with the post](#section6)
-7. [Conclusion](#section6)
-8. [References](#section7)
+[[toc]]
 
 </div>
 
 ---
 
-<section id='section1'></section>
-
-## 1. Introduction
+## Introduction
 
 I had told myself that I wouldn't do this...but, seeing them on other people's sites changed my mind. Call it FOMO, call it a desire to be part of the cool kids club, call it whatever you want. I'm adding webmentions to my 11ty site.
 
@@ -44,9 +35,7 @@ I had recalled reading about them on various people's sites and it looked pretty
 
 I have to say that I was helped in this effort by the many bloggers who took this on and wrote about it. They're all right there in the [Webmentions category](https://11tybundle.dev/categories/webmentions/) on 11tybundle.dev. In other words, I stand on the shoulders of giants. They're listed individually in the [References](#section8) section at the end of this post.
 
-<section id='section2'></section>
-
-## 2. What are webmentions?
+## What are webmentions?
 
 Webmention is an [open web standard](https://indieweb.org/Webmention) and a [W3C Recommendation](https://www.w3.org/TR/webmention/). The implementation of it that many of us are using is called [webmention.io](https://webmention.io/), developed by [Aaron Parecki](https://github.com/aaronpk/webmention.io).
 
@@ -54,17 +43,13 @@ The standard enables "conversations and interactions across the web, a powerful 
 
 Hopefully, shortly after I publish this post and share it, you'll see some of those mentions at the bottom of this post. If you can't wait, [this post](/posts/adding-pagefind-to-my-eleventy-personal-site.md/#webmentions) already has some mentions.
 
-<section id='section3'></section>
-
-## 3. How do I connect my website to the webmention plumbing?
+## How do I connect my website to the webmention plumbing?
 
 To get started, one must head over to [webmention.io](https://webmention.io/) and sign up for a free account with the url of your website. Once signed up, you add a line or two to your \<head\> tag and you're good to go. The service will start collecting mentions for you. You'll need to grab the API Key it provides as you'll need it to retrieve the mentions. You'll want to stash this in an environment variable so that it is not exposed to the public.
 
 But how does this connect to my social network, Mastodon in my case? Well that's where another free service, [Bridgy](https://brid.gy/) comes in. Bridgy is a service that connects your website to your social network. You sign up for an account with Bridgy using your social network handle. Bridgy then "periodically checks social networks for responses to your posts and links to your website and sends them back to your site as webmentions."
 
-<section id='section4'></section>
-
-## 4. Getting the mentions from webmention.io
+## Getting the mentions from webmention.io
 
 Since we're using [Eleventy](https://www.11ty.dev/), we've got a boatload of options for getting our mentions into our site.
 
@@ -127,9 +112,7 @@ As you can see, there's a lot of good stuff to work with here. The `mentions` ar
 
 Among the most important items in the json are the `wm-target` and `wm-property` properties. The `wm-target` is the url of the page that the mention is for. The `wm-property` is the type of mention. We'll use these to filter the mentions for a particular page.
 
-<section id='section5'></section>
-
-## 5. Slicing and dicing the mentions
+## Slicing and dicing the mentions
 
 There are a variety of types of mentions, the wm-property. Here are the ones listed in the [webmention.io repo](https://github.com/aaronpk/webmention.io#find-links-of-a-specific-type-to-a-specific-page):
 
@@ -204,9 +187,7 @@ Similar to how I handle the global data for the 11tybundle.dev site, I like when
 
 So I now have 3 separate arrays of mentions, one for each type. I can then use these in my template to display them in whatever way I want. The reply array (or as I call them here, comments) is sorted in descending date order. For likes and reposts, the date is not relevant.
 
-<section id='section6'></section>
-
-## 6. Displaying them with the post
+## Displaying them with the post
 
 Now that we have the mentions pre-grouped by type, it's time to use them in a template that will display them at the bottom of each post.
 
@@ -256,17 +237,13 @@ Simple enough. And here's what the webmentions.njk partial looks like. It's pret
 </div>{% endraw %}
 ```
 
-<section id='section7'></section>
-
-## 7. Conclusion
+## Conclusion
 
 As is typical for me, while I was worried about what it would take to do this, I got it done and it seems to work pretty well. There may be some edge cases that I haven't considered, but I'll deal with those as they come up.
 
 Needless to say, I'll be adding this post to those of the giants who made this all possible. While they're linked in the 11tybundle.dev site, I've added them below.
 
-<section id='section8'></section>
-
-## 8. References
+## References
 
 ### Blog Posts (in no particular order)
 

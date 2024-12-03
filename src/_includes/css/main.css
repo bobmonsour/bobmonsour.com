@@ -198,13 +198,14 @@ img[width][height] {
 	grid-template-columns: inherit;
 }
 .post .toc {
+	background-color: lightgray;
+	border: 1px solid gray;
+	border-radius: 20px;
 	grid-column: content;
 	margin: 0 auto;
-	width: fit-content;
 	margin-block-start: var(--space-s);
 	padding: var(--space-3xs-l);
-	background-color: lightgray;
-	border-radius: 20px;
+	width: fit-content;
 }
 .post .toc h2 {
 	margin-block-start: var(--space-2xs);

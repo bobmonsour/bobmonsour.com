@@ -13,11 +13,21 @@ import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 // set up markdown
 import markdownIt from "markdown-it";
 import markdownItAttrs from "markdown-it-attrs";
+import markdownItAnchor from "markdown-it-anchor";
+import markdownItToc from "markdown-it-table-of-contents";
 const markdownItOptions = {
 	html: true,
 	breaks: false,
 };
-const markdownLib = markdownIt(markdownItOptions).use(markdownItAttrs);
+const markdownItTocOptions = {
+	includeLevel: [2],
+	containerHeaderHtml: "",
+	listType: "ul",
+};
+const markdownLib = markdownIt(markdownItOptions)
+	.use(markdownItAttrs)
+	.use(markdownItAnchor)
+	.use(markdownItToc, markdownItTocOptions);
 
 export default function (eleventyConfig) {
 	// Passthrough copy for static assets
