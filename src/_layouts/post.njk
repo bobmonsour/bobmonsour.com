@@ -18,7 +18,7 @@ layout: default.njk
   </div>
   {% include 'showimage.njk' %}
   {{ content | safe }}
-	<p><a href="mailto:bob.monsour@gmail.com?subject=Comment:%20{{ title | urlencode }}">Send a comment by email</a> (yes, that's a mailto link).</p>
+	{% include "comment.njk" %}
 	{% set theseposts = collections.posts %}
   {% include 'nextprevlinks.njk' %}
 </article>

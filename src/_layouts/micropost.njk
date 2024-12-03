@@ -5,7 +5,7 @@ layout: default.njk
   <h1>{{ title }}</h1>
 	<p class="blogdate">{{ page.date |formatPostDate }}</p>
 	{{ content | safe }}
-	<p><a href="mailto:bob.monsour@gmail.com?subject=Comment:%20{{ title | urlencode }}">Send a comment by email</a> (yes, that's a mailto link).</p>
+	{% include "comment.njk" %}
 	{% set theseposts = collections.microblog %}
 	{% include 'nextprevlinks.njk' %}
 </article>
