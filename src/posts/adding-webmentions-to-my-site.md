@@ -15,13 +15,7 @@ pageHasCode: true
 
 > [UPDATE Oct 1, 2024]: I have since removed webmentions from this site. It's a long story. That said, here is how I had done it back then.
 
-<div class='toc'>
-
-# Table of Contents
-
 [[toc]]
-
-</div>
 
 ---
 

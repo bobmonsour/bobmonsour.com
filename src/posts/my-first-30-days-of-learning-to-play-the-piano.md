@@ -12,15 +12,7 @@ image:
   caption: "Photo by me -- some sheet music and learning materials"
 ---
 
-<div class="toc">
-
-# Table of Contents
-
 [[toc]]
-
-</div>
-
----
 
 ## Introduction
 

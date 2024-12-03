@@ -21,7 +21,7 @@ const markdownItOptions = {
 };
 const markdownItTocOptions = {
 	includeLevel: [2],
-	containerHeaderHtml: "",
+	containerHeaderHtml: "<h1>Table of Contents</h1>",
 	listType: "ul",
 };
 const markdownLib = markdownIt(markdownItOptions)

@@ -197,7 +197,7 @@ img[width][height] {
 	display: grid;
 	grid-template-columns: inherit;
 }
-.post .toc {
+.post .table-of-contents {
 	background-color: lightgray;
 	border: 1px solid gray;
 	border-radius: 20px;
@@ -207,7 +207,7 @@ img[width][height] {
 	padding: var(--space-3xs-l);
 	width: fit-content;
 }
-.post .toc h2 {
+.post .table-of-contents h2 {
 	margin-block-start: var(--space-2xs);
 	text-align: center;
 }

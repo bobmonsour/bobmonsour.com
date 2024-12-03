@@ -13,15 +13,7 @@ image:
   creditLink: "https://unsplash.com/es/@dolodol"
 ---
 
-<div class="toc">
-
-# Table of Contents
-
 [[toc]]
-
-</div>
-
----
 
 ## Introduction
 

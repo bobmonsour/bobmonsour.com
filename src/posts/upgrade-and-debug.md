@@ -12,13 +12,7 @@ image:
 pageHasCode: true
 ---
 
-<div class='toc'>
-
-# Table of Contents
-
 [[toc]]
-
-</div>
 
 _**TL;DR**: I proceeded to do 3 things...re-organize my eleventy configuration, upgrade to v3, and convert everything to ESM...all at the same time. And it turned out ok._
 

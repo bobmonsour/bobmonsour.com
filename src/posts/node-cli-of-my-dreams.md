@@ -12,13 +12,7 @@ image:
 pageHasCode: true
 ---
 
-<div class='toc'>
-
-# Table of Contents
-
 [[toc]]
-
-</div>
 
 _**TL;DR**: I built a few node CLI scripts to support the management of the 11ty Bundle database._
 

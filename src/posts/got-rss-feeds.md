@@ -13,13 +13,7 @@ image:
 pageHasCode: true
 ---
 
-<div class='toc'>
-
-# Table of Contents
-
 [[toc]]
-
-</div>
 
 _**TL;DR**: As part of updating the elements of each 11ty Bundle post, I had to find the RSS feed for the author's website. This is how I did it...and some advice._
 

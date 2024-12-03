@@ -12,13 +12,7 @@ image:
 pageHasCode: true
 ---
 
-<div class='toc'>
-
-# Table of Contents
-
 [[toc]]
-
-</div>
 
 ---
 

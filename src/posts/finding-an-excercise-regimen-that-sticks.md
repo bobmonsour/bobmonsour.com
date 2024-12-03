@@ -11,13 +11,7 @@ image:
   caption: "My home gym setup: a yoga mat, some kettlebells, and a balance cushion"
 ---
 
-<div class='toc'>
-
-# Table of Contents
-
 [[toc]]
-
-</div>
 
 ---
 

@@ -11,15 +11,7 @@ image:
   caption: "An implant for my left knee will look like this"
 ---
 
-<div class="toc">
-
-# Table of Contents
-
 [[toc]]
-
-</div>
-
----
 
 ## Introduction
 
