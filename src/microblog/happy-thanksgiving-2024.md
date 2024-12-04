@@ -6,4 +6,4 @@ tags: microblog
 
 Wishing everyone a happy Thanksgiving. Be safe, be grateful and enjoy the day.
 
-![Happy Thanksgiving...see the Turkey?](/assets/img/turkey.png){loading="eager" sizes="500px"}{loading="eager" style="margin: 0 auto;}
+![Happy Thanksgiving...see the Turkey?](/assets/img/turkey.png){loading="eager" sizes="500px" style="margin: 0 auto;}
