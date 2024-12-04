@@ -139,6 +139,13 @@ const markdownLib = markdownIt(markdownItOptions)
 	.use(markdownItToc, markdownItTocOptions);
 ```
 
+> UPDATE Dec 4, 2024: I forgot to add the one additional line that you need in your eleventy config file to use this markdown library. Here it is:
+
+```javascript
+// Set markdown library
+eleventyConfig.setLibrary("md", markdownLib);
+```
+
 ## Conclusion
 
 Using these powerful markdown capabilities, the friction for my writing and using images has been meaningfully reduced. I did the image-related conversion several days ago. And today, I converted the tables of contents for all of the blog posts that had them. For this post, it definitely reduced the friction of writing it.
