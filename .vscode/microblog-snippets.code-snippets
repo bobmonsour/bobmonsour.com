@@ -5,6 +5,8 @@
 			"---",
 			"title: ${1:Title}",
 			"description: ${2:Description}",
+			"tags:",
+			"  - ${3: Tags}",
 			"---",
 			"",
 			"$0"

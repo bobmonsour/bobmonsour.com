@@ -3,6 +3,7 @@ title: Is it really a new design?
 description: I've "redesigned" my personal site.
 tags:
   - blogging
+  - futzing
 ---
 
 I'd been wanting to redesign my personal website for a while. I've had sketches and ideas, but no will to get started. Then, finally, a couple of days ago, I sat down and started futzing.
