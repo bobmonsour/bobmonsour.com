@@ -10,7 +10,7 @@ export const isCurrentPage = (linkText, pageUrl) => {
 			}
 			break;
 		case "blog":
-			if (pageUrl.includes("archive") || pageUrl.includes("posts")) {
+			if (pageUrl.includes("archive") || pageUrl.includes("/posts/")) {
 				return 'aria-current="page"';
 			}
 			break;

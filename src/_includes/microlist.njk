@@ -2,6 +2,9 @@
   <div class="post-metadata">
     <p>{{ content | safe }}</p>
     <p>{{ post.date | formatPostDate }}</p>
+		{% set tagsdata = post.tags %}
+    {% include 'taglist.njk' %}
+
     <a href="{{ post.url }}">
   </div>
 </section>

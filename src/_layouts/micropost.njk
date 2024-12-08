@@ -1,11 +1,13 @@
 ---
 layout: default.njk
 ---
-<article class="post flow" data-pagefind-body>
+<div class="microblog post flow" data-pagefind-body>
   <h1>{{ title }}</h1>
 	<p class="blogdate">{{ page.date |formatPostDate }}</p>
+	{% set tagsdata = tags %}
+	{% include 'taglist.njk' %}
 	{{ content | safe }}
 	{% include "comment.njk" %}
 	{% set theseposts = collections.microblog %}
 	{% include 'nextprevlinks.njk' %}
-</article>
+</div>
