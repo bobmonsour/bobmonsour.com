@@ -3,6 +3,7 @@ title: One amazing sunset
 date: 2024-01-29
 tags:
   - personal
+  - travel
 description: Last night's sunset was amazing.
 keywords: sunset, photos, Carmel
 image:

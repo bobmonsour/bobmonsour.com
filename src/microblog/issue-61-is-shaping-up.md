@@ -1,7 +1,8 @@
 ---
 title: Issue 61 is shaping up
 description: We're still in Italy, but Issue 61 of the 11ty Bundle is shaping up to be a doozy.
-tags: microblog
+tags:
+  - 11ty
 ---
 
 We're still in Italy, but Issue 61 of the 11ty Bundle is shaping up to be a doozy.

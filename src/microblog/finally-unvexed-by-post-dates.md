@@ -1,7 +1,8 @@
 ---
 title: I'm finally unvexed by microblog post dates
 description: I recently had a problem on this here microblog. It has to do with dates. But it's all ok now.
-tags: microblog
+tags:
+  - 11ty
 ---
 
 **Update #2:** It seems that I once again missed a key result when one eliminates the date field in a post's front matter. It turns out (again, as explicitly mentioned in the [Eleventy docs](https://www.11ty.dev/docs/dates/#collections-out-of-order-when-you-run-eleventy-on-your-server)) that CI environments don't really know what the created date is as the file system creation date, i.e., on my laptop bears no resemblence to the file system at Netlify. So, I dropped back to using "git Created" as the date in my directory data file and all is right in the world...for now, at least.

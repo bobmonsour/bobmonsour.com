@@ -5,7 +5,6 @@
 			"---",
 			"title: ${1:Title}",
 			"description: ${2:Description}",
-			"tags: microblog",
 			"---",
 			"",
 			"$0"

@@ -1,7 +1,8 @@
 ---
 title: A tweak to how I use Pagefind
 description: I use the Pagefind package to add search to my personal site. It was returning way too many result for simple words. I made a small tweak to fix that.
-tags: microblog
+tags:
+  - 11ty
 pageHasCode: true
 ---
 

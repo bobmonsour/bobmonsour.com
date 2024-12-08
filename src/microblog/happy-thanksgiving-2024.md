@@ -1,7 +1,8 @@
 ---
 title: Happy Thanksgiving 2024
 description: Wishing everyone a happy Thanksgiving. Be safe, be grateful and enjoy the day.
-tags: microblog
+tags:
+  - holiday
 ---
 
 Wishing everyone a happy Thanksgiving. Be safe, be grateful and enjoy the day.

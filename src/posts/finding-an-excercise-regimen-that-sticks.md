@@ -3,6 +3,7 @@ title: Finding an exercise regimen that sticks
 date: 2023-10-16
 tags:
   - personal
+  - health
 description: At 68 years old, it was high time to find an exercise regimen that I could stick with...at least for a while.
 keywords: exercise, fitness, health, personal, kettlebells
 image:

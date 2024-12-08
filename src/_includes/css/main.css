@@ -171,6 +171,10 @@ img[width][height] {
 	margin-block: 0.25em;
 	padding: 0;
 }
+div.microblog > ul {
+	font-size: var(--font-size-base);
+	justify-content: left;
+}
 .tagged-taglist {
 	display: flex;
 	font-size: var(--font-size-base);

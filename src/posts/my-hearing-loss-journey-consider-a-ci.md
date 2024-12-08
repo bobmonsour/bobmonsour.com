@@ -3,6 +3,7 @@ title: My hearing loss journey...consider a cochlear implant?
 date: 2024-05-17
 tags:
   - personal
+  - health
 description: I'm considering getting a cochlear implant after having lost hearing in my left ear 9 years ago.
 keywords: hearing loss, SSD, cochlear implant
 image:

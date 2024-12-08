@@ -1,7 +1,9 @@
 ---
 title: The day after...and we're in Italy
 description: The day after the election. The results are in. The country is divided. The future is uncertain. And we're in Italy.
-tags: microblog
+tags:
+  - travel
+  - politics
 ---
 
 We flew from San Francisco to Rome yesterday. When we landed in Zurich on the first leg of the trip, I immediately switched to the eSim I'd purchased, got access to the local cell network, and opened the Washington Post app on my phone, only to be greeted with the distressing news of Trump's victory. I was stunned. I couldn't believe it. I was in shock. I was in disbelief. I was in denial. I was in despair. I was in mourning.

@@ -3,6 +3,7 @@ title: My winding road toward knee replacement surgery
 date: 2022-12-28
 tags:
   - personal
+  - health
 description: Seeking to buy time as I prepare for what seems to be inevitable…knee replacement surgery.
 keywords: total knee replacement, injections, hyaluronic acid, plateletrich plasma
 image:

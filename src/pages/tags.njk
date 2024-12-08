@@ -7,7 +7,6 @@ pagination:
     - all
     - post
     - posts
-    - microblog
 permalink: /tags/{{ tag | slugify }}/
 description: Posts tagged with a particular tag
 keywords: tags, Bob Monsour, website, 11ty, eleventy, blog
@@ -20,5 +19,3 @@ image:
 <br>
 {% set postlist = collections[ tag ] | reverse %}
 {% include "postlist-tagged.njk" %}
-
-<h3><a href="/archive/" title="link to more blog posts in the archive">More posts in the Archive...</a></h3>

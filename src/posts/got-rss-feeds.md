@@ -3,6 +3,7 @@ title: Got RSS Feeds?
 date: 2024-06-11
 tags:
   - 11ty
+  - RSSness
 description: How I search for, and find, RSS feeds, programmatically.
 keywords: rss, rss feed, eleventy, 11tybundle.dev
 image:

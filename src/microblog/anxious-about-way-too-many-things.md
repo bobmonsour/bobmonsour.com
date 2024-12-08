@@ -1,7 +1,8 @@
 ---
 title: I'm currently anxious about way too many things
 description: On the eve of the election and international travel, I'm worried about a lot of stuff.
-tags: microblog
+tags:
+  - personal
 ---
 
 Just a dump of things I'm anxious about right now:

@@ -15,9 +15,7 @@ image:
   <ul>
   {% for tag in collections.all | getAllTags %}
     {% set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
-		{% if tag != "microblog" %}
 	    <li><a href="{{ tagUrl }}" class="post-tag">{{ tag }}</a></li>
-		{% endif %}
   {% endfor %}
   </ul>
 </div>

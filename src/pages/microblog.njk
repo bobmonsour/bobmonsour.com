@@ -8,13 +8,15 @@ image:
 permalink: /microblog/
 ---
 
-<h1>{{ title }} <span class="parenthetical">(<a href="/microfeed.xml">microRSS</a>)</span></h1>
+<h1>{{ title }} <span class="parenthetical">(<a href="/microfeed.xml">microRSS</a>, microBlog only)</span></h1>
 
 {%- set microlist = collections.microblog | reverse -%}
 {%- for post in microlist -%}
 	<div class="microblog post">
 		<h2><a href="{{ post.url }}">{{ post.data.title }}</a></h2>
 		<p class="blogdate">{{ post.date | formatPostDate }}</p>
+		{% set tagsdata = post.data.tags %}
+    {% include 'taglist.njk' %}
 		<p class="blogdescription">{{ post.data.description | safe }}</p>
 		<hr>
 	</div>

@@ -1,7 +1,8 @@
 ---
 title: We're in Italy at the moment
 description: Vacationing in Italy has its upsides, especially following the US election.
-tags: microblog
+tags:
+  - travel
 ---
 
 We left the US on election day, heading to Rome. We spent a few days in Rome, seeing various museums and other historic sites.

@@ -7,7 +7,7 @@
 			<li>Tags:&nbsp;</li>
 			{%- for tag in tagsdata -%}
 				{%- set tagUrl -%}/tags/{{ tag | slugify }}/{%- endset -%}
-				<li><a href="{{ tagUrl }}">{{ tag }}</a>&nbsp;&nbsp;</li>
+					<li><a href="{{ tagUrl }}">{{ tag }}</a>&nbsp;&nbsp;</li>
 			{%- endfor -%}
 			<li><a href="/tags/">All Tags</a></li>
 		</ul>

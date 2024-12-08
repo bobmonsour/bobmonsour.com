@@ -4,6 +4,7 @@ date: 2022-02-05
 tags:
   - personal
   - 11ty
+  - blogging
 description: Welcome to the first post of my new site!
 keywords: blog, website, retired, 11ty, eleventy
 image:

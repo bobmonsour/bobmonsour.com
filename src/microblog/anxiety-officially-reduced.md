@@ -1,7 +1,8 @@
 ---
 title: Anxiety officially reduced
 description: After an eventful day, I'm feeling much better...for several reasons.
-tags: microblog
+tags:
+  - personal
 ---
 
 Well, yesterday day ended well and I feel a helluva lot better. Here's why:

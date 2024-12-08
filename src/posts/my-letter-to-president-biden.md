@@ -3,6 +3,7 @@ title: My letter to President Biden
 date: 2024-07-03
 tags:
   - personal
+  - politics
 description: I wrote this letter to President Biden to express my thoughts on his candidacy for the office of President in 2024.
 keywords: election, presidential election, Joe Biden, President, 2024
 image:

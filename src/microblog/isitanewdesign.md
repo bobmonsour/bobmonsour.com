@@ -1,7 +1,8 @@
 ---
 title: Is it really a new design?
 description: I've "redesigned" my personal site.
-tags: microblog
+tags:
+  - blogging
 ---
 
 I'd been wanting to redesign my personal website for a while. I've had sketches and ideas, but no will to get started. Then, finally, a couple of days ago, I sat down and started futzing.
