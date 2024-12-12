@@ -143,6 +143,10 @@ img[width][height] {
 	transform: translateY(80px);
 	opacity: 1;
 }
+#search {
+	margin-block: 1em;
+	text-align: left;
+}
 
 /* list of All Tags */
 .alltags-list * {

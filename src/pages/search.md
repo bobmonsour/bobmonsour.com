@@ -1,5 +1,5 @@
 ---
-title: Search
+title: Search this site
 description: Search this site
 keywords: search
 image:
@@ -11,12 +11,10 @@ pagestyle: search
 
 # {{ title }}
 
-<div class="popout">
-  <script src="/pagefind/pagefind-ui.js"></script>
-  <div id="search"></div>
-  <script>
-      window.addEventListener('DOMContentLoaded', (event) => {
-          new PagefindUI({ element: "#search", showImages: false, autofocus: true, sort: { date: "desc" } });
-      });
-  </script>
-</div>
+<script src="/pagefind/pagefind-ui.js"></script>
+<div id="search"></div>
+<script>
+		window.addEventListener('DOMContentLoaded', (event) => {
+				new PagefindUI({ element: "#search", showImages: false, sort: { date: "desc" } });
+		});
+</script>
