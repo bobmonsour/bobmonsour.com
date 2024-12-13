@@ -19,6 +19,9 @@ const markdownItOptions = {
 	html: true,
 	breaks: false,
 };
+const markdownItAnchorOptions = {
+	level: [2],
+};
 const markdownItTocOptions = {
 	includeLevel: [2],
 	containerHeaderHtml: "<h1>Table of Contents</h1>",
@@ -26,7 +29,7 @@ const markdownItTocOptions = {
 };
 const markdownLib = markdownIt(markdownItOptions)
 	.use(markdownItAttrs)
-	.use(markdownItAnchor)
+	.use(markdownItAnchor, markdownItAnchorOptions)
 	.use(markdownItToc, markdownItTocOptions);
 
 export default function (eleventyConfig) {

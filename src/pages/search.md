@@ -1,6 +1,6 @@
 ---
-title: Search this site
-description: Search this site
+title: Search
+description: Search
 keywords: search
 image:
   source: "about-bob.jpg"
