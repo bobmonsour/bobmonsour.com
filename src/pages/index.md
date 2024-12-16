@@ -1,7 +1,7 @@
 ---
 layout: plain.njk
 title: Bob Monsour
-description: The personal website of Bob Monsour. Enjoying learning and deploying websites with 11ty and Netlify.
+description: The personal website of Bob Monsour. Enjoying building websites with 11ty.
 keywords: retired, web development, eleventy, tennis
 image:
   source: "about-bob.jpg"

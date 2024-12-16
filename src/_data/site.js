@@ -2,7 +2,7 @@ export default {
 	env: process.env.ELEVENTY_ENV,
 	title: "Bob Monsour",
 	description:
-		"The personal website of Bob Monsour. Enjoying learning and deploying websites with 11ty and Netlify.",
+		"The personal website of Bob Monsour. Enjoying building websites with 11ty.",
 	url: "https://www.bobmonsour.com",
 	locale: "en",
 	author: {
