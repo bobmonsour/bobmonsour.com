@@ -47,6 +47,6 @@
 		"path": "^0.12.7",
 		"postcss": "^8.4.21",
 		"postcss-minify": "^1.1.0",
-		"rimraf": "^6.0.1"
+		"rimraf": "^4.00"
 	}
 }
