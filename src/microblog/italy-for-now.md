@@ -1,6 +1,7 @@
 ---
 title: We're in Italy at the moment
 description: Vacationing in Italy has its upsides, especially following the US election.
+date: 2024-11-14
 tags:
   - travel
 ---

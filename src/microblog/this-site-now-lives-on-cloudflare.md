@@ -1,6 +1,7 @@
 ---
 title: This site now lives on Cloudflare
 description: I migrated this site to Cloudflare to reduce the bandwidth demands on my Netlify account. Details later.
+date: 2024-12-19
 tags:
   - 11ty
 ---

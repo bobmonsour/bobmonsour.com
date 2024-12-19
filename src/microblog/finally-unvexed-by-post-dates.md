@@ -1,6 +1,7 @@
 ---
 title: I'm finally unvexed by microblog post dates
 description: I recently had a problem on this here microblog. It has to do with dates. But it's all ok now.
+date: 2024-11-23
 tags:
   - 11ty
   - futzing

@@ -1,6 +1,7 @@
 ---
 title: Is it really a new design?
 description: I've "redesigned" my personal site.
+date: 2024-11-02
 tags:
   - blogging
   - futzing

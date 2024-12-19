@@ -1,6 +1,7 @@
 ---
 title: I'm currently anxious about way too many things
 description: On the eve of the election and international travel, I'm worried about a lot of stuff.
+date: 2024-11-04
 tags:
   - personal
 ---

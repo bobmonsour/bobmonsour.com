@@ -1,6 +1,7 @@
 ---
 title: What will I do next among the many things I want to do?
 description: I've got a lot of things I want to do, but I can't do them all at once. What will I do next?
+date: 2024-11-23
 tags:
   - personal
 ---

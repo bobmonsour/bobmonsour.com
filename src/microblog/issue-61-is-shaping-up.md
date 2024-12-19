@@ -1,6 +1,7 @@
 ---
 title: Issue 61 is shaping up
 description: We're still in Italy, but Issue 61 of the 11ty Bundle is shaping up to be a doozy.
+date: 2024-11-18
 tags:
   - 11ty
 ---

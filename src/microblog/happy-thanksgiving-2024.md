@@ -1,6 +1,7 @@
 ---
 title: Happy Thanksgiving 2024
 description: Wishing everyone a happy Thanksgiving. Be safe, be grateful and enjoy the day.
+date: 2024-11-27
 tags:
   - holiday
 ---

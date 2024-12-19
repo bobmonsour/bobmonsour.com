@@ -1,6 +1,7 @@
 ---
 title: Is there an echo in here?
 description: I'm trying out Robb Knight's Echofeed service
+date: 2024-11-26
 tags:
   - blogging
   - RSSness

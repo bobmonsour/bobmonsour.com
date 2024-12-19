@@ -1,6 +1,7 @@
 ---
 title: Tagging posts and 'futzing' with my site
 description: I've spent some time adding some more descriptive tags to my posts. I call this phase of blogging "futzing."
+date: 2024-12-08
 tags:
   - blogging
   - futzing

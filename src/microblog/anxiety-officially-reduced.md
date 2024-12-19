@@ -1,6 +1,7 @@
 ---
 title: Anxiety officially reduced
 description: After an eventful day, I'm feeling much better...for several reasons.
+date: 2024-11-05
 tags:
   - personal
 ---
