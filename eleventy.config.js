@@ -40,6 +40,7 @@ export default function (eleventyConfig) {
 		"src/assets/img/",
 		"src/assets/js/",
 		"src/robots.txt",
+		"src/_redirects",
 	].forEach((path) => eleventyConfig.addPassthroughCopy(path));
 
 	// Generate three collections
