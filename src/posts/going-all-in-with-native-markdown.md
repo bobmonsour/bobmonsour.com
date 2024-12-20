@@ -7,9 +7,7 @@ description: I've been typing way too much. There are simpler ways to use markdo
 keywords: markdown, table of contents, images, eleventy
 image:
   source: "going-all-in-with-native-markdown.png"
-  alt: ""
-  creditPerson: ""
-  creditLink: "https://unsplash.com/"
+  alt: "The markdown logo"
 pageHasCode: true
 ---
 

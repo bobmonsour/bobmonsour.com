@@ -7,7 +7,7 @@ description: I upgraded to 11ty v3 and proceeded to debug.
 keywords: upgrade, debug, eleventy, 11tybundle.dev, canary
 image:
   source: "upgrade-and-debug.jpg"
-  alt: ""
+  alt: "Code snippet for generating data for the 11ty Bundle website"
   caption: "Opening lines of bundledata.js"
 pageHasCode: true
 ---
