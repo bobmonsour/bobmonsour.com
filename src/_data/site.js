@@ -12,8 +12,9 @@ export default {
 	snow: "true",
 	mainNavLinks: [
 		{ url: "/", text: "Home" },
-		{ url: "/archive/", text: "Blog" },
-		{ url: "/microblog/", text: "microBlog" },
+		{ url: "/blog/", text: "Blog" },
+		{ url: "/notes/", text: "Notes" },
+		{ url: "/books/", text: "Books" },
 		{ url: "/about/", text: "About" },
 	],
 };

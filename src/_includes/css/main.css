@@ -42,7 +42,6 @@ a {
 }
 a:is(:hover, :focus) {
 	background-color: var(--link-hover-color);
-	border-radius: var(--brand-link-radius);
 }
 
 ol {
@@ -175,7 +174,7 @@ img[width][height] {
 	margin-block: 0.25em;
 	padding: 0;
 }
-div.microblog > ul {
+div.notes > ul {
 	font-size: var(--font-size-base);
 	justify-content: left;
 }
@@ -349,7 +348,7 @@ iframe[src*="youtube"] {
 	width: 2.5rem;
 }
 
-.microblog {
+.notes {
 	font-size: var(--font-size-md);
 	padding-block: 2rem 0;
 	text-align: left;
@@ -361,4 +360,29 @@ iframe[src*="youtube"] {
 .blogdescription {
 	font-size: var(--font-size-md);
 	font-style: italic;
+}
+
+/* bookshelf */
+.bklist {
+	display: grid;
+	font-size: var(--font-size-base);
+	grid-column: full;
+	grid-template-columns: repeat(auto-fit, minmax(var(--max-book-width), 1fr));
+	gap: 2rem;
+	place-items: center;
+	margin-block-start: 2rem;
+}
+.bktitle {
+	font-weight: bold;
+	margin-block-start: var(--space-2xs);
+	width: var(--max-book-width);
+}
+.bkrating {
+	color: #fa604a;
+}
+.bkitem a img {
+	transition: transform 0.3s ease-in-out; /* Smooth transition for the transform property */
+}
+.bkitem a:hover img {
+	transform: rotate(5deg); /* Rotate the image 5 degrees clockwise on hover */
 }

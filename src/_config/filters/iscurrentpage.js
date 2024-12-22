@@ -10,12 +10,17 @@ export const isCurrentPage = (linkText, pageUrl) => {
 			}
 			break;
 		case "blog":
-			if (pageUrl.includes("archive") || pageUrl.includes("/posts/")) {
+			if (pageUrl.includes("blog")) {
 				return 'aria-current="page"';
 			}
 			break;
-		case "microblog":
-			if (pageUrl.includes("microblog")) {
+		case "notes":
+			if (pageUrl.includes("notes")) {
+				return 'aria-current="page"';
+			}
+			break;
+		case "books":
+			if (pageUrl.includes("books")) {
 				return 'aria-current="page"';
 			}
 			break;

@@ -44,22 +44,19 @@ export default function (eleventyConfig) {
 	].forEach((path) => eleventyConfig.addPassthroughCopy(path));
 
 	// Generate three collections
-	//	- posts, microblog posts, and a combined collection of those two
+	//	- posts, notes, and a combined collection of those two
 	// generate the "posts" collection
 	eleventyConfig.addCollection("posts", (collection) => {
 		return [...collection.getFilteredByGlob("./src/posts/*.md")];
 	});
-	// generate the "microblog" collection
-	eleventyConfig.addCollection("microblog", (collection) => {
-		return [...collection.getFilteredByGlob("./src/microblog/*.md")];
+	// generate the "notes" collection
+	eleventyConfig.addCollection("notes", (collection) => {
+		return [...collection.getFilteredByGlob("./src/notes/*.md")];
 	});
-	// generate a combined "posts" and "microblog" collection
-	eleventyConfig.addCollection("postsandmicroblog", (collection) => {
+	// generate a combined "posts" and "notes" collection
+	eleventyConfig.addCollection("postsandnotes", (collection) => {
 		return [
-			...collection.getFilteredByGlob([
-				"./src/posts/*.md",
-				"./src/microblog/*.md",
-			]),
+			...collection.getFilteredByGlob(["./src/posts/*.md", "./src/notes/*.md"]),
 		];
 	});
 

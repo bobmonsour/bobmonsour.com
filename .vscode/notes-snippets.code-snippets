@@ -1,5 +1,5 @@
 {
-	"microBlog Entry Snippet (mbe)": {
+	"Notes Entry Snippet (mbe)": {
 		"prefix": "mbe",
 		"body": [
 			"---",
@@ -12,6 +12,6 @@
 			"",
 			"$0"
 		],
-		"description": "Generate front matter for a markdown file to be used in the microBlog"
+		"description": "Generate front matter for a markdown file to be used in the Notes posts"
 	}
 }

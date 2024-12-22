@@ -29,11 +29,11 @@ There's a little more about me on the [About](/about/) page. And you can find me
 		</ul>
 	</div>
 	<div>
-		<h3>From the <a href="/microblog/">microBlog...</a></h3>
+		<h3>From the <a href="/notes/">Notes...</a></h3>
 		<ul>
-			{%- set microblogposts = collections.microblog | reverse -%}
-			{%- set last3microposts = microblogposts.slice(0,3) -%}
-			{%- for post in last3microposts -%}
+			{%- set notes = collections.notes | reverse -%}
+			{%- set last3notes = notes.slice(0,3) -%}
+			{%- for post in last3notes -%}
 				<li>
 					<a href="{{ post.url }}">{{ post.data.title }}</a> &middot; <span class="blogdate">{{ post.date | formatPostDate }}</span>
 				</li>

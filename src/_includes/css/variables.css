@@ -43,9 +43,8 @@
 
 	/* Accent Colors */
 	--dark-accent-color: #005bbb;
-	/* --light-accent-color: #ffd500; */
 	--light-accent-color: lightgray;
-	--link-hover-color: #ffd500;
+	--link-hover-color: yellow;
 
 	/* Brand Styles */
 	--brand-font: Optima, Candara, "Noto Sans", source-sans-pro, sans-serif;
@@ -55,6 +54,9 @@
 	/* Post Styles */
 	--post-title-size: var(--font-size-xl);
 	--caption-size: var(--font-size-base);
+
+	/* Book shelf styles */
+	--max-book-width: 200px;
 
 	/* Configure the Pagefind UI */
 	--pagefind-ui-scale: 1;
