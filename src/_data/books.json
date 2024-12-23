@@ -1,47 +1,568 @@
 [
 	{
-		"title": "To Kill a Mockingbird",
-		"author": "Harper Lee",
-		"ISBN": "0060935464",
-		"yearRead": 2020,
-		"myTake": "A powerful exploration of racial injustice and loss of innocence in the American South.",
+		"title": "Let the Great World Spin",
+		"author": "Colum McCann",
+		"ISBN": 9781400063734,
 		"rating": 5,
-		"linkToBookshop": "https://www.example.com/books/to-kill-a-mockingbird"
+		"yearRead": "2024/12/22"
 	},
 	{
-		"title": "1984",
-		"author": "George Orwell",
-		"ISBN": "9780451524935",
-		"yearRead": 2021,
-		"myTake": "A chilling dystopian novel that remains eerily relevant in today's world of surveillance and misinformation.",
+		"title": "North Woods",
+		"author": "Daniel Mason",
+		"ISBN": 9780593597033,
 		"rating": 4.5,
-		"linkToBookshop": "https://www.example.com/books/1984"
+		"yearRead": "2024/12/10"
 	},
 	{
-		"title": "The Great Gatsby",
-		"author": "F. Scott Fitzgerald",
-		"ISBN": "9780743273565",
-		"yearRead": 2019,
-		"myTake": "A beautifully written critique of the American Dream, with memorable characters and vivid imagery.",
+		"title": "Empire of the Summer Moon",
+		"author": "S.C. Gwynne",
+		"ISBN": 9781416591054,
 		"rating": 4,
-		"linkToBookshop": "https://www.example.com/books/the-great-gatsby"
+		"yearRead": "2024/12/10"
 	},
 	{
-		"title": "Pride and Prejudice",
-		"author": "Jane Austen",
-		"ISBN": "9780141439518",
-		"yearRead": 2022,
-		"myTake": "A witty and romantic classic that offers timeless insights into societal expectations and personal growth.",
-		"rating": 4.5,
-		"linkToBookshop": "https://www.example.com/books/pride-and-prejudice"
-	},
-	{
-		"title": "The Hitchhiker's Guide to the Galaxy",
-		"author": "Douglas Adams",
-		"ISBN": "9780345391803",
-		"yearRead": 2023,
-		"myTake": "A hilarious and absurd science fiction adventure that never fails to entertain and surprise.",
+		"title": "Hellhound on His Trail",
+		"author": "Hampton Sides",
+		"ISBN": 9780385523929,
 		"rating": 5,
-		"linkToBookshop": "https://www.example.com/books/the-hitchhikers-guide-to-the-galaxy"
+		"yearRead": "2024/07/03"
+	},
+	{
+		"title": "The Wide Wide Sea",
+		"author": "Hampton Sides",
+		"ISBN": 9780385544764,
+		"rating": 5,
+		"yearRead": "2024/07/03"
+	},
+	{
+		"title": "The Spy Who Came In from the Cold",
+		"author": "John Le Carré",
+		"ISBN": 9780743442534,
+		"rating": 5,
+		"yearRead": "2024/01/06"
+	},
+	{
+		"title": "Road to Surrender",
+		"author": "Evan Thomas",
+		"ISBN-13": 9780399589256,
+		"rating": 5,
+		"yearRead": "2023/11/16",
+		"localCover": true
+	},
+	{
+		"title": "The Rise and Fall of the Third Reich",
+		"author": "William L. Shirer",
+		"ISBN": 9780671728687,
+		"rating": 5,
+		"yearRead": "2023/11/01"
+	},
+	{
+		"title": "Trust",
+		"author": "Hernan Diaz",
+		"ISBN": 9780593420317,
+		"rating": 5,
+		"yearRead": "2023/08/20"
+	},
+	{
+		"title": "The Wager",
+		"author": "David Grann",
+		"ISBN": 9780385534260,
+		"rating": 5,
+		"yearRead": "2023/05/31"
+	},
+	{
+		"title": "Horse",
+		"author": "Geraldine Brooks",
+		"ISBN": 9780399562969,
+		"rating": 5,
+		"yearRead": "2023/03/25"
+	},
+	{
+		"title": "American Midnight",
+		"author": "Adam Hochschild",
+		"ISBN": 9780358455462,
+		"rating": 5,
+		"yearRead": "2023/02/16"
+	},
+	{
+		"title": "A Swim in a Pond in the Rain",
+		"author": "George Saunders",
+		"ISBN": 9781984856043,
+		"rating": 5,
+		"yearRead": "2022/09/29"
+	},
+	{
+		"title": "Dreamland",
+		"author": "Sam Quinones",
+		"ISBN": 9781620402504,
+		"rating": 5,
+		"yearRead": "2022/09/07"
+	},
+	{
+		"title": "Either/Or",
+		"author": "Elif Batuman",
+		"ISBN": 9780525557593,
+		"rating": 2,
+		"yearRead": "2022/08/15"
+	},
+	{
+		"title": "The Berlin Exchange",
+		"author": "Joseph Kanon",
+		"ISBN": 9781982158651,
+		"rating": 3.5,
+		"yearRead": "2022/07/05"
+	},
+	{
+		"title": "The Gates of Europe",
+		"author": "Serhii Plokhy & Ralph Lister",
+		"ISBN": 9780465050918,
+		"rating": 4,
+		"yearRead": "2022/05/02"
+	},
+	{
+		"title": "Pachinko",
+		"author": "Min Jin Lee",
+		"ISBN": 9781455563920,
+		"rating": 5,
+		"yearRead": "2022/01/10"
+	},
+	{
+		"title": "The Power Broker",
+		"author": "Robert A. Caro",
+		"ISBN": 9780394720241,
+		"rating": 5,
+		"yearRead": "2021/08/04"
+	},
+	{
+		"title": "Working",
+		"author": "Robert A. Caro",
+		"ISBN": 9780525656340,
+		"rating": 4.5,
+		"yearRead": "2021/07/21"
+	},
+	{
+		"title": "The Fifth Risk",
+		"author": "Michael Lewis",
+		"ISBN": 9780393357455,
+		"rating": 5,
+		"yearRead": "2021/06/12"
+	},
+	{
+		"title": "One Minute to Midnight",
+		"author": "Michael Dobbs",
+		"ISBN": 9780091796662,
+		"rating": 5,
+		"yearRead": "2021/06/12"
+	},
+	{
+		"title": "Alexander Hamilton",
+		"author": "Ron Chernow",
+		"ISBN": 9780143034759,
+		"rating": 5,
+		"yearRead": "2021/02/18"
+	},
+	{
+		"title": "Good Strategy Bad Strategy",
+		"author": "Richard P. Rumelt",
+		"ISBN": 9780307886255,
+		"rating": 4,
+		"yearRead": "2020/08/09",
+		"localCover": true
+	},
+	{
+		"title": "Just Mercy",
+		"author": "Bryan Stevenson",
+		"ISBN": 9780812984965,
+		"rating": 5,
+		"yearRead": "2020/08/09"
+	},
+	{
+		"title": "How We Die",
+		"author": "Sherwin B. Nuland",
+		"ISBN": 9780978721039,
+		"rating": 4,
+		"yearRead": "2020/07/16",
+		"localCover": true
+	},
+	{
+		"title": "Being Mortal",
+		"author": "Atul Gawande",
+		"ISBN": 9781627790550,
+		"rating": 5,
+		"yearRead": "2020/07/16"
+	},
+	{
+		"title": "Ageless Painless Tennis",
+		"author": "David Starbuck Smith",
+		"ISBN": 9781633939707,
+		"rating": 4,
+		"yearRead": "2020/07/16",
+		"localCover": true
+	},
+	{
+		"title": "Bird by Bird",
+		"author": "Anne Lamott",
+		"ISBN": 9780385480017,
+		"rating": 5,
+		"yearRead": "2019/10/31"
+	},
+	{
+		"title": "A Higher Loyalty",
+		"author": "James Comey",
+		"ISBN": 9781250192455,
+		"rating": 5,
+		"yearRead": "2018/12/12"
+	},
+	{
+		"title": "Leadership: In Turbulent Times",
+		"author": "Doris Kearns Goodwin",
+		"ISBN": 9781476795928,
+		"rating": 5,
+		"yearRead": "2018/11/14"
+	},
+	{
+		"title": "When Breath Becomes Air",
+		"author": "Paul Kalanithi & Abraham Verghese",
+		"ISBN": 9780812988413,
+		"rating": 5,
+		"yearRead": "2018/05/23"
+	},
+	{
+		"title": "An Unquiet Mind",
+		"author": "Kay Redfield Jamison",
+		"ISBN": 9780307498489,
+		"rating": 5,
+		"yearRead": "2018/04/01",
+		"localCover": true
+	},
+	{
+		"title": "I am Not Sick, I Don't Need Help!",
+		"author": "Xavier Francisco Amador",
+		"ISBN": 9780967718927,
+		"rating": 4,
+		"yearRead": "2018/01/01"
+	},
+	{
+		"title": "The Hard Thing About Hard Things",
+		"author": "Ben Horowitz",
+		"ISBN": 9780062273208,
+		"rating": 4,
+		"yearRead": "2014/03/26"
+	},
+	{
+		"title": "Death by Food Pyramid",
+		"author": "Denise Minger",
+		"ISBN": 9780984755127,
+		"rating": 4,
+		"yearRead": "2014/02/17"
+	},
+	{
+		"title": "Why We Get Fat",
+		"author": "Gary Taubes",
+		"ISBN": 9780307474254,
+		"rating": 4,
+		"yearRead": "2014/02/11"
+	},
+	{
+		"title": "The Circle",
+		"author": "Dave Eggers",
+		"ISBN": 9780345807298,
+		"rating": 5,
+		"yearRead": "2014/01/04"
+	},
+	{
+		"title": "Purple Cow",
+		"author": "Seth Godin",
+		"ISBN": 9781591840213,
+		"rating": 4,
+		"yearRead": "2012/07/01"
+	},
+	{
+		"title": "Delivering Happiness",
+		"author": "Tony Hsieh",
+		"ISBN": 9780446563048,
+		"rating": 4,
+		"yearRead": "2011/03/24"
+	},
+	{
+		"title": "Thirteen Days",
+		"author": "Robert F. Kennedy",
+		"ISBN": 9780393318340,
+		"rating": 5,
+		"yearRead": "2011/03/24"
+	},
+	{
+		"title": "Execution",
+		"author": "Larry Bossidy, Ram Charan, Charles Burck",
+		"ISBN": 9780609610572,
+		"rating": 4,
+		"yearRead": "2011/02/08"
+	},
+	{
+		"title": "Street Fighters",
+		"author": "Kate Kelly",
+		"ISBN": 9781591842736,
+		"rating": 4,
+		"yearRead": "2010/12/01"
+	},
+	{
+		"title": "All the President’s Men",
+		"author": "Carl Bernstein & Bob Woodward",
+		"ISBN": 9781416522911,
+		"rating": 5,
+		"yearRead": "2010/11/01"
+	},
+	{
+		"title": "The Final Days",
+		"author": "Bob Woodward & Carl Bernstein",
+		"ISBN": 9780743274067,
+		"rating": 5,
+		"yearRead": "2010/11/01"
+	},
+	{
+		"title": "To End a War",
+		"author": "Richard Holbrooke",
+		"ISBN": 9780375753602,
+		"rating": 5,
+		"yearRead": "2010/11/01"
+	},
+	{
+		"title": "Obama's Wars",
+		"author": "Bob Woodward",
+		"ISBN": 9781439172513,
+		"rating": 5,
+		"yearRead": "2010/10/01"
+	},
+	{
+		"title": "On the Brink",
+		"author": "Henry M. Paulson Jr.",
+		"ISBN": 9780446561938,
+		"rating": 4,
+		"yearRead": "2010/08/01"
+	},
+	{
+		"title": "The Big Short",
+		"author": "Michael Lewis",
+		"ISBN": 9780393072235,
+		"rating": 5,
+		"yearRead": "2010/07/01"
+	},
+	{
+		"title": "The Dynamite Club",
+		"author": "John M. Merriman",
+		"ISBN": 9780618555987,
+		"rating": 4,
+		"yearRead": "2010/03/01"
+	},
+	{
+		"title": "I've Got Your Back",
+		"author": "Brad Gilbert, James Caplan, Andy Roddick",
+		"ISBN": 9781591840473,
+		"rating": 4,
+		"yearRead": "2010/01/01"
+	},
+	{
+		"title": "Open",
+		"author": "Andre Agassi & J.R. Moehringer",
+		"ISBN": 9780307268198,
+		"rating": 3,
+		"yearRead": "2010/01/01"
+	},
+	{
+		"title": "The Big Switch",
+		"author": "Nicholas Carr",
+		"ISBN": 9780393062281,
+		"rating": 4,
+		"yearRead": "2010/01/01"
+	},
+	{
+		"title": "Plan of Attack",
+		"author": "Bob Woodward",
+		"ISBN": 9780743255486,
+		"rating": 4,
+		"yearRead": "2009/09/01"
+	},
+	{
+		"title": "What the Dormouse Said",
+		"author": "John Markoff",
+		"ISBN": 9781101201084,
+		"rating": 4,
+		"yearRead": "2009/01/01",
+		"localCover": true
+	},
+	{
+		"title": "Fermat's Enigma",
+		"author": "Simon Singh & John Lynch",
+		"ISBN": 9780385493628,
+		"rating": 5,
+		"yearRead": "2008/01/01"
+	},
+	{
+		"title": "This Side Of Peace",
+		"author": "Hanan Ashrawi",
+		"ISBN": 9780684802947,
+		"rating": 4,
+		"yearRead": "2007/01/01"
+	},
+	{
+		"title": "A Champion's Mind",
+		"author": "Pete Sampras & Peter Bodo",
+		"ISBN": 9780307383297,
+		"rating": 4,
+		"yearRead": "2006/01/01"
+	},
+	{
+		"title": "Winning Ugly",
+		"author": "Brad Gilbert & Steve Jamison",
+		"ISBN": 9780671884000,
+		"rating": 4,
+		"yearRead": "2004/01/01"
+	},
+	{
+		"title": "Crossing the Chasm",
+		"author": "Geoffrey A. Moore",
+		"ISBN": 9780887305191,
+		"rating": 5,
+		"yearRead": "1998/01/01"
+	},
+	{
+		"title": "The Education of a Tennis Player",
+		"author": "Rod Laver & Bud Collins",
+		"ISBN": 9780942257625,
+		"rating": 4,
+		"yearRead": "1990/01/01",
+		"localCover": true
+	},
+	{
+		"title": "Small Things Like These",
+		"author": "Claire Keegan",
+		"ISBN": 9780802158741,
+		"rating": 5,
+		"yearRead": "2023/04/20"
+	},
+	{
+		"title": "Bottoms Up and the Devil Laughs",
+		"author": "Kerry Howley",
+		"ISBN": 9780525565048,
+		"rating": 5,
+		"yearRead": "2023/05/31",
+		"localCover": true
+	},
+	{
+		"title": "The Dreamt Land",
+		"author": "Mark Arax",
+		"ISBN": 9781101910191,
+		"rating": 5,
+		"yearRead": "2024/01/08"
+	},
+	{
+		"title": "Mussolini's Daughter",
+		"author": "Caroline Moorehead",
+		"ISBN": 9780062967251,
+		"rating": 3.5,
+		"yearRead": "2024/04/02",
+		"localCover": true
+	},
+	{
+		"title": "The Dog Stars",
+		"author": "Peter Heller",
+		"ISBN": 9780307950475,
+		"rating": 4.5,
+		"yearRead": "2024/05/21"
+	},
+	{
+		"title": "James",
+		"author": "Percival Everett",
+		"ISBN": 9780385550369,
+		"rating": 5,
+		"yearRead": "2024/09/11"
+	},
+	{
+		"title": "A Gentleman and a Thief",
+		"author": "Dean Job",
+		"ISBN": 9781643752839,
+		"rating": 3.5,
+		"yearRead": "2024/10/29",
+		"localCover": true
+	},
+	{
+		"title": "Devil in the Grove",
+		"author": "Gilbert King",
+		"ISBN": 9780061792267,
+		"rating": 5,
+		"yearRead": "2022/11/09"
+	},
+	{
+		"title": "The Adventures of Huckleberry Finn",
+		"author": "Mark Twain",
+		"ISBN": 9781954839434,
+		"rating": 5,
+		"yearRead": "2024/08/25",
+		"localCover": true
+	},
+	{
+		"title": "The Soul of a New Machine",
+		"author": "Tracy Kidder",
+		"ISBN": 9780316491976,
+		"rating": 5,
+		"yearRead": "undated"
+	},
+	{
+		"title": "The Prophet",
+		"author": "Khalil Gibran",
+		"ISBN": 9780394404288,
+		"rating": 5,
+		"yearRead": "undated"
+	},
+	{
+		"title": "The Inner Game of Tennis",
+		"author": "W. Timothy Gallwey",
+		"ISBN": 9780679778318,
+		"rating": 5,
+		"yearRead": "undated"
+	},
+	{
+		"title": "Designing with Web Standards",
+		"author": "Jeffrey Zeldman",
+		"ISBN": 9780321616951,
+		"rating": 5,
+		"yearRead": "undated"
+	},
+	{
+		"title": "The Regis Touch",
+		"author": "Regis McKenna",
+		"ISBN": 9780201139648,
+		"rating": 5,
+		"yearRead": "undated",
+		"localCover": true
+	},
+	{
+		"title": "The World is Flat",
+		"author": "Thomas Friedman",
+		"ISBN": 9780312425074,
+		"rating": 5,
+		"yearRead": "undated"
+	},
+	{
+		"title": "Hawaii",
+		"author": "James Michener",
+		"ISBN": 9780375760372,
+		"rating": 5,
+		"yearRead": "undated"
+	},
+	{
+		"title": "The Psychology of Computer Programming",
+		"author": "Gerald Weinberg",
+		"ISBN": 9798794106909,
+		"rating": 5,
+		"yearRead": "undated",
+		"localCover": true
+	},
+	{
+		"title": "The Mythical Man-Month",
+		"author": "Frederick Brooks",
+		"ISBN": 9780201835953,
+		"rating": 5,
+		"yearRead": "undated"
 	}
 ]

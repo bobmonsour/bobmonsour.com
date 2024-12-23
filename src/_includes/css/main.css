@@ -380,9 +380,32 @@ iframe[src*="youtube"] {
 .bkrating {
 	color: #fa604a;
 }
-.bkitem a img {
-	transition: transform 0.3s ease-in-out; /* Smooth transition for the transform property */
-}
 .bkitem a:hover img {
-	transform: rotate(5deg); /* Rotate the image 5 degrees clockwise on hover */
+	outline: 5px solid #fa604a;
+	border-radius: 10px;
+}
+.bookyear {
+	background: #eee8d5;
+	border-bottom: 2px solid #fa604a;
+	border-radius: 20px;
+	font-size: var(--font-size-lg);
+	margin-block-start: 2rem;
+	margin-inline: auto;
+	text-align: center;
+	width: 80%;
+}
+
+.nocover {
+	background: #eee8d5;
+	border: 2px solid rgb(176, 175, 175);
+	color: rgb(115, 114, 114);
+	font-size: var(--font-size-md);
+	font-style: italic;
+	height: 273px;
+	text-align: center;
+	width: 180px;
+}
+.nocover span {
+	display: block;
+	padding-block-start: 100px;
 }
