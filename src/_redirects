@@ -4,7 +4,7 @@
 /posts/11ty-bundle-4/ /blog/11ty-bundle-1-4/
 /pages/archive/ /blog/
 /posts/the-evolution-of-my-CSS-pipeline-in-eleventy/ /blog/the-evolution-of-my-CSS-pipeline-in-eleventy-part-1/
-/posts/* /blog/*
+/posts/* /blog/:splat
 /microblog/ /notes/
-/microblog/* /notes/*
+/microblog/* /notes/:splat
 /microfeed.xml /notesfeed.xml
