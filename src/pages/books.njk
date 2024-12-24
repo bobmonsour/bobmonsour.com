@@ -11,7 +11,33 @@ permalink: /books/
 
 <h1>{{ title }}</h1>
 
-<p>Here is a set of some of the books that I have read. It is not a complete list, with the most accurate info being in more recent years. The bulk of the information came from entries I made in Goodreads (exported and hacked as I'll describe in a future blog post). The ratings are my own, and as you can see, I like most of what I've read. And while I have dates for many of these, there is an <a href="#undated">Undated section</a> at the end.</p>
+<p>Inspired by many of the other <em>bookshelves</em> that I've seen on other sites (<a href="https://coryd.dev/books">Cory Dransfeldt's</a>, <a href="https://sean.voisen.org/bookshelf/">Sean Voisen's</a>, <a href="https://melanie-richards.com/currently/reading/">Melanie Richards's</a>, and <a href="https://thisguise.wtf/bookshelf/">Chazz Basuta's</a>), here are some of the books that I've read over the years. It is nowhere near a complete list, with the most accurate info being from more recent years.</p>
+
+<p>The bulk of the information came from entries I've made on the <a href="https://www.goodreads.com/">Goodreads</a> platform (exported and hacked as I'll describe in a future blog post).</p>
+
+<p>The ratings are my own, and as you can see, I like most of what I've read. And while I know the year when I read some of these books, there's also an <a href="#undated">Undated section</a> at the end. I'll likely add more to that section as I mine my physical bookshelves for data.</p>
+
+<p>As of now, there's nothing to click on to get more info on each book. I may add links to a bookstore in the future, but I wanted to get this launched.</p>
+
+<div class="bookyears">
+	{% for year in books.years %}
+		<a href="#{{ year.year }}">{{ year.year | replace("y", "") }}</a>{% if  not loop.last %} / {% endif %}
+	{% endfor %}
+</div>
+
+	<h3 class="bookyear">Currently Reading</h3>
+	{% set nowReading = books.currentBook[0] %}
+		<section class="bklist">
+			<div class="bkitem">
+				{% if nowReading.localCover %}
+					<img eleventy:ignore src="/assets/img/{{ nowReading.title | slugify }}.jpg" alt="{{ nowReading.title | safe }}">
+				{% else %}
+					<img eleventy:ignore src="https://covers.openlibrary.org/b/isbn/{{ nowReading.ISBN }}-M.jpg" alt="{{ nowReading.title | safe }}">
+				{% endif %}
+				<p class="bktitle">{{ nowReading.title | safe }}</p>
+				<p class="bkauthor">by {{ nowReading.author }}</p>
+			</div>
+		</section>
 
 	{% set previous_year = "" %}
 	{%- for book in books.datedBooks %}
@@ -20,17 +46,17 @@ permalink: /books/
 				{% if not loop.first %}
 					</section>
 				{% endif %}
-				<h3 class="bookyear">{{ current_year }}</h3>
+				<h3 id="y{{ current_year }}" class="bookyear">{{ current_year }}</h3>
 				{% set previous_year = current_year %}
 				<section class="bklist">
 			{%- endif %}
 			<div class="bkitem">
 				{% if book.localCover %}
-					<a href=""><img eleventy:ignore src="/assets/img/{{ book.title | slugify }}.jpg" alt="{{ book.title | safe }}"></a>
+					<img eleventy:ignore src="/assets/img/{{ book.title | slugify }}.jpg" alt="{{ book.title | safe }}">
 				{% else %}
-					<a href=""><img eleventy:ignore src="https://covers.openlibrary.org/b/isbn/{{ book.ISBN }}-M.jpg" alt="{{ book.title | safe }}"></a>
+					<img eleventy:ignore src="https://covers.openlibrary.org/b/isbn/{{ book.ISBN }}-M.jpg" alt="{{ book.title | safe }}">
 				{% endif %}
-				<p class="bktitle"><a href="">{{ book.title | safe }}</a></p>
+				<p class="bktitle">{{ book.title | safe }}</p>
 				<p class="bkauthor">by {{ book.author }}</p>
 				<p class="bkrating">{{ book.rating | bookRating }}</p>
 			</div>
@@ -45,11 +71,11 @@ permalink: /books/
 	{%- for book in books.undatedBooks %}
 		<div class="bkitem">
 			{% if book.localCover %}
-				<a href=""><img eleventy:ignore src="/assets/img/{{ book.title | slugify }}.jpg" alt="{{ book.title | safe }}"></a>
+				<img eleventy:ignore src="/assets/img/{{ book.title | slugify }}.jpg" alt="{{ book.title | safe }}">
 			{% else %}
-				<a href=""><img eleventy:ignore src="https://covers.openlibrary.org/b/isbn/{{ book.ISBN }}-M.jpg" alt="{{ book.title | safe }}"></a>
+				<img eleventy:ignore src="https://covers.openlibrary.org/b/isbn/{{ book.ISBN }}-M.jpg" alt="{{ book.title | safe }}">
 			{% endif %}
-			<p class="bktitle"><a href="">{{ book.title | safe }}</a></p>
+			<p class="bktitle">{{ book.title | safe }}</p>
 			<p class="bkauthor">by {{ book.author }}</p>
 			<p class="bkrating">{{ book.rating | bookRating }}</p>
 		</div>

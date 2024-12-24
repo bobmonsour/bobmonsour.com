@@ -380,15 +380,15 @@ iframe[src*="youtube"] {
 .bkrating {
 	color: #fa604a;
 }
-.bkitem a:hover img {
+/* .bkitem a:hover img {
 	outline: 5px solid #fa604a;
 	border-radius: 10px;
-}
+} */
 .bookyear {
 	background: #eee8d5;
 	border-bottom: 2px solid #fa604a;
 	border-radius: 20px;
-	font-size: var(--font-size-lg);
+	font-size: var(--font-size-md);
 	margin-block-start: 2rem;
 	margin-inline: auto;
 	text-align: center;
@@ -408,4 +408,7 @@ iframe[src*="youtube"] {
 .nocover span {
 	display: block;
 	padding-block-start: 100px;
+}
+.bookyears a {
+	margin-inline: 5px;
 }

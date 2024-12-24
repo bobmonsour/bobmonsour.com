@@ -1,6 +1,10 @@
-/posts/11ty-bundler-1/ /posts/11ty-bundle-1/
-/posts/11ty-bundler-2/ /posts/11ty-bundle-2/
-/posts/11ty-bundle-3/ /posts/11ty-bundle-1-4/
-/posts/11ty-bundle-4/ /posts/11ty-bundle-1-4/
-/pages/archive/ /archive/
-/posts/the-evolution-of-my-CSS-pipeline-in-eleventy/ /posts/the-evolution-of-my-CSS-pipeline-in-eleventy-part-1/
+/posts/11ty-bundler-1/ /blog/11ty-bundle-1/
+/posts/11ty-bundler-2/ /blog/11ty-bundle-2/
+/posts/11ty-bundle-3/ /blog/11ty-bundle-1-4/
+/posts/11ty-bundle-4/ /blog/11ty-bundle-1-4/
+/pages/archive/ /blog/
+/posts/the-evolution-of-my-CSS-pipeline-in-eleventy/ /blog/the-evolution-of-my-CSS-pipeline-in-eleventy-part-1/
+/posts/* /blog/*
+/microblog/ /notes/
+/microblog/* /notes/*
+/microfeed.xml /notesfeed.xml

@@ -116,7 +116,7 @@
 		"title": "The Gates of Europe",
 		"author": "Serhii Plokhy & Ralph Lister",
 		"ISBN": 9780465050918,
-		"rating": 4,
+		"rating": 3,
 		"yearRead": "2022/05/02"
 	},
 	{
@@ -188,7 +188,7 @@
 		"title": "Being Mortal",
 		"author": "Atul Gawande",
 		"ISBN": 9781627790550,
-		"rating": 5,
+		"rating": 4,
 		"yearRead": "2020/07/16"
 	},
 	{
@@ -204,13 +204,13 @@
 		"author": "Anne Lamott",
 		"ISBN": 9780385480017,
 		"rating": 5,
-		"yearRead": "2019/10/31"
+		"yearRead": "undated"
 	},
 	{
 		"title": "A Higher Loyalty",
 		"author": "James Comey",
 		"ISBN": 9781250192455,
-		"rating": 5,
+		"rating": 4,
 		"yearRead": "2018/12/12"
 	},
 	{
@@ -275,7 +275,7 @@
 		"author": "Seth Godin",
 		"ISBN": 9781591840213,
 		"rating": 4,
-		"yearRead": "2012/07/01"
+		"yearRead": "undated"
 	},
 	{
 		"title": "Delivering Happiness",
@@ -330,7 +330,7 @@
 		"title": "Obama's Wars",
 		"author": "Bob Woodward",
 		"ISBN": 9781439172513,
-		"rating": 5,
+		"rating": 4,
 		"yearRead": "2010/10/01"
 	},
 	{
@@ -356,14 +356,14 @@
 	},
 	{
 		"title": "I've Got Your Back",
-		"author": "Brad Gilbert, James Caplan, Andy Roddick",
+		"author": "Brad Gilbert",
 		"ISBN": 9781591840473,
 		"rating": 4,
 		"yearRead": "2010/01/01"
 	},
 	{
 		"title": "Open",
-		"author": "Andre Agassi & J.R. Moehringer",
+		"author": "Andre Agassi",
 		"ISBN": 9780307268198,
 		"rating": 3,
 		"yearRead": "2010/01/01"
@@ -380,14 +380,14 @@
 		"author": "Bob Woodward",
 		"ISBN": 9780743255486,
 		"rating": 4,
-		"yearRead": "2009/09/01"
+		"yearRead": "undated"
 	},
 	{
 		"title": "What the Dormouse Said",
 		"author": "John Markoff",
 		"ISBN": 9781101201084,
 		"rating": 4,
-		"yearRead": "2009/01/01",
+		"yearRead": "undated",
 		"localCover": true
 	},
 	{
@@ -395,42 +395,42 @@
 		"author": "Simon Singh & John Lynch",
 		"ISBN": 9780385493628,
 		"rating": 5,
-		"yearRead": "2008/01/01"
+		"yearRead": "undated"
 	},
 	{
 		"title": "This Side Of Peace",
 		"author": "Hanan Ashrawi",
 		"ISBN": 9780684802947,
 		"rating": 4,
-		"yearRead": "2007/01/01"
+		"yearRead": "undated"
 	},
 	{
 		"title": "A Champion's Mind",
 		"author": "Pete Sampras & Peter Bodo",
 		"ISBN": 9780307383297,
 		"rating": 4,
-		"yearRead": "2006/01/01"
+		"yearRead": "undated"
 	},
 	{
 		"title": "Winning Ugly",
-		"author": "Brad Gilbert & Steve Jamison",
+		"author": "Brad Gilbert",
 		"ISBN": 9780671884000,
 		"rating": 4,
-		"yearRead": "2004/01/01"
+		"yearRead": "undated"
 	},
 	{
 		"title": "Crossing the Chasm",
 		"author": "Geoffrey A. Moore",
 		"ISBN": 9780887305191,
 		"rating": 5,
-		"yearRead": "1998/01/01"
+		"yearRead": "undated"
 	},
 	{
 		"title": "The Education of a Tennis Player",
 		"author": "Rod Laver & Bud Collins",
 		"ISBN": 9780942257625,
 		"rating": 4,
-		"yearRead": "1990/01/01",
+		"yearRead": "undated",
 		"localCover": true
 	},
 	{
@@ -532,7 +532,7 @@
 		"title": "The Regis Touch",
 		"author": "Regis McKenna",
 		"ISBN": 9780201139648,
-		"rating": 5,
+		"rating": 4,
 		"yearRead": "undated",
 		"localCover": true
 	},
@@ -564,5 +564,12 @@
 		"ISBN": 9780201835953,
 		"rating": 5,
 		"yearRead": "undated"
+	},
+	{
+		"title": "Farewell Amethystine",
+		"author": "Walter Mosley",
+		"ISBN": 9780316491112,
+		"rating": 4,
+		"yearRead": "currently"
 	}
 ]
