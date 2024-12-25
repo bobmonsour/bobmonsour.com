@@ -384,13 +384,14 @@ iframe[src*="youtube"] {
 	outline: 5px solid #fa604a;
 	border-radius: 10px;
 }
-.bookyear {
+.post .bookyear {
 	background: #eee8d5;
 	border-bottom: 2px solid #fa604a;
 	border-radius: 20px;
-	font-size: var(--font-size-md);
+	font-size: var(--font-size-lg);
 	margin-block-start: 2rem;
 	margin-inline: auto;
+	padding-block: 0.25rem;
 	text-align: center;
 	width: 80%;
 }
