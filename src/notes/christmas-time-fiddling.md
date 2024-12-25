@@ -3,6 +3,7 @@ title: Final Christmastime Fiddling
 description: I spent the last several days fiddling with this site. I changed the microBlog terminology to call them notes and I built a bookshelf page.
 date: 2024-12-24
 tags:
+  - futzing
   - blogging
 ---
 
