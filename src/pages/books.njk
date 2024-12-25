@@ -17,7 +17,7 @@ permalink: /books/
 
 <p>The ratings are my own, and as you can see, I like most of what I've read. And while I know the year when I read some of these books, there's also an <a href="#undated">Undated section</a> at the end. I'll likely add more to that section as I mine my physical bookshelves for data.</p>
 
-<p>As of now, there's nothing to click on to get more info on each book. I may add links to a bookstore in the future, but I wanted to get this launched.</p>
+<p><em>The cover images and the book titles link to their respective Amazon product pages and I do participate in their affiliate program.</em></p>
 
 <div class="bookyears">
 	{% for year in books.years %}
@@ -29,12 +29,14 @@ permalink: /books/
 	{% set nowReading = books.currentBook[0] %}
 		<section class="bklist">
 			<div class="bkitem">
+				<a href="{{ nowReading.buyLink }}">
 				{% if nowReading.localCover %}
 					<img eleventy:ignore src="/assets/img/{{ nowReading.title | slugify }}.jpg" alt="{{ nowReading.title | safe }}">
 				{% else %}
 					<img eleventy:ignore src="https://covers.openlibrary.org/b/isbn/{{ nowReading.ISBN }}-M.jpg" alt="{{ nowReading.title | safe }}">
 				{% endif %}
-				<p class="bktitle">{{ nowReading.title | safe }}</p>
+				</a>
+				<p class="bktitle"><a href="{{ nowReading.buyLink }}">{{ nowReading.title | safe }}</a></p>
 				<p class="bkauthor">by {{ nowReading.author }}</p>
 			</div>
 		</section>
@@ -51,12 +53,14 @@ permalink: /books/
 				<section class="bklist">
 			{%- endif %}
 			<div class="bkitem">
+				<a href="{{ book.buyLink }}">
 				{% if book.localCover %}
 					<img eleventy:ignore src="/assets/img/{{ book.title | slugify }}.jpg" alt="{{ book.title | safe }}">
 				{% else %}
 					<img eleventy:ignore src="https://covers.openlibrary.org/b/isbn/{{ book.ISBN }}-M.jpg" alt="{{ book.title | safe }}">
 				{% endif %}
-				<p class="bktitle">{{ book.title | safe }}</p>
+				</a>
+				<p class="bktitle"><a href="{{ book.buyLink }}">{{ book.title | safe }}<a></p>
 				<p class="bkauthor">by {{ book.author }}</p>
 				<p class="bkrating">{{ book.rating | bookRating }}</p>
 			</div>
@@ -70,12 +74,14 @@ permalink: /books/
 <section class="bklist">
 	{%- for book in books.undatedBooks %}
 		<div class="bkitem">
+			<a href="{{ book.buyLink }}">
 			{% if book.localCover %}
 				<img eleventy:ignore src="/assets/img/{{ book.title | slugify }}.jpg" alt="{{ book.title | safe }}">
 			{% else %}
 				<img eleventy:ignore src="https://covers.openlibrary.org/b/isbn/{{ book.ISBN }}-M.jpg" alt="{{ book.title | safe }}">
 			{% endif %}
-			<p class="bktitle">{{ book.title | safe }}</p>
+			</a>
+			<p class="bktitle"><a href="{{ book.buyLink }}">{{ book.title | safe }}</a></p>
 			<p class="bkauthor">by {{ book.author }}</p>
 			<p class="bkrating">{{ book.rating | bookRating }}</p>
 		</div>

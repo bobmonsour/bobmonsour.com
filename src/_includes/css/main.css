@@ -380,10 +380,10 @@ iframe[src*="youtube"] {
 .bkrating {
 	color: #fa604a;
 }
-/* .bkitem a:hover img {
+.bkitem a:hover img {
 	outline: 5px solid #fa604a;
 	border-radius: 10px;
-} */
+}
 .bookyear {
 	background: #eee8d5;
 	border-bottom: 2px solid #fa604a;
