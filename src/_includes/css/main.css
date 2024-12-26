@@ -1,5 +1,5 @@
 body {
-	background-color: #fff1e5; /* color from ft.com background */
+	background-color: var(--body-background); /* color from ft.com background */
 	color: black;
 	display: grid;
 	font-family: var(--brand-font);

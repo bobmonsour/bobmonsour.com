@@ -41,6 +41,8 @@
 	/* Use for link hover on most links */
 	--radius-blob: 49% 51% 48% 52% / 57% 44% 56% 43%;
 
+	/* Main colors */
+	--body-background: #fff1e5;
 	/* Accent Colors */
 	--dark-accent-color: #005bbb;
 	--light-accent-color: lightgray;
