@@ -7,8 +7,9 @@ pagination:
     - all
     - post
     - posts
-title: Posts or Notes with this tag
 permalink: /tags/{{ tag | slugify }}/
+eleventyComputed:
+  title: Tagged {{ tag | slugify }}
 description: Posts tagged with a particular tag
 keywords: tags, Bob Monsour, website, 11ty, eleventy, blog
 image:
