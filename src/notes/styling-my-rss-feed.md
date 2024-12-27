@@ -4,6 +4,7 @@ description: I'd seen this done by several people and decided to give it a go.
 date: 2024-12-26
 tags:
   - blogging
+  - futzing
 ---
 
 What is it about the web that there's this endless, yet wonderful cycle of people showing how they do things? The latest thing I've taken on is styling my [RSS feed](/feed.xml).
