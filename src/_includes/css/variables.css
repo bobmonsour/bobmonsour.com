@@ -57,8 +57,10 @@
 	--post-title-size: var(--font-size-xl);
 	--caption-size: var(--font-size-base);
 
-	/* Book shelf styles */
+	/* Book shelf & table of content styles */
 	--max-book-width: 200px;
+	--enhanced-background: #eee8d5;
+	--enhanced-accent-color: #fa604a;
 
 	/* Configure the Pagefind UI */
 	--pagefind-ui-scale: 1;

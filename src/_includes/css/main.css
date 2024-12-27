@@ -205,9 +205,13 @@ div.notes > ul {
 	grid-template-columns: inherit;
 }
 .post .table-of-contents {
-	background-color: lightgray;
-	border: 1px solid gray;
+	background-color: var(--enhanced-background);
+	/* background-color: lightgray; */
+	border-bottom: 2px solid var(--enhanced-accent-color);
 	border-radius: 20px;
+
+	/* border: 1px solid gray; */
+	/* border-radius: 20px; */
 	grid-column: content;
 	margin: 0 auto;
 	margin-block-start: var(--space-s);
@@ -378,15 +382,15 @@ iframe[src*="youtube"] {
 	width: var(--max-book-width);
 }
 .bkrating {
-	color: #fa604a;
+	color: var(--enhanced-accent-color);
 }
 .bkitem a:hover img {
-	outline: 5px solid #fa604a;
+	outline: 5px solid var(--enhanced-accent-color);
 	border-radius: 10px;
 }
 .post .bookyear {
-	background: #eee8d5;
-	border-bottom: 2px solid #fa604a;
+	background: var(--enhanced-background);
+	border-bottom: 2px solid var(--enhanced-accent-color);
 	border-radius: 20px;
 	font-size: var(--font-size-lg);
 	margin-block-start: 2rem;
@@ -394,21 +398,6 @@ iframe[src*="youtube"] {
 	padding-block: 0.25rem;
 	text-align: center;
 	width: 80%;
-}
-
-.nocover {
-	background: #eee8d5;
-	border: 2px solid rgb(176, 175, 175);
-	color: rgb(115, 114, 114);
-	font-size: var(--font-size-md);
-	font-style: italic;
-	height: 273px;
-	text-align: center;
-	width: 180px;
-}
-.nocover span {
-	display: block;
-	padding-block-start: 100px;
 }
 .bookyears a {
 	margin-inline: 5px;
