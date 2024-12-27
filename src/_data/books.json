@@ -233,7 +233,8 @@
 		"ISBN": 9780385480017,
 		"buyLink": "https://amzn.to/4guExua",
 		"rating": 5,
-		"yearRead": "undated"
+		"yearRead": "undated",
+		"localCover": true
 	},
 	{
 		"title": "A Higher Loyalty",
@@ -290,7 +291,8 @@
 		"ISBN": 9780984755127,
 		"buyLink": "https://amzn.to/3ZPTQGQ",
 		"rating": 4,
-		"yearRead": "2014/02/17"
+		"yearRead": "2014/02/17",
+		"localCover": true
 	},
 	{
 		"title": "Why We Get Fat",
@@ -298,7 +300,8 @@
 		"ISBN": 9780307474254,
 		"buyLink": "https://amzn.to/3PaHdkv",
 		"rating": 4,
-		"yearRead": "2014/02/11"
+		"yearRead": "2014/02/11",
+		"localCover": true
 	},
 	{
 		"title": "The Circle",
@@ -386,7 +389,8 @@
 		"ISBN": 9780446561938,
 		"buyLink": "https://amzn.to/3Pintvf",
 		"rating": 4,
-		"yearRead": "2010/08/01"
+		"yearRead": "2010/08/01",
+		"localCover": true
 	},
 	{
 		"title": "The Big Short",
@@ -426,7 +430,8 @@
 		"ISBN": 9780393062281,
 		"buyLink": "https://amzn.to/3Dvvvyl",
 		"rating": 4,
-		"yearRead": "2010/01/01"
+		"yearRead": "2010/01/01",
+		"localCover": true
 	},
 	{
 		"title": "Plan of Attack",
@@ -601,7 +606,8 @@
 		"ISBN": 9780321616951,
 		"buyLink": "https://amzn.to/3PamI7t",
 		"rating": 5,
-		"yearRead": "undated"
+		"yearRead": "undated",
+		"localCover": true
 	},
 	{
 		"title": "The Regis Touch",
