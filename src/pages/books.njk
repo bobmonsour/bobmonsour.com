@@ -26,19 +26,9 @@ permalink: /books/
 </div>
 
 	<h2 class="bookyear">Currently Reading</h2>
-	{% set nowReading = books.currentBook[0] %}
+	{% set book = books.currentBook[0] %}
 		<div class="bklist">
-			<div class="bkitem">
-				<a href="{{ nowReading.buyLink }}">
-				{% if nowReading.localCover %}
-					<img eleventy:ignore src="/assets/img/{{ nowReading.title | slugify }}.jpg" alt="{{ nowReading.title | safe }}">
-				{% else %}
-					<img eleventy:ignore src="https://covers.openlibrary.org/b/isbn/{{ nowReading.ISBN }}-M.jpg" alt="{{ nowReading.title | safe }}">
-				{% endif %}
-				</a>
-				<p class="bktitle"><a href="{{ nowReading.buyLink }}">{{ nowReading.title | safe }}</a></p>
-				<p class="bkauthor">by {{ nowReading.author }}</p>
-			</div>
+			{% include "bookitem.njk" %}
 		</div>
 
 	{% set previous_year = "" %}
@@ -47,45 +37,22 @@ permalink: /books/
 		{%- set current_year = book.yearRead | truncate(4, true, '') -%}
 		{%- if current_year != previous_year %}
 			{# if we're changing years and it's not the first year,
-				close the div on the prior year, set the heading id
+				close the 'bklist' div on the prior year, set the heading id
 				to the new year, update the previous_year, and open a new bklist div #}
 			{% if not loop.first %}</div>{% endif %}
 			<h2 id="y{{ current_year }}" class="bookyear">{{ current_year }}</h2>
 			{% set previous_year = current_year %}
 			<div class="bklist">
 		{%- endif %}
-		<div class="bkitem">
-			<a href="{{ book.buyLink }}">
-			{% if book.localCover %}
-				<img eleventy:ignore src="/assets/img/{{ book.title | slugify }}.jpg" alt="{{ book.title | safe }}">
-			{% else %}
-				<img eleventy:ignore src="https://covers.openlibrary.org/b/isbn/{{ book.ISBN }}-M.jpg" alt="{{ book.title | safe }}">
-			{% endif %}
-			</a>
-			<p class="bktitle"><a href="{{ book.buyLink }}">{{ book.title | safe }}</a></p>
-			<p class="bkauthor">by {{ book.author }}</p>
-			<p class="bkrating">{{ book.rating | bookRating }}</p>
-		</div>
-		{% if loop.last %}
-		</div>
-		{% endif %}
+		{% include "bookitem.njk" %}
+		{# close the 'bklist' div on the last book in the list #}
+		{% if loop.last %}</div>{% endif %}
 	{%- endfor %}
 </section>
 
 <h2 id="undated" class="bookyear">Undated</h2>
 <div class="bklist">
 	{%- for book in books.undatedBooks %}
-		<div class="bkitem">
-			<a href="{{ book.buyLink }}">
-			{% if book.localCover %}
-				<img eleventy:ignore src="/assets/img/{{ book.title | slugify }}.jpg" alt="{{ book.title | safe }}">
-			{% else %}
-				<img eleventy:ignore src="https://covers.openlibrary.org/b/isbn/{{ book.ISBN }}-M.jpg" alt="{{ book.title | safe }}">
-			{% endif %}
-			</a>
-			<p class="bktitle"><a href="{{ book.buyLink }}">{{ book.title | safe }}</a></p>
-			<p class="bkauthor">by {{ book.author }}</p>
-			<p class="bkrating">{{ book.rating | bookRating }}</p>
-		</div>
+		{% include "bookitem.njk" %}
 	{%- endfor %}
 </div>
