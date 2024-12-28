@@ -384,6 +384,9 @@ iframe[src*="youtube"] {
 .bkrating {
 	color: var(--enhanced-accent-color);
 }
+.bkitem img {
+	width: 180px;
+}
 .bkitem a:hover img {
 	outline: 5px solid var(--enhanced-accent-color);
 	border-radius: 10px;
