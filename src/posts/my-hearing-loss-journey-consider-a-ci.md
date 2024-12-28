@@ -72,3 +72,5 @@ There are 3 primary manufacturers of the devices, Cochlear America, Advanced Bio
 I'm both nervous and excited by the prospect of being able to hear in my left ear again. I had given up the clarinet lessons after losing my hearing as the vibrations of the reed made it more difficult to hear the sound as I played. Not to be music-less, last year, I started to learn to play the piano. I wrote a couple of posts about that journey [here](https://www.bobmonsour.com/posts/learning-to-play-the-piano/) and [here](https://www.bobmonsour.com/posts/my-first-30-days-of-learning-to-play-the-piano/). I hadn't practiced in a few months, but recently restarted and hope to continue.
 
 Well, that's where I am at this point. I suppose that noting the start of this journey commits me to writing about progress along the way. Stay tuned...
+
+> UPDATE: I have opted not to get a cochlear implant, at least for now. I wrote [a note about it](/notes/no-cochlear-implant-yet/).
