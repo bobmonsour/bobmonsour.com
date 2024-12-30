@@ -656,7 +656,16 @@
 		"author": "Walter Mosley",
 		"ISBN": 9780316491112,
 		"buyLink": "https://amzn.to/3VULTP8",
+		"rating": "3.5",
+		"yearRead": "2024/12/30"
+	},
+	{
+		"title": "Close to the Machine",
+		"author": "Ellen Ullman",
+		"ISBN": 9781250002488,
+		"buyLink": "https://amzn.to/41Tsp1i",
 		"rating": "",
-		"yearRead": "currently"
+		"yearRead": "currently",
+		"localCover": true
 	}
 ]
