@@ -121,6 +121,8 @@ By this time I was used to doing a lot of things manually for every book. So, ho
 
 So, now you have the answer to the question that opened this section. If the `localCover` property is set to `true`, the downloaded image is used. If not, the Open Library image is fetched at build time.
 
+I have one final note on those Open Library images. They are remote images that are quite static in themselves. So I really don't want to be fetching them on every build. One nice thing about using the [Eleventy Transform](https://www.11ty.dev/docs/plugins/image/#eleventy-transform) feature of the Eleventy image plugin is that you can specify a cache directory and duration for the caching of those remote images, as [seen in the docs](https://www.11ty.dev/docs/plugins/image/#advanced-caching-options-for-remote-images). I think that's a nice build performance feature. And now that this site lives on Cloudflare Pages, and CF Pages is supporting the `.cache` folder for Eleventy, I'm all set...not just in local build performance, but in the production environment too.
+
 ## The buyLink property
 
 Since I joined the Amazon affilliate program, in order to have a link to the book's product page, I needed to generate and manually enter the Amazon product page URL for each book. This was a bit more tedious than the ISBNs, but I got through it. So that's the `buyLink` property.

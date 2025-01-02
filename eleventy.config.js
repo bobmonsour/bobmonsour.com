@@ -68,6 +68,11 @@ export default function (eleventyConfig) {
 	eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
 		extensions: "html",
 		outputDir: "/assets/img/",
+		cacheOptions: {
+			duration: "100d",
+			directory: ".cache",
+			removeUrlQueryParams: false,
+		},
 		formats: ["webp", "jpeg"],
 		widths: [300, 600, 900, 1200],
 		defaultAttributes: {
