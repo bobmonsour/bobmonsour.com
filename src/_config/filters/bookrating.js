@@ -3,8 +3,10 @@ export const bookRating = (rating) => {
 	const fullStar = "★";
 	const halfStar = "½";
 	const noStar = "";
-
 	let stars = "";
+	if (rating === "") {
+		return stars;
+	}
 	for (let i = 1; i <= 5; i++) {
 		if (rating - i >= 0) {
 			stars += fullStar;

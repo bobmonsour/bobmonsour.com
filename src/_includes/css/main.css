@@ -379,7 +379,8 @@ iframe[src*="youtube"] {
 .bkitem img {
 	width: 180px;
 }
-.bkitem a:hover img {
+.bkitem a:hover img,
+.post-card a:hover img {
 	outline: 5px solid var(--enhanced-accent-color);
 	border-radius: 10px;
 }

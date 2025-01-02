@@ -19,6 +19,8 @@ permalink: /books/
 
 <p><em>The cover images and the book titles link to their respective Amazon product pages and I do participate in their affiliate program.</em></p>
 
+<p>Finally, if you want to know how I built this, there's <a href="/blog/building-the-book-page/">a blog post</a> about it.
+
 <div class="bookyears">
 	{% for year in books.years %}
 		<a href="#{{ year.year }}">{{ year.year | replace("y", "") }}</a>{% if  not loop.last %} / {% endif %}
