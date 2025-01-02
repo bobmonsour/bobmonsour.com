@@ -219,4 +219,6 @@ This technique of separating entries by year is similar to what I did to delinea
 
 That's pretty much it. It wasn't terribly difficult and I enjoyed the journey. And now it's pretty easy for me to add one book at a time to the `books.json` file.
 
-The best part of this is that I'm a bit more motivated to read. I've started a morning habit where I have my morning coffee while reading 25 pages of whatever book that I'm currently reading. I do not sit down in my office until those 25 pages are in the bag. It's a nice way to start the day and a great way to build some consistency.
+What I also find interesting is that as I was writing this up yesterday and today, I managed to learn some things and make some changes to how it actually works. It's funny that when you go to describe something you've built, you sometimes realize that it could be even better, or that you had not considered something along the way. The best example of this is realizing that I could cache the Open Library images using the Eleventy transform feature.
+
+Finally, the best part of this is that I'm a bit more motivated to read. I've started a morning habit where I have my morning coffee while reading 25 pages of whatever book that I'm currently reading. I do not sit down in my office until those 25 pages are in the bag. It's a nice way to start the day and a great way to build some consistency.
