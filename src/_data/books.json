@@ -664,8 +664,16 @@
 		"author": "Ellen Ullman",
 		"ISBN": 9781250002488,
 		"buyLink": "https://amzn.to/41Tsp1i",
-		"rating": "",
-		"yearRead": "currently",
+		"rating": "4.5",
+		"yearRead": "2025/01/04",
 		"localCover": true
+	},
+	{
+		"title": "The Path to Power",
+		"author": "Robert A. Caro",
+		"ISBN": "9780679729457",
+		"buyLink": "https://amzn.to/4gIpBbW",
+		"rating": "",
+		"yearRead": "currently"
 	}
 ]

@@ -1,0 +1,17 @@
+{
+	"Book Snippet (bk)": {
+		"prefix": "bk",
+		"body": [
+			"{",
+			"  \"title\": \"${1:title}\",",
+			"  \"author\": \"${2:author}\",",
+			"  \"ISBN\": \"${3:ISBN}\",",
+			"  \"buyLink\": \"${4:buyLink}\",",
+			"  \"rating\": \"${5:rating}\",",
+			"  \"yearRead\": \"${6:yearRead}\","
+			"}",
+			"$0"
+		],
+		"description": "Generate a book entry for the books.json database."
+	}
+}
