@@ -10,22 +10,22 @@ export const isCurrentPage = (linkText, pageUrl) => {
 			}
 			break;
 		case "blog":
-			if (pageUrl.includes("blog")) {
+			if (pageUrl.includes("/blog/")) {
 				return 'aria-current="page"';
 			}
 			break;
 		case "notes":
-			if (pageUrl.includes("notes")) {
+			if (pageUrl.includes("/notes/")) {
 				return 'aria-current="page"';
 			}
 			break;
 		case "books":
-			if (pageUrl.includes("books")) {
+			if (pageUrl.includes("/books/")) {
 				return 'aria-current="page"';
 			}
 			break;
 		case "about":
-			if (pageUrl.includes("about")) {
+			if (pageUrl.includes("/about/")) {
 				return 'aria-current="page"';
 			}
 	}
