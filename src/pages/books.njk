@@ -21,6 +21,7 @@ permalink: /books/
 
 <p>Finally, if you want to know how I built this, there's <a href="/blog/building-the-book-page/">this <em>future</em> blog post</a> about it.
 
+<article data-pagefind-body>
 <div class="bookyears">
 	{% for year in books.years %}
 		<a href="#{{ year.year }}">{{ year.year | replace("y", "") }}</a>{% if  not loop.last %} / {% endif %}
@@ -58,3 +59,4 @@ permalink: /books/
 		{% include "bookitem.njk" %}
 	{%- endfor %}
 </div>
+</article>
