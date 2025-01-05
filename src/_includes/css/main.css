@@ -398,3 +398,19 @@ iframe[src*="youtube"] {
 .bookyears a {
 	margin-inline: 5px;
 }
+
+.homegrid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+	gap: 1rem;
+	place-content: center;
+}
+.homegrid > *:nth-child(3) {
+	grid-column: 1 / -1;
+}
+.homegrid h3 {
+	text-align: center;
+}
+.homegrid .bkitem {
+	justify-self: center;
+}
