@@ -225,7 +225,7 @@ div.notes > ul {
 	text-wrap: wrap;
 }
 .post blockquote {
-	border-inline-start: var(--space-xs) solid var(--dark-accent-color);
+	border-inline-start: var(--space-xs) solid var(--enhanced-accent-color);
 	font-style: italic;
 	font-size: var(--font-size-lg);
 	grid-column: feature;
