@@ -23,7 +23,8 @@ There's a little more about me on the [About](/about/) page. And you can find me
 			{%- set last3posts = blogposts.slice(0,3) -%}
 			{%- for post in last3posts -%}
 				<li>
-					<a href="{{ post.url }}">{{ post.data.title }}</a> &middot; <span class="blogdate">{{ post.date | formatPostDate }}</span>
+					<a href="{{ post.url }}">{{ post.data.title }}</a>
+					<p class="blogdate">{{ post.date | formatPostDate }}</p>
 				</li>
 			{%- endfor -%}
 		</ul>
@@ -35,7 +36,8 @@ There's a little more about me on the [About](/about/) page. And you can find me
 			{%- set last3notes = notes.slice(0,3) -%}
 			{%- for post in last3notes -%}
 				<li>
-					<a href="{{ post.url }}">{{ post.data.title }}</a> &middot; <span class="blogdate">{{ post.date | formatPostDate }}</span>
+					<a href="{{ post.url }}">{{ post.data.title }}</a>
+					<p class="blogdate">{{ post.date | formatPostDate }}</p>
 				</li>
 			{%- endfor -%}
 		</ul>
