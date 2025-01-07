@@ -2,10 +2,11 @@
 	{
 		"title": "Let the Great World Spin",
 		"author": "Colum McCann",
-		"ISBN": 9781400063734,
+		"ISBN": 9780812973990,
 		"buyLink": "https://amzn.to/3BNdeMt",
 		"rating": 5,
-		"yearRead": "2024/12/22"
+		"yearRead": "2024/12/22",
+		"localCover": true
 	},
 	{
 		"title": "North Woods",
@@ -26,7 +27,7 @@
 	{
 		"title": "Hellhound on His Trail",
 		"author": "Hampton Sides",
-		"ISBN": 9780385523929,
+		"ISBN": 9780307387431,
 		"buyLink": "https://amzn.to/3VUKQPc",
 		"rating": 5,
 		"yearRead": "2024/07/03"
@@ -42,7 +43,7 @@
 	{
 		"title": "The Spy Who Came In from the Cold",
 		"author": "John Le Carré",
-		"ISBN": 9780743442534,
+		"ISBN": 9780143124757,
 		"buyLink": "https://amzn.to/3PdVtcm",
 		"rating": 5,
 		"yearRead": "2024/01/06"
@@ -50,7 +51,7 @@
 	{
 		"title": "Road to Surrender",
 		"author": "Evan Thomas",
-		"ISBN-13": 9780399589256,
+		"ISBN": 9780399589270,
 		"buyLink": "https://amzn.to/4fz2uzf",
 		"rating": 5,
 		"yearRead": "2023/11/16",
@@ -59,7 +60,7 @@
 	{
 		"title": "The Rise and Fall of the Third Reich",
 		"author": "William L. Shirer",
-		"ISBN": 9780671728687,
+		"ISBN": 9781451651683,
 		"buyLink": "https://amzn.to/3BMRVe3",
 		"rating": 5,
 		"yearRead": "2023/11/01"
@@ -83,23 +84,25 @@
 	{
 		"title": "Horse",
 		"author": "Geraldine Brooks",
-		"ISBN": 9780399562969,
+		"ISBN": 9780399562976,
 		"buyLink": "https://amzn.to/408ADBi",
 		"rating": 5,
-		"yearRead": "2023/03/25"
+		"yearRead": "2023/03/25",
+		"localCover": true
 	},
 	{
 		"title": "American Midnight",
 		"author": "Adam Hochschild",
-		"ISBN": 9780358455462,
+		"ISBN": 9780063278523,
 		"buyLink": "https://amzn.to/3Bzyrtn",
 		"rating": 5,
-		"yearRead": "2023/02/16"
+		"yearRead": "2023/02/16",
+		"localCover": true
 	},
 	{
 		"title": "A Swim in a Pond in the Rain",
 		"author": "George Saunders",
-		"ISBN": 9781984856043,
+		"ISBN": 9781984856036,
 		"buyLink": "https://amzn.to/41ORydl",
 		"rating": 5,
 		"yearRead": "2022/09/29"
@@ -107,23 +110,25 @@
 	{
 		"title": "Dreamland",
 		"author": "Sam Quinones",
-		"ISBN": 9781620402504,
+		"ISBN": 9781620402528,
 		"buyLink": "https://amzn.to/41MkFht",
 		"rating": 5,
-		"yearRead": "2022/09/07"
+		"yearRead": "2022/09/07",
+		"localCover": true
 	},
 	{
 		"title": "Either/Or",
 		"author": "Elif Batuman",
-		"ISBN": 9780525557593,
+		"ISBN": 9780525557616,
 		"buyLink": "https://amzn.to/4iT3RvC",
 		"rating": 2,
-		"yearRead": "2022/08/15"
+		"yearRead": "2022/08/15",
+		"localCover": true
 	},
 	{
 		"title": "The Berlin Exchange",
 		"author": "Joseph Kanon",
-		"ISBN": 9781982158651,
+		"ISBN": 9781982158668,
 		"buyLink": "https://amzn.to/4gKYtIM",
 		"rating": 3.5,
 		"yearRead": "2022/07/05"
@@ -131,7 +136,7 @@
 	{
 		"title": "The Gates of Europe",
 		"author": "Serhii Plokhy & Ralph Lister",
-		"ISBN": 9780465050918,
+		"ISBN": 9781541675643,
 		"buyLink": "https://amzn.to/3ZOLVtf",
 		"rating": 3,
 		"yearRead": "2022/05/02"
@@ -158,7 +163,8 @@
 		"ISBN": 9780525656340,
 		"buyLink": "https://amzn.to/4gQSrqo",
 		"rating": 4.5,
-		"yearRead": "2021/07/21"
+		"yearRead": "2021/07/21",
+		"localCover": true
 	},
 	{
 		"title": "The Fifth Risk",
@@ -171,7 +177,7 @@
 	{
 		"title": "One Minute to Midnight",
 		"author": "Michael Dobbs",
-		"ISBN": 9780091796662,
+		"ISBN": 9781400078912,
 		"buyLink": "https://amzn.to/4gRhtWk",
 		"rating": 5,
 		"yearRead": "2021/06/12"
@@ -182,12 +188,13 @@
 		"ISBN": 9780143034759,
 		"buyLink": "https://amzn.to/4gtqaGB",
 		"rating": 5,
-		"yearRead": "2021/02/18"
+		"yearRead": "2021/02/18",
+		"localCover": true
 	},
 	{
 		"title": "Good Strategy Bad Strategy",
 		"author": "Richard P. Rumelt",
-		"ISBN": 9780307886255,
+		"ISBN": 9780307886231,
 		"buyLink": "https://amzn.to/3ZT3Oa9",
 		"rating": 4,
 		"yearRead": "2020/08/09",
@@ -204,7 +211,7 @@
 	{
 		"title": "How We Die",
 		"author": "Sherwin B. Nuland",
-		"ISBN": 9780978721039,
+		"ISBN": 9780679742449,
 		"buyLink": "https://amzn.to/3ZU0NXm",
 		"rating": 4,
 		"yearRead": "2020/07/16",
@@ -213,10 +220,11 @@
 	{
 		"title": "Being Mortal",
 		"author": "Atul Gawande",
-		"ISBN": 9781627790550,
+		"ISBN": 9781250076229,
 		"buyLink": "https://amzn.to/49RDp1g",
 		"rating": 4,
-		"yearRead": "2020/07/16"
+		"yearRead": "2020/07/16",
+		"localCover": true
 	},
 	{
 		"title": "Ageless Painless Tennis",
@@ -239,7 +247,7 @@
 	{
 		"title": "A Higher Loyalty",
 		"author": "James Comey",
-		"ISBN": 9781250192455,
+		"ISBN": 9781250192479,
 		"buyLink": "https://amzn.to/3BVQ9qV",
 		"rating": 4,
 		"yearRead": "2018/12/12"
@@ -254,8 +262,8 @@
 	},
 	{
 		"title": "When Breath Becomes Air",
-		"author": "Paul Kalanithi & Abraham Verghese",
-		"ISBN": 9780812988413,
+		"author": "Paul Kalanithi",
+		"ISBN": 9780812988406,
 		"buyLink": "https://amzn.to/4gtqwNr",
 		"rating": 5,
 		"yearRead": "2018/05/23"
@@ -263,19 +271,11 @@
 	{
 		"title": "An Unquiet Mind",
 		"author": "Kay Redfield Jamison",
-		"ISBN": 9780307498489,
+		"ISBN": 9780679763307,
 		"buyLink": "https://amzn.to/40d4ffZ",
 		"rating": 5,
 		"yearRead": "2018/04/01",
 		"localCover": true
-	},
-	{
-		"title": "I am Not Sick, I Don't Need Help!",
-		"author": "Xavier Francisco Amador",
-		"ISBN": 9780967718927,
-		"buyLink": "https://amzn.to/3PaH8gH",
-		"rating": 4,
-		"yearRead": "2018/01/01"
 	},
 	{
 		"title": "The Hard Thing About Hard Things",
@@ -314,10 +314,11 @@
 	{
 		"title": "Purple Cow",
 		"author": "Seth Godin",
-		"ISBN": 9781591840213,
+		"ISBN": 9781591843177,
 		"buyLink": "https://amzn.to/3BLcQOA",
 		"rating": 4,
-		"yearRead": "undated"
+		"yearRead": "undated",
+		"localCover": true
 	},
 	{
 		"title": "Delivering Happiness",
@@ -346,7 +347,7 @@
 	{
 		"title": "Street Fighters",
 		"author": "Kate Kelly",
-		"ISBN": 9781591842736,
+		"ISBN": 9781591843184,
 		"buyLink": "https://amzn.to/41PbrRH",
 		"rating": 4,
 		"yearRead": "2010/12/01"
@@ -354,7 +355,7 @@
 	{
 		"title": "All the President’s Men",
 		"author": "Carl Bernstein & Bob Woodward",
-		"ISBN": 9781416522911,
+		"ISBN": 9781476770512,
 		"buyLink": "https://amzn.to/41R4saW",
 		"rating": 5,
 		"yearRead": "2010/11/01"
@@ -378,15 +379,16 @@
 	{
 		"title": "Obama's Wars",
 		"author": "Bob Woodward",
-		"ISBN": 9781439172513,
+		"ISBN": 9781439172506,
 		"buyLink": "https://amzn.to/3PdEqau",
 		"rating": 4,
-		"yearRead": "2010/10/01"
+		"yearRead": "2010/10/01",
+		"localCover": true
 	},
 	{
 		"title": "On the Brink",
 		"author": "Henry M. Paulson Jr.",
-		"ISBN": 9780446561938,
+		"ISBN": 9781455551903,
 		"buyLink": "https://amzn.to/3Pintvf",
 		"rating": 4,
 		"yearRead": "2010/08/01",
@@ -403,18 +405,11 @@
 	{
 		"title": "The Dynamite Club",
 		"author": "John M. Merriman",
-		"ISBN": 9780618555987,
+		"ISBN": 9780300217926,
 		"buyLink": "https://amzn.to/3P9dMPZ",
 		"rating": 4,
-		"yearRead": "2010/03/01"
-	},
-	{
-		"title": "I've Got Your Back",
-		"author": "Brad Gilbert",
-		"ISBN": 9781591840473,
-		"buyLink": "https://amzn.to/3DIuL92",
-		"rating": 4,
-		"yearRead": "2010/01/01"
+		"yearRead": "2010/03/01",
+		"localCover": true
 	},
 	{
 		"title": "Open",
@@ -444,7 +439,7 @@
 	{
 		"title": "What the Dormouse Said",
 		"author": "John Markoff",
-		"ISBN": 9781101201084,
+		"ISBN": 9780143036760,
 		"buyLink": "https://amzn.to/4gNF1v8",
 		"rating": 4,
 		"yearRead": "undated",
@@ -461,7 +456,7 @@
 	{
 		"title": "This Side Of Peace",
 		"author": "Hanan Ashrawi",
-		"ISBN": 9780684802947,
+		"ISBN": 9780684823423,
 		"buyLink": "https://amzn.to/408WXL9",
 		"rating": 4,
 		"yearRead": "undated"
@@ -469,7 +464,7 @@
 	{
 		"title": "A Champion's Mind",
 		"author": "Pete Sampras & Peter Bodo",
-		"ISBN": 9780307383297,
+		"ISBN": 9780307383303,
 		"buyLink": "https://amzn.to/4gSGEIa",
 		"rating": 4,
 		"yearRead": "undated",
@@ -486,7 +481,7 @@
 	{
 		"title": "Crossing the Chasm",
 		"author": "Geoffrey A. Moore",
-		"ISBN": 9780887305191,
+		"ISBN": 9780062292988,
 		"buyLink": "https://amzn.to/3Dx3AOz",
 		"rating": 5,
 		"yearRead": "undated"
@@ -506,7 +501,8 @@
 		"ISBN": 9780802158741,
 		"buyLink": "https://amzn.to/4gPgqGl",
 		"rating": 5,
-		"yearRead": "2023/04/20"
+		"yearRead": "2023/04/20",
+		"localCover": true
 	},
 	{
 		"title": "Bottoms Up and the Devil Laughs",
@@ -601,47 +597,12 @@
 		"yearRead": "undated"
 	},
 	{
-		"title": "Designing with Web Standards",
-		"author": "Jeffrey Zeldman",
-		"ISBN": 9780321616951,
-		"buyLink": "https://amzn.to/3PamI7t",
-		"rating": 5,
-		"yearRead": "undated",
-		"localCover": true
-	},
-	{
-		"title": "The Regis Touch",
-		"author": "Regis McKenna",
-		"ISBN": 9780201139648,
-		"buyLink": "https://amzn.to/3VUExex",
-		"rating": 4,
-		"yearRead": "undated",
-		"localCover": true
-	},
-	{
 		"title": "The World is Flat",
 		"author": "Thomas Friedman",
 		"ISBN": 9780312425074,
 		"buyLink": "https://amzn.to/3PbGG1N",
 		"rating": 5,
 		"yearRead": "undated"
-	},
-	{
-		"title": "Hawaii",
-		"author": "James Michener",
-		"ISBN": 9780375760372,
-		"buyLink": "https://amzn.to/3VSGGrj",
-		"rating": 5,
-		"yearRead": "undated"
-	},
-	{
-		"title": "The Psychology of Computer Programming",
-		"author": "Gerald Weinberg",
-		"ISBN": 9798794106909,
-		"buyLink": "https://amzn.to/49VnvCN",
-		"rating": 5,
-		"yearRead": "undated",
-		"localCover": true
 	},
 	{
 		"title": "The Mythical Man-Month",

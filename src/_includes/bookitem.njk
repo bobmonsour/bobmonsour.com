@@ -1,12 +1,15 @@
 <div class="bkitem">
-	<a href="{{ book.buyLink }}">
+	{% set bookshop_base = "https://bookshop.org/a/109591/" %}
+	<a href="{{ bookshop_base}}{{ book.ISBN }}">
+	{# <a href="{{ book.buyLink }}"> #}
 	{% if book.localCover %}
 		<img src="/assets/img/{{ book.title | slugify }}.jpg" alt="{{ book.title | safe }}">
 	{% else %}
 		<img src="https://covers.openlibrary.org/b/isbn/{{ book.ISBN }}-M.jpg" alt="{{ book.title | safe }}">
 	{% endif %}
 	</a>
-	<p class="bktitle"><a href="{{ book.buyLink }}">{{ book.title | safe }}</a></p>
+	<p class="bktitle"><a href="{{ bookshop_base}}{{ book.ISBN }}">{{ book.title | safe }}</a></p>
+	{# <p class="bktitle"><a href="{{ book.buyLink }}">{{ book.title | safe }}</a></p> #}
 	<p class="bkauthor">by {{ book.author }}</p>
 	{% if book.rating != "" %}<p class="bkrating">{{ book.rating | bookRating }}</p>{% endif %}
 </div>

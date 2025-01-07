@@ -365,7 +365,7 @@ iframe[src*="youtube"] {
 	grid-column: full;
 	grid-template-columns: repeat(auto-fit, minmax(var(--max-book-width), 1fr));
 	gap: 2rem;
-	place-items: center;
+	place-items: start center;
 	margin-block-start: 2rem;
 }
 .bktitle {
