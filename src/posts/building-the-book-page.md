@@ -17,6 +17,8 @@ pageHasCode: true
 
 ---
 
+> _UPDATE COMING:_ This piece needs an update to reflect the fact that I no longer link to Amazon and their affiliate program. Instead, the page now links to [Bookshop.org](https://bookshop.org/). I'll get to that soon. The basic approach here has not changed, but the link construction for the `buyLink` property of each book has changed. More later...
+
 ## Introduction
 
 You can read more about the inspiration for the Books page [on the page itself](/books/). The purpose of this post is to share how I built that page.
