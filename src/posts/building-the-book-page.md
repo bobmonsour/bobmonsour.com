@@ -185,7 +185,7 @@ To start the page, I needed a way to designate the book that I am currently read
 
 Below is the Nunjucks template for the books page (absent the front matter and other full page layout stuff). It creates a divider for each year and also creates links to each year at the top of the page (inspired by [Cory Dransfeldt's bookshelf](https://coryd.dev/books)).
 
-Note that I created a handful of supporting javascript data files to help with the date formatting and sorting. If you want to dive into those, there on the [GitHub repo in this file](https://github.com/bobmonsour/bobmonsour.com/blob/main/src/_data/books.js). One example is the `books.years` array that is used to generate the links at the top of the page. It generates array items like `y2024` which can be used as an anchor link later in the page (yet the `y` is removed for use in the link text; since we can't have ID's that start with numbers, I needed that 'y'...see the `<h2>`).
+Note that I created a handful of supporting javascript data files to help with the date formatting and sorting. If you want to dive into those, there on the [GitHub repo in this file](https://github.com/bobmonsour/bobmonsour.com/blob/main/src/_data/books.js). One example is the `books.years` array that is used to generate the links at the top of the page. It generates array items like `y2024` which can be used as an anchor link later in the page (yet the `y` is removed for use in the link text; since we can't have ID's that start with numbers, I needed that 'y'...see the `<h2>` inside of the loop).
 
 ```jinja2 {% raw %}
 <div class="bookyears">
