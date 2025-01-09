@@ -69,7 +69,7 @@ export default function (eleventyConfig) {
 		extensions: "html",
 		outputDir: "/assets/img/",
 		cacheOptions: {
-			duration: "100d",
+			duration: "*",
 			directory: ".cache",
 			removeUrlQueryParams: false,
 		},
