@@ -11,7 +11,7 @@ image:
 pageHasCode: false
 ---
 
-> UPDATE 2023-06-22: I wrote about how I addressed the question posed here in [Issue 9 of the 11ty Bundle](https://11tybundle.dev/blog/11ty-bundle-9/).
+> _UPDATE (6-22-23):_ I wrote about how I addressed the question posed here in [Issue 9 of the 11ty Bundle](https://11tybundle.dev/blog/11ty-bundle-9/).
 
 You may (or may not) know that I am the developer of the site [11tybundle.dev](https://11tybundle.dev/).
 

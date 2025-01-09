@@ -50,29 +50,29 @@ So, now, I present to you my reading time calculator. The code is shown below an
  */
 
 module.exports = function (text) {
-  var content = new String(text);
-  const speed = 240; // reading speed in words per minute
+	var content = new String(text);
+	const speed = 240; // reading speed in words per minute
 
-  // remove all html elements
-  var re = /(&lt;.*?&gt;)|(<[^>]+>)/gi;
-  var plain = content.replace(re, "");
+	// remove all html elements
+	var re = /(&lt;.*?&gt;)|(<[^>]+>)/gi;
+	var plain = content.replace(re, "");
 
-  // replace all newlines and 's with spaces
-  var plain = plain.replace(/\s+|'s/g, " ");
+	// replace all newlines and 's with spaces
+	var plain = plain.replace(/\s+|'s/g, " ");
 
-  // create array of all the words in the post & count them
-  var words = plain.split(" ");
-  var count = words.length;
+	// create array of all the words in the post & count them
+	var words = plain.split(" ");
+	var count = words.length;
 
-  // calculate the reading time
-  var readingTime = Math.round(count / speed);
-  if (readingTime === 0) {
-    return "Less than 1 minute to read";
-  } else if (readingTime === 1) {
-    return "1 minute to read";
-  } else {
-    return readingTime + " minutes to read";
-  }
+	// calculate the reading time
+	var readingTime = Math.round(count / speed);
+	if (readingTime === 0) {
+		return "Less than 1 minute to read";
+	} else if (readingTime === 1) {
+		return "1 minute to read";
+	} else {
+		return readingTime + " minutes to read";
+	}
 };
 ```
 
@@ -81,8 +81,8 @@ I set it up as an eleventy filter by adding this to my .eleventy.js file:
 ```js
 // Add filter to generate reading time for a post
 eleventyConfig.addFilter(
-  "readingTime",
-  require("../../config/filters/readingtime.js")
+	"readingTime",
+	require("../../config/filters/readingtime.js")
 );
 ```
 
@@ -99,4 +99,4 @@ The reason that I place the readingtime.js filter file under my \_includes direc
 
 I'm not sure if this is worth taking any further as it suits my purposes of being simple, lightweight, and understandable (to me, at least).
 
-UPDATE: I have since found a second implementation. It's listed among the [community-contributed plugins](https://www.11ty.dev/docs/plugins/) on the eleventy docs site. [This one](https://github.com/JKC-Codes/eleventy-plugin-time-to-read) has a lot more features than I need and I found it to be more complex (not always a bad thing, but it does far more than I need).
+> _UPDATE:_ I have since found a second implementation. It's listed among the [community-contributed plugins](https://www.11ty.dev/docs/plugins/) on the eleventy docs site. [This one](https://github.com/JKC-Codes/eleventy-plugin-time-to-read) has a lot more features than I need and I found it to be more complex (not always a bad thing, but it does far more than I need).

@@ -64,7 +64,7 @@ Another way to improve performance of a site is to quickly load the CSS that sup
 
 Lastly on this topic, there's an npm package, [critical](https://github.com/addyosmani/critical), that "extracts & inlines critical-path (above-the-fold) CSS from HTML." It would be nice to see someone from the Eleventy community write a plugin to integrate this functionality into the build process. Having said that, I've also found a [Critical CSS gernerator](https://www.corewebvitals.io/tools/critical-css-generator) that will do the job through a web interface. The only challenge I see with this is knowing what then to exclude from one's CSS files for later loading.
 
-> _UPDATE (4-1-23): As it turns out, someone **did** write an Eleventy plugin called [eleventy-critical-css](https://github.com/gregives/eleventy-critical-css) that uses Addy Osmani's critical npm package. It hasn't been updated since Oct 8, 2021 and I have not tried it._
+> _UPDATE (4-1-23):_ As it turns out, someone **did** write an Eleventy plugin called [eleventy-critical-css](https://github.com/gregives/eleventy-critical-css) that uses Addy Osmani's critical npm package. It hasn't been updated since Oct 8, 2021 and I have not tried it.
 
 ## Enter the eleventy-plugin-bundle
 
@@ -257,7 +257,7 @@ Ok, I'm back after looking at this closer. It's a rabbit hole. I ran into more q
 
 These 2 questions alone caused me to back away from this and leave the structure as outlined in [section 5](#section5). After all, I do want to finish this blog post.
 
-> _UPDATE (3-29-23): I Just came across [this excellent piece covering critical CSS](https://csswizardry.com/2022/09/critical-css-not-so-fast/) and how challenging it can be to implement correctly and to maintain it once it's implemented. If you're considering implementing it, I highly recommend reading this article._
+> _UPDATE (3-29-23):_ I Just came across [this excellent piece covering critical CSS](https://csswizardry.com/2022/09/critical-css-not-so-fast/) and how challenging it can be to implement correctly and to maintain it once it's implemented. If you're considering implementing it, I highly recommend reading this article.
 
 But one more thing...what about minifying? We lost that when we moved to external files.
 

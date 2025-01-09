@@ -20,7 +20,7 @@ pageHasCode: true
 
 I just added a feature to the [Firehose page](https://11tybundle.dev/firehose/) of the [11tybundle.dev](https://11tybundle.dev/) site. You can now collapse the list of posts by year. I thought I'd share how the page is built. The collapsing feature has been on my list of things to do, but I was feeling a bit intimidated by it. It turned out to be a lot simpler than I expected. I'm glad I finally got around to it.
 
-[UPDATE]: I should've added an image to show what it looks like. Like this. Note that all of the years default to their "open" state, but I'm displaying 2023 and 2022 in their collapsed state.
+> _UPDATE:_ I should've added an image to show what it looks like. Like this. Note that all of the years default to their "open" state, but I'm displaying 2023 and 2022 in their collapsed state.
 
 <img src="src/assets/img/details-summary-sample.jpg" alt="Showing 2 years of collapsed details element and part of one not collapsed", sizes="100vw">
 
@@ -102,7 +102,7 @@ permalink: /firehose/
 {% endraw %}
 ```
 
-[UPDATE] I forgot to add how simple the CSS for the details element is for this setup.
+> _UPDATE:_ I forgot to add how simple the CSS for the details element is for this setup.
 
 ```css
 /* Firehose details and summary styles */

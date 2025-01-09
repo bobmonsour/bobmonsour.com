@@ -42,25 +42,25 @@ I have a global data file called site.json that has, among other things, a list 
 
 As you can see, the only class on the entire header is one for the little "scroll to top" link that's sitting in the bottom right corner of your browser window.
 
-> UPDATE January 28, 2024: Thanks to [Shiv J.M.](https://shivjm.blog/) (a prolific Discord helper) for some further simplifying recommendations for the CSS. His input is reflected in the CSS below.
+> _UPDATE (1-28-24):_ Thanks to [Shiv J.M.](https://shivjm.blog/) (a prolific Discord helper) for some further simplifying recommendations for the CSS. His input is reflected in the CSS below.
 
 And that kind of simplicity lends itself to very simple CSS. Here's the CSS for the header:
 
 ```css
 header ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  list-style: none;
-  padding: 0;
-  text-align: center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	list-style: none;
+	padding: 0;
+	text-align: center;
 }
 header a {
-  margin: 0;
-  padding: 0 5px;
+	margin: 0;
+	padding: 0 5px;
 }
 header a[aria-current="page"] {
-  background-color: var(--light-accent-color);
+	background-color: var(--light-accent-color);
 }
 ```
 

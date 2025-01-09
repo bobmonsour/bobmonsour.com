@@ -7,9 +7,9 @@ tags:
   - futzing
 ---
 
-**Update #2:** It seems that I once again missed a key result when one eliminates the date field in a post's front matter. It turns out (again, as explicitly mentioned in the [Eleventy docs](https://www.11ty.dev/docs/dates/#collections-out-of-order-when-you-run-eleventy-on-your-server)) that CI environments don't really know what the created date is as the file system creation date, i.e., on my laptop bears no resemblence to the file system at Netlify. So, I dropped back to using "git Created" as the date in my directory data file and all is right in the world...for now, at least.
+> _Update #2:_ It seems that I once again missed a key result when one eliminates the date field in a post's front matter. It turns out (again, as explicitly mentioned in the [Eleventy docs](https://www.11ty.dev/docs/dates/#collections-out-of-order-when-you-run-eleventy-on-your-server)) that CI environments don't really know what the created date is as the file system creation date, i.e., on my laptop bears no resemblence to the file system at Netlify. So, I dropped back to using "git Created" as the date in my directory data file and all is right in the world...for now, at least.
 
-**UPDATE #1:** What I wrote below was rather wrong-headed. What I really needed to do was eliminate the date field in my YAML front matter. Eleventy defaults to the file's creation date if no date is specified. It even states that as plain as day in the docs: _"Created": automatically resolves to the file’s created date (default, this is what is used when date is omitted)._
+> UPDATE #1:_ What I wrote below was rather wrong-headed. What I really needed to do was eliminate the date field in my YAML front matter. Eleventy defaults to the file's creation date if no date is specified. It even states that as plain as day in the docs: _"Created": automatically resolves to the file’s created date (default, this is what is used when date is omitted).\_
 
 So, I just needed to remove the date field from my front matter and everything would sort correctly. Once I did that, all I had to do was change the reference to the date field from "date" to "page.date." I've done that now and everything is working as I originally wanted. Many thanks to Aankhen and Uncenter on the [Eleventy Discord](https://www.11ty.dev/blog/discord/) for nudging me in the right direction.
 

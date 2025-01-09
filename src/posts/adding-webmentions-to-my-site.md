@@ -13,7 +13,7 @@ image:
 pageHasCode: true
 ---
 
-> [UPDATE Oct 1, 2024]: I have since removed webmentions from this site. It's a long story. That said, here is how I had done it back then.
+> _UPDATE (10-1-24):_ I have since removed webmentions from this site. It's a long story. That said, here is how I had done it back then.
 
 [[toc]]
 

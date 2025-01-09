@@ -73,4 +73,4 @@ I'm both nervous and excited by the prospect of being able to hear in my left ea
 
 Well, that's where I am at this point. I suppose that noting the start of this journey commits me to writing about progress along the way. Stay tuned...
 
-> UPDATE: I have opted not to get a cochlear implant, at least for now. I wrote [a note about it](/notes/no-cochlear-implant-yet/).
+> _UPDATE:_ I have opted not to get a cochlear implant, at least for now. I wrote [a note about it](/notes/no-cochlear-implant-yet/).

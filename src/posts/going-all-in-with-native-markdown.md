@@ -137,7 +137,7 @@ const markdownLib = markdownIt(markdownItOptions)
 	.use(markdownItToc, markdownItTocOptions);
 ```
 
-> UPDATE Dec 4, 2024: I forgot to add the one additional line that you need in your eleventy config file to use this markdown library. Here it is:
+> _UPDATE (12-4-24):_ I forgot to add the one additional line that you need in your eleventy config file to use this markdown library. Here it is:
 
 ```javascript
 // Set markdown library
