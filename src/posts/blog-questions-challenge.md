@@ -4,7 +4,7 @@ date: 2025-01-20
 tags:
   - personal
   - blogging
-description: I've been handed off to answer the big questions about my blog. Here goes.
+description: I've been tagged to answer the big blog questions of the day. Here goes.
 keywords: blogging, challenge
 image:
   source: "blog-questions-challenge.jpg"
