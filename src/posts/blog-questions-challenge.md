@@ -41,7 +41,7 @@ I sometimes want to publish immediately after writing something. I will definite
 
 ## What’s Your Favorite Post On Your Blog?
 
-That's a tough one. If I look at the analytics for my site, since installing analytics, the most read post seems to be [this one about my CSS pipeline](/posts/the-evolution-of-my-CSS-pipeline-part-2/). That doesn't answer the question and it'd certainly not my favorite. I'd have to say that my favorite is the one I wrote about [losing my brother to cancer](https://bobmonsour.com/blog/losing-my-brother-to-cancer/). I revisit it from time to time as I often think about him and the impact that he had on my life.
+That's a tough one. If I look at the analytics for my site, since installing analytics, the most read post seems to be [this one about my CSS pipeline](https://bobmonsour.com/blog/the-evolution-of-my-CSS-pipeline-in-eleventy-part-2/). That doesn't answer the question and it'd certainly not my favorite. I'd have to say that my favorite is the one I wrote about [losing my brother to cancer](https://bobmonsour.com/blog/losing-my-brother-to-cancer/). I revisit it from time to time as I often think about him and the impact that he had on my life.
 
 ## Any Future Plans For the Blog?
 
