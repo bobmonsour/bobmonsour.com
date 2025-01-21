@@ -1,6 +1,6 @@
 ---
 title: I might make a Today I Learned / Linked section
-description: I'm considering making a Today I Learned / Linked page.Inspired by Simon Willison's link blog.
+description: I'm considering making a Today I Learned / Linked page. Inspired by Simon Willison's link blog.
 date: 2025-01-20
 tags:
   - blogging
