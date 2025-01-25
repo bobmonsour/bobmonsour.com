@@ -555,18 +555,18 @@
 		"localCover": true
 	},
 	{
-		"title": "The Path to Power",
-		"author": "Robert A. Caro",
-		"ISBN": "9780679729457",
-		"rating": "",
-		"yearRead": "currently"
-	},
-	{
 		"title": "We Were Soldiers Once...and Young",
 		"author": "General Hal Moore",
 		"ISBN": "9780345475817",
 		"buyLink": "buyLink",
 		"rating": "5",
 		"yearRead": "undated"
+	},
+	{
+		"title": "The Path to Power",
+		"author": "Robert A. Caro",
+		"ISBN": "9780679729457",
+		"rating": "",
+		"yearRead": "currently"
 	}
 ]

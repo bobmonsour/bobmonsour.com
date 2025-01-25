@@ -5,8 +5,9 @@ const require = createRequire(import.meta.url);
 const theBooks = require("./books.json");
 
 export default async function () {
-	// generate an object representing the book currently being read
-	const currentBook = theBooks.filter((book) => book.yearRead === "currently");
+	// generate an array representing the books currently being read
+	const currentBooks = theBooks.filter((book) => book.yearRead === "currently");
+	const currentBookCount = currentBooks.length;
 
 	// generate an array of books with dates, excluding the book currently being read
 	const datedBooks = theBooks
@@ -38,7 +39,8 @@ export default async function () {
 	years.push({ year: "undated" });
 
 	return {
-		currentBook,
+		currentBooks,
+		currentBookCount,
 		datedBooks,
 		undatedBooks,
 		years,

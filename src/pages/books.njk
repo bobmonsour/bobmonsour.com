@@ -28,11 +28,12 @@ permalink: /books/
 	{% endfor %}
 </div>
 
-	<h2 class="bookyear">Currently Reading</h2>
-		{% set book = books.currentBook[0] %}
-		<div class="bklist">
-			{% include "bookitem.njk" %}
-		</div>
+<h2 class="bookyear">Currently Reading</h2>
+<div class="bklist">
+	{%- for book in books.currentBooks %}
+		{% include "bookitem.njk" %}
+	{%- endfor %}
+</div>
 
 	{% set previous_year = "" %}
 	{%- for book in books.datedBooks %}
@@ -51,7 +52,6 @@ permalink: /books/
 		{# close the 'bklist' div on the last book in the list #}
 		{% if loop.last %}</div>{% endif %}
 	{%- endfor %}
-</section>
 
 <h2 id="undated" class="bookyear">Undated: don't know when I read these</h2>
 <div class="bklist">

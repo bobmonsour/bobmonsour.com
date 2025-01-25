@@ -15,7 +15,7 @@ permalink: /index.html
 
 There's a little more about me on the [About](/about/) page. And you can find me at one of the many "iconic" links in the footer.
 
-<section class="homegrid">
+<article class="homegrid">
 	<div>
 		<h3>From the <a href="/archive/">Blog...</a></h3>
 		<ul>
@@ -43,8 +43,14 @@ There's a little more about me on the [About](/about/) page. And you can find me
 		</ul>
 	</div>
 	<div>
-		<h3>Currently Reading</h3>
-		{% set book = books.currentBook[0] %}
-		{% include "bookitem.njk" %}
+		<h3>Currently Reading <a href="/books/">(more books)</a></h3>
+		<div class="bklist">
+			{%- for book in books.currentBooks -%}
+				{%- include "bookitem.njk" -%}
+			{%- endfor -%}
+		</div>
 	</div>
-</section>
+<div>
+
+</div>
+</article>
