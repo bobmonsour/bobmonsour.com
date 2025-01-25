@@ -44,8 +44,8 @@ export default function (eleventyConfig) {
 		"src/_redirects",
 	].forEach((path) => eleventyConfig.addPassthroughCopy(path));
 
-	// Generate three collections
-	//	- posts, notes, and a combined collection of those two
+	// Generate four collections
+	//	- posts, notes, tils, and a combined collection of those two
 	// generate the "posts" collection
 	eleventyConfig.addCollection("posts", (collection) => {
 		return [...collection.getFilteredByGlob("./src/posts/*.md")];
@@ -54,10 +54,18 @@ export default function (eleventyConfig) {
 	eleventyConfig.addCollection("notes", (collection) => {
 		return [...collection.getFilteredByGlob("./src/notes/*.md")];
 	});
-	// generate a combined "posts" and "notes" collection
-	eleventyConfig.addCollection("postsandnotes", (collection) => {
+	// generate the "til" collection
+	eleventyConfig.addCollection("til", (collection) => {
+		return [...collection.getFilteredByGlob("./src/til/*.md")];
+	});
+	// generate a combined "posts", "notes", and "til" collection
+	eleventyConfig.addCollection("postsnotestils", (collection) => {
 		return [
-			...collection.getFilteredByGlob(["./src/posts/*.md", "./src/notes/*.md"]),
+			...collection.getFilteredByGlob([
+				"./src/posts/*.md",
+				"./src/notes/*.md",
+				"./src/til/*.md",
+			]),
 		];
 	});
 

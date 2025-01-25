@@ -1,15 +1,14 @@
 ---
 # site comes from _data/site.js
-permalink: /feed.xml
+permalink: /tilfeed.xml
 eleventyExcludeFromCollections: true
 ---
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="/assets/css/feed.xsl"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:base="{{ site.url }}">
   <title>{{ site.title }}</title>
   <subtitle>{{ site.description }}</subtitle>
   <link href="{{ site.url }}{{ permalink }}" rel="self"/>
-  {% set postslist = collections.postsnotestils | reverse %}
+  {% set postslist = collections.til | reverse %}
   <updated>{{ postslist | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
   <id>{{ site.url }}/</id>
   <author>

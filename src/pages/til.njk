@@ -1,0 +1,23 @@
+---
+title: TIL
+description: These are the archives of Bob Monsour's TIL, which captures my 'today I learned, linked, or loved' thoughts, i.e., links to interesting things.
+keywords: retired, web development, eleventy, tennis, today I learned
+image:
+  source: "about-bob.jpg"
+  alt: "a picture of Bob from 2009"
+permalink: /til/
+---
+
+<h1>{{ title }} <span class="parenthetical">(<a href="/tilfeed.xml">RSS</a>, TIL only)</span></h1>
+
+{%- set tillist = collections.til | reverse -%}
+{%- for post in tillist -%}
+	<div class="notes post">
+		<h2><a href="{{ post.url }}">{{ post.data.title }}</a></h2>
+		<p class="blogdate">{{ post.date | formatPostDate }}</p>
+		{% set tagsdata = post.data.tags %}
+    {% include 'taglist.njk' %}
+		<p class="blogdescription">{{ post.data.description | safe }}</p>
+		<hr>
+	</div>
+{%- endfor -%}
