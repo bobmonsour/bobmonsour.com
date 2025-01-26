@@ -6,8 +6,7 @@
 			"title: ${1:Title}",
 			"description: ${2:Description}",
 			"date: ${3: Date}",
-			"tags:",
-			"  - ${4: Tags}",
+			"tags: [${4: Tags}]",
 			"---",
 			"",
 			"$0"
