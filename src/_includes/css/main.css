@@ -410,7 +410,7 @@ iframe[src*="youtube"] {
 	text-align: center;
 }
 .subtitle {
-	font-size: var(--font-size-lg);
+	font-size: var(--font-size-base);
 	font-style: italic;
 	text-align: center;
 }
