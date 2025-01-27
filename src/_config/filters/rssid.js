@@ -13,8 +13,8 @@ function MD5Hash(input) {
 
 export function genRSSId(postTitle, postDate, absolutePostUrl) {
 	if (postDate > hashingStartDate) {
-		let hash = MD5Hash(postTitle);
-		return hash;
+		let tagURIBase = "tag:bobmonsour.com," + postDate + ":";
+		return tagURIBase + MD5Hash(postTitle);
 	} else {
 		return absolutePostUrl;
 	}
