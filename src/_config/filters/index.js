@@ -1,16 +1,19 @@
-import { isCurrentPage } from "./iscurrentpage.js";
-import { getAllTags } from "./getalltags.js";
-import { plainDate, formatPostDate } from "./formatdates.js";
-import { readingTime } from "./readingtime.js";
 import { bookRating } from "./bookrating.js";
+import { genRSSId } from "./rssid.js";
+import { getAllTags } from "./getalltags.js";
+import { isCurrentPage } from "./iscurrentpage.js";
+import { plainDate, formatPostDate, toDateString } from "./formatdates.js";
+import { readingTime } from "./readingtime.js";
 
 const filters = {
-	isCurrentPage,
+	bookRating,
+	genRSSId,
 	getAllTags,
+	isCurrentPage,
 	plainDate,
 	formatPostDate,
 	readingTime,
-	bookRating,
+	toDateString,
 };
 
 export default (eleventyConfig) => {

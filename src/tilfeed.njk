@@ -22,7 +22,8 @@ eleventyExcludeFromCollections: true
     <title>{{ post.data.title }}</title>
     <link href="{{ absolutePostUrl }}"/>
     <updated>{{ post.date | dateToRfc3339 }}</updated>
-    <id>{{ absolutePostUrl }}</id>
+		{% set dateString = post.date | toDateString %}
+		<id>{{ post.data.title | genRSSId(dateString, absolutePostUrl) }}</id>
     <content
       xml:lang="{{ site.locale }}"
       type="html">
