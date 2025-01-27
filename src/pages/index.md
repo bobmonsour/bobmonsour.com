@@ -43,6 +43,19 @@ There's a little more about me on the [About](/about/) page. And you can find me
 		</ul>
 	</div>
 	<div>
+		<h3>From the <a href="/til/">TIL...</a></h3>
+		<ul>
+			{%- set til = collections.til | reverse -%}
+			{%- set last3tils = til.slice(0,3) -%}
+			{%- for post in last3tils -%}
+				<li>
+					<a href="{{ post.url }}">{{ post.data.title }}</a>
+					<p class="blogdate">{{ post.date | formatPostDate }}</p>
+				</li>
+			{%- endfor -%}
+		</ul>
+	</div>
+	<div>
 		<h3>Currently Reading <a href="/books/">(more books)</a></h3>
 		<div class="bklist">
 			{%- for book in books.currentBooks -%}
