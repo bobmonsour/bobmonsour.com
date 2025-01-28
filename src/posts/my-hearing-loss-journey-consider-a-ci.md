@@ -1,16 +1,19 @@
 ---
 title: My hearing loss journey...consider a cochlear implant?
-date: 2024-05-17
+date: 2024-05-17T00:00:00.000Z
 tags:
   - personal
   - health
-description: I'm considering getting a cochlear implant after having lost hearing in my left ear 9 years ago.
+description: >-
+  I'm considering getting a cochlear implant after having lost hearing in my
+  left ear 9 years ago.
 keywords: hearing loss, SSD, cochlear implant
 image:
-  source: "my-hearing-loss-journey.jpg"
-  alt: "a drawing of a person without hearing in their left ear"
-  creditPerson: "behear"
-  creditLink: "https://wearandhear.com/single-sided-deafness-ssd/"
+  source: my-hearing-loss-journey.jpg
+  alt: a drawing of a person without hearing in their left ear
+  creditPerson: behear
+  creditLink: https://wearandhear.com/single-sided-deafness-ssd/
+rssid: 771c4e9f6b07977ed804a506d0343274
 ---
 
 It's been nearly 9 years since I lost the hearing on my left side. To be precise, the hearing on my left side has been replaced by a constant tone of about 3.2kHz. Thankfully, I am able to ignore it most of the time.

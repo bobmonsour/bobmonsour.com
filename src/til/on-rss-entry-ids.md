@@ -1,8 +1,13 @@
 ---
 title: On RSS entry IDs
-description: Evan Sheehan has a great post about why using the URL for a post for its RSS ID is not a good idea.
-date: 2025-01-25
-tags: [blogging, RSSness]
+description: >-
+  Evan Sheehan has a great post about why using the URL for a post for its RSS
+  ID is not a good idea.
+date: 2025-01-25T00:00:00.000Z
+tags:
+  - blogging
+  - RSSness
+rssid: 5eee7abe355ded8f1c16dc91b6dbdd8e
 ---
 
 [In his post](https://darthmall.net/2025/on-the-importance-of-stable-ids/), Evan shares the pitfalls of using a post's URL as the entry ID in the RSS feed. He also provides a solution for how to handle this problem.

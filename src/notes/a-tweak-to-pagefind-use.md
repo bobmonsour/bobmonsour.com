@@ -1,11 +1,14 @@
 ---
 title: A tweak to how I use Pagefind
-description: I use the Pagefind package to add search to my personal site. It was returning way too many result for simple words. I made a small tweak to fix that.
-date: 2024-11-27
+description: >-
+  I use the Pagefind package to add search to my personal site. It was returning
+  way too many result for simple words. I made a small tweak to fix that.
+date: 2024-11-27T00:00:00.000Z
 tags:
   - 11ty
   - futzing
 pageHasCode: true
+rssid: e9cad834df91e57d1ecc2ab65e16890b
 ---
 
 I have been using [Pagefind](https://pagefind.app/) on this site for some time to handle [site search](/search/).

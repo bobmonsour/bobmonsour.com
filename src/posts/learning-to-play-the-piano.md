@@ -1,16 +1,19 @@
 ---
 title: Learning to play the piano
-date: 2023-01-23
+date: 2023-01-23T00:00:00.000Z
 tags:
   - piano
   - personal
-description: It's time for a new learning experience. So this year, I decided to learn to play the piano.
+description: >-
+  It's time for a new learning experience. So this year, I decided to learn to
+  play the piano.
 keywords: piano, learning, chords, new things, play time
 image:
-  source: "learning-to-play-the-piano.jpg"
-  alt: "a man playing a Steinway piano"
-  creditPerson: "Dolo Iglesias"
-  creditLink: "https://unsplash.com/es/@dolodol"
+  source: learning-to-play-the-piano.jpg
+  alt: a man playing a Steinway piano
+  creditPerson: Dolo Iglesias
+  creditLink: https://unsplash.com/es/@dolodol
+rssid: 4e6ca171a33ff3a06bb8efdd999550a1
 ---
 
 [[toc]]

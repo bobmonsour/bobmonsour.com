@@ -1,17 +1,20 @@
 ---
 title: From all Open Props to only Open Props I use
-date: 2022-03-08
+date: 2022-03-08T00:00:00.000Z
 tags:
   - CSS
   - 11ty
-description: Got Open Props working on my site, but wanted to reduce the size of my CSS in production.
+description: >-
+  Got Open Props working on my site, but wanted to reduce the size of my CSS in
+  production.
 keywords: postcss-jit-props, smaller CSS, adam argyle
 image:
-  source: "only-the-open-props-i-use.jpg"
-  alt: "essential love drawn in color on a chalkboard"
-  creditPerson: "Sharon McCutcheon"
-  creditLink: "https://unsplash.com/@sharonmccutcheon"
+  source: only-the-open-props-i-use.jpg
+  alt: essential love drawn in color on a chalkboard
+  creditPerson: Sharon McCutcheon
+  creditLink: https://unsplash.com/@sharonmccutcheon
 pageHasCode: true
+rssid: 22b34fef96511e3ee3a37f0b44848dc7
 ---
 
 > Note: I am no longer using Open Props as I've decided to reduce the number of levels of abstraction that I use to maintain the CSS for this site. I still find it a fascinating tool, but for the size and scope of this project, I am finding it easier to maintain my own set of custom properties for the few things I need them for.

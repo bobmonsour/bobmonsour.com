@@ -1,15 +1,16 @@
 ---
 title: Upgrade 11ty to v3, reorg, ESM, and debug
-date: 2024-06-28
+date: 2024-06-28T00:00:00.000Z
 tags:
   - 11ty
 description: I upgraded to 11ty v3 and proceeded to debug.
 keywords: upgrade, debug, eleventy, 11tybundle.dev, canary
 image:
-  source: "upgrade-and-debug.jpg"
-  alt: "Code snippet for generating data for the 11ty Bundle website"
-  caption: "Opening lines of bundledata.js"
+  source: upgrade-and-debug.jpg
+  alt: Code snippet for generating data for the 11ty Bundle website
+  caption: Opening lines of bundledata.js
 pageHasCode: true
+rssid: ec6b40d70ed55ba1898742629ace3be6
 ---
 
 [[toc]]

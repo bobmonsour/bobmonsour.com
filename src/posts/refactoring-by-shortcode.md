@@ -1,15 +1,18 @@
 ---
 title: Refactoring by shortcode
-date: 2024-02-19
+date: 2024-02-19T00:00:00.000Z
 tags:
   - 11ty
-description: I decided to take on some overdue refactoring of the 11tybundle.dev site. Here's what I did.
+description: >-
+  I decided to take on some overdue refactoring of the 11tybundle.dev site.
+  Here's what I did.
 keywords: refactor, shortcode, 11tybundle.dev
 image:
-  source: "refactoring-by-shortcode.jpg"
-  alt: "A programmer feverishly refactoring some code"
-  caption: "A programmer feverishly refactoring some code"
+  source: refactoring-by-shortcode.jpg
+  alt: A programmer feverishly refactoring some code
+  caption: A programmer feverishly refactoring some code
 pageHasCode: true
+rssid: 0843122d5ee48e1eb64f9f4083c8db6a
 ---
 
 [[toc]]

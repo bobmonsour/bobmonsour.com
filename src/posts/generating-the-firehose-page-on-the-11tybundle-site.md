@@ -1,15 +1,16 @@
 ---
 title: Generating the Firehose page on the 11tybundle site
-date: 2023-11-21
+date: 2023-11-21T00:00:00.000Z
 tags:
   - 11ty
 description: Here's how the Firehose page of the 11tybundle.dev site is built.
 keywords: firehose template, eleventy, 11tybundle.dev
 image:
-  source: "generating-the-firehose-page-on-the-11tybundle-site.jpg"
-  alt: "A notebook of pages"
-  caption: "Some Navy guys holding a firehose on an aircraft carrier"
+  source: generating-the-firehose-page-on-the-11tybundle-site.jpg
+  alt: A notebook of pages
+  caption: Some Navy guys holding a firehose on an aircraft carrier
 pageHasCode: true
+rssid: a4a3cd2c20a8abfefb472200fadb7dc7
 ---
 
 [[toc]]

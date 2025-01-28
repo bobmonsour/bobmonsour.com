@@ -1,16 +1,17 @@
 ---
 title: Calculating reading time for a post
-date: 2022-02-06
+date: 2022-02-06T00:00:00.000Z
 tags:
   - 11ty
 description: Where does that '3 minutes to read' come from?
 keywords: reading time, eleventy, filters
 image:
-  source: "calculating-reading-time-for-a-post.jpg"
-  alt: "a boy reading at sunset"
-  creditPerson: "Aaron Burden"
-  creditLink: "https://unsplash.com/@aaronburden"
+  source: calculating-reading-time-for-a-post.jpg
+  alt: a boy reading at sunset
+  creditPerson: Aaron Burden
+  creditLink: https://unsplash.com/@aaronburden
 pageHasCode: true
+rssid: 8955ec12711ad4249c5f13557010d84f
 ---
 
 Where does that _'3 minutes to read'_ come from?

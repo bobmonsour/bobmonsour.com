@@ -1,10 +1,13 @@
 ---
 title: Final Christmastime Fiddling
-description: I spent the last several days fiddling with this site. I changed the microBlog terminology to call them notes and I built a bookshelf page.
-date: 2024-12-24
+description: >-
+  I spent the last several days fiddling with this site. I changed the microBlog
+  terminology to call them notes and I built a bookshelf page.
+date: 2024-12-24T00:00:00.000Z
 tags:
   - futzing
   - blogging
+rssid: e1f447b2d2cef6071855770f616dcbf1
 ---
 
 I don't know what causes this, but every few weeks or so, I get this urge to do something to this website and I just can't let it go. This time, the big thing that landed was the creation of the [books](/books/) page.

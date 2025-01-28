@@ -1,10 +1,11 @@
 ---
 title: Look Ma, I've styled my RSS feed
 description: I'd seen this done by several people and decided to give it a go.
-date: 2024-12-26
+date: 2024-12-26T00:00:00.000Z
 tags:
   - blogging
   - futzing
+rssid: 64ccdd196123c14e1ea18c56d3f2d055
 ---
 
 What is it about the web that there's this endless, yet wonderful cycle of people showing how they do things? The latest thing I've taken on is styling my [RSS feed](/feed.xml).

@@ -1,16 +1,19 @@
 ---
 title: Dipping my toe in the Open Props water
-date: 2022-02-22
+date: 2022-02-22T00:00:00.000Z
 tags:
   - CSS
-description: I saw the recent launch of Open Props and watched an intro video. I was intrigued, so I dipped my toe in the water.
+description: >-
+  I saw the recent launch of Open Props and watched an intro video. I was
+  intrigued, so I dipped my toe in the water.
 keywords: open props, CSS variables, CSS architecture, adam argyle
 image:
-  source: "dipping-my-toe-in-the-open-props-water.jpg"
-  alt: "a foot near the water at the beach"
-  creditPerson: "carlyn suggs"
-  creditLink: "https://unsplash.com/@carlynsuggs"
+  source: dipping-my-toe-in-the-open-props-water.jpg
+  alt: a foot near the water at the beach
+  creditPerson: carlyn suggs
+  creditLink: https://unsplash.com/@carlynsuggs
 pageHasCode: true
+rssid: ee575f103aea4dbc6af1889959d68fe4
 ---
 
 > Note: I am no longer using Open Props as I've decided to reduce the number of levels of abstraction that I use to maintain the CSS for this site. I still find it a fascinating tool, but for the size and scope of this project, I am finding it easier to maintain my own set of custom properties for the few things I need them for.
@@ -25,31 +28,31 @@ Before I started using Open Props, I organized my variables like this:
 
 ```css
 :root {
-  // Colors
+	// Colors
 
-  --brand-color: #6c584c;
-  --nav-link-color: #6c584c;
-  --nav-underline-color: #a98467;
-  --nav-hover-color: #dde5b6;
-  --footer-background-color: #f0ead2;
-  --social-icon-background-color: #a98467;
+	--brand-color: #6c584c;
+	--nav-link-color: #6c584c;
+	--nav-underline-color: #a98467;
+	--nav-hover-color: #dde5b6;
+	--footer-background-color: #f0ead2;
+	--social-icon-background-color: #a98467;
 
-  // Fonts
+	// Fonts
 
-  --brand-subtitle-font: sans-serif;
-  --body-copy-font: serif;
+	--brand-subtitle-font: sans-serif;
+	--body-copy-font: serif;
 
-  // Fonts sizes
+	// Fonts sizes
 
-  --brand-name-size: 2.5rem;
-  --brand-subtitle-size: 1.25rem;
-  --nav-link-size: 1.75rem;
-  --nav-link-size-mobile: 1.2rem;
-  --post-title-size: 2.5rem;
-  --post-date-size: 1.25rem;
-  --post-excerpt-size: 1.75rem;
-  --body-copy-size: 1.75rem;
-  --footer-copy-size: 1.5rem;
+	--brand-name-size: 2.5rem;
+	--brand-subtitle-size: 1.25rem;
+	--nav-link-size: 1.75rem;
+	--nav-link-size-mobile: 1.2rem;
+	--post-title-size: 2.5rem;
+	--post-date-size: 1.25rem;
+	--post-excerpt-size: 1.75rem;
+	--body-copy-size: 1.75rem;
+	--footer-copy-size: 1.5rem;
 }
 ```
 
@@ -59,37 +62,37 @@ Combining this thinking along with the use of Open Props, I revised the list to 
 
 ```css
 :root {
-  // Brand
+	// Brand
 
-  --brand-name-font: "Caveat", cursive;
-  --brand-color: var(--green-9);
-  --brand-subtitle-font: var(--font-sans);
-  --brand-link-radius: var(radius-blob);
+	--brand-name-font: "Caveat", cursive;
+	--brand-color: var(--green-9);
+	--brand-subtitle-font: var(--font-sans);
+	--brand-link-radius: var(radius-blob);
 
-  // Navigation
+	// Navigation
 
-  --nav-link-color: var(--brand-color);
-  --nav-link-font: var(--font-sans);
-  --nav-link-size: var(--font-size-fluid-2);
-  --nav-underline-color: var(--orange-9);
-  --nav-hover-color: var(--orange-3);
+	--nav-link-color: var(--brand-color);
+	--nav-link-font: var(--font-sans);
+	--nav-link-size: var(--font-size-fluid-2);
+	--nav-underline-color: var(--orange-9);
+	--nav-hover-color: var(--orange-3);
 
-  // Footer
+	// Footer
 
-  --footer-background-color: var(--orange-3);
-  --footer-copy-font: var(--font-sans);
-  --footer-copy-size: var(--font-size-fluid-1);
-  --social-icon-background-color: var(--green-6);
+	--footer-background-color: var(--orange-3);
+	--footer-copy-font: var(--font-sans);
+	--footer-copy-size: var(--font-size-fluid-1);
+	--social-icon-background-color: var(--green-6);
 
-  // Posts
+	// Posts
 
-  --post-body-font: var(--font-serif);
-  --post-body-size: var(--font-size-fluid-1);
-  --post-title-size: var(--font-size-fluid-2);
-  --post-date-size: var(--font-size-fluid-1);
-  --post-excerpt-size: var(--font-size-fluid-1);
-  --post-link-hover-color: var(--nav-hover-color);
-  --post-link-radius: var(radius-blob);
+	--post-body-font: var(--font-serif);
+	--post-body-size: var(--font-size-fluid-1);
+	--post-title-size: var(--font-size-fluid-2);
+	--post-date-size: var(--font-size-fluid-1);
+	--post-excerpt-size: var(--font-size-fluid-1);
+	--post-link-hover-color: var(--nav-hover-color);
+	--post-link-radius: var(radius-blob);
 }
 ```
 

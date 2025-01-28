@@ -1,16 +1,17 @@
 ---
 title: I left Twitter
-date: 2022-12-26
+date: 2022-12-26T00:00:00.000Z
 tags:
   - personal
   - social media
 description: I left the dumpster fire that is Twitter a couple of weeks ago.
 keywords: twitter, dumpster, fire, noise
 image:
-  source: "dumpster-fire.jpg"
-  alt: "firefighter walking away from a dumpster fire"
-  creditPerson: "Arny Mogensen"
-  creditLink: "https://unsplash.com/@arnykoor"
+  source: dumpster-fire.jpg
+  alt: firefighter walking away from a dumpster fire
+  creditPerson: Arny Mogensen
+  creditLink: https://unsplash.com/@arnykoor
+rssid: dcbfc843f5aeecf146f5ddf01df49e27
 ---
 
 I left the dumpster fire that is Twitter a couple of weeks ago.

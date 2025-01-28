@@ -1,6 +1,6 @@
 ---
 title: Is this thing on?
-date: 2022-02-05
+date: 2022-02-05T00:00:00.000Z
 tags:
   - personal
   - 11ty
@@ -8,10 +8,11 @@ tags:
 description: Welcome to the first post of my new site!
 keywords: blog, website, retired, 11ty, eleventy
 image:
-  source: "is-this-thing-on.jpg"
-  alt: "a boy screaming into a microphone"
-  creditPerson: "Jason Rosewell"
-  creditLink: "https://unsplash.com/@jasonrosewell"
+  source: is-this-thing-on.jpg
+  alt: a boy screaming into a microphone
+  creditPerson: Jason Rosewell
+  creditLink: https://unsplash.com/@jasonrosewell
+rssid: 53e3cabd0a529cd41893368498281631
 ---
 
 Welcome to the first post of my new site!

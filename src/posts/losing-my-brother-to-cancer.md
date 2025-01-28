@@ -1,15 +1,20 @@
 ---
 title: Losing my brother to cancer
-date: 2022-04-26
+date: 2022-04-26T00:00:00.000Z
 tags:
   - personal
-description: Feelings of pain, fond memories, and odd coincidences keep me connected to the brother I lost to cancer.
+description: >-
+  Feelings of pain, fond memories, and odd coincidences keep me connected to the
+  brother I lost to cancer.
 keywords: sibling loss, cancer, one-year reflection
 image:
-  source: "losing-my-brother-to-cancer.jpg"
-  alt: "The day we spread my brother's ashes in the Atlantic Ocean"
-  caption: With family and friends on the day we spread Bill's ashes into the Atlantic Ocean, Longport, NJ, September 8, 2019 (I'm 4th from the right)
+  source: losing-my-brother-to-cancer.jpg
+  alt: The day we spread my brother's ashes in the Atlantic Ocean
+  caption: >-
+    With family and friends on the day we spread Bill's ashes into the Atlantic
+    Ocean, Longport, NJ, September 8, 2019 (I'm 4th from the right)
 showImage: true
+rssid: fd8f1a477b36eef86557f3b63564c611
 ---
 
 > _NOTE: I [originally posted this on Medium](https://medium.com/p/6cf46529f207), on August 1st, 2020, one year following Bill's death. I am re-posting it here now that I've built this blog. I've been thinking about him a lot lately...and missing him terribly._

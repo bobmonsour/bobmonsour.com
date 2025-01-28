@@ -1,16 +1,17 @@
 ---
 title: How I built the Books page
-date: 2025-01-02
+date: 2025-01-02T00:00:00.000Z
 tags:
   - 11ty
 description: I went live with my Books page a short while ago. Here's how I built it.
 keywords: books, eleventy
 image:
-  source: "how-i-built-the-books-page.jpg"
-  alt: "The books I read in 2024"
-  creditPerson: ""
-  creditLink: ""
+  source: how-i-built-the-books-page.jpg
+  alt: The books I read in 2024
+  creditPerson: ''
+  creditLink: ''
 pageHasCode: true
+rssid: ffca5528610604f9ac909a0e11310df7
 ---
 
 [[toc]]

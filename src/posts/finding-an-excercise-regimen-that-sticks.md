@@ -1,15 +1,18 @@
 ---
 title: Finding an exercise regimen that sticks
-date: 2023-10-16
+date: 2023-10-16T00:00:00.000Z
 tags:
   - personal
   - health
-description: At 68 years old, it was high time to find an exercise regimen that I could stick with...at least for a while.
+description: >-
+  At 68 years old, it was high time to find an exercise regimen that I could
+  stick with...at least for a while.
 keywords: exercise, fitness, health, personal, kettlebells
 image:
-  source: "finding-an-exercise-regimen-that-sticks.jpg"
-  alt: "My home gym setup, a yoga mat, some kettlebells, and a balance cushion"
-  caption: "My home gym setup: a yoga mat, some kettlebells, and a balance cushion"
+  source: finding-an-exercise-regimen-that-sticks.jpg
+  alt: My home gym setup, a yoga mat, some kettlebells, and a balance cushion
+  caption: 'My home gym setup: a yoga mat, some kettlebells, and a balance cushion'
+rssid: 0c17c9ee5df39ef8ed23b1a162dba907
 ---
 
 [[toc]]

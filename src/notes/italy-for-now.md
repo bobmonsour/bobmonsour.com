@@ -1,9 +1,10 @@
 ---
 title: We're in Italy at the moment
 description: Vacationing in Italy has its upsides, especially following the US election.
-date: 2024-11-14
+date: 2024-11-14T00:00:00.000Z
 tags:
   - travel
+rssid: caa87ed68100c90a679505e977c1cd31
 ---
 
 We left the US on election day, heading to Rome. We spent a few days in Rome, seeing various museums and other historic sites.

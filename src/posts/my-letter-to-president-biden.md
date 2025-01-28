@@ -1,16 +1,19 @@
 ---
 title: My letter to President Biden
-date: 2024-07-03
+date: 2024-07-03T00:00:00.000Z
 tags:
   - personal
   - politics
-description: I wrote this letter to President Biden to express my thoughts on his candidacy for the office of President in 2024.
+description: >-
+  I wrote this letter to President Biden to express my thoughts on his candidacy
+  for the office of President in 2024.
 keywords: election, presidential election, Joe Biden, President, 2024
 image:
-  source: "my-letter-to-president-biden.jpg"
-  alt: "Trump with image of NY Times front page headline"
-  creditPerson: "Markus Spiske"
-  creditLink: "https://unsplash.com/@markusspiske"
+  source: my-letter-to-president-biden.jpg
+  alt: Trump with image of NY Times front page headline
+  creditPerson: Markus Spiske
+  creditLink: https://unsplash.com/@markusspiske
+rssid: 1cc555e48bf82bae48efc2e05c5c8f2a
 ---
 
 > Update (July 22, 2024): I want to express my deep gratitude to President Biden for putting our country over his own personal considerations. His decision to not seek re-election is a testament to his character and his commitment to the country. I am grateful for his service and wish him the best. And I heartily endorse Vice President Harris for President in 2024.

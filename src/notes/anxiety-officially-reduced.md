@@ -1,9 +1,10 @@
 ---
 title: Anxiety officially reduced
 description: After an eventful day, I'm feeling much better...for several reasons.
-date: 2024-11-05
+date: 2024-11-05T00:00:00.000Z
 tags:
   - personal
+rssid: bf800e756a5f5867382e0bab636e39ea
 ---
 
 Well, yesterday day ended well and I feel a helluva lot better. Here's why:

@@ -1,15 +1,18 @@
 ---
 title: My first 30 days of learning to play the piano
-date: 2023-02-04
+date: 2023-02-04T00:00:00.000Z
 tags:
   - piano
   - personal
-description: A brief dive into my journey...with a few stats and a couple of (bad) audio clips.
+description: >-
+  A brief dive into my journey...with a few stats and a couple of (bad) audio
+  clips.
 keywords: 30 days of piano, learning piano
 image:
-  source: "first-30-days-of-piano.jpg"
-  alt: "a man playing a Steinway piano"
-  caption: "Photo by me -- some sheet music and learning materials"
+  source: first-30-days-of-piano.jpg
+  alt: a man playing a Steinway piano
+  caption: Photo by me -- some sheet music and learning materials
+rssid: 5270d28aa94639c1f8d487d9b8e1c040
 ---
 
 [[toc]]

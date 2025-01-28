@@ -1,16 +1,17 @@
 ---
 title: Blog Questions Challenge
-date: 2025-01-20
+date: 2025-01-20T00:00:00.000Z
 tags:
   - personal
   - blogging
 description: I've been tagged to answer the big blog questions of the day. Here goes.
 keywords: blogging, challenge
 image:
-  source: "blog-questions-challenge.jpg"
-  alt: "Person using a macbook"
-  creditPerson: "Glenn Carstens-Peters"
-  creditLink: "https://unsplash.com/@glenncarstenspeters"
+  source: blog-questions-challenge.jpg
+  alt: Person using a macbook
+  creditPerson: Glenn Carstens-Peters
+  creditLink: https://unsplash.com/@glenncarstenspeters
+rssid: 6f92d918ade1dd76c0d0f04d784e95a7
 ---
 
 I was tagged by [Anders Thoresson](https://anders.thoresson.se/post/2025/01/blog-question-challenge-2025/) to answer the challenge. I accepted.

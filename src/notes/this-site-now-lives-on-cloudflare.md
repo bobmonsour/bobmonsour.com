@@ -1,9 +1,12 @@
 ---
 title: This site now lives on Cloudflare
-description: I migrated this site to Cloudflare to reduce the bandwidth demands on my Netlify account. Details later.
-date: 2024-12-19
+description: >-
+  I migrated this site to Cloudflare to reduce the bandwidth demands on my
+  Netlify account. Details later.
+date: 2024-12-19T00:00:00.000Z
 tags:
   - 11ty
+rssid: f604cba1648a611b743cf7194fc46f85
 ---
 
 I read a couple of recent posts about how to move a site from Netlify to Cloudflare. And after my recent bandwidth jump on Netlify, I decided to move about one half of that bandwidth usage, i.e., this site, to Cloudflare. I will write more about this later.

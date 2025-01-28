@@ -1,15 +1,18 @@
 ---
 title: The node CLI scripts of my dreams
-date: 2024-06-05
+date: 2024-06-05T00:00:00.000Z
 tags:
   - 11ty
-description: I built a few node CLI scripts to support management of the 11ty Bundle site database.
+description: >-
+  I built a few node CLI scripts to support management of the 11ty Bundle site
+  database.
 keywords: node CLI, eleventy, 11tybundle.dev
 image:
-  source: "make-bundle-entries.jpg"
-  alt: "A top-level view of a node CLI"
-  caption: "Top-level view of one of my node CLI scripts"
+  source: make-bundle-entries.jpg
+  alt: A top-level view of a node CLI
+  caption: Top-level view of one of my node CLI scripts
 pageHasCode: true
+rssid: 2d1f5f422dbb1ebfcad4a94c21a6767b
 ---
 
 [[toc]]

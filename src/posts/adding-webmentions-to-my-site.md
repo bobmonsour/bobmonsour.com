@@ -1,16 +1,19 @@
 ---
 title: Adding webmentions to my site
-date: 2024-01-13
+date: 2024-01-13T00:00:00.000Z
 tags:
   - 11ty
-description: I had told myself that I wouldn't do this...but, seeing them on other people's sites changed my mind.
+description: >-
+  I had told myself that I wouldn't do this...but, seeing them on other people's
+  sites changed my mind.
 keywords: webmentions, 11ty, eleventy
 image:
-  source: "adding-webmentions-to-my-site.jpg"
-  alt: "a neon sign with a heart and a zero next to it"
-  creditPerson: "Prateek Kayyal"
-  creditLink: "https://unsplash.com/@prateekkatyal"
+  source: adding-webmentions-to-my-site.jpg
+  alt: a neon sign with a heart and a zero next to it
+  creditPerson: Prateek Kayyal
+  creditLink: https://unsplash.com/@prateekkatyal
 pageHasCode: true
+rssid: ff6556711f5aa6e32db71014ba830067
 ---
 
 > _UPDATE (10-1-24):_ I have since removed webmentions from this site. It's a long story. That said, here is how I had done it back then.

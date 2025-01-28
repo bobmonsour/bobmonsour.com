@@ -1,14 +1,17 @@
 ---
 title: Going all in with 'native' markdown
-date: 2024-12-03
+date: 2024-12-03T00:00:00.000Z
 tags:
   - 11ty
-description: I've been typing way too much. There are simpler ways to use markdown for images and tables of contents. Here's how I'm doing it.
+description: >-
+  I've been typing way too much. There are simpler ways to use markdown for
+  images and tables of contents. Here's how I'm doing it.
 keywords: markdown, table of contents, images, eleventy
 image:
-  source: "going-all-in-with-native-markdown.png"
-  alt: "The markdown logo"
+  source: going-all-in-with-native-markdown.png
+  alt: The markdown logo
 pageHasCode: true
+rssid: 04873bf6bbe9a0c8669e86950e117d65
 ---
 
 [[toc]]
