@@ -1,5 +1,5 @@
 ---
-title: Creating permanently unique entry IDs for RSS
+title: Creating quasi-permanently unique entry IDs for RSS
 date: 2025-01-27
 tags: [11ty, RSSness]
 description: I was inspired to create permanently unique entry IDs for my RSS feed after reading a post by Evan Sheehan.
