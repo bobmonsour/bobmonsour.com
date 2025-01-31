@@ -6,6 +6,7 @@ tags:
   - 11ty
   - futzing
 pageHasCode: true
+rssid: b651b52bd0ad9fee94235324aa40b1d3
 ---
 
 I have been using [Pagefind](https://pagefind.app/) on this site for some time to handle [site search](/search/).

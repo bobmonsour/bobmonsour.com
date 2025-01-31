@@ -4,6 +4,7 @@ description: We're still in Italy, but Issue 61 of the 11ty Bundle is shaping up
 date: 2024-11-18
 tags:
   - 11ty
+rssid: 95c8d82eb48d2e4035661c1c803037b7
 ---
 
 We're still in Italy, but Issue 61 of the 11ty Bundle is shaping up to be a doozy.

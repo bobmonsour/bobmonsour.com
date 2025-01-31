@@ -6,10 +6,11 @@ tags:
 description: Here's how the Firehose page of the 11tybundle.dev site is built.
 keywords: firehose template, eleventy, 11tybundle.dev
 image:
-  source: "generating-the-firehose-page-on-the-11tybundle-site.jpg"
-  alt: "A notebook of pages"
-  caption: "Some Navy guys holding a firehose on an aircraft carrier"
+  source: generating-the-firehose-page-on-the-11tybundle-site.jpg
+  alt: A notebook of pages
+  caption: Some Navy guys holding a firehose on an aircraft carrier
 pageHasCode: true
+rssid: 0cb729e8d6cd23b3f5bfb59202b6b2ff
 ---
 
 [[toc]]

@@ -4,6 +4,7 @@ description: I've got a lot of things I want to do, but I can't do them all at o
 date: 2024-11-23
 tags:
   - personal
+rssid: 76d0265788043fe8be96665fd2bb6410
 ---
 
 Well, we've returned from our 2-week trip to Italy. It was a great trip, but now I have to sort out what activities am I going to choose to engage in. Sure, I have a handful of things that fit into my week-to-week routines. Those include things like working out, maintaining the [11ty Bundle website](https://11tybundle.dev), reading the book for our upcoming bookclub meeting, helping keep our house clean, enjoying and outings with my wife.

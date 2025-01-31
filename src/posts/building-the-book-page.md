@@ -6,11 +6,12 @@ tags:
 description: I went live with my Books page a short while ago. Here's how I built it.
 keywords: books, eleventy
 image:
-  source: "how-i-built-the-books-page.jpg"
-  alt: "The books I read in 2024"
-  creditPerson: ""
-  creditLink: ""
+  source: how-i-built-the-books-page.jpg
+  alt: The books I read in 2024
+  creditPerson: ''
+  creditLink: ''
 pageHasCode: true
+rssid: 4ba022221e85feb78c89a8f5b2286df1
 ---
 
 [[toc]]

@@ -6,10 +6,11 @@ tags:
 description: I decided to take on some overdue refactoring of the 11tybundle.dev site. Here's what I did.
 keywords: refactor, shortcode, 11tybundle.dev
 image:
-  source: "refactoring-by-shortcode.jpg"
-  alt: "A programmer feverishly refactoring some code"
-  caption: "A programmer feverishly refactoring some code"
+  source: refactoring-by-shortcode.jpg
+  alt: A programmer feverishly refactoring some code
+  caption: A programmer feverishly refactoring some code
 pageHasCode: true
+rssid: 08c2aabd8e5aad6553af70a4dfa244e9
 ---
 
 [[toc]]

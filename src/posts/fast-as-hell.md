@@ -6,11 +6,12 @@ tags:
 description: I just converted all the images on my site to use the Eleventy Transform capability in v3.0.0 and wow did it slash my local build times.
 keywords: images, build time, eleventy transform, local development
 image:
-  source: "luging-on-dirt.jpg"
-  alt: "looks like a guy riding a luge on a dirt road"
-  creditPerson: "Matthew Brodeur"
-  creditLink: "https://unsplash.com/@mrbrodeur"
+  source: luging-on-dirt.jpg
+  alt: looks like a guy riding a luge on a dirt road
+  creditPerson: Matthew Brodeur
+  creditLink: https://unsplash.com/@mrbrodeur
 pageHasCode: true
+rssid: 7427ee63664534335e4465123dd56d27
 ---
 
 Ever since the Eleventy v3.0.0 came out and the new Eleventy Image plugin came out with the its new [Transform capability](https://www.11ty.dev/docs/plugins/image/#eleventy-transform), I had been wanting to give it a try.

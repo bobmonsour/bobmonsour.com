@@ -6,10 +6,11 @@ tags:
 description: Welcome to my list of defaults!
 keywords: default apps, defaults
 image:
-  source: "my-defaults-are-my-faults.jpg"
-  alt: "WTF in an office setting"
-  creditPerson: "Igor Omilaev"
-  creditLink: "https://unsplash.com/@omilaev"
+  source: my-defaults-are-my-faults.jpg
+  alt: WTF in an office setting
+  creditPerson: Igor Omilaev
+  creditLink: https://unsplash.com/@omilaev
+rssid: 97435745e4582e3e7a40fda50be0808d
 ---
 
 I'm seeing so many create their own list of default apps with Rob Knight's encouragement. Robb is the one who started [this thing](https://defaults.rknight.me/). For your consideratio, I hereby offer my defaults (in no particular order).

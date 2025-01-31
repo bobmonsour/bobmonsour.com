@@ -4,6 +4,7 @@ description: On the eve of the election and international travel, I'm worried ab
 date: 2024-11-04
 tags:
   - personal
+rssid: 0d9ad8f2b36e2c8657ad4c90b731d591
 ---
 
 Just a dump of things I'm anxious about right now:

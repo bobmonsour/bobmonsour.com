@@ -4,6 +4,7 @@ description: I'm considering making a Today I Learned / Linked page. Inspired by
 date: 2025-01-20
 tags:
   - blogging
+rssid: 4f9f5b4588f2fb5346c151faaceca1d0
 ---
 
 **Update: I did make a [TIL](/til/) page.**

@@ -7,11 +7,12 @@ tags:
 description: How I search for, and find, RSS feeds, programmatically.
 keywords: rss, rss feed, eleventy, 11tybundle.dev
 image:
-  source: "got-rss-feeds.jpg"
-  alt: "billboard in a field with the words 'got milk?'"
-  creditPerson: "Christopher Ott"
-  creditLink: "https://unsplash.com/photos/a-sign-in-a-field-that-says-got-milk-kiSLzMLcc7I"
+  source: got-rss-feeds.jpg
+  alt: billboard in a field with the words 'got milk?'
+  creditPerson: Christopher Ott
+  creditLink: https://unsplash.com/photos/a-sign-in-a-field-that-says-got-milk-kiSLzMLcc7I
 pageHasCode: true
+rssid: 6a4973c83cf19e2a0d08d93902f381f4
 ---
 
 [[toc]]

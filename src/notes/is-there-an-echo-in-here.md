@@ -6,6 +6,7 @@ tags:
   - blogging
   - RSSness
   - futzing
+rssid: 9dc4b43c3aa917c15a5271c2a53966e8
 ---
 
 I just heard [Robb Knight](https://rknight.me/) and [John Voorhees](https://www.macstories.net/author/johnvoorhees/) of MacStories, talk more about Robb's [EchoFeed service](https://echofeed.app/). It takes your RSS feed and "echoes" the latest entry to one or more social media or other services. In their [Ruminate podcast](https://ruminatepodcast.com/), it was noted that once you add that "one more" social media account, it becomes a bit more of a pain to post on them individually. EchoFeed solves that by reading your RSS feed and pushing a form of each entry (as you choose, by selecting variables for it to extract from your feed) to the social media accounts you've connected.

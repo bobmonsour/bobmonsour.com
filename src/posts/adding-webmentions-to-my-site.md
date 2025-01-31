@@ -6,11 +6,12 @@ tags:
 description: I had told myself that I wouldn't do this...but, seeing them on other people's sites changed my mind.
 keywords: webmentions, 11ty, eleventy
 image:
-  source: "adding-webmentions-to-my-site.jpg"
-  alt: "a neon sign with a heart and a zero next to it"
-  creditPerson: "Prateek Kayyal"
-  creditLink: "https://unsplash.com/@prateekkatyal"
+  source: adding-webmentions-to-my-site.jpg
+  alt: a neon sign with a heart and a zero next to it
+  creditPerson: Prateek Kayyal
+  creditLink: https://unsplash.com/@prateekkatyal
 pageHasCode: true
+rssid: d15e896fa5d58e7634410867b227c475
 ---
 
 > _UPDATE (10-1-24):_ I have since removed webmentions from this site. It's a long story. That said, here is how I had done it back then.

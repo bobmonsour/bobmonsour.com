@@ -4,6 +4,7 @@ description: My book reading has been all over the map. I'm going to try to deve
 date: 2024-12-21
 tags:
   - personal
+rssid: 4029a985a93fb62c4ace12b0820ab71c
 ---
 
 ![Elderly man reading a book with piles of books in the background](/assets/img/elderly-man-reading-a-book.jpg)

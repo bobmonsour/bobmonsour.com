@@ -6,11 +6,12 @@ tags:
 description: I've been wanting to add search functionality to this site for a while. Pagefind made it simple.
 keywords: site search, pagefind, eleventy
 image:
-  source: "adding-pagefind-to-my-eleventy-personal-site.jpg"
-  alt: "a magnifying glass sitting on a blue surface"
-  creditPerson: "Markus Winkler"
-  creditLink: "https://unsplash.com/@markuswinkler"
+  source: adding-pagefind-to-my-eleventy-personal-site.jpg
+  alt: a magnifying glass sitting on a blue surface
+  creditPerson: Markus Winkler
+  creditLink: https://unsplash.com/@markuswinkler
 pageHasCode: true
+rssid: 8809880c9ec11b73632da668e22aaf99
 ---
 
 [[toc]]

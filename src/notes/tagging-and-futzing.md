@@ -5,6 +5,7 @@ date: 2024-12-08
 tags:
   - blogging
   - futzing
+rssid: b192da2a65d45e58f8ec3c87c5645ee1
 ---
 
 I spent a few hours mulling over this website and _futzing_ with it. I tweaked some CSS to simplify things. And I decided to add more tags to some of my posts. The personal category was a bunch of odd stuff. Those posts also have tags like travel, politics, and health.

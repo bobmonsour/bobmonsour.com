@@ -6,10 +6,11 @@ tags:
 description: I built a few node CLI scripts to support management of the 11ty Bundle site database.
 keywords: node CLI, eleventy, 11tybundle.dev
 image:
-  source: "make-bundle-entries.jpg"
-  alt: "A top-level view of a node CLI"
-  caption: "Top-level view of one of my node CLI scripts"
+  source: make-bundle-entries.jpg
+  alt: A top-level view of a node CLI
+  caption: Top-level view of one of my node CLI scripts
 pageHasCode: true
+rssid: ae7c8fd0f87bb652c17a395c44755b0e
 ---
 
 [[toc]]

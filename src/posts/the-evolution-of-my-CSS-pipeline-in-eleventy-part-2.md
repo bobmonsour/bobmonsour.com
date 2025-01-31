@@ -7,10 +7,11 @@ tags:
 description: Evolution is a continuous phenomenon.
 keywords: CSS, web development, Eleventy, 11ty
 image:
-  source: "the-evolution-of-my-css-pipeline-in-eleventy-part-2.jpg"
-  alt: "a screen containing a jumble of minified CSS"
+  source: the-evolution-of-my-css-pipeline-in-eleventy-part-2.jpg
+  alt: a screen containing a jumble of minified CSS
   caption: A jumble of this site's minified CSS
 pageHasCode: true
+rssid: 9e3ac3aa631a5acbf61c0a25b2488c68
 ---
 
 > Hopefully, you've read [part 1](/posts/the-evolution-of-my-CSS-pipeline-in-Eleventy-part-1/). If not, I'll wait here... also, this post as well as part 1 can be found on the [11ty Bundle](https://11tybundle.dev/) site, a community site for sharing [Eleventy](https://www.11ty.dev/) tips, tricks, and resources. If you're an Eleventy user, I encourage you to [check it out](https://11tybundle.dev/).

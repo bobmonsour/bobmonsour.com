@@ -5,6 +5,7 @@ date: 2024-12-28
 tags:
   - health
   - personal
+rssid: 85c800d8e13a1b682272a7c8c7309d6e
 ---
 
 I had taken the week off from working out to give my joints a much-needed rest. I went back to the gym yesterday and had a pretty good workout. I'm a bit sore today, but that comes with the territory.

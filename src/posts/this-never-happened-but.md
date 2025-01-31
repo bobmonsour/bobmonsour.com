@@ -6,10 +6,11 @@ tags:
 description: The following recounts a very real dream/nightmare that I had in the early morning hours of Jan 4, 2022.
 keywords: nightmare, smoking, Princeton, fiction, writing
 image:
-  source: "cig-smoker.jpg"
-  alt: "a man smoking a cigarette"
-  creditPerson: "Maia Habegger"
-  creditLink: "https://unsplash.com/@maiaalhab"
+  source: cig-smoker.jpg
+  alt: a man smoking a cigarette
+  creditPerson: Maia Habegger
+  creditLink: https://unsplash.com/@maiaalhab
+rssid: 568af2f4202cc1df8d690efea8ea2db8
 ---
 
 > _NOTE: I [originally posted this on Medium](https://medium.com/@bobmonsour/this-never-happened-but-273a2f3415ad), on January 4th, 2022. The version below has some very minor edits._

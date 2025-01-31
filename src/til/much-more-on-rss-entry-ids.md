@@ -2,7 +2,10 @@
 title: Much more to come on RSS entry IDs
 description: I made the effort to adjust how I create ids for each entry in my RSS feeds. There's a fuller blog post in the works.
 date: 2025-01-26
-tags: [blogging, RSSness]
+tags:
+  - blogging
+  - RSSness
+rssid: e1bc37ea180d1188eed1f92825b11253
 ---
 
 I wrote [a TIL the other day](/til/on-rss-entry-ids/) describing how [Evan Sheehan changed how he created IDs](https://darthmall.net/2025/on-the-importance-of-stable-ids/) for each entry in his RSS feed.

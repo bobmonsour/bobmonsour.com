@@ -6,10 +6,11 @@ tags:
 description: Just generating a json file from Google Sheets was not good enough. I had to use the API.
 keywords: Google Sheets, API, 11tybundle.dev
 image:
-  source: "scratch-that-use-google-sheets-api.png"
-  alt: "Google sheet icon on the left, json output on the right"
-  caption: "From Google Sheet to JSON via the API"
+  source: scratch-that-use-google-sheets-api.png
+  alt: Google sheet icon on the left, json output on the right
+  caption: From Google Sheet to JSON via the API
 pageHasCode: true
+rssid: c361e54117971c3a5aae8c2eee08943e
 ---
 
 [[toc]]

@@ -5,6 +5,7 @@ date: 2024-12-26
 tags:
   - health
   - personal
+rssid: ecd5a303f2c3d7577c94bda636500738
 ---
 
 As a follow-up to the post on [considering a cochlear implant](/blog/my-hearing-loss-journey-consider-a-ci/), I have decided to pass on getting one.

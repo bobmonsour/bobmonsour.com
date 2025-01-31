@@ -6,9 +6,10 @@ tags:
 description: I've been typing way too much. There are simpler ways to use markdown for images and tables of contents. Here's how I'm doing it.
 keywords: markdown, table of contents, images, eleventy
 image:
-  source: "going-all-in-with-native-markdown.png"
-  alt: "The markdown logo"
+  source: going-all-in-with-native-markdown.png
+  alt: The markdown logo
 pageHasCode: true
+rssid: 7526bad0fcab5d5d94b9accb4ce281cc
 ---
 
 [[toc]]

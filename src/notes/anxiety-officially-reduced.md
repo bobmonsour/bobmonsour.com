@@ -4,6 +4,7 @@ description: After an eventful day, I'm feeling much better...for several reason
 date: 2024-11-05
 tags:
   - personal
+rssid: 6f92e25481691ec3b8fd3700ac611319
 ---
 
 Well, yesterday day ended well and I feel a helluva lot better. Here's why:

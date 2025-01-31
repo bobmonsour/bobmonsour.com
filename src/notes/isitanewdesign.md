@@ -5,6 +5,7 @@ date: 2024-11-02
 tags:
   - blogging
   - futzing
+rssid: 8cdccdeb98cda4d53f0b48c75533a7bf
 ---
 
 I'd been wanting to redesign my personal website for a while. I've had sketches and ideas, but no will to get started. Then, finally, a couple of days ago, I sat down and started futzing.

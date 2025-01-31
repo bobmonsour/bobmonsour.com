@@ -5,6 +5,7 @@ date: 2024-12-24
 tags:
   - futzing
   - blogging
+rssid: 7eb6e2f95e978f4ce2c79e187cfc022f
 ---
 
 I don't know what causes this, but every few weeks or so, I get this urge to do something to this website and I just can't let it go. This time, the big thing that landed was the creation of the [books](/books/) page.

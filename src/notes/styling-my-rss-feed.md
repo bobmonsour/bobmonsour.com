@@ -5,6 +5,7 @@ date: 2024-12-26
 tags:
   - blogging
   - futzing
+rssid: dd5ddd3b0faadc5d0a1bb1f4c9b6509a
 ---
 
 What is it about the web that there's this endless, yet wonderful cycle of people showing how they do things? The latest thing I've taken on is styling my [RSS feed](/feed.xml).

@@ -6,19 +6,14 @@ tags:
 description: From paid to free, I've moved the 11tybundle.dev data from Airtable to Google Sheets.
 keywords: Airtable, Apps Script, json, 11tybundle.dev
 image:
-  source: "from-airtable-to-google-sheets.jpg"
-  alt: "The top portion of the Google Apps script to export a Google Sheet to json."
-  caption: "A Google Apps script to export a sheet to json."
+  source: from-airtable-to-google-sheets.jpg
+  alt: The top portion of the Google Apps script to export a Google Sheet to json.
+  caption: A Google Apps script to export a sheet to json.
 pageHasCode: true
+rssid: 1bf71227ff2af96d11addf6f56139abe
 ---
 
-<div class='toc'>
-
-## Table of Contents
-
 [[toc]]
-
-</div>
 
 ---
 

@@ -7,10 +7,11 @@ tags:
 description: It's time for a new learning experience. So this year, I decided to learn to play the piano.
 keywords: piano, learning, chords, new things, play time
 image:
-  source: "learning-to-play-the-piano.jpg"
-  alt: "a man playing a Steinway piano"
-  creditPerson: "Dolo Iglesias"
-  creditLink: "https://unsplash.com/es/@dolodol"
+  source: learning-to-play-the-piano.jpg
+  alt: a man playing a Steinway piano
+  creditPerson: Dolo Iglesias
+  creditLink: https://unsplash.com/es/@dolodol
+rssid: 07a57ae937f6882e07e74bf2f3d1ff9b
 ---
 
 [[toc]]

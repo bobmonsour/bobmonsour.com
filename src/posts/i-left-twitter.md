@@ -7,10 +7,11 @@ tags:
 description: I left the dumpster fire that is Twitter a couple of weeks ago.
 keywords: twitter, dumpster, fire, noise
 image:
-  source: "dumpster-fire.jpg"
-  alt: "firefighter walking away from a dumpster fire"
-  creditPerson: "Arny Mogensen"
-  creditLink: "https://unsplash.com/@arnykoor"
+  source: dumpster-fire.jpg
+  alt: firefighter walking away from a dumpster fire
+  creditPerson: Arny Mogensen
+  creditLink: https://unsplash.com/@arnykoor
+rssid: 0ccc9433b0f9f0aaae18e09b7ae65caf
 ---
 
 I left the dumpster fire that is Twitter a couple of weeks ago.

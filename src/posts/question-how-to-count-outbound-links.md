@@ -6,9 +6,10 @@ tags:
 description: I'm in search of a solution to add outbound link tracking to my site for use as a post popularity indicator.
 keywords: 11ty, eleventy, outbound links, link tracking, analytics, popularity
 image:
-  source: "question-how-to-count-outbound-links.jpg"
-  alt: "child playing with abbacus"
+  source: question-how-to-count-outbound-links.jpg
+  alt: child playing with abbacus
 pageHasCode: false
+rssid: 2b584b293b5eab314305d1152f194a82
 ---
 
 > _UPDATE (6-22-23):_ I wrote about how I addressed the question posed here in [Issue 9 of the 11ty Bundle](https://11tybundle.dev/blog/11ty-bundle-9/).

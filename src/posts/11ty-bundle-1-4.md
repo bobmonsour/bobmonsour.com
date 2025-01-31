@@ -6,10 +6,11 @@ tags:
 description: These have been moved to 11tybundle.dev.
 keywords: eleventy, newsletter, roundup, news
 image:
-  source: "11ty-bundle-4.jpg"
-  alt: "an AI-generated image of the number eleven"
-  caption: "An AI-generated image of the number eleven"
+  source: 11ty-bundle-4.jpg
+  alt: an AI-generated image of the number eleven
+  caption: An AI-generated image of the number eleven
 bundleIssue: 4
+rssid: a087c4bf5c3b0603094b86daea6f262d
 ---
 
 > _UPDATE (5-15-23):_ _THE 11ty BUNDLES 1 THROUGH 4 HAVE BEEN MOVED TO [11tybundle.dev](https://11tybundle.dev/blog/)._\*\*

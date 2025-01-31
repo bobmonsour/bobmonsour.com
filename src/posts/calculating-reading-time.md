@@ -6,11 +6,12 @@ tags:
 description: Where does that '3 minutes to read' come from?
 keywords: reading time, eleventy, filters
 image:
-  source: "calculating-reading-time-for-a-post.jpg"
-  alt: "a boy reading at sunset"
-  creditPerson: "Aaron Burden"
-  creditLink: "https://unsplash.com/@aaronburden"
+  source: calculating-reading-time-for-a-post.jpg
+  alt: a boy reading at sunset
+  creditPerson: Aaron Burden
+  creditLink: https://unsplash.com/@aaronburden
 pageHasCode: true
+rssid: dd013d5a19d3ca1a6f377ca6e49124ca
 ---
 
 Where does that _'3 minutes to read'_ come from?

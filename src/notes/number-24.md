@@ -4,6 +4,7 @@ description: We watched Number 24 on Netflix. It was a very moving portrayal of 
 date: 2025-01-06
 tags:
   - Movies
+rssid: 74280084f89d434156c0fa936c389ee8
 ---
 
 My wife and I watched Number 24 yesterday. Borrowing from this imdb description:

@@ -4,6 +4,7 @@ description: Initally a 'note', this is now the first entry in my 'TIL' page for
 date: 2025-01-25
 tags:
   - blogging
+rssid: c9a348335f8e85de5c89c6396f19c55d
 ---
 
 **It turns out that I decided to make this TIL page after all. Note that while these TILs have [their own RSS feed](/tilfeed.xml), these items will also be included in the site's main feed.**

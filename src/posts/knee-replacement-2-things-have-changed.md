@@ -7,9 +7,10 @@ tags:
 description: I had my right knee replaced four years ago. In March 2025, I will have my left knee replaced. What has changed? With me and with the technology of knee replacements.
 keywords: total knee replacement, enter robots, from cemented to cementless
 image:
-  source: "stryker-knee-implant.jpg"
-  alt: "picture of my knee, prior to replacement surgery"
-  caption: "An implant for my left knee will look like this"
+  source: stryker-knee-implant.jpg
+  alt: picture of my knee, prior to replacement surgery
+  caption: An implant for my left knee will look like this
+rssid: dd46da1860c88e03bd20edf80ca69851
 ---
 
 [[toc]]

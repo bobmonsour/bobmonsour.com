@@ -5,6 +5,7 @@ date: 2024-11-02
 tags:
   - blogging
   - futzing
+rssid: 4fd1387a3c8adc4b9281680bf88c5db0
 ---
 
 Now that I've redesigned the home page of this site, I've decided that I want to write more, but in shorter pieces. Hence, this microBlog. I'll still write some longer pieces on the [main blog](/archive/), but this will help me to write more spontaneously and more often. It will be what it will be.

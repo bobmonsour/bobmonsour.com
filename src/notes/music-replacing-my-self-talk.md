@@ -5,6 +5,7 @@ date: 2025-01-15
 tags:
   - health
   - personal
+rssid: 3b28df0f2098dc434009acb216a1f9e1
 ---
 
 About six months ago, I transitioned from working out at home with kettlebells to working out at the club where I used to play tennis (I'd still be playing if my knees would allow it). The club was acquired and they replaced all of the gym equipment with new stuff. So I've been going there as my kettlebells gather dust at home.

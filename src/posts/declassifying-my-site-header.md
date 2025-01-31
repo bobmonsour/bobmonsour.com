@@ -6,11 +6,12 @@ tags:
 description: I've been reviewing my html and css and decided to remove unnecessary classes from my header.
 keywords: CSS, simplify
 image:
-  source: "declassifying-my-site-header.jpg"
-  alt: "an empty classroom with a blackboard and a few chairs"
-  creditPerson: "Ivan Aleksic"
-  creditLink: "https://unsplash.com/@ivalex"
+  source: declassifying-my-site-header.jpg
+  alt: an empty classroom with a blackboard and a few chairs
+  creditPerson: Ivan Aleksic
+  creditLink: https://unsplash.com/@ivalex
 pageHasCode: true
+rssid: 3b3e61cee4f4eae2c170eab2a31304f0
 ---
 
 I've been trying to spend less time on social media, primarily Mastodon. There were too many things that I wanted to learn, but I too often found myself scrolling into oblivion.

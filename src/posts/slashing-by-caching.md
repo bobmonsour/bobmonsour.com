@@ -6,10 +6,11 @@ tags:
 description: I've reduced the build time for the 11ty Bundle site from 30 seconds to 10 seconds. Here's how.
 keywords: caching, build time, 11ty
 image:
-  source: "slashing-by-caching.webp"
-  alt: "the word cache on a printed circuit board"
-  caption: "The word 'cache' on a printed circuit board"
+  source: slashing-by-caching.webp
+  alt: the word cache on a printed circuit board
+  caption: The word 'cache' on a printed circuit board
 pageHasCode: true
+rssid: 67c0ea7c08e595b6099d5d1567035861
 ---
 
 As the [https://11tybundle.dev/](https://11tybundle.dev/) site has grown, so has the build time. It was taking about 30 seconds to build the site. It was getting a bit frustrating to wait for a new build each time I wanted to test a small change. I wanted to see if I could reduce that time.

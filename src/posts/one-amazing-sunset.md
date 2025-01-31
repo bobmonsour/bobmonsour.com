@@ -7,9 +7,10 @@ tags:
 description: Last night's sunset was amazing.
 keywords: sunset, photos, Carmel
 image:
-  source: "sunset5.jpg"
-  alt: "My wife and our dog silhouetted against the sunset"
+  source: sunset5.jpg
+  alt: My wife and our dog silhouetted against the sunset
   caption: My wife, Sandra and our dog Soda in Carmel
+rssid: aca07b9a0919d17a10a0d956c5307182
 ---
 
 We've been spending the last few days in Carmel CA, a truly beautiful place. The beach is our favorite place. Our dog, Soda, can run off leash and play around with all the other dogs and we can get a nice refreshing walk into our day. Yesterday, the sunset was amazing. I took a few photos and wanted to share them.

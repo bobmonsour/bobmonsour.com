@@ -4,6 +4,7 @@ description: Vacationing in Italy has its upsides, especially following the US e
 date: 2024-11-14
 tags:
   - travel
+rssid: c8a62ac8e670680b75f3dd137c2e92e5
 ---
 
 We left the US on election day, heading to Rome. We spent a few days in Rome, seeing various museums and other historic sites.
