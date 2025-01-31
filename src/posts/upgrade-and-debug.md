@@ -1,6 +1,6 @@
 ---
 title: Upgrade 11ty to v3, reorg, ESM, and debug
-date: 2024-06-28T00:00:00.000Z
+date: 2024-06-28
 tags:
   - 11ty
 description: I upgraded to 11ty v3 and proceeded to debug.
@@ -10,7 +10,7 @@ image:
   alt: Code snippet for generating data for the 11ty Bundle website
   caption: Opening lines of bundledata.js
 pageHasCode: true
-rssid: ec6b40d70ed55ba1898742629ace3be6
+rssid: 4a55788ca94a7a09dfc9505e4b97781b
 ---
 
 [[toc]]

@@ -1,10 +1,10 @@
 ---
 title: Happy Thanksgiving 2024
 description: Wishing everyone a happy Thanksgiving. Be safe, be grateful and enjoy the day.
-date: 2024-11-27T00:00:00.000Z
+date: 2024-11-27
 tags:
   - holiday
-rssid: 045c9cfd0476d587efe03724598cba6c
+rssid: 3853a9fe92541e3117c84898116258af
 ---
 
 Wishing everyone a happy Thanksgiving. Be safe, be grateful and enjoy the day.

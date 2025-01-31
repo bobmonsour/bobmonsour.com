@@ -1,17 +1,15 @@
 ---
 title: Question...how to count outbound links and saving that count
-date: 2023-06-04T00:00:00.000Z
+date: 2023-06-04
 tags:
   - 11ty
-description: >-
-  I'm in search of a solution to add outbound link tracking to my site for use
-  as a post popularity indicator.
+description: I'm in search of a solution to add outbound link tracking to my site for use as a post popularity indicator.
 keywords: 11ty, eleventy, outbound links, link tracking, analytics, popularity
 image:
   source: question-how-to-count-outbound-links.jpg
   alt: child playing with abbacus
 pageHasCode: false
-rssid: a8a59e2a4e8ec42e66c4a7f31a1ff5dd
+rssid: 2b584b293b5eab314305d1152f194a82
 ---
 
 > _UPDATE (6-22-23):_ I wrote about how I addressed the question posed here in [Issue 9 of the 11ty Bundle](https://11tybundle.dev/blog/11ty-bundle-9/).

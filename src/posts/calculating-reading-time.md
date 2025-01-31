@@ -1,6 +1,6 @@
 ---
 title: Calculating reading time for a post
-date: 2022-02-06T00:00:00.000Z
+date: 2022-02-06
 tags:
   - 11ty
 description: Where does that '3 minutes to read' come from?
@@ -11,7 +11,7 @@ image:
   creditPerson: Aaron Burden
   creditLink: https://unsplash.com/@aaronburden
 pageHasCode: true
-rssid: 8955ec12711ad4249c5f13557010d84f
+rssid: dd013d5a19d3ca1a6f377ca6e49124ca
 ---
 
 Where does that _'3 minutes to read'_ come from?

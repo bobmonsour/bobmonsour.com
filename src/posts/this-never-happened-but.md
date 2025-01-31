@@ -1,18 +1,16 @@
 ---
 title: This never happened, but...
-date: 2022-04-02T00:00:00.000Z
+date: 2022-04-02
 tags:
   - personal
-description: >-
-  The following recounts a very real dream/nightmare that I had in the early
-  morning hours of Jan 4, 2022.
+description: The following recounts a very real dream/nightmare that I had in the early morning hours of Jan 4, 2022.
 keywords: nightmare, smoking, Princeton, fiction, writing
 image:
   source: cig-smoker.jpg
   alt: a man smoking a cigarette
   creditPerson: Maia Habegger
   creditLink: https://unsplash.com/@maiaalhab
-rssid: de922e125d0b39bf5f1d6c87d957f802
+rssid: 568af2f4202cc1df8d690efea8ea2db8
 ---
 
 > _NOTE: I [originally posted this on Medium](https://medium.com/@bobmonsour/this-never-happened-but-273a2f3415ad), on January 4th, 2022. The version below has some very minor edits._

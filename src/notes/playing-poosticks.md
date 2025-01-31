@@ -1,13 +1,13 @@
 ---
 title: Playing Poosticks
 description: We played Poohsticks on this bridge today.
-date: 2025-01-16T00:00:00.000Z
+date: 2025-01-16
 image:
   source: poohsticks-bridge.jpg
   alt: a wooden bridge in Carmel, CA
 tags:
   - travel
-rssid: f48f3924b7896ad3493efc1134809df8
+rssid: 4048b242da200cb6d5a8278d1d1cdb11
 ---
 
 ![A wooden bridge in Carmel, CA](/assets/img/poohsticks-bridge.jpg)

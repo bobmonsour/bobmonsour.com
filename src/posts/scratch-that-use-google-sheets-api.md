@@ -1,18 +1,16 @@
 ---
 title: Scratch that...use the Google Sheets API
-date: 2023-10-30T00:00:00.000Z
+date: 2023-10-30
 tags:
   - 11ty
-description: >-
-  Just generating a json file from Google Sheets was not good enough. I had to
-  use the API.
+description: Just generating a json file from Google Sheets was not good enough. I had to use the API.
 keywords: Google Sheets, API, 11tybundle.dev
 image:
   source: scratch-that-use-google-sheets-api.png
   alt: Google sheet icon on the left, json output on the right
   caption: From Google Sheet to JSON via the API
 pageHasCode: true
-rssid: 1a31a2241c55fa757735db8b9542e84b
+rssid: c361e54117971c3a5aae8c2eee08943e
 ---
 
 [[toc]]

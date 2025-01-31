@@ -1,19 +1,16 @@
 ---
 title: Knee replacement 2.0, things have changed
-date: 2024-12-01T00:00:00.000Z
+date: 2024-12-01
 tags:
   - personal
   - health
-description: >-
-  I had my right knee replaced four years ago. In March 2025, I will have my
-  left knee replaced. What has changed? With me and with the technology of knee
-  replacements.
+description: I had my right knee replaced four years ago. In March 2025, I will have my left knee replaced. What has changed? With me and with the technology of knee replacements.
 keywords: total knee replacement, enter robots, from cemented to cementless
 image:
   source: stryker-knee-implant.jpg
   alt: picture of my knee, prior to replacement surgery
   caption: An implant for my left knee will look like this
-rssid: c117988bfc4105feea99471e30de77ea
+rssid: dd46da1860c88e03bd20edf80ca69851
 ---
 
 [[toc]]

@@ -1,18 +1,16 @@
 ---
 title: Migrating this site to Cloudflare
-date: 2024-12-16T00:00:00.000Z
+date: 2024-12-16
 tags:
   - 11ty
-description: >-
-  Netlify surprised me with a bandwidth notice, so I've decided to move this
-  site to Cloudflare.
+description: Netlify surprised me with a bandwidth notice, so I've decided to move this site to Cloudflare.
 keywords: migration, Cloudflare, Netlify
 image:
   source: migrating-this-site-to-cloudflare.jpg
   alt: Wildebeests migrating
   creditPerson: Harshil Gudka
   creditLink: https://unsplash.com/@hgudka97
-rssid: f4ebfffdaa2ab53fd9e5d2850109e611
+rssid: 168186f9e31fa390300d442c257ccffd
 ---
 
 I opened my email yesterday morning, only to find this notice from Netlify:

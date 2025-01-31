@@ -1,12 +1,10 @@
 ---
 title: Today I Learned, Linked, or Loved
-description: >-
-  Initally a 'note', this is now the first entry in my 'TIL' page for things
-  that I have Learned, Linked, or Loved..
-date: 2025-01-25T00:00:00.000Z
+description: Initally a 'note', this is now the first entry in my 'TIL' page for things that I have Learned, Linked, or Loved..
+date: 2025-01-25
 tags:
   - blogging
-rssid: 762b4639b8cca91cf9f08ad1eb4b9965
+rssid: c9a348335f8e85de5c89c6396f19c55d
 ---
 
 **It turns out that I decided to make this TIL page after all. Note that while these TILs have [their own RSS feed](/tilfeed.xml), these items will also be included in the site's main feed.**

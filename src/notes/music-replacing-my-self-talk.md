@@ -1,13 +1,11 @@
 ---
 title: Music is replacing my self-talk
-description: >-
-  Ever since I started listening to music while working out, I've noticed that
-  my self-talk has been replaced by the songs I listen to.
-date: 2025-01-15T00:00:00.000Z
+description: Ever since I started listening to music while working out, I've noticed that my self-talk has been replaced by the songs I listen to.
+date: 2025-01-15
 tags:
   - health
   - personal
-rssid: 3731608da193e1cad067ae6fce8a1f72
+rssid: 3b28df0f2098dc434009acb216a1f9e1
 ---
 
 About six months ago, I transitioned from working out at home with kettlebells to working out at the club where I used to play tennis (I'd still be playing if my knees would allow it). The club was acquired and they replaced all of the gym equipment with new stuff. So I've been going there as my kettlebells gather dust at home.

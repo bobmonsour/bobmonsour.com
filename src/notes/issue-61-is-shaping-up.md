@@ -1,12 +1,10 @@
 ---
 title: Issue 61 is shaping up
-description: >-
-  We're still in Italy, but Issue 61 of the 11ty Bundle is shaping up to be a
-  doozy.
-date: 2024-11-18T00:00:00.000Z
+description: We're still in Italy, but Issue 61 of the 11ty Bundle is shaping up to be a doozy.
+date: 2024-11-18
 tags:
   - 11ty
-rssid: 55e6dbd7c153bde1dc82f5da1e70a4b1
+rssid: 95c8d82eb48d2e4035661c1c803037b7
 ---
 
 We're still in Italy, but Issue 61 of the 11ty Bundle is shaping up to be a doozy.

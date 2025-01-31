@@ -1,18 +1,16 @@
 ---
 title: From Airtable to Google Sheets with Some AI
-date: 2023-10-17T00:00:00.000Z
+date: 2023-10-17
 tags:
   - 11ty
-description: >-
-  From paid to free, I've moved the 11tybundle.dev data from Airtable to Google
-  Sheets.
+description: From paid to free, I've moved the 11tybundle.dev data from Airtable to Google Sheets.
 keywords: Airtable, Apps Script, json, 11tybundle.dev
 image:
   source: from-airtable-to-google-sheets.jpg
   alt: The top portion of the Google Apps script to export a Google Sheet to json.
   caption: A Google Apps script to export a sheet to json.
 pageHasCode: true
-rssid: e5e34ce7192a51081e92bacb7ba6ae04
+rssid: 1bf71227ff2af96d11addf6f56139abe
 ---
 
 [[toc]]

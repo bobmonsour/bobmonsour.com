@@ -1,6 +1,6 @@
 ---
 title: Blog Questions Challenge
-date: 2025-01-20T00:00:00.000Z
+date: 2025-01-20
 tags:
   - personal
   - blogging
@@ -11,7 +11,7 @@ image:
   alt: Person using a macbook
   creditPerson: Glenn Carstens-Peters
   creditLink: https://unsplash.com/@glenncarstenspeters
-rssid: 6f92d918ade1dd76c0d0f04d784e95a7
+rssid: d3e4c1e35ba31c646d6f933a1d18f8be
 ---
 
 I was tagged by [Anders Thoresson](https://anders.thoresson.se/post/2025/01/blog-question-challenge-2025/) to answer the challenge. I accepted.

@@ -1,6 +1,6 @@
 ---
 title: How I built the Books page
-date: 2025-01-02T00:00:00.000Z
+date: 2025-01-02
 tags:
   - 11ty
 description: I went live with my Books page a short while ago. Here's how I built it.
@@ -11,7 +11,7 @@ image:
   creditPerson: ''
   creditLink: ''
 pageHasCode: true
-rssid: ffca5528610604f9ac909a0e11310df7
+rssid: 4ba022221e85feb78c89a8f5b2286df1
 ---
 
 [[toc]]

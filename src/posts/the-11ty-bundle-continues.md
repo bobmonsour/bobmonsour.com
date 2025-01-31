@@ -1,6 +1,6 @@
 ---
 title: The 11ty Bundle continues - A year in review
-date: 2024-05-01T00:00:00.000Z
+date: 2024-05-01
 tags:
   - 11ty
 showImage: true
@@ -10,7 +10,7 @@ image:
   source: the-11ty-bundle-continues.avif
   alt: an early sketch of the 11ty bundle website design
   caption: An early sketch of the 11ty Bundle website design
-rssid: d195f5ad83078b578b2b7a7c4b76911b
+rssid: 68b1ece88a2519560e0e24c40040b3b3
 ---
 
 The [11ty Bundle](https://11tybundle.dev/) website launched one year ago today. I'm still doing it. I'm still writing posts (check out [Issue 41, the latest](https://11tybundle.dev/blog/11ty-bundle-41/)), still adding features, still tweaking the design. I'm still enjoying it.

@@ -1,11 +1,9 @@
 ---
 title: Dipping my toe in the Open Props water
-date: 2022-02-22T00:00:00.000Z
+date: 2022-02-22
 tags:
   - CSS
-description: >-
-  I saw the recent launch of Open Props and watched an intro video. I was
-  intrigued, so I dipped my toe in the water.
+description: I saw the recent launch of Open Props and watched an intro video. I was intrigued, so I dipped my toe in the water.
 keywords: open props, CSS variables, CSS architecture, adam argyle
 image:
   source: dipping-my-toe-in-the-open-props-water.jpg
@@ -13,7 +11,7 @@ image:
   creditPerson: carlyn suggs
   creditLink: https://unsplash.com/@carlynsuggs
 pageHasCode: true
-rssid: ee575f103aea4dbc6af1889959d68fe4
+rssid: 168bf3a2baa50c320552a6314a101ec6
 ---
 
 > Note: I am no longer using Open Props as I've decided to reduce the number of levels of abstraction that I use to maintain the CSS for this site. I still find it a fascinating tool, but for the size and scope of this project, I am finding it easier to maintain my own set of custom properties for the few things I need them for.

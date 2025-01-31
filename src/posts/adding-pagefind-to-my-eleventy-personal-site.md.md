@@ -1,11 +1,9 @@
 ---
 title: Adding pagefind to my Eleventy personal site
-date: 2023-12-06T00:00:00.000Z
+date: 2023-12-06
 tags:
   - 11ty
-description: >-
-  I've been wanting to add search functionality to this site for a while.
-  Pagefind made it simple.
+description: I've been wanting to add search functionality to this site for a while. Pagefind made it simple.
 keywords: site search, pagefind, eleventy
 image:
   source: adding-pagefind-to-my-eleventy-personal-site.jpg
@@ -13,7 +11,7 @@ image:
   creditPerson: Markus Winkler
   creditLink: https://unsplash.com/@markuswinkler
 pageHasCode: true
-rssid: 937f00a2913ef0574f37e02b65368793
+rssid: 8809880c9ec11b73632da668e22aaf99
 ---
 
 [[toc]]

@@ -1,6 +1,6 @@
 ---
 title: The evolution of my CSS pipeline in Eleventy (part 2)
-date: 2023-03-26T00:00:00.000Z
+date: 2023-03-26
 tags:
   - CSS
   - 11ty
@@ -11,7 +11,7 @@ image:
   alt: a screen containing a jumble of minified CSS
   caption: A jumble of this site's minified CSS
 pageHasCode: true
-rssid: 71aa231534470fb7f95da09ffe6c050c
+rssid: 9e3ac3aa631a5acbf61c0a25b2488c68
 ---
 
 > Hopefully, you've read [part 1](/posts/the-evolution-of-my-CSS-pipeline-in-Eleventy-part-1/). If not, I'll wait here... also, this post as well as part 1 can be found on the [11ty Bundle](https://11tybundle.dev/) site, a community site for sharing [Eleventy](https://www.11ty.dev/) tips, tricks, and resources. If you're an Eleventy user, I encourage you to [check it out](https://11tybundle.dev/).

@@ -1,12 +1,10 @@
 ---
 title: Trying to develop a new reading habit
-description: >-
-  My book reading has been all over the map. I'm going to try to develop a more
-  consistent habit.
-date: 2024-12-21T00:00:00.000Z
+description: My book reading has been all over the map. I'm going to try to develop a more consistent habit.
+date: 2024-12-21
 tags:
   - personal
-rssid: edbf9be778dfe43e3b6fd52c539fe12c
+rssid: 4029a985a93fb62c4ace12b0820ab71c
 ---
 
 ![Elderly man reading a book with piles of books in the background](/assets/img/elderly-man-reading-a-book.jpg)

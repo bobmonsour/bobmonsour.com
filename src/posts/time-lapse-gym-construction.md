@@ -1,18 +1,15 @@
 ---
 title: Time-lapse gym construction
-date: 2024-03-15T00:00:00.000Z
+date: 2024-03-15
 tags:
   - personal
-description: >-
-  Way back in 2005-06, I helped a young school generate a time-lapse video of
-  the construction of their new gymnasium. It was a fun project and I'm glad to
-  have been a part of it.
+description: Way back in 2005-06, I helped a young school generate a time-lapse video of the construction of their new gymnasium. It was a fun project and I'm glad to have been a part of it.
 keywords: video, time lapse, gym, construction, ftp
 image:
   source: time-lapse-gym-construction.jpg
   alt: the insides of a construction site for a new gymnasium
   caption: The insides of a construction site for a new gymnasium
-rssid: c5eefc2ce3288a89b2c7b7f4b517b611
+rssid: 5cd7c9072e4ed41be269273a6c6a6339
 ---
 
 Inspired by the mention of time-lapse films by [Sara Joy](https://sarajoy.dev/) in Manuel Moreale's [interview with her](https://manuelmoreale.com/pb-sara-joy) (part of his People & Blogs series), I thought I'd share a story about a time-lapse project that I was involved with back in 2005-06.

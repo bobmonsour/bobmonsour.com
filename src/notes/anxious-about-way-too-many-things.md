@@ -1,12 +1,10 @@
 ---
 title: I'm currently anxious about way too many things
-description: >-
-  On the eve of the election and international travel, I'm worried about a lot
-  of stuff.
-date: 2024-11-04T00:00:00.000Z
+description: On the eve of the election and international travel, I'm worried about a lot of stuff.
+date: 2024-11-04
 tags:
   - personal
-rssid: 9ca1ff836569e35142f6b948a194ec3d
+rssid: 0d9ad8f2b36e2c8657ad4c90b731d591
 ---
 
 Just a dump of things I'm anxious about right now:

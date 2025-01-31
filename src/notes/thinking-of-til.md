@@ -1,12 +1,10 @@
 ---
 title: I might make a Today I Learned / Linked section
-description: >-
-  I'm considering making a Today I Learned / Linked page. Inspired by Simon
-  Willison's link blog.
-date: 2025-01-20T00:00:00.000Z
+description: I'm considering making a Today I Learned / Linked page. Inspired by Simon Willison's link blog.
+date: 2025-01-20
 tags:
   - blogging
-rssid: 2297c4729b25cd526dbdf4d8cc37e766
+rssid: 4f9f5b4588f2fb5346c151faaceca1d0
 ---
 
 **Update: I did make a [TIL](/til/) page.**

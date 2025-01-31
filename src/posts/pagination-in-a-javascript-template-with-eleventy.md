@@ -1,18 +1,16 @@
 ---
 title: Pagination in a Javascript template with Eleventy
-date: 2023-10-31T00:00:00.000Z
+date: 2023-10-31
 tags:
   - 11ty
-description: >-
-  Here I use a javascript template to generate json data files for selected
-  categories of the 11tybundle.dev site.
+description: Here I use a javascript template to generate json data files for selected categories of the 11tybundle.dev site.
 keywords: Javascript template, eleventy, 11tybundle.dev
 image:
   source: pagination-in-a-javacsript-template-with-eleventy.jpg
   alt: A notebook of pages
   caption: A notebook of pages while paginating
 pageHasCode: true
-rssid: 74b997943a7eeaa7119e06269799f303
+rssid: 463c70be1a806ae4369b4e93acd6aa9a
 ---
 
 [[toc]]

@@ -1,6 +1,6 @@
 ---
 title: Is this thing on?
-date: 2022-02-05T00:00:00.000Z
+date: 2022-02-05
 tags:
   - personal
   - 11ty
@@ -12,7 +12,7 @@ image:
   alt: a boy screaming into a microphone
   creditPerson: Jason Rosewell
   creditLink: https://unsplash.com/@jasonrosewell
-rssid: 53e3cabd0a529cd41893368498281631
+rssid: c47797694f08519dd3d613037e90b499
 ---
 
 Welcome to the first post of my new site!

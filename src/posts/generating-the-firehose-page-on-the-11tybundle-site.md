@@ -1,6 +1,6 @@
 ---
 title: Generating the Firehose page on the 11tybundle site
-date: 2023-11-21T00:00:00.000Z
+date: 2023-11-21
 tags:
   - 11ty
 description: Here's how the Firehose page of the 11tybundle.dev site is built.
@@ -10,7 +10,7 @@ image:
   alt: A notebook of pages
   caption: Some Navy guys holding a firehose on an aircraft carrier
 pageHasCode: true
-rssid: a4a3cd2c20a8abfefb472200fadb7dc7
+rssid: 0cb729e8d6cd23b3f5bfb59202b6b2ff
 ---
 
 [[toc]]

@@ -1,13 +1,11 @@
 ---
 title: I'm really not enjoying these afib episodes
-description: >-
-  I had my 7th afib episode of 2024. It took longer that usual to convert back
-  to normal sinus rhythm. I'm really not enjoying these afib episodes.
-date: 2024-12-28T00:00:00.000Z
+description: I had my 7th afib episode of 2024. It took longer that usual to convert back to normal sinus rhythm. I'm really not enjoying these afib episodes.
+date: 2024-12-28
 tags:
   - health
   - personal
-rssid: 13d4a24a6563a618730636750d968371
+rssid: 85c800d8e13a1b682272a7c8c7309d6e
 ---
 
 I had taken the week off from working out to give my joints a much-needed rest. I went back to the gym yesterday and had a pretty good workout. I'm a bit sore today, but that comes with the territory.

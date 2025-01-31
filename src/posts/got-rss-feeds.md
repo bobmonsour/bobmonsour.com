@@ -1,6 +1,6 @@
 ---
 title: Got RSS Feeds?
-date: 2024-06-11T00:00:00.000Z
+date: 2024-06-11
 tags:
   - 11ty
   - RSSness
@@ -12,7 +12,7 @@ image:
   creditPerson: Christopher Ott
   creditLink: https://unsplash.com/photos/a-sign-in-a-field-that-says-got-milk-kiSLzMLcc7I
 pageHasCode: true
-rssid: a4c64724b664134ee005cef2a9bf921c
+rssid: 6a4973c83cf19e2a0d08d93902f381f4
 ---
 
 [[toc]]
