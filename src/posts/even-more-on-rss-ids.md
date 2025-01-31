@@ -3,9 +3,12 @@ title: My last word on RSS entry IDs
 description: In an effort to create more robust and truly unique and permanent IDs for my RSS feed entries, I built a thing to help.
 date: 2025-01-30
 image:
-  source: "creating-permanently-unique-entry-id-for-rss.png"
-  alt: "Icon for RSS feeds"
-tags: [blogging, RSSness]
+  source: creating-permanently-unique-entry-id-for-rss.png
+  alt: Icon for RSS feeds
+tags:
+  - blogging
+  - RSSness
+rssid: 536734acd12c6a20d71296673361307a
 ---
 
 As has been pointed out to me, the IDs I was using for my RSS feed entries were not as permanently unique and robust as they could be.

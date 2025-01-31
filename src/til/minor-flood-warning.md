@@ -2,7 +2,10 @@
 title: Prepare for a minor flood of RSS entries
 description: I have changed the way that I create IDs in my RSS feeds. As a result, there will be a flood of new entries in your feed reader.
 date: 2025-01-31
-tags: [blogging, RSSness]
+tags:
+  - blogging
+  - RSSness
+rssid: 1aa4a2aa13e2df7bac2cdd5f9fa15a7e
 ---
 
 As I have written, several times over the last few days, I've made a change to the way that I create IDs for my RSS feed entries.
