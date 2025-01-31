@@ -19,6 +19,11 @@ export const isCurrentPage = (linkText, pageUrl) => {
 				return 'aria-current="page"';
 			}
 			break;
+		case "til":
+			if (pageUrl.includes("/til/")) {
+				return 'aria-current="page"';
+			}
+			break;
 		case "books":
 			if (pageUrl.includes("/books/")) {
 				return 'aria-current="page"';
