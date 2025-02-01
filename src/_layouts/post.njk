@@ -1,14 +1,7 @@
 ---
 layout: default.njk
 ---
-{# only include syntax highlighter CSS on blog posts that have code #}
-{% if pageHasCode %}
-  {%- css "pageHasCode" %}
-    {% include "css/prism-okaidia.css" %}
-  {% endcss %}
-{% endif %}
-
-{% include "rssid-check.njk" %}
+{% include "check-for-code.njk" %}
 
 <article class="post flow" data-pagefind-body>
   <div class="post-metadata">
