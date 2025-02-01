@@ -22,7 +22,7 @@ At first, I took the approach of testing for its presence in the Nunjucks, forci
 
 That was not good enough for me. I wanted the build to fail and give me an error message indicating so along with the filename of the offending file.
 
-I posted a question on the Discord server and got a couple of good ideas. One was to use a custom 11ty preprocessor to check for the presence of the `rssid` in the front matter. When I first tried this, it seemed that it would be unable to have it focus on the particular directories of interest and would end up including all of the `.md` and `.njk` files in the build process. That was not what I wanted.
+I posted a question on the Discord server and got a couple of good ideas. One was to use a custom [11ty preprocessor](https://www.11ty.dev/docs/config-preprocessors/) to check for the presence of the `rssid` in the front matter. When I first tried this, it seemed that it would be unable to have it focus on the particular directories of interest and would end up including all of the `.md` and `.njk` files in the build process. That was not what I wanted.
 
 When I pointed this out, I learned that the `data.page.inputPath` was available. So, I could use that to only check the files in the directories that I wanted. This worked perfectly.
 
