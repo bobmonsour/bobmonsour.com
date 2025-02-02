@@ -2,7 +2,7 @@
 import "dotenv/config";
 
 // utils
-import addRSSid from "./src/_config/utils/addRSSid.js";
+import addrssid from "./src/_config/utils/addrssid.js";
 
 // filters
 import filters from "./src/_config/filters/index.js";
@@ -115,15 +115,7 @@ export default function (eleventyConfig) {
 		const dirs = ["/posts/", "/notes/", "/til/"];
 		const containsDirs = dirs.some((word) => inputPath.includes(word));
 		if (containsDirs && typeof data.rssid != "string") {
-			console.error(
-				"\x1b[31m%s\x1b[0m",
-				"ERROR: missing rssid in file " + data.page.inputPath
-			);
-			console.log(
-				"\x1b[31m%s\x1b[0m",
-				"Run the command: rssid -a -f=" + data.page.inputPath
-			);
-			process.exit(1);
+			data.rssid = addrssid(inputPath);
 		}
 	});
 
@@ -139,3 +131,13 @@ export default function (eleventyConfig) {
 		},
 	};
 }
+
+// console.error(
+// 	"\x1b[31m%s\x1b[0m",
+// 	"ERROR: missing rssid in file " + data.page.inputPath
+// );
+// console.log(
+// 	"\x1b[31m%s\x1b[0m",
+// 	"Run the command: rssid -a -f=" + data.page.inputPath
+// );
+// process.exit(1);
