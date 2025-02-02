@@ -14,7 +14,7 @@ And you thought I was done with all this RSS entry ID business. Not so fast.
 
 Once I got things working the way I wanted, I had forgotten one key part of the process.
 
-Each time I created a new blog post, note, or TIL, I would have to run the `rssid` node script that I wrote about earlier before building the site. Needless to say, on the first post that I wrote after doing all this, I forgot to do just that.
+Each time I created a new blog post, note, or TIL, I would have to run the [rssid node script](https://github.com/bobmonsour/rssid#rssid-generating-permanent-and-unique-rss-entry-ids) that [I wrote about earlier](/blog/even-more-on-rss-ids/) before building the site. Needless to say, on the first post that I wrote after doing all this, I forgot to do just that.
 
 So, what I realized is that I really wanted the build to fail if the `rssid` was missing from the front matter of my posts.
 
