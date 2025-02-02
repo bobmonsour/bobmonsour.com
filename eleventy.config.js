@@ -1,6 +1,9 @@
 // environment variable handling
 import "dotenv/config";
 
+// utils
+import addRSSid from "./src/_config/utils/addRSSid.js";
+
 // filters
 import filters from "./src/_config/filters/index.js";
 
