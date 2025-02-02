@@ -7,6 +7,8 @@ tags:
 rssid: bbe99b26232eac2f9daf1b4585890714
 ---
 
+> Update: Here's a [list of all of the executive orders issued by Trump in 2025](https://www.federalregister.gov/presidential-documents/executive-orders/donald-trump/2025).
+
 `<start rant>`
 
 Here's a list of just some of the destructive things that the Trump administration has done in the few short days since the inauguration...in no particular order:
