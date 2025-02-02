@@ -103,13 +103,17 @@ export default function (eleventyConfig) {
 
 	// Config the bundle for CSS
 	eleventyConfig.addBundle("css");
-	// eleventyConfig.addBundle("pageHasCode");
 
 	// Set markdown library
 	eleventyConfig.setLibrary("md", markdownLib);
 
 	eleventyConfig.setQuietMode(true);
 
+	// Preprocess all posts, notes, and TILs, checking for the presence
+	// of an rssid item in the front matter; if none is presence, it is
+	// added to the data and written to the file. Thus, the rssid, which
+	// is a unique RSS entry ID is generated once at initial creation of
+	// the post, note, or TIL.
 	eleventyConfig.addPreprocessor("rssid", "njk,md", (data, content) => {
 		const inputPath = data.page.inputPath;
 		const dirs = ["/posts/", "/notes/", "/til/"];
@@ -131,13 +135,3 @@ export default function (eleventyConfig) {
 		},
 	};
 }
-
-// console.error(
-// 	"\x1b[31m%s\x1b[0m",
-// 	"ERROR: missing rssid in file " + data.page.inputPath
-// );
-// console.log(
-// 	"\x1b[31m%s\x1b[0m",
-// 	"Run the command: rssid -a -f=" + data.page.inputPath
-// );
-// process.exit(1);
