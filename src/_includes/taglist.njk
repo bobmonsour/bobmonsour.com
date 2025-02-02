@@ -7,5 +7,6 @@
     {%- set tagUrl -%}/tags/{{ tag | slugify }}/{%- endset -%}
     <li><a href="{{ tagUrl }}" class="post-tag">{{ tag }}</a>&nbsp;&nbsp;</li>
   {%- endfor -%}
-  <li><a href="/tags/">All Tags</a></li>
+  <li><a href="/tags/">All Tags</a></li>&nbsp;&nbsp;
+  <li><a href="/search/" class="post-tag">Search</a></li>
 </ul>

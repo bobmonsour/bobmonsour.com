@@ -17,5 +17,6 @@ image:
     {% set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
 	    <li><a href="{{ tagUrl }}" class="post-tag">{{ tag }}</a></li>
   {% endfor %}
+	    <li><strong><a href="/search/" class="post-tag">SEARCH</a></strong></li>
   </ul>
 </div>

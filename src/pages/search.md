@@ -1,4 +1,5 @@
 ---
+layout: plain.njk
 title: Search
 description: Search
 keywords: search
