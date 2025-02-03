@@ -114,12 +114,3 @@ import addrssid from "./src/_config/utils/addrssid.js";
 ```
 
 So this is the fourth post after writing that it was _"My last word on RSS entry IDs."_ Go figure.
-
-## Related posts
-
-- [On RSS entry IDs](/til/on-rss-entry-ids/), _Jan 25, 2025_
-- [Much more to come on RSS entry IDs](/til/much-more-to-come-on-rss-entry-ids/), _Jan 26, 2025_
-- [Creating quasi-permanently unique entry IDs for RSS](/blog/creating-permanently-unique-entry-id-for-rss/), _Jan 27, 2025_
-- [My last word on RSS entry IDs](/blog/even-more-on-rss-ids/), _Jan 30, 2025_
-- [Prepare for a minor flood of RSS entries](/til/prepare-for-a-minor-flood-of-rss-entries/), _Jan 31, 2025_
-- [I wanted to validate the presence of an rssid in my front matter](/til/i-wanted-to-validate-the-presence-of-an-rssid-in-my-front-matter/), _Feb 1, 2025_

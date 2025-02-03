@@ -169,13 +169,14 @@ img[width][height] {
 }
 .post-taglist {
 	display: flex;
+	font-size: var(--font-size-base);
 	justify-content: center;
 	list-style: none;
 	margin-block: 0.25em;
 	padding: 0;
 }
 div.notes > ul {
-	font-size: var(--font-size-base);
+	font-size: var(--font-size-md);
 	justify-content: left;
 }
 .tagged-taglist {
