@@ -45,7 +45,11 @@ a:is(:hover, :focus) {
 }
 
 ol {
+	font-size: var(--font-size-md);
 	margin: var(--space-m) auto;
+}
+ul {
+	font-size: var(--font-size-md);
 }
 li {
 	margin-block-end: var(--space-s);
@@ -176,7 +180,6 @@ img[width][height] {
 	padding: 0;
 }
 div.notes > ul {
-	font-size: var(--font-size-md);
 	justify-content: left;
 }
 .tagged-taglist {
