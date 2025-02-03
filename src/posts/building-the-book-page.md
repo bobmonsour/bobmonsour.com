@@ -241,7 +241,7 @@ Finally, the best part of this is that I'm a bit more motivated to read. I've st
 
 > _"UPDATE:"_ The change from Amazon to Bookshop.org, while a first time pain, will make entering info for new books simpler. I will no longer have to go to Amazon to get an affiliate link as it can be easily constructed using the ISBN. As for cover images, I will occasionally have to download cover images. But I've got a pretty easy manual process for that.
 
-> _"UPDATE"_ In anticipation of presenting this topic at the [Eleventy Meetup](https://11tymeetup.dev/events/ep-21-book-pages-and-privacy-first-analytics/), I am adding several samples of other book pages built with 11ty (alpha by first name). And for three of those, I'm sharing their blog posts about how they built them.
+> _"UPDATE"_ In anticipation of presenting this topic at the [Eleventy Meetup](https://11tymeetup.dev/events/ep-21-book-pages-and-privacy-first-analytics/), I am adding several samples of other book pages built with 11ty (alpha by first name).
 
 - [Chazz Basuta's books](https://thisguise.wtf/bookshelf/) and [how he built it](https://thisguise.wtf/blog/2024/12/06/building-a-goodreads-bookshelf-for-11ty/)
 - [Cory Dransfeldt's books](https://coryd.dev/books/) and [how he built it](https://coryd.dev/posts/2024/building-out-a-books-page/)
