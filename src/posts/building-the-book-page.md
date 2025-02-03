@@ -8,8 +8,8 @@ keywords: books, eleventy
 image:
   source: how-i-built-the-books-page.jpg
   alt: The books I read in 2024
-  creditPerson: ''
-  creditLink: ''
+  creditPerson: ""
+  creditLink: ""
 pageHasCode: true
 rssid: 4ba022221e85feb78c89a8f5b2286df1
 ---
@@ -240,3 +240,11 @@ What I also find interesting is that as I was writing this up yesterday and toda
 Finally, the best part of this is that I'm a bit more motivated to read. I've started a morning habit where I have my morning coffee while reading 25 pages of whatever book that I'm currently reading. I do not sit down in my office until those 25 pages are in the bag. It's a nice way to start the day and a great way to build some consistency.
 
 > _"UPDATE:"_ The change from Amazon to Bookshop.org, while a first time pain, will make entering info for new books simpler. I will no longer have to go to Amazon to get an affiliate link as it can be easily constructed using the ISBN. As for cover images, I will occasionally have to download cover images. But I've got a pretty easy manual process for that.
+
+> _"UPDATE"_ In anticipation of presenting this topic at the [Eleventy Meetup](https://11tymeetup.dev/events/ep-21-book-pages-and-privacy-first-analytics/), I am adding several samples of other book pages built with 11ty (alpha by first name). And for two of those, I'm sharing their blog posts about how they built them.
+
+- [Chazz Basuta's books](https://thisguise.wtf/bookshelf/) and [how he built it](https://thisguise.wtf/blog/2024/12/06/building-a-goodreads-bookshelf-for-11ty/)
+- [Cory Dransfeldt's books](https://coryd.dev/books/) and [how he built it](https://coryd.dev/posts/2024/building-out-a-books-page/)
+- [Dan Jewett's books](https://danjewett.net/books/)
+- [Melanie Richards's books](https://melanie-richards.com/currently/reading/) and [how she built it](https://melanie-richards.com/blog/new-reading-page/)
+- [Sean Voisen's books](https://sean.voisen.org/bookshelf/)
