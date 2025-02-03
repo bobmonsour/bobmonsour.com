@@ -21,3 +21,12 @@ If you want a sneak peek at the result, just do a view source on the [RSS feed f
 I'm grateful to Evan and for the gift of having the time to futz and fiddle with small pieces of this site...even for those things that make it better in some small way.
 
 Chalk this one up as a _**Today I Loved**_.
+
+## Related posts
+
+- [On RSS entry IDs](/til/on-rss-entry-ids/), _Jan 25, 2025_
+- [Creating quasi-permanently unique entry IDs for RSS](/blog/creating-permanently-unique-entry-id-for-rss/), _Jan 27, 2025_
+- [My last word on RSS entry IDs](/blog/even-more-on-rss-ids/), _Jan 30, 2025_
+- [Prepare for a minor flood of RSS entries](/til/prepare-for-a-minor-flood-of-rss-entries/), _Jan 31, 2025_
+- [I wanted to validate the presence of an rssid in my front matter](/til/i-wanted-to-validate-the-presence-of-an-rssid-in-my-front-matter/), _Feb 1, 2025_
+- [Ok, this is my 'final' final word on RSS entry IDs](/blog/final-final-word-on-rss-entry-ids/), _Feb 2, 2025_

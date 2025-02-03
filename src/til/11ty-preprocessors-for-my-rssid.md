@@ -50,3 +50,12 @@ eleventyConfig.addPreprocessor("rssid", "njk,md", (data, content) => {
 What's really nice about this is that it tells me exactly how to use the tool I made to fix the error.
 
 _That odd bit at the start of the console.log statement outputs the message in red. Perhaps there's a better/easier way to do that._
+
+## Related posts
+
+- [On RSS entry IDs](/til/on-rss-entry-ids/), _Jan 25, 2025_
+- [Much more to come on RSS entry IDs](/til/much-more-to-come-on-rss-entry-ids/), _Jan 26, 2025_
+- [Creating quasi-permanently unique entry IDs for RSS](/blog/creating-permanently-unique-entry-id-for-rss/), _Jan 27, 2025_
+- [My last word on RSS entry IDs](/blog/even-more-on-rss-ids/), _Jan 30, 2025_
+- [Prepare for a minor flood of RSS entries](/til/prepare-for-a-minor-flood-of-rss-entries/), _Jan 31, 2025_
+- [Ok, this is my 'final' final word on RSS entry IDs](/blog/final-final-word-on-rss-entry-ids/), _Feb 2, 2025_

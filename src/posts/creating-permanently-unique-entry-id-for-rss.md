@@ -93,3 +93,12 @@ My real dilemma is that my "older" posts still use the `absolutePostUrl` as the 
 ## Conclusion
 
 So, if you're using the default RSS (or Atom or JSON) feed [sample templates](https://www.11ty.dev/docs/plugins/rss/#sample-feed-templates) provided in the Eleventy docs, and you want to be able to freely reorganize your input files and permalinks, you might want to consider doing something different. It could be something like what I've described or something altogether different.
+
+## Related posts
+
+- [On RSS entry IDs](/til/on-rss-entry-ids/), _Jan 25, 2025_
+- [Much more to come on RSS entry IDs](/til/much-more-to-come-on-rss-entry-ids/), _Jan 26, 2025_
+- [My last word on RSS entry IDs](/blog/even-more-on-rss-ids/), _Jan 30, 2025_
+- [Prepare for a minor flood of RSS entries](/til/prepare-for-a-minor-flood-of-rss-entries/), _Jan 31, 2025_
+- [I wanted to validate the presence of an rssid in my front matter](/til/i-wanted-to-validate-the-presence-of-an-rssid-in-my-front-matter/), _Feb 1, 2025_
+- [Ok, this is my 'final' final word on RSS entry IDs](/blog/final-final-word-on-rss-entry-ids/), _Feb 2, 2025_

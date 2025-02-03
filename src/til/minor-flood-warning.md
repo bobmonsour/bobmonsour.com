@@ -25,3 +25,12 @@ If you want to read my prior (and rather recent) writings about how I got here, 
 - [My last word on RSS entry IDs](https://bobmonsour.com/blog/even-more-on-rss-ids/), _Jan 30, 2025_
 
 I have to say that while this seemed to get out of hand, I'm happy with the result and I learned a lot in the process.
+
+## Related posts
+
+- [On RSS entry IDs](/til/on-rss-entry-ids/), _Jan 25, 2025_
+- [Much more to come on RSS entry IDs](/til/much-more-to-come-on-rss-entry-ids/), _Jan 26, 2025_
+- [Creating quasi-permanently unique entry IDs for RSS](/blog/creating-permanently-unique-entry-id-for-rss/), _Jan 27, 2025_
+- [My last word on RSS entry IDs](/blog/even-more-on-rss-ids/), _Jan 30, 2025_
+- [I wanted to validate the presence of an rssid in my front matter](/til/i-wanted-to-validate-the-presence-of-an-rssid-in-my-front-matter/), _Feb 1, 2025_
+- [Ok, this is my 'final' final word on RSS entry IDs](/blog/final-final-word-on-rss-entry-ids/), _Feb 2, 2025_
