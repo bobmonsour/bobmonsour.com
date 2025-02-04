@@ -22,19 +22,15 @@ export default async function () {
 	const undatedBooks = theBooks.filter(
 		(book) => book.yearRead === "undated" && book.yearRead != "currently"
 	);
-	// generate the sorted books
-	// const datedBooks = filteredBooks.sort((a, b) => {
-	// 	return a.yearRead > b.yearRead ? -1 : 1;
-	// });
 
-	// Extract unique years and format them
+	// Extract unique years and format them, sorted in descending order
 	const uniqueYears = [
 		...new Set(datedBooks.map((book) => book.yearRead.split("/")[0])),
 	]
 		.map((year) => `y${year}`)
-		.sort((a, b) => b.slice(1) - a.slice(1)); // Sort in descending order
+		.sort((a, b) => b.slice(1) - a.slice(1));
 
-	// Generate the result array
+	// Generate the years array for creating the year nav
 	const years = uniqueYears.map((year) => ({ year }));
 	years.push({ year: "undated" });
 
