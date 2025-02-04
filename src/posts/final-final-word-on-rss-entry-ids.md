@@ -20,7 +20,7 @@ Here goes...
 
 The process is based on things I had written previously and is based on [the tool that I built](https://github.com/bobmonsour/rssid#rssid-generating-permanent-and-unique-rss-entry-ids) that let me create them manually.
 
-Once I learned ([as described here](<(/til/i-wanted-to-validate-the-presence-of-an-rssid-in-my-front-matter/)>)) that I could create an [11ty preprocessor](https://www.11ty.dev/docs/config-preprocessors/) that would alert me to the fact that I had not yet created an ID for a new post. In other words, that the front matter item named `rssid` was missing, I began to believe that there is no reason that I should not be able to add that ID at the time that I run the build process.
+Once I learned ([as described here](/til/i-wanted-to-validate-the-presence-of-an-rssid-in-my-front-matter/)) that I could create an [11ty preprocessor](https://www.11ty.dev/docs/config-preprocessors/) that would alert me to the fact that I had not yet created an ID for a new post. In other words, that the front matter item named `rssid` was missing, I began to believe that there is no reason that I should not be able to add that ID at the time that I run the build process.
 
 All that I would need to do is enhance the preprocessor to not only detect the lack of an `rssid` but also to create one if it was missing and add it to the template prior to its ultimate rendering. I also wanted to be able to write the `rssid` element to the front matter of the file itself such that it would never again be detected as missing.
 
