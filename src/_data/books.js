@@ -1,5 +1,3 @@
-// All the records stored in books.json are sorted in descending
-// order by date
 import { createRequire } from "node:module";
 const require = createRequire(import.meta.url);
 const theBooks = require("./books.json");

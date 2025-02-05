@@ -4,6 +4,7 @@ export const bookRating = (rating) => {
 	const halfStar = "½";
 	const noStar = "";
 	let stars = "";
+	// if the rating is blank, its a "currently" reading book
 	if (rating === "") {
 		return stars;
 	}
