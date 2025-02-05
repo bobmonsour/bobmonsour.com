@@ -1,4 +1,4 @@
-// generate the displayed book rating with stars and '1/2' characters
+// render the book rating, using '★' and '½' characters
 export const bookRating = (rating) => {
 	const fullStar = "★";
 	const halfStar = "½";
