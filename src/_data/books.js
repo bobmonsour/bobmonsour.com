@@ -17,9 +17,7 @@ export default async function () {
 		});
 
 	// generate an array of books with yearRead as 'undated'
-	const undatedBooks = theBooks.filter(
-		(book) => book.yearRead === "undated" && book.yearRead != "currently"
-	);
+	const undatedBooks = theBooks.filter((book) => book.yearRead === "undated");
 
 	// Extract unique years and format them, sorted in descending order
 	const uniqueYears = [
