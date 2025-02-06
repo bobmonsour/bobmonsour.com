@@ -9,6 +9,7 @@ image:
   source: time-lapse-gym-construction.jpg
   alt: the insides of a construction site for a new gymnasium
   caption: The insides of a construction site for a new gymnasium
+pageHasYoutube: true
 rssid: 5cd7c9072e4ed41be269273a6c6a6339
 ---
 
@@ -32,6 +33,6 @@ And now, for your viewing pleasure, here's the time-lapse video of the construct
 
 Enjoy!
 
-<div class="iframe-wrapper">
-<iframe style="display:block; margin:0 auto 1em auto;" src="https://www.youtube.com/embed/xzH86AvZwzQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-</div>
+{% set videoTitle = "Time Lapse of Gym Construction" %}
+{% set videoId = "xzH86AvZwzQ" %}
+{% include 'youtube.njk' %}

@@ -24,6 +24,17 @@
   {% endif %}
 
   {#
+    conditionally load the lite-youtube-embed styles per
+    front matter 'pageHasYoutube' in blog posts.
+  #}
+  {% if pageHasYoutube %}
+    <link rel="stylesheet" href="{% getBundleFileUrl 'css', 'pageHasYoutube' %}" media="print" onload="this.media='all'">
+  	<noscript>
+	  	<link rel="stylesheet" href="{% getBundleFileUrl 'css', 'pageHasYoutube' %}">
+	  </noscript>
+  {% endif %}
+
+  {#
     conditionally load the search page styles
     variables.css overrides the default styles
   #}
