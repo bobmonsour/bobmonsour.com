@@ -24,7 +24,7 @@ permalink: /books/
 <article data-pagefind-body>
 <div class="bookyears">
 	{% for year in books.years %}
-		<a href="#{{ year.year }}">{{ year.year | replace("y", "") }}</a>{% if  not loop.last %} / {% endif %}
+		<a href="#y{{ year }}">{{ year }}</a>{% if  not loop.last %} / {% endif %}
 	{% endfor %}
 </div>
 
@@ -53,7 +53,7 @@ permalink: /books/
 		{% if loop.last %}</div>{% endif %}
 	{%- endfor %}
 
-<h2 id="undated" class="bookyear">Undated: don't know when I read these</h2>
+<h2 id="yundated" class="bookyear">Undated: don't know when I read these</h2>
 <div class="bklist">
 	{%- for book in books.undatedBooks %}
 		{% include "bookitem.njk" %}

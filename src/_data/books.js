@@ -21,18 +21,13 @@ export default async function () {
 
 	// Extract unique years and format them, sorted in descending order
 	// result array looks like this:
-	//   ["y2025", "y2024", etc.]
-	const uniqueYears = [
+	//   ["2025", "2024", etc.]
+	const years = [
 		...new Set(datedBooks.map((book) => book.yearRead.split("/")[0])),
 	]
-		.map((year) => `y${year}`)
+		.map((year) => `${year}`)
 		.sort((a, b) => b.slice(1) - a.slice(1));
-
-	// Generate the years array for creating the year nav
-	// resulting array looks like this:
-	//   [ { year: "y2025" }, { year: "y2024" },..., { year: "undated" } ]
-	const years = uniqueYears.map((year) => ({ year }));
-	years.push({ year: "undated" });
+	years.push("undated");
 
 	return {
 		currentBooks,
