@@ -18,6 +18,8 @@ rssid: 4ba022221e85feb78c89a8f5b2286df1
 
 ---
 
+> UPDATE: Since writing this, I have presented this topic at the [February 6, 2025 Eleventy Meetup](https://11tymeetup.dev/events/ep-21-book-pages-and-privacy-first-analytics/). I wrote [a short note](/notes/11ty-meetup-how-i-built-my-books-page/) that includes the video as well as a [link to a PDF of the slides](/assets/pdf/books-page-11tymeetup-020625.pdf). Or you can also [watch it directly on YouTube](https://www.youtube.com/watch?v=r2StAHsZllQ).
+
 > _UPDATE:_ This post now reflects the fact that I no longer link to Amazon and their affiliate program. Instead, each book on the [Books page](/books/) now links to [Bookshop.org](https://bookshop.org/). There are various additional _"UPDATES"_ noted throughout the post.
 
 ## Introduction
