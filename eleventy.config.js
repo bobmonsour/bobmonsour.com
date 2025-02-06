@@ -43,6 +43,7 @@ export default function (eleventyConfig) {
 		"src/assets/css/",
 		"src/assets/img/",
 		"src/assets/js/",
+		"src/assets/pdf/",
 		"src/robots.txt",
 		"src/_redirects",
 	].forEach((path) => eleventyConfig.addPassthroughCopy(path));
