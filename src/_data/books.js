@@ -25,8 +25,8 @@ export default async function () {
 	const years = [
 		...new Set(datedBooks.map((book) => book.yearRead.split("/")[0])),
 	]
-		.map((year) => `${year}`)
-		.sort((a, b) => b.slice(1) - a.slice(1));
+		.sort()
+		.reverse();
 	years.push("undated");
 
 	return {
