@@ -1,6 +1,6 @@
 ---
-title: The Endless Summer
-description: This movie came out just when I became interested in surfing. This clip still moves me.
+title: The Endless Summer - The Perfect Wave
+description: This movie came out just when I became interested in surfing. I absolutely love this clip.
 date: 2025-02-06
 tags:
   - personal
