@@ -60,7 +60,7 @@ Lastly, you can search the entire site from the [Search](/search/) page.
 	<div>
 		<h3>Currently Reading <a href="/books/">(more books)</a></h3>
 		<div class="bklist">
-			{%- for book in books.currentBooks -%}
+			{%- for book in books.currentBooks.slice(0,1) -%}
 				{%- include "bookitem.njk" -%}
 			{%- endfor -%}
 		</div>

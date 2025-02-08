@@ -30,9 +30,9 @@ permalink: /books/
 
 <h2 class="bookyear">Currently Reading</h2>
 <div class="bklist">
-	{%- for book in books.currentBooks %}
-		{% include "bookitem.njk" %}
-	{%- endfor %}
+		{%- for book in books.currentBooks.slice(0,2) -%}
+			{%- include "bookitem.njk" -%}
+		{%- endfor -%}
 </div>
 
 	{% set previous_year = "" %}
