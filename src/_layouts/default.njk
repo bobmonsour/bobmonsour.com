@@ -6,6 +6,8 @@
 <body>
 	<a href="#main-content" id="visually-hidden">Skip to main content</a>
   {% include 'header.njk' %}
+	{% include "check-for-code.njk" %}
+	{% include "check-for-youtube.njk" %}
   <main id="main-content" class="content">
     {{ content | safe }}
   </main>
