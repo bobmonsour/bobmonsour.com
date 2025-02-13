@@ -1,7 +1,7 @@
-[![Ceasefire Now](https://badge.techforpalestine.org/default)](https://techforpalestine.org/learn-more)
-
 ## This is my personal website
 
-It's a work in progress. It's built with [eleventy](https://www.11ty.dev/)...something I'm still getting a handle on.
+You can find it at [bobmonsour.com](https://bobmonsour.com).
 
-Lots left to do...but I decided to get this up and running in the open. Watch if you're interested.
+It's built with [eleventy](https://www.11ty.dev/).
+
+I've also created a site that contains a curated set of 11ty resources. It's called [11ty Bundle](https://11tybundle.dev).
