@@ -5,6 +5,7 @@ date: 2025-01-25
 tags:
   - blogging
   - RSSness
+  - learned
 rssid: f5e7fff768d10806f312f37c6d741ddc
 ---
 

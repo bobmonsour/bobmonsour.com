@@ -5,6 +5,8 @@ date: 2025-02-06
 tags:
   - blogging
   - performance
+  - learned
+  - linked
 rssid: 9c125bcb31a059138c37554e1b4f5dfe
 ---
 

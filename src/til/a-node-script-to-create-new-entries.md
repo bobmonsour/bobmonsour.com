@@ -5,6 +5,8 @@ date: 2025-02-07
 tags:
   - blogging
   - 11ty
+  - learned
+  - linked
 pageHasYoutube: true
 rssid: 3dd736a337b25930c7d4f10cb2530954
 ---
