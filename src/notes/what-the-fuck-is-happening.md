@@ -18,10 +18,10 @@ Here's a list of just some of the destructive things that the Trump administrati
 - The imposition on 25% tariffs on Canada and Mexico
 - The firing of all the prosecutors involved in the cases against Trump
 - The firing on somewhere between 15 and 20 inspectors general
-- The plan to generate lsits of FBI agents involved in any way in any of the prosecutions of those involved in the Jan 7 storming of the capitol
+- The plan to generate lists of FBI agents involved in any way in any of the prosecutions of those involved in the Jan 7 storming of the capitol
 - The handing over of the access controls of the Treasury departments payment systems to Elon Musk, which handles $6 trillion in annual payments by the US government
 - The contravening of the law enacted to ban Tik-Tok
-- The nominating of the most unprepared and unsuited senior government officers that one could imagine (Pete Hegseth for Defense? Kash Patel for FBI? RFK Jr. for HHS? TUlsi Gabbard for Director of National Intelligence?)
+- The nominating of the most unprepared and unsuited senior government officers that one could imagine (Pete Hegseth for Defense? Kash Patel for FBI? RFK Jr. for HHS? Tulsi Gabbard for Director of National Intelligence?)
 - Releasing, needlessly, water from reservoirs in Northern California as if this water could ever make its way to Southern California, thereby wasting water that could be needed for irrigation in the central valley
 
 And that is just since January 20th...and I probably missed some.
