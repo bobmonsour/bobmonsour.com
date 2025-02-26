@@ -27,6 +27,12 @@ I've watched this 6-minute clip many times over the years, and it still moves me
 {% set videoId = "Q6CKqxBZibI" %}
 {% include 'youtube.njk' %}
 
+> UPDATE: This post would not be complete without the Sandals playing the theme song from the movie. For your listening pleasure...
+
+{% set videoTitle = "The Sandals - Theme song from 'The Endless Summer'" %}
+{% set videoId = "GH1K23rAYOQ" %}
+{% include 'youtube.njk' %}
+
 ![The Endless Summer movie poster](/assets/img/the-endless-summer.jpg)
 
 Movie poster attribution:
