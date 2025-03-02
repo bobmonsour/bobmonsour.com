@@ -3,7 +3,7 @@ title: Number 24, a powerful WW II movie
 description: We watched Number 24 on Netflix. It was a very moving portrayal of an incredibly brave Norwegian.
 date: 2025-01-06
 tags:
-  - Movies
+  - movies
 rssid: 74280084f89d434156c0fa936c389ee8
 ---
 
