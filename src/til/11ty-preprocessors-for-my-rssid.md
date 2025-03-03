@@ -2,11 +2,7 @@
 title: I wanted to validate the presence of an rssid in my front matter
 description: Rather than have my RSS entry ID be missing, I wanted to validate its presence at build time.
 date: 2025-02-01
-tags:
-  - blogging
-  - 11ty
-  - RSSness
-  - learned
+tags: [blogging, 11ty, RSSness, today I learned]
 pageHasCode: true
 rssid: b1614725837b9e912ba3d5b8759c7d5f
 ---
@@ -31,20 +27,20 @@ Here is the code that I added to my eleventy config to make this work:
 
 ```js
 eleventyConfig.addPreprocessor("rssid", "njk,md", (data, content) => {
-	const inputPath = data.page.inputPath;
-	const dirs = ["/posts/", "/notes/", "/til/"];
-	const containsDirs = dirs.some((word) => inputPath.includes(word));
-	if (containsDirs && typeof data.rssid != "string") {
-		console.error(
-			"\x1b[31m%s\x1b[0m",
-			"ERROR: missing rssid in file " + data.page.inputPath
-		);
-		console.log(
-			"\x1b[31m%s\x1b[0m",
-			"Run the command: rssid -a -f=" + data.page.inputPath
-		);
-		process.exit(1);
-	}
+  const inputPath = data.page.inputPath;
+  const dirs = ["/posts/", "/notes/", "/til/"];
+  const containsDirs = dirs.some((word) => inputPath.includes(word));
+  if (containsDirs && typeof data.rssid != "string") {
+    console.error(
+      "\x1b[31m%s\x1b[0m",
+      "ERROR: missing rssid in file " + data.page.inputPath
+    );
+    console.log(
+      "\x1b[31m%s\x1b[0m",
+      "Run the command: rssid -a -f=" + data.page.inputPath
+    );
+    process.exit(1);
+  }
 });
 ```
 

@@ -2,10 +2,7 @@
 title: On RSS entry IDs
 description: Evan Sheehan has a great post about why using the URL for a post for its RSS ID is not a good idea.
 date: 2025-01-25
-tags:
-  - blogging
-  - RSSness
-  - learned
+tags: [blogging, RSSness, today I learned]
 rssid: f5e7fff768d10806f312f37c6d741ddc
 ---
 

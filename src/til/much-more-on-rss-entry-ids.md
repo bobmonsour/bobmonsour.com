@@ -2,11 +2,7 @@
 title: Much more to come on RSS entry IDs
 description: I made the effort to adjust how I create ids for each entry in my RSS feeds. There's a fuller blog post in the works.
 date: 2025-01-26
-tags:
-  - blogging
-  - RSSness
-  - learned
-  - linked
+tags: [blogging, RSSness, today I learned, today linked]
 rssid: e1bc37ea180d1188eed1f92825b11253
 ---
 

@@ -2,11 +2,7 @@
 title: Sia taught me about lite youtube embeds
 description: While I have only one YouTube video on this site, I wanted to make it more performant. Sia Karamalegos taught me how to do that.
 date: 2025-02-06
-tags:
-  - blogging
-  - performance
-  - learned
-  - linked
+tags: [blogging, performance, today I learned, today I linked]
 rssid: 9c125bcb31a059138c37554e1b4f5dfe
 ---
 

@@ -2,9 +2,7 @@
 title: If this was happening in a foreign country
 description: How US media would talk about this if it was happening in a foreign country
 date: 2025-02-01
-tags:
-  - politics
-  - linked
+tags: [politics, today I linked]
 rssid: e6b5f70b2c08d463b3e248558ae0e9a0
 ---
 
