@@ -2,7 +2,7 @@
 title: A node script to create new entries
 description: I made a node script to create new entries for this site. It's up on GitHub.
 date: 2025-02-07
-tags: [blogging, 11ty, today I learned, linked]
+tags: [blogging, 11ty, learned, linked]
 pageHasYoutube: true
 rssid: 3dd736a337b25930c7d4f10cb2530954
 ---

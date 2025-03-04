@@ -2,7 +2,7 @@
 title: The Endless Summer - The Perfect Wave
 description: This movie came out just when I became interested in surfing. I absolutely love this clip.
 date: 2025-02-06
-tags: [personal, today I loved, linked]
+tags: [personal, loved, linked]
 image:
   source: the-endless-summer.jpg
   alt: movie poster for The Endless Summer

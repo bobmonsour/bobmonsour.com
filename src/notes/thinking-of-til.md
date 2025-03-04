@@ -2,8 +2,7 @@
 title: I might make a Today I Learned / Linked section
 description: I'm considering making a Today I Learned / Linked page. Inspired by Simon Willison's link blog.
 date: 2025-01-20
-tags:
-  - blogging
+tags: [blogging, linked]
 rssid: 4f9f5b4588f2fb5346c151faaceca1d0
 ---
 

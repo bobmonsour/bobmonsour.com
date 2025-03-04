@@ -1,8 +1,7 @@
 ---
 title: How I built the Books page
 date: 2025-01-02
-tags:
-  - 11ty
+tags: [11ty, books]
 description: I went live with my Books page a short while ago. Here's how I built it.
 keywords: books, eleventy
 image:
@@ -70,12 +69,12 @@ Here is what a _"typical"_ book entry in my JSON array looks like:
 
 ```json
 {
-	"title": "Let the Great World Spin",
-	"author": "Colum McCann",
-	"ISBN": 9781400063734,
-	"buyLink": "https://amzn.to/3BNdeMt",
-	"rating": 5,
-	"yearRead": "2024/12/22"
+  "title": "Let the Great World Spin",
+  "author": "Colum McCann",
+  "ISBN": 9781400063734,
+  "buyLink": "https://amzn.to/3BNdeMt",
+  "rating": 5,
+  "yearRead": "2024/12/22"
 }
 ```
 
@@ -136,12 +135,12 @@ I have one final note on those Open Library images. They are remote images that 
 
 ```json
 {
-	"title": "Let the Great World Spin",
-	"author": "Colum McCann",
-	"ISBN": 9781400063734,
-	"rating": 5,
-	"yearRead": "2024/12/22",
-	"localCover": true
+  "title": "Let the Great World Spin",
+  "author": "Colum McCann",
+  "ISBN": 9781400063734,
+  "rating": 5,
+  "yearRead": "2024/12/22",
+  "localCover": true
 }
 ```
 
@@ -152,21 +151,21 @@ I generate a simple 1 to 5 star rating for each book. There are full stars (`★
 ```js
 // generate the displayed book rating with stars and '1/2' characters
 export const bookRating = (rating) => {
-	const fullStar = "★";
-	const halfStar = "½";
-	let stars = "";
-	// if the rating is blank, its a "currently" reading book
-	if (rating === "") {
-		return stars;
-	}
-	for (let i = 1; i <= 5; i++) {
-		if (rating - i >= 0) {
-			stars += fullStar;
-		} else if (rating - i === -0.5) {
-			stars += halfStar;
-		}
-	}
-	return stars;
+  const fullStar = "★";
+  const halfStar = "½";
+  let stars = "";
+  // if the rating is blank, its a "currently" reading book
+  if (rating === "") {
+    return stars;
+  }
+  for (let i = 1; i <= 5; i++) {
+    if (rating - i >= 0) {
+      stars += fullStar;
+    } else if (rating - i === -0.5) {
+      stars += halfStar;
+    }
+  }
+  return stars;
 };
 ```
 
