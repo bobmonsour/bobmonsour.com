@@ -1,8 +1,7 @@
 ---
 title: Losing my brother to cancer
 date: 2022-04-26
-tags:
-  - personal
+tags: [personal, loved]
 description: Feelings of pain, fond memories, and odd coincidences keep me connected to the brother I lost to cancer.
 keywords: sibling loss, cancer, one-year reflection
 image:
