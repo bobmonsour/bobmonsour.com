@@ -8,6 +8,3 @@
 /microfeed.xml /notesfeed.xml
 /posts/* /blog/:splat
 /microblog/* /notes/:splat
-/tags/learned/ /tags/today-i-learned/
-/tags/linked/ /tags/today-i-linked/
-/tags/loved/ /tags/today-i-loved/

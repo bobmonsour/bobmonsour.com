@@ -2,7 +2,7 @@
 title: I wanted to validate the presence of an rssid in my front matter
 description: Rather than have my RSS entry ID be missing, I wanted to validate its presence at build time.
 date: 2025-02-01
-tags: [blogging, 11ty, RSSness, today I learned]
+tags: [blogging, 11ty, RSSness, learned]
 pageHasCode: true
 rssid: b1614725837b9e912ba3d5b8759c7d5f
 ---

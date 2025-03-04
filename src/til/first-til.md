@@ -2,7 +2,7 @@
 title: Today I Learned, Linked, or Loved
 description: Initally a 'note', this is now the first entry in my 'TIL' page for things that I have Learned, Linked, or Loved..
 date: 2025-01-25
-tags: [blogging, today I linked]
+tags: [blogging, linked]
 rssid: c9a348335f8e85de5c89c6396f19c55d
 ---
 
