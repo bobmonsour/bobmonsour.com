@@ -17,9 +17,8 @@ There's a little more about me on the [About](/about/) page. And you can find me
 
 Lastly, you can search the entire site from the [Search](/search/) page.
 
-And here's a set of all the tags, across the [blog](/blog), [notes](/notes/), and [TIL](/til/) sections:
-
 <div class="hometags">
+  <h3>Tags across <a href="/blog/">Blog</a>, <a href="/notes/">Notes</a>, and <a href="/til/">TIL</a>:</h3>
   <ul>
   {% for tag in collections.all | getAllTags %}
     {% set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
