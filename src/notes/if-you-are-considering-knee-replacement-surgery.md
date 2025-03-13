@@ -39,4 +39,6 @@ Here's one of his more recent videos, to give you a flavor.
 
 If you want to reach out with questions, please use the _comment by email_ link below and I'll do my best to answer them or point you to other resources.
 
+> P.S. I'd been wanting to write this for a couple of days, but the first week after knee replacement surgery is a bit rough and I just could not get my mind clear enough to write. Thankfully, I'm on the other side of that now.
+
 _Note: The book link above is an Amazon affiliate link. It would have been a [bookshop.org](https://bookshop.org/) link, but they do not carry the book._
