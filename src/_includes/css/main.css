@@ -425,3 +425,18 @@ p.caption {
   margin: 0;
   padding: 10px 15px;
 }
+
+/* position the copy code button */
+pre:has(code) {
+  position: relative;
+  margin: 5px 0;
+  padding: 1.75rem 0 1.75rem 1rem;
+}
+
+pre:has(code) button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 8px;
+  font-size: var(--font-size-sm);
+}
