@@ -435,8 +435,8 @@ pre:has(code) {
 
 pre:has(code) button {
   position: absolute;
-  top: 0;
-  right: 0;
-  border-radius: 8px;
+  top: 3px;
+  right: 3px;
+  border-radius: 5px;
   font-size: var(--font-size-sm);
 }
