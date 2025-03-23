@@ -122,6 +122,6 @@ As with most things that I end up implementing on this site, this was more strai
 
 As an avid reader of blog posts that include code, I find the presence of a "Copy Code" button to be quite useful. Over the last couple of years, I have written more posts that include code snippets than I ever would have imagined. And seeing the emergence of the implementations of 'copy code' buttons, I felt it was time to add one here.
 
-I hope you find it useful. And if you have any questions or comments, or if you see something that I may have gotten wrong, please use the email link below.
+I hope you find it useful. And if you have any questions or comments, or if you see something that I may have gotten wrong, please use the email link below or on the related [Mastodon post](https://indieweb.social/@bobmonsour/114213179795689950).
 
 _P.S. In case anyone was wondering, I conducted fierce internal debates on whether to use the term "Copy Code" in the button, or just "Copy." I landed on "Copy."_
