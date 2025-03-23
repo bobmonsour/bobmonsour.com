@@ -1,0 +1,6 @@
+<ul>
+{% for tagObj in collections.all | getAllTags %}
+  {% set tagUrl %}/tags/{{ tagObj.tag | slugify }}/{% endset %}
+    <li><a href="{{ tagUrl }}" class="post-tag">{{ tagObj.tag }} ({{ tagObj.count }})</a></li>
+{% endfor %}
+</ul>
