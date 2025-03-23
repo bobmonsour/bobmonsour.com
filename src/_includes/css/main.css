@@ -159,6 +159,10 @@ img[width][height] {
   padding-inline: 0;
 }
 
+.tagcount {
+  font-size: var(--font-size-base);
+}
+
 .flow > * + * {
   margin-block-start: var(--flow-space);
 }
