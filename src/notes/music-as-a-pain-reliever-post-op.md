@@ -29,26 +29,26 @@ So, after last night's discovery, I did a little digging. Oddly enough, there is
 - [The Effect of Listening to Music on Postoperative Pain in Adult Orthopedic Patients - PubMed](https://pubmed.ncbi.nlm.nih.gov/29436975/)
   [Listening to music after surgery seems to be an effective painkiller | New Scientist](https://www.newscientist.com/article/2452440-listening-to-music-after-surgery-seems-to-be-an-effective-painkiller/)
 
-As for what's included in my "workout" playlist, it's a mix of songs that I have enjoyed over the years. Here's a sample:
+As for what's included in my "workout" playlist, it's a mix of songs that I have enjoyed over the years. Here's the entire playlist (with links to YouTube videos):
 
-- Wake Me Up (Avicii By Avicii)
-- Adele - I'll Be Waiting
-- Bruce Springsteen - Thunder Road
-- Huey Lewis & The News - I Want A New Drug
-- Santana - Hold On
-- The Doobie Brothers · James Taylor - Takin' It to the Streets
-- Huey Lewis & The News - If This Is It
-- Dan Fogelberg - Part of the Plan
-- Billy Joel - We Didn't Start the Fire
-- Huey Lewis & The News - Hip To Be Square
-- The Doors - Touch Me
-- Stevie Wonder - Don't You Worry 'Bout A Thing
-- Mark Ronson · Bruno Mars - Uptown Funk
-- Santana - Nowhere to Run
-- Fine Young Cannibals - Good Thing
-- Michael Jackson - Workin' Day and Night
-- The Who - Going Mobile
-- The Black Eyed Peas - Where Is The Love?
-- Eminem - Lose Yourself
-- Adele - Rolling in the Deep
-- Elton John - I'm Still Standing
+- [Wake Me Up (Avicii By Avicii)](https://www.youtube.com/watch?v=pfPoS5HRl9s)
+- [Adele - I'll Be Waiting](https://www.youtube.com/watch?v=ttfKlH2xkwo)
+- [Bruce Springsteen - Thunder Road](https://www.youtube.com/watch?v=W2X0Gf9jfz8)
+- [Huey Lewis & The News - I Want A New Drug](https://www.youtube.com/watch?v=N6uEMOeDZsA)
+- [Santana - Hold On](https://www.youtube.com/watch?v=e3PZ-Mju5Hk)
+- [The Doobie Brothers · James Taylor - Takin' It to the Streets](https://www.youtube.com/watch?v=2rxWPEdYCnI)
+- [Huey Lewis & The News - If This Is It](https://www.youtube.com/watch?v=AaTQAaJWW54)
+- [Dan Fogelberg - Part of the Plan](https://www.youtube.com/watch?v=bgZ1kezjGRo)
+- [Billy Joel - We Didn't Start the Fire](https://www.youtube.com/watch?v=eFTLKWw542g)
+- [Huey Lewis & The News - Hip To Be Square](https://www.youtube.com/watch?v=LB5YkmjalDg)
+- [The Doors - Touch Me](https://www.youtube.com/watch?v=EZaQyYgAGfQ)
+- [Stevie Wonder - Don't You Worry 'Bout A Thing](https://www.youtube.com/watch?v=RxsBc5p-dPU)
+- [Mark Ronson · Bruno Mars - Uptown Funk](https://www.youtube.com/watch?v=5JtL8b2t1EQ)
+- [Santana - Nowhere to Run](https://www.youtube.com/watch?v=AUPoemU_Dqk)
+- [Fine Young Cannibals - Good Thing](https://www.youtube.com/watch?v=We_9MthGzwk)
+- [Michael Jackson - Workin' Day and Night](https://www.youtube.com/watch?v=MWnyCxva6bA)
+- [The Who - Going Mobile](https://www.youtube.com/watch?v=ToxymSLzJeM)
+- [The Black Eyed Peas - Where Is The Love?](https://www.youtube.com/watch?v=XSiP0epO0oU)
+- [Eminem - Lose Yourself](https://www.youtube.com/watch?v=xFYQQPAOz7Y)
+- [Adele - Rolling in the Deep](https://www.youtube.com/watch?v=rYEDA3JcQqw)
+- [Elton John - I'm Still Standing](https://www.youtube.com/watch?v=ZHwVBirqD2s)
