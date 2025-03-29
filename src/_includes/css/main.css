@@ -195,18 +195,8 @@ div.notes > ul {
   /* margin-block: 0.25em; */
   padding: 0;
 }
-.post-card {
-  display: grid;
-  grid-column: full;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  margin-block-start: var(--space-l);
-  place-items: center;
-}
 
-/*
-  full display of a post
-  (not the card style used in home and archive)
-*/
+/* full display of a post */
 .post {
   grid-column: full;
   display: grid;
@@ -407,7 +397,7 @@ p.caption {
   text-align: center;
 }
 .subtitle {
-  font-size: var(--font-size-base);
+  font-size: var(--font-size-md);
   font-style: italic;
   text-align: center;
 }
