@@ -66,7 +66,7 @@ I had noted over time that the slugify filter was being called close to 10,000 t
 
 Now that I had caching working for the descriptions, it made total sense to apply it to slugify as well. The slugs are generated for the author names as well as the category names as I need to generate links for each of them.
 
-> UPDATE (Mar 30, 2025): The following is no longer necessary as, starting with 11ty v3.0, the [unversal slugify filter](https://www.11ty.dev/docs/filters/slugify/) is now wrapped in a memoization layer, which has the effect of caching the results.
+> UPDATE (Mar 30, 2025): The following is no longer necessary as, starting with 11ty v3.0, the [universal slugify filter](https://www.11ty.dev/docs/filters/slugify/) is now wrapped in a memoization layer, which has the effect of caching the results.
 
 All I had to do was replace the slugify incarnation in my templates with my own filter that used caching before calling slugify. Here's what my cachedSlugify filter looks like:
 
