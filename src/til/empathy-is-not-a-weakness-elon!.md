@@ -14,6 +14,8 @@ This is among the sickest and most midguided statements that I have ever heard f
 
 Thankfully, we have people like Cory Booker, who as I write this, is speaking on the Senate floor for as long as he is physically able. He is the perfect antidote to Elon's misguided thinking...and I love everything about him.
 
+_Full disclosure: I spent my formative years in New Jersey._
+
 Here is the video of Cory Booker speaking on the Senate floor:
 
 {% set videoTitle = "Live: Speaking on Trump, Musk, and America’s Moral Moment on the Senate Floor" %}
