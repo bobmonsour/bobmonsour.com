@@ -16,7 +16,13 @@ Thankfully, we have people like Cory Booker, who as I write this, is speaking on
 
 _Full disclosure: I spent my formative years in New Jersey._
 
-Here is the video of Cory Booker speaking on the Senate floor:
+Here is the video of Cory Booker, titled _"Live: Speaking on Trump, Musk, and America’s Moral Moment on the Senate Floor."_
+
+{% set videoUrl = "https://www.youtube.com/watch?v=v2utlMxAwtE" %}
+{% set videoDescription = "Cory Booker speaks on the Senate floor for as long as he is physically able." %}
+{% set videoDate = "March 2025" %}
+{% set videoChannel = "Cory Booker" %}
+{% set videoChannelUrl = "https://www.youtube.com/@CoryBooker" %}
 
 {% set videoTitle = "Live: Speaking on Trump, Musk, and America’s Moral Moment on the Senate Floor" %}
 {% set videoId = "v2utlMxAwtE" %}
