@@ -18,7 +18,7 @@ _Full disclosure: I spent my formative years in New Jersey._
 
 Here is the video of Cory Booker, titled _"Live: Speaking on Trump, Musk, and America’s Moral Moment on the Senate Floor."_
 
-> UPDATE (Apr 3, 2025): The live version of the video is no longer available, but here's 11 hours (of the 25):
+> UPDATE (Apr 3, 2025): The live version of the video is no longer available, but here's 11 hours (of the 25). The best summary that I have seen of his speech is this phrase that he used throughtout the speech: **"This is not a left or right moment. It is a right or wrong moment."**
 
 {% set videoTitle = "Cory Booker sets record for longest Senate floor speech" %}
 {% set videoId = "rCUK2VbdLS4" %}
