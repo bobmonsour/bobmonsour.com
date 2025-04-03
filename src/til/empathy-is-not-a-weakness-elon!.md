@@ -18,12 +18,8 @@ _Full disclosure: I spent my formative years in New Jersey._
 
 Here is the video of Cory Booker, titled _"Live: Speaking on Trump, Musk, and America’s Moral Moment on the Senate Floor."_
 
-{% set videoUrl = "https://www.youtube.com/watch?v=v2utlMxAwtE" %}
-{% set videoDescription = "Cory Booker speaks on the Senate floor for as long as he is physically able." %}
-{% set videoDate = "March 2025" %}
-{% set videoChannel = "Cory Booker" %}
-{% set videoChannelUrl = "https://www.youtube.com/@CoryBooker" %}
+> UPDATE (Apr 3, 2025): The live version of the video is no longer available, but here's 11 hours (of the 25):
 
-{% set videoTitle = "Live: Speaking on Trump, Musk, and America’s Moral Moment on the Senate Floor" %}
-{% set videoId = "v2utlMxAwtE" %}
+{% set videoTitle = "Cory Booker sets record for longest Senate floor speech" %}
+{% set videoId = "rCUK2VbdLS4" %}
 {% include 'youtube.njk' %}
