@@ -8,7 +8,7 @@ tags:
   - health
 image:
   source: the-personal-effects-of-nih-funding-cuts.jpg
-  alt: alt text coming soon
+  alt: scene in a medical research laboratory
 rssid: c3cbac93405cb0ca3ccb2a818aa0b6a4
 ---
 
