@@ -75,3 +75,5 @@ While progress is being made to fight pancreatic cancer as evidenced in this [UC
 ## Conclusion
 
 Needless to say, I find all this pretty fucked up. While I am very grateful that cures and developments are being made for diseases which affected my family directly, I feel deeply saddened that too many others will suffer and die because of the shortsightedness of our current government.
+
+> UPDATE: Just after publishing this, the latest episode of Malcolm Gladwell's podcast, [Revisionist History](https://www.pushkin.fm/podcasts/revisionist-history/the-rfk-jr-problem), was released. It's a deep and disturbing dive in to RFK Jr's false claims about a childhood vaccine that saves over 150,000 babies each year.
