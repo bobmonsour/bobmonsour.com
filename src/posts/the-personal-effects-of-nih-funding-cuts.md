@@ -28,6 +28,8 @@ You see, he left our family when I was 7 years old. And while my mother was grea
 
 He got me into playing tennis among other things, but the emotional gap remained and I was not in a place where I felt comfortable or sensible enough to want to know more about him and his early life and that of his own upbringing. There are so very many things that I wish I had asked him about.
 
+> I forgot to add this to the original post, but it is the one silver lining that followed my dad's passing: My wife and I had started dating in 1990. But by the time my dad had passed, we had broken up. I called her after my dad passed, only to learn that her dad had passed just a few weeks before mine. One thing led to another and we got back together and have now been married for 32 years.
+
 ## So what does this have to do with NIH funding?
 
 Well, today there is a cure for Hepatitis C. I recall reading about it several years ago and thinking "if only it had come sooner..."
