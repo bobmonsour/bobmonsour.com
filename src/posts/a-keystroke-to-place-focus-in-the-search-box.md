@@ -33,7 +33,7 @@ Using Chrome's dev tools, I found the html for the search box that Pagefind crea
 />
 ```
 
-So, all I had to do was to add an event listener to the input box that would listen for a keypress of the `/` key. When it detected that key, it would place focus in the search box so that you could just start typing your query.
+So, all I had to do was to add an event listener for the `/` key. And if that key is pressed and there's an identifiable searchbox on the page, place focus in the search box.
 
 While this _hack_ relies on the fact that Pagefind creates the input element with two particular class names, it feels safe enough to rely on for this kind of project. That said, I only used the first class name in the selector.
 
