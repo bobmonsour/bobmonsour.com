@@ -29,7 +29,7 @@ Using Chrome's dev tools, I found the html for the search box that Pagefind crea
   type="text"
   placeholder="Search the entire site"
   autocapitalize="none"
-  enterkeyhing="search"
+  enterkeyhint="search"
 />
 ```
 
