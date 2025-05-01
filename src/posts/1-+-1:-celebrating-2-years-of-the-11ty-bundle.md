@@ -84,7 +84,7 @@ Totals as of May 1, 2025:
 - [1,452 posts](https://11tybundle.dev/firehose/)
 - 451 [Authors](https://11tybundle.dev/authors/)
 
-> **Needless to say, Eleventy's momentum continues!**
+> **Needless to say, Eleventy's momentum continues. And none of this would be possible without the incredible leadership of [Zach Leatherman](https://www.zachleat.com/). Hat's off to you Zach!**
 
 ## Community
 
