@@ -1,6 +1,6 @@
 ---
 title: "1 + 1: Celebrating 2 years of the 11ty Bundle"
-description: The 11ty Bundle is 2 years old. Here are some highlights of the yf the last year.
+description: The 11ty Bundle is 2 years old. Here are some highlights of the last year.
 date: 2025-05-01
 tags:
   - 11ty
