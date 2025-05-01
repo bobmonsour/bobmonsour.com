@@ -8,6 +8,9 @@ pageHasCode: true
 image:
   source: a-keystroke-to-place-focus-in-the-search-box.jpg
   alt: a magnifying glass icon on a blue background
+  creditPerson: Markus Winkler
+  creditLink: https://unsplash.com/@markuswinkler
+
 rssid: 3638c61b091a399c0197571339808ffa
 ---
 

@@ -24,7 +24,7 @@ Lastly, you can search the entire site from the [Search](/search/) page.
 
 <article class="homegrid">
 	<div>
-		<h3>From the <a href="/archive/">Blog...</a></h3>
+		<h3>From the <a href="/blog/">Blog...</a></h3>
 		<ul>
 			{%- set blogposts = collections.posts | reverse -%}
 			{%- set last3posts = blogposts.slice(0,3) -%}

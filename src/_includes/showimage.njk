@@ -24,7 +24,10 @@
 
 {# if there's a person to credit and a link to them, show both #}
 {% if showImage and image.creditPerson and image.creditLink%}
-  <p class="caption">Photo by <a href="{{ image.creditLink }}">{{ image.creditPerson }}</a></p>
+  <p class="caption">
+    {% if image.creditType %}{{ image.creditType }}
+    {% else %}Photo{% endif %} by <a href="{{ image.creditLink }}">{{ image.creditPerson }}</a>
+  </p>
 {% endif %}
 
 {# if there's an image and a caption, show the caption #}
