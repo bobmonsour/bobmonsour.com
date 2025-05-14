@@ -13,7 +13,7 @@ permalink: /index.html
 
 {% include 'intro.md' %}
 
-There's a little more about me on the [About](/about/) page. And you can find me at one of the many "iconic" links in the footer.
+There's more on me on the [About](/about/) page. And you can find me at one of the many "iconic" links in the footer.
 
 Lastly, you can search the entire site from the [Search](/search/) page.
 

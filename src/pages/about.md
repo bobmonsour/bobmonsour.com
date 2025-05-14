@@ -15,6 +15,10 @@ permalink: /about/
 
 {% include 'intro.md' %}
 
+We travel occasionally and I enjoy reading and trying to stay fit. I'm also having fun being a part of the community of web developers who make and use the static site generator [Eleventy](https://11ty.dev). A big part of that is maintaining a [website](https://11tybundle.dev) and [newsletter](https://buttondown.com/11tybundle) called the [11ty Bundle](https://11tybundle.dev).
+
+I've had the privilege of working in the technology industry, beginning in the late 70s. I was fortunate to work on a lot of interesting projects with some really great people.
+
 For a career view, it's probably best to look at my [LinkedIn profile](https://www.linkedin.com/in/bobmonsour/).
 
 Some of the more interesting projects that I've worked on include the [Motorola BPR2000 Pager](https://historyexplorer.si.edu/resource/motorola-bpr2000-pager), the [Tono-Pen](https://patents.google.com/patent/US4747296), and Stacker by [Stac Electronics](https://en.wikipedia.org/wiki/Stac_Electronics), of which I was a co-founder. Following my time at Stac, I joined a spin-off of the company called Hifn. As part of that work, I co-authored two IETF RFCs which brought lossless compression technology to internet payloads, the [IP Payload Compression Protocol](https://datatracker.ietf.org/doc/html/rfc2393), and [IP Payload Compression Using LZS](https://datatracker.ietf.org/doc/html/rfc2395), Hifn's proprietary compression technology.
