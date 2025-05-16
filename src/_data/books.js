@@ -1,6 +1,4 @@
-import { createRequire } from "node:module";
-const require = createRequire(import.meta.url);
-const theBooks = require("./books.json");
+import theBooks from './books.json' with { type: 'json' };
 
 export default async function () {
 	// generate an array representing the books currently being read
