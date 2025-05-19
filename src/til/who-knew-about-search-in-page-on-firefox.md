@@ -8,6 +8,8 @@ tags:
 rssid: aeae857d5e683a15dccc9ea7e1a610fc
 ---
 
+> UPDATE: After several rounds of feedback and conversation, I've decided to keep the '/' key for placing focus in the search box on the 11ty Bundle site. No need to comment on this question.
+
 Since I implemented [pressing the '/' key to put focus in the search bar](/blog/a-keystroke-to-place-focus-in-the-search-box/) on on the [11ty Bundle](https://11tybundle.dev), I learned something about Firefox.
 
 A visitor to the site wrote to me to note that on Firefox, the '/' key is a shortcut to open a 'search in page' dialog at the bottom of the page. My implementation of the '/' key to focus the search bar was interfering with that shortcut. Needless to say, the visitor was not thrilled with this.

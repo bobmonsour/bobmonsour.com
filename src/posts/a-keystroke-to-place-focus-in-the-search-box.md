@@ -14,8 +14,6 @@ image:
 rssid: 3638c61b091a399c0197571339808ffa
 ---
 
-> UPDATE: It turns out that the '/' key is a shortcut in the Firefox browser to open the search-in-page dialog. As a result, I've written [a short piece on this](/til/who-knew-that-does-search-in-page-on-firefox/) and am seeking feedback on solutions (I offer two in the post). If you have any thoughts, please leave a comment on the post. Thanks!
-
 Way back in [Issue 62 of the 11ty Bundle blog](https://11tybundle.dev/blog/11ty-bundle-62/), I had written about I how I had turned on the autofocus parameter for the search functionality for the [11ty Bundle site](https://11tybundle.dev). The search is powered by [Pagefind](https://pagefind.app/). I asked the community for feedback as I knew from reading the Pagefind docs that there may be implications for accessibility.
 
 Thankfully, I got an incredibly thoughtful response from [Jan De Wilde](https://jandewil.de/), outlining the relevant accessiblity issues. I then turned off autofocus.
