@@ -8,7 +8,7 @@ tags:
 rssid: aeae857d5e683a15dccc9ea7e1a610fc
 ---
 
-> UPDATE: After several rounds of feedback and conversation, I've decided to keep the '/' key for placing focus in the search box on the 11ty Bundle site. No need to comment on this question.
+> UPDATE: After several rounds of feedback and conversation, I've decided to keep the '/' key for placing focus in the search bar on the 11ty Bundle site. No need to comment on this question.
 
 Since I implemented [pressing the '/' key to put focus in the search bar](/blog/a-keystroke-to-place-focus-in-the-search-box/) on on the [11ty Bundle](https://11tybundle.dev), I learned something about Firefox.
 
