@@ -8,7 +8,6 @@ tags:
   - learned
   - personal
 pageHasYoutube: true
-draft: true
 rssid: d4edb7101676e750c94fb744698588db
 ---
 
