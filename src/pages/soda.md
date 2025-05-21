@@ -1,6 +1,6 @@
 ---
 layout: plain.njk
-title: This is our Soda!
+title: Soda
 description: This is Soda, our Portuguese Water Dog.
 keywords: dog, Soda
 permalink: /soda.html
