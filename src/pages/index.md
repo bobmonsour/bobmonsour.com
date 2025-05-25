@@ -3,9 +3,6 @@ layout: plain.njk
 title: Bob Monsour
 description: My personal website. Enjoying building websites with 11ty.
 keywords: retired, web development, eleventy, tennis
-image:
-  source: "about-bob.jpg"
-  alt: "a picture of Bob from 2009"
 permalink: /index.html
 ---
 

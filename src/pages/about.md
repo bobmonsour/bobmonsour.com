@@ -3,9 +3,6 @@ layout: plain.njk
 title: About
 description: A few notes about Bob Monsour.
 keywords: retired, web development, eleventy, tennis, about
-image:
-  source: "about-bob.jpg"
-  alt: "a picture of Bob from 2009"
 permalink: /about/
 ---
 

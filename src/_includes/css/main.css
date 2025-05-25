@@ -430,3 +430,8 @@ pre:has(code) button {
   border-radius: 5px;
   font-size: var(--font-size-sm);
 }
+
+.stripe-buy-button {
+  display: inline-block;
+  margin: auto;
+}

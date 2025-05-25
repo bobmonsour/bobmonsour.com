@@ -1,5 +1,9 @@
 {
   "layout": "default.njk",
   "imageDir": "src/assets/img/",
-  "snow": "false"
+  "snow": "false",
+  "image": {
+    "source": "about-bob.jpg",
+    "alt": "a picture of Bob from 2009"
+  }
 }
