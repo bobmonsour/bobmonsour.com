@@ -1,10 +1,9 @@
 {
-	"layout": "notespost.njk",
-	"permalink": "til/{{ title | slugify }}/",
-	"tag": "til",
-	"image": {
-		"source": "til-og-image.jpg"
-	},
-	"keywords": "retired, web development, notes, eleventy, tennis",
-	"snow": "false"
+  "layout": "notespost.njk",
+  "permalink": "til/{{ title | slugify }}/",
+  "tag": "til",
+  "image": {
+    "source": "til-og-image.jpg"
+  },
+  "snow": "false"
 }

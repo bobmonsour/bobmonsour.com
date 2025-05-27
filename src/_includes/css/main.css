@@ -434,4 +434,5 @@ pre:has(code) button {
 .stripe-buy-button {
   display: inline-block;
   margin: auto;
+  width: 50%;
 }

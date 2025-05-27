@@ -1,5 +1,5 @@
 ---
-title: Eleventy Transform speeds local development...a lot!
+title: Eleventy transform speeds local development...a lot!
 date: 2024-11-24
 tags: [11ty, performance]
 description: I just converted all the images on my site to use the Eleventy Transform capability in v3.0.0 and wow did it slash my local build times.
