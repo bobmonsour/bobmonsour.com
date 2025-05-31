@@ -589,8 +589,15 @@
     "title": "Running with Sherman",
     "author": "Christopher McDougall",
     "ISBN": "9780525433255",
-    "rating": "",
-    "yearRead": "currently",
+    "rating": "5",
+    "yearRead": "2025/05/31",
     "localCover": true
+  },
+  {
+    "title": "The Ministry for the Future",
+    "author": "Kim Stanley Robinson",
+    "ISBN": "9780316300148",
+    "rating": "",
+    "yearRead": "currently"
   }
 ]
