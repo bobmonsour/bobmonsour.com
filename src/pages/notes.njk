@@ -6,7 +6,7 @@ permalink: /notes/
 ---
 
 <h1>{{ title }} <span class="parenthetical">(<a href="/notesfeed.xml">RSS</a>, Notes only)</span></h1>
-<p class="subtitle">Shorter writings and observations</p>
+<p class="subtitle">Shorter writings and observations <a href="/stats/">(posting stats)</a></p>
 {%- set noteslist = collections.notes | reverse -%}
 {%- for post in noteslist -%}
 	{% include "entry-item.njk" %}

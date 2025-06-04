@@ -6,7 +6,7 @@ permalink: /blog/
 ---
 
 <h1>{{ title }} <span class="parenthetical">(<a href="/feed.xml">RSS</a>, includes Notes & TILs)</span></h1>
-<p class="subtitle">Longer writings, often with a table of contents</p>
+<p class="subtitle">Longer writings, often with a table of contents <a href="/stats/">(posting stats)</a></p>
 {%- set postlist = collections.posts | reverse -%}
 {%- for post in postlist -%}
 	{% include "entry-item.njk" %}
