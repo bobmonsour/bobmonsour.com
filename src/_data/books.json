@@ -606,5 +606,13 @@
     "ISBN": "9781250007650",
     "rating": "4.5",
     "yearRead": "2025/06/16"
+  },
+  {
+    "title": "Erasing History",
+    "author": "Jason Stanley",
+    "ISBN": "9781668056929",
+    "rating": "5",
+    "yearRead": "2025/07/06",
+    "localCover": true
   }
 ]
