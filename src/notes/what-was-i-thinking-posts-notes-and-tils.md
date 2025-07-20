@@ -3,7 +3,6 @@ title: What was I thinking? Posts, Notes, & TILs?
 description: Why did I make posting more complicated than it needed to be?
 date: 2025-07-20
 tags: ["personal", "blogging"]
-draft: true
 ---
 
 A few months back, I was high on the idea of creating different types of content for my personal site. The idea that I had at the time was that it would enable me to post more frequently as some of these new types would be short forms. Specifically, I created a "Notes" type and a "TIL" (which stood for "Today I Learned, Linked, or Loved") type. That was then.
