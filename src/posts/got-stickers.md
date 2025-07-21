@@ -16,7 +16,7 @@ rssid: bf7503f3c25d3eb605f3ab1a1a736282
 
 I've teased this on [Mastodon](https://indieweb.social/@bobmonsour/114535942160630118) and [Bluesky](https://bsky.app/profile/bobmonsour.com/post/3lpk7t27wnc25), but the time has arrived for the launch of the **11ty Bundle sticker**! Designed by [Andy Carolan](https://www.andycarolan.com/), it's 4" x 2" with a matte-finish.
 
-They're $5.00 each. Tax & shipping are included in the price and I'll (do my best to) ship them to anywhere in the world (fingers crossed). This is pretty close to my cost.
+They're ~~$5.00~~ **now only $3.00** each. Tax & shipping are included in the price and I'll (do my best to) ship them to anywhere in the world (fingers crossed). This is pretty close to my cost.
 
 As of today, May 27, 2025, I've got 49 of them left, and I'm not sure I'll do any more.
 
