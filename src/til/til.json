@@ -1,7 +1,7 @@
 {
   "layout": "notespost.njk",
-  "permalink": "til/{{ title | slugify }}/",
-  "tag": "til",
+  "permalink": "blog/{{ title | slugify }}/",
+  "tags": "til",
   "image": {
     "source": "til-og-image.jpg"
   },

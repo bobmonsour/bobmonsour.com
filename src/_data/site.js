@@ -13,8 +13,6 @@ export default {
   mainNavLinks: [
     { url: "/", text: "Home" },
     { url: "/blog/", text: "Blog" },
-    { url: "/notes/", text: "Notes" },
-    { url: "/til/", text: "TIL" },
     { url: "/books/", text: "Books" },
     { url: "/shop/", text: "Shop" },
     { url: "/about/", text: "About" },

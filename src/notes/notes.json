@@ -1,10 +1,10 @@
 {
-	"layout": "notespost.njk",
-	"permalink": "notes/{{ title | slugify }}/",
-	"tag": "notes",
-	"image": {
-		"source": "notes-og-image.jpg"
-	},
-	"keywords": "retired, web development, notes, eleventy, tennis",
-	"snow": "false"
+  "layout": "notespost.njk",
+  "permalink": "blog/{{ title | slugify }}/",
+  "tags": "notes",
+  "image": {
+    "source": "notes-og-image.jpg"
+  },
+  "keywords": "retired, web development, notes, eleventy, tennis",
+  "snow": "false"
 }

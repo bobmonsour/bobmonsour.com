@@ -10,48 +10,15 @@ permalink: /index.html
 
 {% include 'intro.md' %}
 
-There's more on me on the [About](/about/) page. And you can find me at one of the many "iconic" links in the footer.
-
-Lastly, you can search the entire site from the [Search](/search/) page.
-
-<div class="hometags">
-  <h3>Tags across <a href="/blog/">Blog</a>, <a href="/notes/">Notes</a>, and <a href="/til/">TIL</a>:</h3>
-	{% include 'alltags.njk' %}
-</div>
+There's more on the [About](/about/) page. You can [search the blog](/search/). And you can find me at one of the many "iconic" links in the footer.
 
 <article class="homegrid">
 	<div>
 		<h3>From the <a href="/blog/">Blog...</a></h3>
 		<ul>
-			{%- set blogposts = collections.posts | reverse -%}
+			{%- set blogposts = collections.postsnotestils | reverse -%}
 			{%- set last3posts = blogposts.slice(0,3) -%}
 			{%- for post in last3posts -%}
-				<li>
-					<a href="{{ post.url }}">{{ post.data.title }}</a>
-					<p class="blogdate">{{ post.date | formatPostDate }}</p>
-				</li>
-			{%- endfor -%}
-		</ul>
-	</div>
-	<div>
-		<h3>From the <a href="/notes/">Notes...</a></h3>
-		<ul>
-			{%- set notes = collections.notes | reverse -%}
-			{%- set last3notes = notes.slice(0,3) -%}
-			{%- for post in last3notes -%}
-				<li>
-					<a href="{{ post.url }}">{{ post.data.title }}</a>
-					<p class="blogdate">{{ post.date | formatPostDate }}</p>
-				</li>
-			{%- endfor -%}
-		</ul>
-	</div>
-	<div>
-		<h3>From the <a href="/til/">TIL...</a></h3>
-		<ul>
-			{%- set til = collections.til | reverse -%}
-			{%- set last3tils = til.slice(0,3) -%}
-			{%- for post in last3tils -%}
 				<li>
 					<a href="{{ post.url }}">{{ post.data.title }}</a>
 					<p class="blogdate">{{ post.date | formatPostDate }}</p>
@@ -68,6 +35,11 @@ Lastly, you can search the entire site from the [Search](/search/) page.
 		</div>
 	</div>
 <div>
-
 </div>
+
 </article>
+
+<div class="hometags">
+  <h3>Yes, you can has all the tags:</h3>
+	{% include 'alltags.njk' %}
+</div>

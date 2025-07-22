@@ -5,9 +5,8 @@ keywords: retired, web development, eleventy, tennis, archives
 permalink: /blog/
 ---
 
-<h1>{{ title }} <span class="parenthetical">(<a href="/feed.xml">RSS</a>, includes Notes & TILs)</span></h1>
-<p class="subtitle">Longer writings, often with a table of contents <a href="/stats/">(posting stats)</a></p>
-{%- set postlist = collections.posts | reverse -%}
+<h1>{{ title }} <span class="parenthetical">(<a href="/feed.xml">RSS</a>, <a href="/stats/">(posting stats)</a></span></h1>
+{%- set postlist = collections.postsnotestils | reverse -%}
 {%- for post in postlist -%}
 	{% include "entry-item.njk" %}
 {%- endfor -%}
