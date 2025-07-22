@@ -16,7 +16,7 @@ Now, with a few, somewhat serious, life complications arising, I find myself sit
 
 If life were simpler at the moment, I'd probably be able to make that decision quickly. But with everything going on, I find myself hesitating and overthinking it. And as a result, I am not writing at all.
 
-So, I wanted to write this to "announce" to myself that I will be collapsing the Notes and TILs into my the Posts type. This, fingers crossed, will allow me to write more freely without the mental overhead of categorizing my thoughts into these different types.
+So, I wanted to write this to "announce" to myself that I will be collapsing the Notes and TILs into the Posts type, aka, the Blog. This, fingers crossed, will allow me to write more freely without the mental overhead of categorizing my thoughts into these different types.
 
 This post is more for me than general consumption. It's a way to hold myself accountable.
 
