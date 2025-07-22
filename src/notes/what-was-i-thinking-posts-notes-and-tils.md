@@ -8,6 +8,8 @@ tags:
 rssid: e8981f247527df2b3c3bc26053acbeda
 ---
 
+**Update (July 21, 2025): I no longer have dedicated Notes or TIL pages. All of my writing lives in the [Blog](/blog/). BUT, there's both a [til tag](/tags/til/) and a [notes tag](/tag/notes/) that you can use to find those posts.**
+
 A few months back, I was high on the idea of creating different types of content for my personal site. The idea that I had at the time was that it would enable me to post more frequently as some of these new types would be short forms. Specifically, I created a "Notes" type and a "TIL" (which stood for "Today I Learned, Linked, or Loved") type. That was then.
 
 Now, with a few, somewhat serious, life complications arising, I find myself sitting here and wanting to write something, but I've managed to create some unnecessary friction in the process. Now I have to decide whether what I want to write is a post, a note, or a TIL.
