@@ -8,5 +8,5 @@
 /microfeed.xml /notesfeed.xml
 /posts/* /blog/:splat
 /microblog/* /notes/:splat
-/notes/* /blog/:splat
-/til/* /blog/:splat
+/notes/* /tags/notes/
+/til/* /tags/til/
