@@ -1,5 +1,0 @@
-name = "bobmonsour-com"
-compatibility_date = "2025-03-25"
-
-[assets]
-directory = "./_site"
