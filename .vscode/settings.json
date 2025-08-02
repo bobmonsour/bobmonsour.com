@@ -1,0 +1,8 @@
+{
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/_site": true,
+    "**/resources": true,
+    "**/.cache": true
+  }
+}
