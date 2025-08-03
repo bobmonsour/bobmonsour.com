@@ -4,5 +4,16 @@
     "**/_site": true,
     "**/resources": true,
     "**/.cache": true
-  }
+  },
+  "editor.quickSuggestions": {
+    "other": false,
+    "comments": false,
+    "strings": false
+  },
+  "editor.suggestOnTriggerCharacters": false,
+  "editor.acceptSuggestionOnEnter": "off",
+  "editor.suggest.showKeywords": false,
+  "editor.suggest.showSnippets": false,
+  "editor.suggest.showFunctions": false,
+  "editor.suggest.showVariables": false
 }
