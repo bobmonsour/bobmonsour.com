@@ -15,5 +15,8 @@
   "editor.suggest.showKeywords": false,
   "editor.suggest.showSnippets": false,
   "editor.suggest.showFunctions": false,
-  "editor.suggest.showVariables": false
+  "editor.suggest.showVariables": false,
+  "github.copilot.enable": {
+    "*": false
+  }
 }
