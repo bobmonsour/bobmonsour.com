@@ -1,12 +1,64 @@
-/* page footer */
-body > footer {
-  font-size: var(--font-size-base);
-  background-color: var(--light-accent-color);
-  padding-block: 0.5em;
-  margin-block-start: 1em;
+footer {
+  padding-block-start: var(--space-m);
 }
-body > footer > p {
-  margin: 0;
-  text-align: center;
+#alltags {
+  margin-inline: var(--space-m);
 }
-/* end page footer */
+footer > p {
+  background-color: var(--bg-secondary);
+  border-top: 0.1vw solid var(--jotter-red);
+  padding-block: var(--space-xs);
+}
+
+/* Social icons appearing in the footer of every page */
+.social-icons {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin-block: var(--space-s);
+  justify-content: center;
+  gap: var(--space-s);
+}
+
+.social-icons li {
+  position: relative;
+}
+
+.social-icons a {
+  display: inline-block;
+  padding: var(--space-2xs);
+  transition: transform 0.3s ease;
+  text-decoration: none;
+}
+
+.social-icons a:hover,
+.social-icons a:focus {
+  transform: scale(1.1);
+  outline: none;
+}
+
+.social-icons a::after {
+  content: attr(data-hover-text);
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: var(--space-3xs) var(--space-3xs);
+  border-radius: var(--space-2xs);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.social-icons a:hover::after,
+.social-icons a:focus::after {
+  opacity: 1;
+}
+
+.social-icons li a img {
+  height: var(--space-l);
+  width: var(--space-l);
+}

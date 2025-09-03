@@ -1,5 +1,6 @@
 ---
-layout: default.njk
+layout: grid.njk
+whichgrid: central
 title: All Tags
 permalink: /tags/
 description: A list of all tags used on this site
@@ -8,5 +9,6 @@ keywords: tags, Bob Monsour, website, 11ty, eleventy, blog
 
 <h1>{{ title }}</h1>
 <div class="alltags-list">
-	{% include 'alltags.njk' %}
+  <h2>Look below...they're on the footer of every page.</h2>
+	{# {% include 'alltags.njk' %} #}
 </div>

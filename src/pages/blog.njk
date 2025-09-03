@@ -1,12 +1,11 @@
 ---
+layout: grid.njk
 title: Blog
 description: These are the archives of the personal website of Bob Monsour.
 keywords: retired, web development, eleventy, tennis, archives
 permalink: /blog/
 ---
 
-<h1>{{ title }} <span class="parenthetical">(<a href="/feed.xml">RSS</a>, <a href="/stats/">(posting stats)</a></span></h1>
-{%- set postlist = collections.postsnotestils | reverse -%}
-{%- for post in postlist -%}
-	{% include "entry-item.njk" %}
-{%- endfor -%}
+<h1>{{ title }} <span class="parenthetical">(<a href="/feed.xml">RSS</a>, (<a href="/stats/">posting stats</a>)</span></h1>
+{%- set blogposts = collections.postsnotestils | reverse -%}
+{% include 'blog-entries.njk' %}

@@ -1,4 +1,6 @@
 ---
+layout: grid.njk
+whichgrid: central
 title: Notes
 description: These are the archives of Bob Monsour's notes.
 keywords: retired, web development, eleventy, tennis, notes
@@ -6,8 +8,6 @@ permalink: /notes/
 ---
 
 <h1>{{ title }} <span class="parenthetical">(<a href="/notesfeed.xml">RSS</a>, Notes only)</span></h1>
-<p class="subtitle">Shorter writings and observations <a href="/stats/">(posting stats)</a></p>
-{%- set noteslist = collections.notes | reverse -%}
-{%- for post in noteslist -%}
-	{% include "entry-item.njk" %}
-{%- endfor -%}
+<p class="text-center">Shorter writings and observations</p>
+{%- set blogposts = collections.notes | reverse -%}
+{% include "blog-entries.njk" %}

@@ -1,6 +1,6 @@
-<ul>
+<ul class="listolinks">
 {% for tagObj in collections.all | getAllTags %}
   {% set tagUrl %}/tags/{{ tagObj.tag | slugify }}/{% endset %}
-    <li><a href="{{ tagUrl }}" class="post-tag">{{ tagObj.tag }} <span class="tagcount">({{ tagObj.count }})</span></a></li>
+    <li><a href="{{ tagUrl }}">{{ tagObj.tag }} <span class="parenthetical">({{ tagObj.count }})</span></a></li>
 {% endfor %}
 </ul>

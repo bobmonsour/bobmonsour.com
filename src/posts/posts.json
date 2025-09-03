@@ -1,8 +1,10 @@
 {
-	"layout": "post.njk",
-	"permalink": "blog/{{ page.fileSlug }}/",
-	"imageDir": "src/assets/img/",
-	"showImage": true,
-	"keywords": "retired, web development, blog, eleventy, tennis",
-	"snow": "false"
+  "layout": "postgrid.njk",
+  "whichgrid": "central",
+  "boxed": "true",
+  "permalink": "blog/{{ page.fileSlug }}/",
+  "imageDir": "src/assets/img/",
+  "showImage": true,
+  "keywords": "retired, web development, blog, eleventy, tennis",
+  "snow": "false"
 }

@@ -1,0 +1,10 @@
+<ul class="list-none">
+  {%- for post in blogposts -%}
+    <li>
+      <a href="{{ post.url }}" class="bold">{{ post.data.title }}</a>
+      <p class="no-bot-margin">{{ post.date | formatPostDate }} &middot; {{ post.data.description | safe }}</p>
+    </li>
+    {% set tagsdata = post.data.tags %}
+    {% include 'taglist.njk' %}
+  {%- endfor -%}
+</ul>

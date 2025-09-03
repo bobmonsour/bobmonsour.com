@@ -1,5 +1,5 @@
 ---
-layout: plain.njk
+layout: grid.njk
 title: Search
 description: Search
 keywords: search
@@ -8,9 +8,9 @@ pagestyle: search
 ---
 
 <h1>Search</h1>
+<div id="search"></div>
 
 <script src="/pagefind/pagefind-ui.js"></script>
-<div id="search"></div>
 <script>
   window.addEventListener('DOMContentLoaded', (event) => {
     new PagefindUI({

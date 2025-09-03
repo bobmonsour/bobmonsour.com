@@ -1,12 +1,12 @@
 {#
   Display list of tags for posts
 #}
-<ul class="post-taglist">
+<ul class="taglist">
   <li>Tags:&nbsp;</li>
   {%- for tag in tagsdata -%}
     {%- set tagUrl -%}/tags/{{ tag | slugify }}/{%- endset -%}
-    <li><a href="{{ tagUrl }}" class="post-tag">{{ tag }}</a>&nbsp;&nbsp;</li>
+    <li><a href="{{ tagUrl }}">{{ tag }}</a>&nbsp;&nbsp;</li>
   {%- endfor -%}
-  <li><a href="/tags/">All Tags</a></li>&nbsp;&nbsp;
-  <li><a href="/search/" class="post-tag">Search</a></li>
+  <li><a href="#alltags">All Tags</a></li>&nbsp;&nbsp;
+  {# <li><a href="/search/">Search</a></li> #}
 </ul>

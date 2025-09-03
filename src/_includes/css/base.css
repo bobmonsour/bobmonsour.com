@@ -1,0 +1,106 @@
+/* Reset and default element styles */
+html {
+  scroll-behavior: smooth;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+ol,
+ul {
+  margin-block: var(--space-xs);
+  padding: 0;
+}
+
+ol:not([class]),
+ul:not([class]) {
+  margin-inline-start: var(--space-l);
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+img:not([class]) {
+  margin-block-end: var(--space-s);
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+:where(h1, h2) {
+  font-size: var(--font-size-lg);
+  text-align: center;
+  text-wrap: balance;
+}
+:where(article h2) {
+  text-align: left;
+}
+
+:where(p) {
+  margin-block: 0 var(--space-s);
+  text-wrap: pretty;
+}
+
+:where(a:not(:has(img))) {
+  color: var(--text-color);
+  text-underline-offset: 0.2em;
+  text-decoration-thickness: 3px;
+  text-decoration-style: dashed;
+  text-decoration-color: var(--link-primary);
+  &:hover {
+    outline: 5px dashed var(--outline-hover);
+    border-radius: 10px;
+    text-decoration: none;
+  }
+}
+
+:where(a:not([data-hover-text]) img) {
+  border-radius: 10px;
+  outline: 3px dashed var(--outline-primary);
+  &:hover {
+    outline: 5px dashed var(--outline-hover);
+    border-radius: 10px;
+  }
+}
+
+/* SVG icon to indicate links to external sites */
+a[data-link-type="external"]::after {
+  background: no-repeat var(--icon-external-link);
+  content: "";
+  padding-right: 1em;
+}
+
+/* Default img to handle fluid images */
+:where(img) {
+  max-width: 100%;
+  display: block;
+}
+:where(img[width]) {
+  width: auto; /* Defer to max-width */
+}
+:where(img[width][height]) {
+  height: auto; /* Preserve aspect ratio */
+}

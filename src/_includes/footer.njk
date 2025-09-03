@@ -1,4 +1,9 @@
+<footer class="bg-color">
+  <div id="alltags">
+    <h2>Yes, you can haz all the tags:</h2>
+    {# <h2>Yes, you can haz all the tags (or <a href="/search/">search</a>):</h2> #}
+    {% include 'alltags.njk' %}
+  </div>
 	{% include 'socials.njk' %}
-<footer>
-  <p>Built with <a href="https://11ty.dev">{{ eleventy.generator }}</a>&nbsp;&middot;&nbsp;<a href="#top">Scroll to Top</a></p>
+  <p class="text-center no-bot-margin">Built with <a href="https://11ty.dev">{{ eleventy.generator }}</a>&nbsp;&middot;&nbsp;<a href="https://github.com/bobmonsour/bobmonsour.com">Source</a></p>
 </footer>

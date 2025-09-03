@@ -1,4 +1,6 @@
 ---
+layout: grid.njk
+whichgrid: central
 pagination:
   data: collections
   size: 1
@@ -15,6 +17,5 @@ keywords: tags, Bob Monsour, website, 11ty, eleventy, blog
 ---
 
 <h1>Tagged “{{ tag }}”</h1>
-<br>
-{% set postlist = collections[ tag ] | reverse %}
-{% include "postlist-tagged.njk" %}
+{% set blogposts = collections[ tag ] | reverse %}
+{% include "blog-entries.njk" %}

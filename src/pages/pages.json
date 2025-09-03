@@ -1,7 +1,7 @@
 {
-  "layout": "default.njk",
+  "whichgrid": "central",
+  "boxed": "true",
   "imageDir": "src/assets/img/",
-  "snow": "false",
   "image": {
     "source": "about-bob.jpg",
     "alt": "a picture of Bob from 2009"

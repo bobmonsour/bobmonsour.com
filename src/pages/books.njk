@@ -1,5 +1,6 @@
 ---
-layout: plain.njk
+layout: grid.njk
+whichgrid: popout
 title: Books
 description: These are books that I've read over the years, though for many, I don't know what year that I read them.
 keywords: books, reading, bookshelf
@@ -26,7 +27,7 @@ permalink: /books/
 	{% endfor %}
 </div>
 
-<h2 class="bookyear">Currently Reading</h2>
+<h2 class="bookyear text-center boxed">Currently Reading</h2>
 <div class="bklist">
 		{%- for book in books.currentBooks.slice(0,2) -%}
 			{%- include "bookitem.njk" -%}
@@ -42,7 +43,7 @@ permalink: /books/
 				close the 'bklist' div on the prior year, set the heading id
 				to the new year, update the previous_year, and open a new bklist div #}
 			{% if not loop.first %}</div>{% endif %}
-			<h2 id="y{{ current_year }}" class="bookyear">{{ current_year }}</h2>
+			<h2 id="y{{ current_year }}" class="bookyear text-center boxed">{{ current_year }}</h2>
 			{% set previous_year = current_year %}
 			<div class="bklist">
 		{%- endif %}
@@ -51,7 +52,7 @@ permalink: /books/
 		{% if loop.last %}</div>{% endif %}
 	{%- endfor %}
 
-<h2 id="yundated" class="bookyear">Undated: don't know when I read these</h2>
+<h2 id="yundated" class="bookyear text-center boxed">Undated: don't know when I read these</h2>
 <div class="bklist">
 	{%- for book in books.undatedBooks %}
 		{% include "bookitem.njk" %}

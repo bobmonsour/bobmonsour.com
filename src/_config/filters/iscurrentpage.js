@@ -13,6 +13,12 @@ export const isCurrentPage = (linkText, pageUrl) => {
       if (pageUrl.includes("/blog/")) {
         return 'aria-current="page"';
       }
+      if (pageUrl.includes("/tags/")) {
+        return 'aria-current="page"';
+      }
+      if (pageUrl.includes("/stats/")) {
+        return 'aria-current="page"';
+      }
       break;
     case "notes":
       if (pageUrl.includes("/notes/")) {

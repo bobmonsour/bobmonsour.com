@@ -1,5 +1,6 @@
 {
-  "layout": "notespost.njk",
+  "layout": "postgrid.njk",
+  "whichgrid": "central",
   "permalink": "blog/{{ title | slugify }}/",
   "tags": "notes",
   "image": {

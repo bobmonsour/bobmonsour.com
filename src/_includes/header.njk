@@ -1,10 +1,9 @@
-<header id="top">
+<header id="top" class="bg-color">
   <nav>
-    <ul>
+    <ul class="listolinks">
       {% for link in site.mainNavLinks %}
       <li><a href="{{ link.url }}" {{ link.text | isCurrentPage(page.url) | safe }}>{{ link.text }}</a></li>
       {% endfor %}
     </ul>
   </nav>
-  {# <a href="#top" class="stt" title="scroll to top"></a> #}
 </header>

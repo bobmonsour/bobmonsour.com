@@ -1,4 +1,6 @@
 ---
+layout: grid.njk
+whichgrid: central
 title: TIL
 description: These are the archives of Bob Monsour's TIL, which captures my 'today I learned, linked, or loved' thoughts, i.e., links to interesting things.
 keywords: retired, web development, eleventy, tennis, today I learned
@@ -6,8 +8,6 @@ permalink: /til/
 ---
 
 <h1>{{ title }} <span class="parenthetical">(<a href="/tilfeed.xml">RSS</a>, TIL only)</span></h1>
-<p class="subtitle">Today I Learned, Linked, or Loved <a href="/stats/">(posting stats)</a></p>
-{%- set tillist = collections.til | reverse -%}
-{%- for post in tillist -%}
-	{% include "entry-item.njk" %}
-{%- endfor -%}
+<p class="text-center">Today I Learned, Linked, or Loved</p>
+{%- set blogposts = collections.til | reverse -%}
+{% include 'blog-entries.njk' %}

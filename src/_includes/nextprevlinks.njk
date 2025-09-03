@@ -5,9 +5,9 @@
   {%- set previousPost = theseposts | getPreviousCollectionItem %}
   {%- set nextPost = theseposts | getNextCollectionItem %}
   {%- if nextPost or previousPost %}
-    <ul class="post-nextprev">
-      {%- if previousPost %}<li>Previous post: <a href="{{ previousPost.url }}">{{ previousPost.data.title }}</a></li>{% endif %}
-      {%- if nextPost %}<li>Next post (in time): <a href="{{ nextPost.url }}">{{ nextPost.data.title }}</a></li>{% endif %}
-    </ul>
+    {%- if previousPost %}
+      <p>Previous post: <a href="{{ previousPost.url }}">{{ previousPost.data.title }}</a></p>{% endif %}
+    {%- if nextPost %}
+      <p>Next post (in time): <a href="{{ nextPost.url }}">{{ nextPost.data.title }}</a></p>{% endif %}
   {%- endif %}
 </div>
