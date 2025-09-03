@@ -1,6 +1,7 @@
 {
   "layout": "postgrid.njk",
   "whichgrid": "central",
+  "showImage": true,
   "permalink": "blog/{{ title | slugify }}/",
   "tags": "til",
   "image": {
