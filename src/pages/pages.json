@@ -1,5 +1,5 @@
 {
-  "whichgrid": "central",
+  "whichgrid": "popout",
   "boxed": "true",
   "imageDir": "src/assets/img/",
   "image": {
