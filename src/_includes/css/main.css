@@ -4,7 +4,7 @@
 */
 body {
   background-color: var(--bg-primary);
-  background-image: url("/assets/img/bg-me-and-dad.jpg");
+  /* background-image: url("/assets/img/bg-me-and-dad.jpg"); */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -96,6 +96,9 @@ nav a[aria-current="page"] {
 }
 
 @media (min-width: 700px) {
+  body {
+    background-image: url("/assets/img/bg-me-and-dad.jpg");
+  }
   .homegrid {
     grid-template-columns: repeat(2, 1fr);
   }
