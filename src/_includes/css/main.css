@@ -216,15 +216,15 @@ nav .listolinks {
 
 .table-of-contents,
 .email-comment {
-  grid-column: content;
-  margin: 0 auto;
-  margin-block: var(--space-m);
-  padding: var(--space-s);
+  margin: var(--space-m) auto;
+  padding: var(--space-m);
   width: fit-content;
   background-color: var(--bg-secondary);
-  outline: 0.1vw solid var(--box-primary);
+  border: 1px solid var(--box-primary);
   border-radius: 10px;
-  padding: var(--space-s);
+  & h2 {
+    text-align: center;
+  }
 }
 
 blockquote {

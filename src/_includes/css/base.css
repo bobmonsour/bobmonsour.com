@@ -51,11 +51,12 @@ select {
 }
 
 :where(h1, h2) {
-  font-size: var(--font-size-lg);
+  font-size: var(--font-size-xl);
   text-align: center;
   text-wrap: balance;
 }
 :where(article h2) {
+  font-size: var(--font-size-lg);
   text-align: left;
 }
 

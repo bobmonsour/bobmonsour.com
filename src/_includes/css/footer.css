@@ -6,7 +6,7 @@ footer {
 }
 footer > p {
   background-color: var(--bg-secondary);
-  border-top: 0.1vw solid var(--jotter-red);
+  border-top: 1px solid var(--jotter-red);
   padding-block: var(--space-xs);
 }
 
