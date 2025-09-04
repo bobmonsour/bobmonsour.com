@@ -11,7 +11,7 @@
 .boxed {
   background-color: var(--bg-secondary);
   border: 1px solid var(--box-primary);
-  border-radius: 10px;
+  border-radius: var(--radius);
   padding: var(--space-s);
 }
 

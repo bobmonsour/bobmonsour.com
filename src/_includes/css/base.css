@@ -73,17 +73,17 @@ select {
   text-decoration-color: var(--link-primary);
   &:hover {
     outline: 5px dashed var(--outline-hover);
-    border-radius: 10px;
+    border-radius: var(--radius);
     text-decoration: none;
   }
 }
 
 :where(a:not([data-hover-text]) img) {
-  border-radius: 10px;
+  border-radius: var(--radius);
   outline: 3px dashed var(--outline-primary);
   &:hover {
     outline: 5px dashed var(--outline-hover);
-    border-radius: 10px;
+    /* border-radius: var(--radius); */
   }
 }
 
@@ -96,8 +96,9 @@ a[data-link-type="external"]::after {
 
 /* Default img to handle fluid images */
 :where(img) {
-  max-width: 100%;
+  border-radius: var(--radius);
   display: block;
+  max-width: 100%;
 }
 :where(img[width]) {
   width: auto; /* Defer to max-width */

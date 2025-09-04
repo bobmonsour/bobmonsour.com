@@ -36,8 +36,9 @@
   --brand-font: Optima, Candara, "Noto Sans", source-sans-pro, sans-serif;
 
   /* Post Styles */
-  --post-title-size: var(--font-size-xl);
   --caption-size: var(--font-size-base);
+  --post-title-size: var(--font-size-xl);
+  --radius: 10px;
 
   /* Book shelf & table of content styles */
   --max-book-width: 200px;
