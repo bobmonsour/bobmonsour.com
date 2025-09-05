@@ -37,12 +37,19 @@
     conditionally load the search page styles
     variables.css overrides the default styles
   #}
-  {% if pagestyle == "search" %}
+  {# {% if pagestyle == "search" %}
     <link rel="stylesheet" href="/pagefind/pagefind-ui.css">
-  {% endif %}
+  {% endif %} #}
+
+  {# Generate the proper body background image based on the page.url #}
+  <style>
+    body {
+      background-image: url("{{ page.url | whichBgImage }}");
+    }
+  </style>
 
   {# bundle the CSS content used on all pages and get the link to the bundle #}
-  {%- css %}
+  {% css %}
     {% include "css/variables.css" %}
     {% include "css/base.css" %}
     {% include "css/main.css" %}

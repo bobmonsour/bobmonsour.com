@@ -25,10 +25,10 @@ nav a[aria-current="page"] {
   text-decoration: none;
 }
 
-#search {
+/* #search {
   margin-block: var(--space-m);
   text-align: left;
-}
+} */
 
 .stripe-buy-button {
   display: flex;
@@ -91,9 +91,14 @@ nav a[aria-current="page"] {
   margin-inline: auto;
 }
 
+@media (max-width: 699px) {
+  body {
+    background-image: none;
+  }
+}
+
 @media (min-width: 700px) {
   body {
-    background-image: url("/assets/img/bg-me-and-dad.jpg");
     background-attachment: fixed;
     background-size: cover;
     background-position: right center;
