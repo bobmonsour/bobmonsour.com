@@ -4,9 +4,6 @@
 */
 body {
   background-color: var(--bg-primary);
-  background-image: url("/assets/img/bg-me-and-dad.jpg");
-  background-attachment: fixed;
-  background-size: cover;
   color: var(--text-color);
   display: grid;
   grid-template-rows: auto 1fr auto;
@@ -97,6 +94,9 @@ nav a[aria-current="page"] {
 @media (min-width: 700px) {
   body {
     background-image: url("/assets/img/bg-me-and-dad.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: right center;
   }
   .homegrid {
     grid-template-columns: repeat(2, 1fr);
