@@ -4,9 +4,8 @@
 */
 body {
   background-color: var(--bg-primary);
-  /* background-image: url("/assets/img/bg-me-and-dad.jpg"); */
-  background-position: center;
-  background-repeat: no-repeat;
+  background-image: url("/assets/img/bg-me-and-dad.jpg");
+  background-attachment: fixed;
   background-size: cover;
   color: var(--text-color);
   display: grid;
