@@ -5,20 +5,20 @@
   {% include 'header.njk' %}
 	{% include "check-for-code.njk" %}
 	{% include "check-for-youtube.njk" %}
-  <main id="main-content" class="content bg-color">
-<article class="central" data-pagefind-body>
-  <div class="postmeta">
-    <h1>{{ title }}</h1>
-    <p class="no-bot-margin">{{ date | formatPostDate }} &middot; {{ content | readingTime }}</p>
-    {% set tagsdata = tags %}
-    {% include 'taglist.njk' %}
-    {% include 'showimage.njk' %}
-  </div>
-  {{ content | safe }}
-	<p class="email-comment boxed"><a href="mailto:bob.monsour@gmail.com?subject=Comment:%20{{ title | urlencode }}">Comment by email</a></p>
-	{% set theseposts = collections.postsnotestils %}
-  {% include 'nextprevlinks.njk' %}
-</article>
+  <main id="main-content" class="content bg-color" data-pagefind-body>
+  <article class="central" data-pagefind-body>
+    <div class="postmeta">
+      <h1>{{ title }}</h1>
+      <p class="no-bot-margin">{{ date | formatPostDate }} &middot; {{ content | readingTime }}</p>
+      {% set tagsdata = tags %}
+      {% include 'taglist.njk' %}
+      {% include 'showimage.njk' %}
+    </div>
+    {{ content | safe }}
+    <p class="email-comment boxed"><a href="mailto:bob.monsour@gmail.com?subject=Comment:%20{{ title | urlencode }}">Comment by email</a></p>
+    {% set theseposts = collections.postsnotestils %}
+    {% include 'nextprevlinks.njk' %}
+  </article>
 </main>
   {% include 'footer.njk' %}
   <a href="#" class="stt" title="scroll to top"></a>
