@@ -18,6 +18,20 @@ body {
 header {
   padding-block: var(--space-s);
 }
+
+.skip-nav-link {
+  border-radius: var(--radius);
+  left: var(--space-xs);
+  padding: 5px;
+  position: absolute;
+  transform: translateY(-150%);
+  transition: transform 300ms ease-in;
+}
+
+.skip-nav-link:focus {
+  transform: translateY(0);
+}
+
 /* Highlight the nav link of the current page  */
 nav a[aria-current="page"] {
   border-radius: var(--radius);

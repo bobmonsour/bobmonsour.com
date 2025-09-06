@@ -20,7 +20,7 @@
 }
 
 .ital {
-  font-style: italics;
+  font-style: italic;
 }
 
 .list-none {
@@ -39,6 +39,9 @@
   text-align: left;
 }
 
+.text-right {
+  text-align: right;
+}
 .parenthetical {
   font-size: var(--font-size-md);
   font-weight: normal;

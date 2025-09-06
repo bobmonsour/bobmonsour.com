@@ -24,9 +24,9 @@ permalink: /index.html
         Sandra
       </a>
       , my wonderful wife and artist, and our Portuguese Water Dog,
-      <a href="/soda/">Soda</a>. More
-      <a href="/about/">about me</a>.
+      <a href="/soda/">Soda</a>.
     </p>
+    <p class="ital"><a href="/about/">More...</a></p>
   </div>
   <div class="boxed">
     <h2>From the Blog</h2>
@@ -39,6 +39,7 @@ permalink: /index.html
       </li>
       {%- endfor -%}
     </ul>
+    <p class="ital"><a href="/blog/">More...</a></p>
   </div>
   <div class="boxed">
     <h2>Current Project</h2>
@@ -65,5 +66,6 @@ permalink: /index.html
     {%- for book in books.currentBooks.slice(0,1) -%}
       {%- include "bookitem.njk" -%}
     {%- endfor -%}
+    <p class="ital"><a href="/books/">More...</a></p>
   </div>
 </div>
