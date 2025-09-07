@@ -1,6 +1,14 @@
----
-layout: fullgrid.njk
----
-<div class="{{ whichgrid }} {% if boxed %}boxed{% endif %}">
-  {{ content | safe }}
-</div>
+<!DOCTYPE html>
+<html lang="en" data-inputpath="{{ page.inputPath }}" id="{{ title | slugify }}">
+  {% include 'head.njk' %}
+<body>
+  {% include 'header.njk' %}
+  <main id="main-content" class="content bg-color">
+    <div class="{{ whichgrid }} {% if boxed %}boxed{% endif %}">
+      {{ content | safe }}
+    </div>
+  </main>
+  {% include 'footer.njk' %}
+  <a href="#" class="stt" title="scroll to top"></a>
+</body>
+</html>
