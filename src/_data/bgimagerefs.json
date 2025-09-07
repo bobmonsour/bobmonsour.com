@@ -1,0 +1,22 @@
+[
+  {
+    "path": "/",
+    "image": "/assets/img/bg-me-and-dad.jpg"
+  },
+  {
+    "path": "/blog/",
+    "image": "/assets/img/bg-me-and-ma.jpg"
+  },
+  {
+    "path": "/books/",
+    "image": "/assets/img/bg-bill-and-bob.jpg"
+  },
+  {
+    "path": "/shop/",
+    "image": "/assets/img/bg-whole-family.jpg"
+  },
+  {
+    "path": "/about/",
+    "image": "/assets/img/bg-me-and-bill.jpg"
+  }
+]

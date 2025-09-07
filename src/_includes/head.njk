@@ -44,7 +44,11 @@
   {# Generate the proper body background image based on the page.url #}
   <style>
     body {
-      background-image: url("{{ page.url | whichBgImage }}");
+      {% if page.url | whichBgImage === "" %}
+        background-image: none;
+      {% else %}
+        background-image: url("{{ page.url | whichBgImage }}");
+      {% endif %}
     }
   </style>
 

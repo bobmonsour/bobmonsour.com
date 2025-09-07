@@ -5,7 +5,7 @@ boxed: true
 title: Soda
 description: This is Soda, our Portuguese Water Dog.
 keywords: dog, Soda
-permalink: /soda.html
+permalink: /soda/
 eleventyExcludeFromCollections: true
 ---
 
