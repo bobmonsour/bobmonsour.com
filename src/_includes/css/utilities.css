@@ -1,7 +1,7 @@
 /* Utility classes */
 .bg-color {
   background-color: var(--bg-primary);
-  opacity: 0.8;
+  opacity: 0.7;
 }
 
 .bold {
