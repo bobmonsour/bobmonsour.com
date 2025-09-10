@@ -7,7 +7,7 @@ keywords: retired, web development, eleventy, tennis, today I learned
 permalink: /til/
 ---
 
-<h1>{{ title }} <span class="parenthetical">(<a href="/tilfeed.xml">RSS</a>, TIL only)</span></h1>
+<h1>{{ title }}</h1>
 <p class="text-center">Today I Learned, Linked, or Loved</p>
 {%- set blogposts = collections.til | reverse -%}
 {% include 'blog-entries.njk' %}

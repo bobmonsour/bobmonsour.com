@@ -14,7 +14,7 @@ pageHasCode: true
 rssid: 9e3ac3aa631a5acbf61c0a25b2488c68
 ---
 
-> Hopefully, you've read [part 1](/posts/the-evolution-of-my-CSS-pipeline-in-Eleventy-part-1/). If not, I'll wait here... also, this post as well as part 1 can be found on the [11ty Bundle](https://11tybundle.dev/) site, a community site for sharing [Eleventy](https://www.11ty.dev/) tips, tricks, and resources. If you're an Eleventy user, I encourage you to [check it out](https://11tybundle.dev/).
+> Hopefully, you've read [part 1](/posts/the-evolution-of-my-CSS-pipeline-in-eleventy-part-1/). If not, I'll wait here... also, this post as well as part 1 can be found on the [11ty Bundle](https://11tybundle.dev/) site, a community site for sharing [Eleventy](https://www.11ty.dev/) tips, tricks, and resources. If you're an Eleventy user, I encourage you to [check it out](https://11tybundle.dev/).
 
 [[toc]]
 
@@ -273,20 +273,20 @@ const bundlerPlugin = require("@11ty/eleventy-plugin-bundle");
 const postcss = require("postcss");
 const postcssMinify = require("postcss-minify");
 EleventyConfig.addPlugin(bundlerPlugin, {
-	transforms: [
-		async function (content) {
-			// this.type returns the bundle name.
-			if (this.type === "css") {
-				// Same as Eleventy transforms, this.page is available here.
-				let result = await postcss([postcssMinify]).process(content, {
-					from: this.page.inputPath,
-					to: null,
-				});
-				return result.css;
-			}
-			return content;
-		},
-	],
+  transforms: [
+    async function (content) {
+      // this.type returns the bundle name.
+      if (this.type === "css") {
+        // Same as Eleventy transforms, this.page is available here.
+        let result = await postcss([postcssMinify]).process(content, {
+          from: this.page.inputPath,
+          to: null,
+        });
+        return result.css;
+      }
+      return content;
+    },
+  ],
 });
 ```
 

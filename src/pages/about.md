@@ -10,7 +10,7 @@ permalink: /about/
 
 ![Bob, circa 2009](/assets/img/about-bob.jpg){.round-img loading="eager" sizes="100px" style="margin: .5em auto;"}
 
-Born in Brooklyn, raised in New Jersey, and educated in Florida and Los Angeles, I'm now retired and living in Northern California with [Sandra](href="https://www.tascafineart.com/"){data-link-type="external"}, my wonderful wife and artist, and our Portuguese Water Dog, [Soda](/soda/).
+Born in Brooklyn, raised in New Jersey, and educated in Florida and Los Angeles, I'm now retired and living in Northern California with [Sandra](https://www.tascafineart.com/){data-link-type="external"}, my wonderful wife and artist, and our Portuguese Water Dog, [Soda](/soda/).
 
 We travel occasionally and I enjoy reading and trying to stay fit. I'm also having fun being a part of the community of web developers who make and use the static site generator [Eleventy](https://11ty.dev){data-link-type="external"}. A big part of that is maintaining the [11ty Bundle website](https://11tybundle.dev){data-link-type="external"} and its [newsletter](https://buttondown.com/11tybundle){data-link-type="external"}.
 

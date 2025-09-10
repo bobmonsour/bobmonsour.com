@@ -17,7 +17,7 @@ As one who can sometimes not let go of a bone once it's been picked up, I decide
 
 Right now, I'm sitting on a branch of this site that has a new ID for each entry that is based on the MD5 hash of the filename for the post, note, or til entry.
 
-The approach uses the [tag URI scheme](https://en.wikipedia.org/wiki/Tag_URI_scheme) that was noted in [my blog post](http://localhost:8080/blog/creating-permanently-unique-entry-id-for-rss/) about this, which I had learned from [Evan's blog post](https://darthmall.net/2025/on-the-importance-of-stable-ids/).
+The approach uses the [tag URI scheme](https://en.wikipedia.org/wiki/Tag_URI_scheme) that was noted in [my blog post](/blog/creating-permanently-unique-entry-id-for-rss/) about this, which I had learned from [Evan's blog post](https://darthmall.net/2025/on-the-importance-of-stable-ids/).
 
 Evan's approach to create these IDs uses a tool called [Expanso](https://espanso.org/) that generates an MD5 hash of his posts.
 

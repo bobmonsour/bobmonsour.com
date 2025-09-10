@@ -39,7 +39,7 @@ As of this writing, only the CMS category and the Getting Started categories hav
 
 > _UPDATE (11-1-2023):_ All of the listed categories are now included in their respective "From the Community" sections of their respective docs pages on the 11ty docs site.\_
 
-Here's the javascript template that does the work, and a [link to the file in the GitHub repo](https://github.com/bobmonsour/11tybundle.dev/blob/main/src/api/category-json-files.11ty.cjs).
+Here's the javascript template that does the work, and a [link to the file in the GitHub repo](https://github.com/bobmonsour/11tybundle.dev/blob/main/src/api/category-json-files.11ty.js).
 
 ```js
 /* Create json files for the listed set of categories
@@ -47,51 +47,51 @@ Here's the javascript template that does the work, and a [link to the file in th
    The file name is the category name in kebab case */
 const _ = require("lodash");
 class CategoryJsonFiles {
-	data() {
-		return {
-			pagination: {
-				data: "categories",
-				size: 1,
-			},
-			/* These are the categories that generate json files in the api directory
+  data() {
+    return {
+      pagination: {
+        data: "categories",
+        size: 1,
+      },
+      /* These are the categories that generate json files in the api directory
    For example, "CMS" in this list causes the file cms.json to be created */
-			categories: [
-				"CMS",
-				"Data Cascade",
-				"Dates",
-				"Deployment",
-				"Filters",
-				"Front Matter",
-				"Getting Started",
-				"Global Data",
-				"Images",
-				"Pagination",
-				"WebC",
-			],
-			/* Construct the permalink for the json file of the category */
-			permalink: (data) => `/api/${_.kebabCase(data.pagination.items[0])}.json`,
-			eleventyExcludeFromCollections: true,
-		};
-	}
+      categories: [
+        "CMS",
+        "Data Cascade",
+        "Dates",
+        "Deployment",
+        "Filters",
+        "Front Matter",
+        "Getting Started",
+        "Global Data",
+        "Images",
+        "Pagination",
+        "WebC",
+      ],
+      /* Construct the permalink for the json file of the category */
+      permalink: (data) => `/api/${_.kebabCase(data.pagination.items[0])}.json`,
+      eleventyExcludeFromCollections: true,
+    };
+  }
 
-	render(data) {
-		/* Filter the firehose posts for the paginated category
+  render(data) {
+    /* Filter the firehose posts for the paginated category
    "Categories" is the key in the json file for the array
    of categories for the post */
-		function isCategory(item) {
-			return item["Categories"].includes(data.pagination.items[0]);
-		}
-		/* The source data comes from the bundledata.cjs file that
+    function isCategory(item) {
+      return item["Categories"].includes(data.pagination.items[0]);
+    }
+    /* The source data comes from the bundledata.js file that
    returns the firehose, a json array of all the posts on
    the site */
-		const sortedPosts = data.bundledata.firehose
-			.filter(isCategory)
-			.sort((a, b) => {
-				return a.Date > b.Date ? -1 : 1;
-			});
-		/* Return the json string of the posts in this category */
-		return JSON.stringify(sortedPosts, null, 2);
-	}
+    const sortedPosts = data.bundledata.firehose
+      .filter(isCategory)
+      .sort((a, b) => {
+        return a.Date > b.Date ? -1 : 1;
+      });
+    /* Return the json string of the posts in this category */
+    return JSON.stringify(sortedPosts, null, 2);
+  }
 }
 
 module.exports = CategoryJsonFiles;
@@ -101,56 +101,56 @@ And here's a segment of what the json output looks like at [https://11tybundle.d
 
 ```json
 [
-	{
-		"Issue": "19",
-		"Type": "blog post",
-		"Title": "TinaCMS + 11ty",
-		"Link": "https://claytonerrington.com/blog/implementing-tinacms-with-11ty/",
-		"Categories": [
-			"Blogging",
-			"CMS",
-			"Configuration",
-			"Deployment",
-			"How to..."
-		],
-		"Date": "2023-10-17",
-		"Author": "Clayton Errington"
-	},
-	{
-		"Issue": "19",
-		"Type": "blog post",
-		"Title": "CloudCannon as a git based headless CMS for static site generators",
-		"Link": "https://rkblog.dev/posts/programming-general/cloudcannon-git-headless-cms/",
-		"Categories": ["CMS", "How to..."],
-		"Date": "2023-10-14",
-		"Author": "Piotr Maliński"
-	},
-	{
-		"Issue": "20",
-		"Type": "blog post",
-		"Title": "Headless kiosk application (with Kirby CMS)",
-		"Link": "https://getkirby.com/docs/cookbook/setup/headless-kiosk-application",
-		"Categories": ["CMS", "How to...", "Images"],
-		"Date": "2023-10-01",
-		"Author": "James Steel"
-	},
-	{
-		"Issue": "16",
-		"Type": "blog post",
-		"Title": "From Zero to CMS in 2 Minutes with CloudCannon and Eleventy",
-		"Link": "https://www.youtube.com/watch?v=yXcxvBJuULU",
-		"Categories": ["CMS", "YouTube", "Deployment"],
-		"Date": "2023-08-29",
-		"Author": "CloudCannon"
-	},
-	{
-		"Issue": "3",
-		"Type": "blog post",
-		"Title": "Working with CloudCannon and Eleventy - My Experience",
-		"Link": "https://www.raymondcamden.com/2023/04/06/working-with-cloudcannon-and-eleventy-my-experience",
-		"Categories": ["CMS"],
-		"Date": "2023-04-06",
-		"Author": "Raymond Camden"
-	}
+  {
+    "Issue": "19",
+    "Type": "blog post",
+    "Title": "TinaCMS + 11ty",
+    "Link": "https://claytonerrington.com/blog/implementing-tinacms-with-11ty/",
+    "Categories": [
+      "Blogging",
+      "CMS",
+      "Configuration",
+      "Deployment",
+      "How to..."
+    ],
+    "Date": "2023-10-17",
+    "Author": "Clayton Errington"
+  },
+  {
+    "Issue": "19",
+    "Type": "blog post",
+    "Title": "CloudCannon as a git based headless CMS for static site generators",
+    "Link": "https://rkblog.dev/posts/programming-general/cloudcannon-git-headless-cms/",
+    "Categories": ["CMS", "How to..."],
+    "Date": "2023-10-14",
+    "Author": "Piotr Maliński"
+  },
+  {
+    "Issue": "20",
+    "Type": "blog post",
+    "Title": "Headless kiosk application (with Kirby CMS)",
+    "Link": "https://getkirby.com/docs/cookbook/setup/headless-kiosk-application",
+    "Categories": ["CMS", "How to...", "Images"],
+    "Date": "2023-10-01",
+    "Author": "James Steel"
+  },
+  {
+    "Issue": "16",
+    "Type": "blog post",
+    "Title": "From Zero to CMS in 2 Minutes with CloudCannon and Eleventy",
+    "Link": "https://www.youtube.com/watch?v=yXcxvBJuULU",
+    "Categories": ["CMS", "YouTube", "Deployment"],
+    "Date": "2023-08-29",
+    "Author": "CloudCannon"
+  },
+  {
+    "Issue": "3",
+    "Type": "blog post",
+    "Title": "Working with CloudCannon and Eleventy - My Experience",
+    "Link": "https://www.raymondcamden.com/2023/04/06/working-with-cloudcannon-and-eleventy-my-experience",
+    "Categories": ["CMS"],
+    "Date": "2023-04-06",
+    "Author": "Raymond Camden"
+  }
 ]
 ```

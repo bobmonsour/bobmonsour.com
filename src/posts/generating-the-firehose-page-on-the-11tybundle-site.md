@@ -35,7 +35,7 @@ All of the blog post, site, starter, and release data is stored in a Google Shee
 
 What I didn't share at the time, but has been the case since before moving the data to Google Sheets is that the global data file that fetches the data does a lot of processing to generate a bunch of useful items that are used throughout the site.
 
-Here's a glimpse of what is returned by that global data file (you can see the [full file on GitHub](https://github.com/bobmonsour/11tybundle.dev/blob/main/src/_data/bundledata.cjs)). Oddly enough, it's called bundledata.cjs.
+Here's a glimpse of what is returned by that global data file (you can see the [full file on GitHub](https://github.com/bobmonsour/11tybundle.dev/blob/main/src/_data/bundledata.js)). Oddly enough, it's called bundledata.js.
 
 The data is returned as an object with a bunch of properties. Here's a list of the properties and what they contain. Aside from the counts, they are largely arrays of objects.
 

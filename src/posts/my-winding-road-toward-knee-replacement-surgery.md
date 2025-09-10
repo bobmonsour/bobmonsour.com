@@ -41,7 +41,7 @@ Several years ago, when we lived in Bellevue, Washington, I decided to see a doc
 
 The doc said to try physical therapy. I did, deploying ice and Advil as needed and doing some specific exercises to strengthen the muscles around the knee. It was working reasonably well. I was able to keep playing.
 
-Last year, after moving back to California (we’ve moved a lot), my wife was getting a PRP ([Platelet Rich Plasma](https://orthoinfo.aaos.org/en/treatment/platelet-rich-plasma-prp/)) injection for her hip. I asked the doctor if it was suitable for knees. He suggested that I first try a [cortisone injection](https://www.mayoclinic.org/tests-procedures/cortisone-shots/about/pac-20384794), which he offered to do on the spot. I said _what the heck_. It had no effect; the pain persisted. Several months later, I went to see him again. This time, he suggested that I try a PRP injection…_what the heck_. It had no effect; the pain persisted.
+Last year, after moving back to California (we’ve moved a lot), my wife was getting a PRP ([Platelet Rich Plasma](https://journals.lww.com/jaaos/abstract/2024/04010/american_academy_of_orthopaedic_surgeons.2.aspx)) injection for her hip. I asked the doctor if it was suitable for knees. He suggested that I first try a [cortisone injection](https://www.mayoclinic.org/tests-procedures/cortisone-shots/about/pac-20384794), which he offered to do on the spot. I said _what the heck_. It had no effect; the pain persisted. Several months later, I went to see him again. This time, he suggested that I try a PRP injection…_what the heck_. It had no effect; the pain persisted.
 
 This year, after the arrival of COVID-19, I’ve been reluctant to seek additional medical advice. Yet an unfortunate mishap, going down 2 steps and torquing my left knee, resulted in excruciating pain. And I thought I had a bad right knee. Later that evening, I had one of my occasional episodes of [atrial fibrillation](https://www.mayoclinic.org/diseases-conditions/atrial-fibrillation/symptoms-causes/syc-20350624) (a fast and irregular heartbeat). I have about 6 to 8 of these a year. I carry a pill with me that usually gets my heart back to a normal rhythm within an hour or so. Not so, this time. Shortening the story, my wife took me to the ER where they got my heart back to normal (thank you, ER docs). I suspect it was triggered by the stress of the knee injury.
 
@@ -146,8 +146,6 @@ Ah, but visco-stuff, the guidelines can’t recommend its use, “unless a clear
 ## To inject or not to inject?
 
 <img src="/assets/img/injectodoc.jpg" alt="a diabolocial man holding a syringe" sizes="100vw">
-
-Photo [Dimitri Houtteman](https://unsplash.com/@dimhou") {.caption}
 
 Now I was faced with whether or not to keep my appointment with InjectoDoc to get a visco-stuff injection. Perhaps it could buy me a bit more time before a knee replacement.
 

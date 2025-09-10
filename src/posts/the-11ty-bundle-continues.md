@@ -39,7 +39,7 @@ Fathom Analytics for the 11tybundle.dev site {.caption}
 
 I also toyed (for about 2 weeks) with using the Buy Me a Coffee service. I don't need the money and there were no coffee buyers.
 
-It took the gold mine of [Raymond Camden's eleventy blog posts](https://www.raymondcamden.com/tags/eleventy) to cross the 500 post threshold. I had been way behind in capturing his posts. If you check the [Authors by count](https://11tybundle.dev/authors-by-count/) page, you'll see that at the top of the leaderboard by a factor of 2 as of this writing.
+It took the gold mine of [Raymond Camden's eleventy blog posts](https://www.raymondcamden.com/tags/eleventy) to cross the 500 post threshold. I had been way behind in capturing his posts. If you check the [Authors](https://11tybundle.dev/authors/) page, you'll see that at the top of the leaderboard by a factor of 2 as of this writing.
 
 In [Issue 16](https://11tybundle.dev/blog/11ty-bundle-16/), I highlighted a micro-site that Zach had built, called [Educational, Sensational, Inspirational, Foundational](https://esif.dev/), or "esif" for short. On the site, he provides _"A historical record of foundational web development blog posts."_ As I recall, these posts were in response to a question he posted, asking for posts that web developers felt had left a mark on them.
 
