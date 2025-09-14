@@ -8,13 +8,11 @@ export default {
       if (data.image && data.image.source) {
         return data.image;
       }
-      if (Array.isArray(data.tags)) {
-        if (data.tags.includes("notes")) {
-          return { source: "notes-og-image.jpg" };
-        }
-        if (data.tags.includes("til")) {
-          return { source: "til-og-image.jpg" };
-        }
+      if (data.tags.includes("notes")) {
+        return { source: "notes-og-image.jpg" };
+      }
+      if (data.tags.includes("til")) {
+        return { source: "til-og-image.jpg" };
       }
     },
     showImage: true,
