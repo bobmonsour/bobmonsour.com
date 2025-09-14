@@ -2,6 +2,7 @@
 title: Organizations that I'm supporting
 date: 2025-09-13
 tags:
+  - personal
   - politics
 description: I am supporting two organizations that address issues important to me.
 keywords: politics, gun control, Israeli-Palestinian conflict, Just Vision, Brady Campaign
