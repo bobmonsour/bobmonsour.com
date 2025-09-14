@@ -10,7 +10,7 @@ rssid: c9a348335f8e85de5c89c6396f19c55d
 
 ~~_While this appeared first on my [Notes](/notes/) page, I have decided to indeed create this very TIL page for things that I have Learned, Linked, or Loved._~~
 
-**Update: I have since collapsed my Notes and TIL posts into the overall [blog](/blog/). What I have retained is the use of the tags "notes" and "til" to identify those posts. This is part of my overall simplification efforts in maintaining this site.**
+**Update: I have since collapsed my Notes and TIL posts into the overall [blog](/blog/). What I have retained is the use of the tags "[notes](/tags/notes/)" and "[til](/tags/til/)" to identify those posts. This is part of my overall simplification efforts in maintaining this site.**
 
 > That’s the purpose of my link blog: it’s an ongoing log of things I’ve found—effectively a combination of public bookmarks and my own thoughts and commentary on why those things are interesting. -- Simon Willison
 
