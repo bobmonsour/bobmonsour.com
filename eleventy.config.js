@@ -49,28 +49,11 @@ export default function (eleventyConfig) {
   ].forEach((path) => eleventyConfig.addPassthroughCopy(path));
 
   // Generate four collections
-  //	- posts, notes, tils, and a combined collection of those two
-  // generate the "posts" collection
+  //	- posts, notes, tils are all in a single collection
+  //  - all are located in a single src directory named posts
+  //  - they are delineated by tags, i.e, a "notes" and "til" tag
   eleventyConfig.addCollection("posts", (collection) => {
     return [...collection.getFilteredByGlob("./src/posts/*.md")];
-  });
-  // generate the "notes" collection
-  eleventyConfig.addCollection("notes", (collection) => {
-    return [...collection.getFilteredByGlob("./src/notes/*.md")];
-  });
-  // generate the "til" collection
-  eleventyConfig.addCollection("til", (collection) => {
-    return [...collection.getFilteredByGlob("./src/til/*.md")];
-  });
-  // generate a combined "posts", "notes", and "til" collection
-  eleventyConfig.addCollection("postsnotestils", (collection) => {
-    return [
-      ...collection.getFilteredByGlob([
-        "./src/posts/*.md",
-        "./src/notes/*.md",
-        "./src/til/*.md",
-      ]),
-    ];
   });
 
   // Add local filters

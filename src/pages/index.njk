@@ -31,7 +31,7 @@ permalink: /index.html
   <div class="boxed">
     <h2>From the Blog</h2>
     <ul class="list-none">
-      {%- set blogposts = collections.postsnotestils | reverse -%} {%- set
+      {%- set blogposts = collections.posts | reverse -%} {%- set
       last3posts = blogposts.slice(0,3) -%} {%- for post in last3posts -%}
       <li>
         <a href="{{ post.url }}" class="bold">{{ post.data.title }}</a>

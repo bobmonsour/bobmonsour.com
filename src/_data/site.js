@@ -9,7 +9,6 @@ export default {
     name: "Bob Monsour",
     email: "bob.monsour@gmail.com",
   },
-  snow: "true",
   mainNavLinks: [
     { url: "/", text: "Home" },
     { url: "/blog/", text: "Blog" },
