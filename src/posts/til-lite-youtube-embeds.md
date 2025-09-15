@@ -12,4 +12,4 @@ I have only one YouTube video on this site, but I wanted to make it more perform
 
 > Video is great, but the default YouTube embed share is both bloated and not privacy-minded. I finally switched my YouTube embeds to lite-youtube-embed by Paul Irish, and it's fantastic. It loads "faster than a sneeze" and uses the no-cookie version by default. -- Sia Karamalegos
 
-And here's that [one post that has a video on it](/blog/time-lapse-gym-construction/).
+And here's [one of the posts that has a video on it](/blog/the-endless-summer/).
