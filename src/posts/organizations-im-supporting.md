@@ -16,7 +16,7 @@ rssid: f1cce74f053127fe82fc616d68340dc2
 
 I wanted to share my thoughts on two significant challenges that have captured my attention and how I am choosing to support them: the Israeli-Palestinian conflict and the need for better gun control in our country (the US). While I've been a supporter to an organization to address one of these challenges for some time, the other has recently earned a place near the top of my list of concerns.
 
-## I'm am an Arab-American
+## I'm an Arab-American
 
 My grandparents immigrated to the U.S. from Lebanon and Palestine. My maternal grandfather was from Ramallah, in the West Bank. My other grandparents and great grandparents came from various parts of Lebanon. They all arrived around 1900. At the time Lebanon and Palestine were part of the Ottoman Empire. When I located the hand-written census records for some of my grandparents and great grandparents, they listed their country of origin as Syria, as Lebanon was not formally formed as a country until after World War I.
 
