@@ -53,7 +53,7 @@ export default function (eleventyConfig) {
   //  - all are located in a single src directory named posts
   //  - they are delineated by tags, i.e, a "notes" and "til" tag
   eleventyConfig.addCollection("posts", (collection) => {
-    return [...collection.getFilteredByGlob("./src/posts/*.md")];
+    return [...collection.getFilteredByGlob("./src/posts/**/*.md")];
   });
 
   // Add local filters
