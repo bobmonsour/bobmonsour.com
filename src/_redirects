@@ -10,4 +10,6 @@
 /posts/* /blog/:splat
 /microblog/* /notes/:splat
 /notes/* /blog/:splat
+/notes/ /tags/notes/
 /til/* /blog/:splat
+/til/ /tags/til/
