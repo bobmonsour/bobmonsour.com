@@ -6,6 +6,8 @@ tags: [notes, blogging, futzing]
 rssid: 8cdccdeb98cda4d53f0b48c75533a7bf
 ---
 
+**Update: All the "microblog" stuff below is no longer true. Everything lives in the main [Blog](/blog/). There are things tagged with "[notes](/tags/notes/)" and "[til](/tags/til/)" to identify those posts. This is part of my overall simplification efforts in maintaining this site.**
+
 I'd been wanting to redesign my personal website for a while. I've had sketches and ideas, but no will to get started. Then, finally, a couple of days ago, I sat down and started futzing.
 
 What you're seeing now is a modified site design and not exactly something I'd call a complete redesign. It's more of a simplification with some new functionality. The home page is now more an introduction to who I am instead just a list of the last 3 blog posts. I've shifted some of the top nav to the footer, added a crapload of social icons to the footer, and added this new [microBlog](/microblog/) section.
