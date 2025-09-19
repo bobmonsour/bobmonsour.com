@@ -99,10 +99,10 @@ nav a[aria-current="page"] {
   gap: var(--flow-space);
   padding-inline: var(--space-xs);
   place-content: center;
-}
-.homegrid img {
-  margin-block: var(--space-xs);
-  margin-inline: auto;
+  img {
+    margin-block: var(--space-xs);
+    margin-inline: auto;
+  }
 }
 
 @media (max-width: 699px) {
@@ -139,13 +139,14 @@ nav a[aria-current="page"] {
   justify-content: space-around;
   list-style: none;
   text-align: center;
+  a {
+    padding: 0 var(--space-3xs);
+  }
+  li {
+    margin: var(--space-3xs) var(--space-2xs);
+  }
 }
-.listolinks a {
-  padding: 0 var(--space-3xs);
-}
-.listolinks li {
-  margin: var(--space-3xs) var(--space-2xs);
-}
+
 nav .listolinks {
   justify-content: center;
 }
@@ -159,18 +160,22 @@ nav .listolinks {
   margin-block-start: var(--space-l);
   place-items: start center;
 }
-.bkitem {
+book-item {
   display: grid;
   grid-template-rows: auto auto auto;
   justify-items: center;
   align-items: center;
+  text-align: center;
+  a {
+    font-weight: bold;
+    img {
+      height: auto;
+      margin-block-end: 0.5em;
+      width: 180px;
+    }
+  }
 }
-.bktitle {
-  font-weight: bold;
-  margin-block-start: var(--space-2xs);
-  width: var(--max-book-width);
-  text-wrap: pretty;
-}
+
 .bookyear {
   background: var(--bg-secondary);
   margin-block-start: var(--space-m);
@@ -218,11 +223,11 @@ nav .listolinks {
 
 .postmeta {
   text-align: center;
-  & .taglist {
+  .taglist {
     justify-content: center;
     margin-block-end: var(--space-s);
   }
-  & img {
+  img {
     margin-block-end: var(--space-2xs);
   }
 }
@@ -243,7 +248,7 @@ nav .listolinks {
   background-color: var(--bg-secondary);
   border: 1px solid var(--box-primary);
   border-radius: var(--radius);
-  & h2 {
+  h2 {
     text-align: center;
   }
 }

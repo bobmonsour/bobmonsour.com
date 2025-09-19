@@ -40,7 +40,7 @@ footer > p {
 .social-icons a::after {
   content: attr(data-hover-text);
   position: absolute;
-  top: 100%;
+  top: 65%;
   left: 50%;
   transform: translateX(-50%);
   white-space: nowrap;

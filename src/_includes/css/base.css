@@ -1,53 +1,19 @@
 /* Reset and default element styles */
 html {
   scroll-behavior: smooth;
+  overflow-y: scroll;
 }
 
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+@supports (scrollbar-gutter: stable) {
+  html {
+    overflow-y: auto;
+    scrollbar-gutter: stable;
+  }
+}
+
+:where(body, h1, h2, h3, h4, h5, h6) {
   margin: 0;
   padding: 0;
-}
-
-ol,
-ul {
-  margin-block: var(--space-xs);
-  padding: 0;
-}
-
-ol:not([class]),
-ul:not([class]) {
-  margin-inline-start: var(--space-l);
-}
-
-/* Box sizing rules */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-/* Make images easier to work with */
-img,
-picture {
-  max-width: 100%;
-  display: block;
-}
-img:not([class]) {
-  margin-block-end: var(--space-s);
-}
-
-/* Inherit fonts for inputs and buttons */
-input,
-button,
-textarea,
-select {
-  font: inherit;
 }
 
 :where(h1, h2) {
@@ -65,38 +31,35 @@ select {
   border-top: 1px solid var(--jotter-red);
 }
 
+:where(ol, ul) {
+  margin-block: var(--space-xs);
+  padding: 0;
+}
+
+:where(ol:not([class]), ul:not([class])) {
+  margin-inline-start: var(--space-l);
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Inherit fonts for inputs and buttons */
+:where(input, button, textarea, select) {
+  font: inherit;
+}
+
+:where(hr) {
+  border: none;
+  border-top: 1px solid var(--jotter-red);
+}
+
 :where(p) {
   margin-block: 0 var(--space-s);
   text-wrap: pretty;
-}
-
-:where(a:not(:has(img))) {
-  color: var(--text-color);
-  text-underline-offset: 0.2em;
-  text-decoration-thickness: 3px;
-  text-decoration-style: dashed;
-  text-decoration-color: var(--link-primary);
-  &:hover {
-    outline: 5px dashed var(--outline-hover);
-    border-radius: var(--radius);
-    text-decoration: none;
-  }
-}
-
-:where(a:not([data-hover-text]) img) {
-  border-radius: var(--radius);
-  outline: 3px dashed var(--outline-primary);
-  &:hover {
-    outline: 5px dashed var(--outline-hover);
-    /* border-radius: var(--radius); */
-  }
-}
-
-/* SVG icon to indicate links to external sites */
-a[data-link-type="external"]::after {
-  background: no-repeat var(--icon-external-link);
-  content: "";
-  padding-right: 1em;
 }
 
 /* Default img to handle fluid images */
@@ -110,4 +73,44 @@ a[data-link-type="external"]::after {
 }
 :where(img[width][height]) {
   height: auto; /* Preserve aspect ratio */
+}
+:where(img:not([class])) {
+  margin-block-end: var(--space-s);
+}
+
+:where(a:not([data-hover-text])):focus {
+  outline: none; /* Remove default browser outline */
+}
+
+:where(a:not(:has(img))) {
+  color: var(--text-color);
+  text-underline-offset: 0.2em;
+  text-decoration-thickness: 3px;
+  text-decoration-style: dashed;
+  text-decoration-color: var(--link-primary);
+  &:hover,
+  &:focus {
+    outline: 5px dashed var(--link-hover);
+    border-radius: var(--radius);
+    text-decoration: none;
+  }
+}
+
+:where(a:not([data-hover-text])) {
+  img {
+    border-radius: var(--radius);
+    outline: 3px dashed var(--outline-primary);
+  }
+  &:hover img,
+  &:focus img {
+    border: none;
+    outline: 5px dashed var(--outline-hover);
+  }
+}
+
+/* SVG icon to indicate links to external sites */
+a[data-link-type="external"]::after {
+  background: no-repeat var(--icon-external-link);
+  content: "";
+  padding-right: 1em;
 }

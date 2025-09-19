@@ -22,13 +22,13 @@ I have written a couple of blog posts prior to each of my surgeries. You can fin
 
 But the two other resources that have been very helpful to me are this book.
 
-<div class="bkitem">
+<book-item>
 	<a href="https://amzn.to/4kRm8tU">
-		<img src="/assets/img/the-knee-book.jpg" alt="The Knee Book">
+		<img src="/assets/img/the-knee-book.jpg" style="width: 180px;" alt="The Knee Book">
 	</a>
-	<p class="bktitle"><a href="https://amzn.to/4kRm8tU">The Knee Book</a></p>
-	<p class="bkauthor">by Dr. Adam Rosen</p>
-</div>
+	<p class="no-bot-margin"><a href="https://amzn.to/4kRm8tU" class="bold">The Knee Book</a></p>
+	<p>by Dr. Adam Rosen</p>
+</book-item>
 
 And the second one is [Dr. Rosen's YouTube channel](https://www.youtube.com/@dradamrosen). It is filled with solid advice and information about every aspect of dealing with knee pain and knee replacement surgery.
 

@@ -1,12 +1,12 @@
-<div class="bkitem">
+<book-item>
 	{%- set bookshop_base = "https://bookshop.org/a/109591/" -%}
 	<a href="{{ bookshop_base}}{{ book.ISBN }}">
 	{%- if book.localCover -%}
-		<img eleventy:ignore src="/assets/img/{{ book.title | slugify }}.jpg" alt="{{ book.title | safe }}" width="180" height="275">
+		<img eleventy:ignore src="/assets/img/{{ book.title | slugify }}.jpg" alt="{{ book.title | safe }}">
 	{%- else -%}
-		<img eleventy:ignore src="https://covers.openlibrary.org/b/isbn/{{ book.ISBN }}-M.jpg" alt="{{ book.title | safe }}" width="180" height="275">
+		<img eleventy:ignore src="https://covers.openlibrary.org/b/isbn/{{ book.ISBN }}-M.jpg" alt="{{ book.title | safe }}">
 	{%- endif -%}
 	</a>
-	<p class="bktitle  text-center no-bot-margin"><a href="{{ bookshop_base}}{{ book.ISBN }}" class="bold" data-link-type="external">{{ book.title | safe }}</a></p>
-	<p class="bkauthor text-center">by {{ book.author }}</p>
-</div>
+	<a href="{{ bookshop_base}}{{ book.ISBN }}" data-link-type="external">{{ book.title | safe }}</a>
+	<p>by {{ book.author }}</p>
+</book-item>
