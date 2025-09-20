@@ -10,11 +10,7 @@
   {# improve RSS feed visibility #}
   <link rel="alternate" type="application/rss+xml" title="Bob Monsour's blog" href="https://www.bobmonsour.com/feed.xml">
 
-  {#
-    conditionally load the syntax highlighting styles per
-    front matter 'pageHasCode' in blog posts. the post.njk
-    layout declares the appropriate prismjs styles
-  #}
+  {# conditionally load the syntax highlighting styles #}
   {% if pageHasCode %}
     <link rel="stylesheet" href="{% getBundleFileUrl 'css', 'pageHasCode' %}" media="print" onload="this.media='all'">
   	<noscript>
@@ -22,26 +18,12 @@
 	  </noscript>
   {% endif %}
 
-  {#
-    conditionally load the lite-youtube-embed styles per
-    front matter 'pageHasYoutube' in blog posts.
-  #}
+  {# conditionally load the lite-youtube-embed styles #}
   {% if pageHasYoutube %}
-    <link rel="stylesheet" href="{% getBundleFileUrl 'css', 'pageHasYoutube' %}" media="print" onload="this.media='all'">
-  	<noscript>
-	  	<link rel="stylesheet" href="{% getBundleFileUrl 'css', 'pageHasYoutube' %}">
-	  </noscript>
+    <link rel="stylesheet" href="{% getBundleFileUrl 'css', 'pageHasYoutube' %}">
   {% endif %}
 
-  {#
-    conditionally load the search page styles
-    variables.css overrides the default styles
-  #}
-  {# {% if pagestyle == "search" %}
-    <link rel="stylesheet" href="/pagefind/pagefind-ui.css">
-  {% endif %} #}
-
-  {# Generate the proper body background image based on the page.url #}
+  {# generate the proper body background image based on the page.url #}
   <style>
     body {
       {% if page.url | whichBgImage === "" %}
@@ -52,7 +34,7 @@
     }
   </style>
 
-  {# bundle the CSS content used on all pages and get the link to the bundle #}
+  {# bundle the CSS content used on all pages #}
   {% css %}
     {% include "css/variables.css" %}
     {% include "css/base.css" %}
@@ -62,20 +44,19 @@
   {% endcss %}
   <link rel="stylesheet" href="{% getBundleFileUrl "css" %}">
 
-  {# Fathom Analytics #}
+  {# Fathom Analytics - don't load when developing locally #}
   {% if site.env != "development" %}
     <script src="https://cdn.usefathom.com/script.js" data-site="MJGSVNXM" defer></script>
   {% endif %}
 
   {# favicon settings #}
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  {# <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"> #}
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-96x96.png">
   <link rel="manifest" href="/site.webmanifest">
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
 
-  {# social media settings #}
+  {# do all the meta tags #}
   <meta property="og:title" content="{{ title }}">
   <meta property="og:type" content="website">
   <meta property="og:description" content="{{ description }}">
