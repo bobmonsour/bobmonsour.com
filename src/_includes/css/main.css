@@ -162,10 +162,10 @@ nav .listolinks {
 }
 
 book-item {
+  align-items: center;
   display: grid;
   grid-template-rows: auto auto auto;
   justify-items: center;
-  align-items: center;
   text-align: center;
   a {
     font-weight: bold;
