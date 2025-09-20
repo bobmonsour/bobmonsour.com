@@ -160,6 +160,7 @@ nav .listolinks {
   margin-block-start: var(--space-l);
   place-items: start center;
 }
+
 book-item {
   display: grid;
   grid-template-rows: auto auto auto;
@@ -177,7 +178,6 @@ book-item {
 }
 
 .bookyear {
-  background: var(--bg-secondary);
   margin-block-start: var(--space-m);
   margin-inline: auto;
   width: 90%;

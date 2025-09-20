@@ -1,7 +1,12 @@
 /* Utility classes */
-.bg-color {
+.bg-primary {
   background-color: var(--bg-primary);
   opacity: 0.7;
+}
+
+.bg-secondary {
+  background-color: var(--bg-secondary);
+  opacity: 1;
 }
 
 .bold {
