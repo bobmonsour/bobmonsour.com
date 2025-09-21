@@ -1,6 +1,6 @@
 ---
 title: CSS Class Dismissed?
-description: null
+description: Rethinking how I use CSS classes in my projects.
 date: 2025-09-20
 tags:
   - 11ty
