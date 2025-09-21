@@ -3,8 +3,10 @@ title: CSS Class Dismissed?
 description: null
 date: 2025-09-20
 tags:
+  - 11ty
+  - books
   - CSS
-  - futzing
+  - learned
 image:
   source: css-class-dismissed.jpg
   alt: 3 O'Clock on a clock
@@ -47,7 +49,7 @@ One of the features you'll see on the site are some selected background images. 
     {% raw %}{% if page.url | whichBgImage === "" %}{% endraw %}
       background-image: none;{% raw %}
     {% else %}{% endraw %}
-      background-image: url("{{ page.url | whichBgImage }}");{% raw %}
+      background-image: url("{% raw %}{{ page.url | whichBgImage }}{% endraw %}");{% raw %}
     {% endif %}{% endraw %}
   }
 </style>
