@@ -12,7 +12,6 @@ image:
   alt: 3 O'Clock on a clock
   creditPerson: DuoNguyen
   creditLink: https://unsplash.com/@duonguyen
-draft: true
 pageHasCode: true
 rssid: d386be124022ca46806f4999814b7168
 ---
