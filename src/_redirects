@@ -6,9 +6,9 @@
 /posts/the-evolution-of-my-CSS-pipeline-in-eleventy/ /blog/the-evolution-of-my-CSS-pipeline-in-eleventy-part-1/
 /microblog/ /notes/
 /soda.html /soda/
+/notes/ /tags/notes/
+/til/ /tags/til/
 /posts/* /blog/:splat
 /microblog/* /notes/:splat
-/notes/ /tags/notes/
 /notes/* /blog/:splat
-/til/ /tags/til/
 /til/* /blog/:splat
