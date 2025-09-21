@@ -60,6 +60,11 @@ select {
   text-align: left;
 }
 
+:where(hr) {
+  border: none;
+  border-top: 1px solid var(--jotter-red);
+}
+
 :where(p) {
   margin-block: 0 var(--space-s);
   text-wrap: pretty;

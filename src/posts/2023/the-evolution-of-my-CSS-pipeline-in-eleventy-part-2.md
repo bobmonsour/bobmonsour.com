@@ -22,7 +22,7 @@ rssid: 9e3ac3aa631a5acbf61c0a25b2488c68
 
 ## Introduction
 
-After further reflecting on the approach that I took at the end of the [last post](/posts/the-evolution-of-my-CSS-pipeline-in-Eleventy-part-1/), inlining all of the site's CSS between \<style\> tags in the head of each page, I started to wonder if that made sense. I did some research to find out the pros and cons.
+After further reflecting on the approach that I took at the end of the [last post](/posts/the-evolution-of-my-CSS-pipeline-in-eleventy-part-1/), inlining all of the site's CSS between \<style\> tags in the head of each page, I started to wonder if that made sense. I did some research to find out the pros and cons.
 
 I also wanted to learn more about Zach's [eleventy-plugin-bundle](https://github.com/11ty/eleventy-plugin-bundle) and how I might use it to improve the way I handle CSS across the site. Note that there are many other methods and tools available for structuring CSS; for example, tools and learning resources like [Tailwind](https://tailwindcss.com/), [Bootstrap](https://getbootstrap.com/), [Every Layout](https://every-layout.dev/), and others. For this site, I am writing much of the CSS myself.
 
