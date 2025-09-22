@@ -166,6 +166,26 @@ The only changes are from `<div class="bookitem">` to `<book-item>` and from `.b
 
 So, what I've got here is a custom element named `book-item`. It has no special behavior, it is just a container for the book information. But it works! The browser recognizes it as a valid element and applies the styles to it. No class needed. If I wanted, I could enhance its "behavior" with some JavaScript, but I don't need to. It works just fine as is.
 
+## Taking a step back, to pre-redesign
+
+Prior to my redesign efforts, here is what the `bookitem.njk` file looked like. Note the excess use of classes. The "useful defaults" and nested CSS have eliminated the need for most of these classes.
+
+```jinja2
+<div class="bkitem">
+	{% raw %}{% set bookshop_base = "https://bookshop.org/a/109591/" %}{% endraw %}
+	<a href="{% raw %}{{ bookshop_base}}{{ book.ISBN }}{% endraw %}">
+	{% raw %}{% if book.localCover %}{% endraw %}
+		<img src="/assets/img/{% raw %}{{ book.title | slugify }}{% endraw %}.jpg" alt="{% raw %}{{ book.title | safe }}{% endraw %}">
+	{% raw %}{% else %}{% endraw %}
+		<img src="https://covers.openlibrary.org/b/isbn/{% raw %}{{ book.ISBN }}{% endraw %}-M.jpg" alt="{% raw %}{{ book.title | safe }}{% endraw %}">
+	{% raw %}{% endif %}{% endraw %}
+	</a>
+	<p class="bktitle"><a href="{% raw %}{{ bookshop_base}}{{ book.ISBN }}{% endraw %}">{% raw %}{{ book.title | safe }}{% endraw %}</a></p>
+	<p class="bkauthor">by {% raw %}{{ book.author }}{% endraw %}</p>
+	{% raw %}{% if book.rating != "" %}{% endraw %}<p class="bkrating">{% raw %}{{ book.rating | bookRating }}{% endraw %}</p>{% raw %}{% endif %}{% endraw %}
+</div>
+```
+
 ## Is this the right thing to do?
 
 I have to say that I have the distinct advantage of being a hobbyist who can try anything and get away with it. I work alone on the projects that I build.
