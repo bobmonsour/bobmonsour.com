@@ -13,6 +13,10 @@
   font-weight: bold;
 }
 
+.bot-margin {
+  margin-block-end: var(--space-s);
+}
+
 .boxed {
   background-color: var(--bg-secondary);
   border: 1px solid var(--box-primary);
@@ -36,6 +40,10 @@
   clip-path: circle(50%);
 }
 
+.top-n-bot-margin {
+  margin-block: 1em 0.5em;
+}
+
 .text-center {
   text-align: center;
 }
@@ -47,6 +55,11 @@
 .text-right {
   text-align: right;
 }
+
+.top-margin {
+  margin-block-start: var(--space-s);
+}
+
 .parenthetical {
   font-size: var(--font-size-md);
   font-weight: normal;

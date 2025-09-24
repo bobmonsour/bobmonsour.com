@@ -131,6 +131,29 @@ nav a[aria-current="page"] {
   }
 }
 
+/*
+  Home page secondary grid:
+  - 1 column on small screens
+  - 2 columns on medium & large screens via media query
+*/
+.homegrid2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--flow-space);
+  padding-inline: var(--space-xs);
+  place-content: center;
+  img {
+    margin-block: var(--space-xs);
+    margin-inline: auto;
+  }
+}
+
+@media (min-width: 700px) {
+  .homegrid2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 /* Top navigation links & list of all tags in footer */
 .listolinks {
   display: flex;

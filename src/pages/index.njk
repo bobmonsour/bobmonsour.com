@@ -4,6 +4,7 @@ title: Bob Monsour
 description: My personal website. Enjoying building websites with 11ty.
 keywords: retired, web development, eleventy, tennis
 permalink: /index.html
+pageHasYoutube: true
 ---
 
 <div class="homegrid">
@@ -67,5 +68,24 @@ permalink: /index.html
       {%- include "bookitem.njk" -%}
     {%- endfor -%}
     <p class="ital"><a href="/books/">More...</a></p>
+  </div>
+</div>
+
+<h3 class="text-center top-n-bot-margin">Organizations that I'm supporting (<a href="/blog/organizations-im-supporting/">here's why</a>)</h3>
+
+<div class="homegrid2">
+  <div class="boxed">
+    <h2 class="bot-margin"><a href="https://justvision.org/" data-link-type="external">Just Vision</a></h2>
+      {% set videoTitle = "Boycott: Offical Trailer" %}
+      {% set videoId = "FAMAFyR7L9U" %}
+      {% include 'youtube.njk' %}
+    <p class="top-margin">Just Vision fills a media gap on Israel-Palestine through independent storytelling and strategic audience engagement. They have produced <a href="https://justvision.org/films" data-link-type="external">award-winning films</a>. They also produce <a href="https://www.mekomit.co.il/" data-link-type="external">Local Call</a>, a Hebrew-language news site advancing citizen journalism and an independent media. In conjunction with <a href="https://www.972mag.com/" data-link-type="external">972 Magazine</a>, Local Call publishes <a href="https://www.972mag.com/topic/local-call/" data-link-type="external">their work in English</a>. If this is an issue of importance to you, perhaps you'll consider <a href="https://justvision.org/ways-to-give" data-link-type="external">supporting them</a>.</p>
+  </div>
+  <div class="boxed">
+    <h2 class="bot-margin"><a href="https://www.bradyunited.org/" data-link-type="external">Brady United</a></h2>
+      {% set videoTitle = "Brady: United Against Gun Violence" %}
+      {% set videoId = "qGGXupGu10E" %}
+      {% include 'youtube.njk' %}
+    <p class="top-margin">Brady United is the leading gun violence prevention organization in America. They combine bipartisan leadership with proven behavior change campaigns. Evidence shows they're saving lives. A friend of mine and organizer of our book club recently hosted a gathering at his home where we heard <a href="https://www.bradyunited.org/about-us/our-team/brady-leadership/kris-brown" data-link-type="external">Kris Brown</a>, the President of the <a href="https://www.bradyunited.org/" data-link-type="external">Brady Campaign</a>, speak about the work they are doing to address this issue. If this is an issue of importance to you, perhaps you'll consider <a href="https://www.bradyunited.org/take-action/donate-to-brady" data-link-type="external">supporting them</a>.</p>
   </div>
 </div>

@@ -3,6 +3,7 @@
   {% include 'head.njk' %}
 <body>
   {% include 'header.njk' %}
+  {% include "check-for-youtube.njk" %}
   <main id="main-content" class="bg-primary">
     {{ content | safe }}
   </main>

@@ -34,7 +34,7 @@ For the last 12 years, I have been a supporter of [Just Vision](https://justvisi
 
 They have produced [award-winning films](https://justvision.org/films). They also produce [Local Call](https://www.mekomit.co.il/) a Hebrew-language news site advancing citizen journalism and an independent media. In conjunction with [972 Magazine](https://www.972mag.com/), Local Call publishes [their work in English](https://www.972mag.com/topic/local-call/).
 
-If this is an issue of importance to you, perhaps you might consider [supporting them](https://justvision.org/ways-to-give).
+If this is an issue of importance to you, perhaps you'll consider [supporting them](https://justvision.org/ways-to-give).
 
 ## The Brady Campaign
 
@@ -42,8 +42,8 @@ More recently, I've become increasingly concerned about the epidemic of gun viol
 
 Most recently, one of my cousins, who just turned 11 years old, was injured in the shooting that took place in Minneapolis. Forunately, he is expected to make a full recovery. But it was a stark reminder of how close to home this issue can get. There really is nowhere to hide from this epidemic.
 
-I friend of mine and organizer of our book club recently hosted a gathering at his home where we heard [Kris Brown](https://www.bradyunited.org/about-us/our-team/brady-leadership/kris-brown), the President of the [Brady Campaign](https://www.bradyunited.org/), speak about the work they are doing to address this issue. I was so impressed with what I heard that I decided to become a supporter of the Brady Campaign.
+A friend of mine and organizer of our book club recently hosted a gathering at his home where we heard [Kris Brown](https://www.bradyunited.org/about-us/our-team/brady-leadership/kris-brown), the President of the [Brady Campaign](https://www.bradyunited.org/), speak about the work they are doing to address this issue. I was so impressed with what I heard that I decided to become a supporter of the Brady Campaign.
 
-If this is an issue of importance to you, perhaps you might consider [supporting them as well](https://www.bradyunited.org/take-action/donate-to-brady).
+If this is an issue of importance to you, perhaps you'll consider [supporting them as well](https://www.bradyunited.org/take-action/donate-to-brady).
 
 Thanks for reading.
