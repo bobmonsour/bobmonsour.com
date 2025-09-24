@@ -2,6 +2,9 @@
 layout: grid.njk
 title: Those background images
 description: Let me tell you about the background images on this site.
+image:
+  source: bg-me-and-dad.jpg
+  alt: Me and my dad at his car
 keywords: retired, web development, eleventy, tennis, about
 permalink: /background-images/
 boxed: false
