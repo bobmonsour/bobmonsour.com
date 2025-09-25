@@ -16,22 +16,22 @@ boxed: false
 
 Those background images you see on the various pages of this site are all photos of me with various family members. They were taken in the late 1950s and early 1960s.
 
-![](/assets/img/bg-me-and-dad.jpg){.boxed .popout loading="eager" sizes="100px" style="margin: .5em auto; width: 100%;"}
+![Me and my dad at his car](/assets/img/bg-me-and-dad.jpg){.boxed .popout loading="eager" sizes="100px" style="margin: .5em auto; width: 100%;"}
 
 Me and my dad at his car {.caption}
 
-![](/assets/img/bg-me-and-ma.jpg){.boxed loading="lazy" sizes="100px" style="margin: .5em auto; width: 100%;"}
+![Me and my mom on Thanksgiving](/assets/img/bg-me-and-ma.jpg){.boxed loading="lazy" sizes="100px" style="margin: .5em auto; width: 100%;"}
 
 Me and my mom on Thanksgiving {.caption}
 
-![](/assets/img/bg-bill-and-bob.jpg){.boxed loading="lazy" sizes="100px" style="margin: .5em auto; width: 100%;"}
+![Me and my brother Bill (not sure where)](/assets/img/bg-bill-and-bob.jpg){.boxed loading="lazy" sizes="100px" style="margin: .5em auto; width: 100%;"}
 
 Me and my brother Bill (not sure where) {.caption}
 
-![](/assets/img/bg-whole-family.jpg){.boxed loading="lazy" sizes="100px" style="margin: .5em auto; width: 100%;"}
+![The whole family in our Brooklyn apartment](/assets/img/bg-whole-family.jpg){.boxed loading="lazy" sizes="100px" style="margin: .5em auto; width: 100%;"}
 
 The whole family in our Brooklyn apartment {.caption}
 
-![](/assets/img/bg-me-and-bill.jpg){.boxed loading="lazy" sizes="100px" style="margin: .5em auto; width: 100%;"}
+![Me (right) and Bill on the street in Brooklyn](/assets/img/bg-me-and-bill.jpg){.boxed loading="lazy" sizes="100px" style="margin: .5em auto; width: 100%;"}
 
 Me (right) and Bill on the street in Brooklyn {.caption}
