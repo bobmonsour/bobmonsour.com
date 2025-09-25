@@ -2,6 +2,8 @@
 layout: grid.njk
 title: Those background images
 description: Let me tell you about the background images on this site.
+date: 2025-09-24
+tags: [personal]
 image:
   source: bg-me-and-dad.jpg
   alt: Me and my dad at his car

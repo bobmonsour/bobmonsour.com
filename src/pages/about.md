@@ -2,6 +2,8 @@
 layout: grid.njk
 title: About
 description: A bit more information about Bob Monsour.
+date: 2025-08-25
+tags: [personal]
 keywords: retired, web development, eleventy, tennis, about
 permalink: /about/
 ---

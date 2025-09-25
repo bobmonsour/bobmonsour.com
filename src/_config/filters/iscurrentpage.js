@@ -31,12 +31,12 @@ export const isCurrentPage = (linkText, pageUrl) => {
       }
       break;
     case "books":
-      if (pageUrl.includes("/books/")) {
+      if (pageUrl.includes("/books/") && !pageUrl.includes("/tags/books/")) {
         return 'aria-current="page"';
       }
       break;
     case "shop":
-      if (pageUrl.includes("/shop/")) {
+      if (pageUrl.includes("/shop/") && !pageUrl.includes("/tags/shop/")) {
         return 'aria-current="page"';
       }
       break;

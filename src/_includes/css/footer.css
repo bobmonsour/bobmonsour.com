@@ -4,7 +4,7 @@ footer {
 #alltags {
   margin-inline: var(--space-m);
 }
-footer > p {
+footer > p:nth-of-type(2) {
   background-color: var(--bg-secondary);
   border-top: 1px solid var(--jotter-red);
   padding-block: var(--space-xs);
