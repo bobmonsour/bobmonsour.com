@@ -16,6 +16,8 @@ boxed: false
 
 Those background images you see on the various pages of this site are all photos of me with various family members. They were taken in the late 1950s and early 1960s.
 
+_Note: You won't see the background images on the main pages on a phone, only on larger screens._
+
 ![Me and my dad at his car](/assets/img/bg-me-and-dad.jpg){.boxed .popout loading="eager" sizes="100px" style="margin: .5em auto; width: 100%;"}
 
 Me and my dad at his car {.caption}
