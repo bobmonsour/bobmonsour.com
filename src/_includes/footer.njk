@@ -7,4 +7,13 @@
 	{% include 'socials.njk' %}
   <p class="text-center ital">Tell me about those <a href="/background-images">background images</a>.</p>
   <p class="text-center no-bot-margin">Built with <a href="https://11ty.dev">{{ eleventy.generator }}</a>&nbsp;&middot;&nbsp;<a href="https://github.com/bobmonsour/bobmonsour.com">Source</a></p>
+  {# if this is the 404 page, track the offending url #}
+  {% if title == "404" %}
+    <script>
+      window.addEventListener('load', () => {
+        const path = window.location.pathname;
+        fathom.trackEvent('404: ' + path);
+      });
+    </script>
+{% endif %}
 </footer>
