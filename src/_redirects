@@ -4,6 +4,7 @@
 /posts/11ty-bundle-4/ /blog/11ty-bundle-1-4/
 /pages/archive/ /blog/
 /posts/the-evolution-of-my-CSS-pipeline-in-eleventy/ /blog/the-evolution-of-my-CSS-pipeline-in-eleventy-part-1/
+/blog/i-wanted-to-validate-the-presence-of-an-rssid-in-my-front-matter/ /blog/11ty-preprocessors-for-my-rssid/
 /microblog/ /notes/
 /soda.html /soda/
 /notes/ /tags/notes/
