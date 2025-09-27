@@ -5,6 +5,10 @@
 /pages/archive/ /blog/
 /posts/the-evolution-of-my-CSS-pipeline-in-eleventy/ /blog/the-evolution-of-my-CSS-pipeline-in-eleventy-part-1/
 /blog/i-wanted-to-validate-the-presence-of-an-rssid-in-my-front-matter/ /blog/11ty-preprocessors-for-my-rssid/
+/blog/what-the-fuck-is-happening-in-our-country/ /blog/what-the-fuck-is-happening/
+/blog/the-endless-summer-the-perfect-wave/ /blog/the-endless-summer/
+/blog/11ty-meetup-how-i-built-my-books-page/ /blog/books-page-11tymeetup/
+/blog/much-more-to-come-on-rss-entry-ids/ /blog/much-more-on-rss-entry-ids/
 /microblog/ /notes/
 /soda.html /soda/
 /notes/ /tags/notes/
