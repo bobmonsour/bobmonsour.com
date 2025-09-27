@@ -17,7 +17,7 @@ rssid: bf59e428f07a5035c3a15c95005145a5
 
 ## Introduction
 
-As I noted in [a recent TIL](https://bobmonsour.com/til/on-rss-entry-ids/), I had read [a post from Evan Sheehan](https://darthmall.net/2025/on-the-importance-of-stable-ids/) about how he decided to alter the ID used for each entry in his RSS feed. His motivation was that he wanted his RSS feed to remain stable in the event that he restructured the URLs for his posts.
+As I noted in [a recent TIL](https://bobmonsour.com/blog/on-rss-entry-ids/), I had read [a post from Evan Sheehan](https://darthmall.net/2025/on-the-importance-of-stable-ids/) about how he decided to alter the ID used for each entry in his RSS feed. His motivation was that he wanted his RSS feed to remain stable in the event that he restructured the URLs for his posts.
 
 I thought that was an interesting idea and decided to implement a form of it on my own site. Here's how I went about it.
 
@@ -39,7 +39,7 @@ Where we are nearly identical is our use of the [tag URI scheme](https://en.wiki
 "tag:" authorityName "," YYYY-MM-DD-date ":" specific [ "#" fragment ]
 ```
 
-Here's an example of an ID that I generated for the post titled "[On RSS entry IDs](/til/on-rss-entry-ids/):
+Here's an example of an ID that I generated for the post titled "[On RSS entry IDs](/blog/on-rss-entry-ids/):
 
 ```text
 tag:bobmonsour.com,2025-01-25:fe577f94dac79c3895ae331aa61a2729
@@ -68,15 +68,15 @@ And here is what that filter, `genRSSId`, looks like:
 import crypto from "crypto";
 const hashingStartDate = "2025-01-24";
 function MD5Hash(input) {
-	return crypto.createHash("md5").update(input).digest("hex");
+  return crypto.createHash("md5").update(input).digest("hex");
 }
 export function genRSSId(postTitle, postDate, absolutePostUrl) {
-	if (postDate > hashingStartDate) {
-		let tagURIBase = "tag:bobmonsour.com," + postDate + ":";
-		return tagURIBase + MD5Hash(postTitle + postDate);
-	} else {
-		return absolutePostUrl;
-	}
+  if (postDate > hashingStartDate) {
+    let tagURIBase = "tag:bobmonsour.com," + postDate + ":";
+    return tagURIBase + MD5Hash(postTitle + postDate);
+  } else {
+    return absolutePostUrl;
+  }
 }
 ```
 
@@ -96,9 +96,9 @@ So, if you're using the default RSS (or Atom or JSON) feed [sample templates](ht
 
 ## Related posts
 
-- [On RSS entry IDs](/til/on-rss-entry-ids/), _Jan 25, 2025_
-- [Much more to come on RSS entry IDs](/til/much-more-to-come-on-rss-entry-ids/), _Jan 26, 2025_
+- [On RSS entry IDs](/blog/on-rss-entry-ids/), _Jan 25, 2025_
+- [Much more to come on RSS entry IDs](/blog/much-more-on-rss-entry-ids/), _Jan 26, 2025_
 - [My last word on RSS entry IDs](/blog/even-more-on-rss-ids/), _Jan 30, 2025_
-- [Prepare for a minor flood of RSS entries](/til/prepare-for-a-minor-flood-of-rss-entries/), _Jan 31, 2025_
-- [I wanted to validate the presence of an rssid in my front matter](/til/i-wanted-to-validate-the-presence-of-an-rssid-in-my-front-matter/), _Feb 1, 2025_
+- [Prepare for a minor flood of RSS entries](/blog/minor-flood-warning/), _Jan 31, 2025_
+- [I wanted to validate the presence of an rssid in my front matter](/blog/11ty-preprocessors-for-my-rssid/), _Feb 1, 2025_
 - [Ok, this is my 'final' final word on RSS entry IDs](/blog/final-final-word-on-rss-entry-ids/), _Feb 2, 2025_

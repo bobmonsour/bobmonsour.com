@@ -13,6 +13,8 @@ Inspired by [Tom's site](https://ttntm.me/), after he had [said the following on
 
 > I've also added tags to the homepage: an additional way to discover what I wrote over the years. -- Tom Doe
 
-So, I've done the same thing on [my home page](/), that is, added a list of all the tags on this site across the [blog](/blog/), [notes](/notes/), and [TIL](/til/) sections.
+So, I've done the same thing on [my home page](/), that is, added a list of all the tags on this site across the [blog](/blog/), [notes](/tags/notes/), and [TIL](/tags/til/) sections.
+
+**Update: The tags appear on all pages as part of the page footer.**
 
 Thanks, Tom!
