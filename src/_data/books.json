@@ -597,8 +597,8 @@
     "title": "How the Light Gets In",
     "author": "Louise Penny",
     "ISBN": "9781250047274",
-    "rating": "",
-    "yearRead": "currently"
+    "rating": "5",
+    "yearRead": "2025/09/26"
   },
   {
     "title": "Train Dreams",
@@ -613,6 +613,14 @@
     "ISBN": "9781668056929",
     "rating": "5",
     "yearRead": "2025/07/06",
+    "localCover": true
+  },
+  {
+    "title": "Aflame",
+    "author": "Pico Iyer",
+    "ISBN": "9781420527957",
+    "rating": "5",
+    "yearRead": "currently",
     "localCover": true
   }
 ]
