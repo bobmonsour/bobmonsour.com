@@ -2,6 +2,9 @@
 title: Where do the red and blue colors on this site come from?
 description: I chose these colors based on an old personal preference.
 date: 2025-09-27
+image:
+  source: parker-jotter-red.jpg
+  alt: A red Parker Jotter pen
 tags:
   - personal
 rssid: d0fbc36c03612b89a6f05583e5849078
