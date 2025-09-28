@@ -17,7 +17,7 @@ You see, it's a [Parker Jotter](https://www.parkerpen.com/jotter-pens.html), a c
 
 And here's a fascinating tidbit from the daily life of me and my wife. We subscribe to the [Britbox](https://www.britbox.com/) streaming channel and we enjoy the murder mysteries in particular. And I have to confess that Parker Jotters make occasional cameo appearances. And, much to my wife's consternation, every time I see one, I have to exlaim "That's a Parker Jotter!" So, the next time you're watching a British murder mystery, be sure to notice those Parker Jotters.
 
-![A red Parker Jotter pen](/assets/img/parker-jotter-red.jpg)
+![A red Parker Jotter pen](/assets/img/parker-jotter-red.jpg) {style="width: 50%; margin-inline: auto;"}
 
 My latest Parker Jotter {.caption}
 
