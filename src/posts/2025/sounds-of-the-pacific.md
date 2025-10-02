@@ -19,3 +19,5 @@ My wife and I are visiting Carmel-by-the-Sea, California today, on our way down 
     <a href="/assets/audio/sounds-of-the-pacific.mp3">download the music in mp3 format</a>.
   </p>
 </audio>
+
+P.S. In case you're wondering, that image you see at the top is of the Atlantic Ocean, taken from a trip to the Margate City, NJ a few years ago.
