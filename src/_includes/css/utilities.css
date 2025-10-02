@@ -28,6 +28,10 @@
   margin-block-start: var(--flow-space);
 }
 
+.hidden {
+  display: none;
+}
+
 .ital {
   font-style: italic;
 }
