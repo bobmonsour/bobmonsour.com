@@ -1,7 +1,11 @@
-/* Reset and default element styles */
+/* Reset and set default element styles */
 html {
   scroll-behavior: smooth;
   overflow-y: scroll;
+}
+
+@view-transition {
+  navigation: auto;
 }
 
 @supports (scrollbar-gutter: stable) {
