@@ -36,3 +36,25 @@ After I set up the build to use the remote JSON file, I realized that I was also
 Once I adapted the tools to use the new location for the file on my local system, it worked like a charm.
 
 Now I just have to figure out how to trigger a rebuild of the 11ty Bundle site whenever I push changes to the repo for the JSON file. Perhaps I can do that with GitHub Actions or some other triggering mechanism on Cloudflare.
+
+> Update (October 27, 2025): Several weeks ago, I figured out how to trigger a rebuild of the 11ty Bundle site whenever I push changes to the 11ty Bundle database that lives as a JSON file in a separate repo. I set up a GitHub Action in the JSON file repo that sends a webhook to Cloudflare Pages to trigger a rebuild. Works like a charm!
+
+And here's what the GitHub Action looks like:
+
+```yaml
+name: Trigger Cloudflare Pages Deploy
+on:
+  push:
+    branches: [main]
+
+jobs:
+  trigger-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger Cloudflare Pages Deployment
+        run: |
+          curl -X POST "${% raw %}{{ secrets.CF_DEPLOY_HOOK_URL }}{% endraw%}" \
+            --fail \
+            --show-error \
+            --silent
+```
