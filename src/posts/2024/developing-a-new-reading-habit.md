@@ -8,10 +8,6 @@ tags:
 rssid: 4029a985a93fb62c4ace12b0820ab71c
 ---
 
-![Elderly man reading a book with piles of books in the background](/assets/img/elderly-man-reading-a-book.jpg)
-
-Photo by <a href="https://unsplash.com/@jilburr?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Jilbert Ebrahimi</a> on <a href="https://unsplash.com/photos/man-reading-a-books-HAwA1N2gjo8?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
-
 I've been a member of a book club for a couple of years now. We meet about once a month and we rotate hosting. The hosts provide dinner and we typically bring a bottle of wine. There are usually about 8 to 10 of us in attendance and it's a really great time of socializing and discussing the book we've read.
 
 Anyway, I have vascillated between listening to and reading the paper book. It varies. If I start listening and I don't care for the narrator, I'll buy the book and continue from there.
