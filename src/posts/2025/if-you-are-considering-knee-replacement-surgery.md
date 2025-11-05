@@ -16,9 +16,9 @@ I am writing this to share a couple of resources that have been very helpful to 
 
 I have written a couple of blog posts prior to each of my surgeries. You can find them here:
 
-- [My winding road toward knee replacement surgery](https://bobmonsour.com/blog/my-winding-road-toward-knee-replacement-surgery/)
+- [My winding road toward knee replacement surgery](/blog/my-winding-road-toward-knee-replacement-surgery/)
 - [Knee replacement 2.0, things have changed
-  ](https://bobmonsour.com/blog/knee-replacement-2-things-have-changed/)
+  ](/blog/knee-replacement-2-things-have-changed/)
 
 But the two other resources that have been very helpful to me are this book.
 

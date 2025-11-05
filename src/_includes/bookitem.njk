@@ -7,6 +7,6 @@
 		<img eleventy:ignore src="https://covers.openlibrary.org/b/isbn/{{ book.ISBN }}-M.jpg" alt="{{ book.title | safe }}">
 	{%- endif -%}
 	</a>
-	<a href="{{ bookshop_base}}{{ book.ISBN }}" data-link-type="external">{{ book.title | safe }}</a>
+	<a href="{{ bookshop_base}}{{ book.ISBN }}">{{ book.title | safe }}</a>
 	<p>by {{ book.author }}</p>
 </book-item>

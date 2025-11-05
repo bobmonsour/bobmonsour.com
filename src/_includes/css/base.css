@@ -112,9 +112,13 @@ html {
   }
 }
 
-/* SVG icon to indicate links to external sites */
-a[data-link-type="external"]::after {
+/* indicate links to external sites */
+a[href^="https"]:not(:has(img))::after {
   background: no-repeat var(--icon-external-link);
+  background-size: 0.8em 0.8em; /* Adjust size as needed */
   content: "";
-  padding-right: 1em;
+  display: inline-block;
+  width: 0.8em;
+  height: 0.8em;
+  padding-inline-start: 0.25em;
 }

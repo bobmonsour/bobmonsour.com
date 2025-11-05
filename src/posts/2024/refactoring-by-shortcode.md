@@ -136,38 +136,38 @@ And here is the shortcode that does all the not-so-heavy lifting to generate the
 
 ```js
 eleventyConfig.addNunjucksAsyncShortcode(
-	"singlePost",
-	async function (post, type, idKey) {
-		const titleSlug = cachedSlugify(post.Title);
-		const description = await getDescription(post.Link);
-		const authorSlug = cachedSlugify(post.Author);
-		const date = formatItemDate(post.Date);
-		const id =
-			'"' + cachedSlugify(idKey) + "-" + titleSlug + "-" + post.Date + '"';
-		switch (type) {
-			case "category":
-				pageWeight = 10;
-				break;
-			case "author":
-				pageWeight = 5;
-				break;
-			case "firehose":
-			case "blog":
-				pageWeight = 0;
-		}
-		let categories = "";
-		post.Categories.forEach((category) => {
-			let slugifiedCategory = cachedSlugify(category);
-			categories += `<a href="/categories/${slugifiedCategory}/">${category}</a>`;
-		});
-		return `
+  "singlePost",
+  async function (post, type, idKey) {
+    const titleSlug = cachedSlugify(post.Title);
+    const description = await getDescription(post.Link);
+    const authorSlug = cachedSlugify(post.Author);
+    const date = formatItemDate(post.Date);
+    const id =
+      '"' + cachedSlugify(idKey) + "-" + titleSlug + "-" + post.Date + '"';
+    switch (type) {
+      case "category":
+        pageWeight = 10;
+        break;
+      case "author":
+        pageWeight = 5;
+        break;
+      case "firehose":
+      case "blog":
+        pageWeight = 0;
+    }
+    let categories = "";
+    post.Categories.forEach((category) => {
+      let slugifiedCategory = cachedSlugify(category);
+      categories += `<a href="/categories/${slugifiedCategory}/">${category}</a>`;
+    });
+    return `
 	<div class="bundleitem">
-		<h2 class="bundleitem-title" ID=${id} data-pagefind-weight="${pageWeight}"><a href="${post.Link}" data-link-type="external">${post.Title}</a></h2>
+		<h2 class="bundleitem-title" ID=${id} data-pagefind-weight="${pageWeight}"><a href="${post.Link}">${post.Title}</a></h2>
 		<p class="bundleitem-description">${description}</p>
 		<p class="bundleitem-dateline"><a href="/authors/${authorSlug}/">${post.Author}</a> &middot; ${date}</p>
 		<p class="bundleitem-categories">Categories: ${categories}</p>
 	</div>`;
-	}
+  }
 );
 ```
 

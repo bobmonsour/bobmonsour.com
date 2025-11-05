@@ -88,7 +88,7 @@ Here's what I did, and it shocked this old dog. This is what the HTML and css lo
     />
     {% raw %}{% endif %}{% endraw %}
   </a>
-  <a href="{% raw %}{{ bookshop_base}}{{ book.ISBN }}{% endraw %}" data-link-type="external">
+  <a href="{% raw %}{{ bookshop_base}}{{ book.ISBN }}{% endraw %}">
     {% raw %}{{ book.title | safe }}{% endraw %}
   </a>
   <p>by {% raw %}{{ book.author }}{% endraw %}</p>
@@ -135,7 +135,7 @@ And here's what I changed the HTML to:
     />
     {% raw %}{% endif %}{% endraw %}
   </a>
-  <a href="{% raw %}{{ bookshop_base}}{{ book.ISBN }}{% endraw %}" data-link-type="external">
+  <a href="{% raw %}{{ bookshop_base}}{{ book.ISBN }}{% endraw %}">
     {% raw %}{{ book.title | safe }}{% endraw %}
   </a>
   <p>by {% raw %}{{ book.author }}{% endraw %}</p>
@@ -198,7 +198,7 @@ This is the only part of the site that I've done this with, but I can imagine ap
 
 ## CSS Nesting
 
-As a former advocate of Sass, I had really started to miss the nesting ability. Back in 2023, I had written a piece about my [The evolution of my CSS pipeline](https://bobmonsour.com/blog/the-evolution-of-my-CSS-pipeline-in-eleventy-part-1/#do-i-really-need-sass%3F). That link will send you to the part where I asked "Do I really need Sass?", where I noted that nesting was just emerging as a CSS native feature. Well, since that time has arrived, I have embraced it and it has helped reduce the number of classes that I need to accomplish what I want to do. I find that it can also help with CSS readability and maintainability.
+As a former advocate of Sass, I had really started to miss the nesting ability. Back in 2023, I had written a piece about my [The evolution of my CSS pipeline](/blog/the-evolution-of-my-CSS-pipeline-in-eleventy-part-1/#do-i-really-need-sass%3F). That link will send you to the part where I asked "Do I really need Sass?", where I noted that nesting was just emerging as a CSS native feature. Well, since that time has arrived, I have embraced it and it has helped reduce the number of classes that I need to accomplish what I want to do. I find that it can also help with CSS readability and maintainability.
 
 ## Utility classes
 

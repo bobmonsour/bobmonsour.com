@@ -33,11 +33,11 @@ Here's are some of the highlights of the last year...in no particular order:
 
 - We crossed the 1,100 post mark in June
 - Redesigned the [home page](https://11tybundle.dev), featuring the latest 11 releases, posts and sites
-- [Created some node scripts](https://bobmonsour.com/blog/node-cli-of-my-dreams/) to make the site easier to maintain
+- [Created some node scripts](/blog/node-cli-of-my-dreams/) to make the site easier to maintain
 - Added a bunch of metadata to the [Starters](https://11tybundle.dev/starters/) page, including number of GitHub stars, date of last update, version of eleventy, and link to demo (if available)
-- Added the author's number of posts, a link to their website and RSS feed ([if detectable](https://bobmonsour.com/blog/got-rss-feeds/)) to each post's summary
+- Added the author's number of posts, a link to their website and RSS feed ([if detectable](/blog/got-rss-feeds/)) to each post's summary
 - [Sara Joy](https://sarajoy.dev/) released [11ty Themes Joy](https://11tytheme.sjoy.lol/) for theming the [eleventy-base-blog](https://github.com/11ty/eleventy-base-blog) starter
-- [Upgraded the site to Eleventy v3](https://bobmonsour.com/blog/upgrade-and-debug/)
+- [Upgraded the site to Eleventy v3](/blog/upgrade-and-debug/)
 - Commissioned [Andy Carolan](https://www.andycarolan.com/) to create the awesome illustration at the top of this post
 - Created several new categories: [Drafts](https://11tybundle.dev/categories/drafts/), [Scheduling](https://11tybundle.dev/categories/scheduling/), [Upgrading](https://11tybundle.dev/categories/upgrading/), [Analytics](https://11tybundle.dev/categories/analytics/), [Obsidian](https://11tybundle.dev/categories/obsidian/), and [Notion](https://11tybundle.dev/categories/notion/)
 - Eleventy arrived on [Wikipedia](<https://en.wikipedia.org/wiki/Eleventy_(software)>)
@@ -45,7 +45,7 @@ Here's are some of the highlights of the last year...in no particular order:
 - [Moved the site to Cloudflare Pages](https://bobmonsour.com/notes/11ty-bundle-moved-to-cloudflare/)
 - The [Eleventy Meetup](https://11tymeetup.dev/) continued to rock and I gave [a talk on how I built my Books page](https://bobmonsour.com/notes/11ty-meetup-how-i-built-my-books-page/)
 - Speaking of books pages, a raft of other 'how they made their Books' pages posts showed up this year: [Spencer's](https://www.spencerharston.com/posts/2025/creating-a-books-page/), [Chazz's](https://thisguise.wtf/blog/2024/12/06/building-a-goodreads-bookshelf-for-11ty/), [Jose's](https://vzq.wtf/blog/bookshelf/), and [Melanie's](https://melanie-richards.com/blog/new-reading-page/) (possibly implying the need for a new category)
-- I added a GitHub-style 'Type / to search' capability to the site, and I [wrote about how I did it](https://bobmonsour.com/blog/a-keystroke-to-place-focus-in-the-search-box/)
+- I added a GitHub-style 'Type / to search' capability to the site, and I [wrote about how I did it](/blog/a-keystroke-to-place-focus-in-the-search-box/)
 - Finally, in [Issue 70](https://11tybundle.dev/blog/11ty-bundle-70/), dated April 1st, I attempted to [Rick roll](https://www.youtube.com/watch?v=dQw4w9WgXcQ) everyone my readers; some took the bait, but few admitted it
 
 ## Analytics

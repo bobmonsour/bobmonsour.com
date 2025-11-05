@@ -68,7 +68,7 @@ Pancreatic cancer is a horrible killer in that it is often caught late. By the t
 
 It was a mere 6 weeks from diagnosis to his passing. I was blessed to spend these last weeks of his life with him. It was the longest time we had spent together since we were in high school.
 
-I [wrote a piece](https://bobmonsour.com/blog/losing-my-brother-to-cancer/) on the 1st anniversary of his passing.
+I [wrote a piece](/blog/losing-my-brother-to-cancer/) on the 1st anniversary of his passing.
 
 ## Research into pancreatic cancer is at risk
 

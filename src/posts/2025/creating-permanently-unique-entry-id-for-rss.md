@@ -17,7 +17,7 @@ rssid: bf59e428f07a5035c3a15c95005145a5
 
 ## Introduction
 
-As I noted in [a recent TIL](https://bobmonsour.com/blog/on-rss-entry-ids/), I had read [a post from Evan Sheehan](https://darthmall.net/2025/on-the-importance-of-stable-ids/) about how he decided to alter the ID used for each entry in his RSS feed. His motivation was that he wanted his RSS feed to remain stable in the event that he restructured the URLs for his posts.
+As I noted in [a recent TIL](/blog/on-rss-entry-ids/), I had read [a post from Evan Sheehan](https://darthmall.net/2025/on-the-importance-of-stable-ids/) about how he decided to alter the ID used for each entry in his RSS feed. His motivation was that he wanted his RSS feed to remain stable in the event that he restructured the URLs for his posts.
 
 I thought that was an interesting idea and decided to implement a form of it on my own site. Here's how I went about it.
 
