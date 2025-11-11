@@ -3,6 +3,7 @@
 /posts/11ty-bundle-3/ /blog/11ty-bundle-1-4/
 /posts/11ty-bundle-4/ /blog/11ty-bundle-1-4/
 /pages/archive/ /blog/
+/pages/about/ /about/
 /posts/the-evolution-of-my-CSS-pipeline-in-eleventy/ /blog/the-evolution-of-my-CSS-pipeline-in-eleventy-part-1/
 /blog/i-wanted-to-validate-the-presence-of-an-rssid-in-my-front-matter/ /blog/11ty-preprocessors-for-my-rssid/
 /blog/what-the-fuck-is-happening-in-our-country/ /blog/what-the-fuck-is-happening/
@@ -23,6 +24,8 @@
 /blog/we-re-in-italy-at-the-moment/ /blog/italy-for-now/
 /blog/i-might-make-a-today-i-learned-linked-section/ /blog/thinking-of-til/
 /blog/prepare-for-a-minor-flood-of-rss-entries/ /blog/minor-flood-warning/
+/blog/my-circle-of-friends-on-bluesky/ /blog/bluesky-circle/
+/blog/music-is-replacing-my-self-talk/ /blog/music-replacing-my-self-talk/
 /microblog/ /notes/
 /soda.html /soda/
 /notes/ /tags/notes/
