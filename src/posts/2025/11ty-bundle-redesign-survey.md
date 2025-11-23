@@ -1,6 +1,6 @@
 ---
 title: 11ty Bundle Redesign Survey
-description: If you work with 11ty and make use of the 11ty Bundle website, we're redesigning it and we'd love your input. Please te take the survey.
+description: If you work with 11ty and make use of the 11ty Bundle website, we're redesigning it and we'd love your input. Please the take the survey.
 date: 2025-11-11
 tags:
   - 11ty
