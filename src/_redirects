@@ -33,6 +33,7 @@
 /soda.html /soda/
 /notes/ /tags/notes/
 /til/ /tags/til/
+/tilfeed.xml/ /feed.xml
 /posts/* /blog/:splat
 /microblog/* /notes/:splat
 /notes/* /blog/:splat
