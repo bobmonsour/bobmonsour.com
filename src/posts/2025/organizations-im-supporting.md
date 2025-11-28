@@ -30,7 +30,7 @@ Perhaps it's been since 9/11, but I've become more curious and far more aware of
 
 ## Just Vision
 
-For the last 12 years, I have been a supporter of [Just Vision](https://justvision.org/), a non-profit organization that _"fills a media gap on Israel-Palestine through independent storytelling and strategic audience engagement."_
+Since 2012, I have been a supporter of [Just Vision](https://justvision.org/), a non-profit organization that _"fills a media gap on Israel-Palestine through independent storytelling and strategic audience engagement."_
 
 They have produced [award-winning films](https://justvision.org/films). They also produce [Local Call](https://www.mekomit.co.il/) a Hebrew-language news site advancing citizen journalism and an independent media. In conjunction with [972 Magazine](https://www.972mag.com/), Local Call publishes [their work in English](https://www.972mag.com/topic/local-call/).
 
