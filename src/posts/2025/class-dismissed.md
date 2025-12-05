@@ -118,7 +118,7 @@ And the associated CSS:
 And here's what I changed the HTML to:
 
 ```jinja2
-<book-item>
+<book-item role="listitem">
   {% raw %}{% set bookshop_base = "https://bookshop.org/a/109591/" %}{% endraw %}
   <a href="{% raw %}{{ bookshop_base}}{{ book.ISBN }}{% endraw %}">
     {% raw %}{% if book.localCover %}{% endraw %}
@@ -162,9 +162,9 @@ book-item {
 }
 ```
 
-The only changes are from `<div class="bookitem">` to `<book-item>` and from `.bookitem` to `book-item`.
+The only changes are from `<div class="bookitem">` to `<book-item role="listitem">` and from `.bookitem` to `book-item`.
 
-So, what I've got here is a custom element named `book-item`. It has no special behavior, it is just a container for the book information. But it works! The browser recognizes it as a valid element and applies the styles to it. No class needed. If I wanted, I could enhance its "behavior" with some JavaScript, but I don't need to. It works just fine as is.
+So, what I've got here is a custom element named `book-item`. It has no special behavior, it is just a container for the book information. _**Update Dec 4, 2025: I came back to add that the role="listitem"> has been in the code, but not in this blog post. I thought it important to point out that by simply using a non-js web component, I was not absolved from making it accessible.**_ But it works! The browser recognizes it as a valid element and applies the styles to it. No class needed. If I wanted, I could enhance its "behavior" with some JavaScript, but I don't need to. It works just fine as is.
 
 ## Taking a step back, to pre-redesign
 
