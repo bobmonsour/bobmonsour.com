@@ -9,7 +9,6 @@ pageHasCode: true
 image:
   source: minify-css-bundle.jpg
   alt: Code for minifying a CSS bundle
-draft: true
 rssid: 926d2baa35df4f46ad58527ab02841c8
 ---
 
