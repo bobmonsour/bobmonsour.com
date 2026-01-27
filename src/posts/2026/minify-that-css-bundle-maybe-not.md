@@ -12,6 +12,8 @@ image:
 rssid: 926d2baa35df4f46ad58527ab02841c8
 ---
 
+> Update: While all of what is written below is true, it was not the fact that I was minifying the CSS and JS bundles that was causing the long build times. It was the fact that the minifying was taking place for each and every page build. By eliminating the minifying so many times, the build time was reduced significantly. A better approach, if I did want to minify, would have been to create the bundles once and reuse them for each page build.
+
 [[toc]]
 
 ## Introduction
