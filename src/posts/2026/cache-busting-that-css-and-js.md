@@ -1,0 +1,122 @@
+---
+title: Cache-busting that CSS & JS
+description: The saga continues...now we cache-bust those CSS and JS references.
+date: 2026-01-28
+tags:
+  - CSS
+  - 11ty
+pageHasCode: true
+image:
+  source: bust-that-cache.jpg
+  alt: YAML front matter showing cache-busted CSS filename
+rssid: 8ca662800ac1eb23888140e33d31e418
+---
+
+Just like my [extended series on RSS IDs](https://bobmonsour.com/blog/final-final-word-on-rss-entry-ids/) back in the day, the saga of bundling my CSS and JS continues.
+
+If you haven't been following along, here are [part 1](/blog/minify-that-css-bundle-maybe-not/) and [part 2](/blog/on-not-minifying-part2/).
+
+Note that we're beyond the discussion of minification and on to the next challenge.
+
+As [Nicolas Hoizey correctly pointed out to me](https://mamot.fr/@nhoizey/115972015040177346), my most recent approach to creating and referencing the CSS and JS bundles on the [11ty Bundle website](https://11tybundle.dev) still had an outstanding issue. That is, the filenames for the CSS and JS files were static, meaning that if I updated the CSS or JS files, the vast number of browsers across the planet who have visited the site might still use a cached version of the file instead of fetching the updated one. So how do we force those caches to get busted and load the new (and improved) files?
+
+It's a known issue and my first iteration of using [Eleventy's built-in bundler](https://www.11ty.dev/docs/plugins/bundle/) used a built-in mechanism that provided a content-based hash for the filename when using its `getBundleFileUrl` approach. Since I had opted out of that approach, wanting the bundling to take place once and not repeatedly in my base layout file, I needed to find another way to implement cache-busting. There are obviously other ways to do this, still using Eleventy's approach, but as I wanted to explore this further, I decided to roll my own...well, mostly my own.
+
+Well, today's post is all about that.
+
+## The Approach
+
+Here's where things stood for one example CSS bundle file in [yesterday's post](/blog/on-not-minifying-part2/).
+
+```jinja2
+---
+layout: null
+permalink: /css/global.css
+eleventyExcludeFromCollections: true
+---
+{% raw %}{# bundle the global css files #}{% endraw %}
+{% raw %}{% css "global" %}{% endraw %}
+  {% raw %}{% include "public/css/fonts.css" %}{% endraw %}
+  {% raw %}{% include "public/css/variables.css" %}{% endraw %}
+  {% raw %}{% include "public/css/reset.css" %}{% endraw %}
+  {% raw %}{% include "public/css/home.css" %}{% endraw %}
+  {% raw %}{% include "public/css/global.css" %}{% endraw %}
+  {% raw %}{% include "public/css/site-header.css" %}{% endraw %}
+  {% raw %}{% include "public/css/site-footer.css" %}{% endraw %}
+  {% raw %}{% include "public/css/pagefind.css" %}{% endraw %}
+  {% raw %}{% include "public/css/404.css" %}{% endraw %}
+{% raw %}{% endcss %}{% endraw %}
+{% raw %}{% getBundle "css", "global" %}{% endraw %}
+```
+
+The fact that the resulting file is always named global.css means that if I update any of the included CSS files, browsers may still use a cached version of global.css instead of fetching the updated one.
+
+Ideally, we'd either generate a hash of the contents of the bundle such that if any of the included files change, the hash changes and thus a filename that included such a hash would also change.
+
+Since I did not want to abandon the approach of using a template file to create the bundle, I needed to find a way to generate a hash of some sort within the template itself.
+
+## Generating a relevant hash
+
+The first order of business was to come up with a way to generate a hash. I will admit here that I did make use of Copilot in VS Code to kick around some ideas. Those efforts turned up various ways to do this, most of which sounded more complicated than I wanted. I then suggested something simple to Copilot, i.e., examine the timestamp of all of the CSS files and find the most recent timestamp, and use that as the basis for creating the hash. If any of the CSS files' last modified date changed, then it was safe to assume that the bundle needed to be updated as well. And we could create a hash around the timestamp of the changed file.
+
+Thus was born a simple filter, that given either the string 'css' or 'js', the relevant directory would be examined, the most recent file update time determined, and that timestamp converted to a simple hash string that would be appended to the base filename.
+
+Since we can use filters in eleventyComputed when generating a permalink, with a getBundleTimestamp filter in hand, we can make one small change to the front matter of each of the bundle template files, like so:
+
+```YAML
+---
+layout: null
+eleventyExcludeFromCollections: true
+eleventyComputed:
+  permalink: "/css/global-{% raw %}{{ 'css' | getBundleTimestamp }}{% endraw %}.css"
+---
+```
+
+If you're interested to see what the getBundleTimestamp filter looks like, here it is. Note that this was generated by Copilot with some minor tweaks by me.
+
+This works for CSS and JS files which are located in their respective directories.
+
+```js
+import fs from "fs";
+import path from "path";
+
+// Map bundle types to their source directories
+const BUNDLE_DIRS = {
+  css: "./public/css",
+  js: "./public/js",
+};
+
+// Export the function for use in front matter and as a filter
+export function getBundleTimestamp(bundleType = "css") {
+  const dir = BUNDLE_DIRS[bundleType] || bundleType; // Allows custom paths too
+
+  if (!fs.existsSync(dir)) {
+    console.warn(`Directory not found: ${dir}`);
+    return Date.now().toString(36).slice(-8); // Fallback
+  }
+
+  const files = fs.readdirSync(dir);
+  let latestMtime = 0;
+
+  files.forEach((file) => {
+    const filePath = path.join(dir, file);
+    try {
+      const stats = fs.statSync(filePath);
+      if (stats.isFile() && stats.mtimeMs > latestMtime) {
+        latestMtime = stats.mtimeMs;
+      }
+    } catch (err) {
+      // Skip files that can't be stat'd
+    }
+  });
+
+  // Return as base36 for 7-8 character hash
+  return Math.floor(latestMtime / 1000).toString(36);
+}
+```
+
+## Conclusion
+
+This concludes my learning about bundling CSS and JS and cache-busting those references. The end result is that now when I update any of the CSS or JS files, the relevant bundle filename changes, forcing browsers to fetch the updated file.
+
+I really love learning all this stuff and perhaps this has helped you as well.
