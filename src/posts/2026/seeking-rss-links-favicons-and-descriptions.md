@@ -9,6 +9,7 @@ tags:
 image:
   source: seeking-rss-links-favicons-and-descriptions.jpg
   alt: Header of Zach Leatherman's 11ty Bundle site author page
+pageHasCode: true
 rssid: 9323c6ee58367b7b3a934b8cdd0830f4
 ---
 
@@ -27,6 +28,29 @@ If you're blogging and you want people to be able to subscribe to your content v
 - [Exposed RSS](https://chriscoyier.net/2024/01/13/exposed-rss/) by Chris Coyier
 - [Please, Expose your RSS](https://rknight.me/blog/please-expose-your-rss/) by Robb Knight
 - [Making Your RSS Feeds Automatically Discoverable](https://blog.jim-nielsen.com/2021/automatically-discoverable-rss-feeds/) by Jim Nielsen
+
+And if you just do a "view source" of this very page, you'll find this line in the `<head>` section:
+
+```html
+<link
+  rel="alternate"
+  type="application/rss+xml"
+  title="Bob Monsour's blog"
+  href="https://www.bobmonsour.com/feed.xml"
+/>
+```
+
+And if I had an atom feed, it might look like this:
+
+```html
+<!-- use application/atom+xml for an atom feed -->
+<link
+  rel="alternate"
+  type="application/atom+xml"
+  title="Bob Monsour's blog"
+  href="https://www.bobmonsour.com/atom.xml"
+/>
+```
 
 If you use techniques like these, it will make it much easier for services like 11tyBundle.dev to find and link to your RSS feeds.
 
@@ -49,6 +73,15 @@ Descriptions are important for SEO and, in the context of the 11tybundle.dev sit
 - [Meta info, RSS feeds and module recap](https://learn-eleventy.pages.dev/lesson/17/) from Learn Eleventy by uncenter and Andy Bell
 - [Meta Description and Keywords in Eleventy](https://johnwargo.com/posts/2023/meta-keywords-in-eleventy/) by John M. Wargo
 - [Best practices for creating quality meta descriptions](https://developers.google.com/search/docs/appearance/snippet#meta-descriptions) by Google Search Central
+
+Descriptions are even easier that adding RSS links or favicons. You just need to add a `<meta>` tag in the `<head>` section of your HTML document, like the one you'd find on this very page:
+
+```html
+<meta
+  name="description"
+  content="Useful resources to help you add visible RSS links, favicons, and web page descriptions."
+/>
+```
 
 ## Conclusion
 
