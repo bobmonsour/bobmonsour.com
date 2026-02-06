@@ -1,5 +1,5 @@
 ---
-title: Seeking RSS links, favicons, and descriptions
+title: Seeking RSS feeds, favicons, and descriptions
 description: Useful resources to help you add visible RSS links, favicons, and web page descriptions.
 date: 2026-02-01
 tags:
