@@ -5,3 +5,4 @@ resources/
 .env
 .cache
 .vscode
+.claude
