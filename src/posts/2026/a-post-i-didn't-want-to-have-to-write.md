@@ -8,7 +8,6 @@ tags:
 image:
   source: noplaceforhate.png
   alt: A No Hate logo
-draft: true
 rssid: d99833d93885539605c373a2b012f535
 ---
 
