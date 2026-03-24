@@ -28,6 +28,7 @@ html {
 
 :where(h1) {
   font-size: var(--step-4);
+  margin-block-end: var(--space-m);
 }
 
 :where(h2) {
@@ -115,14 +116,16 @@ html {
 }
 
 /* Indicate links to external sites */
-a[href^="https"]:not(:has(img))::after {
-  background: no-repeat var(--icon-external-link);
-  background-size: 0.8em 0.8em;
-  content: "";
+a[href^="https"]:not(:has(img)):not(book-item a):not(.social-links a):not(.footer-meta a)::after {
+  content: "\2060"; /* word joiner prevents orphaned icon */
   display: inline-block;
   width: 0.8em;
   height: 0.8em;
-  padding-inline-start: 0.25em;
+  margin-inline-start: 0.25em;
+  vertical-align: -0.1em;
+  background-color: currentColor;
+  -webkit-mask: var(--icon-external-link) no-repeat center / contain;
+  mask: var(--icon-external-link) no-repeat center / contain;
 }
 
 blockquote {

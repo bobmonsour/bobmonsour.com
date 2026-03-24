@@ -22,7 +22,7 @@ footer .footer-meta {
 }
 
 /* Social icons appearing in the footer of every page */
-.social-icons {
+.social-links {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
@@ -32,16 +32,6 @@ footer .footer-meta {
   font-size: var(--step--1);
 }
 
-.social-icons a {
-  color: var(--text-color);
-  text-decoration: none;
+.social-links a {
   padding: var(--space-3xs) var(--space-2xs);
-  border-bottom: var(--accent-width) solid transparent;
-  transition: border-color 0.15s ease;
-}
-
-.social-icons a:hover,
-.social-icons a:focus {
-  border-bottom-color: var(--accent-line);
-  background-color: transparent;
 }

@@ -13,7 +13,7 @@ permalink: /background-images/
 
 # {{ title }}
 
-Those background images you see on the various pages of this site are all photos of me with various family members. They were taken in the late 1950s and early 1960s.
+Those background images you **used to** see on the various pages of this site are all photos of me with various family members. They were taken in the late 1950s and early 1960s.
 
 _Note: You won't see the background images on the main pages on a phone, only on larger screens._
 

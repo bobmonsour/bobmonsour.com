@@ -26,6 +26,10 @@
   --font-body: "IBM Plex Mono", ui-monospace, monospace;
   --font-heading-serif: "IBM Plex Serif", Georgia, serif;
 
+  /* === Colors (theme-independent) === */
+  --color-dark: #353d4d;
+  --color-light: #C7E2F6;
+
   /* === Sizing === */
   --accent-width: 1px;
   --accent-width-heavy: 3px;
@@ -63,6 +67,7 @@
   --link-color: black;
   --link-hover-color: black;
   --link-hover-bg: #fff066;
+  --image-link-hover-outline: var(--color-dark);
 }
 
 /* === Colors: Light mode === */
@@ -76,6 +81,7 @@
   --link-color: black;
   --link-hover-color: black;
   --link-hover-bg: #fff066;
+  --image-link-hover-outline: var(--color-dark);
 }
 
 /* === Colors: Dark mode === */
@@ -89,4 +95,5 @@
   --link-color: white;
   --link-hover-color: black;
   --link-hover-bg: #fff066;
+  --image-link-hover-outline: var(--color-light);
 }

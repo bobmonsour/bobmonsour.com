@@ -12,7 +12,7 @@ permalink: /about/
 
 ![Bob, circa 2009](/assets/img/about-bob.jpg){.round-img loading="eager" sizes="100px" style="margin: .5em auto;"}
 
-_If you wondering about those background images, [click here](/background-images/)._
+_If you wondering about those background images that **used to** appear on the site, [click here](/background-images/)._
 
 Born in Brooklyn, raised in New Jersey, and educated in Florida and Los Angeles, I'm now retired and living in Northern California with [Sandra](https://www.tascafineart.com/), my wonderful wife and artist, and our Portuguese Water Dog, [Soda](/soda/).
 
@@ -30,4 +30,4 @@ As of now, I'm envisioning creating a dedicated site for this set of resources. 
 
 I'm very glad that I've found something technically interesting and useful to sink my teeth into. I'm also glad that I've found a community of people who are willing to share their knowledge and help others. I'm looking forward to seeing what the future holds.
 
-Most of the pages on the site are using the Classical Humanist fonts from [Modern Font Stacks](https://modernfontstacks.com/), a set of system fonts that look similar across browsers and operating systems. This eliminates the need to load a font from an external source.
+The fonts used on this site are [IBM Plex Mono](https://fonts.google.com/specimen/IBM+Plex+Mono) for body text and [IBM Plex Serif](https://fonts.google.com/specimen/IBM+Plex+Serif) for headings ~~the Classical Humanist fonts from [Modern Font Stacks](https://modernfontstacks.com/), a set of system fonts that look similar across browsers and operating systems. This eliminates the need to load a font from an external source.~~

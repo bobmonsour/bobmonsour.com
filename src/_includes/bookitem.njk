@@ -1,6 +1,6 @@
 <book-item role="listitem">
 	{%- set bookshop_base = "https://bookshop.org/a/109591/" -%}
-	<a href="{{ bookshop_base}}{{ book.ISBN }}">
+	<a href="{{ bookshop_base}}{{ book.ISBN }}" class="image-link">
 	{%- if book.localCover -%}
 		<img eleventy:ignore src="/assets/img/{{ book.title | slugify }}.jpg" alt="{{ book.title | safe }}">
 	{%- else -%}

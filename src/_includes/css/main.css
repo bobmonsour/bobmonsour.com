@@ -11,6 +11,7 @@ body {
   font-size: var(--step-0);
   line-height: 1.6;
   margin-inline: auto;
+  max-width: 1800px;
   min-height: 100vh;
   min-height: 100dvh;
 }
@@ -315,6 +316,16 @@ nav a[aria-current="page"] {
 .card img {
   margin-block: var(--space-xs);
   margin-inline: auto;
+}
+
+/* === Project image link hover === */
+.image-link:hover,
+.image-link:focus {
+  background-color: transparent;
+}
+.image-link:hover img,
+.image-link:focus img {
+  outline: 3px dashed var(--image-link-hover-outline);
 }
 
 /* === Section dividers === */
