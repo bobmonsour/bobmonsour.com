@@ -12,7 +12,7 @@ Integrates the visual redesign prototyped in the `gfp` sibling project into the 
 - Cards: `.boxed` class with red border → `.card` class with partial accent-line borders
 - Scroll-to-top: circular SVG button → square text arrow with accent-line border
 - Link styling: dashed underlines + dashed outlines → solid thin underlines + yellow highlight hover
-- Background images: removed entirely (including the `/background-images/` page)
+- Background images: removed entirely (the `/background-images/` page is kept as historical content)
 - Pagefind search: removed (to be re-added later); `data-pagefind-body` attributes left in templates for easier re-integration
 - Line-height: 1.35 → 1.6 (intentional — monospace body font needs more vertical spacing for readability)
 
@@ -156,7 +156,7 @@ All three layouts (`home.njk`, `grid.njk`, `postgrid.njk`):
 
 #### `bg-images.md` page
 
-- **Delete**: `src/pages/bg-images.md` — this page describes background images which are being removed entirely. The footer link to it is also being removed.
+- **Keep**: `src/pages/bg-images.md` — retained as historical content. The footer link to it is being removed, but the page itself remains accessible. Remove any `.boxed` class usage on this page (it uses `.boxed .popout` on images via markdown-it-attrs — remove `.boxed`, keep `.popout`).
 
 #### `books.njk`
 
@@ -189,7 +189,7 @@ Small inline script in `<head>` (before CSS loads) that reads localStorage and s
 ### Eleventy Config Changes
 
 - **Remove**: `whichBgImage` filter (verify no other templates reference it first)
-- **Remove or leave**: `bgimagerefs.json` data file (harmless if left, cleaner if removed)
+- **Remove**: `bgimagerefs.json` data file
 - **Leave**: Pagefind post-build step in `package.json` (harmless no-op if `_site/` has no pagefind markup; user will re-add later)
 - **No other config changes needed** — bundling, collections, markdown plugins, image transform all stay the same
 
@@ -211,7 +211,7 @@ Small inline script in `<head>` (before CSS loads) that reads localStorage and s
 |----------|--------|-----------|
 | Light mode bg color | Sky (#C7E2F6) | User selected from prototype options |
 | Color picker | Removed | Prototyping tool, not for production |
-| Background images | Removed (including bg-images page) | New solid-color design |
+| Background images | Removed; bg-images page kept as historical content; bgimagerefs.json deleted | New solid-color design |
 | External link indicators | Kept | User preference |
 | Image border-radius | Kept (10px) | User preference |
 | Linked image outlines | Lighter dashed outline (1px) | User wants link indication but lighter than current |
