@@ -4,7 +4,6 @@ import { getAllTags } from "./getalltags.js";
 import { isCurrentPage } from "./iscurrentpage.js";
 import { plainDate, formatPostDate, toDateString } from "./formatdates.js";
 import { readingTime } from "./readingtime.js";
-import { whichBgImage } from "./whichbgimage.js";
 
 const filters = {
   bookRating,
@@ -15,7 +14,6 @@ const filters = {
   formatPostDate,
   readingTime,
   toDateString,
-  whichBgImage,
 };
 
 export default (eleventyConfig) => {
