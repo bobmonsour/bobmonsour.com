@@ -1,6 +1,5 @@
 {
   "whichgrid": "popout",
-  "boxed": "true",
   "imageDir": "src/assets/img/",
   "image": {
     "source": "about-bob.jpg",
