@@ -7,6 +7,27 @@
   <meta name="keywords" content="{{ keywords }}">
   <link rel="canonical" href="{{ site.url }}{{ page.url }}">
 
+  {# Theme: set before paint to prevent flash #}
+  <script>
+    (function() {
+      var saved = localStorage.getItem('theme');
+      var effective;
+      if (saved && saved !== 'auto') {
+        effective = saved;
+      } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        effective = 'dark';
+      } else {
+        effective = 'light';
+      }
+      document.documentElement.setAttribute('data-theme', effective);
+    })();
+  </script>
+
+  {# Fonts #}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400&family=IBM+Plex+Serif:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
   {# improve RSS feed visibility #}
   <link rel="alternate" type="application/rss+xml" title="Bob Monsour's blog" href="https://www.bobmonsour.com/feed.xml">
 
@@ -22,17 +43,6 @@
   {% if pageHasYoutube %}
     <link rel="stylesheet" href="{% getBundleFileUrl 'css', 'pageHasYoutube' %}">
   {% endif %}
-
-  {# generate the proper body background image based on the page.url #}
-  <style>
-    body {
-      {% if page.url | whichBgImage === "" %}
-        background-image: none;
-      {% else %}
-        background-image: url("{{ page.url | whichBgImage }}");
-      {% endif %}
-    }
-  </style>
 
   {# bundle the CSS content used on all pages #}
   {% css %}

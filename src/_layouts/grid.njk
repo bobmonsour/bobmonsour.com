@@ -1,14 +1,16 @@
 <!DOCTYPE html>
-<html lang="en" data-inputpath="{{ page.inputPath }}" id="{{ title | slugify }}">
+<html lang="en" data-theme="light" data-inputpath="{{ page.inputPath }}" id="{{ title | slugify }}">
   {% include 'head.njk' %}
 <body>
+  {% include 'icons.njk' %}
   {% include 'header.njk' %}
-  <main id="main-content" class="content bg-primary">
-    <div class="{{ whichgrid }} {% if boxed %}boxed{% endif %}">
+  <main id="main-content" class="content">
+    <div class="{{ whichgrid }}">
       {{ content | safe }}
     </div>
   </main>
   {% include 'footer.njk' %}
-  <a href="#" class="stt" title="scroll to top"></a>
+  <a href="#" class="stt" title="scroll to top">&uarr;</a>
+  <script src="/assets/js/theme.js" defer></script>
 </body>
 </html>
