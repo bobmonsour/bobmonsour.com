@@ -10,8 +10,8 @@ pageHasYoutube: true
 <h1 class="hidden">The personal website of Bob Monsour</h1>
 
 <div class="homegrid">
-  <div class="boxed">
-    <h2>Yo!</h2>
+  <div class="card">
+    <h2 class="heading-serif">Yo!</h2>
     <img
       src="/assets/img/about-bob.jpg"
       alt="Bob, circa 2009"
@@ -31,8 +31,8 @@ pageHasYoutube: true
     </p>
     <p class="ital"><a href="/about/">More...</a></p>
   </div>
-  <div class="boxed">
-    <h2>From the Blog</h2>
+  <div class="card">
+    <h2 class="heading-serif">From the Blog</h2>
     <ul class="list-none">
       {%- set blogposts = collections.posts | reverse -%} {%- set
       last3posts = blogposts.slice(0,3) -%} {%- for post in last3posts -%}
@@ -44,8 +44,8 @@ pageHasYoutube: true
     </ul>
     <p class="ital"><a href="/blog/">More...</a></p>
   </div>
-  <div class="boxed">
-    <h2>Current Project</h2>
+  <div class="card">
+    <h2 class="heading-serif">Current Project</h2>
     <a href="https://11tybundle.dev">
       <img
         loading="eager"
@@ -64,8 +64,8 @@ pageHasYoutube: true
       great static site generator.
     </p>
   </div>
-  <div class="boxed">
-    <h2>Currently Reading</h2>
+  <div class="card">
+    <h2 class="heading-serif">Currently Reading</h2>
     {%- for book in books.currentBooks.slice(0,1) -%}
       {%- include "bookitem.njk" -%}
     {%- endfor -%}
@@ -73,21 +73,23 @@ pageHasYoutube: true
   </div>
 </div>
 
-<h2 class="text-center top-n-bot-margin">Organizations that I'm supporting (<a href="/blog/organizations-im-supporting/">here's why</a>)</h2>
+<div class="section-divider">
+  <h2 class="heading-serif text-center">Organizations that I'm supporting (<a href="/blog/organizations-im-supporting/">here's why</a>)</h2>
+</div>
 
 <div class="homegrid2">
-  <div class="boxed">
-    <h2 class="bot-margin"><a href="https://justvision.org/">Just Vision</a></h2>
+  <div class="card">
+    <h2 class="heading-serif"><a href="https://justvision.org/">Just Vision</a></h2>
       {% set videoTitle = "Boycott: Offical Trailer" %}
       {% set videoId = "FAMAFyR7L9U" %}
       {% include 'youtube.njk' %}
-    <p class="top-margin">Since 2012, I have been a supporter of Just Vision, a non-profit organization that <i>"fills a media gap on Israel-Palestine through independent storytelling and strategic audience engagement."</i> They have produced <a href="https://justvision.org/films">award-winning films</a>. They also produce <a href="https://www.mekomit.co.il/">Local Call</a>, a Hebrew-language news site advancing citizen journalism and an independent media. In conjunction with <a href="https://www.972mag.com/">972 Magazine</a>, Local Call publishes <a href="https://www.972mag.com/topic/local-call/">their work in English</a>. If this is an issue of importance to you, perhaps you'll consider <a href="https://justvision.org/ways-to-give">supporting them</a>.</p>
+    <p>Since 2012, I have been a supporter of Just Vision, a non-profit organization that <i>"fills a media gap on Israel-Palestine through independent storytelling and strategic audience engagement."</i> They have produced <a href="https://justvision.org/films">award-winning films</a>. They also produce <a href="https://www.mekomit.co.il/">Local Call</a>, a Hebrew-language news site advancing citizen journalism and an independent media. In conjunction with <a href="https://www.972mag.com/">972 Magazine</a>, Local Call publishes <a href="https://www.972mag.com/topic/local-call/">their work in English</a>. If this is an issue of importance to you, perhaps you'll consider <a href="https://justvision.org/ways-to-give">supporting them</a>.</p>
   </div>
-  <div class="boxed">
-    <h2 class="bot-margin"><a href="https://www.bradyunited.org/">Brady United</a></h2>
+  <div class="card">
+    <h2 class="heading-serif"><a href="https://www.bradyunited.org/">Brady United</a></h2>
       {% set videoTitle = "Brady: United Against Gun Violence" %}
       {% set videoId = "qGGXupGu10E" %}
       {% include 'youtube.njk' %}
-    <p class="top-margin">Brady United is the leading gun violence prevention organization in America. They combine bipartisan leadership with proven behavior change campaigns. Evidence shows they're saving lives. A friend of mine and organizer of our book club recently hosted a gathering at his home where we heard <a href="https://www.bradyunited.org/about-us/our-team/brady-leadership/kris-brown">Kris Brown</a>, the President of the <a href="https://www.bradyunited.org/">Brady Campaign</a>, speak about the work they are doing to address this issue. If this is an issue of importance to you, perhaps you'll consider <a href="https://www.bradyunited.org/take-action/donate-to-brady">supporting them</a>.</p>
+    <p>Brady United is the leading gun violence prevention organization in America. They combine bipartisan leadership with proven behavior change campaigns. Evidence shows they're saving lives. A friend of mine and organizer of our book club recently hosted a gathering at his home where we heard <a href="https://www.bradyunited.org/about-us/our-team/brady-leadership/kris-brown">Kris Brown</a>, the President of the <a href="https://www.bradyunited.org/">Brady Campaign</a>, speak about the work they are doing to address this issue. If this is an issue of importance to you, perhaps you'll consider <a href="https://www.bradyunited.org/take-action/donate-to-brady">supporting them</a>.</p>
   </div>
 </div>
