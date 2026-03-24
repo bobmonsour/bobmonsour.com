@@ -43,6 +43,5 @@ footer .footer-meta {
 .social-icons a:hover,
 .social-icons a:focus {
   border-bottom-color: var(--accent-line);
-  color: var(--link-hover-color);
   background-color: transparent;
 }

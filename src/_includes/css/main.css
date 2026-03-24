@@ -456,6 +456,8 @@ pre:has(code) button {
 }
 .stt:hover {
   opacity: 0.6;
+  background-color: transparent;
+  color: var(--text-color);
 }
 
 .taglist {

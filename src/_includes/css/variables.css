@@ -52,6 +52,19 @@
 </svg>');
 }
 
+/* === Colors: Default (fallback when data-theme not yet set) === */
+:root {
+  --bg-primary: #C7E2F6;
+  --bg-card: #C7E2F6;
+  --text-color: black;
+  --text-muted: black;
+  --accent-line: black;
+  --accent-line-heavy: black;
+  --link-color: black;
+  --link-hover-color: black;
+  --link-hover-bg: #fff066;
+}
+
 /* === Colors: Light mode === */
 [data-theme="light"] {
   --bg-primary: #C7E2F6;
