@@ -1,27 +1,7 @@
 /* Utility classes */
-.bg-primary {
-  background-color: var(--bg-primary);
-  opacity: 0.7;
-}
-
-.bg-secondary {
-  background-color: var(--bg-secondary);
-  opacity: 1;
-}
 
 .bold {
   font-weight: bold;
-}
-
-.bot-margin {
-  margin-block-end: var(--space-s);
-}
-
-.boxed {
-  background-color: var(--bg-secondary);
-  border: 1px solid var(--box-primary);
-  border-radius: var(--radius);
-  padding: var(--space-s);
 }
 
 .flow > * + * {
@@ -44,8 +24,8 @@
   clip-path: circle(50%);
 }
 
-.top-n-bot-margin {
-  margin-block: 1em 0.5em;
+.strikethrough {
+  text-decoration: line-through;
 }
 
 .text-center {
@@ -60,20 +40,26 @@
   text-align: right;
 }
 
-.top-margin {
-  margin-block-start: var(--space-s);
+.no-bot-margin {
+  margin-block-end: 0;
 }
 
 .parenthetical {
-  font-size: var(--font-size-md);
+  font-size: var(--step--1);
   font-weight: normal;
   font-style: italic;
 }
 
-.strikethrough {
-  text-decoration: line-through;
+/* Accent line utilities — single edges only */
+.border-top {
+  border-top: var(--accent-width) solid var(--accent-line);
 }
 
-.no-bot-margin {
-  margin-block-end: 0;
+.border-bottom {
+  border-bottom: var(--accent-width) solid var(--accent-line);
+}
+
+.border-left {
+  border-left: var(--accent-width) solid var(--accent-line);
+  padding-left: var(--space-s);
 }

@@ -21,18 +21,31 @@ html {
 }
 
 :where(h1, h2) {
-  font-size: var(--font-size-xl);
+  line-height: 1.2;
   text-align: center;
   text-wrap: balance;
 }
+
+:where(h1) {
+  font-size: var(--step-4);
+}
+
+:where(h2) {
+  font-size: var(--step-2);
+}
+
+:where(h3) {
+  font-size: var(--step-1);
+}
+
 :where(article h2) {
-  font-size: var(--font-size-lg);
+  font-size: var(--step-1);
   text-align: left;
 }
 
 :where(hr) {
   border: none;
-  border-top: 1px solid var(--jotter-red);
+  margin-block: var(--space-m);
 }
 
 :where(ol, ul) {
@@ -56,11 +69,6 @@ html {
   font: inherit;
 }
 
-:where(hr) {
-  border: none;
-  border-top: 1px solid var(--jotter-red);
-}
-
 :where(p) {
   margin-block: 0 var(--space-s);
   text-wrap: pretty;
@@ -73,52 +81,54 @@ html {
   max-width: 100%;
 }
 :where(img[width]) {
-  width: auto; /* Defer to max-width */
+  width: auto;
 }
 :where(img[width][height]) {
-  height: auto; /* Preserve aspect ratio */
+  height: auto;
 }
 :where(img:not([class])) {
   margin-block-end: var(--space-s);
 }
 
-:where(a:not([data-hover-text])):focus {
-  outline: none; /* Remove default browser outline */
-}
-
-:where(a:not(:has(img))) {
-  color: var(--text-color);
+/* Links */
+:where(a) {
+  color: var(--link-color);
+  text-decoration-thickness: 1px;
   text-underline-offset: 0.2em;
-  text-decoration-thickness: 3px;
-  text-decoration-style: dashed;
-  text-decoration-color: var(--link-primary);
-  &:hover,
-  &:focus {
-    outline: 5px dashed var(--link-hover);
-    border-radius: var(--radius);
-    text-decoration: none;
-  }
+  transition: background-color 0.15s ease;
+}
+:where(a:hover, a:focus) {
+  color: var(--link-hover-color);
+  background-color: var(--link-hover-bg);
+  text-decoration: none;
 }
 
-:where(a:not([data-hover-text])) {
-  img {
-    border-radius: var(--radius);
-    outline: 3px dashed var(--outline-primary);
-  }
-  &:hover img,
-  &:focus img {
-    border: none;
-    outline: 5px dashed var(--outline-hover);
-  }
+/* Lighter dashed outline on linked images to indicate clickability */
+:where(a:has(img)) {
+  text-decoration: none;
+}
+:where(a:has(img) img) {
+  outline: 1px dashed var(--accent-line);
+}
+:where(a:has(img):hover img, a:has(img):focus img) {
+  outline: 2px dashed var(--accent-line);
 }
 
-/* indicate links to external sites */
+/* Indicate links to external sites */
 a[href^="https"]:not(:has(img))::after {
   background: no-repeat var(--icon-external-link);
-  background-size: 0.8em 0.8em; /* Adjust size as needed */
+  background-size: 0.8em 0.8em;
   content: "";
   display: inline-block;
   width: 0.8em;
   height: 0.8em;
   padding-inline-start: 0.25em;
+}
+
+blockquote {
+  border-inline-start: var(--blockquote-border) solid var(--accent-line-heavy);
+  font-style: italic;
+  font-size: var(--step-0);
+  margin: var(--space-m) 0;
+  padding: var(--space-s) var(--space-m);
 }

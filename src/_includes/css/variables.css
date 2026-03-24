@@ -1,14 +1,15 @@
 :root {
-  /* Type scale from https://www.fluid-type-scale.com/, smallest to largest */
-  --font-size-sm: clamp(0.8rem, 0.17vw + 0.76rem, 0.89rem);
-  --font-size-base: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
-  --font-size-md: clamp(1.25rem, 0.61vw + 1.1rem, 1.58rem);
-  --font-size-lg: clamp(1.56rem, 1vw + 1.31rem, 2.11rem);
-  --font-size-xl: clamp(1.95rem, 1.56vw + 1.56rem, 2.81rem);
-  --font-size-xxl: clamp(2.44rem, 2.38vw + 1.85rem, 3.75rem);
-  --font-size-xxxl: clamp(3.05rem, 3.54vw + 2.17rem, 5rem);
+  /* === Type scale from https://utopia.fyi/type/calculator/ === */
+  --step--2: clamp(0.7813rem, 0.7747rem + 0.0326vw, 0.8rem);
+  --step--1: clamp(0.9375rem, 0.9158rem + 0.1087vw, 1rem);
+  --step-0: clamp(1.125rem, 1.0815rem + 0.2174vw, 1.25rem);
+  --step-1: clamp(1.35rem, 1.2761rem + 0.3696vw, 1.5625rem);
+  --step-2: clamp(1.62rem, 1.5041rem + 0.5793vw, 1.9531rem);
+  --step-3: clamp(1.944rem, 1.771rem + 0.8652vw, 2.4414rem);
+  --step-4: clamp(2.3328rem, 2.0827rem + 1.2504vw, 3.0518rem);
+  --step-5: clamp(2.7994rem, 2.4462rem + 1.7658vw, 3.8147rem);
 
-  /* Space scale from https://utopia.fyi/space/calculator/ */
+  /* === Space scale from https://utopia.fyi/space/calculator/ === */
   --space-3xs: clamp(0.3125rem, 0.3125rem + 0vw, 0.3125rem);
   --space-2xs: clamp(0.5625rem, 0.5408rem + 0.1087vw, 0.625rem);
   --space-xs: clamp(0.875rem, 0.8533rem + 0.1087vw, 0.9375rem);
@@ -18,56 +19,28 @@
   --space-xl: clamp(3.375rem, 3.2446rem + 0.6522vw, 3.75rem);
   --space-2xl: clamp(4.5rem, 4.3261rem + 0.8696vw, 5rem);
   --space-3xl: clamp(6.75rem, 6.4891rem + 1.3043vw, 7.5rem);
-  --flow-space: var(--space-xs);
 
-  /* Colors */
-  --bg-primary: #fff0e5;
-  --bg-secondary: #eee8d5;
-  --box-primary: var(--jotter-red);
-  --jotter-blue: #0d3aba;
-  --jotter-red: #d32e2f;
-  --link-primary: var(--jotter-blue);
-  --link-hover: var(--jotter-red);
-  --outline-primary: var(--jotter-blue);
-  --outline-hover: var(--jotter-red);
-  --text-color: black;
+  --flow-space: var(--space-s);
 
-  /* Font family */
-  --brand-font: Optima, Candara, "Noto Sans", source-sans-pro, sans-serif;
+  /* === Fonts === */
+  --font-body: "IBM Plex Mono", ui-monospace, monospace;
+  --font-heading-serif: "IBM Plex Serif", Georgia, serif;
 
-  /* Post Styles */
-  --caption-size: var(--font-size-base);
-  --post-title-size: var(--font-size-xl);
+  /* === Sizing === */
+  --accent-width: 1px;
+  --accent-width-heavy: 3px;
+  --blockquote-border: 4px;
   --radius: 10px;
 
-  /* Book shelf & table of content styles */
+  /* Carried from current site */
   --max-book-width: 200px;
+  --caption-size: var(--step-0);
+  --post-title-size: var(--step-2);
 
-  /* Configure the Pagefind UI */
-  --pagefind-ui-scale: 1;
-  --pagefind-ui-primary: #034ad8;
-  --pagefind-ui-text: #393939;
-  --pagefind-ui-background: #ffffff;
-  --pagefind-ui-border: #000000;
-  --pagefind-ui-tag: #eeeeee;
-  --pagefind-ui-border-width: 2px;
-  --pagefind-ui-border-radius: 8px;
-  --pagefind-ui-image-border-radius: 8px;
-  --pagefind-ui-image-box-ratio: 3 / 2;
-  --pagefind-ui-font: sans-serif;
-
-  /* SVG icon for external links
-	line left
-	line right
-	line bottom
-	line top
-	arrow left
-	arrow right
-	arrow diagonal
-	*/
+  /* SVG icon for external links */
   --icon-external-link: url('data:image/svg+xml,\
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">\
-  <g style="stroke:rgb(0,0,0);stroke-width:1">\
+  <g style="stroke:currentColor;stroke-width:1">\
     <line x1="5" y1="5" x2="5" y2="14" />\
     <line x1="14" y1="9" x2="14" y2="14" />\
     <line x1="5" y1="14" x2="14" y2="14" />\
@@ -77,4 +50,30 @@
     <line x1="10" y1="9" x2="17" y2="2" style="stroke-width:1.5" />\
   </g>\
 </svg>');
+}
+
+/* === Colors: Light mode === */
+[data-theme="light"] {
+  --bg-primary: #C7E2F6;
+  --bg-card: #C7E2F6;
+  --text-color: black;
+  --text-muted: black;
+  --accent-line: black;
+  --accent-line-heavy: black;
+  --link-color: black;
+  --link-hover-color: black;
+  --link-hover-bg: #fff066;
+}
+
+/* === Colors: Dark mode === */
+[data-theme="dark"] {
+  --bg-primary: #353d4d;
+  --bg-card: #353d4d;
+  --text-color: white;
+  --text-muted: white;
+  --accent-line: white;
+  --accent-line-heavy: white;
+  --link-color: white;
+  --link-hover-color: black;
+  --link-hover-bg: #fff066;
 }

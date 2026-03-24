@@ -1,13 +1,24 @@
 footer {
-  padding-block-start: var(--space-m);
+  padding-block-start: 0;
+  margin-block-start: 0;
 }
+
 #alltags {
   margin-inline: var(--space-m);
 }
-footer > p:nth-of-type(2) {
-  background-color: var(--bg-secondary);
-  border-top: 1px solid var(--jotter-red);
+
+@media (min-width: 700px) {
+  footer {
+    padding-block-start: var(--space-m);
+  }
+}
+
+footer .footer-meta {
   padding-block: var(--space-xs);
+  margin-block-start: var(--space-m);
+  text-align: center;
+  font-size: var(--step--1);
+  color: var(--text-color);
 }
 
 /* Social icons appearing in the footer of every page */
@@ -15,50 +26,23 @@ footer > p:nth-of-type(2) {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
-  margin-block: var(--space-s);
+  margin-block: var(--space-m);
   justify-content: center;
-  gap: var(--space-s);
-}
-
-.social-icons li {
-  position: relative;
+  gap: var(--space-m);
+  font-size: var(--step--1);
 }
 
 .social-icons a {
-  display: inline-block;
-  padding: var(--space-2xs);
-  transition: transform 0.3s ease;
+  color: var(--text-color);
   text-decoration: none;
+  padding: var(--space-3xs) var(--space-2xs);
+  border-bottom: var(--accent-width) solid transparent;
+  transition: border-color 0.15s ease;
 }
 
 .social-icons a:hover,
 .social-icons a:focus {
-  transform: scale(1.1);
-  outline: none;
-}
-
-.social-icons a::after {
-  content: attr(data-hover-text);
-  position: absolute;
-  top: 65%;
-  left: 50%;
-  transform: translateX(-50%);
-  white-space: nowrap;
-  background-color: rgba(0, 0, 0, 0.8);
-  color: white;
-  padding: var(--space-3xs) var(--space-3xs);
-  border-radius: var(--space-2xs);
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.3s ease;
-}
-
-.social-icons a:hover::after,
-.social-icons a:focus::after {
-  opacity: 1;
-}
-
-.social-icons li a img {
-  height: var(--space-l);
-  width: var(--space-l);
+  border-bottom-color: var(--accent-line);
+  color: var(--link-hover-color);
+  background-color: transparent;
 }
