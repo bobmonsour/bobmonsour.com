@@ -6,7 +6,7 @@ tags:
   - 11ty
   - shop
 image:
-  source: 11tybundle-dev.png
+  source: 11tybundle-dev-old.png
   alt: An illustration of the 11ty Bundle.
   creditPerson: Andy Carolan
   creditLink: https://andycarolan.com/
