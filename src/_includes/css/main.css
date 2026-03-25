@@ -26,6 +26,32 @@ header {
   position: relative;
 }
 
+/* === Site name === */
+.site-name {
+  position: absolute;
+  left: var(--space-m);
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: var(--step-1);
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--text-color);
+  white-space: nowrap;
+}
+
+.site-name:hover,
+.site-name:focus {
+  color: black;
+}
+
+@media (max-width: 699px) {
+  .site-name {
+    position: static;
+    transform: none;
+    text-align: center;
+  }
+}
+
 /* === Hamburger menu === */
 .menu-toggle {
   position: absolute;
