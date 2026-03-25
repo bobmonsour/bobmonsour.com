@@ -133,14 +133,6 @@ header {
   pointer-events: auto;
 }
 
-.theme-panel fieldset {
-  border: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  gap: var(--space-s);
-}
-
 .theme-panel label {
   display: flex;
   align-items: center;
