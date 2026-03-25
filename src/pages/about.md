@@ -11,7 +11,7 @@ permalink: /about/
 
 ![Bob, circa 2009](/assets/img/about-bob.jpg){.round-img loading="eager" sizes="100px" style="margin: .5em auto;"}
 
-_If you wondering about those background images that **used to** appear on the site, [click here](/background-images/)._
+_If you're wondering about those background images that **used to** appear on the site, [here's the story](/background-images/)._
 
 Born in Brooklyn, raised in New Jersey, and educated in Florida and Los Angeles, I'm now retired and living in Northern California with [Sandra](https://www.tascafineart.com/), my wonderful wife and artist, and our Portuguese Water Dog, [Soda](/soda/).
 

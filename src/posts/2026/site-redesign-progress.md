@@ -6,7 +6,6 @@ tags:
   - notes
   - personal
   - futzing
-  - notes
   - blogging
 image:
   source: current-home-page-032426.png

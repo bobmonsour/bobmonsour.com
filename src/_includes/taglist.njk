@@ -2,7 +2,6 @@
   Display list of tags for posts
 #}
 <ul class="taglist" aria-label="Tags">
-  <li aria-hidden="true">Tags:&nbsp;</li>
   {%- for tag in tagsdata -%}
     {%- set tagUrl -%}/tags/{{ tag | slugify }}/{%- endset -%}
     <li><a href="{{ tagUrl }}">{{ tag }}</a>&nbsp;&nbsp;</li>

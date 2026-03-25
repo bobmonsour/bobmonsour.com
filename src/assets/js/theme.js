@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
   function closeThemePanel() {
     toggle.setAttribute('aria-expanded', 'false');
     panel.classList.remove('visible');
+    panel.setAttribute('aria-hidden', 'true');
   }
 
   // Toggle panel visibility
@@ -20,6 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var expanded = toggle.getAttribute('aria-expanded') === 'true';
     toggle.setAttribute('aria-expanded', String(!expanded));
     panel.classList.toggle('visible');
+    panel.setAttribute('aria-hidden', String(expanded));
   });
 
   // Escape key closes theme panel
@@ -78,6 +80,10 @@ document.addEventListener('DOMContentLoaded', function () {
     mainNav.classList.toggle('open');
     var use = menuToggle.querySelector('use');
     use.setAttribute('href', expanded ? '#icon-menu' : '#icon-close');
+    if (!expanded) {
+      var firstLink = mainNav.querySelector('a');
+      if (firstLink) firstLink.focus();
+    }
   });
 
   // Escape key closes hamburger menu

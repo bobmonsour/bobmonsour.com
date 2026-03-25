@@ -41,9 +41,13 @@ header {
   place-items: center;
   z-index: 20;
 }
-.menu-toggle:hover,
+.menu-toggle:hover {
+  opacity: 0.6;
+}
 .menu-toggle:focus-visible {
   opacity: 0.6;
+  outline: 2px solid var(--text-color);
+  outline-offset: 2px;
 }
 .menu-toggle svg {
   width: 1.5rem;
@@ -94,9 +98,13 @@ header {
   display: grid;
   place-items: center;
 }
-.theme-toggle:hover,
+.theme-toggle:hover {
+  opacity: 0.6;
+}
 .theme-toggle:focus-visible {
   opacity: 0.6;
+  outline: 2px solid var(--text-color);
+  outline-offset: 2px;
 }
 .theme-toggle svg {
   width: 1.25rem;
@@ -473,6 +481,11 @@ pre:has(code) button {
   background-color: transparent;
   color: var(--text-color);
 }
+.stt:focus-visible {
+  outline: 2px solid var(--text-color);
+  outline-offset: 2px;
+  background-color: transparent;
+}
 
 .taglist {
   display: flex;
@@ -482,6 +495,9 @@ pre:has(code) button {
   list-style: none;
   margin-block: 0 var(--space-xl);
   padding: 0;
+}
+.taglist::before {
+  content: "Tags:\00a0";
 }
 
 .postmeta {

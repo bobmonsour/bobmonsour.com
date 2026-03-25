@@ -89,6 +89,11 @@ class Snow extends HTMLElement {
 			return;
 		}
 
+		// Respect reduced motion preference
+		if(window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+			return;
+		}
+
 		let count = parseInt(this.getAttribute(Snow.attrs.count)) || 100;
 
 		let mode;
