@@ -17,8 +17,6 @@ Those background images you **used to** see on the various pages of this site ar
 
 They were taken in the late 1950s and early 1960s.
 
-_Note: You won't see the background images on the main pages on a phone, only on larger screens._
-
 ![Me and my dad at his car](/assets/img/bg-me-and-dad.jpg){.popout loading="eager" sizes="100px" style="margin: .5em auto; width: 100%;"}
 
 Me and my dad at his car {.caption}
