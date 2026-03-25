@@ -30,7 +30,7 @@ lite-youtube::before {
 	font-family: "YouTube Noto", Roboto, Arial, Helvetica, sans-serif;
 	color: hsl(0deg 0% 93.33%);
 	text-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
-	font-size: 18px;
+	font-size: 1.125rem;
 	padding: 25px 20px;
 	overflow: hidden;
 	white-space: nowrap;

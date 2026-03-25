@@ -2,7 +2,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ title }}</title>
+  <title>{{ title }}{% if title !== site.author.name %} | {{ site.author.name }}{% endif %}</title>
   <meta name="description" content="{{ description }}">
   <meta name="keywords" content="{{ keywords }}">
   <link rel="canonical" href="{{ site.url }}{{ page.url }}">
@@ -70,7 +70,13 @@
   <meta property="og:title" content="{{ title }}">
   <meta property="og:type" content="website">
   <meta property="og:description" content="{{ description }}">
+  {% if image and image.source %}
   <meta property="og:image" content="{{ site.url }}/assets/img/{{ image.source }}">
+  <meta property="og:image:alt" content="{{ image.alt }}">
+  {% else %}
+  <meta property="og:image" content="{{ site.url }}/assets/img/fallback-og-image.png">
+  <meta property="og:image:alt" content="Bob Monsour's personal website">
+  {% endif %}
   <meta property="og:url" content="{{ site.url }}{{ page.url }}">
   <meta name="generator" content="{{ eleventy.generator }}">
   {# <meta name="fediverse:creator" content="@bobmonsour@indieweb.social" /> #}

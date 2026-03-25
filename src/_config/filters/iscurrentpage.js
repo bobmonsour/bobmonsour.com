@@ -44,6 +44,7 @@ export const isCurrentPage = (linkText, pageUrl) => {
       if (pageUrl.includes("/about/")) {
         return 'aria-current="page"';
       }
+      break;
     case "background-images":
       if (pageUrl.includes("/background-images/")) {
         return 'aria-current="page"';

@@ -7,6 +7,7 @@ blocks.forEach((block) => {
     let button = document.createElement("button");
 
     button.innerText = copyButtonLabel;
+    button.setAttribute("aria-live", "polite");
     block.appendChild(button);
 
     button.addEventListener("click", async () => {

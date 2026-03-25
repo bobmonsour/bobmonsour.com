@@ -7,11 +7,9 @@ permalink: /index.html
 pageHasYoutube: true
 ---
 
-<h1 class="hidden">The personal website of Bob Monsour</h1>
-
 <div class="homegrid">
   <div class="card">
-    <h2 class="heading-serif">Yo!</h2>
+    <h1 class="heading-serif">Yo! <span class="visually-hidden">The personal website of Bob Monsour</span></h1>
     <img
       src="/assets/img/about-bob.jpg"
       alt="Bob, circa 2009"
@@ -29,7 +27,7 @@ pageHasYoutube: true
       , my wonderful wife and artist, and our Portuguese Water Dog,
       <a href="/soda/">Soda</a>.
     </p>
-    <p class="ital"><a href="/about/">More...</a></p>
+    <p class="ital"><a href="/about/" aria-label="More about Bob">More...</a></p>
   </div>
   <div class="card">
     <h2 class="heading-serif">From the Blog</h2>
@@ -42,7 +40,7 @@ pageHasYoutube: true
       </li>
       {%- endfor -%}
     </ul>
-    <p class="ital"><a href="/blog/">More...</a></p>
+    <p class="ital"><a href="/blog/" aria-label="More blog posts">More...</a></p>
   </div>
   <div class="card">
     <h2 class="heading-serif">Current Project</h2>
@@ -66,10 +64,12 @@ pageHasYoutube: true
   </div>
   <div class="card">
     <h2 class="heading-serif">Currently Reading</h2>
+    <div role="list">
     {%- for book in books.currentBooks.slice(0,1) -%}
       {%- include "bookitem.njk" -%}
     {%- endfor -%}
-    <p class="ital"><a href="/books/">More...</a></p>
+    </div>
+    <p class="ital"><a href="/books/" aria-label="More books">More...</a></p>
   </div>
 </div>
 

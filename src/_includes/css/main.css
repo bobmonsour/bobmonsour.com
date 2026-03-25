@@ -41,7 +41,8 @@ header {
   place-items: center;
   z-index: 20;
 }
-.menu-toggle:hover {
+.menu-toggle:hover,
+.menu-toggle:focus-visible {
   opacity: 0.6;
 }
 .menu-toggle svg {
@@ -93,7 +94,8 @@ header {
   display: grid;
   place-items: center;
 }
-.theme-toggle:hover {
+.theme-toggle:hover,
+.theme-toggle:focus-visible {
   opacity: 0.6;
 }
 .theme-toggle svg {
@@ -142,7 +144,8 @@ header {
   border-bottom: var(--accent-width) solid transparent;
   transition: border-color 150ms ease;
 }
-.theme-panel label:hover {
+.theme-panel label:hover,
+.theme-panel label:focus-within {
   border-bottom-color: var(--accent-line);
 }
 

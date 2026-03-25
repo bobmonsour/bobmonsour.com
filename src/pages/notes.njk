@@ -7,7 +7,8 @@ keywords: retired, web development, eleventy, tennis, notes
 permalink: /notes/
 ---
 
-<h1>{{ title }} <span class="parenthetical">(<a href="/notesfeed.xml">RSS</a>, Notes only)</span></h1>
+<h1>{{ title }}</h1>
+<p class="text-center parenthetical">(<a href="/notesfeed.xml" aria-label="Notes RSS feed">RSS</a>, Notes only)</p>
 <p class="text-center">Shorter writings and observations</p>
 {%- set blogposts = collections.notes | reverse -%}
 {% include "blog-entries.njk" %}

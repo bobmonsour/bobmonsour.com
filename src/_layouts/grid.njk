@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light" data-inputpath="{{ page.inputPath }}" id="{{ title | slugify }}">
+<html lang="en" data-theme="light" id="{{ title | slugify }}">
   {% include 'head.njk' %}
 <body>
   {% include 'icons.njk' %}
@@ -10,7 +10,7 @@
     </div>
   </main>
   {% include 'footer.njk' %}
-  <a href="#" class="stt" title="scroll to top">&uarr;</a>
+  <a href="#" class="stt" aria-label="Scroll to top"><span aria-hidden="true">&uarr;</span></a>
   <script src="/assets/js/theme.js" defer></script>
 </body>
 </html>

@@ -5,7 +5,7 @@
       <use href="#icon-menu"></use>
     </svg>
   </button>
-  <nav id="main-nav">
+  <nav id="main-nav" aria-label="Main">
     <ul class="listolinks list-none">
       {% for link in site.mainNavLinks %}
       <li><a href="{{ link.url }}" {{ link.text | isCurrentPage(page.url) | safe }}>{{ link.text }}</a></li>
@@ -19,7 +19,7 @@
   </button>
   <form id="theme-panel" class="theme-panel">
     <fieldset>
-      <legend class="hidden">Theme</legend>
+      <legend class="visually-hidden">Theme</legend>
       <label>
         <input type="radio" name="theme" value="auto">
         <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-circle-half"></use></svg>
