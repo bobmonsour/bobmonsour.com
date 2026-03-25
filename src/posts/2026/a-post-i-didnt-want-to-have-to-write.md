@@ -4,7 +4,7 @@ description: If I can prevent hate from entering our community, I will.
 date: 2026-02-23
 tags:
   - personal
-  - political
+  - politics
 image:
   source: noplaceforhate.png
   alt: A No Hate logo

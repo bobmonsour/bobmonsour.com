@@ -4,7 +4,7 @@ description: Please watch this video and reflect on its message.
 date: 2025-09-28
 tags:
   - notes
-  - political
+  - politics
 pageHasYoutube: true
 rssid: e9e44e3c4727af4bb4d8b09ec88c2d7d
 ---
