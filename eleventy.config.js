@@ -41,6 +41,7 @@ export default function (eleventyConfig) {
     "src/assets/audio/",
     { "src/assets/favicon/*": "/" },
     "src/assets/css/",
+    "src/assets/fonts/",
     "src/assets/img/",
     "src/assets/js/",
     "src/assets/pdf/",
