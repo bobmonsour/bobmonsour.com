@@ -1,6 +1,7 @@
-{# only include lite-youtube-embed CSS on blog posts that YouTube embeds #}
+{# only include lite-youtube-embed CSS and JS on pages with YouTube embeds #}
 {% if pageHasYoutube %}
   {%- css "pageHasYoutube" %}
     {% include "css/lite-yt-embed.css" %}
   {% endcss %}
+  <script src="/assets/js/lite-yt-embed.js"></script>
 {% endif %}
