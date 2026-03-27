@@ -1,7 +1,7 @@
 ---
 layout: grid.njk
-title: Those background images
-description: Let me tell you about the background images on this site.
+title: These used to be background images
+description: Let me tell you about what used to be background images on this site.
 date: 2025-09-24
 tags: [personal]
 image:
