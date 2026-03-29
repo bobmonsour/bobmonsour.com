@@ -36,7 +36,7 @@ I'm seeing so many create their own list of default apps with Rob Knight's encou
 - <strong>photo management: </strong>Google Photos
 - <strong>podcasts: </strong>Overcast
 - <strong>RSS reader: </strong>~~Feedly in Chrome~~ Inoreader (tab 4)
-- <strong>site analytics: </strong>Fathom in Chrome (tab 3)
+- ~~<strong>site analytics: </strong>Fathom in Chrome (tab 3)~~
 - <strong>spreadsheet: </strong>Google Sheets
 - <strong>static site generator: </strong>[Eleventy](https://www.11ty.dev/)
 - <strong>terminal: </strong>Apple Terminal

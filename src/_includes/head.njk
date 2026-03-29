@@ -50,11 +50,6 @@
   {% endcss %}
   <link rel="stylesheet" href="{% getBundleFileUrl "css" %}">
 
-  {# Fathom Analytics - don't load when developing locally #}
-  {% if site.env != "development" %}
-    <script src="https://cdn.usefathom.com/script.js" data-site="MJGSVNXM" defer></script>
-  {% endif %}
-
   {# favicon settings #}
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-96x96.png">
