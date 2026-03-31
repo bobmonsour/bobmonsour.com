@@ -280,27 +280,9 @@ nav a[aria-current="page"] {
   }
 }
 
-/*
-  Home page secondary grid:
-  - 1 column on small screens
-  - 2 columns on medium & large screens via media query
-*/
+/* Home page secondary grid: adds bottom padding to homegrid */
 .homegrid2 {
-  display: grid;
-  grid-template-columns: 1fr;
-  column-gap: var(--space-l);
-  row-gap: 0;
-  padding-inline: 0.25rem;
-  padding-block-start: 0;
   padding-block-end: var(--space-s);
-  place-content: center;
-}
-
-@media (min-width: 700px) {
-  .homegrid2 {
-    grid-template-columns: repeat(2, 1fr);
-    padding-inline: var(--space-m);
-  }
 }
 
 /* === Card styling === */
