@@ -329,6 +329,10 @@ nav a[aria-current="page"] {
   margin-inline: auto;
 }
 
+.card lite-youtube {
+  margin-block-end: var(--space-xs);
+}
+
 /* === Project image link hover === */
 .image-link:hover,
 .image-link:focus {
