@@ -1,6 +1,6 @@
 ---
 title: Got stickers?
-description: You can now buy 11ty Bundle stickers!
+description: You can now get a 11ty Bundle sticker!
 date: 2025-05-27
 tags:
   - 11ty
@@ -14,7 +14,7 @@ image:
 rssid: bf7503f3c25d3eb605f3ab1a1a736282
 ---
 
-I've teased this on [Mastodon](https://indieweb.social/@bobmonsour/114535942160630118) and [Bluesky](https://bsky.app/profile/bobmonsour.com/post/3lpk7t27wnc25), but the time has arrived for the launch of the **11ty Bundle sticker**! Designed by [Andy Carolan](https://www.andycarolan.com/), it's 4" x 2" with a matte-finish.
+Designed by [Andy Carolan](https://www.andycarolan.com/), the **11ty Bundle sticker** is 4" x 2" with a matte-finish.
 
 <blockquote>With the impending <a href="https://www.11ty.dev/blog/build-awesome/">rebranding of 11ty to Build Awesome</a>, these could quite possibly become incredibly valuable collectors items...or not.</blockquote>
 
