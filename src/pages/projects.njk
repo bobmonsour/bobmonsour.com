@@ -1,0 +1,19 @@
+---
+layout: grid.njk
+title: Projects
+description: These are some of the projects and websites that I am either working on or have worked on.
+keywords: retired, web development, eleventy, tennis, archives
+permalink: /projects/
+---
+
+<h1>{{ title }}</h1>
+{%- set projects = collections.projects | reverse -%}
+{%- for project in projects -%}
+<article>
+  <h2 class="bold">{{ project.data.title }}</h2>
+  <p>{{ project.data.description | safe }} {% if project.data.siteUrl %}Site URL: <a href="{{ project.data.siteUrl }}">{{ project.data.title }}</a>{% endif %}</p>
+  <img src="/assets/img/{{ project.data.image.source }}" alt="{{ project.data.image.alt }}" sizes="100vw" loading="eager">
+  <p>{{ project.data.details | safe }}</p>
+<hr>
+</article>
+{%- endfor -%}

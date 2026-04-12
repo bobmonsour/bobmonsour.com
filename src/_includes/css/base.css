@@ -117,7 +117,9 @@ html {
 }
 
 /* Indicate links to external sites */
-a[href^="https"]:not(:has(img)):not(book-item a):not(.social-links a):not(.footer-meta a)::after {
+a[href^="https"]:not(:has(img)):not(book-item a):not(.social-links a):not(
+    .footer-meta a
+  )::after {
   content: "\2060"; /* word joiner prevents orphaned icon */
   display: inline-block;
   width: 0.8em;
@@ -135,6 +137,10 @@ blockquote {
   font-size: var(--step-0);
   margin: var(--space-m) 0;
   padding: var(--space-s) var(--space-m);
+}
+
+hr {
+  border: 1px solid var(--accent-line);
 }
 
 @media (prefers-reduced-motion: reduce) {

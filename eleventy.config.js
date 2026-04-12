@@ -49,12 +49,16 @@ export default function (eleventyConfig) {
     "src/_redirects",
   ].forEach((path) => eleventyConfig.addPassthroughCopy(path));
 
-  // Generate four collections
+  // Generate collections
   //	- posts, notes, tils are all in a single collection
   //  - all are located in a single src directory named posts
   //  - they are delineated by tags, i.e, a "notes" and "til" tag
   eleventyConfig.addCollection("posts", (collection) => {
     return [...collection.getFilteredByGlob("./src/posts/**/*.md")];
+  });
+  // The projects collection
+  eleventyConfig.addCollection("projects", (collection) => {
+    return [...collection.getFilteredByGlob("./src/projects/**/*.md")];
   });
 
   // Add local filters
