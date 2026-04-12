@@ -2,6 +2,7 @@
 title: clown-cabinet.com
 description: A website depicting some of the more controversial quotes from the Trump administration cabinet members.
 siteUrl: https://clown-cabinet.com
+techStack: Eleventy
 date: 2026-03-15
 image:
   source: clown-cabinet-com.png

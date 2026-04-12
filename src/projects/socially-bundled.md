@@ -1,6 +1,7 @@
 ---
 title: Socially Bundled
 description: What started out as a tool to post 11ty content to multiple social media platforms evolved into a comprehensive content management system for the 11ty Bundle website.
+techStack: Flask
 date: 2026-01-15
 image:
   source: socially-bundled.png

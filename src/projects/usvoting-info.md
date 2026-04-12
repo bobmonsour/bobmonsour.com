@@ -2,6 +2,7 @@
 title: usvoting.info
 description: Voter registration and voting requirements for all 50 US states and Washington DC.
 siteUrl: https://usvoting.info
+techStack: Eleventy
 date: 2026-02-23
 image:
   source: usvoting-info.png

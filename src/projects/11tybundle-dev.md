@@ -2,6 +2,7 @@
 title: 11tybundle.dev
 description: Bundles of 11ty know-how. Your curated source for discovering how the community is using 11ty, a simple, flexible, open-source static site generator.
 siteUrl: https://11tybundle.dev
+techStack: Eleventy
 date: 2023-05-01
 image:
   source: 11tybundle-dev.png
