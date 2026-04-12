@@ -20,7 +20,7 @@ permalink: /projects/
   <p>{% if project.data.siteUrl %}Site URL: <a href="{{ project.data.siteUrl }}">{{ project.data.title }}</a>{% endif %}</p>
   <p>Tech Stack: {{ project.data.techStack }}</p>
   <p>Approximate launch date: {{ project.data.date | formatPostDate }}</p>
-  <img src="/assets/img/{{ project.data.image.source }}" alt="{{ project.data.image.alt }}" sizes="100vw" loading="eager">
+  <img src="/assets/img/{{ project.data.image.source }}" alt="{{ project.data.image.alt }}" sizes="100vw" {% if loop.index === 1 %}loading="eager" {% else %} loading="lazy">{% endif %}
   <p>{{ project.data.details | safe }}</p>
 <hr>
 </article>
