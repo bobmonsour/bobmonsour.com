@@ -7,6 +7,11 @@ permalink: /projects/
 ---
 
 <h1>{{ title }}</h1>
+
+<p>Here is a list of projects/websites that I've built in recent years. They are listed in reverse chronological order to their launching. There are others that pre-date these, but are no longer active. If I can find screenshots of them, I'll post them here.</p>
+
+<hr>
+
 {%- set projects = collections.projects | reverse -%}
 {%- for project in projects -%}
 <article>
@@ -14,6 +19,7 @@ permalink: /projects/
   <p>{{ project.data.description | safe }}</p>
   <p>{% if project.data.siteUrl %}Site URL: <a href="{{ project.data.siteUrl }}">{{ project.data.title }}</a>{% endif %}</p>
   <p>Tech Stack: {{ project.data.techStack }}</p>
+  <p>Approximate launch date: {{ project.data.date | formatPostDate }}</p>
   <img src="/assets/img/{{ project.data.image.source }}" alt="{{ project.data.image.alt }}" sizes="100vw" loading="eager">
   <p>{{ project.data.details | safe }}</p>
 <hr>
