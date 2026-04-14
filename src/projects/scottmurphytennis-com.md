@@ -1,5 +1,5 @@
 ---
-title: scottmurphytennis.net
+title: Scott Murphy Tennis
 description: The website of Scott Murphy, a professional tennis coach in Marin County, California.
 siteUrl: https://scottmurphytennis.net
 techStack: Eleventy

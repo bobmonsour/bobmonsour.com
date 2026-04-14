@@ -42,7 +42,7 @@ pageHasYoutube: true
     <h2 class="heading-serif">Current Projects</h2>
     {%- set projects = collections.projects | reverse -%}
     {%- for project in projects.slice(0,1) -%}
-      <img src="/assets/img/{{ project.data.image.source }}" alt="{{ project.data.image.alt }}" sizes="100vw" loading="eager">
+      <img src="/assets/img/projects/{{ project.data.image.source }}" alt="{{ project.data.image.alt }}" sizes="100vw" loading="eager">
       <p>{{ project.data.description | safe }}</p>
     {%- endfor -%}
     <p class="ital"><a href="/projects/" aria-label="More projects">More projects...</a></p>

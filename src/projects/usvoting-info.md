@@ -1,5 +1,5 @@
 ---
-title: usvoting.info
+title: US Voting Information
 description: Voter registration and voting requirements for all 50 US states and Washington DC.
 siteUrl: https://usvoting.info
 techStack: Eleventy
