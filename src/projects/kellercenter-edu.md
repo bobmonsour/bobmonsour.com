@@ -1,6 +1,7 @@
 ---
 title: The Keller Center for Innovation in Engineering Education
 description: The initial website of the Keller Center for Innovation in Engineering Education.
+notActive: true
 techStack: MovableType
 date: 2007-05-05
 image:

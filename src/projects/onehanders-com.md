@@ -1,6 +1,7 @@
 ---
 title: OneHanders
 description: A curated website of videos all about the one-handed backhand shot in tennis.
+notActive: true
 techStack: Meteor
 date: 2014-01-05
 image:

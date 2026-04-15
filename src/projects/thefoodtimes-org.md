@@ -1,6 +1,7 @@
 ---
 title: thefoodtimes
 description: The website of The Food Times, a food blog that I built for a friend in the early 2010s.
+notActive: true
 techStack: MovableType
 date: 2007-07-05
 image:

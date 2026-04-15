@@ -1,6 +1,7 @@
 ---
 title: Princeton Academy of the Sacred Heart
 description: The website of the Princeton Academy of the Sacred Heart, a private school in Princeton, New Jersey.
+notActive: true
 techStack: MovableType
 date: 2004-09-01
 image:

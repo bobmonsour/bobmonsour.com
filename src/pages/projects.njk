@@ -17,7 +17,9 @@ permalink: /projects/
 <article>
   <h2 class="bold">{{ project.data.title }}</h2>
   <p>{{ project.data.description | safe }}</p>
-  <p>Site URL: {% if project.data.siteUrl %}<a href="{{ project.data.siteUrl }}">{{ project.data.title }}</a>{% else %}Site no longer active{% endif %}</p>
+  <p>{% if project.data.siteUrl %}Site link: <a href="{{ project.data.siteUrl }}">{{ project.data.title }}</a>{% endif %}</p>
+  <p>{% if project.data.notActive %}Site link: No longer active{% endif %}</p>
+  <p>{% if project.data.localOnly %}Site link: Local only web app{% endif %}</p>
   <p>Tech Stack: {{ project.data.techStack }}</p>
   <p>Approximate launch date: {{ project.data.date | formatPostDate }}</p>
   <img src="/assets/img/projects/{{ project.data.image.source }}" alt="{{ project.data.image.alt }}" sizes="100vw" {% if loop.index === 1 %}loading="eager" {% else %} loading="lazy">{% endif %}

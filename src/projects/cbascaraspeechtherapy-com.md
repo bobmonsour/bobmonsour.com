@@ -1,5 +1,5 @@
 ---
-title: Cynthia Bascara Speech & LanguageTherapy
+title: Cynthia Bascara Speech & Language Therapy
 description: The website of Cynthia Bascara, a speech and language therapist in Marin County, California.
 siteUrl: https://cbascaraspeechtherapy.com
 techStack: Eleventy
