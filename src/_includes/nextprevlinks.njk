@@ -1,7 +1,7 @@
 {#
   Display next post and previous post links at the bottom of each post.
 #}
-<div data-pagefind-ignore>
+<div>
   {%- set previousPost = theseposts | getPreviousCollectionItem %}
   {%- set nextPost = theseposts | getNextCollectionItem %}
   {%- if nextPost or previousPost %}
