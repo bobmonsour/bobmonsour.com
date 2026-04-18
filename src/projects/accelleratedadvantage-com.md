@@ -2,7 +2,7 @@
 title: Accelerated Advantage
 description: Leadership consulting for business growth and development.
 notActive: true
-techStack: HTML & CSS
+techStack: HTML & CSS (960 Grid System)
 date: 2015-04-24
 image:
   source: acceleratedadvantage-com.png
