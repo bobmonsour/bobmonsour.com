@@ -620,6 +620,14 @@
     "author": "Pico Iyer",
     "ISBN": "9781420527957",
     "rating": "5",
+    "yearRead": "2026/03/05",
+    "localCover": true
+  },
+  {
+    "title": "The Great Math War",
+    "author": "Json Socrates Bardi",
+    "ISBN": "9781541605008",
+    "rating": "5",
     "yearRead": "currently",
     "localCover": true
   }
