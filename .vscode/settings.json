@@ -17,6 +17,10 @@
   "editor.suggest.showFunctions": false,
   "editor.suggest.showVariables": false,
   "github.copilot.enable": {
-    "*": false
+    "*": false,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false,
+    "yaml": false
   }
 }
