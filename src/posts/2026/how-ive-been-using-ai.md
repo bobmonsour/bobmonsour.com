@@ -137,7 +137,9 @@ Needless to say, I occasionally ran into cases that the CLI scripts didn't handl
 
 So, in February, I decided to enlist Claude Code to build a custom CMS. But that's not how it started. One of the other aspects of managing the 11ty Bundle was posting each issue on Mastodon Bluesky, and the Eleventy Discord server. So, what ultimately became a full CMS for the 11ty Bundle json file started out as a tool to post to multiple social sites with a single entry.
 
-I did this prior to my discovery of the Superpowers plugin. So all of this was driven by me writing markdown files of specs that I would feed into Claude Code. I would add a single feature at a time, each one subsuming what had previously been done with various javascript functions.
+I did most of this prior to my discovery of the Superpowers plugin. So all of this was driven by me writing markdown files of specs that I would feed into Claude Code. I would add a single feature at a time, each one subsuming what had previously been done with various javascript functions.
+
+Part way through building this, I began to use Superpowers to flesh out the feature additions. One benefit is its use of a test-driven development approach. Each feature added gets tests to go along with it, all of the tests are re-run whenever a significant feature gets added.
 
 The resulting tool is built using Flask, a python-based framework for building web apps. This is a local-only app that I can summon with just a few keystrokes. I call it Socially Bundled and here is a screen capture of a portion of its functionality.
 
