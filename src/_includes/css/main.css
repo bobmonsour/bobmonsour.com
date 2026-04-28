@@ -151,7 +151,9 @@ header {
   opacity: 0;
   transform: translateY(-0.25rem);
   pointer-events: none;
-  transition: opacity 150ms ease, transform 150ms ease;
+  transition:
+    opacity 150ms ease,
+    transform 150ms ease;
 }
 .theme-panel.visible {
   opacity: 1;
@@ -405,7 +407,7 @@ book-item {
 book-item a {
   font-weight: bold;
 }
-book-item a img {
+book-item img {
   height: auto;
   margin-block-end: 0.5em;
   width: 180px;

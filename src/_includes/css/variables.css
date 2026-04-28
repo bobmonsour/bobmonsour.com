@@ -28,7 +28,7 @@
 
   /* === Colors (theme-independent) === */
   --color-dark: #353d4d;
-  --color-light: #C7E2F6;
+  --color-light: #c7e2f6;
 
   /* === Sizing === */
   --accent-width: 1px;
@@ -37,7 +37,7 @@
   --radius: 10px;
 
   /* Carried from current site */
-  --max-book-width: 200px;
+  --max-book-width: 180px;
   --caption-size: var(--step-0);
   --post-title-size: var(--step-2);
 
@@ -58,8 +58,8 @@
 
 /* === Colors: Default (fallback when data-theme not yet set) === */
 :root {
-  --bg-primary: #C7E2F6;
-  --bg-card: #C7E2F6;
+  --bg-primary: #c7e2f6;
+  --bg-card: #c7e2f6;
   --text-color: black;
   --text-muted: black;
   --accent-line: black;
@@ -72,8 +72,8 @@
 
 /* === Colors: Light mode === */
 [data-theme="light"] {
-  --bg-primary: #C7E2F6;
-  --bg-card: #C7E2F6;
+  --bg-primary: #c7e2f6;
+  --bg-card: #c7e2f6;
   --text-color: black;
   --text-muted: black;
   --accent-line: black;

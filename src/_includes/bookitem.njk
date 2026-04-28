@@ -1,9 +1,9 @@
 <book-item role="listitem">
 	{%- set bookshop_base = "https://bookshop.org/a/109591/" -%}
 	{%- if book.localCover -%}
-		<img eleventy:ignore src="/assets/img/{{ book.title | slugify }}.jpg" alt="">
+		<img src="/assets/img/{{ book.title | slugify }}.jpg" alt="{{ book.title | safe }}">
 	{%- else -%}
-		<img eleventy:ignore src="https://covers.openlibrary.org/b/isbn/{{ book.ISBN }}-M.jpg" alt="">
+		<img src="https://covers.openlibrary.org/b/isbn/{{ book.ISBN }}-M.jpg" alt="{{ book.title | safe }}">
 	{%- endif -%}
 	<a href="{{ bookshop_base}}{{ book.ISBN }}">{{ book.title | safe }}</a>
 	<p>by {{ book.author }}</p>
