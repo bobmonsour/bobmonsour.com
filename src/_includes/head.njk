@@ -23,6 +23,9 @@
     })();
   </script>
 
+  {# preload the body font (used on every page) so it fetches in parallel with CSS #}
+  <link rel="preload" href="/assets/fonts/ibm-plex-mono-400.woff2" as="font" type="font/woff2" crossorigin>
+
   {# improve RSS feed visibility #}
   <link rel="alternate" type="application/rss+xml" title="Bob Monsour's blog" href="https://www.bobmonsour.com/feed.xml">
 

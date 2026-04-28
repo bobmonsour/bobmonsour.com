@@ -23,7 +23,7 @@
   --flow-space: var(--space-s);
 
   /* === Fonts === */
-  --font-body: "IBM Plex Mono", ui-monospace, monospace;
+  --font-body: "IBM Plex Mono", "IBM Plex Mono Fallback", ui-monospace, monospace;
   --font-heading-serif: "IBM Plex Serif", Georgia, serif;
 
   /* === Colors (theme-independent) === */
