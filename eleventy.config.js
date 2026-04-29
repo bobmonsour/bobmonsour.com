@@ -8,7 +8,7 @@ import addrssid from "./src/_config/utils/addrssid.js";
 import filters from "./src/_config/filters/index.js";
 
 // plugins
-import postGraph from "@rknightuk/eleventy-plugin-post-graph";
+// import postGraph from "@rknightuk/eleventy-plugin-post-graph";
 import syntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
 import pluginRss from "@11ty/eleventy-plugin-rss";
 import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
@@ -82,12 +82,12 @@ export default function (eleventyConfig) {
     },
   });
   eleventyConfig.addPlugin(pluginRss);
-  eleventyConfig.addPlugin(postGraph, {
-    sort: "desc",
-    boxColor: "darkgrey",
-    highlightColor: "red",
-    textColor: "#fff",
-  });
+  // eleventyConfig.addPlugin(postGraph, {
+  //   sort: "desc",
+  //   boxColor: "darkgrey",
+  //   highlightColor: "red",
+  //   textColor: "#fff",
+  // });
   eleventyConfig.addPlugin(syntaxHighlight);
 
   // Config the bundle for CSS
