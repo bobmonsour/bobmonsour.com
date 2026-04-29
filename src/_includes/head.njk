@@ -39,7 +39,10 @@
 
   {# conditionally load the lite-youtube-embed styles #}
   {% if pageHasYoutube %}
-    <link rel="stylesheet" href="{% getBundleFileUrl 'css', 'pageHasYoutube' %}">
+    <link rel="stylesheet" href="{% getBundleFileUrl 'css', 'pageHasYoutube' %}" media="print" onload="this.media='all'">
+    <noscript>
+      <link rel="stylesheet" href="{% getBundleFileUrl 'css', 'pageHasYoutube' %}">
+    </noscript>
   {% endif %}
 
   {# bundle the CSS content used on all pages #}
