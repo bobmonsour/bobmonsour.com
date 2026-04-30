@@ -5,14 +5,14 @@
   "main": ".eleventy.js",
   "type": "module",
   "scripts": {
-    "build": "cross-env ELEVENTY_ENV=production npx @11ty/eleventy",
+    "build": "npx @11ty/eleventy",
     "postbuild": "npm run pagefind",
-    "debug": "cross-env ELEVENTY_ENV=dev DEBUG=Eleventy* npx @11ty/eleventy --serve",
-    "start": "cross-env ELEVENTY_ENV=development npx @11ty/eleventy",
-    "postdev": "npm run pagefind:base -- --serve",
-    "sns": "cross-env ELEVENTY_ENV=development npx @11ty/eleventy --serve",
-    "pagefind:base": "pagefind --site _site --force-language unknown --exclude-selectors \".taglist,.nextprev,.table-of-contents,pre\"",
-    "pagefind": "npm run pagefind:base",
+    "deploy": "npm run build && wrangler deploy",
+    "debug": "DEBUG=Eleventy* npx @11ty/eleventy --serve",
+    "start": "npx @11ty/eleventy",
+    "postdev": "npm run pagefind -- --serve",
+    "sns": "npx @11ty/eleventy --serve",
+    "pagefind": "pagefind --site _site --force-language unknown --exclude-selectors \".taglist,.nextprev,.table-of-contents,pre\"",
     "rs": "npm run clean && npm run start && npm run postdev",
     "rsns": "npm run clean && npm run sns",
     "links": "npx check-html-links _site",
@@ -33,7 +33,6 @@
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
     "@11ty/is-land": "^4.0.0",
     "@zachleat/snow-fall": "^1.0.2",
-    "cross-env": "^7.0.3",
     "dotenv": "^16.0.3",
     "lodash": "^4.17.21",
     "luxon": "^3.7.2",
@@ -44,6 +43,7 @@
     "memoizee": "^0.4.17",
     "pagefind": "^1.5.2",
     "path": "^0.12.7",
-    "rimraf": "^6.1.2"
+    "rimraf": "^6.1.2",
+    "wrangler": "^4.86.0"
   }
 }

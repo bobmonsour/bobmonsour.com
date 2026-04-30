@@ -1,0 +1,10 @@
+name = "bobmonsour-staging"
+compatibility_date = "2025-12-07"
+
+[[routes]]
+pattern = "bobmonsour.com"
+custom_domain = true
+
+[assets]
+directory = "_site"
+not_found_handling = "404-page"

@@ -1,5 +1,4 @@
 export default {
-  env: process.env.ELEVENTY_ENV,
   title: "Bob Monsour's personal website",
   description:
     "Hi! I'm Bob Monsour. I'm a web hobbyist that enjoys building websites with 11ty and writing about things.",
