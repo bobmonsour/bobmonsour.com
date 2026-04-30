@@ -9,9 +9,9 @@
     "postbuild": "npm run pagefind",
     "debug": "cross-env ELEVENTY_ENV=dev DEBUG=Eleventy* npx @11ty/eleventy --serve",
     "start": "cross-env ELEVENTY_ENV=development npx @11ty/eleventy",
-    "postdev": "npx -y pagefind --site _site --serve --force-language unknown",
+    "postdev": "pagefind --site _site --serve --force-language unknown --exclude-selectors \".taglist,.nextprev,.table-of-contents,pre\"",
     "sns": "cross-env ELEVENTY_ENV=development npx @11ty/eleventy --serve",
-    "pagefind": "npx -y pagefind --site _site --force-language unknown",
+    "pagefind": "pagefind --site _site --force-language unknown --exclude-selectors \".taglist,.nextprev,.table-of-contents,pre\"",
     "rs": "npm run clean && npm run start && npm run postdev",
     "rsns": "npm run clean && npm run sns",
     "links": "npx check-html-links _site",
@@ -41,6 +41,7 @@
     "markdown-it-attrs": "^4.2.0",
     "markdown-it-table-of-contents": "^0.9.0",
     "memoizee": "^0.4.17",
+    "pagefind": "^1.5.2",
     "path": "^0.12.7",
     "rimraf": "^6.1.2"
   }
