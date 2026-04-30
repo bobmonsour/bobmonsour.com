@@ -207,13 +207,11 @@ function closeOverlay() {
   overlay.hidden = true;
   navInput.setAttribute("aria-expanded", "false");
   toggleBtn.setAttribute("aria-expanded", "false");
-  navInput.value = "";
-  overlayInput.value = "";
   if (debounceHandle) clearTimeout(debounceHandle);
 }
 
 function handleArrow(e) {
-  const links = overlay.querySelectorAll(".search-result");
+  const links = overlay.querySelectorAll(".search-result, .search-subresult");
   if (links.length === 0) return;
   const idx = Array.from(links).indexOf(document.activeElement);
   e.preventDefault();
