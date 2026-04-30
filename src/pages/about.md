@@ -5,6 +5,7 @@ description: A bit more information about Bob Monsour.
 date: 2025-08-25
 keywords: retired, web development, eleventy, tennis, about
 permalink: /about/
+pagefindIndex: true
 ---
 
 # {{ title }}

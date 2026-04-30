@@ -5,7 +5,7 @@
   {% include 'icons.njk' %}
   {% include 'header.njk' %}
   <main id="main-content" class="content">
-    <div class="{{ whichgrid }}">
+    <div class="{{ whichgrid }}"{% if pagefindIndex %} data-pagefind-body data-pagefind-filter="type:page"{% endif %}>
       {{ content | safe }}
     </div>
   </main>
