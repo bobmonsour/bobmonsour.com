@@ -13,6 +13,22 @@
       {% endfor %}
     </ul>
   </nav>
+  <label class="visually-hidden" for="site-search">Search this site</label>
+  <input
+    id="site-search"
+    class="site-search"
+    type="search"
+    placeholder="Enter search term..."
+    autocomplete="off"
+    spellcheck="false"
+    aria-controls="search-overlay"
+    aria-expanded="false"
+  >
+  <button class="search-toggle" type="button" aria-label="Search" aria-controls="search-overlay" aria-expanded="false">
+    <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true">
+      <use href="#icon-search"></use>
+    </svg>
+  </button>
   <button class="theme-toggle" aria-expanded="false" aria-controls="theme-panel" aria-label="Theme settings">
     <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true">
       <use href="#icon-sun"></use>
@@ -37,3 +53,16 @@
     </label>
   </div>
 </header>
+
+<div id="search-overlay" class="search-overlay" role="dialog" aria-label="Search results" hidden>
+  <input
+    type="search"
+    class="search-overlay__input"
+    placeholder="Enter search term..."
+    autocomplete="off"
+    spellcheck="false"
+    aria-label="Search this site"
+  >
+  <div class="search-overlay__inner"></div>
+  <span class="search-announce" aria-live="polite"></span>
+</div>
