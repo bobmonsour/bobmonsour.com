@@ -133,7 +133,7 @@
 }
 .search-result__excerpt mark {
   background: var(--link-hover-bg);
-  color: inherit;
+  color: var(--link-hover-color);
   font-weight: 700;
   padding: 0 0.1em;
 }
