@@ -163,11 +163,23 @@ function renderCard(r, withDate) {
   const dateHtml = dateIso
     ? `<time class="search-result__date" datetime="${escapeAttr(dateIso)}">${escapeHtml(formatDate(dateIso))}</time>`
     : "";
-  return `<li><a class="search-result" href="${escapeAttr(r.url)}">
-    <h4 class="search-result__title">${escapeHtml(title)}</h4>
-    ${dateHtml}
-    <p class="search-result__excerpt">${r.excerpt}</p>
-  </a></li>`;
+  const subs = Array.isArray(r.sub_results) ? r.sub_results : [];
+  const deepSubs = subs.filter((s) => s.url && s.url.includes("#")).slice(0, 5);
+  const subHtml = deepSubs.length
+    ? `<ul class="search-subresults">${deepSubs.map((sr) =>
+        `<li><a class="search-subresult" href="${escapeAttr(sr.url)}">
+          <span class="search-subresult__title">${escapeHtml(sr.title || "")}</span>
+          <span class="search-subresult__excerpt">${sr.excerpt}</span>
+        </a></li>`).join("")}</ul>`
+    : "";
+  return `<li>
+    <a class="search-result" href="${escapeAttr(r.url)}">
+      <h4 class="search-result__title">${escapeHtml(title)}</h4>
+      ${dateHtml}
+      <p class="search-result__excerpt">${r.excerpt}</p>
+    </a>
+    ${subHtml}
+  </li>`;
 }
 
 function formatDate(iso) {

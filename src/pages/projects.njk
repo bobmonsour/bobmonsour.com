@@ -16,7 +16,7 @@ pagefindIndex: true
 {%- set projects = collections.projects | reverse -%}
 {%- for project in projects -%}
 <article>
-  <h2 class="bold">{{ project.data.title }}</h2>
+  <h2 class="bold" id="{{ project.data.title | slugify }}">{{ project.data.title }}</h2>
   <p>{{ project.data.description | safe }}</p>
   <p>{% if project.data.siteUrl %}Site link: <a href="{{ project.data.siteUrl }}">{{ project.data.title }}</a>{% endif %}</p>
   <p>{% if project.data.notActive %}Site link: No longer active{% endif %}</p>
