@@ -115,6 +115,10 @@
   color: var(--link-hover-color);
   outline: none;
 }
+.search-result:hover .search-result__date,
+.search-result:focus-visible .search-result__date {
+  color: var(--link-hover-color);
+}
 .search-result__title {
   font-size: var(--step-0);
   font-weight: 700;
