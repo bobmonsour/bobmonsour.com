@@ -2,11 +2,11 @@
 
 ## Goal
 
-Re-add client-side search to bobmonsour.com using [Pagefind](https://pagefind.app/) v1. A search input lives in the global header (visible on wide screens, behind a magnifier icon on mobile). Typing opens a centered results overlay that shows two sections: matching posts (sorted newest first) and matching pages (sorted by relevance). The previous `src/pages/search.njk` page is removed.
+Re-add client-side search to bobmonsour.com using [Pagefind](https://pagefind.app/) v1.5.2. A search input lives in the global header (visible on wide screens, behind a magnifier icon on mobile). Typing opens a centered results overlay that shows two sections: matching posts (sorted newest first) and matching pages (sorted by relevance). The previous `src/pages/search.njk` page is removed.
 
 ## Decisions
 
-- **Search engine:** Pagefind v1 (latest), invoked via the lower-level JS API (`/pagefind/pagefind.js`), not the prebuilt `PagefindUI` component.
+- **Search engine:** Pagefind v1.5.2 (latest), invoked via the lower-level JS API (`/pagefind/pagefind.js`), not the prebuilt `PagefindUI` component.
 - **Wide screens (≥700px):** real `<input type="search">` in the main nav, between the nav `<ul>` and the theme toggle, placeholder `Enter search term...`.
 - **Mobile (≤699px):** magnifier `<button>` in the header (alongside the theme toggle); nav input hidden.
 - **Result display:** centered overlay below the header containing only results (wide screens). On mobile the overlay also contains the input at the top.
@@ -29,13 +29,12 @@ The feature lives entirely in the global header plus a sibling overlay container
 **Modified**
 - `src/_includes/header.njk` — add nav input (wide), magnifier button (mobile), and result-overlay container.
 - `src/_includes/icons.njk` — add `<symbol id="icon-search">` (magnifier glyph).
-- `src/_includes/head.njk` — load `search.js` with `defer`.
-- `eleventy.config.js` (or wherever `addBundle("css")` is configured) — register `search.css` so it ships in the bundle.
+- `src/_includes/head.njk` — add `{% include "css/search.css" %}` to the existing `{% css %}` block alongside `main.css`, `variables.css`, etc. Load `search.js` with `defer`.
+- `package.json` — extend the `pagefind` script with `--exclude-selectors` (see Indexing scope below). Add `pagefind` (pinned to `1.5.2`) to `devDependencies` — it is currently invoked via `npx -y` but not installed locally.
 - `src/_layouts/postgrid.njk` — add `data-pagefind-body` and `data-pagefind-filter="type:post"` to the post's main content wrapper. Add `data-pagefind-sort="date[datetime]"` and `data-pagefind-meta="date[datetime]"` to the post `<time>` element (both attributes can coexist). Confirm the `<time>` already has a machine-readable `datetime` attribute; add one if missing.
 - `src/_includes/nextprevlinks.njk` — add a class (e.g. `nextprev`) to its wrapper `<div>` so it can be excluded via `--exclude-selectors`.
 - `src/_layouts/grid.njk` (or whichever layout About/Projects/Books use) — add `data-pagefind-body` and `data-pagefind-filter="type:page"` to the main content wrapper. Confirm during implementation which template owns the `<main>` for these pages.
 - `src/pages/about.md`, `src/pages/projects.njk`, `src/pages/books.njk` — if their templates don't pass through `grid.njk`'s body wrapper, annotate directly.
-- `package.json` — extend the `pagefind` script with `--exclude-selectors` (see Indexing scope below).
 
 **Deleted**
 - `src/pages/search.njk`
@@ -46,6 +45,8 @@ Unchanged from current `package.json`:
 - `npm run build` runs Eleventy, then `postbuild` runs Pagefind against `_site/`.
 - `npm run rs` runs a clean build, then `postdev` (Pagefind + serve).
 - **Dev caveat:** `npm run sns` does **not** run Pagefind. In that mode the dynamic import of `/pagefind/pagefind.js` will 404; the UI will catch the error and render "Search is unavailable right now." Use `npm run rs` for full search testing in dev.
+
+NOTE: pagefind is not currently installed as a dev dependency
 
 ### Indexing scope
 
@@ -229,5 +230,4 @@ Static site, no test suite. Verification is build-level + manual UI.
 ## Open questions for implementation phase
 
 - Confirm which template owns the `<main>` wrapper for About, Projects, Books — annotate `data-pagefind-body` at the right level so it covers content but not site chrome.
-- Confirm whether the existing `addBundle("css")` setup auto-includes new files in `src/_includes/css/`, or whether `search.css` needs to be added to a manifest.
 - Confirm `markdown-it-table-of-contents` actually emits `class="table-of-contents"` (default in current versions) — adjust the `--exclude-selectors` value if the site uses a different class.
