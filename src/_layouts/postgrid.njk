@@ -7,10 +7,10 @@
 	{% include "check-for-code.njk" %}
 	{% include "check-for-youtube.njk" %}
   <main id="main-content" class="content">
-  <article class="central">
+  <article class="central" data-pagefind-body data-pagefind-filter="type:post">
     <div class="postmeta">
       <h1>{{ title }}</h1>
-      <p class="no-bot-margin">{{ date | formatPostDate }} &middot; {{ content | readingTime }}</p>
+      <p class="no-bot-margin"><time datetime="{{ date | toDateString }}" data-pagefind-sort="date[datetime]" data-pagefind-meta="date[datetime]">{{ date | formatPostDate }}</time> &middot; {{ content | readingTime }}</p>
       {% set tagsdata = tags %}
       {% include 'taglist.njk' %}
       {% include 'showimage.njk' %}
