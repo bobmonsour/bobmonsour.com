@@ -13,7 +13,6 @@ export default {
     { url: "/blog/", text: "Blog" },
     { url: "/projects/", text: "Projects" },
     { url: "/books/", text: "Books" },
-    { url: "/shop/", text: "Shop" },
     { url: "/about/", text: "About" },
   ],
 };
