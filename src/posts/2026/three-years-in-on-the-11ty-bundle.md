@@ -6,7 +6,7 @@ tags:
   - 11ty
 image:
   source: three-years-in-on-the-11ty-bundle.png
-  alt: placeholder alt
+  alt: screenshot of the 11ty bundle with a celebration banner
 rssid: c41db6d58cd7b38cedcb0160add59a45
 ---
 
