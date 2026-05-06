@@ -53,7 +53,7 @@ src/_config/og-image/
   rule.js               shouldGenerate(postData) -> boolean
 ```
 
-- **`generator.js`** loads `src/assets/img/about-bob.jpg` and `src/assets/fonts/ibm-plex-serif-600.woff2` once per build, builds the Satori VDOM tree per the visual spec above, runs `satori(...)` to get an SVG string, runs `sharp(svg).png().toBuffer()`, returns the buffer.
+- **`generator.js`** loads `src/assets/img/about-bob.jpg` and the IBM Plex Serif 600 WOFF file from `@fontsource/ibm-plex-serif` (resolved via `createRequire`) once per build, builds the Satori VDOM tree per the visual spec above, runs `satori(...)` to get an SVG string, runs `sharp(svg).png().toBuffer()`, returns the buffer. The site's existing `.woff2` assets aren't reused here because Satori only supports TTF/OTF/WOFF.
 - **`cache.js`** owns `.cache/og/`. Methods:
   - `get(slug, titleHash) -> Buffer | null` — reads `.cache/og/<slug>-<hash>.png` if it exists.
   - `put(slug, titleHash, buffer) -> void` — writes the PNG and updates `manifest.json`.
@@ -115,8 +115,9 @@ build start
 Add to `devDependencies`:
 
 - `satori` — JSX/HTML-to-SVG renderer.
+- `@fontsource/ibm-plex-serif` — provides a WOFF version of IBM Plex Serif 600 in a Satori-compatible format.
 
-`sharp` is already pulled in transitively by `@11ty/eleventy-img` and is used directly to convert Satori's SVG output to PNG.
+`sharp` is already pulled in transitively by `@11ty/eleventy-img` and is used directly to convert Satori's SVG output to PNG. The plan adds it as an explicit `devDependency` so we don't depend on a transitive resolution.
 
 No native deps beyond what's already installed.
 
