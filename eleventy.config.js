@@ -7,6 +7,9 @@ import addrssid from "./src/_config/utils/addrssid.js";
 // filters
 import filters from "./src/_config/filters/index.js";
 
+// OG image generation
+import registerOgImage from "./src/_config/og-image/index.js";
+
 // plugins
 // import postGraph from "@rknightuk/eleventy-plugin-post-graph";
 import syntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
@@ -63,6 +66,9 @@ export default function (eleventyConfig) {
 
   // Add local filters
   eleventyConfig.addPlugin(filters);
+
+  // Register OG image generation
+  registerOgImage(eleventyConfig);
 
   // Add & configure external plugins
   eleventyConfig.addPlugin(eleventyImageTransformPlugin, {

@@ -71,9 +71,9 @@
   <meta property="og:title" content="{{ title }}">
   <meta property="og:type" content="website">
   <meta property="og:description" content="{{ description }}">
-  {% if image and image.source %}
-  <meta property="og:image" content="{{ site.url }}/assets/img/{{ image.source }}">
-  <meta property="og:image:alt" content="{{ image.alt }}">
+  {% if ogImage and ogImage.source %}
+  <meta property="og:image" content="{{ site.url }}/assets/img/{{ ogImage.source }}">
+  <meta property="og:image:alt" content="{{ ogImage.alt }}">
   {% else %}
   <meta property="og:image" content="{{ site.url }}/assets/img/fallback-og-image.png">
   <meta property="og:image:alt" content="Bob Monsour's personal website">
