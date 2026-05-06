@@ -11,14 +11,11 @@ Generate a per-post Open Graph image at build time for blog posts that don't sup
 
 ## Scope
 
-A generated OG image is produced for any post in `collections.posts` where:
+A generated OG image is produced for **every** post in `collections.posts` that is **not** tagged `notes` or `til`. The post's `image` front-matter (if any) is irrelevant to OG image generation — it controls only the in-body hero.
 
-- The post does **not** have an `image.source` in its front matter, and
-- The post is **not** tagged `notes` or `til`.
+Notes and TILs continue to use `notes-og-image.jpg` / `til-og-image.jpg` for OG meta. Non-post pages (about, books, projects, etc.) continue to use `fallback-og-image.png`.
 
-Posts with explicit `image.source` keep using that image for OG meta. Notes and TILs continue to use `notes-og-image.jpg` / `til-og-image.jpg`. Non-post pages (about, books, projects, etc.) continue to use `fallback-og-image.png`.
-
-In practice this affects only future posts: a check at design time confirmed every existing non-notes/non-TIL post already has `image.source`.
+This applies retroactively to existing posts. At design time, 71 of 109 posts qualify; the first build on a fresh clone renders all 71 (~10s of one-time work). Subsequent builds skip them via cache.
 
 ## Visual specification
 
@@ -39,12 +36,12 @@ The path that the OG meta tag references and the path the file is written to are
 
 ### Why `ogImage` vs reusing `image`
 
-Today, `image.source` drives both the OG meta tag (`head.njk`) and the in-body hero (`showimage.njk`). If the generated OG image were assigned to `image.source`, every matching post would display the generated OG image as a hero above its content — redundant with the `<h1>` already rendered by `postgrid.njk`. Splitting into two fields decouples the concerns:
+Today, `image.source` drives both the OG meta tag (`head.njk`) and the in-body hero (`showimage.njk`). Conflating the two prevents the design Bob wants: keep specifying a hero per post (in body) while having social shares always show the generated card. Splitting into two independent fields makes the concerns explicit:
 
-- `image` = in-body hero (front-matter, opt-in by author).
-- `ogImage` = OG meta (computed, with cascade).
+- `image` = in-body hero. Author-controlled via front matter; rendered by `showimage.njk`. Unchanged.
+- `ogImage` = OG meta image. Computed by the data cascade; consumed only by `head.njk`. New.
 
-For posts that already set `image`, `ogImage` defaults to that same value, so existing OG behavior is unchanged.
+The two fields never reference the same value. A post with a hero `image` still gets a generated `ogImage`.
 
 ## Components
 
@@ -62,18 +59,19 @@ src/_config/og-image/
   - `put(slug, titleHash, buffer) -> void` — writes the PNG and updates `manifest.json`.
   - `gc(activeEntries)` — at end of build, removes any cache file whose `<slug>-<hash>` doesn't match the current manifest.
   - `titleHash = sha1(title).slice(0, 12)`.
-- **`rule.js`** centralizes the predicate: a post matches if it has no `image.source` AND its tags include neither `notes` nor `til`. Used identically by the data hook and the after-build hook so they can never disagree.
+- **`rule.js`** centralizes the predicate: a post matches if its tags include neither `notes` nor `til`. Used identically by the data hook and the after-build hook so they can never disagree.
 - **`index.js`** wires both hooks. Exports a single function called from `eleventy.config.js`.
 
 `src/posts/posts.11tydata.js` is updated to compute `ogImage` via the cascade:
 
 ```
 ogImage =
-    image                                                 (if image.source set)
- || (tags.includes("notes") ? { source: "notes-og-image.jpg", alt: "..." } : null)
+    (tags.includes("notes") ? { source: "notes-og-image.jpg", alt: "..." } : null)
  || (tags.includes("til")   ? { source: "til-og-image.jpg",   alt: "..." } : null)
- || { source: "og/<slug>.png", alt: title }               (matching post)
+ || { source: "og/<slug>.png", alt: title }               (every other post)
 ```
+
+`ogImage` is computed independently of `image`. The existing `image` computation (which still drives `showimage.njk`) is left untouched.
 
 `src/_includes/head.njk` is updated so the `og:image` block reads `ogImage` instead of `image`: the conditional becomes `{% if ogImage and ogImage.source %}`, and the two meta tags inside reference `ogImage.source` and `ogImage.alt`. The `fallback-og-image.png` else-branch stays for non-post pages.
 
@@ -103,7 +101,7 @@ build start
 - `manifest.json` shape: `{ "<slug>": { "hash": "<sha1-12>", "file": "<slug>-<hash>.png" } }`.
 - Cache hit: file copied to `_site/`. Cache miss: render, persist, copy.
 - Title change → hash mismatch → render. No other inputs feed the hash; if the visual spec or rendering code ever changes in a way that should invalidate every cached image, bump a `RENDERER_VERSION` constant defined in `cache.js` and concatenated into the hash input.
-- PNGs are not committed. First build on a fresh clone regenerates everything (~150ms × N matching posts; today, 0; in steady state, the per-build delta is "however many posts you wrote since last build").
+- PNGs are not committed. First build on a fresh clone regenerates everything (~150ms × N matching posts; today, 71 posts, ~10s one-time). In steady state, the per-build delta is "however many posts you wrote or retitled since last build."
 - Bob deploys via `npm run build && wrangler deploy` from his local machine, so the cache persists naturally across deploys.
 
 ## Error handling
@@ -132,12 +130,11 @@ No test framework is added. Verification is by eyeball + filesystem checks:
 4. Rebuild without changes. Confirm the cache hit path runs (PNG mtime unchanged).
 5. Visual: render with a short title (~20 chars) and a long title (~100 chars); confirm wrapping and font-size step-down both look reasonable.
 6. Confirm a notes-tagged post still uses `notes-og-image.jpg` for OG meta and produces no entry under `_site/assets/img/og/`.
-7. Confirm an existing post with explicit `image:` still renders its hero in the body and uses the same image for OG meta.
-8. Inspect `.cache/og/manifest.json` after a build; confirm one entry per matching post.
+7. Confirm an existing post with explicit `image:` (a) still renders that hero in the body via `showimage.njk` AND (b) has its `og:image` meta tag pointing at the newly generated `og/<slug>.png` (not the hero).
+8. Inspect `.cache/og/manifest.json` after a build; confirm one entry per non-notes/non-TIL post (~71 entries).
 
 ## Out of scope
 
-- Regenerating OG images for existing posts that already have `image.source` set. (Explicit author choice wins.)
 - Title-from-image generation for notes or TILs. (They keep their dedicated defaults.)
 - Light-mode variants. (Single dark image for all consumers.)
 - Per-post overrides of the visual template (font, colors, avatar). (Add later if needed.)
