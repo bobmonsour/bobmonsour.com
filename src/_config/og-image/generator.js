@@ -83,6 +83,22 @@ function buildTree(title, avatarDataUri) {
 						},
 					},
 				},
+				{
+					type: "div",
+					props: {
+						style: {
+							position: "absolute",
+							left: "80px",
+							bottom: "50px",
+							color: "#c7e2f6",
+							fontFamily: "IBM Plex Serif",
+							fontWeight: 600,
+							fontSize: `${Math.round(pickFontSize(title) / 2)}px`,
+							display: "flex",
+						},
+						children: "bobmonsour.com",
+					},
+				},
 			],
 		},
 	};

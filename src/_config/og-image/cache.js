@@ -6,7 +6,7 @@ import path from "node:path";
 // should invalidate every previously-cached PNG. The current value
 // is concatenated into the hash input so cached images become stale
 // automatically.
-const RENDERER_VERSION = "1";
+const RENDERER_VERSION = "4";
 
 const CACHE_DIR = ".cache/og";
 const MANIFEST_PATH = path.join(CACHE_DIR, "manifest.json");
