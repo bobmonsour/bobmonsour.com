@@ -1,21 +1,34 @@
 import fs from "node:fs";
 import path from "node:path";
+import { fileURLToPath } from "node:url";
 import { createRequire } from "node:module";
 import satori from "satori";
 import sharp from "sharp";
 
 const require = createRequire(import.meta.url);
+const moduleDir = path.dirname(fileURLToPath(import.meta.url));
 
-// Load font and avatar once per process. Both are small (~100KB each)
-// and reused for every render.
-const FONT_PATH = require.resolve(
-	"@fontsource/ibm-plex-serif/files/ibm-plex-serif-latin-600-normal.woff",
-);
-const FONT_DATA = fs.readFileSync(FONT_PATH);
+// Lazy-loaded once per process and cached. Loading inside generate()
+// (rather than at module import) so any failure is caught by the
+// orchestrator's try/catch and degrades to a per-post warning rather
+// than crashing eleventy.config.js at import time.
+//
+// Note: if the avatar file or its visual treatment changes in a way
+// that should invalidate cached PNGs, bump RENDERER_VERSION in cache.js.
+let assets = null;
 
-const AVATAR_PATH = path.resolve("src/assets/img/about-bob.jpg");
-const AVATAR_BUFFER = fs.readFileSync(AVATAR_PATH);
-const AVATAR_DATA_URI = `data:image/jpeg;base64,${AVATAR_BUFFER.toString("base64")}`;
+function loadAssets() {
+	if (assets) return assets;
+	const fontPath = require.resolve(
+		"@fontsource/ibm-plex-serif/files/ibm-plex-serif-latin-600-normal.woff",
+	);
+	const fontData = fs.readFileSync(fontPath);
+	const avatarPath = path.resolve(moduleDir, "../../assets/img/about-bob.jpg");
+	const avatarBuffer = fs.readFileSync(avatarPath);
+	const avatarDataUri = `data:image/jpeg;base64,${avatarBuffer.toString("base64")}`;
+	assets = { fontData, avatarDataUri };
+	return assets;
+}
 
 // Deterministic font-size ramp keyed to title length. Same title always
 // renders at the same size.
@@ -25,7 +38,7 @@ function pickFontSize(title) {
 	return 60;
 }
 
-function buildTree(title) {
+function buildTree(title, avatarDataUri) {
 	return {
 		type: "div",
 		props: {
@@ -58,7 +71,7 @@ function buildTree(title) {
 				{
 					type: "img",
 					props: {
-						src: AVATAR_DATA_URI,
+						src: avatarDataUri,
 						width: 180,
 						height: 180,
 						style: {
@@ -79,13 +92,14 @@ function buildTree(title) {
 // Throws on font/image load failure, malformed input, or sharp error.
 // Callers should catch and log a warning per the spec's error policy.
 export async function generate(title) {
-	const svg = await satori(buildTree(title), {
+	const { fontData, avatarDataUri } = loadAssets();
+	const svg = await satori(buildTree(title, avatarDataUri), {
 		width: 1200,
 		height: 630,
 		fonts: [
 			{
 				name: "IBM Plex Serif",
-				data: FONT_DATA,
+				data: fontData,
 				weight: 600,
 				style: "normal",
 			},
