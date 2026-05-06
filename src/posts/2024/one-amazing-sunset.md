@@ -10,6 +10,7 @@ image:
   source: sunset5.jpg
   alt: My wife and our dog silhouetted against the sunset
   caption: My wife, Sandra and our dog Soda in Carmel
+useHeroForOg: true
 rssid: aca07b9a0919d17a10a0d956c5307182
 ---
 

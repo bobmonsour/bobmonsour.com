@@ -16,8 +16,9 @@ export default {
       }
     },
     // OG image (social-share card) is independent of `image` (in-body hero).
-    // Notes and TILs use their dedicated default cards; every other post
-    // uses a build-time-generated card at /assets/img/og/<slug>.png.
+    // Notes and TILs use their dedicated default cards; posts that set
+    // `useHeroForOg: true` reuse the hero; every other post uses a
+    // build-time-generated card at /assets/img/og/<slug>.png.
     ogImage: (data) => {
       if (data.tags?.includes("notes")) {
         return {
@@ -29,6 +30,12 @@ export default {
         return {
           source: "til-og-image.jpg",
           alt: "Bob Monsour's blog — TIL",
+        };
+      }
+      if (data.useHeroForOg && data.image?.source) {
+        return {
+          source: data.image.source,
+          alt: data.image.alt || data.title,
         };
       }
       return {

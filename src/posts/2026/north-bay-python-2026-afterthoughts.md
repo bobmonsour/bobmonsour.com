@@ -11,6 +11,7 @@ pageHasYoutube: true
 image:
   source: north-bay-python-2026.jpg
   alt: Group photo at the conclusion of North Bay Python 2026
+useHeroForOg: true
 rssid: 61497deeb3f7b469c88f81953657e55b
 ---
 

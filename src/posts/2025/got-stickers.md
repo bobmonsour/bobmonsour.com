@@ -11,6 +11,7 @@ image:
   creditPerson: Andy Carolan
   creditLink: https://andycarolan.com/
   creditType: Illustration
+useHeroForOg: true
 rssid: bf7503f3c25d3eb605f3ab1a1a736282
 ---
 

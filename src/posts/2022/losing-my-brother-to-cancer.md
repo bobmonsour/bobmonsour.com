@@ -8,6 +8,7 @@ image:
   source: losing-my-brother-to-cancer.jpg
   alt: The day we spread my brother's ashes in the Atlantic Ocean
   caption: With family and friends on the day we spread Bill's ashes into the Atlantic Ocean, Longport, NJ, September 8, 2019 (I'm 4th from the right)
+useHeroForOg: true
 showImage: true
 rssid: 1897397be23c002a851dbcc0e94c9ecf
 ---
