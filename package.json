@@ -32,6 +32,7 @@
     "@11ty/eleventy-plugin-rss": "^2.0.3",
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
     "@11ty/is-land": "^4.0.0",
+    "@fontsource/ibm-plex-serif": "^5.2.7",
     "@zachleat/snow-fall": "^1.0.2",
     "dotenv": "^16.0.3",
     "lodash": "^4.17.21",
@@ -44,6 +45,8 @@
     "pagefind": "^1.5.2",
     "path": "^0.12.7",
     "rimraf": "^6.1.2",
+    "satori": "^0.26.0",
+    "sharp": "^0.34.5",
     "wrangler": "^4.86.0"
   }
 }
