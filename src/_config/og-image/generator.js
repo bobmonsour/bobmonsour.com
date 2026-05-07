@@ -38,7 +38,18 @@ function pickFontSize(title) {
 	return 60;
 }
 
-function buildTree(title, avatarDataUri) {
+function formatDate(date) {
+	return date.toLocaleDateString("en-US", {
+		year: "numeric",
+		month: "long",
+		day: "numeric",
+		timeZone: "UTC",
+	});
+}
+
+function buildTree(title, date, avatarDataUri) {
+	const titleSize = pickFontSize(title);
+	const wordmarkSize = Math.round(titleSize / 2);
 	return {
 		type: "div",
 		props: {
@@ -56,16 +67,41 @@ function buildTree(title, avatarDataUri) {
 					type: "div",
 					props: {
 						style: {
-							color: "#ffffff",
-							fontFamily: "IBM Plex Serif",
-							fontWeight: 600,
-							fontSize: `${pickFontSize(title)}px`,
-							lineHeight: 1.15,
-							letterSpacing: "-0.01em",
-							maxWidth: "880px",
 							display: "flex",
+							flexDirection: "column",
+							maxWidth: "880px",
 						},
-						children: title,
+						children: [
+							{
+								type: "div",
+								props: {
+									style: {
+										color: "#ffffff",
+										fontFamily: "IBM Plex Serif",
+										fontWeight: 600,
+										fontSize: `${titleSize}px`,
+										lineHeight: 1.15,
+										letterSpacing: "-0.01em",
+										display: "flex",
+									},
+									children: title,
+								},
+							},
+							{
+								type: "div",
+								props: {
+									style: {
+										color: "#c7e2f6",
+										fontFamily: "IBM Plex Serif",
+										fontWeight: 600,
+										fontSize: `${wordmarkSize}px`,
+										marginTop: "24px",
+										display: "flex",
+									},
+									children: formatDate(date),
+								},
+							},
+						],
 					},
 				},
 				{
@@ -93,7 +129,7 @@ function buildTree(title, avatarDataUri) {
 							color: "#c7e2f6",
 							fontFamily: "IBM Plex Serif",
 							fontWeight: 600,
-							fontSize: `${Math.round(pickFontSize(title) / 2)}px`,
+							fontSize: `${wordmarkSize}px`,
 							display: "flex",
 						},
 						children: "bobmonsour.com",
@@ -107,9 +143,9 @@ function buildTree(title, avatarDataUri) {
 // Renders the OG image for `title` and returns a PNG Buffer.
 // Throws on font/image load failure, malformed input, or sharp error.
 // Callers should catch and log a warning per the spec's error policy.
-export async function generate(title) {
+export async function generate(title, date) {
 	const { fontData, avatarDataUri } = loadAssets();
-	const svg = await satori(buildTree(title, avatarDataUri), {
+	const svg = await satori(buildTree(title, date, avatarDataUri), {
 		width: 1200,
 		height: 630,
 		fonts: [

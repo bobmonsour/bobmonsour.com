@@ -21,7 +21,7 @@ export default function register(eleventyConfig) {
     queue = api
       .getFilteredByGlob("./src/posts/**/*.md")
       .filter((p) => shouldGenerate(p.data))
-      .map((p) => ({ slug: p.fileSlug, title: p.data.title }));
+      .map((p) => ({ slug: p.fileSlug, title: p.data.title, date: p.date }));
     return [];
   });
 
@@ -31,14 +31,14 @@ export default function register(eleventyConfig) {
 
     const activeKeys = new Set();
 
-    for (const { slug, title } of queue) {
-      const hash = cache.hashTitle(title);
+    for (const { slug, title, date } of queue) {
+      const hash = cache.hashEntry(title, date);
       activeKeys.add(`${slug}-${hash}`);
 
       let buf = await cache.get(slug, hash);
       if (!buf) {
         try {
-          buf = await generate(title);
+          buf = await generate(title, date);
           await cache.put(slug, hash, buf);
         } catch (err) {
           console.warn(

@@ -6,15 +6,16 @@ import path from "node:path";
 // should invalidate every previously-cached PNG. The current value
 // is concatenated into the hash input so cached images become stale
 // automatically.
-const RENDERER_VERSION = "4";
+const RENDERER_VERSION = "5";
 
 const CACHE_DIR = ".cache/og";
 const MANIFEST_PATH = path.join(CACHE_DIR, "manifest.json");
 
-export function hashTitle(title) {
+export function hashEntry(title, date) {
+  const dateKey = date instanceof Date ? date.toISOString() : String(date);
   return crypto
     .createHash("sha1")
-    .update(`${RENDERER_VERSION}:${title}`)
+    .update(`${RENDERER_VERSION}:${title}:${dateKey}`)
     .digest("hex")
     .slice(0, 12);
 }
