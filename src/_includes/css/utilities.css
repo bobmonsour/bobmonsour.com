@@ -60,7 +60,11 @@
   font-style: italic;
 }
 
-/* Accent line utilities — single edges only */
+/* Accent line utilities */
+.outline {
+  outline: var(--accent-width) dotted var(--accent-line);
+}
+
 .border-top {
   border-top: var(--accent-width) solid var(--accent-line);
 }
