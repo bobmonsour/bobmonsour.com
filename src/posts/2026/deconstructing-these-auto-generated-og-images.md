@@ -1,6 +1,6 @@
 ---
 title: Deconstructing these auto-generated OG images
-description: A walk through the build-time plugin that gives every blog post here its own social-share card.
+description: A walk through the build-time plugin that gives every blog post here its own social-share image.
 date: 2026-05-07
 tags:
   - AI
