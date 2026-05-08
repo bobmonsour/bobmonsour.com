@@ -33,8 +33,8 @@ function loadAssets() {
 // Deterministic font-size ramp keyed to title length. Same title always
 // renders at the same size.
 function pickFontSize(title) {
-	if (title.length <= 60) return 88;
-	if (title.length <= 90) return 72;
+	if (title.length <= 30) return 88;
+	if (title.length <= 60) return 72;
 	return 60;
 }
 
@@ -69,7 +69,7 @@ function buildTree(title, date, avatarDataUri) {
 						style: {
 							display: "flex",
 							flexDirection: "column",
-							maxWidth: "880px",
+							maxWidth: "1040px",
 						},
 						children: [
 							{

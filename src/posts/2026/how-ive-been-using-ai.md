@@ -3,6 +3,7 @@ title: How I've been using AI
 description: I've been using AI quite a bit this year. Here's what I've managed to do.
 date: 2026-04-23
 tags:
+  - AI
   - 11ty
   - politics
   - learned
