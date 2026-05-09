@@ -38,3 +38,5 @@ Anyway, here is [a link to it on YouTube](https://www.youtube.com/watch?v=-M8ybr
 If you can find yourself in the Bay Area in April of next year, be sure to put [North Bay Python](https://northbaypython.org/) on your calendar for what I expect will be an extra special 10th anniversary event.
 
 More importantly, if you are a fan of Python, the North Bay, or just like supporting incredibly wonderful and unique events like this one, please go ahead and [make whatever contribution you can to support it](https://psfmember.org/civicrm/contribute/transact/?reset=1&id=46). Events like these are volunteer-driven and need to cover venue, equipment, and furniture expenses. Any little bit helps.
+
+_UPDATE_: In my talk, I failed to say that my friend Marc, who I mentioned, is an accomplished artist and you can find his work at [Marc Marvin Fine Art](https://www.marcmarvinfineart.com/).
