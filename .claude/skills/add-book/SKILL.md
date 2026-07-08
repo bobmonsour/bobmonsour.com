@@ -12,9 +12,25 @@ Adds a book to `src/_data/books.json`. Run from the repo root
 
 - **Title** — given by Bob.
 - **Type** — *currently reading* or *finished*. Ask if not stated.
-- If **finished**, the **finish date** as `yyyy/mm/dd`. Ask if not given.
+- If **finished**, the **finish date**. Ask if not given. Bob may enter it in any
+  reasonable form (e.g. `June 28, 2026`, `6/28/2026`, `2026-06-28`); normalize it
+  to `yyyy/mm/dd` before writing (see **Normalizing dates** below).
 
 Never collect a rating — it is legacy data no longer rendered.
+
+### Normalizing dates
+
+`books.json` stores dates as `yyyy/mm/dd` (zero-padded). Convert whatever Bob types
+to that format. For the common `Month Day, Year` form, use macOS `date`:
+
+```bash
+date -j -f "%B %d, %Y" "June 28, 2026" "+%Y/%m/%d"   # -> 2026/06/28
+```
+
+For other inputs, pick the matching `-f` format string (e.g. `"%m/%d/%Y"` for
+`6/28/2026`, `"%Y-%m-%d"` for `2026-06-28`), or just format it yourself. If the
+input is ambiguous or the conversion fails, show Bob the normalized date and
+confirm before writing.
 
 ## 2. Currently-reading hand-off (only when adding a *currently reading* book)
 
@@ -25,7 +41,8 @@ node -e "const b=require('./src/_data/books.json');console.log(JSON.stringify(b.
 ```
 
 If it returns a non-empty list, ask Bob whether he has finished that book:
-- **Yes** → ask for its finish date (`yyyy/mm/dd`), then Edit that entry's
+- **Yes** → ask for its finish date (any reasonable form; normalize to `yyyy/mm/dd`
+  per **Normalizing dates** above), then Edit that entry's
   `"yearRead": "currently"` → `"yearRead": "<date>"`. Then continue.
 - **No** → stop. Two current books aren't allowed. Ask whether to add the new
   book as *finished* instead, or cancel. Do not create a second `"currently"` entry.
