@@ -624,11 +624,36 @@
     "localCover": true
   },
   {
-    "title": "The Great Math War",
-    "author": "Json Socrates Bardi",
-    "ISBN": "9781541605008",
+    "title": "Nuclear War",
+    "author": "Annie Jacobsen",
+    "ISBN": "9780593476116",
     "rating": "5",
-    "yearRead": "currently",
+    "yearRead": "2026/06/15",
     "localCover": true
+  },
+  {
+    "title": "Regime Change",
+    "author": "Jonathan Swan & Maggie Haberman",
+    "ISBN": 9781668067246,
+    "yearRead": "2026/06/23"
+  },
+  {
+    "title": "The Nvidia Way",
+    "author": "Tae Kim",
+    "ISBN": 9781324086727,
+    "yearRead": "2026/07/03",
+    "localCover": true
+  },
+  {
+    "title": "The Thinking Machine",
+    "author": "Stephen Witt",
+    "ISBN": 9780593832691,
+    "yearRead": "2026/07/07"
+  },
+  {
+    "title": "Nexus",
+    "author": "Yuval Noah Harari",
+    "ISBN": 9780593734247,
+    "yearRead": "currently"
   }
 ]
