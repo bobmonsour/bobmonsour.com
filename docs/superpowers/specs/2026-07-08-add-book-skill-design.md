@@ -30,8 +30,16 @@ Each entry in `src/_data/books.json`:
 }
 ```
 
+New entries written by this skill look like the above **minus `rating`**, e.g. a finished
+book: `{ title, author, ISBN, yearRead: "2026/07/08"[, localCover: true] }`; a currently-
+reading book: `{ title, author, ISBN, yearRead: "currently"[, localCover: true] }`.
+
 - `yearRead` is either a `yyyy/mm/dd` date, `"currently"`, or `"undated"`.
 - `localCover: true` is present **only** when a locally-stored cover file exists.
+- `rating` is **legacy** — it is no longer rendered anywhere in the web interface. New
+  entries written by this skill omit `rating` entirely. (Existing entries keep it until the
+  separate cleanup below.)
+- **Invariant:** there is at most **one** `"currently"` entry at a time.
 - Cover rendering in `_includes/bookitem.njk`:
   - `localCover` truthy → `<img src="/assets/img/{{ title | slugify }}.jpg">`
   - else → `https://covers.openlibrary.org/b/isbn/{{ ISBN }}-M.jpg`
@@ -41,13 +49,23 @@ Each entry in `src/_data/books.json`:
 1. **Input.** Bob gives a title and says whether it's *currently reading* or *finished*.
    (If he doesn't say, the skill asks.)
 
+   **If *currently reading* and a `"currently"` entry already exists** (enforcing the
+   single-current invariant): before adding the new one, the skill asks whether Bob has
+   finished that existing book.
+   - *Yes* → ask for the finish date (`yyyy/mm/dd`) and update the existing entry's
+     `yearRead` from `"currently"` to that date. Then proceed to add the new current book.
+   - *No* → he can't have two current books; the skill stops and asks how he'd like to
+     proceed (e.g. add this as a *finished* book instead, or cancel) rather than creating a
+     second `"currently"` entry.
+
 2. **Look up author + ISBN.** Query the Open Library search API by title:
    `https://openlibrary.org/search.json?title=<title>&fields=title,author_name,isbn,first_publish_year&limit=5`
    - If there is one clear match, use it.
    - If multiple plausible matches, present the top candidates (title / author / year /
      ISBN) and let Bob pick. Never guess on ambiguous titles.
-   - Prefer a 13-digit ISBN. Store `ISBN` as it appears in existing entries (both numeric
-     and string ISBNs exist in the file today; match the file's dominant style — numeric).
+   - Prefer a 13-digit ISBN. Both numeric and string ISBNs exist in the file today; the
+     skill writes it as a numeric value (the dominant style) — the value is what matters for
+     the cover URL, not the type.
 
 3. **Cover image — openlibrary primary, local fallback.**
    - Check `https://covers.openlibrary.org/b/isbn/<ISBN>-M.jpg?default=false`.
@@ -64,14 +82,14 @@ Each entry in `src/_data/books.json`:
        `title | slugify` (lowercase, spaces→hyphens, punctuation stripped).
      - Sets `localCover: true` on the entry.
 
-4. **Collect remaining fields.**
-   - *Finished:* `rating` (Bob provides) and `yearRead` as `yyyy/mm/dd` (Bob provides).
-   - *Currently reading:* `yearRead: "currently"`, and **omit `rating`**.
+4. **Collect remaining fields.** No `rating` is ever collected or written.
+   - *Finished:* `yearRead` as `yyyy/mm/dd` (Bob provides).
+   - *Currently reading:* `yearRead: "currently"`.
 
 5. **Write the entry.** Append the new object to the `books.json` array. `books.js` sorts
-   dated books by date regardless of array position, and supports multiple `"currently"`
-   books (home page shows 1, Books page shows up to 2), so a plain append is correct — the
-   skill does not need to touch or re-date any existing entry.
+   dated books by date regardless of array position, so a plain append is correct for the
+   new entry. (If an existing current book was handed off in step 1, that entry is updated
+   in place — only its `yearRead` changes.)
 
 6. **Confirm.** Show Bob the final JSON entry (and the local cover path, if one was created)
    before/after writing so he can verify.
@@ -87,16 +105,25 @@ confirm the expected filename against an existing entry.
 ## Tools the skill uses
 
 - `WebFetch` — Open Library search API and the cover presence check.
-- `AskUserQuestion` — disambiguating multiple title matches; asking book type / rating / date.
+- `AskUserQuestion` — disambiguating multiple title matches; asking book type, finish date,
+  and the currently-reading hand-off question.
 - `Bash` + `sips` — resize/convert the fallback cover.
-- `Edit` — append the entry to `books.json`.
+- `Edit` — append the new entry to `books.json` (and, on hand-off, update the outgoing
+  current book's `yearRead`).
 
 ## Out of scope (YAGNI)
 
 - Amazon scraping / browser automation for covers — Bob supplies the fallback image himself.
-- Auto-updating a previously "currently reading" book to a finished date — done manually.
-- Editing or removing existing entries.
-- Rating/date validation beyond basic format shaping.
+- Removing existing entries.
+- Date-format validation beyond basic shaping.
+- Bulk cleanup of legacy `rating` fields (handled as a one-off follow-up, below — not by the
+  add-book skill).
+
+## Follow-up (after the skill is built)
+
+Once the skill exists and works, come back to Bob with a suggestion to clean up
+`books.json` by removing the legacy `rating` property from **all** existing entries (it is
+no longer rendered). This is a separate, one-off edit — not part of the add-book skill.
 
 ## Success criteria
 
@@ -105,3 +132,6 @@ confirm the expected filename against an existing entry.
 - Uncovered books get a `180×~275` JPEG at `src/assets/img/<slug>.jpg` and `localCover: true`,
   and the file resolves via `bookitem.njk`.
 - Currently-reading books render on the home page and the top of the Books page.
+- Adding a new currently-reading book when one already exists prompts the hand-off; on "yes"
+  the outgoing book is dated and only one `"currently"` entry remains.
+- No new entry carries a `rating` field.
