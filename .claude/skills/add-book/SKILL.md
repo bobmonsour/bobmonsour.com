@@ -93,10 +93,11 @@ curl -sL -o /dev/null -w "%{http_code}\n" "https://covers.openlibrary.org/b/isbn
 
 ## 5. Append the entry to books.json
 
-Build the object (no `rating`; ISBN numeric):
+Build the object (no `rating`; ISBN as a quoted string — all ISBNs in the file
+are strings):
 
-- Finished: `{ "title": …, "author": …, "ISBN": <13-digit>, "yearRead": "yyyy/mm/dd" }`
-- Currently: `{ "title": …, "author": …, "ISBN": <13-digit>, "yearRead": "currently" }`
+- Finished: `{ "title": …, "author": …, "ISBN": "<13-digit>", "yearRead": "yyyy/mm/dd" }`
+- Currently: `{ "title": …, "author": …, "ISBN": "<13-digit>", "yearRead": "currently" }`
 - Add `"localCover": true` only if step 4 saved a local file.
 
 Edit `src/_data/books.json`: append the new object as the last element of the
