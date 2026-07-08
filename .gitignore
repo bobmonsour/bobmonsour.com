@@ -5,6 +5,7 @@ resources/
 .env
 .cache
 .vscode
-.claude
+.claude/*
+!.claude/skills/
 CLAUDE.MD
 src/drafts/
