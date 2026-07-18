@@ -12,6 +12,9 @@ WORKFLOW
 1. Dev server with live reload: npm run sns (or npm run rsns for a clean rebuild).
 2. Write posts as markdown in src/posts/<year>/; set draft: true to keep a post out of production but visible in dev.
 3. Production build: npm run build (runs Eleventy, then postbuild Pagefind indexing). Check links with npm run links.
+
+SKILLS
+- add-book (skill) — Adds a book to the Books page (src/_data/books.json) — looks up author + ISBN from Open Library, handles the cover image, and enforces a single currently-reading entry.
 EOF
 
 jq -nc --arg m "$MESSAGE" '{systemMessage: $m}'
