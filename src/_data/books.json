@@ -570,5 +570,18 @@
     "author": "Yuval Noah Harari",
     "ISBN": "9780593734247",
     "yearRead": "currently"
+  },
+  {
+    "title": "The Grey Wolf",
+    "author": "Louise Penny",
+    "ISBN": "9781250328144",
+    "yearRead": "2026/09/10"
+  },
+  {
+    "title": "The Black Wolf",
+    "author": "Louise Penny",
+    "ISBN": "9781250328175",
+    "yearRead": "2026/09/28",
+    "localCover": true
   }
 ]
