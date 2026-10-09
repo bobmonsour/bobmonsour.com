@@ -566,12 +566,6 @@
     "yearRead": "2026/07/07"
   },
   {
-    "title": "Nexus",
-    "author": "Yuval Noah Harari",
-    "ISBN": "9780593734247",
-    "yearRead": "currently"
-  },
-  {
     "title": "The Grey Wolf",
     "author": "Louise Penny",
     "ISBN": "9781250328144",
@@ -582,6 +576,13 @@
     "author": "Louise Penny",
     "ISBN": "9781250328175",
     "yearRead": "2026/09/28",
+    "localCover": true
+  },
+  {
+    "title": "Robot-Proof",
+    "author": "Vivienne Ming",
+    "ISBN": "9781394397808",
+    "yearRead": "currently",
     "localCover": true
   }
 ]
